@@ -1,0 +1,39 @@
+{
+  "folder": "06SCPYBch1mjo07H",
+  "name": "Véu da Força",
+  "type": "spell",
+  "_id": "Sr6Mu6EMlgsWYyWn",
+  "img": "systems/olddragon2e/assets/icons/arcane.svg",
+  "system": {
+    "odo_id": "veu-da-forca",
+    "school": "arcane",
+    "circle": "2",
+    "arcane": "2",
+    "divine": "null",
+    "necromancer": "null",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "pessoal (ou toque)",
+    "duration": "1 hora por nível",
+    "jp": "nenhuma",
+    "description": "<p><strong>Grandeza:</strong> 2ª</p><p><strong>Alcance:</strong> pessoal (ou toque) · <strong>Duração:</strong> 1 hora por nível · <strong>JP:</strong> nenhuma</p><p>Você recolhe a própria assinatura na Força até virar um vazio morno, indistinguível de pedra ou de gente comum. Enquanto o Véu dura, <strong>Detectar a Força, Percepção Ampliada, Localizar pela Força e Caçador da Força não o encontram</strong>, e um Sensível que o observe diretamente precisa vencer um <strong>teste resistido de Sabedoria</strong> contra você para perceber que há algo ali. Por toque, você pode velar <strong>outra criatura</strong> em vez de si mesmo.</p><p>Não esconde o corpo: o Véu engana a Força, não os olhos, os sensores, nem os droides. E ele <strong>cai no instante em que você usa qualquer outro poder</strong> — a Força volta a acender no mapa, e quem procurava sabe exatamente onde você estava.</p><p><em>(adaptação do cenário — 2ª; ver Apagar Rastros Mentais, 6ª.) O poder-base apaga o rastro de um poder já usado — passado, não presente. O Véu resolve o outro lado: esconder quem você é enquanto não faz nada. É a mecânica que explica como um Jedi sobrevive à Ordem 66 — e por que um Sensível escondido não pode usar a Força para resolver problemas.</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Sr6Mu6EMlgsWYyWn"
+}

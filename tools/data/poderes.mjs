@@ -103,6 +103,20 @@ export const listasDePoder = [
           "<p><em>(adaptação — 2ª; ver Detectar Invisibilidade/Mentiras, 2ª.)</em></p>",
       },
       {
+        nome: "Véu da Força",
+        circle: 2,
+        range: "pessoal (ou toque)",
+        duration: "1 hora por nível",
+        jp: "nenhuma",
+        reverse: false,
+        desc:
+          g(2) +
+          "<p><strong>Alcance:</strong> pessoal (ou toque) · <strong>Duração:</strong> 1 hora por nível · <strong>JP:</strong> nenhuma</p>" +
+          "<p>Você recolhe a própria assinatura na Força até virar um vazio morno, indistinguível de pedra ou de gente comum. Enquanto o Véu dura, <strong>Detectar a Força, Percepção Ampliada, Localizar pela Força e Caçador da Força não o encontram</strong>, e um Sensível que o observe diretamente precisa vencer um <strong>teste resistido de Sabedoria</strong> contra você para perceber que há algo ali. Por toque, você pode velar <strong>outra criatura</strong> em vez de si mesmo.</p>" +
+          "<p>Não esconde o corpo: o Véu engana a Força, não os olhos, os sensores, nem os droides. E ele <strong>cai no instante em que você usa qualquer outro poder</strong> — a Força volta a acender no mapa, e quem procurava sabe exatamente onde você estava.</p>" +
+          "<p><em>(adaptação do cenário — 2ª; ver Apagar Rastros Mentais, 6ª.) O poder-base apaga o rastro de um poder já usado — passado, não presente. O Véu resolve o outro lado: esconder quem você é enquanto não faz nada. É a mecânica que explica como um Jedi sobrevive à Ordem 66 — e por que um Sensível escondido não pode usar a Força para resolver problemas.</em></p>",
+      },
+      {
         nome: "Localizar pela Força",
         circle: 2,
         reverse: false,

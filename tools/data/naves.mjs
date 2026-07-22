@@ -7,10 +7,49 @@
 
 const paginas = [
   {
+    title: "Regras que faltavam — combate, aparatos e pilotagem",
+    content: `
+<h2>Ataque em área e arremesso</h2>
+<p>Arremessar algo num ponto do mapa é um ataque à distância normal contra <strong>CA 10 + 1 para cada 3 metros</strong> de distância. Uma granada atirada a 15 metros enfrenta <strong>CA 15</strong>.</p>
+<ul>
+<li><strong>Errou?</strong> A diferença entre a sua rolagem e a CA é <strong>quantos metros a granada foi parar longe</strong> do ponto visado. CA 18, rolou 12 &rarr; cai a <strong>6 metros</strong> do alvo.</li>
+<li><strong>Para que lado?</strong> Role <strong>1d8</strong>, contando 1 como &quot;de volta na sua direção&quot; e seguindo em sentido horário.</li>
+<li>Objeto <strong>sem função ofensiva</strong> conta como <strong>1d4</strong> para efeito de ordem de ação.</li>
+</ul>
+<p><em>Granada é arma de área, não de precisão: quanto mais longe o alvo, maior a chance de limpar o corredor errado.</em></p>
+<h2>Coronhada, desarmado e nocaute</h2>
+<ul>
+<li><strong>Coronhada:</strong> bater com um blaster causa <strong>1d4</strong>, substituindo o dado da arma; o modificador de Força continua valendo.</li>
+<li><strong>Desarmado:</strong> o dano é o <strong>modificador de Força</strong>, mínimo 1.</li>
+<li><strong>Nocautear em vez de matar:</strong> quem chega abaixo de 0 PV por ataque corpo a corpo com arma <strong>não-cortante</strong>, por coronhada ou desarmado <strong>não está morrendo — está inconsciente</strong>.</li>
+</ul>
+<p>É a regra que faltava para o ofício do <strong>Caçador de Recompensas</strong>: o contrato que paga mais pelo alvo vivo, a cela em vez do caixão. Somada ao modo atordoante dos blasters e à Granada Atordoante, capturar alguém vivo deixa de ser improviso.</p>
+<h2>Quem pode usar um aparato</h2>
+<p><strong>Usar um aparato pronto não pede rolagem.</strong> Qualquer personagem aciona o medpac, o visor ou o jetpack, respeitada a faixa da classe (ofensivos: só Técnico e Caçador de Recompensas &middot; defensivos: Técnico e Veterano &middot; utilitários: todos).</p>
+<p>O teste só existe num caso, e só para o <strong>Técnico</strong>: quando ele mexe num aparato <strong>criado por outra pessoa</strong>, danificado, de procedência obscura ou <strong>acima do seu Nível Tecnológico</strong>. As outras classes não fazem esse teste porque nem saberiam por onde começar.</p>
+<h2>Jogada de Proteção da nave</h2>
+<p>Quando uma regra pede que a <strong>nave</strong> resista a algo, quem rola é a nave. Mas naves não têm atributos: quem faz a diferença é o piloto. <strong>Antes de cada JP da nave, o piloto faz um teste de <em>Pilotar</em></strong>, e o resultado modifica a jogada:</p>
+<table><thead><tr><th>Teste de Pilotar</th><th>Modificador na JP da nave</th></tr></thead><tbody>
+<tr><td><strong>1 no d6</strong></td><td><strong>+4</strong></td></tr>
+<tr><td>Sucesso normal</td><td><strong>+2</strong></td></tr>
+<tr><td>Falha</td><td><strong>&minus;2</strong></td></tr>
+<tr><td><strong>6 no d6</strong></td><td><strong>&minus;4</strong></td></tr>
+</tbody></table>
+<h2>Avaria</h2>
+<p>Opcional. <strong>A cada 25% dos PV que a nave perde, o piloto sofre &minus;1 na chance de <em>Pilotar</em></strong>, até o mínimo de 1 em 1d6. Um caça de 40 PV que já levou 22 está abaixo de 50%: <strong>&minus;2 na chance</strong>.</p>
+`,
+  },
+  {
     title: "Naves e Veículos — como funcionam",
     content: `
 <p><strong>Regras:</strong> naves, caças e veículos usam o <strong>Capítulo de Espaçonaves e Estações do Space Dragon</strong> sem alteração — combate espacial, PV, Base de Ataque, Jogadas de Proteção da nave, combustível, salto hiperespacial e câmaras.</p>
-<p>Esta referência é um <strong>de-para de nomenclatura</strong>: pegue a classe de nave do SD que quiser e vista-a de Star Wars. Os números vêm do livro de Space Dragon.</p>
+<p>Esta referência é um <strong>de-para de nomenclatura</strong>: pegue a classe de nave que quiser e vista-a de Star Wars.</p>
+<p>&#9888; <strong>De onde vêm os números.</strong> Use a tabela do <strong>Estrela Dracônica (ED-09)</strong>, <strong>não</strong> a do livro do Space Dragon: ao consolidar o ED as naves foram <strong>reescaladas</strong> para o Old Dragon 2, e os dois conjuntos são incompatíveis. O Caça saiu de <em>CP 28 / BA +16 / 150 m</em> para <strong>CA 50 / BA +36 / 100 m</strong>. Misturar as duas tabelas na mesma cena quebra o combate.</p>
+<table><thead><tr><th>Tipo</th><th>Tripulação</th><th>PV</th><th>BA</th><th>CA</th><th>JP</th><th>Mov.</th></tr></thead><tbody>
+<tr><td><strong>Caça</strong></td><td>1</td><td>1d100</td><td>+36</td><td>50</td><td>10</td><td>100 m</td></tr>
+<tr><td><strong>Escolta</strong></td><td>1 a 4</td><td>1d100</td><td>+30</td><td>50</td><td>10</td><td>80 m</td></tr>
+<tr><td><strong>Cargueiro</strong></td><td>50+</td><td>1d1000</td><td>+34</td><td>46</td><td>6</td><td>40 m</td></tr>
+</tbody></table>
 `,
   },
   {
