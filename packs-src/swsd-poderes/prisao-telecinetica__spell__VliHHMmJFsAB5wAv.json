@@ -1,0 +1,39 @@
+{
+  "folder": "06SCPYBch1mjo07H",
+  "name": "Prisão Telecinética",
+  "type": "spell",
+  "_id": "VliHHMmJFsAB5wAv",
+  "img": "systems/olddragon2e/assets/icons/arcane.svg",
+  "system": {
+    "odo_id": "prisao-telecinetica",
+    "school": "arcane",
+    "circle": "5",
+    "arcane": "5",
+    "divine": "null",
+    "necromancer": "null",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "nenhuma",
+    "description": "<p><strong>Grandeza:</strong> 5ª</p><p>A garra telecinética levada ao extremo: você fecha o punho da vontade em torno de <strong>corpo e nervo</strong> de uma criatura, ainda que poderosa, e a trava no lugar — músculos presos, arma imóvel no ar. Onde a Estase apenas paralisa um humanoide, esta prende feras, brutamontes e alvos que uma mente fraca jamais seguraria.</p><p><em>Poder-base: Imobilizar Criatura (5ª).</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 1300000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VliHHMmJFsAB5wAv"
+}

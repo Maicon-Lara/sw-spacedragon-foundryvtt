@@ -1,0 +1,39 @@
+{
+  "folder": "lhf3leSPQSjfq3yK",
+  "name": "Aterrorizar",
+  "type": "spell",
+  "_id": "Kd6zUYgSWEERCFy4",
+  "img": "systems/olddragon2e/assets/icons/necromancer.svg",
+  "system": {
+    "odo_id": "aterrorizar",
+    "school": "necromancer",
+    "circle": "2",
+    "arcane": "null",
+    "divine": "null",
+    "necromancer": "2",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "JPS nega",
+    "description": "<p><strong>Grandeza:</strong> 2ª</p><p>Você projeta uma onda de pavor e <strong>inimigos fracos na área ficam apavorados</strong>: testes Difíceis, e <strong>1 em 1d6 de largar o que seguram</strong> a cada rodada (uma <strong>JPS</strong> nega). O grito silencioso que esvazia a coragem de um pelotão.</p><p><em>Poder-base: Aterrorizar (2ª).</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Kd6zUYgSWEERCFy4"
+}

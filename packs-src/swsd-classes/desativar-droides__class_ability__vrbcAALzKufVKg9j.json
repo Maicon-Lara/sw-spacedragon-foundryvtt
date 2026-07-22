@@ -1,0 +1,50 @@
+{
+  "folder": "6zInFMN2YAsqAN8M",
+  "name": "Desativar Droides",
+  "type": "class_ability",
+  "_id": "vrbcAALzKufVKg9j",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p>Com um <strong>disruptor positrônico</strong>, desativa droides a até <strong>18 metros</strong> que falhem num teste de Moral no fim da rodada.</p><p><strong>Destruição:</strong> se o droide falhar no teste <strong>e os dois dados saírem iguais</strong>, ele não é apenas desligado — é destruído.</p><p><strong>Tentativas extras:</strong> além dos usos seguros do dia dá para insistir, mas cada tentativa cumulativa torna o teste <strong>Difícil (−2)</strong> e depois <strong>Muito Difícil (−5)</strong>. Uma falha nessas condições causa um curto-circuito no disruptor, que precisa ser reparado.</p><p>No 1º nível, desativa droides sem bônus.</p>",
+    "level": 1,
+    "level3": "",
+    "level6": "<p><em>(a partir do 5º nível)</em> <strong>+1</strong> no teste de Moral e <strong>2 usos seguros por dia</strong>.</p>",
+    "level10": "<p><strong>+2</strong> no teste de Moral e <strong>3 usos seguros por dia</strong>.</p>",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!vrbcAALzKufVKg9j"
+}

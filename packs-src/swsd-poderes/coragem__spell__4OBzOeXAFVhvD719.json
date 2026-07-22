@@ -1,0 +1,39 @@
+{
+  "folder": "4vey1yLAAENwdrjT",
+  "name": "Coragem",
+  "type": "spell",
+  "_id": "4OBzOeXAFVhvD719",
+  "img": "systems/olddragon2e/assets/icons/divine.svg",
+  "system": {
+    "odo_id": "coragem",
+    "school": "divine",
+    "circle": "3",
+    "arcane": "null",
+    "divine": "3",
+    "necromancer": "null",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "nenhuma",
+    "description": "<p><strong>Grandeza:</strong> 3ª</p><p>Você irradia uma aura de firmeza: <strong>aliados na área ganham bônus</strong> (ataque/moral) e <strong>inimigos sofrem penalidade</strong> enquanto ela dura. A presença que transforma um punhado de rebeldes assustados numa linha que segura.</p><p><em>(adaptação — 3ª.)</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 800000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!4OBzOeXAFVhvD719"
+}

@@ -1,0 +1,49 @@
+{
+  "folder": "pUXGEEgu2DB4vDSu",
+  "name": "Lançador de Rede",
+  "type": "weapon",
+  "_id": "0U3afPWtfSdAzvz3",
+  "img": "systems/olddragon2e/assets/icons/ranged.svg",
+  "system": {
+    "odo_id": "lancador-de-rede",
+    "description": "<p>Pequena, Especial, Disparo (18 m), <strong>Enreda</strong>. Não causa dano.</p>",
+    "quantity": 1,
+    "cost": "200 CR",
+    "weight_in_load": 1,
+    "weight_in_grams": 0,
+    "magic_item": false,
+    "is_equipped": false,
+    "type": "ranged",
+    "damage_type": "none",
+    "damage": "",
+    "bonus_damage": 0,
+    "bonus_ba": 0,
+    "bonus_ca": 0,
+    "shoot_range": 18,
+    "throw_range": 0,
+    "arrow": false,
+    "bolt": false,
+    "bolt_small": false,
+    "polearm": false,
+    "two_handed": false,
+    "versatile": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!0U3afPWtfSdAzvz3"
+}

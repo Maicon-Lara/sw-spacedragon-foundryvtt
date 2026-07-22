@@ -1,0 +1,76 @@
+{
+  "folder": "xGgOVFDYQfdltwI9",
+  "name": "Talentos de Contrabandista",
+  "type": "class_ability",
+  "_id": "DxjYrDGXvBkhdeYH",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p><strong>Bônus:</strong> no 1º nível, +1 ponto por ponto do modificador de <strong>Destreza ou Carisma</strong>.</p><p>Começa com <strong>2 pontos em cada um</strong> dos cinco talentos + <strong>2 pontos livres</strong>. Nos níveis <strong>3, 6 e 10</strong> recebe <strong>+2 pontos</strong> para distribuir.</p><p><strong>Teste:</strong> um talento tem chance em 1d6 igual ao seu valor (2 pontos = 1-2 em 1d6; 5 pontos = 1-5 em 1d6). <strong>Máximo: 5.</strong></p><p><strong>Trava:</strong> ao subir de nível ele <strong>não pode pôr os 2 pontos no mesmo talento</strong> — tem que espalhar. A trava não vale para a distribuição inicial do 1º nível.</p>",
+    "level": 1,
+    "level3": "",
+    "level6": "",
+    "level10": "",
+    "rogue_talents": [
+      {
+        "key": "sabotagem",
+        "name": "Sabotagem",
+        "description": "Destranca portas e provoca defeitos em máquinas. Exige os instrumentos consigo e vale uma vez por máquina — se falhar, só tenta de novo naquela máquina ao subir de nível. O tempo cai com a perícia: 2 pts → até 1d6 turnos; 3 pts → 1d4; 4 pts → 1d3; 5 pts → 1 turno."
+      },
+      {
+        "key": "furtividade",
+        "name": "Furtividade",
+        "description": "Esconde-se, move-se em silêncio e passa por vãos estreitos; com novo teste, anda furtivo em movimento normal — mas atacar (mesmo errando) o torna visível."
+      },
+      {
+        "key": "contrabando",
+        "name": "Contrabando",
+        "description": "Oculta mercadorias e passageiros em compartimentos secretos, falsifica manifestos e burla inspeções e sensores. Falha = a carga é achada ou desperta suspeita."
+      },
+      {
+        "key": "labia",
+        "name": "Lábia",
+        "description": "Blefa, barganha e convence pela conversa — distrai guardas, engana autoridades, arranca vantagens sociais."
+      },
+      {
+        "key": "avaliacao",
+        "name": "Avaliação",
+        "description": "Fareja o valor real de uma carga, relíquia ou negócio, e onde vendê-la no mercado negro. (Sugestão — ajuste à vontade.)"
+      }
+    ],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!DxjYrDGXvBkhdeYH"
+}

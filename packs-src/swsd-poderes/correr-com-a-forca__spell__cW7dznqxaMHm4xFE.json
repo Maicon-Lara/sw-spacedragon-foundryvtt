@@ -1,0 +1,39 @@
+{
+  "folder": "06SCPYBch1mjo07H",
+  "name": "Correr com a Força",
+  "type": "spell",
+  "_id": "cW7dznqxaMHm4xFE",
+  "img": "systems/olddragon2e/assets/icons/arcane.svg",
+  "system": {
+    "odo_id": "correr-com-a-forca",
+    "school": "arcane",
+    "circle": "3",
+    "arcane": "3",
+    "divine": "null",
+    "necromancer": "null",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "nenhuma",
+    "description": "<p><strong>Grandeza:</strong> 3ª</p><p>A Força alimenta os músculos e o tempo parece afinar: você <strong>dobra o deslocamento</strong> e ganha uma <strong>ação extra de movimento</strong> na rodada. É o borrão que cruza o hangar antes das portas fecharem.</p><p><em>(adaptação — 3ª.)</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 800000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!cW7dznqxaMHm4xFE"
+}

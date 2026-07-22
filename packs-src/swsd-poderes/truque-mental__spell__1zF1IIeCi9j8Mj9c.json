@@ -1,0 +1,39 @@
+{
+  "folder": "06SCPYBch1mjo07H",
+  "name": "Truque Mental",
+  "type": "spell",
+  "_id": "1zF1IIeCi9j8Mj9c",
+  "img": "systems/olddragon2e/assets/icons/arcane.svg",
+  "system": {
+    "odo_id": "truque-mental",
+    "school": "arcane",
+    "circle": "1",
+    "arcane": "1",
+    "divine": "null",
+    "necromancer": "null",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "Visual",
+    "duration": "instantâneo",
+    "jp": "JPS",
+    "description": "<p><strong>Grandeza:</strong> 1ª</p><p>O clássico aceno de mão e \"não são os droides que você procura\". Você impõe uma sugestão simples e curta a uma mente fraca, que a aceita como ideia própria — a sugestão é obedecida na hora e o alvo racionaliza o ato depois.</p><p>A frase deve ser <strong>imperativa, curta e com um só verbo</strong>, jamais ilógica ou letal. Só afeta alvos com <strong>DV até metade do seu nível</strong> (mínimo 1) — <strong>mentes fortes, líderes decididos e droides são imunes</strong> —, e o alvo ainda tem direito a uma <strong>JPS</strong> para resistir. Serve para abrir uma porta, dispensar um guarda ou desviar uma suspeita, nunca para forçar um ato contra a própria natureza.</p><p><em>(adaptação do cenário — não use o poder-base do v1.0.)</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!1zF1IIeCi9j8Mj9c"
+}

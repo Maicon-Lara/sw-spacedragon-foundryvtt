@@ -1,0 +1,39 @@
+{
+  "folder": "lhf3leSPQSjfq3yK",
+  "name": "Manto de Escuridão",
+  "type": "spell",
+  "_id": "GqcCPQss7HB4GTQU",
+  "img": "systems/olddragon2e/assets/icons/necromancer.svg",
+  "system": {
+    "odo_id": "manto-de-escuridao",
+    "school": "necromancer",
+    "circle": "2",
+    "arcane": "null",
+    "divine": "null",
+    "necromancer": "2",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "nenhuma",
+    "description": "<p><strong>Grandeza:</strong> 2ª</p><p>Você invoca <strong>trevas sobrenaturais</strong> que engolem a luz e <strong>cegam quem não enxerga no escuro</strong>, enquanto você e os seus se movem à vontade nelas. O breu que precede a chacina.</p><p><em>(adaptação — 2ª.)</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 500000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!GqcCPQss7HB4GTQU"
+}

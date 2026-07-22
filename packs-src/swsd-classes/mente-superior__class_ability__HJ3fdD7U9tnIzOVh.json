@@ -1,0 +1,50 @@
+{
+  "folder": "ooAXCSoF9Pmo8MFk",
+  "name": "Mente Superior",
+  "type": "class_ability",
+  "_id": "HJ3fdD7U9tnIzOVh",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p>Seu Foco da Força passa a contar como o de um Sensível <strong>+2 níveis</strong> — atinge as Grandezas altas mais cedo.</p>",
+    "level": 3,
+    "level3": "",
+    "level6": "<p><strong>Preço da Profundidade:</strong> o Foco passa a contar como <strong>+3 níveis</strong>. Além disso, você pode <strong>queimar 3 PV para comprar 1 ponto de Foco</strong> de qualquer Grandeza que já acesse, na hora da conjuração — sem limite de usos, mas o dano não é curável até um descanso longo.</p>",
+    "level10": "",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!HJ3fdD7U9tnIzOVh"
+}

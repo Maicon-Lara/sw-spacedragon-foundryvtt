@@ -1,0 +1,39 @@
+{
+  "folder": "4vey1yLAAENwdrjT",
+  "name": "Discernir a Verdade",
+  "type": "spell",
+  "_id": "zxMiLcgp2VlAvmVy",
+  "img": "systems/olddragon2e/assets/icons/divine.svg",
+  "system": {
+    "odo_id": "discernir-a-verdade",
+    "school": "divine",
+    "circle": "2",
+    "arcane": "null",
+    "divine": "2",
+    "necromancer": "null",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "nenhuma",
+    "description": "<p><strong>Grandeza:</strong> 2ª</p><p>Você ouve não só as palavras, mas a intenção sob elas, e <strong>sabe quando lhe mentem</strong>. Não revela a verdade escondida — apenas acende o alarme de que aquilo é falso. O dom que desmonta o vilão cordial na mesa de negociação.</p><p><em>Poder-base: Detectar Mentiras (2ª).</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 500000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!zxMiLcgp2VlAvmVy"
+}

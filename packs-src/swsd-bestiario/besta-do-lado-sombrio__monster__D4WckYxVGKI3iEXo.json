@@ -1,0 +1,145 @@
+{
+  "name": "Besta do Lado Sombrio",
+  "type": "monster",
+  "_id": "D4WckYxVGKI3iEXo",
+  "img": "systems/olddragon2e/assets/monsters-concepts/besta-medio.webp",
+  "system": {
+    "odo_id": "besta-do-lado-sombrio",
+    "concept": "Besta",
+    "size": "medio",
+    "description": "<p><strong>Tipo (fonte):</strong> Aberração</p>\n<ul>\n  <li><p><strong>Dreno vital</strong>: o que ela drena (Foco/PV) <strong>cura a besta</strong>.</p></li>\n  <li><p><strong>Invisível aos cegos da Força</strong>: só quem é <strong>Sensível</strong> consegue vê-la.</p></li>\n  <li><p><strong>Terror dos Sensíveis</strong>: Sensíveis na presença dela fazem <strong>JPS</strong> ou ficam <strong>abalados</strong>.</p></li>\n  <li><p><strong>Nula a Força</strong>: anula poderes da Força na área.</p></li>\n</ul>\n<p><em>Base no Space Dragon: Vampiro Energético / Devorador de Mentes.</em></p>",
+    "flavor": "<p>Aberração que se alimenta da Força.</p>",
+    "habitat": "Ruínas e nexos do Lado Sombrio",
+    "alignment": "caotico",
+    "mv": "9",
+    "dv": "8",
+    "dv_bonus": "+3",
+    "hp": {
+      "value": 39,
+      "max": 39
+    },
+    "ca": "15",
+    "jp": "8",
+    "mo": "10",
+    "xp": "~925"
+  },
+  "prototypeToken": {
+    "name": "Besta do Lado Sombrio",
+    "displayName": 20,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "systems/olddragon2e/assets/monsters-concepts/besta-medio.webp",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "color": null,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "_id": "lYzaVqcqVFlFBKMB",
+      "name": "1 × Toque drenante +8 (1d8 e drena 1 de Foco ou PV)",
+      "type": "monster_attack",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "times": 1,
+        "ba": 8,
+        "damage_bonus": 0,
+        "weapon": false,
+        "description": "Toque drenante",
+        "damage_description": "1d8 e drena 1 de Foco ou PV",
+        "damage": "1d8"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swsdbuildtool",
+        "exportSource": null
+      },
+      "_key": "!actors.items!D4WckYxVGKI3iEXo.lYzaVqcqVFlFBKMB"
+    }
+  ],
+  "effects": [],
+  "folder": "Jw0Zn7CLO4V55mMi",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 800000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!D4WckYxVGKI3iEXo"
+}

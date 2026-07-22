@@ -1,0 +1,39 @@
+{
+  "folder": "4vey1yLAAENwdrjT",
+  "name": "Deflexão da Força",
+  "type": "spell",
+  "_id": "yc2No2nNtIpjWaka",
+  "img": "systems/olddragon2e/assets/icons/divine.svg",
+  "system": {
+    "odo_id": "deflexao-da-forca",
+    "school": "divine",
+    "circle": "3",
+    "arcane": "null",
+    "divine": "3",
+    "necromancer": "null",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "nenhuma",
+    "description": "<p><strong>Grandeza:</strong> 3ª</p><p>Você ergue um campo de vontade que <strong>repele projéteis e disparos de blaster</strong>, aparando-os no ar. É a base mecânica da deflexão com o sabre das <strong>Formas do Guardião</strong>: com a lâmina, os tiros voltam; sem ela, apenas se desviam. O muro que faz um Jedi caminhar contra um pelotão.</p><p><em>(adaptação — 3ª.)</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 900000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!yc2No2nNtIpjWaka"
+}

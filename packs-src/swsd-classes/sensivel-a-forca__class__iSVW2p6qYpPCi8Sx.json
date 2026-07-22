@@ -1,0 +1,124 @@
+{
+  "folder": "knlgzJBXuoA1ma6r",
+  "name": "Sensível à Força",
+  "type": "class",
+  "_id": "iSVW2p6qYpPCi8Sx",
+  "img": "systems/olddragon2e/assets/icons/level-up.svg",
+  "system": {
+    "flavor": "<p>Jedi, Sith, Nightsisters e místicos de fronteira. <em>Chassi: Mentálico.</em></p>",
+    "description": "<p>Quem nasce com a Força mais forte nas veias é um <strong>Sensível à Força</strong> — uma classe-base que reskina os Poderes Mentais do Space Dragon como <strong>Poderes da Força</strong>. Corpo um pouco mais resistente que o do místico puro (Vida d8), mas Base de Ataque e Jogadas de Proteção fracas: a Força não faz do corpo uma arma — quem quer isso escolhe a especialização <strong>Guardião</strong>.</p><p><strong>Atributo-chave: Sabedoria</strong> (Foco da Força, testes de poder e o Duelo). <em>Adaptação deliberada do cenário: no Space Dragon os poderes mentais correm pela Inteligência. A Força do Jedi é sensibilidade e disciplina, não erudição.</em></p><p><strong>Créditos iniciais:</strong> 1d6 × 5.000 CR. <strong>Restrição:</strong> Droides não podem ser Sensíveis à Força.</p><p><strong>Foco Extra por Grandeza:</strong> some ao Foco Diário o Foco Extra lido na Tabela 1-2 do Estrela Dracônica — só que, aqui, pelo valor de <strong>Sabedoria</strong>. A tabela dá Foco Extra para 1ª, 2ª e 3ª Grandezas.</p>",
+    "hp": 8,
+    "high_level_hp_bonus": 1,
+    "equipment_restrictions": {
+      "weapons": "Empunha o sabre de luz sem risco, além de armas simples.",
+      "armors": "Regra de Vestes. (O Guardião usa armaduras médias — ver a especialização.)",
+      "magic_items": "Apenas aparatos utilitários. Construir e operar qualquer aparato é o nicho do Técnico."
+    },
+    "restrictions": {
+      "alignments": [],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 0,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 2500
+      },
+      "3": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 5000
+      },
+      "4": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 8500
+      },
+      "5": {
+        "ba": 2,
+        "jp": 7,
+        "xp": 11500
+      },
+      "6": {
+        "ba": 2,
+        "jp": 7,
+        "xp": 23000
+      },
+      "7": {
+        "ba": 2,
+        "jp": 7,
+        "xp": 33000
+      },
+      "8": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 43000
+      },
+      "9": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 53000
+      },
+      "10": {
+        "ba": 3,
+        "jp": 10,
+        "xp": 106000
+      },
+      "11": {
+        "ba": 4,
+        "jp": 10,
+        "xp": 210000
+      },
+      "12": {
+        "ba": 4,
+        "jp": 10,
+        "xp": 320000
+      },
+      "13": {
+        "ba": 4,
+        "jp": 10,
+        "xp": 430000
+      },
+      "14": {
+        "ba": 5,
+        "jp": 13,
+        "xp": 540000
+      },
+      "15": {
+        "ba": 5,
+        "jp": 13,
+        "xp": 650000
+      }
+    },
+    "class_abilities": [
+      "Compendium.sw-spacedragon.swsd-classes.Item.ILrnJdDIgky1BV6e",
+      "Compendium.sw-spacedragon.swsd-classes.Item.ExwxoQTCL8E8ifLi",
+      "Compendium.sw-spacedragon.swsd-classes.Item.MTtM14YLzCCvvIXM",
+      "Compendium.sw-spacedragon.swsd-classes.Item.Mw7gbSX9FDqvz0S1",
+      "Compendium.sw-spacedragon.swsd-classes.Item.eSDYDgCUrPsLIFio",
+      "Compendium.sw-spacedragon.swsd-classes.Item.byGt7u9TnXcJWPNq"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!iSVW2p6qYpPCi8Sx"
+}

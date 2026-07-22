@@ -1,0 +1,39 @@
+{
+  "folder": "06SCPYBch1mjo07H",
+  "name": "Detectar a Força",
+  "type": "spell",
+  "_id": "xacwEQvYBBwXQQ9E",
+  "img": "systems/olddragon2e/assets/icons/arcane.svg",
+  "system": {
+    "odo_id": "detectar-a-forca",
+    "school": "arcane",
+    "circle": "1",
+    "arcane": "1",
+    "divine": "null",
+    "necromancer": "null",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "nenhuma",
+    "description": "<p><strong>Grandeza:</strong> 1ª</p><p>Você abre os sentidos e a Força responde: sente a assinatura viva de criaturas, o peso de lugares carregados, o brilho latente de um cristal ou artefato, e o rastro fresco de qualquer poder usado por perto há pouco. Não diz nomes nem intenções — apenas <em>que ali há Força, e quanto</em>. É o primeiro poder de todo aprendiz e o radar silencioso do grupo.</p><p><em>Poder-base: Detectar Poderes Mentais (1ª).</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!xacwEQvYBBwXQQ9E"
+}

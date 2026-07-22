@@ -1,0 +1,49 @@
+{
+  "folder": "pUXGEEgu2DB4vDSu",
+  "name": "Detonador Térmico",
+  "type": "weapon",
+  "_id": "DZfWBlP8JB7kSbDg",
+  "img": "systems/olddragon2e/assets/icons/ranged.svg",
+  "system": {
+    "odo_id": "detonador-termico",
+    "description": "<p>Pequena, Arremesso (9 m), <strong>Área</strong>.</p>",
+    "quantity": 1,
+    "cost": "400 CR",
+    "weight_in_load": 1,
+    "weight_in_grams": 0,
+    "magic_item": false,
+    "is_equipped": false,
+    "type": "ranged",
+    "damage_type": "none",
+    "damage": "3d6",
+    "bonus_damage": 0,
+    "bonus_ba": 0,
+    "bonus_ca": 0,
+    "shoot_range": 0,
+    "throw_range": 9,
+    "arrow": false,
+    "bolt": false,
+    "bolt_small": false,
+    "polearm": false,
+    "two_handed": false,
+    "versatile": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 900000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!DZfWBlP8JB7kSbDg"
+}

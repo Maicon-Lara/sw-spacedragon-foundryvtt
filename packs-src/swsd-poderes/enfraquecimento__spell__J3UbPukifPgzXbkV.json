@@ -1,0 +1,39 @@
+{
+  "folder": "lhf3leSPQSjfq3yK",
+  "name": "Enfraquecimento",
+  "type": "spell",
+  "_id": "J3UbPukifPgzXbkV",
+  "img": "systems/olddragon2e/assets/icons/necromancer.svg",
+  "system": {
+    "odo_id": "enfraquecimento",
+    "school": "necromancer",
+    "circle": "2",
+    "arcane": "null",
+    "divine": "null",
+    "necromancer": "2",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "JPS resiste",
+    "description": "<p><strong>Grandeza:</strong> 2ª</p><p>Você mina por dentro a <strong>força física e a resolução</strong> de um alvo, que definha e vacila (uma <strong>JPS</strong> resiste). Deixa o brutamontes fraco e o herói inseguro na hora exata do confronto.</p><p><em>Poder-base: Enfraquecimento (2ª).</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!J3UbPukifPgzXbkV"
+}

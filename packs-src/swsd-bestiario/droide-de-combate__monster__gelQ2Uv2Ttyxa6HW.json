@@ -1,0 +1,179 @@
+{
+  "name": "Droide de Combate",
+  "type": "monster",
+  "_id": "gelQ2Uv2Ttyxa6HW",
+  "img": "systems/olddragon2e/assets/monsters-concepts/constructo-medio.webp",
+  "system": {
+    "odo_id": "droide-de-combate",
+    "concept": "Constructo",
+    "size": "medio",
+    "description": "<p><strong>Tipo (fonte):</strong> Humanoide robótico</p>\n<ul>\n  <li><p><strong>Construto</strong>: imune a <strong>medo</strong> e <strong>veneno</strong>.</p></li>\n  <li><p><strong>Desativação</strong>: <strong>só testa Moral contra Desativação</strong> (habilidade do Técnico) — em qualquer outra situação não foge.</p></li>\n  <li><p><strong>Vulnerável a Íon</strong>: armas e granadas de íon o afetam em cheio.</p></li>\n</ul>\n<p><em>Base no Space Dragon: Autômato.</em></p>",
+    "flavor": "<p>Soldado sintético descartável.</p>",
+    "habitat": "Postos militares, naves de guerra, ruínas",
+    "alignment": "neutro",
+    "mv": "9",
+    "dv": "4",
+    "dv_bonus": "+1",
+    "hp": {
+      "value": 19,
+      "max": 19
+    },
+    "ca": "15",
+    "jp": "6",
+    "mo": "7",
+    "xp": "~125"
+  },
+  "prototypeToken": {
+    "name": "Droide de Combate",
+    "displayName": 20,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "systems/olddragon2e/assets/monsters-concepts/constructo-medio.webp",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "color": null,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "_id": "nVOAhUckQA1HDCLY",
+      "name": "1 × Blaster integrado +4 (1d8)",
+      "type": "monster_attack",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "times": 1,
+        "ba": 4,
+        "damage_bonus": 0,
+        "weapon": false,
+        "description": "Blaster integrado",
+        "damage_description": "1d8",
+        "damage": "1d8"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swsdbuildtool",
+        "exportSource": null
+      },
+      "_key": "!actors.items!gelQ2Uv2Ttyxa6HW.nVOAhUckQA1HDCLY"
+    },
+    {
+      "_id": "bl0IbIGm6EKOoDM8",
+      "name": "1 × Golpe +4 (1d6)",
+      "type": "monster_attack",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "times": 1,
+        "ba": 4,
+        "damage_bonus": 0,
+        "weapon": false,
+        "description": "Golpe",
+        "damage_description": "1d6",
+        "damage": "1d6"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swsdbuildtool",
+        "exportSource": null
+      },
+      "_key": "!actors.items!gelQ2Uv2Ttyxa6HW.bl0IbIGm6EKOoDM8"
+    }
+  ],
+  "effects": [],
+  "folder": "Jw0Zn7CLO4V55mMi",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!gelQ2Uv2Ttyxa6HW"
+}

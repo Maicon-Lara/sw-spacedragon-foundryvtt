@@ -1,0 +1,39 @@
+{
+  "folder": "lhf3leSPQSjfq3yK",
+  "name": "Perturbar Mente",
+  "type": "spell",
+  "_id": "OLcZr4IHQtHOmkRR",
+  "img": "systems/olddragon2e/assets/icons/necromancer.svg",
+  "system": {
+    "odo_id": "perturbar-mente",
+    "school": "necromancer",
+    "circle": "4",
+    "arcane": "null",
+    "divine": "null",
+    "necromancer": "4",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "nenhuma",
+    "description": "<p><strong>Grandeza:</strong> 4ª</p><p>Você embaralha os pensamentos do alvo e ele passa a <strong>agir de forma errática e imprevisível</strong>, tão capaz de atacar o próprio aliado quanto o inimigo. O caos injetado numa mente inteira.</p><p><em>Poder-base: Confundir Mente (4ª).</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 1000000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!OLcZr4IHQtHOmkRR"
+}

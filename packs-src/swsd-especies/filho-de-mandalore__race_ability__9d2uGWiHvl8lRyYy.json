@@ -1,0 +1,44 @@
+{
+  "folder": "4TJaHI9a2hFfJngF",
+  "name": "Filho de Mandalore",
+  "type": "race_ability",
+  "_id": "9d2uGWiHvl8lRyYy",
+  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "system": {
+    "description": "<p><strong>Mandaloriano não é uma espécie, é uma cultura</strong> — há Mandalorianos humanos, Twi'lek, Rodianos e até um raro Sensível à Força. Esta Origem é escolhida na criação do personagem, por cima da espécie e da classe, e está disponível a <strong>qualquer</strong> espécie e classe.</p><ul><li><strong>Criado na Armadura:</strong> usa a Lança-Vibro Mandaloriana, a Mochila de Propulsão (jetpack) e a armadura de clã <strong>sem penalidade</strong>, mesmo que a classe normalmente não permitisse.</li><li><strong>Sangue de Clã:</strong> +1 em testes de reação com Mandalorianos e caçadores que reconheçam sua herança.</li><li><strong>Mando'a:</strong> fala o idioma Mandaloriano além dos idiomas iniciais.</li></ul><p>A Origem é leve e <strong>não substitui habilidades de classe</strong>. É a porta de entrada para a <em>Senda Mandaloriana</em> — mas não é obrigatória, e um Filho de Mandalore pode nunca se converter formalmente.</p>",
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage": 0,
+    "bonus_damage_condition": "none",
+    "bonus_damage_condition_2": "none",
+    "rogue_talent": "none",
+    "rogue_talent_2": "none",
+    "daily_uses": 0,
+    "natural_armor": 0,
+    "load_modifier": 0,
+    "max_load_override": 0,
+    "armor_weight_modifier": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!9d2uGWiHvl8lRyYy"
+}

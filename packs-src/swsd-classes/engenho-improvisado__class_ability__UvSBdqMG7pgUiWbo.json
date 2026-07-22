@@ -1,0 +1,50 @@
+{
+  "folder": "3a81P6ZblhlJywz2",
+  "name": "Engenho Improvisado",
+  "type": "class_ability",
+  "_id": "UvSBdqMG7pgUiWbo",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p>Combina até <strong>3 aparatos diferentes</strong> num só engenho: <strong>1-3 em 1d6</strong> (regras de combinação de aparatos do Space Dragon). Prejuízo: <strong>30%</strong>.</p>",
+    "level": 6,
+    "level3": "",
+    "level6": "",
+    "level10": "",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!UvSBdqMG7pgUiWbo"
+}

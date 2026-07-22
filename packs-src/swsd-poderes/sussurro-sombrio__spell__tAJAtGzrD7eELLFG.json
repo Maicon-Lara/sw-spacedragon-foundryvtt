@@ -1,0 +1,39 @@
+{
+  "folder": "lhf3leSPQSjfq3yK",
+  "name": "Sussurro Sombrio",
+  "type": "spell",
+  "_id": "tAJAtGzrD7eELLFG",
+  "img": "systems/olddragon2e/assets/icons/necromancer.svg",
+  "system": {
+    "odo_id": "sussurro-sombrio",
+    "school": "necromancer",
+    "circle": "3",
+    "arcane": "null",
+    "divine": "null",
+    "necromancer": "3",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "nenhuma",
+    "description": "<p><strong>Grandeza:</strong> 3ª</p><p>Você planta na mente do alvo <strong>um pensamento ou impulso</strong> que ele toma por seu e passa a agir sobre ele. A dúvida semeada, a traição sugerida, o medo que ninguém plantou — só que plantou.</p><p><em>Poder-base: Induzir Pensamento (3ª).</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 800000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!tAJAtGzrD7eELLFG"
+}

@@ -1,0 +1,41 @@
+{
+  "folder": "ThFtVcCXoODtNSW8",
+  "name": "Rodiano",
+  "type": "race",
+  "_id": "KRQGqvSYHjiAC1QA",
+  "img": "systems/olddragon2e/assets/icons/alignment.svg",
+  "system": {
+    "flavor": "<p>Caçadores natos de Rodia, guiados por instinto e tradição.</p>",
+    "description": "<p>Para um Rodiano, a caça é cultura, esporte e religião. Os olhos multifacetados enxergam calor onde outros só veem escuro.</p><p><strong>Perguntas ao criar um Rodiano:</strong> O que (ou quem) seu Rodiano caça? A honra da caça ainda importa? Como reage ao ser o caçado?</p>",
+    "movement": 9,
+    "movement_fly": 0,
+    "movement_notes": "",
+    "infravision": 18,
+    "infravision_notes": "Visão térmica: só detecta seres vivos e fontes de calor.",
+    "alignment_tendency": "caotico",
+    "alignment_notes": "Tendem ao Caótico.",
+    "race_abilities": [
+      "Compendium.sw-spacedragon.swsd-especies.Item.Ulec6lDxcTY3gO3h",
+      "Compendium.sw-spacedragon.swsd-especies.Item.5nAfZ6RNgusKxpzo",
+      "Compendium.sw-spacedragon.swsd-especies.Item.9INtvAYVZLJ4Yq3O"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!KRQGqvSYHjiAC1QA"
+}

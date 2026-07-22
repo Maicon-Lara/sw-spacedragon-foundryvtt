@@ -1,0 +1,44 @@
+{
+  "folder": "A4B78kRnE8UbTNF5",
+  "name": "Molde Mutante",
+  "type": "race_ability",
+  "_id": "1YtC35rIW0VagXhR",
+  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "system": {
+    "description": "<p>Para \"quase-humanos\" exóticos não listados (Nautolanos, Cerianos, etc.), use o molde <strong>Mutante</strong> do Space Dragon: escolha <strong>um Aprimoramento</strong> e <strong>uma Degeneração</strong> na tabela T2-1 do SD e trate o resto como Humano. É o coringa para criar povos na hora.</p><p><strong>As nove espécies do compêndio não usam este molde</strong> — foram escritas do zero para Star Wars e não pagam Degeneração.</p>",
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage": 0,
+    "bonus_damage_condition": "none",
+    "bonus_damage_condition_2": "none",
+    "rogue_talent": "none",
+    "rogue_talent_2": "none",
+    "daily_uses": 0,
+    "natural_armor": 0,
+    "load_modifier": 0,
+    "max_load_override": 0,
+    "armor_weight_modifier": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!1YtC35rIW0VagXhR"
+}

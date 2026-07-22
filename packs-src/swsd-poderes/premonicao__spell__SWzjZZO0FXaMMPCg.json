@@ -1,0 +1,39 @@
+{
+  "folder": "4vey1yLAAENwdrjT",
+  "name": "Premonição",
+  "type": "spell",
+  "_id": "SWzjZZO0FXaMMPCg",
+  "img": "systems/olddragon2e/assets/icons/divine.svg",
+  "system": {
+    "odo_id": "premonicao",
+    "school": "divine",
+    "circle": "4",
+    "arcane": "null",
+    "divine": "4",
+    "necromancer": "null",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "nenhuma",
+    "description": "<p><strong>Grandeza:</strong> 4ª</p><p>Você abre uma fresta no fluxo do tempo e a Força <strong>sinaliza a sabedoria de um curso imediato</strong> — se aquela porta esconde uma cilada, se este acordo leva à ruína. Dá um sim/não ou uma imagem-relâmpago, não uma profecia detalhada (o <strong>Vidente</strong> do Consular aprofunda isto).</p><p><em>(adaptação — 4ª.)</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 1100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!SWzjZZO0FXaMMPCg"
+}

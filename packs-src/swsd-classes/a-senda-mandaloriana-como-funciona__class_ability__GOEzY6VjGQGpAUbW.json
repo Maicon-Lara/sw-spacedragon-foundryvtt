@@ -1,0 +1,50 @@
+{
+  "folder": "xZ8H6MGYjdeJr5NK",
+  "name": "A Senda Mandaloriana — como funciona",
+  "type": "class_ability",
+  "_id": "GOEzY6VjGQGpAUbW",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p>A Senda <strong>substitui a especialização normal</strong> da classe (esse é o custo principal, igual para todos) e o personagem passa a evoluir pela coluna <strong>XP Especial</strong>. Por cima disso, cada classe faz um sacrifício equivalente:</p><ul><li><strong>Veterano:</strong> <em>Desarmar e Subjugar</em> param de progredir; mantém <em>Ataques Múltiplos</em> e <em>Pilotar</em>.</li><li><strong>Operativo:</strong> o <em>Ataque Furtivo</em> para de progredir (o guerreiro de honra não apunhala pelas costas); em troca, o clã lhe ensina <strong>Rastrear</strong>.</li><li><strong>Técnico:</strong> perde o <em>Desconto Tecnológico</em>; mantém aparatos e feitos — o <strong>Armeiro</strong> de um clã é, em regra, um Técnico.</li><li><strong>Sensível à Força:</strong> seu Foco da Força é calculado como o de um Sensível de <strong>−1 nível</strong>; em troca, o clã lhe ensina <strong>uma Forma de Sabre</strong> (até a técnica do 6º nível).</li></ul><p><strong>Papéis (sabor, opcional):</strong> Guerreiro de Clã (tropa leal), Caçador Solitário (renegado sem lar) ou Portador da Herança (guardião de relíquias, como o Sabre Sombrio).</p>",
+    "level": 1,
+    "level3": "",
+    "level6": "",
+    "level10": "",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 800000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!GOEzY6VjGQGpAUbW"
+}

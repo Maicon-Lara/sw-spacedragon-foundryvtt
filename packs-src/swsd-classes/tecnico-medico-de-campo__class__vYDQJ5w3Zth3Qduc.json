@@ -1,0 +1,123 @@
+{
+  "folder": "TrJ2Ov50wKQaf6ov",
+  "name": "Técnico — Médico de Campo",
+  "type": "class",
+  "_id": "vYDQJ5w3Zth3Qduc",
+  "img": "systems/olddragon2e/assets/icons/level-up.svg",
+  "system": {
+    "flavor": "<p>O curandeiro. <em>Especialização de Técnico (ordeiro) — base: Pesquisador.</em></p>",
+    "description": "<p><em>\"Enquanto houver um batimento, há trabalho a fazer.\"</em></p><p>O Médico de Campo é o Pesquisador que voltou as lentes para dentro do corpo. Onde o Engenheiro constrói e o Slicer invade, ele <strong>remenda, cura e mantém vivo</strong>. Como todo Pesquisador, prende-se a uma disciplina rígida: <strong>só usa armas e dispositivos que ele mesmo construiu</strong>.</p><p><strong>Perde</strong> <em>Operar e Consertar Máquinas</em> e <em>Desativar Droides</em>; o Desconto Tecnológico dá lugar a um <strong>Desconto Tecnológico Aprimorado</strong>.</p><p><strong>Sua caixa de ferramentas (onde é perito):</strong></p><ul><li><em>Cura direta:</em> Injeção de Adrenalina · Pílula de Recuperação Rápida · Operação Cirúrgica Simples/Moderada/Complexa · Reanimar Cadáver.</li><li><em>Doença e veneno:</em> Diagnosticar Doença · Curar Doença · Identificar Veneno · Destilar Antídoto · Identificar Micro-organismo · Imunizar Paciente.</li><li><em>Suporte e aprimoramento:</em> Pílula de Aprimoramento · Aprimoramento Permanente · Fórmula de Controle Corporal · Respirador Subaquático.</li><li><em>Biônica:</em> Cirurgia Biônica · Membro Biônico · Órgão Biônico.</li><li><em>Preservação:</em> Hibernação Criogênica.</li></ul><p><em>Especialização escolhida no 1º nível (padrão OD2). Evolui pela coluna <strong>XP Especial</strong> da tabela. Variante: mesas que queiram preservar o espírito original do Space Dragon podem adiar a escolha para o 3º nível.</em></p>",
+    "hp": 8,
+    "high_level_hp_bonus": 1,
+    "equipment_restrictions": {
+      "weapons": "Armas leves e utilitárias de energia — e, por disciplina do Pesquisador, apenas as que ele mesmo construiu.",
+      "armors": "Apenas vestes leves.",
+      "magic_items": "Constrói e opera qualquer aparato — ofensivos, defensivos e utilitários."
+    },
+    "restrictions": {
+      "alignments": [
+        "ordeiro"
+      ],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 2000
+      },
+      "3": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 4000
+      },
+      "4": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 7000
+      },
+      "5": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 10000
+      },
+      "6": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 20000
+      },
+      "7": {
+        "ba": 5,
+        "jp": 9,
+        "xp": 30000
+      },
+      "8": {
+        "ba": 5,
+        "jp": 9,
+        "xp": 40000
+      },
+      "9": {
+        "ba": 5,
+        "jp": 9,
+        "xp": 50000
+      },
+      "10": {
+        "ba": 7,
+        "jp": 11,
+        "xp": 100000
+      },
+      "11": {
+        "ba": 7,
+        "jp": 11,
+        "xp": 200000
+      },
+      "12": {
+        "ba": 7,
+        "jp": 11,
+        "xp": 300000
+      },
+      "13": {
+        "ba": 9,
+        "jp": 13,
+        "xp": 400000
+      },
+      "14": {
+        "ba": 9,
+        "jp": 13,
+        "xp": 500000
+      },
+      "15": {
+        "ba": 9,
+        "jp": 13,
+        "xp": 600000
+      }
+    },
+    "class_abilities": [
+      "Compendium.sw-spacedragon.swsd-classes.Item.yn4uqXk2g09diLo7",
+      "Compendium.sw-spacedragon.swsd-classes.Item.0d39fP9jTRRpJuxF",
+      "Compendium.sw-spacedragon.swsd-classes.Item.E7MZRK82ikFZxwJh"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!vYDQJ5w3Zth3Qduc"
+}

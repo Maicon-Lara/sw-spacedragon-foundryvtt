@@ -1,0 +1,123 @@
+{
+  "folder": "6zInFMN2YAsqAN8M",
+  "name": "Técnico",
+  "type": "class",
+  "_id": "EMqxFRXgG6KeYZDS",
+  "img": "systems/olddragon2e/assets/icons/level-up.svg",
+  "system": {
+    "flavor": "<p>O gênio prático da galáxia. <em>Chassi: Cientista.</em></p>",
+    "description": "<p>Mecânicos de droides, médicos de campo, engenheiros e slicers que dobram a tecnologia à própria vontade. Onde o Jedi tem a Força, o Técnico tem a engenhoca: seus <strong>aparatos e feitos científicos</strong> são os \"itens mágicos\" deste universo, e ele os constrói com as próprias mãos. Numa tripulação, é quem mantém a nave voando, o droide obediente e o grupo respirando.</p><p><strong>Créditos iniciais:</strong> 1d8 × 5.000 CR.</p><p><strong>Aparatos tecnológicos</strong> são os \"itens mágicos\" desta galáxia. <em>Ofensivos</em> (armas especiais, bombas, redes de choque): só o Técnico — e, por exceção, o Caçador de Recompensas. <em>Defensivos</em> (escudos pessoais, cintos, braceletes): Técnico e Veterano. <em>Utilitários</em> (visores, medpacs, jetpacks, scanners): todos.</p>",
+    "hp": 8,
+    "high_level_hp_bonus": 1,
+    "equipment_restrictions": {
+      "weapons": "Armas leves e utilitárias, de energia. Jamais projéteis ou armas marciais.",
+      "armors": "Apenas vestes leves.",
+      "magic_items": "Constrói e opera qualquer aparato — ofensivos, defensivos e utilitários."
+    },
+    "restrictions": {
+      "alignments": [],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 1500
+      },
+      "3": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 3000
+      },
+      "4": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 5500
+      },
+      "5": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 8500
+      },
+      "6": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 17000
+      },
+      "7": {
+        "ba": 5,
+        "jp": 9,
+        "xp": 27000
+      },
+      "8": {
+        "ba": 5,
+        "jp": 9,
+        "xp": 37000
+      },
+      "9": {
+        "ba": 5,
+        "jp": 9,
+        "xp": 47000
+      },
+      "10": {
+        "ba": 7,
+        "jp": 11,
+        "xp": 94000
+      },
+      "11": {
+        "ba": 7,
+        "jp": 11,
+        "xp": 190000
+      },
+      "12": {
+        "ba": 7,
+        "jp": 11,
+        "xp": 280000
+      },
+      "13": {
+        "ba": 9,
+        "jp": 13,
+        "xp": 370000
+      },
+      "14": {
+        "ba": 9,
+        "jp": 13,
+        "xp": 460000
+      },
+      "15": {
+        "ba": 9,
+        "jp": 13,
+        "xp": 550000
+      }
+    },
+    "class_abilities": [
+      "Compendium.sw-spacedragon.swsd-classes.Item.yO4JahxpEO59tMxA",
+      "Compendium.sw-spacedragon.swsd-classes.Item.dc3b6jLpkSxoB0VI",
+      "Compendium.sw-spacedragon.swsd-classes.Item.vrbcAALzKufVKg9j",
+      "Compendium.sw-spacedragon.swsd-classes.Item.2iUjsBN7F51dPf8S",
+      "Compendium.sw-spacedragon.swsd-classes.Item.OedojkP8Jxd2tF0u"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!EMqxFRXgG6KeYZDS"
+}

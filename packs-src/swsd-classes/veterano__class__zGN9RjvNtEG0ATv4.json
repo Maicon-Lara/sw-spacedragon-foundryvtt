@@ -1,0 +1,122 @@
+{
+  "folder": "uOaAnuDAppEsehHI",
+  "name": "Veterano",
+  "type": "class",
+  "_id": "zGN9RjvNtEG0ATv4",
+  "img": "systems/olddragon2e/assets/icons/level-up.svg",
+  "system": {
+    "flavor": "<p>O herói de ação e o piloto da galáxia. <em>Chassi: Cosmonauta.</em></p>",
+    "description": "<p>Soldados, pistoleiros, caçadores, capitães e diplomatas de gatilho rápido. É a classe marcial do cenário: não há \"Guerreiro\" separado. <strong>Cassian, Boba Fett, Leia e um piloto de caça</strong> são todos Veteranos de especializações diferentes.</p><p><strong>Créditos iniciais:</strong> 2d10 × 5.000 CR.</p><p><strong>Aparatos tecnológicos</strong> são os \"itens mágicos\" desta galáxia. <em>Ofensivos</em> (armas especiais, bombas, redes de choque): só o Técnico — e, por exceção, o Caçador de Recompensas. <em>Defensivos</em> (escudos pessoais, cintos, braceletes): Técnico e Veterano. <em>Utilitários</em> (visores, medpacs, jetpacks, scanners): todos.</p>",
+    "hp": 10,
+    "high_level_hp_bonus": 1,
+    "equipment_restrictions": {
+      "weapons": "Proficiente no uso de qualquer tipo de arma.",
+      "armors": "Pode usar qualquer tipo de vestes e escudos.",
+      "magic_items": "Aparatos defensivos e utilitários. Não opera aparatos ofensivos."
+    },
+    "restrictions": {
+      "alignments": [],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 2000
+      },
+      "3": {
+        "ba": 3,
+        "jp": 6,
+        "xp": 4000
+      },
+      "4": {
+        "ba": 4,
+        "jp": 6,
+        "xp": 7000
+      },
+      "5": {
+        "ba": 5,
+        "jp": 8,
+        "xp": 10000
+      },
+      "6": {
+        "ba": 6,
+        "jp": 8,
+        "xp": 20000
+      },
+      "7": {
+        "ba": 7,
+        "jp": 10,
+        "xp": 30000
+      },
+      "8": {
+        "ba": 8,
+        "jp": 10,
+        "xp": 40000
+      },
+      "9": {
+        "ba": 9,
+        "jp": 11,
+        "xp": 50000
+      },
+      "10": {
+        "ba": 10,
+        "jp": 11,
+        "xp": 100000
+      },
+      "11": {
+        "ba": 11,
+        "jp": 13,
+        "xp": 200000
+      },
+      "12": {
+        "ba": 12,
+        "jp": 13,
+        "xp": 300000
+      },
+      "13": {
+        "ba": 13,
+        "jp": 14,
+        "xp": 400000
+      },
+      "14": {
+        "ba": 14,
+        "jp": 14,
+        "xp": 500000
+      },
+      "15": {
+        "ba": 15,
+        "jp": 16,
+        "xp": 600000
+      }
+    },
+    "class_abilities": [
+      "Compendium.sw-spacedragon.swsd-classes.Item.QFPQzP9liPyewiKu",
+      "Compendium.sw-spacedragon.swsd-classes.Item.9634BG0bJW8AESYi",
+      "Compendium.sw-spacedragon.swsd-classes.Item.f8hisFoOnx4vd66b",
+      "Compendium.sw-spacedragon.swsd-classes.Item.X1DhIOZbP2u7BpIY"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!zGN9RjvNtEG0ATv4"
+}

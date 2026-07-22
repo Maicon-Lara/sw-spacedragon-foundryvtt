@@ -1,0 +1,81 @@
+{
+  "folder": "tnTdEFRuPBitOkPw",
+  "name": "Ofícios do Submundo",
+  "type": "class_ability",
+  "_id": "l7K4zUu9HdTtCmMR",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p>Ganha <strong>três talentos de Operativo</strong> à escolha, com a chance de um Operativo de <strong>metade</strong> do seu nível — nível mínimo 1 (nunca cai abaixo disso).</p>",
+    "level": 1,
+    "level3": "",
+    "level6": "",
+    "level10": "",
+    "rogue_talents": [
+      {
+        "key": "furtividade",
+        "name": "Furtividade",
+        "description": "Esconde-se, move-se em silêncio e passa por vãos estreitos; com novo teste, anda furtivo em movimento normal — mas atacar (mesmo errando) o torna visível."
+      },
+      {
+        "key": "sabotagem",
+        "name": "Sabotagem",
+        "description": "Destranca portas e provoca defeitos em máquinas. Exige os instrumentos consigo e vale uma vez por máquina — se falhar, só tenta de novo naquela máquina ao subir de nível. O tempo cai com a perícia: 2 pts → até 1d6 turnos; 3 pts → 1d4; 4 pts → 1d3; 5 pts → 1 turno."
+      },
+      {
+        "key": "escalar",
+        "name": "Escalar",
+        "description": "Sobe qualquer superfície íngreme (uma jogada por escalada, deslocando seu movimento por rodada). Em falha, cai da metade da altura total e sofre 1d6 de dano a cada 3 metros de queda."
+      },
+      {
+        "key": "rastrear",
+        "name": "Rastrear",
+        "description": "Localiza e segue alvos por rastros, pistas, registros ou testemunhas."
+      },
+      {
+        "key": "disfarce",
+        "name": "Disfarce",
+        "description": "Passa-se por outra pessoa (uniformes, credenciais falsas, interpretação). Falha = identidade descoberta; −1 por cada 3 níveis do observador acima do 5º. Substitui Furtar."
+      },
+      {
+        "key": "vigilancia",
+        "name": "Vigilância",
+        "description": "Observa discretamente alvos e rotinas, identificando padrões, rotas e pontos fracos."
+      }
+    ],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!l7K4zUu9HdTtCmMR"
+}

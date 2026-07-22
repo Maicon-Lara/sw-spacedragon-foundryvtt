@@ -1,0 +1,122 @@
+{
+  "folder": "5iDBnUxkdBKABJXn",
+  "name": "Operativo",
+  "type": "class",
+  "_id": "cEDJA6GD7xVI9CeB",
+  "img": "systems/olddragon2e/assets/icons/level-up.svg",
+  "system": {
+    "flavor": "<p>O trapaceiro do submundo. <em>Chassi: Gatuno.</em></p>",
+    "description": "<p>Contrabandistas, ladrões, espiões, piratas e assassinos onde a lei não chega. <strong>Han Solo é um Operativo.</strong></p><p><strong>Créditos iniciais:</strong> 2d6 × 5.000 CR.</p>",
+    "hp": 6,
+    "high_level_hp_bonus": 1,
+    "equipment_restrictions": {
+      "weapons": "Apenas armas que possam ser empunhadas com uma das mãos.",
+      "armors": "Apenas vestes leves ou médias, sem escudos. Usar outras vestes ou escudo impede o uso dos talentos de classe.",
+      "magic_items": "Apenas aparatos utilitários."
+    },
+    "restrictions": {
+      "alignments": [],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 1000
+      },
+      "3": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 2000
+      },
+      "4": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 4000
+      },
+      "5": {
+        "ba": 3,
+        "jp": 8,
+        "xp": 7000
+      },
+      "6": {
+        "ba": 3,
+        "jp": 8,
+        "xp": 14000
+      },
+      "7": {
+        "ba": 4,
+        "jp": 8,
+        "xp": 24000
+      },
+      "8": {
+        "ba": 4,
+        "jp": 8,
+        "xp": 34000
+      },
+      "9": {
+        "ba": 5,
+        "jp": 11,
+        "xp": 44000
+      },
+      "10": {
+        "ba": 5,
+        "jp": 11,
+        "xp": 88000
+      },
+      "11": {
+        "ba": 6,
+        "jp": 11,
+        "xp": 180000
+      },
+      "12": {
+        "ba": 6,
+        "jp": 11,
+        "xp": 260000
+      },
+      "13": {
+        "ba": 7,
+        "jp": 14,
+        "xp": 340000
+      },
+      "14": {
+        "ba": 7,
+        "jp": 14,
+        "xp": 420000
+      },
+      "15": {
+        "ba": 8,
+        "jp": 14,
+        "xp": 500000
+      }
+    },
+    "class_abilities": [
+      "Compendium.sw-spacedragon.swsd-classes.Item.1Lh6fWG2czFSPQ1R",
+      "Compendium.sw-spacedragon.swsd-classes.Item.eM30qJPbGMC1SvXA",
+      "Compendium.sw-spacedragon.swsd-classes.Item.KLgBEd8lpcKHDZ7X",
+      "Compendium.sw-spacedragon.swsd-classes.Item.zUw8l83puLLzF2QR"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!cEDJA6GD7xVI9CeB"
+}

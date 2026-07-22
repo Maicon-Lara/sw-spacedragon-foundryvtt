@@ -1,0 +1,180 @@
+{
+  "name": "Dianoga",
+  "type": "monster",
+  "_id": "rCkHHWdcNZHEWjBB",
+  "img": "systems/olddragon2e/assets/monsters-concepts/besta-grande.webp",
+  "system": {
+    "odo_id": "dianoga",
+    "concept": "Besta",
+    "size": "grande",
+    "description": "<p><strong>Tipo (fonte):</strong> Aberração</p>\n<ul>\n  <li><p><strong>Olho em periscópio</strong>: enxerga a superfície sem se expor.</p></li>\n  <li><p><strong>Puxar para o fundo</strong>: puxa a presa agarrada para debaixo d’água (<strong>JPD</strong> ou submerso).</p></li>\n</ul>\n<p><em>Base no Space Dragon: Tentaculoide / Crocossauro.</em></p>",
+    "flavor": "<p>Besta tentacular do lixo e do esgoto.</p>",
+    "habitat": "Esgotos, compactadores de lixo, cisternas",
+    "alignment": "neutro",
+    "mv": "9",
+    "mvn": "9",
+    "dv": "7",
+    "dv_bonus": "+4",
+    "hp": {
+      "value": 35,
+      "max": 35
+    },
+    "ca": "14",
+    "jp": "8",
+    "mo": "9",
+    "xp": "~270"
+  },
+  "prototypeToken": {
+    "name": "Dianoga",
+    "displayName": 20,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "systems/olddragon2e/assets/monsters-concepts/besta-grande.webp",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "color": null,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "_id": "nOBhM6I9ZFUahNM5",
+      "name": "4 × Tentáculos +7 (1d8 e agarra)",
+      "type": "monster_attack",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "times": 4,
+        "ba": 7,
+        "damage_bonus": 0,
+        "weapon": false,
+        "description": "Tentáculos",
+        "damage_description": "1d8 e agarra",
+        "damage": "1d8"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swsdbuildtool",
+        "exportSource": null
+      },
+      "_key": "!actors.items!rCkHHWdcNZHEWjBB.nOBhM6I9ZFUahNM5"
+    },
+    {
+      "_id": "gSxJ0HFSeurccWKM",
+      "name": "1 × Mordida +7 (1d10)",
+      "type": "monster_attack",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "times": 1,
+        "ba": 7,
+        "damage_bonus": 0,
+        "weapon": false,
+        "description": "Mordida",
+        "damage_description": "1d10",
+        "damage": "1d10"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swsdbuildtool",
+        "exportSource": null
+      },
+      "_key": "!actors.items!rCkHHWdcNZHEWjBB.gSxJ0HFSeurccWKM"
+    }
+  ],
+  "effects": [],
+  "folder": "Jw0Zn7CLO4V55mMi",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!rCkHHWdcNZHEWjBB"
+}

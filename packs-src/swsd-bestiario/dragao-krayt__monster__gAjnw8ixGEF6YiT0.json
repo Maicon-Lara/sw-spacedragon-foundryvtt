@@ -1,0 +1,213 @@
+{
+  "name": "Dragão Krayt",
+  "type": "monster",
+  "_id": "gAjnw8ixGEF6YiT0",
+  "img": "systems/olddragon2e/assets/monsters-concepts/dragao-imenso.webp",
+  "system": {
+    "odo_id": "dragao-krayt",
+    "concept": "Dragão",
+    "size": "imenso",
+    "description": "<p><strong>Tipo (fonte):</strong> Dragão</p>\n<ul>\n  <li><p><strong>Rugido</strong>: quem ouve faz <strong>JPS</strong> ou fica <strong>abalado</strong>.</p></li>\n  <li><p><strong>Engolir</strong>: num <strong>acerto crítico</strong>, engole uma criatura de tamanho <strong>Médio</strong>.</p></li>\n</ul>\n<p><em>Base no Space Dragon: Dragão Terraniano Adulto.</em></p>",
+    "flavor": "<p>O terror das dunas.</p>",
+    "habitat": "Dunas e cânions de mundos desérticos",
+    "alignment": "caotico",
+    "mv": "12",
+    "dv": "14",
+    "dv_bonus": "+5",
+    "hp": {
+      "value": 68,
+      "max": 68
+    },
+    "ca": "17",
+    "jp": "15",
+    "mo": "12",
+    "xp": "~1.525"
+  },
+  "prototypeToken": {
+    "name": "Dragão Krayt",
+    "displayName": 20,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "systems/olddragon2e/assets/monsters-concepts/dragao-imenso.webp",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "color": null,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "_id": "53sL9CKfEWpGTfO0",
+      "name": "1 × Mordida +14 (3d6)",
+      "type": "monster_attack",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "times": 1,
+        "ba": 14,
+        "damage_bonus": 0,
+        "weapon": false,
+        "description": "Mordida",
+        "damage_description": "3d6",
+        "damage": "3d6"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swsdbuildtool",
+        "exportSource": null
+      },
+      "_key": "!actors.items!gAjnw8ixGEF6YiT0.53sL9CKfEWpGTfO0"
+    },
+    {
+      "_id": "tVGCDAClqAcelin3",
+      "name": "2 × Garras +14 (1d10)",
+      "type": "monster_attack",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "times": 2,
+        "ba": 14,
+        "damage_bonus": 0,
+        "weapon": false,
+        "description": "Garras",
+        "damage_description": "1d10",
+        "damage": "1d10"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swsdbuildtool",
+        "exportSource": null
+      },
+      "_key": "!actors.items!gAjnw8ixGEF6YiT0.tVGCDAClqAcelin3"
+    },
+    {
+      "_id": "do1pYDxAl1bn2G41",
+      "name": "1 × Cauda +14 (2d8 e derruba)",
+      "type": "monster_attack",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "times": 1,
+        "ba": 14,
+        "damage_bonus": 0,
+        "weapon": false,
+        "description": "Cauda",
+        "damage_description": "2d8 e derruba",
+        "damage": "2d8"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swsdbuildtool",
+        "exportSource": null
+      },
+      "_key": "!actors.items!gAjnw8ixGEF6YiT0.do1pYDxAl1bn2G41"
+    }
+  ],
+  "effects": [],
+  "folder": "Jw0Zn7CLO4V55mMi",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!gAjnw8ixGEF6YiT0"
+}

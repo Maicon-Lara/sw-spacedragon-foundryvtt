@@ -1,0 +1,39 @@
+{
+  "folder": "lhf3leSPQSjfq3yK",
+  "name": "Toque Sombrio",
+  "type": "spell",
+  "_id": "ilcOWL2Rku28eDYa",
+  "img": "systems/olddragon2e/assets/icons/necromancer.svg",
+  "system": {
+    "odo_id": "toque-sombrio",
+    "school": "necromancer",
+    "circle": "1",
+    "arcane": "null",
+    "divine": "null",
+    "necromancer": "1",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "toque",
+    "duration": "",
+    "jp": "JPC",
+    "description": "<p><strong>Grandeza:</strong> 1ª</p><p>Você toca a vítima e verte podridão pela pele: <strong>1d4</strong> de dano e, se ela falhar numa <strong>JPC</strong>, <strong>drena 1 ponto de vitalidade</strong>. O beijo frio do Lado Sombrio, que fere e enfraquece de uma vez.</p><p><em>(adaptação — 1ª.)</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ilcOWL2Rku28eDYa"
+}

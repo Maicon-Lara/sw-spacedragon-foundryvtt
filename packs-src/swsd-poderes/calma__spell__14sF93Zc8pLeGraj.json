@@ -1,0 +1,39 @@
+{
+  "folder": "4vey1yLAAENwdrjT",
+  "name": "Calma",
+  "type": "spell",
+  "_id": "14sF93Zc8pLeGraj",
+  "img": "systems/olddragon2e/assets/icons/divine.svg",
+  "system": {
+    "odo_id": "calma",
+    "school": "divine",
+    "circle": "1",
+    "arcane": "null",
+    "divine": "1",
+    "necromancer": "null",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "o resto da cena",
+    "jp": "nenhuma",
+    "description": "<p><strong>Grandeza:</strong> 1ª</p><p>Você toca a emoção de um aliado e <strong>dissipa o medo e o pânico</strong>, firmando-o contra novo terror pelo resto da cena. A voz baixa que faz o soldado tremendo levantar a arma de novo.</p><p><em>Poder-base: Ajustar Emoções (1ª).</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!14sF93Zc8pLeGraj"
+}

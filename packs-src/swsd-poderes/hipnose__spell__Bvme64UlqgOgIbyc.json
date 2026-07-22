@@ -1,0 +1,39 @@
+{
+  "folder": "lhf3leSPQSjfq3yK",
+  "name": "Hipnose",
+  "type": "spell",
+  "_id": "Bvme64UlqgOgIbyc",
+  "img": "systems/olddragon2e/assets/icons/necromancer.svg",
+  "system": {
+    "odo_id": "hipnose",
+    "school": "necromancer",
+    "circle": "3",
+    "arcane": "null",
+    "divine": "null",
+    "necromancer": "3",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "JPS nega",
+    "description": "<p><strong>Grandeza:</strong> 3ª</p><p>Você captura a atenção de um alvo e o deixa <strong>dócil e sugestionável</strong> (uma <strong>JPS</strong> nega), pronto a ouvir e obedecer ordens brandas. O olhar que prende antes de a vontade quebrar.</p><p><em>Poder-base: Hipnose (3ª).</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 900000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Bvme64UlqgOgIbyc"
+}

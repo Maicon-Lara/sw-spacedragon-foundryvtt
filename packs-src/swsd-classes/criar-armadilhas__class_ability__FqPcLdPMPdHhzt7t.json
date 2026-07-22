@@ -1,0 +1,50 @@
+{
+  "folder": "MUhBVJTAHfUC55UA",
+  "name": "Criar Armadilhas",
+  "type": "class_ability",
+  "_id": "FqPcLdPMPdHhzt7t",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p>Monta armadilhas com os equipamentos que sabota. <strong>Desarmar</strong> uma armadilha criada por ele é uma jogada de Sabotagem com chance de <strong>1d6 menos os pontos que o Sabotador tem no talento Sabotagem</strong> (mínimo de 1 em 1d6): quanto melhor o Sabotador, mais difícil desfazer sua obra.</p>",
+    "level": 6,
+    "level3": "",
+    "level6": "",
+    "level10": "",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!FqPcLdPMPdHhzt7t"
+}

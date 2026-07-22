@@ -1,0 +1,39 @@
+{
+  "folder": "4vey1yLAAENwdrjT",
+  "name": "Cura de Aflições",
+  "type": "spell",
+  "_id": "3xjunkCjF0IX444g",
+  "img": "systems/olddragon2e/assets/icons/divine.svg",
+  "system": {
+    "odo_id": "cura-de-aflicoes",
+    "school": "divine",
+    "circle": "3",
+    "arcane": "null",
+    "divine": "3",
+    "necromancer": "null",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "toque",
+    "duration": "instantâneo",
+    "jp": "nenhuma",
+    "description": "<p><strong>Grandeza:</strong> 3ª</p><p>Você entra na mente ferida de um aliado e <strong>acalma o espírito quebrado</strong>, estabilizando quem foi despedaçado por tortura, terror ou um poder da Sombra. <strong>Toque · instantâneo, sem dano.</strong></p><p>Encerra na hora <strong>medo, pânico, terror, confusão e atordoamento</strong>, e <strong>cancela um efeito mental ou da Força em curso sobre o alvo, de até 3ª Grandeza</strong> (poderes de Grandeza maior exigem <em>Dissipar a Sombra</em>). Não cura pontos de vida — isso é <em>Cura pela Força</em>. Para insanidade permanente ou trauma enraizado, use <em>Curar Insanidade</em> (8ª) do v1.0.</p><p><em>(adaptação do cenário — não use o poder-base do v1.0.)</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!3xjunkCjF0IX444g"
+}

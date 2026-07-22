@@ -1,0 +1,39 @@
+{
+  "folder": "06SCPYBch1mjo07H",
+  "name": "Olho da Força",
+  "type": "spell",
+  "_id": "spdKFbUDB4lCNubU",
+  "img": "systems/olddragon2e/assets/icons/arcane.svg",
+  "system": {
+    "odo_id": "olho-da-forca",
+    "school": "arcane",
+    "circle": "4",
+    "arcane": "4",
+    "divine": "null",
+    "necromancer": "null",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "nenhuma",
+    "description": "<p><strong>Grandeza:</strong> 4ª</p><p>Você projeta um <strong>sensor invisível</strong> que se desprende de você e percorre o ambiente à distância, transmitindo de volta o que \"vê\" e \"ouve\". Um olho espião feito de pura percepção, ideal para vasculhar o corredor seguinte, contar guardas ou espiar uma reunião sem pôr um pé na sala.</p><p><em>(adaptação — 4ª.)</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 1200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!spdKFbUDB4lCNubU"
+}

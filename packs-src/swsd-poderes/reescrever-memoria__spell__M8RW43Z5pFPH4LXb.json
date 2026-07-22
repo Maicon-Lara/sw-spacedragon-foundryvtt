@@ -1,0 +1,39 @@
+{
+  "folder": "lhf3leSPQSjfq3yK",
+  "name": "Reescrever Memória",
+  "type": "spell",
+  "_id": "M8RW43Z5pFPH4LXb",
+  "img": "systems/olddragon2e/assets/icons/necromancer.svg",
+  "system": {
+    "odo_id": "reescrever-memoria",
+    "school": "necromancer",
+    "circle": "4",
+    "arcane": "null",
+    "divine": "null",
+    "necromancer": "4",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "JPS resiste",
+    "description": "<p><strong>Grandeza:</strong> 4ª</p><p>Você <strong>altera um elemento da memória</strong> do alvo (uma <strong>JPS</strong> resiste): apaga o que ele viu, troca um rosto, some com uma conversa. O crime perfeito do Lado Sombrio — a testemunha que jura nunca ter visto nada.</p><p><em>Poder-base: Alterar Memória (4ª).</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 1100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!M8RW43Z5pFPH4LXb"
+}

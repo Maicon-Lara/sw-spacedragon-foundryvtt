@@ -1,0 +1,39 @@
+{
+  "folder": "lhf3leSPQSjfq3yK",
+  "name": "Choque da Força",
+  "type": "spell",
+  "_id": "3j4fukZ6Rq0BDBoF",
+  "img": "systems/olddragon2e/assets/icons/necromancer.svg",
+  "system": {
+    "odo_id": "choque-da-forca",
+    "school": "necromancer",
+    "circle": "1",
+    "arcane": "null",
+    "divine": "null",
+    "necromancer": "1",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "nenhuma",
+    "description": "<p><strong>Grandeza:</strong> 1ª</p><p>Você concentra a Força num raio breve e o descarrega no alvo, causando <strong>1d6</strong> de dano (<strong>+2 por Foco extra gasto, até +10</strong>), <strong>sem direito a JPS</strong>. É o \"Force lightning\" menor, o primeiro fio de eletricidade da Sombra e o gatilho dos <strong>Relâmpagos</strong> que virão.</p><p><em>Poder-base: Disparo Mental (1ª).</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!3j4fukZ6Rq0BDBoF"
+}

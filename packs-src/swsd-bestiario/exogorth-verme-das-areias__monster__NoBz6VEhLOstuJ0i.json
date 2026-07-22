@@ -1,0 +1,145 @@
+{
+  "name": "Exogorth (Verme das Areias)",
+  "type": "monster",
+  "_id": "NoBz6VEhLOstuJ0i",
+  "img": "systems/olddragon2e/assets/monsters-concepts/besta-colossal.webp",
+  "system": {
+    "odo_id": "exogorth-verme-das-areias",
+    "concept": "Besta",
+    "size": "colossal",
+    "description": "<p><strong>Tipo (fonte):</strong> Besta</p>\n<ul>\n  <li><p><strong>Engolir</strong>: engole criatura <strong>Grande</strong> em acerto crítico.</p></li>\n  <li><p><strong>Interior corrosivo</strong>: dentro dele, <strong>dano contínuo por rodada</strong>.</p></li>\n  <li><p><strong>Caverna viva</strong>: corpo tão vasto que abriga uma “caverna” — cabe uma nave.</p></li>\n</ul>\n<p><em>Base no Space Dragon: Verme Gigante.</em></p>",
+    "flavor": "<p>O colosso que engole naves.</p>",
+    "habitat": "Crateras de asteroides, dunas colossais",
+    "alignment": "neutro",
+    "mv": "6",
+    "mvo": "6",
+    "dv": "20",
+    "hp": {
+      "value": 90,
+      "max": 90
+    },
+    "ca": "15",
+    "jp": "15",
+    "mo": "11",
+    "xp": "~4.825"
+  },
+  "prototypeToken": {
+    "name": "Exogorth (Verme das Areias)",
+    "displayName": 20,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "systems/olddragon2e/assets/monsters-concepts/besta-colossal.webp",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "color": null,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "_id": "81v6tJXCHg8uC59I",
+      "name": "1 × Mordida +20 (4d6)",
+      "type": "monster_attack",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "times": 1,
+        "ba": 20,
+        "damage_bonus": 0,
+        "weapon": false,
+        "description": "Mordida",
+        "damage_description": "4d6",
+        "damage": "4d6"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swsdbuildtool",
+        "exportSource": null
+      },
+      "_key": "!actors.items!NoBz6VEhLOstuJ0i.81v6tJXCHg8uC59I"
+    }
+  ],
+  "effects": [],
+  "folder": "Jw0Zn7CLO4V55mMi",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 500000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!NoBz6VEhLOstuJ0i"
+}

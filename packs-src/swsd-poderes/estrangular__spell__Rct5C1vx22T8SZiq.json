@@ -1,0 +1,39 @@
+{
+  "folder": "lhf3leSPQSjfq3yK",
+  "name": "Estrangular",
+  "type": "spell",
+  "_id": "Rct5C1vx22T8SZiq",
+  "img": "systems/olddragon2e/assets/icons/necromancer.svg",
+  "system": {
+    "odo_id": "estrangular",
+    "school": "necromancer",
+    "circle": "3",
+    "arcane": "null",
+    "divine": "null",
+    "necromancer": "3",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "Visual",
+    "duration": "enquanto você se concentrar, até 1 rodada por nível",
+    "jp": "JPS",
+    "description": "<p><strong>Grandeza:</strong> 3ª</p><p>A garra invisível fecha na garganta à distância: o alvo é <strong>erguido do chão, imobilizado e sufocado</strong> enquanto você mantém o punho cerrado.</p><p>Uma <strong>JPS</strong> inicial resiste; falhando, o alvo fica <strong>imobilizado</strong> (não fala, não age, não conjura) e sofre <strong>1d6 de dano por rodada</strong>, sem nova jogada — só quebrar sua concentração (dano, <em>Dissipar a Sombra</em>, um Duelo da Força vencido) o solta. Afeta um alvo com <strong>DV até o seu nível</strong>. \"Acho sua falta de fé perturbadora\" — a punição predileta do senhor Sith.</p><p><em>(adaptação do cenário — não use o poder-base do v1.0.)</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Rct5C1vx22T8SZiq"
+}

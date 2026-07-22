@@ -1,0 +1,90 @@
+{
+  "id": "sw-spacedragon",
+  "title": "Star Wars — Space Dragon (OD2)",
+  "description": "Módulo de conteúdo da adaptação de Star Wars para Old Dragon 2 com o suplemento sci-fi Estrela Dracônica / Space Dragon. Espécies, classes e material de cenário. Obra de fã, não oficial e sem fins lucrativos.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "authors": [
+    {
+      "name": "Maicon Lara"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "olddragon2e",
+        "type": "system",
+        "manifest": "https://github.com/olddragoneditora/olddragon2e-foundryvtt/releases/latest/download/olddragon2e.json",
+        "compatibility": {
+          "minimum": "2.0.0",
+          "verified": "2.4.0"
+        }
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "swsd-especies",
+      "label": "Star Wars: Espécies",
+      "path": "packs/swsd-especies",
+      "type": "Item",
+      "system": "olddragon2e"
+    },
+    {
+      "name": "swsd-classes",
+      "label": "Star Wars: Classes",
+      "path": "packs/swsd-classes",
+      "type": "Item",
+      "system": "olddragon2e"
+    },
+    {
+      "name": "swsd-equipamentos",
+      "label": "Star Wars: Equipamentos",
+      "path": "packs/swsd-equipamentos",
+      "type": "Item",
+      "system": "olddragon2e"
+    },
+    {
+      "name": "swsd-poderes",
+      "label": "Star Wars: Poderes da Força",
+      "path": "packs/swsd-poderes",
+      "type": "Item",
+      "system": "olddragon2e"
+    },
+    {
+      "name": "swsd-bestiario",
+      "label": "Star Wars: Bestiário",
+      "path": "packs/swsd-bestiario",
+      "type": "Actor",
+      "system": "olddragon2e"
+    },
+    {
+      "name": "swsd-journal",
+      "label": "Star Wars: Referência do Mestre",
+      "path": "packs/swsd-journal",
+      "type": "JournalEntry",
+      "system": "olddragon2e"
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Star Wars — Space Dragon",
+      "sorting": "m",
+      "color": "#1b3a5c",
+      "packs": [
+        "swsd-especies",
+        "swsd-classes",
+        "swsd-equipamentos",
+        "swsd-poderes",
+        "swsd-bestiario",
+        "swsd-journal"
+      ]
+    }
+  ],
+  "url": "https://github.com/Maicon-Lara/sw-spacedragon-foundryvtt",
+  "manifest": "https://raw.githubusercontent.com/Maicon-Lara/sw-spacedragon-foundryvtt/main/sw-spacedragon-module/module.json",
+  "download": "https://raw.githubusercontent.com/Maicon-Lara/sw-spacedragon-foundryvtt/main/sw-spacedragon.zip"
+}

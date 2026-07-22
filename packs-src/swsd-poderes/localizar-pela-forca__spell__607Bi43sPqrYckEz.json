@@ -1,0 +1,39 @@
+{
+  "folder": "06SCPYBch1mjo07H",
+  "name": "Localizar pela Força",
+  "type": "spell",
+  "_id": "607Bi43sPqrYckEz",
+  "img": "systems/olddragon2e/assets/icons/arcane.svg",
+  "system": {
+    "odo_id": "localizar-pela-forca",
+    "school": "arcane",
+    "circle": "2",
+    "arcane": "2",
+    "divine": "null",
+    "necromancer": "null",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "nenhuma",
+    "description": "<p><strong>Grandeza:</strong> 2ª</p><p>Você fixa na mente um objeto, uma nave ou uma pessoa que já conheceu e a Força aponta a <strong>direção</strong> dela, como uma bússola viva. Não dá distância exata nem mapa, mas basta para seguir um rastro pela galáxia: um padawan perdido, um artefato roubado, o cargueiro que fugiu.</p><p><em>(adaptação — 2ª.)</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!607Bi43sPqrYckEz"
+}

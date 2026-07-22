@@ -1,0 +1,16 @@
+{
+  "name": "sw-spacedragon-foundryvtt",
+  "version": "0.1.0",
+  "description": "Módulo de conteúdo \"Star Wars — Space Dragon\" para o sistema Old Dragon 2e (Foundry VTT). Espécies, classes e material de cenário.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "extract": "node tools/extract.mjs"
+  },
+  "author": "Maicon Lara",
+  "license": "MIT",
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^3.0.3"
+  }
+}

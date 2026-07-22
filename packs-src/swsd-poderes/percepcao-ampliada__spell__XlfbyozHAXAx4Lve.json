@@ -1,0 +1,39 @@
+{
+  "folder": "06SCPYBch1mjo07H",
+  "name": "Percepção Ampliada",
+  "type": "spell",
+  "_id": "XlfbyozHAXAx4Lve",
+  "img": "systems/olddragon2e/assets/icons/arcane.svg",
+  "system": {
+    "odo_id": "percepcao-ampliada",
+    "school": "arcane",
+    "circle": "2",
+    "arcane": "2",
+    "divine": "null",
+    "necromancer": "null",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "18 metros",
+    "duration": "",
+    "jp": "nenhuma",
+    "description": "<p><strong>Grandeza:</strong> 2ª</p><p>Sua consciência se espalha pela cena e lê as <strong>superfícies de pensamento</strong> — humores, intenções imediatas, a tensão de quem esconde algo — em até <strong>18 metros</strong>. Ajuda a farejar uma mentira mal contada, sentir um disfarce que não convence ou perceber a emboscada antes de ela estourar.</p><p><em>(adaptação — 2ª; ver Detectar Invisibilidade/Mentiras, 2ª.)</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!XlfbyozHAXAx4Lve"
+}

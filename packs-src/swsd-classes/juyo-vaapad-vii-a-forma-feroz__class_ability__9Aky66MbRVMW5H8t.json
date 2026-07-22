@@ -1,0 +1,50 @@
+{
+  "folder": "oBtcnSSVf2Dl01Tj",
+  "name": "Juyo / Vaapad (VII) — a forma feroz",
+  "type": "class_ability",
+  "_id": "9Aky66MbRVMW5H8t",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p>Canaliza a agressão — e beira a Sombra.</p><p><strong>Fúria Canalizada:</strong> <strong>+1 no ataque e no dano</strong>, mas usá-la movido pela raiva arrisca <strong>+1 de Corrupção</strong> por combate (a critério do Mestre); e inimigos têm desvantagem para aparar ou anular seus golpes.</p>",
+    "level": 3,
+    "level3": "",
+    "level6": "<p><strong>Sede de Batalha:</strong> ao <strong>derrubar</strong> um inimigo, ganha um <strong>ataque extra</strong> imediato.</p>",
+    "level10": "<p><strong>Mestre Vaapad:</strong> <strong>+1 no dano para cada inimigo que o atacou</strong> na rodada — mas manter a Forma exige domínio, ou a Sombra cobra (Corrupção).</p>",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!9Aky66MbRVMW5H8t"
+}

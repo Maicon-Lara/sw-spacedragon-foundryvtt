@@ -1,0 +1,50 @@
+{
+  "folder": "knlgzJBXuoA1ma6r",
+  "name": "Duelo da Força",
+  "type": "class_ability",
+  "_id": "ExwxoQTCL8E8ifLi",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p><em>(= Anulação e Contra-Ataque Mental)</em> Ao ser alvo de um poder da Força, você pode tentar <strong>anulá-lo</strong>: gaste Foco igual à Grandeza do poder e faça um <strong>teste resistido de Sabedoria</strong> contra quem o lançou. Antes de rolar, pode gastar Foco extra para <strong>+1 por ponto</strong> (o total gasto assim não pode exceder a Grandeza do poder resistido).</p><p>Num crítico (falha ou sucesso) há um <strong>choque da Força</strong>: um dos dois sofre <strong>1d4</strong> e faz <strong>JPS</strong> ou fica atordoado por 1d6 rodadas. Vencendo, você <strong>revida na hora</strong> com um poder seu (o agressor pode tentar anular).</p><p><em>Ataque de Sabedoria, defesa de JPS — não há duplicação: um alvo comum de um poder da Força rola JPS; só um Sensível pode gastar Foco para transformar aquilo num Duelo.</em></p>",
+    "level": 1,
+    "level3": "",
+    "level6": "",
+    "level10": "",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ExwxoQTCL8E8ifLi"
+}

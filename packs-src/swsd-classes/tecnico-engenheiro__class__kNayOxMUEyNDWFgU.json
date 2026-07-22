@@ -1,0 +1,125 @@
+{
+  "folder": "3a81P6ZblhlJywz2",
+  "name": "Técnico — Engenheiro",
+  "type": "class",
+  "_id": "kNayOxMUEyNDWFgU",
+  "img": "systems/olddragon2e/assets/icons/level-up.svg",
+  "system": {
+    "flavor": "<p>O inventor. <em>Especialização de Técnico (neutro) — base: Inventor.</em></p>",
+    "description": "<p><em>\"Se existe, eu conserto. Se não existe, eu invento. Se quebrar, a culpa é da peça.\"</em></p><p>Construtores de droides (um Anakin criança), os engenheiros de estaleiro de Mon Cala, o gênio que monta uma nave com sucata.</p><p><strong>Perde</strong> <em>Operar e Consertar Máquinas</em> e <em>Desativar Droides</em>, e seu Desconto Tecnológico vira <strong>prejuízo</strong> — inventar do zero custa mais caro do que comprar pronto.</p><p><em>Especialização escolhida no 1º nível (padrão OD2). Evolui pela coluna <strong>XP Especial</strong> da tabela. Variante: mesas que queiram preservar o espírito original do Space Dragon podem adiar a escolha para o 3º nível.</em></p>",
+    "hp": 8,
+    "high_level_hp_bonus": 1,
+    "equipment_restrictions": {
+      "weapons": "Armas leves e utilitárias, de energia. Jamais projéteis ou armas marciais.",
+      "armors": "Apenas vestes leves.",
+      "magic_items": "Constrói e opera qualquer aparato — ofensivos, defensivos e utilitários."
+    },
+    "restrictions": {
+      "alignments": [
+        "neutro"
+      ],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 2000
+      },
+      "3": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 4000
+      },
+      "4": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 7000
+      },
+      "5": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 10000
+      },
+      "6": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 20000
+      },
+      "7": {
+        "ba": 5,
+        "jp": 9,
+        "xp": 30000
+      },
+      "8": {
+        "ba": 5,
+        "jp": 9,
+        "xp": 40000
+      },
+      "9": {
+        "ba": 5,
+        "jp": 9,
+        "xp": 50000
+      },
+      "10": {
+        "ba": 7,
+        "jp": 11,
+        "xp": 100000
+      },
+      "11": {
+        "ba": 7,
+        "jp": 11,
+        "xp": 200000
+      },
+      "12": {
+        "ba": 7,
+        "jp": 11,
+        "xp": 300000
+      },
+      "13": {
+        "ba": 9,
+        "jp": 13,
+        "xp": 400000
+      },
+      "14": {
+        "ba": 9,
+        "jp": 13,
+        "xp": 500000
+      },
+      "15": {
+        "ba": 9,
+        "jp": 13,
+        "xp": 600000
+      }
+    },
+    "class_abilities": [
+      "Compendium.sw-spacedragon.swsd-classes.Item.Cbbj5iUv4MQHPsR5",
+      "Compendium.sw-spacedragon.swsd-classes.Item.doaRfvD6MvhIBRNE",
+      "Compendium.sw-spacedragon.swsd-classes.Item.UvSBdqMG7pgUiWbo",
+      "Compendium.sw-spacedragon.swsd-classes.Item.PYJn71FFrQSeQ1RW",
+      "Compendium.sw-spacedragon.swsd-classes.Item.AMUmAhIssC4Vopy3"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!kNayOxMUEyNDWFgU"
+}

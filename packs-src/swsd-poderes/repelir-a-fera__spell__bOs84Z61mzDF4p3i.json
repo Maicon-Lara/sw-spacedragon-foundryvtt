@@ -1,0 +1,39 @@
+{
+  "folder": "lhf3leSPQSjfq3yK",
+  "name": "Repelir a Fera",
+  "type": "spell",
+  "_id": "bOs84Z61mzDF4p3i",
+  "img": "systems/olddragon2e/assets/icons/necromancer.svg",
+  "system": {
+    "odo_id": "repelir-a-fera",
+    "school": "necromancer",
+    "circle": "5",
+    "arcane": "null",
+    "divine": "null",
+    "necromancer": "5",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "JPS nega",
+    "description": "<p><strong>Grandeza:</strong> 5ª</p><p>Você projeta repulsa pura e <strong>força criaturas não-humanas a recuar ou fugir</strong> — até <strong>8 DV</strong> afetados (uma <strong>JPS</strong> nega). O gesto que espanta a matilha, esvazia o fosso da fera ou abre caminho por um enxame.</p><p><em>Poder-base: Afastar Criatura (5ª).</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 1400000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!bOs84Z61mzDF4p3i"
+}

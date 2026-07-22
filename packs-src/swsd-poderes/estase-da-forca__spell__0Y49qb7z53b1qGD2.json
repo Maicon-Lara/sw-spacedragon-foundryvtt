@@ -1,0 +1,39 @@
+{
+  "folder": "4vey1yLAAENwdrjT",
+  "name": "Estase da Força",
+  "type": "spell",
+  "_id": "0Y49qb7z53b1qGD2",
+  "img": "systems/olddragon2e/assets/icons/divine.svg",
+  "system": {
+    "odo_id": "estase-da-forca",
+    "school": "divine",
+    "circle": "3",
+    "arcane": "null",
+    "divine": "3",
+    "necromancer": "null",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "JPS nega",
+    "description": "<p><strong>Grandeza:</strong> 3ª</p><p>Você prende a vontade de um humanoide e o <strong>paralisa no lugar</strong> (uma <strong>JPS</strong> nega). A Luz a usa para conter sem ferir — segurar o fugitivo, congelar o refém-tomador, encerrar a briga antes do sangue.</p><p><em>Poder-base: Imobilizar Pessoa (3ª).</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 1000000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!0Y49qb7z53b1qGD2"
+}

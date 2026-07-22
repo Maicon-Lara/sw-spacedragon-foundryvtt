@@ -1,0 +1,35 @@
+{
+  "folder": "KFzuIU0CDqoRmgGU",
+  "name": "Cristal Kyber",
+  "type": "misc",
+  "_id": "PkllCRglV2ck0s1y",
+  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "system": {
+    "odo_id": "cristal-kyber",
+    "description": "<p>No coração de todo sabre há um <strong>cristal kyber</strong>, pedra sensível à Força que focaliza a lâmina. Cristais são incolores ou pálidos; quando um usuário se <strong>sintoniza</strong> por meditação, o cristal <strong>assume uma cor</strong> que reflete o vínculo.</p><p>A cor é <strong>narrativa, não mecânica</strong> — não dá bônus —, mas costuma seguir a Senda do portador:</p><ul><li><strong>Azul:</strong> Guardiões da Luz (o Jedi de sabre).</li><li><strong>Verde:</strong> Consulares da Luz (mais ligados à Força que à lâmina).</li><li><strong>Amarelo / raros:</strong> Sentinelas e híbridos que equilibram combate e mística.</li><li><strong>Vermelho:</strong> Caminho da Sombra — obtido pelo Sangramento.</li></ul><p><strong>Sangrar o cristal (o vermelho Sith):</strong> um personagem do Caminho da Sombra pode sangrar um cristal, derramando ódio e dor até que ele racha e se recolore num vermelho ardente.</p><ul><li><strong>Custo:</strong> o ato marca <strong>+1 de Corrupção</strong>.</li><li><strong>Benefício:</strong> enquanto o portador estiver com <strong>Corrupção 3+</strong>, o sabre vermelho concede <strong>+1 no dano</strong>. Abaixo disso, é um sabre comum vermelho.</li><li><strong>Purificar:</strong> um cristal sangrado pode ser purificado por um ato da Luz, voltando à cor clara. Conta como um gesto de <strong>Redenção</strong> — simbólico e mecânico.</li></ul><p>O vermelho é uma tentação, não um upgrade grátis: o dano extra custa Corrupção e só vale enquanto o portador está fundo na Sombra.</p><p><em>Cristais raros/lendários podem conceder propriedades especiais (um segundo dado de dano, resistência a desarme), a critério do Mestre como recompensa única — não como padrão.</em></p>",
+    "quantity": 1,
+    "cost": "",
+    "weight_in_load": 0,
+    "weight_in_grams": 0,
+    "magic_item": true,
+    "is_equipped": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!PkllCRglV2ck0s1y"
+}

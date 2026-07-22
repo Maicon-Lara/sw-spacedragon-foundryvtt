@@ -1,0 +1,39 @@
+{
+  "folder": "4vey1yLAAENwdrjT",
+  "name": "Dissipar a Sombra",
+  "type": "spell",
+  "_id": "niIbasb7fNUloE5C",
+  "img": "systems/olddragon2e/assets/icons/divine.svg",
+  "system": {
+    "odo_id": "dissipar-a-sombra",
+    "school": "divine",
+    "circle": "3",
+    "arcane": "null",
+    "divine": "3",
+    "necromancer": "null",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "nenhuma",
+    "description": "<p><strong>Grandeza:</strong> 3ª</p><p>Você desfaz o tecido de um poder inimigo, <strong>cancelando poderes da Força e efeitos sobrenaturais ativos</strong>. O antídoto direto contra a magia da Sombra em campo — apaga o terror, solta o estrangulamento, dissipa as trevas.</p><p>Funciona como o <strong>Duelo da Força</strong>, inclusive quanto a gastar Foco extra para bônus — mas o alvo <strong>não</strong> ganha a chance de revidar, e o sucesso significa que o poder foi simplesmente <strong>dissipado</strong>.</p><p><em>Poder-base: Dissipar Poder Mental (3ª).</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!niIbasb7fNUloE5C"
+}

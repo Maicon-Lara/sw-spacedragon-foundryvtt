@@ -1,0 +1,39 @@
+{
+  "folder": "06SCPYBch1mjo07H",
+  "name": "Vínculo Telepático",
+  "type": "spell",
+  "_id": "If4nSDpQNiFDCwUq",
+  "img": "systems/olddragon2e/assets/icons/arcane.svg",
+  "system": {
+    "odo_id": "vinculo-telepatico",
+    "school": "arcane",
+    "circle": "1",
+    "arcane": "1",
+    "divine": "null",
+    "necromancer": "null",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "nenhuma",
+    "description": "<p><strong>Grandeza:</strong> 1ª</p><p>Você tece um fio mental com um aliado conhecido e conversa mente a mente, sem palavra falada, à distância. Útil para coordenar uma infiltração em silêncio ou pedir socorro sem acionar um comunicador rastreável. O vínculo carrega intenção e imagens simples, não frases longas nem segredos que o outro não queira dar.</p><p><em>Poder-base: Conexão Psíquica (1ª).</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 500000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!If4nSDpQNiFDCwUq"
+}

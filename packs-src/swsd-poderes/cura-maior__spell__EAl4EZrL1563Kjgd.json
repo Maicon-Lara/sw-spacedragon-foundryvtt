@@ -1,0 +1,39 @@
+{
+  "folder": "4vey1yLAAENwdrjT",
+  "name": "Cura Maior",
+  "type": "spell",
+  "_id": "EAl4EZrL1563Kjgd",
+  "img": "systems/olddragon2e/assets/icons/divine.svg",
+  "system": {
+    "odo_id": "cura-maior",
+    "school": "divine",
+    "circle": "5",
+    "arcane": "null",
+    "divine": "5",
+    "necromancer": "null",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "nenhuma",
+    "description": "<p><strong>Grandeza:</strong> 5ª</p><p>A cura levada ao limite da Luz: você <strong>restaura grande soma de pontos de vida</strong> ou traz um aliado da beira da morte de volta à luta em uma ação. O milagre que salva o herói caído no clímax.</p><p><em>(adaptação — 5ª.)</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 1400000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!EAl4EZrL1563Kjgd"
+}

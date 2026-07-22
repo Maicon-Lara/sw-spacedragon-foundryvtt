@@ -1,0 +1,50 @@
+{
+  "folder": "TrJ2Ov50wKQaf6ov",
+  "name": "Desconto Tecnológico Aprimorado",
+  "type": "class_ability",
+  "_id": "0d39fP9jTRRpJuxF",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p>O desconto em qualquer gasto com equipamentos sobe para <strong>20%</strong>. Suprimentos de bacta, insumos cirúrgicos, componentes de prótese — tudo sai mais barato para quem compra em nome da cura.</p>",
+    "level": 3,
+    "level3": "",
+    "level6": "<p>O desconto sobe para <strong>35%</strong>.</p>",
+    "level10": "<p><strong>Autoridade Científica:</strong> os descontos chegam a <strong>50%</strong>. Em troca, submete-se a um <strong>rígido código de ética</strong>: está proibido de causar qualquer dano a seres vivos em combate, e prega que ninguém o faça. Se quebrar esse juramento, <strong>perde o acesso a todas as habilidades da especialização</strong> até realizar uma reparação adequada, a critério do Mestre.</p>",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!0d39fP9jTRRpJuxF"
+}

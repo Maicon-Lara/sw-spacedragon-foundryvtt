@@ -1,0 +1,50 @@
+{
+  "folder": "TrJ2Ov50wKQaf6ov",
+  "name": "Perito em Medicina",
+  "type": "class_ability",
+  "_id": "yn4uqXk2g09diLo7",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p>Cria aparatos e realiza feitos com <strong>Nível Tecnológico igual ao seu nível</strong> (NT máximo 10). Mas sobre os <strong>feitos e aparatos de cura e suporte</strong> da sua caixa de ferramentas, é um perito: realiza-os <strong>em metade do tempo</strong> e <strong>sem precisar de um laboratório completo</strong> — um kit de campo, uma maca improvisada e as próprias mãos bastam.</p><p>Ganha <strong>+1</strong> em todos os testes de Inteligência de diagnóstico, tratamento e cirurgia, e cada lote de consumíveis médicos que fabrica (injeções, pílulas, doses de antídoto) rende <strong>uma dose a mais</strong>. Quando é ele quem aplica uma <strong>Injeção de Adrenalina</strong>, o paciente <strong>dispensa a JPC de overdose</strong>.</p>",
+    "level": 1,
+    "level3": "",
+    "level6": "<p><strong>Aparatos e Feitos Científicos Avançados:</strong> passa a criar aparatos e realizar feitos com <strong>Nível Tecnológico igual ao seu nível + 2</strong> (NT máximo 10) — medpacs de bacta, próteses cibernéticas, estimulantes e câmaras de recuperação anos além do que um técnico comum de seu nível alcançaria.</p>",
+    "level10": "",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!yn4uqXk2g09diLo7"
+}

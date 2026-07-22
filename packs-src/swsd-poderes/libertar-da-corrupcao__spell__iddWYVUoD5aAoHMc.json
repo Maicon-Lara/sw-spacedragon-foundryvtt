@@ -1,0 +1,39 @@
+{
+  "folder": "4vey1yLAAENwdrjT",
+  "name": "Libertar da Corrupção",
+  "type": "spell",
+  "_id": "iddWYVUoD5aAoHMc",
+  "img": "systems/olddragon2e/assets/icons/divine.svg",
+  "system": {
+    "odo_id": "libertar-da-corrupcao",
+    "school": "divine",
+    "circle": "4",
+    "arcane": "null",
+    "divine": "4",
+    "necromancer": "null",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "",
+    "duration": "",
+    "jp": "nenhuma",
+    "description": "<p><strong>Grandeza:</strong> 4ª</p><p>Pela Luz, você <strong>alivia a Corrupção que domina um alvo</strong> e <strong>quebra domínios mentais</strong> impostos por poderes da Sombra (a critério do Mestre). O toque redentor que arranca alguém das garras do Lado Sombrio — raro, difícil e nunca garantido.</p><p><em>(adaptação — 4ª.)</em></p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 1200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!iddWYVUoD5aAoHMc"
+}

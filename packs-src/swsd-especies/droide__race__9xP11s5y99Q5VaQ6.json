@@ -1,0 +1,42 @@
+{
+  "folder": "MMPvGPX5Czf3rPfM",
+  "name": "Droide",
+  "type": "race",
+  "_id": "9xP11s5y99Q5VaQ6",
+  "img": "systems/olddragon2e/assets/icons/alignment.svg",
+  "system": {
+    "flavor": "<p>Construtos programados — trabalhadores, guerreiros, médicos ou companheiros. <em>Molde: Andróide.</em></p>",
+    "description": "<p>Usam o molde <strong>Andróide</strong> do Space Dragon. <strong>Restrição importante:</strong> Droides não são sensíveis à Força e não podem ser da classe Sensível à Força.</p><p><strong>Perguntas ao criar um Droide:</strong> Qual seu propósito original? Sua memória já foi apagada? Ele se considera uma pessoa?</p><p><em>Nota de conversão:</em> o texto original do Andróide trazia <em>Corpo Robótico</em> (JPC Fáceis) <strong>e</strong> <em>Resistência Física</em> (+2 na JPC) — a mesma coisa vinda de duas fontes. Aqui foram fundidas numa habilidade só: a JPC Fácil já <em>é</em> o +2.</p>",
+    "movement": 9,
+    "movement_fly": 0,
+    "movement_notes": "",
+    "infravision": 18,
+    "infravision_notes": "Sensores integrados, permanentes.",
+    "alignment_tendency": "none",
+    "alignment_notes": "Qualquer.",
+    "race_abilities": [
+      "Compendium.sw-spacedragon.swsd-especies.Item.w1sK4YvewHJ7PNrh",
+      "Compendium.sw-spacedragon.swsd-especies.Item.3JDqIZs9sD2Sic6j",
+      "Compendium.sw-spacedragon.swsd-especies.Item.9DeBBntFnCpJnYGa",
+      "Compendium.sw-spacedragon.swsd-especies.Item.ARlyC6At2CG12A2l"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!9xP11s5y99Q5VaQ6"
+}

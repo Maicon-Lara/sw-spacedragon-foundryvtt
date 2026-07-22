@@ -1,0 +1,125 @@
+{
+  "folder": "uT7QdDBC3uUdPsGI",
+  "name": "Operativo — Assassino",
+  "type": "class",
+  "_id": "H8K5v1ve3biJOw4O",
+  "img": "systems/olddragon2e/assets/icons/level-up.svg",
+  "system": {
+    "flavor": "<p>A lâmina do submundo. <em>Especialização de Operativo (neutro).</em></p>",
+    "description": "<p>Matadores da Aurora Negra, agentes de eliminação do submundo.</p><p><strong>Perde Percepção e Ataque Furtivo</strong> (substituído pelo Golpe Fatal).</p><p><em>Especialização escolhida no 1º nível (padrão OD2). Evolui pela coluna <strong>XP Especial</strong> da tabela. Variante: mesas que queiram preservar o espírito original do Space Dragon podem adiar a escolha para o 3º nível.</em></p>",
+    "hp": 6,
+    "high_level_hp_bonus": 1,
+    "equipment_restrictions": {
+      "weapons": "Apenas armas que possam ser empunhadas com uma das mãos.",
+      "armors": "Apenas vestes leves ou médias, sem escudos. Usar outras vestes ou escudo impede o uso dos talentos de classe.",
+      "magic_items": "Apenas aparatos utilitários."
+    },
+    "restrictions": {
+      "alignments": [
+        "neutro"
+      ],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 1500
+      },
+      "3": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 3000
+      },
+      "4": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 5500
+      },
+      "5": {
+        "ba": 3,
+        "jp": 8,
+        "xp": 8500
+      },
+      "6": {
+        "ba": 3,
+        "jp": 8,
+        "xp": 17000
+      },
+      "7": {
+        "ba": 4,
+        "jp": 8,
+        "xp": 27000
+      },
+      "8": {
+        "ba": 4,
+        "jp": 8,
+        "xp": 37000
+      },
+      "9": {
+        "ba": 5,
+        "jp": 11,
+        "xp": 47000
+      },
+      "10": {
+        "ba": 5,
+        "jp": 11,
+        "xp": 94000
+      },
+      "11": {
+        "ba": 6,
+        "jp": 11,
+        "xp": 190000
+      },
+      "12": {
+        "ba": 6,
+        "jp": 11,
+        "xp": 280000
+      },
+      "13": {
+        "ba": 7,
+        "jp": 14,
+        "xp": 370000
+      },
+      "14": {
+        "ba": 7,
+        "jp": 14,
+        "xp": 460000
+      },
+      "15": {
+        "ba": 8,
+        "jp": 14,
+        "xp": 550000
+      }
+    },
+    "class_abilities": [
+      "Compendium.sw-spacedragon.swsd-classes.Item.pDqkT5asNFFCVtoT",
+      "Compendium.sw-spacedragon.swsd-classes.Item.nYftEiBINRQjVA7n",
+      "Compendium.sw-spacedragon.swsd-classes.Item.5Ige8TBVP8RR6Obb",
+      "Compendium.sw-spacedragon.swsd-classes.Item.B5ClNKNocQGiH32d",
+      "Compendium.sw-spacedragon.swsd-classes.Item.kAwa0kJl0cKEzStH"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!H8K5v1ve3biJOw4O"
+}

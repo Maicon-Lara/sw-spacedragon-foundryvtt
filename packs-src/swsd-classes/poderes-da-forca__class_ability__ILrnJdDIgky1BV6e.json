@@ -1,0 +1,50 @@
+{
+  "folder": "knlgzJBXuoA1ma6r",
+  "name": "Poderes da Força",
+  "type": "class_ability",
+  "_id": "ILrnJdDIgky1BV6e",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p><em>(= Poderes Mentais)</em> Você canaliza a Força para mover, proteger, enganar ou destruir. Cada poder tem uma <strong>Grandeza</strong> (1ª a 10ª); o <strong>Foco Diário</strong> de cada uma vem da tabela da classe, somado ao <strong>Foco Extra</strong> da Sabedoria. Você <strong>começa com dois poderes de 1ª Grandeza</strong> de livre escolha (lista Universal + a do seu Caminho).</p>",
+    "level": 1,
+    "level3": "",
+    "level6": "",
+    "level10": "",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ILrnJdDIgky1BV6e"
+}
