@@ -22,6 +22,7 @@ import { categorias } from "./data/equipamentos.mjs";
 import { listasDePoder, poderesJournal } from "./data/poderes.mjs";
 import { grupos as grupasBestiario } from "./data/bestiario.mjs";
 import { navesJournal } from "./data/naves.mjs";
+import { bestiarioJournal } from "./data/bestiario-journal.mjs";
 import { progressao } from "./data/progressoes.mjs";
 
 const ROOT = path.resolve(fileURLToPath(import.meta.url), "../..");
@@ -133,9 +134,11 @@ function buildBestiarioDocs() {
   return docs;
 }
 
-// ── Pack de journal (referência: poderes de 6ª+ e naves) ──
+// ── Pack de journal (referência do mestre) ──
 function buildJournalDocs() {
-  return [poderesJournal, navesJournal].map((e, i) => journalDoc(e, (i + 1) * 100000));
+  return [poderesJournal, bestiarioJournal, navesJournal].map((e, i) =>
+    journalDoc(e, (i + 1) * 100000)
+  );
 }
 
 async function compile(packName, docs) {

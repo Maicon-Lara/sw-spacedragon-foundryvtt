@@ -1,5 +1,0 @@
-2026/07/22-10:47:14.245 7a2c Delete type=3 #1
-2026/07/22-10:47:14.253 8010 Level-0 table #5: started
-2026/07/22-10:47:14.257 8010 Level-0 table #5: 20080 bytes OK
-2026/07/22-10:47:14.259 8010 Delete type=0 #3
-2026/07/22-10:47:14.259 8010 Manual compaction at level-0 from '!folders!4TJaHI9a2hFfJngF' @ 72057594037927935 : 1 .. '!items!zjewWD3CccJXmSoz' @ 0 : 0; will stop at (end)

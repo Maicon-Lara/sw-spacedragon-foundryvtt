@@ -1,0 +1,135 @@
+{
+  "folder": null,
+  "name": "Bestiário — De-para e Modelos de PNJ",
+  "_id": "ZHUuMxK4JrIusAkT",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Como usar o bestiário",
+      "type": "text",
+      "_id": "KFnwahz5JJ7YN53N",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<div class=\"odo-markdown\"><p>As <strong>criaturas do Space Dragon</strong> (Tabela 11-1 do guia v1.0), vestidas de Star Wars. Assim como as Naves, este material é sobretudo um <strong>de-para</strong>: pegue a criatura do Space Dragon que quiser e vista-a de fera da galáxia — os números (DV, CA, JP, Moral, XP) saem da ficha original do SD.</p><p>As criaturas icônicas já têm ficha pronta no compêndio <strong>Star Wars: Bestiário</strong>, como Actors arrastáveis para a cena.</p><h2>Regras de conversão</h2><ul><li><strong>OD2 não tem os subatributos RD (Resistência a Dano) nem RM (Resistência Mental).</strong> Onde a ficha do SD usa RD/RM, trate como <strong>habilidade da criatura</strong> (ex.: \"reduz 3 de dano físico\", \"imune a efeitos mentais\").</li><li><strong>OD2 não dá atributos a monstros.</strong> Os atributos da ficha do SD viram só <strong>referência</strong> para o Mestre resolver dúvidas; não precisam ser usados.</li><li><strong>Droides só fazem teste de Moral contra Desativação</strong> (a habilidade <em>Desativar Droides</em> do Técnico) — não fogem por Moral como seres vivos.</li><li><strong>JP única:</strong> use o valor de JP da ficha para as três Jogadas (JPD/JPC/JPS), ajustando para Fácil ou Difícil conforme o tipo de ataque.</li></ul><h2>A dica que resolve a mesa</h2><p>O \"planeta\" do dragão é só o bioma. Precisa de um monstro de gelo? Pegue o <strong>Dragão de mundo gelado</strong> (Netuniano/Uraniano). De um verme das dunas? <strong>Verme Gigante</strong>. <em>A ficha já existe no Space Dragon; você só troca a pele.</em></p><p>A Tabela 11-1 do guia v1.0 tem <strong>cerca de 90 criaturas</strong> (contando as variações de dragão). O de-para da próxima página cobre todas por arquétipo — para qualquer uma delas, <strong>a ficha numérica está no livro do Space Dragon</strong>; este material só dá a ela um nome e um lugar na galáxia.</p></div>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swsdbuildtool",
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ZHUuMxK4JrIusAkT.KFnwahz5JJ7YN53N"
+    },
+    {
+      "sort": 200000,
+      "name": "De-para: criaturas do SD → feras de Star Wars",
+      "type": "text",
+      "_id": "UNkmM2Uwf0KNWhme",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<div class=\"odo-markdown\"><p>Cada linha agrupa as criaturas do Space Dragon que compartilham o mesmo arquétipo, e o que elas viram na galáxia.</p><table>\n  <thead><tr><th>Space Dragon</th><th>Vira, em Star Wars…</th></tr></thead>\n  <tbody>\n    <tr><td><strong>Dragões planetários</strong> (Jupiteriano, Marciano, Mercuriano, Netuniano, Plutoniano, Saturniano, Terraniano, Uraniano, Venusiano — Jovem/Adulto/Ancião)</td><td><strong>Dragões da galáxia</strong>: o <strong>Terraniano</strong> (deserto) = <strong>Dragão Krayt</strong> (Ancião = Krayt Maior); os demais = dragões espaciais de mundos extremos (gelo, lava, gás), cada planeta um bioma</td></tr>\n    <tr><td>Aranha Gigante</td><td>Aranha-de-rocha (<em>knobby white spider</em> de Kashyyyk)</td></tr>\n    <tr><td>Autômato · Humanóide Robótico · Protótipo/Repetidor/Serviçal/Sucata Robótica</td><td><strong>Droides de combate</strong> e de serviço (de batalha, protocolo, sucata reanimada)</td></tr>\n    <tr><td>Metalópode</td><td>Droide-aranha / centopeia de metal</td></tr>\n    <tr><td>Bolha Verde · Geléia Espacial · Shoggoth</td><td>Limo espacial / massa devoradora amorfa</td></tr>\n    <tr><td>Cristaloide</td><td>Criatura de cristal (tocada por kyber)</td></tr>\n    <tr><td>Crocossauro · Tentaculoide</td><td><strong>Dianoga</strong> (besta tentacular de esgoto/lixo)</td></tr>\n    <tr><td>Devorador de Mentes · Vampiro Energético</td><td><strong>Besta do Lado Sombrio</strong> que drena mente/Força</td></tr>\n    <tr><td>Eletricobra · Medusa Elétrica · Monstro de Energia</td><td>Serpente/água-viva/elemental de energia</td></tr>\n    <tr><td>Encrustáceo</td><td>Crustáceo blindado de fosso</td></tr>\n    <tr><td>Escaravelho Radioativo · Zangão Gigante · Formigácida · Xheniano</td><td>Insetos de colmeia (escaravelho irradiado, drone, formiga ácida, <strong>Geonosiano</strong> guerreiro)</td></tr>\n    <tr><td>Gigante de Pedra · Monstro de Lava</td><td>Golem de rocha / criatura de Mustafar</td></tr>\n    <tr><td>Gigantossauro · Megassauro · Tiranossauro</td><td><strong>Rancor</strong> (Megassauro = Rancor colossal / Zillo)</td></tr>\n    <tr><td>Glacioprimata · Monstro de Gelo</td><td><strong>Wampa</strong> e bestas de gelo de Hoth</td></tr>\n    <tr><td>Homem Lagarto · Ictiohomem · Simihomem · Pterohomem · Metahumano · Multiforma</td><td>Humanoides selvagens/monstruosos: réptil (Trandoshano feral), anfíbio (Aqualish), símio, alado (Geonosiano voador), meta-humano, <strong>metamorfo</strong> (Clawdite)</td></tr>\n    <tr><td>Homenzinho Verde</td><td>Alienígena cinza pequeno</td></tr>\n    <tr><td>Lagarto do Deserto · Raptossauro · Taurópode</td><td>Répteis de duna, raptores, <strong>dewback</strong> de carga</td></tr>\n    <tr><td>Lobo Sônico · Tigre Dentes-de-Sabre</td><td><strong>Nexu</strong> / loth-wolf / felino predador</td></tr>\n    <tr><td>Lula da Areia · Planta Carnívora</td><td><strong>Sarlacc</strong> jovem / planta estranguladora</td></tr>\n    <tr><td>Mastodonte · Rinoceratops</td><td><strong>Bantha</strong> / <strong>Reek</strong> (com chifres, aríete)</td></tr>\n    <tr><td>Monstro do Pântano</td><td>Besta do pântano (Dagobah)</td></tr>\n    <tr><td>Pteroave</td><td>Ave-de-guerra gigante</td></tr>\n    <tr><td>Verme Gigante</td><td><strong>Exogorth</strong> (<em>space slug</em>) / verme das areias colossal</td></tr>\n    <tr><td>Zork · Simihomem menor</td><td>Bicho pequeno esquisito de fauna local</td></tr>\n    <tr><td><strong>Criaturas-classe</strong> (Cosmonauta/Cientista/Gatuno/Mentálico Nível 1 e 5)</td><td><strong>PNJs</strong>: soldado, oficial, contrabandista e sensível inimigo — ver os modelos de PNJ</td></tr>\n  </tbody>\n</table></div>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swsdbuildtool",
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ZHUuMxK4JrIusAkT.UNkmM2Uwf0KNWhme"
+    },
+    {
+      "sort": 300000,
+      "name": "Modelos de PNJ — as classes como inimigos",
+      "type": "text",
+      "_id": "1Af669UIZdodbvfp",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<div class=\"odo-markdown\"><p>Use as <strong>criaturas-classe</strong> da Tabela 11-1 como gabarito e vista de Star Wars. As classes deste cenário são reskins do Space Dragon: <strong>Veterano = Cosmonauta</strong>, <strong>Operativo = Gatuno</strong>, <strong>Técnico = Cientista</strong>, <strong>Sensível à Força = Mentálico</strong>.</p><table>\n  <thead><tr><th>PNJ Star Wars</th><th>Base no SD</th><th>Referência rápida</th></tr></thead>\n  <tbody>\n    <tr><td><strong>Stormtrooper / soldado</strong></td><td>Veterano Nível 1 <em>(Cosmonauta)</em></td><td>DV 1+1 · CA 14 · rifle blaster 1d8 · Moral 9 · XP ~20</td></tr>\n    <tr><td><strong>Oficial / comandante</strong></td><td>Veterano Nível 5 <em>(Cosmonauta)</em></td><td>DV 5+5 · CA 15 · blaster + comanda tropas · XP ~205</td></tr>\n    <tr><td><strong>Técnico / engenheiro imperial</strong></td><td>Técnico Nível 5 <em>(Cientista)</em></td><td>DV 5+5 · CA 14 · aparatos, droides · XP ~175</td></tr>\n    <tr><td><strong>Operativo / contrabandista</strong></td><td>Operativo Nível 5 <em>(Gatuno)</em></td><td>DV 5+5 · CA 14 · Ataque Furtivo, blaster · XP ~175</td></tr>\n    <tr><td><strong>Sensível inimigo</strong> (Inquisidor/Sith menor)</td><td>Sensível à Força Nível 5 <em>(Mentálico)</em></td><td>DV 5+5 · CA 12 · sabre + Poderes da Sombra · XP ~205</td></tr>\n    <tr><td><strong>Lorde Sith / Mestre Jedi renegado</strong></td><td>Sensível à Força Nível 10 <em>(Mentálico)</em></td><td>DV 10+8 · CA 15 · sabre 1d10 + poderes de até 5ª Grandeza · Moral 12 · XP ~1.100</td></tr>\n  </tbody>\n</table><h2>Como montar o chefe Sith ou Inquisidor</h2><p>Use o bloco de <strong>Nível 10</strong> (Lorde Sith / Mestre Jedi renegado, no compêndio de bestiário) como base e <strong>ajuste os poderes conhecidos ao Caminho e à especialização dele</strong>: um <strong>Guardião</strong> prioriza dano de sabre e uma Forma; um <strong>Consular</strong>, as Grandezas altas de controle mental. Para algo ainda mais colossal, suba os DV e mantenha a lógica de <strong>Foco proporcional ao nível</strong>.</p><p>Ele é <em>o antagonista final de um arco, não um obstáculo de meio de sessão</em>.</p><p><strong>Chefe alternativo pronto:</strong> a <strong>Sétima Irmã</strong>, a Inquisidora da aventura <em>Sombra sobre Vandor</em> (DV 6, XP 800) — um antagonista de arco mais leve, para grupos de nível médio.</p></div>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swsdbuildtool",
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ZHUuMxK4JrIusAkT.1Af669UIZdodbvfp"
+    }
+  ],
+  "flags": {},
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swsdbuildtool",
+    "exportSource": null
+  },
+  "_key": "!journal!ZHUuMxK4JrIusAkT"
+}

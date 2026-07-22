@@ -2,7 +2,7 @@
   "id": "sw-spacedragon",
   "title": "Star Wars — Space Dragon (OD2)",
   "description": "Módulo de conteúdo da adaptação de Star Wars para Old Dragon 2 com o suplemento sci-fi Estrela Dracônica / Space Dragon. Espécies, classes e material de cenário. Obra de fã, não oficial e sem fins lucrativos.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "compatibility": {
     "minimum": "13",
     "verified": "14"
