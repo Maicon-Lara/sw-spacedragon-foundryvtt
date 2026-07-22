@@ -8,7 +8,7 @@
     "odo_id": "cilindro-de-dados",
     "description": "<p><strong>Utilitário, NT 2.</strong> Do tamanho de uma caneta, transporta dados científicos entre laboratórios. Capacidade virtualmente ilimitada; leitura fácil em qualquer laboratório.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d4 horas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
     "quantity": 1,
-    "cost": "1.400 CR",
+    "cost": "140 CR",
     "weight_in_load": 0,
     "weight_in_grams": 0,
     "magic_item": false,

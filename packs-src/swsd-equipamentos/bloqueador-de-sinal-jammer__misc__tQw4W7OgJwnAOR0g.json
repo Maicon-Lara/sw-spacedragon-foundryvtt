@@ -8,7 +8,7 @@
     "odo_id": "bloqueador-de-sinal-jammer",
     "description": "<p><strong>Utilitário, NT 2.</strong> Bloqueia transmissão e recepção de rádio num raio de <strong>50 m</strong>. Nenhum transmissor ou controle remoto funciona até que o aparato seja desativado.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d6 horas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
     "quantity": 1,
-    "cost": "1.600 CR",
+    "cost": "160 CR",
     "weight_in_load": 0,
     "weight_in_grams": 0,
     "magic_item": false,

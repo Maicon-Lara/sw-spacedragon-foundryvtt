@@ -8,7 +8,7 @@
     "odo_id": "visor-termico",
     "description": "<p><strong>Utilitário, NT 1.</strong> Mostra a assinatura térmica dos objetos. A visão imperfeita dá <strong>−4 nos ataques</strong>. Pode virar binóculo pelo dobro do custo e do tempo.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d6 horas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
     "quantity": 1,
-    "cost": "200 CR",
+    "cost": "20 CR",
     "weight_in_load": 0,
     "weight_in_grams": 0,
     "magic_item": false,

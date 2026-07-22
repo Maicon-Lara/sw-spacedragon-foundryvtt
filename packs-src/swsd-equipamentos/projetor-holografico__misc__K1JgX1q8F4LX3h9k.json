@@ -8,7 +8,7 @@
     "odo_id": "projetor-holografico",
     "description": "<p><strong>Utilitário, NT 2.</strong> Cria uma representação audiovisual tridimensional de qualquer ser ou objeto previamente gravado. Seres de inteligência humana ou superior <strong>distinguem facilmente</strong> da realidade; espécies menos desenvolvidas podem ser enganadas.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d4 dias. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
     "quantity": 1,
-    "cost": "400 CR",
+    "cost": "40 CR",
     "weight_in_load": 0,
     "weight_in_grams": 0,
     "magic_item": false,

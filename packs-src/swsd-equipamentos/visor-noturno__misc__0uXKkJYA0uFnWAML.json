@@ -8,7 +8,7 @@
     "odo_id": "visor-noturno",
     "description": "<p><strong>Utilitário, NT 1.</strong> Enxergar normalmente na <strong>escuridão total</strong>, sem penalidade, até <strong>15 m</strong>. Versão binóculo (dobro do custo e do tempo) enxerga até <strong>45 m</strong>.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d6 horas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
     "quantity": 1,
-    "cost": "400 CR",
+    "cost": "40 CR",
     "weight_in_load": 0,
     "weight_in_grams": 0,
     "magic_item": false,
