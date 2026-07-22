@@ -56,6 +56,17 @@ function weaponIcon(it) {
   return `${OD2I}/${["slashing", "piercing", "bludgeoning"].includes(t) ? t : "melee"}.svg`;
 }
 
+// "Usuário" que assina os documentos gerados. O Foundry valida este campo como
+// um ID de documento: EXATAMENTE 16 caracteres alfanuméricos. Com qualquer
+// outro tamanho, o mundo inteiro falha ao carregar com
+// "lastModifiedBy: must be a valid 16-character alphanumeric ID".
+const BUILD_USER_ID = "swspacedragonbld";
+if (!/^[A-Za-z0-9]{16}$/.test(BUILD_USER_ID)) {
+  throw new Error(
+    `BUILD_USER_ID inválido (${BUILD_USER_ID.length} chars): precisa ter exatamente 16 caracteres alfanuméricos.`
+  );
+}
+
 // _stats padrão. systemVersion é substituído automaticamente pelo Foundry.
 export function stats() {
   return {
@@ -66,7 +77,7 @@ export function stats() {
     systemVersion: "This is auto replaced",
     createdTime: 0,
     modifiedTime: 0,
-    lastModifiedBy: "swsdbuildtool",
+    lastModifiedBy: BUILD_USER_ID,
     exportSource: null,
   };
 }
