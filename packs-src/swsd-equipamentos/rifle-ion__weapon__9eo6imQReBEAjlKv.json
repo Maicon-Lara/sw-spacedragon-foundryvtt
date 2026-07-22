@@ -1,0 +1,49 @@
+{
+  "folder": "pUXGEEgu2DB4vDSu",
+  "name": "Rifle Íon",
+  "type": "weapon",
+  "_id": "9eo6imQReBEAjlKv",
+  "img": "systems/olddragon2e/assets/icons/ranged.svg",
+  "system": {
+    "odo_id": "rifle-ion",
+    "description": "<p>Média, Energia, Disparo (54 m), Duas Mãos, <strong>Íon</strong>. Rifle de projeção iônica, feito para derrubar droides sem furar a parede atrás deles.</p><p><strong>Íon.</strong> Afeta apenas <strong>máquinas</strong>. Contra droides e construtos causa <strong>dano dobrado</strong>; contra veículos e naves <strong>desliga um sistema por 1d4 rodadas</strong> em vez de causar dano; contra criaturas vivas <strong>não tem efeito nenhum</strong>.</p><p><em>Criação da casa:</em> a propriedade Íon já era citada pelo Bestiário e pela <em>Vulnerabilidade a Íon</em> do Droide, mas não havia arma que a usasse. Valores calibrados contra a tabela do compêndio, não vindos do Space Dragon.</p><p><strong>Alcance — as três faixas.</strong> O valor listado é o <strong>alcance curto</strong>, sem penalidade. Até o <strong>dobro</strong> dele o ataque sofre <strong>−2</strong>; até o <strong>triplo</strong>, <strong>−4</strong>. Além do triplo não há tiro.</p>",
+    "quantity": 1,
+    "cost": "500 CR",
+    "weight_in_load": 2,
+    "weight_in_grams": 0,
+    "magic_item": false,
+    "is_equipped": false,
+    "type": "ranged",
+    "damage_type": "none",
+    "damage": "1d8",
+    "bonus_damage": 0,
+    "bonus_ba": 0,
+    "bonus_ca": 0,
+    "shoot_range": 54,
+    "throw_range": 0,
+    "arrow": false,
+    "bolt": false,
+    "bolt_small": false,
+    "polearm": false,
+    "two_handed": true,
+    "versatile": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!9eo6imQReBEAjlKv"
+}

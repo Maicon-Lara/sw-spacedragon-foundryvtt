@@ -23,6 +23,13 @@
 
 // Faixas de alcance (SW-SD-Equipamentos.md § Alcance — as três faixas).
 // O número entre parênteses é o alcance CURTO, sem penalidade.
+const ION_NOTA =
+  "<p><strong>Íon.</strong> Afeta apenas <strong>máquinas</strong>. Contra droides e construtos causa <strong>dano dobrado</strong>; "
+  + "contra veículos e naves <strong>desliga um sistema por 1d4 rodadas</strong> em vez de causar dano; contra criaturas vivas "
+  + "<strong>não tem efeito nenhum</strong>.</p>"
+  + "<p><em>Criação da casa:</em> a propriedade Íon já era citada pelo Bestiário e pela <em>Vulnerabilidade a Íon</em> do Droide, "
+  + "mas não havia arma que a usasse. Valores calibrados contra a tabela do compêndio, não vindos do Space Dragon.</p>";
+
 const ALCANCE_NOTA =
   "<p><strong>Alcance — as três faixas.</strong> O valor listado é o <strong>alcance curto</strong>, sem penalidade. Até o <strong>dobro</strong> dele o ataque sofre <strong>−2</strong>; até o <strong>triplo</strong>, <strong>−4</strong>. Além do triplo não há tiro.</p>";
 
@@ -67,10 +74,12 @@ export const categorias = [
       { nome: "Rifle Blaster", damage: "1d8", cost: "450 CR", weight_in_load: 2, ranged: true, shoot_range: 72, two_handed: true, desc: "<p>Média, Energia, Disparo (72 m), Duas Mãos.</p>" + ALCANCE_NOTA + MODO_ATORDOANTE_NOTA },
       { nome: "Besta Wookiee (Bowcaster)", damage: "1d10", cost: "700 CR", weight_in_load: 2, ranged: true, shoot_range: 54, two_handed: true, desc: "<p>Média, Energia, Disparo (54 m), Duas Mãos, <strong>Recarga</strong>.</p><p>Exige <strong>FOR 15+</strong>.</p>" + ALCANCE_NOTA + MODO_ATORDOANTE_NOTA },
       { nome: "Blaster de Assalto Pesado", damage: "2d6", cost: "900 CR", weight_in_load: 3, ranged: true, shoot_range: 90, two_handed: true, desc: "<p>Grande, Energia, Disparo (90 m), Duas Mãos, <strong>Recarga</strong>.</p>" + ALCANCE_NOTA + MODO_ATORDOANTE_NOTA },
+      { nome: "Rifle Íon", damage: "1d8", cost: "500 CR", weight_in_load: 2, ranged: true, shoot_range: 54, two_handed: true, desc: "<p>Média, Energia, Disparo (54 m), Duas Mãos, <strong>Íon</strong>. Rifle de projeção iônica, feito para derrubar droides sem furar a parede atrás deles.</p>" + ION_NOTA + ALCANCE_NOTA },
       { nome: "Lançador de Rede", cost: "200 CR", weight_in_load: 1, ranged: true, shoot_range: 18, desc: "<p>Pequena, Especial, Disparo (18 m), <strong>Enreda</strong>. Não causa dano.</p>" + ALCANCE_NOTA },
       { nome: "Granada de Fragmentação", damage: "2d6", cost: "150 CR", weight_in_load: 1, melee: false, throw_range: 9, desc: "<p>Pequena, Arremesso (9 m), <strong>Área</strong>.</p>" + ALCANCE_NOTA },
       { nome: "Detonador Térmico", damage: "3d6", cost: "400 CR", weight_in_load: 1, melee: false, throw_range: 9, desc: "<p>Pequena, Arremesso (9 m), <strong>Área</strong>.</p>" + ALCANCE_NOTA },
       { nome: "Granada Atordoante", cost: "180 CR", weight_in_load: 1, melee: false, throw_range: 9, desc: "<p>Pequena, Arremesso (9 m), <strong>Área</strong>, <strong>Atordoante</strong>. Não causa dano.</p>" + ALCANCE_NOTA + ATORDOANTE_NOTA },
+      { nome: "Granada de Íon", damage: "2d6", cost: "200 CR", weight_in_load: 1, melee: false, throw_range: 9, desc: "<p>Pequena, Arremesso (9 m), <strong>Área</strong>, <strong>Íon</strong>. Estoura numa cúpula azul e silenciosa que derruba um esquadrão de droides de uma vez; um alvo vivo no meio da área não sente nada.</p>" + ION_NOTA + ALCANCE_NOTA },
     ],
   },
   {

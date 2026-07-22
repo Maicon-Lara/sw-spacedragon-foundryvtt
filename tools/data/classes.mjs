@@ -175,7 +175,7 @@ export const classes = [
     equipment_restrictions: EQ_VETERANO,
     habilidades: [
       { nome: "Pilotar", level: 1, desc: "<p>Pilota qualquer nave: <strong>1-2 em 1d6</strong>.</p>", level3: "<p>Chance de <strong>1-3 em 1d6</strong>.</p>", level6: "<p>Chance de <strong>1-4 em 1d6</strong>.</p>", level10: "<p>Chance de <strong>1-5 em 1d6</strong>.</p>" },
-      { nome: "Mecenas", level: 3, desc: "<p>Recebe salário mensal do indivíduo ou organização que representa, equivalente a <strong>300 CR × seu nível</strong>.</p><p><em>No Space Dragon era $20.000 × nível — o preço de uma pistola laser por nível, por mês. Aqui o valor foi convertido para a escala de Créditos do cenário, mantendo a proporção: cerca de um blaster pesado por nível.</em></p>" },
+      { nome: "Mecenas", level: 3, desc: "<p>Recebe salário mensal do indivíduo ou organização que representa, equivalente a <strong>200 CR × seu nível</strong>.</p><p><em>No Space Dragon era $20.000 × nível — o preço de uma pistola laser por nível, por mês. Aqui o valor foi convertido para a escala de Créditos do cenário, mantendo a proporção: cerca de um blaster pesado por nível.</em></p>" },
       { nome: "Enviado", level: 6, desc: "<p>Ganha uma <strong>nave patrocinada</strong> (combustível e reparos custeados) e pode ter tripulação conforme seu número de seguidores.</p>" },
       { nome: "Embaixador", level: 10, desc: "<p>A tripulação <strong>triplica</strong>, e os testes de Moral ou Carisma para obter reação amigável de uma criatura inteligente são <strong>Fáceis</strong>.</p>" },
       reputacao("A fama do diplomata respeitado — esta abre salões, audiências e linhas de crédito."),
