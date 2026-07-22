@@ -293,7 +293,8 @@ export const grupos = [
           { nome: "Foco Diário", desc: "cerca de <strong>12 pontos</strong>, distribuídos pelas Grandezas." },
         ],
         nota:
-          "<strong>Como montar o chefe Sith/Inquisidor:</strong> use este bloco de 10º nível como base e ajuste os poderes conhecidos ao Caminho e à Senda dele — um <strong>Guardião</strong> prioriza dano de sabre (e uma Forma); um <strong>Consular</strong>, as Grandezas altas de controle mental. Para algo mais colossal, suba os DV e mantenha o Foco proporcional ao nível.",
+          "<strong>Como montar o chefe Sith/Inquisidor:</strong> use este bloco de 10º nível como base e ajuste os poderes conhecidos ao Caminho e à Senda dele — um <strong>Guardião</strong> prioriza dano de sabre (e uma Forma); um <strong>Consular</strong>, as Grandezas altas de controle mental. Para algo mais colossal, suba os DV e mantenha o Foco proporcional ao nível.<br><br>" +
+          "<strong>O vilão também negocia com a Sombra.</strong> Um PNJ Sensível usa <em>A Tentação</em> pelas mesmas regras do jogador — uma vez por cena, mesmos preços — e o Mestre deve <strong>anunciar em voz alta</strong> quando o Inquisidor aceita Corrupção para rerrolar. A mesa vê o vilão se degradando em tempo real. <strong>Sem contador:</strong> dê ao chefe um número de negociações igual ao que falta para ele estourar — <strong>3 para um Inquisidor</strong>, <strong>5 para um Lorde Sith</strong>. Gastas todas, ele é <strong>Consumido</strong>: uma última rodada de fúria cega, sem tática nem autopreservação, com <strong>+2 no ataque e no dano e −4 na CA</strong>. É uma segunda fase de chefe embutida na regra. Com um <strong>Mestre Jedi renegado</strong> o peso se inverte: cada Tentação o aproxima da <strong>Queda</strong>, e o grupo pode estar ali para impedi-la.",
       },
     ],
   },

@@ -627,6 +627,8 @@ const paginas = [
 <li><strong>Atributo-chave: Sabedoria</strong> (todos os testes de poder e o Duelo da Força). <em>Opção: Sombra por Carisma — ver a classe.</em> O Foco extra do Sensível vem da Sabedoria.</li>
 <li><strong>Aprender:</strong> por treino/tentativa e erro (Aprender Poderes da Força), ou ensinado por um mestre (teste Fácil).</li>
 <li><strong>Cruzar de lista (a Queda):</strong> um personagem da Luz pode usar um poder da Sombra em desespero, mas cada uso marca <strong>+1 de Corrupção</strong>. Alguns poderes marcam Corrupção <strong>mesmo para a Sombra</strong> — vêm com <strong>★</strong>.</li>
+<li><strong>A Tentação (a Corrupção como moeda):</strong> numa <strong>rolagem decisiva</strong>, o Sensível pode <strong>aceitar Corrupção</strong> para rerrolar (<strong>+1</strong>, fica com o segundo resultado), rerrolar e ficar com o melhor (<strong>+2</strong>) ou transformar um acerto em crítico (<strong>+1</strong>). <strong>Uma vez por cena, três por dia de jogo.</strong> Os custos <strong>somam</strong> com o do poder: um personagem da Luz que lança um poder da Sombra e ainda paga para rerrolar sobe <strong>até 3 pontos numa ação só</strong>.</li>
+<li><strong>Eco da Senda:</strong> do <strong>10º nível</strong> em diante, o Foco gasto em poderes do <strong>Domínio da sua Senda</strong> às vezes volta (1 em 1d10; 1 em 1d4 no 15º), e no <strong>15º</strong> os poderes de <strong>1ª Grandeza</strong> do seu Domínio saem de graça (um por rodada). Os quatro Domínios estão na classe.</li>
 </ul>
 
 <h2>Grandeza canônica (v1.0)</h2>
