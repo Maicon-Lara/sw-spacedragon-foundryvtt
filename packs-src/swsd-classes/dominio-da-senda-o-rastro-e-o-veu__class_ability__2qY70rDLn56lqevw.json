@@ -1,0 +1,50 @@
+{
+  "folder": "tnTdEFRuPBitOkPw",
+  "name": "Domínio da Senda — O Rastro e o Véu",
+  "type": "class_ability",
+  "_id": "2qY70rDLn56lqevw",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p>O <strong>Domínio</strong> do Sentinela é <strong>O Rastro e o Véu</strong>: a Força que <strong>procura, revela e esconde</strong> — detectar, localizar, ler a verdade, apagar-se dos sentidos alheios e enfraquecer quem o caça.</p><p>É este o conjunto que dispara o <strong>Eco da Senda</strong> da classe-base — a chance de o Foco voltar no 10º nível e a gratuidade dos poderes de 1ª Grandeza no 15º. A lista completa de exemplos está na habilidade <em>Eco da Senda</em>.</p>",
+    "level": 10,
+    "level3": "",
+    "level6": "",
+    "level10": "",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 500000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!2qY70rDLn56lqevw"
+}

@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "mochila-de-propulsao-jetpack",
-    "description": "<p>Voo/salto até 18 m, 6 rodadas por dia; recarrega após descanso.</p><p><em>Aparato utilitário: qualquer um pode operar.</em></p>",
+    "description": "<p>Voo/salto até 18 m, 6 rodadas por dia; recarrega após descanso.</p><p><strong>Equivalência:</strong> é a <em>Mochila a jato</em> do ED-07 (utilitário, NT 3). O valor convertido lá seria <strong>1.500 CR</strong> (ED $150.000 ÷ 100); vale o preço do cenário.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p>",
     "quantity": 1,
     "cost": "2.500 CR",
     "weight_in_load": 0,

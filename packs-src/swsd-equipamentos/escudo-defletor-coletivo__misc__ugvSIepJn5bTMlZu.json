@@ -1,0 +1,35 @@
+{
+  "folder": "UTSGRALCcUpjz5fT",
+  "name": "Escudo Defletor Coletivo",
+  "type": "misc",
+  "_id": "ugvSIepJn5bTMlZu",
+  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "system": {
+    "odo_id": "escudo-defletor-coletivo",
+    "description": "<p><strong>Defensivo, NT 6.</strong> Como o escudo individual, mas cobre um raio de <strong>10 m</strong> ao redor do usuário. <strong>Dentro da área, escudos de energia não funcionam.</strong> Duração de <strong>1 minuto</strong>; recarga de <strong>1d8 horas</strong>.</p><p><em>Aparato <strong>defensivo</strong>: Técnico e Veterano.</em></p><p><em>Construção: 1d6 dias. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "quantity": 1,
+    "cost": "4.200 CR",
+    "weight_in_load": 0,
+    "weight_in_grams": 0,
+    "magic_item": false,
+    "is_equipped": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 1500000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ugvSIepJn5bTMlZu"
+}

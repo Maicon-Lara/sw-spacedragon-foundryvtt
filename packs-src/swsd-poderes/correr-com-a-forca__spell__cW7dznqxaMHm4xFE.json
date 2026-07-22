@@ -13,10 +13,10 @@
     "necromancer": "null",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
+    "range": "pessoal",
+    "duration": "1 rodada por nível",
     "jp": "nenhuma",
-    "description": "<p><strong>Grandeza:</strong> 3ª</p><p>A Força alimenta os músculos e o tempo parece afinar: você <strong>dobra o deslocamento</strong> e ganha uma <strong>ação extra de movimento</strong> na rodada. É o borrão que cruza o hangar antes das portas fecharem.</p><p><em>(adaptação — 3ª.)</em></p>"
+    "description": "<p><strong>Grandeza:</strong> 3ª</p><p><strong>Alcance:</strong> pessoal · <strong>Duração:</strong> 1 rodada por nível · <strong>JP:</strong> nenhuma</p><p><strong>Efeito:</strong> Dobra o deslocamento e concede uma <strong>ação extra de movimento</strong> por rodada.</p><p>A Força alimenta os músculos e o tempo parece afinar: você <strong>dobra o deslocamento</strong> e ganha uma <strong>ação extra de movimento</strong> na rodada. É o borrão que cruza o hangar antes das portas fecharem.</p><p><em>(adaptação — 3ª.)</em></p>"
   },
   "effects": [],
   "flags": {},

@@ -1,0 +1,35 @@
+{
+  "folder": "UTSGRALCcUpjz5fT",
+  "name": "Pistola Desintegradora",
+  "type": "misc",
+  "_id": "s9wd1vsKFlGnXCze",
+  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "system": {
+    "odo_id": "pistola-desintegradora",
+    "description": "<p><strong>Ofensivo, NT 9.</strong> <strong>Desintegra completamente</strong> qualquer inimigo atingido — <strong>sem direito a Jogada de Proteção</strong>. <strong>Uso único</strong>: fica permanentemente inutilizável depois.</p><p><em>Aparato <strong>ofensivo</strong>: só o Técnico e o Caçador de Recompensas o operam.</em></p><p><em>Construção: 1d4 meses. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "quantity": 1,
+    "cost": "6.300 CR",
+    "weight_in_load": 1,
+    "weight_in_grams": 0,
+    "magic_item": false,
+    "is_equipped": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 1200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!s9wd1vsKFlGnXCze"
+}

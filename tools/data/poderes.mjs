@@ -59,10 +59,13 @@ export const listasDePoder = [
       {
         nome: "Empurrão da Força",
         circle: 1,
+        range: "18 metros",
+        duration: "instantâneo",
         jp: "JPD",
         reverse: false,
         desc:
           g(1) +
+          "<p><strong>Alcance:</strong> 18 metros · <strong>Duração:</strong> instantâneo · <strong>JP:</strong> JPD</p>" +
           "<p><strong>JP:</strong> JPD</p>" +
           "<p>Um estouro breve de telecinese: você lança a mão e a vontade contra um alvo, empurrando-o <strong>3 metros</strong> para trás e, se ele falhar numa <strong>JPD</strong>, derrubando-o. Alternativamente, arremessa um objeto solto por perto como projétil, causando <strong>1d6</strong> de dano. É a semente do Empurrão maior — no baixo nível, o suficiente para jogar um inimigo do parapeito ou abrir espaço num corredor.</p>" +
           "<p><em>(adaptação — 1ª.)</em></p>",
@@ -70,6 +73,8 @@ export const listasDePoder = [
       {
         nome: "Sentir o Perigo",
         circle: 1,
+        range: "pessoal",
+        duration: "até o próximo ataque-surpresa da cena",
         jp: "nenhuma",
         reverse: false,
         desc:
@@ -94,6 +99,8 @@ export const listasDePoder = [
       {
         nome: "Percepção Ampliada",
         circle: 2,
+        duration: "1 minuto",
+        jp: "nenhuma",
         range: "18 metros",
         reverse: false,
         desc:
@@ -119,27 +126,41 @@ export const listasDePoder = [
       {
         nome: "Localizar pela Força",
         circle: 2,
+        range: "18 metros + 2 m por nível",
+        duration: "concentração",
+        jp: "nenhuma",
         reverse: false,
         desc:
           g(2) +
+          "<p><strong>Alcance:</strong> 18 metros + 2 m por nível · <strong>Duração:</strong> concentração · <strong>JP:</strong> nenhuma</p>" +
           "<p>Você fixa na mente um objeto, uma nave ou uma pessoa que já conheceu e a Força aponta a <strong>direção</strong> dela, como uma bússola viva. Não dá distância exata nem mapa, mas basta para seguir um rastro pela galáxia: um padawan perdido, um artefato roubado, o cargueiro que fugiu.</p>" +
           "<p><em>(adaptação — 2ª.)</em></p>",
       },
       {
         nome: "Correr com a Força",
         circle: 3,
+        range: "pessoal",
+        duration: "1 rodada por nível",
+        jp: "nenhuma",
         reverse: false,
         desc:
           g(3) +
+          "<p><strong>Alcance:</strong> pessoal · <strong>Duração:</strong> 1 rodada por nível · <strong>JP:</strong> nenhuma</p>" +
+          "<p><strong>Efeito:</strong> Dobra o deslocamento e concede uma <strong>ação extra de movimento</strong> por rodada.</p>" +
           "<p>A Força alimenta os músculos e o tempo parece afinar: você <strong>dobra o deslocamento</strong> e ganha uma <strong>ação extra de movimento</strong> na rodada. É o borrão que cruza o hangar antes das portas fecharem.</p>" +
           "<p><em>(adaptação — 3ª.)</em></p>",
       },
       {
         nome: "Salto da Força",
         circle: 3,
+        range: "pessoal",
+        duration: "instantâneo",
+        jp: "nenhuma",
         reverse: false,
         desc:
           g(3) +
+          "<p><strong>Alcance:</strong> pessoal · <strong>Duração:</strong> instantâneo · <strong>JP:</strong> nenhuma</p>" +
+          "<p><strong>Efeito:</strong> Salta até <strong>3 metros por nível</strong> na horizontal (metade na vertical) e <strong>ignora todo o dano de queda</strong> ao pousar.</p>" +
           "<p>Um impulso telecinético lança seu corpo a <strong>alturas e distâncias enormes</strong> — telhados, plataformas, o convés de uma nave em fuga — e você <strong>ignora o dano de queda</strong> ao pousar. O salto assinatura do duelista que reaparece de cima.</p>" +
           "<p><em>(adaptação — 3ª.)</em></p>",
       },
@@ -173,9 +194,13 @@ export const listasDePoder = [
       {
         nome: "Olho da Força",
         circle: 4,
+        range: "100 metros + 10 m por nível",
+        duration: "12 turnos",
+        jp: "nenhuma",
         reverse: false,
         desc:
           g(4) +
+          "<p><strong>Alcance:</strong> 100 metros + 10 m por nível · <strong>Duração:</strong> 12 turnos · <strong>JP:</strong> nenhuma</p>" +
           "<p>Você projeta um <strong>sensor invisível</strong> que se desprende de você e percorre o ambiente à distância, transmitindo de volta o que \"vê\" e \"ouve\". Um olho espião feito de pura percepção, ideal para vasculhar o corredor seguinte, contar guardas ou espiar uma reunião sem pôr um pé na sala.</p>" +
           "<p><em>(adaptação — 4ª.)</em></p>",
       },
@@ -201,9 +226,14 @@ export const listasDePoder = [
       {
         nome: "Cura pela Força",
         circle: 1,
+        range: "toque",
+        duration: "instantâneo",
+        jp: "nenhuma",
         reverse: false,
         desc:
           g(1) +
+          "<p><strong>Alcance:</strong> toque · <strong>Duração:</strong> instantâneo · <strong>JP:</strong> nenhuma</p>" +
+          "<p><strong>Efeito:</strong> Restaura <strong>1d8 pontos de vida</strong>.</p>" +
           "<p>Pela imposição das mãos e da vontade serena, você fecha feridas e <strong>restaura pontos de vida</strong> de um aliado (ou de si). Não ressuscita nem regenera membros, mas tira o companheiro da beira da morte no meio da luta — a mão que muitos padawans aprendem cedo, e que a Sombra despreza por não render poder.</p>" +
           "<p><em>(adaptação — 1ª.)</em></p>",
       },
@@ -223,6 +253,8 @@ export const listasDePoder = [
       {
         nome: "Lâmina Guiada",
         circle: 1,
+        duration: "10 rodadas",
+        jp: "nenhuma",
         range: "toque",
         reverse: false,
         desc:
@@ -234,6 +266,7 @@ export const listasDePoder = [
       {
         nome: "Serenidade",
         circle: 2,
+        range: "pessoal",
         duration: "enquanto você não atacar",
         jp: "JPS",
         reverse: false,
@@ -259,6 +292,7 @@ export const listasDePoder = [
       {
         nome: "Cura de Aflições",
         circle: 3,
+        jp: "nenhuma",
         range: "toque",
         duration: "instantâneo",
         reverse: false,
@@ -286,18 +320,28 @@ export const listasDePoder = [
       {
         nome: "Coragem",
         circle: 3,
+        range: "18 metros",
+        duration: "10 rodadas",
+        jp: "JPS (inimigos)",
         reverse: false,
         desc:
           g(3) +
+          "<p><strong>Alcance:</strong> 18 metros · <strong>Duração:</strong> 10 rodadas · <strong>JP:</strong> JPS (inimigos)</p>" +
+          "<p><strong>Efeito:</strong> Aliados que o escutem ganham <strong>+1 em ataque e em JP a cada 3 níveis</strong> seus; inimigos que falhem na JPS sofrem a mesma penalidade.</p>" +
           "<p>Você irradia uma aura de firmeza: <strong>aliados na área ganham bônus</strong> (ataque/moral) e <strong>inimigos sofrem penalidade</strong> enquanto ela dura. A presença que transforma um punhado de rebeldes assustados numa linha que segura.</p>" +
           "<p><em>(adaptação — 3ª.)</em></p>",
       },
       {
         nome: "Deflexão da Força",
         circle: 3,
+        range: "pessoal",
+        duration: "1 rodada por nível",
+        jp: "JPD",
         reverse: false,
         desc:
           g(3) +
+          "<p><strong>Alcance:</strong> pessoal · <strong>Duração:</strong> 1 rodada por nível · <strong>JP:</strong> JPD</p>" +
+          "<p><strong>Efeito:</strong> Disparos dirigidos a você exigem que o atirador vença sua <strong>JPD</strong>; falhando, o tiro é aparado no ar.</p>" +
           "<p>Você ergue um campo de vontade que <strong>repele projéteis e disparos de blaster</strong>, aparando-os no ar. É a base mecânica da deflexão com o sabre das <strong>Formas do Guardião</strong>: com a lâmina, os tiros voltam; sem ela, apenas se desviam. O muro que faz um Jedi caminhar contra um pelotão.</p>" +
           "<p><em>(adaptação — 3ª.)</em></p>",
       },
@@ -317,36 +361,55 @@ export const listasDePoder = [
       {
         nome: "Premonição",
         circle: 4,
+        range: "pessoal",
+        duration: "instantâneo",
+        jp: "nenhuma",
         reverse: false,
         desc:
           g(4) +
+          "<p><strong>Alcance:</strong> pessoal · <strong>Duração:</strong> instantâneo · <strong>JP:</strong> nenhuma</p>" +
+          "<p><strong>Efeito:</strong> Uma pergunta sobre um curso de ação <strong>imediato</strong> (a próxima hora); o Mestre responde <em>favorável</em>, <em>desfavorável</em> ou <em>nublado</em>.</p>" +
           "<p>Você abre uma fresta no fluxo do tempo e a Força <strong>sinaliza a sabedoria de um curso imediato</strong> — se aquela porta esconde uma cilada, se este acordo leva à ruína. Dá um sim/não ou uma imagem-relâmpago, não uma profecia detalhada (o <strong>Vidente</strong> do Consular aprofunda isto).</p>" +
           "<p><em>(adaptação — 4ª.)</em></p>",
       },
       {
         nome: "Libertar da Corrupção",
         circle: 4,
+        range: "toque",
+        duration: "instantâneo",
+        jp: "JPS (se resistir)",
         reverse: false,
         desc:
           g(4) +
+          "<p><strong>Alcance:</strong> toque · <strong>Duração:</strong> instantâneo · <strong>JP:</strong> JPS (se resistir)</p>" +
+          "<p><strong>Efeito:</strong> Remove <strong>1 ponto de Corrupção</strong> do alvo e quebra um domínio mental imposto por poder da Sombra. Uma vez por alvo por descanso longo.</p>" +
           "<p>Pela Luz, você <strong>alivia a Corrupção que domina um alvo</strong> e <strong>quebra domínios mentais</strong> impostos por poderes da Sombra (a critério do Mestre). O toque redentor que arranca alguém das garras do Lado Sombrio — raro, difícil e nunca garantido.</p>" +
           "<p><em>(adaptação — 4ª.)</em></p>",
       },
       {
         nome: "Visão da Verdade",
         circle: 5,
+        range: "pessoal",
+        duration: "10 rodadas",
+        jp: "nenhuma",
         reverse: false,
         desc:
           g(5) +
+          "<p><strong>Alcance:</strong> pessoal · <strong>Duração:</strong> 10 rodadas · <strong>JP:</strong> nenhuma</p>" +
           "<p>Seus olhos passam a enxergar <strong>através de ilusões, disfarces, invisibilidade e mentiras da percepção</strong>. O metamorfo, o feitiço de sombra, o inimigo oculto — tudo se revela. Muito Jedi: ver o que é, não o que querem que você veja.</p>" +
           "<p><em>(adaptação — 5ª.)</em></p>",
       },
       {
         nome: "Cura Maior",
         circle: 5,
+        range: "toque",
+        duration: "instantâneo",
+        jp: "nenhuma",
         reverse: false,
         desc:
           g(5) +
+          "<p><strong>Alcance:</strong> toque · <strong>Duração:</strong> instantâneo · <strong>JP:</strong> nenhuma</p>" +
+          "<p><strong>Efeito:</strong> Restaura <strong>3d8 pontos de vida</strong>; se o alvo estiver com PV negativos, também o estabiliza.</p>" +
           "<p>A cura levada ao limite da Luz: você <strong>restaura grande soma de pontos de vida</strong> ou traz um aliado da beira da morte de volta à luta em uma ação. O milagre que salva o herói caído no clímax.</p>" +
           "<p><em>(adaptação — 5ª.)</em></p>",
       },
@@ -372,6 +435,7 @@ export const listasDePoder = [
       {
         nome: "Toque Sombrio",
         circle: 1,
+        duration: "instantâneo",
         range: "toque",
         jp: "JPC",
         reverse: false,
@@ -410,9 +474,14 @@ export const listasDePoder = [
       {
         nome: "Manto de Escuridão",
         circle: 2,
+        range: "18 metros",
+        duration: "10 rodadas",
+        jp: "nenhuma",
         reverse: false,
         desc:
           g(2) +
+          "<p><strong>Alcance:</strong> 18 metros · <strong>Duração:</strong> 10 rodadas · <strong>JP:</strong> nenhuma</p>" +
+          "<p><strong>Efeito:</strong> Esfera de <strong>6 metros de raio</strong> de trevas sobrenaturais; quem não tem infravisão fica <strong>cego</strong> dentro dela, e você e os que designar enxergam normalmente.</p>" +
           "<p>Você invoca <strong>trevas sobrenaturais</strong> que engolem a luz e <strong>cegam quem não enxerga no escuro</strong>, enquanto você e os seus se movem à vontade nelas. O breu que precede a chacina.</p>" +
           "<p><em>(adaptação — 2ª.)</em></p>",
       },
@@ -673,7 +742,7 @@ const paginas = [
 <h3>7ª Grandeza</h3>
 <p><em>Não existe como item de ficha — use o texto abaixo.</em></p>
 <ul>
-<li><strong>Presença Serena</strong> <em>(adaptação — 7ª)</em> — a serenidade individual vira força de área: você <strong>projeta calma sobrenatural sobre uma multidão inteira</strong>, apaziguando pânico, fúria e violência iminente por toda a cena. O gesto que faz um motim baixar as armas, uma turba se dispersar, um salão à beira do massacre respirar de novo.</li>
+<li><strong>Presença Serena</strong> <em>(adaptação — <strong>Alcance:</strong> 30 metros · <strong>Duração:</strong> 10 rodadas · <strong>JP:</strong> JPS — 7ª)</em> — a serenidade individual vira força de área: você <strong>projeta calma sobrenatural sobre uma multidão inteira</strong>, apaziguando pânico, fúria e violência iminente por toda a cena. O gesto que faz um motim baixar as armas, uma turba se dispersar, um salão à beira do massacre respirar de novo.</li>
 </ul>
 `,
   },

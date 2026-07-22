@@ -1,0 +1,35 @@
+{
+  "folder": "UTSGRALCcUpjz5fT",
+  "name": "Blaster de Disparo Duplo",
+  "type": "misc",
+  "_id": "g1HYf3bgAfHws3P7",
+  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "system": {
+    "odo_id": "blaster-de-disparo-duplo",
+    "description": "<p><strong>Ofensivo, NT 4.</strong> Quase idêntico a uma pistola blaster, mas numa rolagem de ataque bem-sucedida <strong>efetua um segundo disparo automaticamente</strong>: dano <strong>2d6</strong>.</p><p><em>Aparato <strong>ofensivo</strong>: só o Técnico e o Caçador de Recompensas o operam.</em></p><p><em>Construção: 1d10 horas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "quantity": 1,
+    "cost": "3.200 CR",
+    "weight_in_load": 1,
+    "weight_in_grams": 0,
+    "magic_item": false,
+    "is_equipped": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!g1HYf3bgAfHws3P7"
+}

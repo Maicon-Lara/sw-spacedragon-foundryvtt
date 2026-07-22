@@ -13,10 +13,10 @@
     "necromancer": "null",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
-    "jp": "nenhuma",
-    "description": "<p><strong>Grandeza:</strong> 4ª</p><p>Pela Luz, você <strong>alivia a Corrupção que domina um alvo</strong> e <strong>quebra domínios mentais</strong> impostos por poderes da Sombra (a critério do Mestre). O toque redentor que arranca alguém das garras do Lado Sombrio — raro, difícil e nunca garantido.</p><p><em>(adaptação — 4ª.)</em></p>"
+    "range": "toque",
+    "duration": "instantâneo",
+    "jp": "JPS (se resistir)",
+    "description": "<p><strong>Grandeza:</strong> 4ª</p><p><strong>Alcance:</strong> toque · <strong>Duração:</strong> instantâneo · <strong>JP:</strong> JPS (se resistir)</p><p><strong>Efeito:</strong> Remove <strong>1 ponto de Corrupção</strong> do alvo e quebra um domínio mental imposto por poder da Sombra. Uma vez por alvo por descanso longo.</p><p>Pela Luz, você <strong>alivia a Corrupção que domina um alvo</strong> e <strong>quebra domínios mentais</strong> impostos por poderes da Sombra (a critério do Mestre). O toque redentor que arranca alguém das garras do Lado Sombrio — raro, difícil e nunca garantido.</p><p><em>(adaptação — 4ª.)</em></p>"
   },
   "effects": [],
   "flags": {},

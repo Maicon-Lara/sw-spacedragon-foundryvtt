@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/armor.svg",
   "system": {
     "odo_id": "gerador-de-escudo-pessoal",
-    "description": "<p>Leve. <strong>Acoplado ao cinto, sempre ativo — não ocupa a mão.</strong> Movimento: sem redução.</p>",
+    "description": "<p>Leve. <strong>Acoplado ao cinto, sempre ativo — não ocupa a mão.</strong> Movimento: sem redução.</p><p><strong>Equivalência:</strong> é o <em>Campo de força individual</em> do ED-07 (defensivo, NT 4) na sua versão civil. <strong>Não são o mesmo item mecânico:</strong> o gerador de cinto dá <strong>+1 de CA permanente por 80 CR</strong>; o aparato militar dá <strong>+4 de CA por 1 minuto</strong>, recarrega em 1d4 horas e custa <strong>2.400 CR</strong> (ED $240.000 ÷ 100). Quem tiver os dois <strong>não soma</strong>: vale o maior bônus ativo.</p><p><em>Aparato <strong>defensivo</strong>: Técnico e Veterano.</em></p>",
     "quantity": 1,
     "cost": "80 CR",
     "weight_in_load": 0,

@@ -74,6 +74,67 @@ const NOTA_SENDA_SEM_ALINHAMENTO =
   "<p><strong>As Sendas NÃO têm restrição de alinhamento</strong> (correção da casa). Nas classes mundanas cada especialização é presa a um alinhamento; aqui isso foi <strong>removido</strong>. O motivo é de design: a restrição existe para diferenciar as trilhas — e no Sensível essa diferenciação <em>já é feita pelo Caminho (Luz/Sombra) e pela Corrupção</em>. Manter os dois eixos produzia aberrações: um Sith de sabre seria obrigatoriamente \"Guardião neutro\" com Corrupção 10, e um Inquisidor caçador de Jedi seria \"Sentinela caótico\" a serviço do regime mais ordeiro da galáxia. O Sensível <strong>escolhe livremente</strong> a Senda e o alinhamento; quem manda na moral dele é o <strong>Caminho</strong>.</p>"
       + "<p><em>Variante opcional — se a sua mesa preferir a amarração antiga, a leitura mais coerente seria pelo <strong>Caminho</strong>, não pela Senda: Luz → Ordeiro ou Neutro · Sombra → Caótico ou Ordeiro (o Império é ordeiro) · sem Caminho → Neutro.</em></p>";
 
+// ── Criações da casa inspiradas no suplemento "Jedi e Sith para Space Dragon"
+// (Jonas Picholaro). A caixa abaixo acompanha as três regras novas — a
+// Tentação, o Eco da Senda e o Mudar de Guarda — para deixar claro na mesa
+// de onde veio a ideia e por que os números NÃO são os do suplemento.
+const CAIXA_CASA = (o_que_veio_de_la) =>
+  "<hr><p>🜂 <strong>Criação da casa.</strong> A ideia nasceu do suplemento oficial <em>Jedi e Sith para Space Dragon</em>, de Jonas Picholaro — " +
+  o_que_veio_de_la +
+  " Os <strong>números de lá não servem aqui</strong>: aquele suplemento roda noutra escala (personagens até o <strong>20º nível</strong>, especializações que só abrem no <strong>5º</strong>) e noutro vocabulário (\"pontos da força\", \"atributos da força\"). O que atravessou foi só a intuição; a mecânica foi reconstruída sobre o que este cenário já tem — <strong>Foco Diário</strong>, <strong>Grandezas</strong>, <strong>Sendas</strong> e a trilha de <strong>Corrupção</strong>.</p>";
+
+const HAB_TENTACAO = {
+  nome: "A Tentação — a Corrupção como moeda",
+  level: 1,
+  desc:
+    "<p>Até agora a Corrupção só sabia <strong>punir</strong>. Mas na galáxia a Sombra não multa ninguém — ela <strong>oferece</strong>. É mais rápida, é mais fácil, e funciona.</p>" +
+    "<p>Quando você <strong>falha numa rolagem decisiva</strong> — ou quando um golpe seu acerta e você quer que ele <em>termine</em> a questão —, a Força propõe um negócio. Escolha uma das três formas:</p><ul>" +
+    "<li><strong>Insistir — +1 de Corrupção:</strong> <strong>rerrola</strong> a jogada falha e fica com o <strong>segundo resultado, seja ele qual for</strong>. A Força atende ao chamado, mas não obedece a você.</li>" +
+    "<li><strong>Arrancar — +2 de Corrupção:</strong> <strong>rerrola</strong> e fica com o <strong>melhor dos dois</strong>. Não é mais pedir: é tomar. Custa o dobro porque a certeza é o que a Sombra vende mais caro.</li>" +
+    "<li><strong>Sentenciar — +1 de Corrupção:</strong> um ataque que <strong>já acertou</strong> vira <strong>crítico</strong>, ou um poder que <strong>já passou</strong> tem dano, duração ou número de alvos <strong>dobrado</strong>.</li>" +
+    "</ul>" +
+    "<p><strong>Rolagem decisiva</strong> é aquela cuja falha <strong>fecha um caminho</strong>: o Duelo da Força que decide a sala, o teste que impede a nave de cair, o ataque que separa o aliado da morte. <strong>Não</strong> vale para rotina, iniciativa, dano avulso ou testes repetíveis. Quem decide é o Mestre, e decide <strong>antes</strong> da rolagem.</p>" +
+    "<p><strong>Trava: uma vez por cena, no máximo três vezes por dia de jogo.</strong> Sem ela a regra se autodestrói — um Padawan sereno viraria Lorde Sith na segunda sessão e a Queda deixaria de ser tragédia para virar contabilidade. Com a trava, ir de 0 a 10 só pela Tentação leva no mínimo <strong>quatro dias de jogo</strong>.</p>" +
+    "<p><strong>Vale igualmente para a Luz e para a Sombra</strong> — mesmo preço, mesma trilha, sem desconto para ninguém. O que muda é a cara da cena, não a matemática: para o Jedi a voz sussurra <em>\"só desta vez\"</em> e o empurra para a <strong>Queda</strong>; para quem já é da Sombra ela diz <em>\"você já pagou por isso, use\"</em> e o empurra para ser <strong>Consumido</strong>.</p>" +
+    "<p><strong>Com os poderes ★, os custos somam.</strong> A Tentação <strong>nunca substitui</strong> a Corrupção que a ação já cobrava. Um personagem da Luz que lança um poder da Sombra (+1), erra e <em>Arranca</em> a rerrolagem (+2) sobe <strong>3 pontos numa única ação</strong>.</p>" +
+    "<p><strong>Em Corrupção 9 — a última oferta.</strong> Nada impede o negócio. A Sombra oferece <strong>sozinha</strong>: o Mestre descreve a oferta em voz alta e <strong>avisa o preço</strong> — aceitar leva a <strong>10</strong>, e 10 é a <strong>Queda</strong> (Luz/neutro) ou o <strong>Consumido</strong> (Sombra). Você <strong>recebe o que pediu</strong> na hora; a Queda se resolve <strong>ao fim da cena</strong>. O herói ganha a luta e perde a si mesmo no mesmo plano.</p>" +
+    "<p><strong>Recusar nunca exige rolagem</strong> e nunca tem penalidade mecânica. Uma Corrupção que se pega sem escolher não é tentação, é imposto.</p>" +
+    "<p>A Corrupção ganha assim é <strong>Corrupção comum</strong>: conta na tabela de estados e <strong>sai pelos mesmos caminhos</strong> (os atos de compaixão e sacrifício que dão −1).</p>" +
+    CAIXA_CASA(
+      "de lá veio a ideia do Sith de 15º nível que podia \"gastar 1 ponto da força <strong>ou receber 1 ponto do lado negro</strong> e refazer qualquer teste de poder\", ou seja, <strong>pagar em Corrupção por um resultado</strong>."
+    ),
+};
+
+const HAB_ECO_SENDA = {
+  nome: "Eco da Senda",
+  level: 10,
+  desc:
+    "<p>Chega um ponto em que a Força para de ser esforço. O gesto que lhe custava concentração vira respiração — e a corrente que você empurrou volta sozinha para a mão. Não em tudo: <strong>só naquilo que é o seu ofício</strong>.</p>" +
+    "<p><strong>Eco (10º):</strong> sempre que gastar Foco num <strong>poder da sua Senda</strong>, role <strong>1d10</strong> depois de resolver o poder — num <strong>1</strong>, o ponto de Foco <strong>volta</strong> para a Grandeza de onde saiu. Vale <strong>por ponto gasto</strong> (um poder de 2 pontos rola dois d10).</p>" +
+    "<p><strong>Eco Maior (15º):</strong> a rolagem passa a ser <strong>1d4</strong> (25%). Além disso, os <strong>poderes de 1ª Grandeza da sua Senda não custam mais Foco algum</strong> — <strong>no máximo um por rodada</strong>.</p>" +
+    "<p><em>Por que 1ª Grandeza e não 2ª: aqui as Grandezas vão até a 10ª e a 1ª já carrega os cavalos de batalha do Sensível (Empurrão da Força, Truque Mental, Detectar a Força, Cura pela Força). Libertar a 2ª junto, num teto de 15º nível, faria o Consular abrir portas de aço o dia inteiro de graça. A trava de um por rodada existe pelo mesmo motivo: gratuito não pode significar infinito dentro de um combate.</em></p>" +
+    "<p><strong>O que é \"poder da sua Senda\":</strong> cada Senda tem um <strong>Domínio</strong> — a família de efeitos que ela pratica até virar hábito. Vale para poderes de <strong>qualquer lista</strong> (Universal, Luz ou Sombra): conta <em>o que o poder faz</em>, não de que lado ele vem.</p><ul>" +
+    "<li><strong>Guardião — O Corpo e a Lâmina:</strong> Empurrão da Força · Correr com a Força · Salto da Força · Telecinésia · Prisão Telecinética · Lâmina Guiada · Deflexão da Força · Choque da Força · Estrangular · Relâmpagos da Força ★</li>" +
+    "<li><strong>Consular — A Mente e o Domínio:</strong> Truque Mental · Vínculo Telepático · Percepção Ampliada · Calma · Coragem · Aterrorizar · Sussurro Sombrio · Hipnose · Perturbar Mente · Reescrever Memória · Dominação Absoluta</li>" +
+    "<li><strong>Sentinela — O Rastro e o Véu:</strong> Detectar a Força · Sentir o Perigo · Localizar pela Força · Véu da Força · Olho da Força · Discernir a Verdade · Manto de Escuridão · Enfraquecimento</li>" +
+    "<li><strong>Vidente — A Vida e a Presciência:</strong> Cura pela Força · Cura de Aflições · Cura Maior · Serenidade · Estase da Força · Premonição · Visão da Verdade · Dissipar a Sombra · Libertar da Corrupção · Toque Sombrio · Repelir a Fera</li>" +
+    "</ul>" +
+    "<p><em>As listas são exemplos, não um cadastro. Um poder pode caber em dois Domínios — nesse caso conta se a <strong>maneira como foi usado na cena</strong> pertence ao Domínio do personagem. Na dúvida o Mestre decide, e decide antes da rolagem. Ninguém acumula dois Domínios.</em></p>" +
+    "<p><strong>Quem trilhou a Senda Mandaloriana não tem Eco da Senda</strong> — abriu mão da especialização e, com ela, do Domínio. O clã lhe ensinou uma lâmina, não um atalho da Força.</p>" +
+    CAIXA_CASA(
+      "de lá veio a ideia do Jedi que escolhe um \"atributo da força favorito\" e passa a ter <strong>10% de chance no 10º nível</strong> e <strong>25% no 15º</strong> de recuperar o ponto gasto, além de não gastar mais nada com os poderes baixos daquele atributo."
+    ),
+};
+
+// Habilidade curta que vai em cada especialização, nomeando o Domínio dela.
+const dominioDaSenda = (senda, dominio, frase) => ({
+  nome: `Domínio da Senda — ${dominio}`,
+  level: 10,
+  desc:
+    `<p>O <strong>Domínio</strong> do ${senda} é <strong>${dominio}</strong>: ${frase}</p>` +
+    "<p>É este o conjunto que dispara o <strong>Eco da Senda</strong> da classe-base — a chance de o Foco voltar no 10º nível e a gratuidade dos poderes de 1ª Grandeza no 15º. A lista completa de exemplos está na habilidade <em>Eco da Senda</em>.</p>",
+});
+
 // Restrições de equipamento por chassi.
 const EQ_VETERANO = {
   weapons: "Proficiente no uso de qualquer tipo de arma.",
@@ -428,6 +489,7 @@ export const classes = [
       "<p><strong>Atributo-chave: Sabedoria</strong> (Foco da Força, testes de poder e o Duelo). <em>Adaptação deliberada do cenário: no Space Dragon os poderes mentais correm pela Inteligência. A Força do Jedi é sensibilidade e disciplina, não erudição.</em></p>" +
       "<p><strong>Créditos iniciais:</strong> 1d6 × 50 CR. <strong>Restrição:</strong> Droides não podem ser Sensíveis à Força.</p>" +
       "<p><strong>Foco Extra por Grandeza:</strong> some ao Foco Diário o Foco Extra lido na Tabela 1-2 do Estrela Dracônica — só que, aqui, pelo valor de <strong>Sabedoria</strong>. A tabela dá Foco Extra para 1ª, 2ª e 3ª Grandezas.</p>"
+      + "<p><strong>Três regras da casa</strong> vivem nesta classe e valem para todas as Sendas: <strong>A Tentação</strong> (a Corrupção deixa de ser só castigo e vira moeda — a Força te dá o que você quer e cobra depois), o <strong>Eco da Senda</strong> (a partir do 10º nível o Foco gasto no seu próprio ofício às vezes volta) e, para o Guardião, o <strong>Mudar de Guarda</strong> (trocar de Forma de Sabre no meio do duelo). As três são detalhadas nas habilidades abaixo, cada uma com a caixa que diz de onde veio a ideia.</p>"
       + "<p><strong>Sendas (especializações):</strong> Guardião (sabre) · Consular (poderes) · Sentinela (caçador) · Vidente (os nexos da Força). Escolhidas no 1º nível e independentes do Caminho — existe Guardião da Luz e Guardião da Sombra.</p>"
       + "<p><strong>As Sendas NÃO têm restrição de alinhamento</strong> (correção da casa). Nas classes mundanas cada especialização é presa a um alinhamento; aqui isso foi <strong>removido</strong>. O motivo é de design: a restrição existe para diferenciar as trilhas — e no Sensível essa diferenciação <em>já é feita pelo Caminho (Luz/Sombra) e pela Corrupção</em>. Manter os dois eixos produzia aberrações: um Sith de sabre seria obrigatoriamente \"Guardião neutro\" com Corrupção 10, e um Inquisidor caçador de Jedi seria \"Sentinela caótico\" a serviço do regime mais ordeiro da galáxia. O Sensível <strong>escolhe livremente</strong> a Senda e o alinhamento; quem manda na moral dele é o <strong>Caminho</strong>.</p>"
       + "<p><em>Variante opcional — se a sua mesa preferir a amarração antiga, a leitura mais coerente seria pelo <strong>Caminho</strong>, não pela Senda: Luz → Ordeiro ou Neutro · Sombra → Caótico ou Ordeiro (o Império é ordeiro) · sem Caminho → Neutro.</em></p>",
@@ -437,7 +499,9 @@ export const classes = [
       { nome: "Duelo da Força", level: 1, desc: "<p><em>(= Anulação e Contra-Ataque Mental)</em> Ao ser alvo de um poder da Força, você pode tentar <strong>anulá-lo</strong>: gaste Foco igual à Grandeza do poder e faça um <strong>teste resistido de Sabedoria</strong> contra quem o lançou. Antes de rolar, pode gastar Foco extra para <strong>+1 por ponto</strong> (o total gasto assim não pode exceder a Grandeza do poder resistido).</p><p>Num crítico (falha ou sucesso) há um <strong>choque da Força</strong>: um dos dois sofre <strong>1d4</strong> e faz <strong>JPS</strong> ou fica atordoado por 1d6 rodadas. Vencendo, você <strong>revida na hora</strong> com um poder seu (o agressor pode tentar anular).</p><p><em>Ataque de Sabedoria, defesa de JPS — não há duplicação: um alvo comum de um poder da Força rola JPS; só um Sensível pode gastar Foco para transformar aquilo num Duelo.</em></p>" },
       { nome: "Aprender Poderes da Força", level: 1, desc: "<p>Por treino e intuição: gaste um uso do Foco da Grandeza desejada e passe num <strong>teste de Sabedoria</strong> — em sucesso o poder se manifesta, e você pode tentar <strong>memorizá-lo</strong> (novo teste) para usá-lo à vontade. Falha consome o uso e trava nova tentativa por 24 horas (falha crítica, 1d4 dias). Um mestre que o ensine torna o teste <strong>Fácil</strong>.</p>" },
       { nome: "O Caminho: Luz e Sombra", level: 1, desc: "<p>No 1º nível o Sensível escolhe um <strong>Caminho</strong>, que fica <em>por cima</em> da especialização e decide quais listas de poderes ele acessa.</p><ul><li><strong>Caminho da Luz</strong> — serenidade, defesa, cura, previdência. Acessa Universal + Luz.</li><li><strong>Caminho da Sombra</strong> — paixão, domínio, medo, destruição. Acessa Universal + Sombra.</li><li><strong>Neutralidade</strong> — pode começar sem Caminho declarado (só a lista Universal) e escolher mais tarde.</li></ul><p><strong>Cruzar de lista (a Queda):</strong> um personagem da Luz pode usar um poder da Sombra em desespero, mas cada uso marca <strong>+1 de Corrupção</strong>. Alguns poderes marcam Corrupção mesmo para a Sombra (vêm com ★ na lista).</p>" },
-      { nome: "Corrupção — Queda e Redenção", level: 1, desc: "<p>A Corrupção é uma trilha de 0 a 10 que mede o quanto a Sombra já enraizou.</p><p><strong>Ganhar (+1):</strong> usar um poder da lista Sombra, usar qualquer poder para crueldade deliberada, ou ceder ao ódio numa cena-chave. <strong>Perder (−1):</strong> atos definidores de compaixão e sacrifício, meditação prolongada sob orientação, recusar o caminho fácil quando ele custa caro.</p><ul><li><strong>0–2 Sereno:</strong> sem penalidade.</li><li><strong>3–5 Marcado:</strong> olhos começam a amarelar sob esforço; testes sociais com não-corrompidos ficam Difíceis quando a Força é usada à vista.</li><li><strong>6–8 Tomado:</strong> surtos de fúria; o Mestre pode assumir uma ação em cena de estresse extremo.</li><li><strong>9–10 Queda.</strong></li></ul><p><strong>A Queda:</strong> ao chegar a Corrupção 10, um Sensível da Luz (ou neutro) cai — surto sombrio, troca definitiva para o Caminho da Sombra e uma marca física. <strong>A Redenção:</strong> exige reduzir a Corrupção a menos de 3 <em>e</em> um sacrifício definidor.</p>" },
+      { nome: "Corrupção — Queda e Redenção", level: 1, desc: "<p>A Corrupção é uma trilha de 0 a 10 que mede o quanto a Sombra já enraizou.</p><p><strong>Ganhar (+1):</strong> usar um poder da lista Sombra, usar qualquer poder para crueldade deliberada, ou ceder ao ódio numa cena-chave. <strong>Perder (−1):</strong> atos definidores de compaixão e sacrifício, meditação prolongada sob orientação, recusar o caminho fácil quando ele custa caro.</p><ul><li><strong>0–2 Sereno:</strong> sem penalidade.</li><li><strong>3–5 Marcado:</strong> olhos começam a amarelar sob esforço; testes sociais com não-corrompidos ficam Difíceis quando a Força é usada à vista.</li><li><strong>6–8 Tomado:</strong> surtos de fúria; o Mestre pode assumir uma ação em cena de estresse extremo.</li><li><strong>9 À beira:</strong> todas as penalidades de <em>Tomado</em> — e a Sombra passa a <strong>oferecer</strong> (ver <em>A Tentação</em>). Um passo do fim.</li><li><strong>10 Queda</strong> (Luz e neutro) ou <strong>Consumido</strong> (Sombra).</li></ul><p><strong>A Queda:</strong> ao chegar a Corrupção 10, um Sensível da Luz (ou neutro) cai — surto sombrio, troca definitiva para o Caminho da Sombra e uma marca física. Ao cair, sua Corrupção <strong>volta para 7</strong>: a Sombra deixou de ser um estranho dentro dele e virou casa.</p><p><strong>Consumido</strong> <em>(criação da casa — a trilha nunca teve fim marcado para quem já era da Sombra, e passa a ter)</em><strong>:</strong> ao chegar a Corrupção 10 já sendo do Caminho da Sombra, não sobra pessoa, só apetite. O personagem <strong>sai das mãos do jogador e vira NPC do Mestre</strong> — um Lorde Sith puro, um monstro que os antigos companheiros um dia terão de enfrentar. A Luz perde a alma; a Sombra perde a pessoa.</p><p><strong>A Redenção:</strong> exige reduzir a Corrupção a menos de 3 <em>e</em> um sacrifício definidor.</p>" },
+      HAB_TENTACAO,
+      HAB_ECO_SENDA,
       reputacao("O nome de um Mestre Jedi abre portas; o de um Lorde Sith \"funciona\" fechando as mesmas portas. Sob o Império, uma Reputação Jedi alta é tão útil quanto perigosa — o Mestre pode exigir que o teste seja rolado <em>contra</em> você."),
     ],
   },
@@ -456,7 +520,8 @@ export const classes = [
     descricao:
       "<p>Obi-Wan, Anakin, Ahsoka, Darth Maul, Darth Vader. A Força serve à lâmina.</p>" +
       "<p>Troca a amplitude do poder pela maestria da lâmina. Com o d8 da base, encara a linha de frente.</p>" +
-      "<p><strong>Troca:</strong> seu <strong>teto de Grandeza passa a ser a 6ª</strong> — os feitos lendários (7ª a 10ª) ficam para os conjuradores. A lâmina cobra o preço da profundidade.</p>" + NOTA_SPEC + NOTA_SENDA_SEM_ALINHAMENTO,
+      "<p><strong>Troca:</strong> seu <strong>teto de Grandeza passa a ser a 6ª</strong> — os feitos lendários (7ª a 10ª) ficam para os conjuradores. A lâmina cobra o preço da profundidade.</p>" +
+      "<p><strong>Formas de Sabre:</strong> a Forma escolhida no 3º nível é sua <strong>Forma Mestra</strong> e progride inteira ([3]/[6]/[10]). No <strong>10º</strong> você aprende uma <strong>segunda Forma</strong> (até o [6]) e passa a poder <strong>trocar de Forma em combate</strong> gastando 1 turno; no <strong>15º</strong>, uma <strong>terceira</strong> (até o [3]) e a <em>Guarda Fluida</em>. Ver a habilidade <strong>Mudar de Guarda</strong>.</p>" + NOTA_SPEC + NOTA_SENDA_SEM_ALINHAMENTO,
     equipment_restrictions: {
       ...EQ_SENSIVEL,
       armors: "Usa armaduras médias sem penalizar a Força — exceção deliberada do cenário à regra de Vestes (o Jedi de armadura de guerra das Guerras Clônicas).",
@@ -465,6 +530,32 @@ export const classes = [
       { nome: "Adestramento de Combate", level: 1, desc: "<p>Sua <strong>Base de Ataque passa a evoluir como a de um Veterano</strong> (não mais a lenta do místico) e você usa <strong>armaduras médias</strong> sem penalizar a Força.</p><p><em>Na ficha: use a coluna de BA do Veterano no lugar da coluna desta classe.</em></p>" },
       { nome: "Formas de Sabre", level: 3, desc: "<p>Domina <strong>uma das sete Formas</strong> — Shii-Cho, Makashi, Soresu, Ataru, Djem So, Niman ou Juyo/Vaapad. A Forma é a linha de habilidades do Guardião: um poder de combate que <strong>progride com o nível</strong> nos degraus 3, 6 e 10.</p>", level6: "<p>A Forma escolhida avança para o seu segundo degrau.</p>", level10: "<p>A Forma escolhida avança para o seu degrau final.</p>" },
       { nome: "Investida da Força", level: 10, desc: "<p>Gastando <strong>1 de Foco</strong>, você desfere <strong>um ataque de sabre extra</strong> na rodada.</p>" },
+      {
+        nome: "Mudar de Guarda",
+        level: 10,
+        desc:
+          "<p>Uma Forma não é um bônus: é <strong>como você fica de pé</strong>. Trocar de Forma no meio de um combate é abrir a guarda de propósito e recomeçar a leitura do inimigo — e o outro lado <strong>vê</strong> você fazendo isso. Custa caro, e ganha duelos: Obi-Wan não venceu Grievous com a Forma dos primeiros três minutos.</p>" +
+          "<p><strong>Quantas Formas você conhece:</strong></p><ul>" +
+          "<li><strong>3º nível — Forma Mestra:</strong> a primeira, a sua. Progride inteira: <strong>[3] → [6] → [10]</strong>.</li>" +
+          "<li><strong>10º nível — segunda Forma</strong> à sua escolha, <strong>só até o degrau [6]</strong>.</li>" +
+          "<li><strong>15º nível — terceira Forma</strong> à sua escolha, <strong>só até o degrau [3]</strong>.</li>" +
+          "</ul><p><strong>Só a Forma Mestra chega ao [10].</strong> Esse é o eixo da regra e o motivo de ela não quebrar nada: você continua sendo <em>um</em> duelista com <em>um</em> estilo, e as outras Formas são respostas guardadas na manga. O Mestre Ataru que aprendeu Soresu não vira uma parede — ele consegue <strong>aguentar</strong> um tiroteio até voltar a dançar.</p>" +
+          "<p><em>A segunda e a terceira Forma são aprendidas em jogo: exigem um mestre que as domine, um holocron de duelo, ou um adversário que as tenha usado contra você e sobrevivido para você estudar.</em></p>" +
+          "<p><strong>A troca:</strong></p><ul>" +
+          "<li><strong>Gasta 1 turno</strong> — toda a sua ação da rodada (sem ataque, sem poder, sem Duelo da Força). Você ainda pode <strong>se mover</strong>.</li>" +
+          "<li><strong>É declarada em voz alta</strong> — inimigos com treino de sabre reconhecem a guarda nova e podem reagir a ela.</li>" +
+          "<li><strong>Você fica aberto: −2 na CA</strong> até o seu próximo turno. Quem troca de Forma no meio do duelo aposta que a rodada perdida vale menos que as próximas cinco.</li>" +
+          "<li><strong>Uma troca por rodada.</strong> Não existe alternar guarda a cada golpe.</li>" +
+          "<li><strong>A Forma inicial é de graça:</strong> no começo de cada combate você declara em qual Forma entra, sem custo.</li>" +
+          "</ul>" +
+          "<p><strong>Guarda Fluida (15º):</strong> a troca passa a custar <strong>1 de Foco</strong> em vez do turno inteiro — <strong>uma vez por rodada</strong> e <strong>sem</strong> o −2 na CA.</p>" +
+          "<p><em>Juyo/Vaapad:</em> trocar <strong>para</strong> a Forma feroz movido pela raiva é exatamente o gesto que a Sombra espera — o risco de +1 de Corrupção da <em>Fúria Canalizada</em> vale já naquele combate. Trocar <strong>para fora</strong> dela enquanto você ainda está ganhando é o tipo de recusa que rende <strong>−1 de Corrupção</strong>, a critério do Mestre.</p>" +
+          "<p><em>Esta regra substitui a antiga nota opcional de \"aprender a técnica [6] de uma segunda Forma no 10º nível\", que era vaga e não dizia o que fazer com ela na mesa.</em></p>" +
+          CAIXA_CASA(
+            "de lá veio a ideia do Cavaleiro Jedi de 10º nível que ganha um segundo estilo de luta \"podendo alternar durante um duelo (…) <strong>essa ação leva 1 turno</strong>\", e um terceiro estilo mais tarde."
+          ),
+      },
+      dominioDaSenda("Guardião", "O Corpo e a Lâmina", "a Força que <strong>empurra, sustenta, apara e golpeia matéria</strong> — telecinese aplicada ao mundo físico, mobilidade de combate, deflexão, e a mão que aperta uma garganta a dez metros."),
       reputacao(),
     ],
   },
@@ -484,6 +575,7 @@ export const classes = [
       { nome: "Percepção Extrassensorial", level: 1, desc: "<p>Concentrando-se por 1 minuto, lê os pensamentos de criaturas inteligentes em <strong>18 metros</strong>, mesmo sem idioma comum. Não atravessa barreira grossa; com muitos alvos, gasta um turno extra para isolar a mente que quer.</p>" },
       { nome: "Mente Superior", level: 3, desc: "<p>Seu Foco da Força passa a contar como o de um Sensível <strong>+2 níveis</strong> — atinge as Grandezas altas mais cedo.</p>", level6: "<p><strong>Preço da Profundidade:</strong> o Foco passa a contar como <strong>+3 níveis</strong>. Além disso, você pode <strong>queimar 3 PV para comprar 1 ponto de Foco</strong> de qualquer Grandeza que já acesse, na hora da conjuração — sem limite de usos, mas o dano não é curável até um descanso longo.</p>" },
       { nome: "Ápice da Mente", level: 10, usos_dia: 1, desc: "<p>Uma vez por dia, você conjura um poder de <strong>uma Grandeza acima do seu teto atual</strong> ou <strong>dobra a área, a duração ou o número de alvos</strong> de um poder conhecido. Ao fazê-lo, faça <strong>JPC ou perca 1 de Constituição</strong> até o próximo descanso longo.</p><p>Se o feito for de <strong>10ª Grandeza</strong>, a perda de Constituição é <strong>permanente</strong> — e uma falha crítica significa <strong>morte por sobrecarga mental</strong>.</p>" },
+      dominioDaSenda("Consular", "A Mente e o Domínio", "a Força que <strong>fala, convence, dobra e escraviza vontades</strong> — telepatia, sugestão, terror, ilusão e domínio, da conversa cordial à coroa na cabeça alheia."),
       reputacao(),
     ],
   },
@@ -509,6 +601,7 @@ export const classes = [
       { nome: "Vontade Inquebrável", level: 3, desc: "<p>Suas Jogadas de Proteção contra poderes da Força e efeitos mentais são <strong>Fáceis</strong> — resiste ao Duelo e ao terror da Sombra melhor que qualquer um.</p>" },
       { nome: "Caçador da Força", level: 6, desc: "<p>Sente a presença de outros Sensíveis por perto e ganha <strong>vantagem no primeiro Duelo da Força</strong> de cada confronto.</p>" },
       { nome: "Progressão de Força", level: 10, desc: "<p>Mantém a coluna normal da tabela do Sensível — sem o teto do Guardião nem o salto do Consular. É o mais versátil dos três.</p>" },
+      dominioDaSenda("Sentinela", "O Rastro e o Véu", "a Força que <strong>procura, revela e esconde</strong> — detectar, localizar, ler a verdade, apagar-se dos sentidos alheios e enfraquecer quem o caça."),
       reputacao(),
     ],
   },
@@ -534,6 +627,7 @@ export const classes = [
     habilidades: [
       { nome: "Sintonia com o Nexo", level: 1, desc: "<p>O Vidente <strong>sente a Força ao redor como quem sente vento</strong>. Percebe automaticamente lugares de convergência (nexos, templos, sítios de morte em massa), reconhece se um local tende à <strong>Luz ou à Sombra</strong> e sabe quando um Sensível esteve ali nas últimas <strong>24 horas</strong>.</p><p>Em compensação, sua sintonia é <strong>involuntária</strong>: energias soltas — raios, descargas, disparos de energia desviados, surtos de aparatos — são atraídas para ele com <strong>1-2 em 1d6</strong> sempre que ocorrerem por perto.</p>", level3: "<p>A atração involuntária de energia sobe para <strong>1-3 em 1d6</strong>.</p>", level6: "<p>A atração involuntária de energia sobe para <strong>1-4 em 1d6</strong>.</p>", level10: "<p>A atração involuntária de energia sobe para <strong>1-5 em 1d6</strong> — quanto mais sintonizado, mais o mundo o encontra.</p>" },
       { nome: "Comunhão", level: 3, usos_dia: 1, desc: "<p><strong>Uma vez por dia</strong>, o Vidente canaliza a Força que corre nos seres vivos inteligentes <strong>amigáveis ou neutros a até 20 metros</strong>. Ganha Foco extra igual à <strong>soma dos modificadores de Sabedoria</strong> de cada um deles, distribuído entre as Grandezas que ele já acessa — <strong>sem ultrapassar 1/4</strong> do seu Foco Diário total. O Foco assim obtido dura até ele <strong>dormir ou cair inconsciente</strong>.</p><p><em>Quem é canalizado não perde nada, mas sente: a cena pede descrição.</em></p>", level6: "<p><strong>Comunhão Profunda:</strong> a Comunhão passa a alcançar <strong>40 metros</strong> e o teto sobe para <strong>1/3</strong> do Foco Diário. Num <strong>nexo da Força</strong> (a critério do Mestre), o Vidente pode canalizar <strong>o próprio lugar</strong> em vez de pessoas, como se houvesse ali um número de criaturas com Sabedoria 18 igual ao seu nível de classe.</p>", level10: "<p><strong>Mente Coletiva:</strong> a Comunhão alcança <strong>100 metros</strong> e o teto sobe para <strong>metade</strong> do Foco Diário. Mas a fronteira entre ele e o mundo praticamente sumiu: ele <strong>interfere em ondas eletromagnéticas ao seu bel-prazer</strong> (comunicadores falham ou funcionam, sensores mentem, portas se abrem) — e a atração involuntária de energia agora é <strong>1-5 em 1d6</strong>. Estar perto do Vidente numa tempestade, num tiroteio de blasters ou numa sala de reatores é perigoso para ele <strong>e para quem está do lado</strong>.</p>" },
+      dominioDaSenda("Vidente", "A Vida e a Presciência", "a Força que <strong>corre nos vivos e no tempo</strong> — curar, acalmar, suspender, prever e limpar o que a Sombra sujou; o único Domínio que inclui a cura, porque é o único que nunca aprendeu a Força como técnica."),
       reputacao(),
     ],
   },

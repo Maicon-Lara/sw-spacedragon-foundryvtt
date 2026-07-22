@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "mira-a-laser",
-    "description": "<p>+1 no primeiro ataque de cada combate com arma de energia.</p>",
+    "description": "<p>+1 no primeiro ataque de cada combate com arma de energia.</p><p>Acessório comercial, versão barata do <strong>Visor de Precisão</strong> (+2 sempre e ignora cobertura não sólida). <strong>Não acumulam</strong>: use o melhor.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p>",
     "quantity": 1,
     "cost": "120 CR",
     "weight_in_load": 0,

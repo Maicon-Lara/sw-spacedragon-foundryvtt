@@ -1,0 +1,35 @@
+{
+  "folder": "UTSGRALCcUpjz5fT",
+  "name": "Baliza Rastreadora",
+  "type": "misc",
+  "_id": "4rHFeEnBgjPaxqbT",
+  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "system": {
+    "odo_id": "baliza-rastreadora",
+    "description": "<p><strong>Utilitário, NT 2.</strong> Transmissor acoplável a qualquer superfície; transmite a localização em tempo real para um comunicador de vídeo. Só funciona se o alvo estiver <strong>no mesmo planeta</strong> (ou a distância similar no espaço).</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d4 horas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "quantity": 1,
+    "cost": "600 CR",
+    "weight_in_load": 0,
+    "weight_in_grams": 0,
+    "magic_item": false,
+    "is_equipped": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 2200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!4rHFeEnBgjPaxqbT"
+}

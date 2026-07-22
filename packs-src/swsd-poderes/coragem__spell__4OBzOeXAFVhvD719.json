@@ -13,10 +13,10 @@
     "necromancer": "null",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
-    "jp": "nenhuma",
-    "description": "<p><strong>Grandeza:</strong> 3ª</p><p>Você irradia uma aura de firmeza: <strong>aliados na área ganham bônus</strong> (ataque/moral) e <strong>inimigos sofrem penalidade</strong> enquanto ela dura. A presença que transforma um punhado de rebeldes assustados numa linha que segura.</p><p><em>(adaptação — 3ª.)</em></p>"
+    "range": "18 metros",
+    "duration": "10 rodadas",
+    "jp": "JPS (inimigos)",
+    "description": "<p><strong>Grandeza:</strong> 3ª</p><p><strong>Alcance:</strong> 18 metros · <strong>Duração:</strong> 10 rodadas · <strong>JP:</strong> JPS (inimigos)</p><p><strong>Efeito:</strong> Aliados que o escutem ganham <strong>+1 em ataque e em JP a cada 3 níveis</strong> seus; inimigos que falhem na JPS sofrem a mesma penalidade.</p><p>Você irradia uma aura de firmeza: <strong>aliados na área ganham bônus</strong> (ataque/moral) e <strong>inimigos sofrem penalidade</strong> enquanto ela dura. A presença que transforma um punhado de rebeldes assustados numa linha que segura.</p><p><em>(adaptação — 3ª.)</em></p>"
   },
   "effects": [],
   "flags": {},

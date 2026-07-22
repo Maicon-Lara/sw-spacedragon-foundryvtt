@@ -1,0 +1,50 @@
+{
+  "folder": "alWGBvnqIyv2v8Is",
+  "name": "Mudar de Guarda",
+  "type": "class_ability",
+  "_id": "CnPH9KOBgPTjXfeH",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p>Uma Forma não é um bônus: é <strong>como você fica de pé</strong>. Trocar de Forma no meio de um combate é abrir a guarda de propósito e recomeçar a leitura do inimigo — e o outro lado <strong>vê</strong> você fazendo isso. Custa caro, e ganha duelos: Obi-Wan não venceu Grievous com a Forma dos primeiros três minutos.</p><p><strong>Quantas Formas você conhece:</strong></p><ul><li><strong>3º nível — Forma Mestra:</strong> a primeira, a sua. Progride inteira: <strong>[3] → [6] → [10]</strong>.</li><li><strong>10º nível — segunda Forma</strong> à sua escolha, <strong>só até o degrau [6]</strong>.</li><li><strong>15º nível — terceira Forma</strong> à sua escolha, <strong>só até o degrau [3]</strong>.</li></ul><p><strong>Só a Forma Mestra chega ao [10].</strong> Esse é o eixo da regra e o motivo de ela não quebrar nada: você continua sendo <em>um</em> duelista com <em>um</em> estilo, e as outras Formas são respostas guardadas na manga. O Mestre Ataru que aprendeu Soresu não vira uma parede — ele consegue <strong>aguentar</strong> um tiroteio até voltar a dançar.</p><p><em>A segunda e a terceira Forma são aprendidas em jogo: exigem um mestre que as domine, um holocron de duelo, ou um adversário que as tenha usado contra você e sobrevivido para você estudar.</em></p><p><strong>A troca:</strong></p><ul><li><strong>Gasta 1 turno</strong> — toda a sua ação da rodada (sem ataque, sem poder, sem Duelo da Força). Você ainda pode <strong>se mover</strong>.</li><li><strong>É declarada em voz alta</strong> — inimigos com treino de sabre reconhecem a guarda nova e podem reagir a ela.</li><li><strong>Você fica aberto: −2 na CA</strong> até o seu próximo turno. Quem troca de Forma no meio do duelo aposta que a rodada perdida vale menos que as próximas cinco.</li><li><strong>Uma troca por rodada.</strong> Não existe alternar guarda a cada golpe.</li><li><strong>A Forma inicial é de graça:</strong> no começo de cada combate você declara em qual Forma entra, sem custo.</li></ul><p><strong>Guarda Fluida (15º):</strong> a troca passa a custar <strong>1 de Foco</strong> em vez do turno inteiro — <strong>uma vez por rodada</strong> e <strong>sem</strong> o −2 na CA.</p><p><em>Juyo/Vaapad:</em> trocar <strong>para</strong> a Forma feroz movido pela raiva é exatamente o gesto que a Sombra espera — o risco de +1 de Corrupção da <em>Fúria Canalizada</em> vale já naquele combate. Trocar <strong>para fora</strong> dela enquanto você ainda está ganhando é o tipo de recusa que rende <strong>−1 de Corrupção</strong>, a critério do Mestre.</p><p><em>Esta regra substitui a antiga nota opcional de \"aprender a técnica [6] de uma segunda Forma no 10º nível\", que era vaga e não dizia o que fazer com ela na mesa.</em></p><hr><p>🜂 <strong>Criação da casa.</strong> A ideia nasceu do suplemento oficial <em>Jedi e Sith para Space Dragon</em>, de Jonas Picholaro — de lá veio a ideia do Cavaleiro Jedi de 10º nível que ganha um segundo estilo de luta \"podendo alternar durante um duelo (…) <strong>essa ação leva 1 turno</strong>\", e um terceiro estilo mais tarde. Os <strong>números de lá não servem aqui</strong>: aquele suplemento roda noutra escala (personagens até o <strong>20º nível</strong>, especializações que só abrem no <strong>5º</strong>) e noutro vocabulário (\"pontos da força\", \"atributos da força\"). O que atravessou foi só a intuição; a mecânica foi reconstruída sobre o que este cenário já tem — <strong>Foco Diário</strong>, <strong>Grandezas</strong>, <strong>Sendas</strong> e a trilha de <strong>Corrupção</strong>.</p>",
+    "level": 10,
+    "level3": "",
+    "level6": "",
+    "level10": "",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!CnPH9KOBgPTjXfeH"
+}

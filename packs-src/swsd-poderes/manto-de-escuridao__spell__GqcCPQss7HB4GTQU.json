@@ -13,10 +13,10 @@
     "necromancer": "2",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
+    "range": "18 metros",
+    "duration": "10 rodadas",
     "jp": "nenhuma",
-    "description": "<p><strong>Grandeza:</strong> 2ª</p><p>Você invoca <strong>trevas sobrenaturais</strong> que engolem a luz e <strong>cegam quem não enxerga no escuro</strong>, enquanto você e os seus se movem à vontade nelas. O breu que precede a chacina.</p><p><em>(adaptação — 2ª.)</em></p>"
+    "description": "<p><strong>Grandeza:</strong> 2ª</p><p><strong>Alcance:</strong> 18 metros · <strong>Duração:</strong> 10 rodadas · <strong>JP:</strong> nenhuma</p><p><strong>Efeito:</strong> Esfera de <strong>6 metros de raio</strong> de trevas sobrenaturais; quem não tem infravisão fica <strong>cego</strong> dentro dela, e você e os que designar enxergam normalmente.</p><p>Você invoca <strong>trevas sobrenaturais</strong> que engolem a luz e <strong>cegam quem não enxerga no escuro</strong>, enquanto você e os seus se movem à vontade nelas. O breu que precede a chacina.</p><p><em>(adaptação — 2ª.)</em></p>"
   },
   "effects": [],
   "flags": {},

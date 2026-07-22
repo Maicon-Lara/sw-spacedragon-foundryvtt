@@ -13,10 +13,10 @@
     "necromancer": "null",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
+    "range": "toque",
+    "duration": "instantâneo",
     "jp": "nenhuma",
-    "description": "<p><strong>Grandeza:</strong> 5ª</p><p>A cura levada ao limite da Luz: você <strong>restaura grande soma de pontos de vida</strong> ou traz um aliado da beira da morte de volta à luta em uma ação. O milagre que salva o herói caído no clímax.</p><p><em>(adaptação — 5ª.)</em></p>"
+    "description": "<p><strong>Grandeza:</strong> 5ª</p><p><strong>Alcance:</strong> toque · <strong>Duração:</strong> instantâneo · <strong>JP:</strong> nenhuma</p><p><strong>Efeito:</strong> Restaura <strong>3d8 pontos de vida</strong>; se o alvo estiver com PV negativos, também o estabiliza.</p><p>A cura levada ao limite da Luz: você <strong>restaura grande soma de pontos de vida</strong> ou traz um aliado da beira da morte de volta à luta em uma ação. O milagre que salva o herói caído no clímax.</p><p><em>(adaptação — 5ª.)</em></p>"
   },
   "effects": [],
   "flags": {},

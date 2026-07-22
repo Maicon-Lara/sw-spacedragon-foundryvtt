@@ -1,0 +1,35 @@
+{
+  "folder": "UTSGRALCcUpjz5fT",
+  "name": "Detector de Poderes (capacete sensorial)",
+  "type": "misc",
+  "_id": "xkxgxAX9yn1PVhMa",
+  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "system": {
+    "odo_id": "detector-de-poderes-capacete-sensorial",
+    "description": "<p><strong>Utilitário, NT 6.</strong> Detecta poderes mentais em ação a até <strong>200 m</strong> e indica a direção — os que estão sendo executados naquele momento ou os de efeito prolongado num local. Só detecta um poder de <strong>manipulação individual</strong> se o próprio usuário tiver sido afetado por ele.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d4 dias. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "quantity": 1,
+    "cost": "1.200 CR",
+    "weight_in_load": 0,
+    "weight_in_grams": 0,
+    "magic_item": false,
+    "is_equipped": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 4100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!xkxgxAX9yn1PVhMa"
+}

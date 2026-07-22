@@ -13,7 +13,7 @@
     "necromancer": "null",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
+    "range": "pessoal",
     "duration": "enquanto você não atacar",
     "jp": "JPS",
     "description": "<p><strong>Grandeza:</strong> 2ª</p><p><strong>Duração:</strong> enquanto você não atacar · <strong>JP:</strong> JPS</p><p>Você se recolhe numa quietude tão profunda que os inimigos custam a te ver como ameaça: enquanto <strong>você não atacar</strong>, cada um que quiser te golpear precisa antes passar numa <strong>JPS</strong>. A calma do monge que atravessa o tiroteio sem sacar a lâmina.</p><p><em>(adaptação — 2ª.)</em></p>"

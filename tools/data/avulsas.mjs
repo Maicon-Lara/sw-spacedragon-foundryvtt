@@ -17,6 +17,20 @@ const COMO_ADICIONAR =
 const FORMAS = "Formas de Sabre (Guardião)";
 const SENDA = "Senda Mandaloriana";
 
+// Nota anexada às 7 Formas por causa da regra "Mudar de Guarda" (criação da
+// casa — ver SW-SD-Sabre-e-Cristais.md § Mudar de Guarda). Uma Forma agora pode
+// entrar na ficha como Forma MESTRA (progride inteira) ou como Forma
+// secundária (degrau limitado), e o Guardião pode alternar entre elas em
+// combate. Fica aqui porque vale igual para as sete.
+const NOTA_MUDAR_GUARDA =
+  "<hr><p><strong>Forma Mestra ou Forma secundária?</strong> Esta Forma pode ocupar dois lugares na ficha de um Guardião:</p><ul>" +
+  "<li><strong>Forma Mestra</strong> (escolhida no <strong>3º nível</strong>) — progride inteira: <strong>[3] → [6] → [10]</strong>.</li>" +
+  "<li><strong>Segunda Forma</strong> (aprendida no <strong>10º nível</strong>) — vai <strong>só até o degrau [6]</strong>. Ignore o texto do 10º.</li>" +
+  "<li><strong>Terceira Forma</strong> (aprendida no <strong>15º nível</strong>) — vai <strong>só até o degrau [3]</strong>. Ignore os textos do 6º e do 10º.</li>" +
+  "</ul><p><strong>Só a Forma Mestra chega ao degrau [10].</strong> As outras são respostas guardadas na manga, não um segundo domínio.</p>" +
+  "<p><strong>Mudar de Guarda:</strong> a partir do 10º nível, trocar para outra Forma que você conheça consome <strong>toda a sua ação da rodada</strong> (você ainda se move), é <strong>declarada em voz alta</strong> e deixa você <strong>−2 na CA</strong> até o seu próximo turno. <strong>Uma troca por rodada.</strong> A Forma em que você <em>entra</em> no combate é declarada de graça. No <strong>15º nível</strong> (<em>Guarda Fluida</em>) a troca passa a custar <strong>1 de Foco</strong> em vez do turno, sem o −2 na CA.</p>" +
+  "<p><em>Um Sensível que não é Guardião — o Vidente, ou quem trilhou a Senda Mandaloriana e recebeu uma Forma do clã — conhece uma Forma só e não tem para onde trocar.</em></p>";
+
 const AVULSAS = [
   // ── As 7 Formas de Sabre ──────────────────────────────────────────────────
   {
@@ -110,5 +124,8 @@ export const origensAvulsas = [
 
 export const classAbilitiesAvulsas = AVULSAS.map((a) => ({
   ...a,
-  desc: (a.desc || "") + COMO_ADICIONAR,
+  desc:
+    (a.desc || "") +
+    (a.folder === FORMAS ? NOTA_MUDAR_GUARDA : "") +
+    COMO_ADICIONAR,
 }));

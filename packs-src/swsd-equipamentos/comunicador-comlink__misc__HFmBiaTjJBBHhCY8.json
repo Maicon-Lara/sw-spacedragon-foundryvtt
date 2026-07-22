@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "comunicador-comlink",
-    "description": "<p>Alcance planetário/orbital.</p>",
+    "description": "<p>Alcance planetário/orbital.</p><p><strong>Equivalência:</strong> é o <em>Bracelete radiocomunicador</em> do ED-07 (utilitário, NT 1) — comunicação por <strong>áudio</strong> entre aparelhos na mesma frequência, sujeita a interferência, com até <strong>6 aparelhos</strong> por frequência. Valor convertido: <strong>900 CR</strong> (ED $90.000 ÷ 100); vale o preço do cenário. A versão com <strong>imagem</strong> é o <strong>Comlink Holográfico</strong>.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p>",
     "quantity": 1,
     "cost": "40 CR",
     "weight_in_load": 0,

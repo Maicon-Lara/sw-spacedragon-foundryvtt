@@ -13,8 +13,8 @@
     "necromancer": "null",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
+    "range": "pessoal",
+    "duration": "até o próximo ataque-surpresa da cena",
     "jp": "nenhuma",
     "description": "<p><strong>Grandeza:</strong> 1ª</p><p><strong>JP:</strong> nenhuma</p><p>A Força formiga na nuca um instante antes do golpe. Como premonição passiva, você recebe <strong>+2 na JPD</strong> contra o próximo ataque-surpresa ou armadilha da cena. É a voz muda que faz o Jedi se abaixar sem saber por quê.</p><p><em>(adaptação — 1ª.)</em></p>"
   },

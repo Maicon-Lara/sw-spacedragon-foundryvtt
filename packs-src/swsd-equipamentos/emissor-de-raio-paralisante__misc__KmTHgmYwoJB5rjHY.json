@@ -1,0 +1,35 @@
+{
+  "folder": "UTSGRALCcUpjz5fT",
+  "name": "Emissor de Raio Paralisante",
+  "type": "misc",
+  "_id": "KmTHgmYwoJB5rjHY",
+  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "system": {
+    "odo_id": "emissor-de-raio-paralisante",
+    "description": "<p><strong>Ofensivo, NT 7.</strong> Ataque à distância; acertando, o alvo faz uma <strong>JPC</strong>. Falhando, fica <strong>completamente imobilizado por 30 segundos</strong>. <strong>Criaturas muito maiores que um humano não são afetadas.</strong> Só pode ser usado <strong>2 vezes</strong> antes de recarregar.</p><p><em>Aparato <strong>ofensivo</strong>: só o Técnico e o Caçador de Recompensas o operam.</em></p><p><em>Construção: 1d6 dias. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "quantity": 1,
+    "cost": "3.500 CR",
+    "weight_in_load": 1,
+    "weight_in_grams": 0,
+    "magic_item": false,
+    "is_equipped": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 900000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!KmTHgmYwoJB5rjHY"
+}

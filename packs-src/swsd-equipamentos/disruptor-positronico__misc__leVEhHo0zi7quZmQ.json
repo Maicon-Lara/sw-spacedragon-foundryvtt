@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "disruptor-positronico",
-    "description": "<p>Aparato do <strong>Técnico</strong> para <strong>Desativar Droides</strong> (ver Classes).</p><p><em>Aparato ofensivo: só o Técnico o opera. Não tem preço de tabela — é construído.</em></p>",
+    "description": "<p>Aparato do <strong>Técnico</strong> para <strong>Desativar Droides</strong> (ver Classes).</p><p><strong>Equivalência:</strong> é o <em>Disruptor positrônico</em> do ED-07 (ofensivo, NT 1). Parece um pequeno rádio e causa conflito nos cérebros positrônicos — quanto mais primitivo o droide, mais fácil desativá-lo. Corresponde ao <strong>1º nível</strong> do Técnico e <strong>deve ser atualizado a cada nível</strong> (custo de reparo); falhas em tentativas extras causam <strong>curto-circuito</strong> e exigem conserto. Custo de construção: <strong>700 CR</strong> (ED $70.000 ÷ 100) — não tem preço de tabela, é construído.</p><p><em>Aparato <strong>ofensivo</strong>: só o Técnico e o Caçador de Recompensas o operam.</em></p>",
     "quantity": 1,
     "cost": "",
     "weight_in_load": 0,

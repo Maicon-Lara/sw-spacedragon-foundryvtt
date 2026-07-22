@@ -1,0 +1,35 @@
+{
+  "folder": "UTSGRALCcUpjz5fT",
+  "name": "Visor de Varredura Densitométrica",
+  "type": "misc",
+  "_id": "JgJn3zeqANfx1UKP",
+  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "system": {
+    "odo_id": "visor-de-varredura-densitometrica",
+    "description": "<p><strong>Utilitário, NT 4.</strong> Enxerga através de <strong>um único obstáculo</strong> (chumbo bloqueia). A imagem é apenas razoável: <strong>−2 nos ataques</strong> do usuário. Pode virar binóculo pelo dobro do custo e do tempo.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d4 dias. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "quantity": 1,
+    "cost": "3.000 CR",
+    "weight_in_load": 0,
+    "weight_in_grams": 0,
+    "magic_item": false,
+    "is_equipped": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 3500000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!JgJn3zeqANfx1UKP"
+}

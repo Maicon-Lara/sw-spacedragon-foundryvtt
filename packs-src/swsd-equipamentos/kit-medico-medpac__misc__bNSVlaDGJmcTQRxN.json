@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "kit-medico-medpac",
-    "description": "<p>Cura 1d8 PV; 1d4+2 usos.</p><p><em>Aparato utilitário: qualquer um pode operar.</em></p>",
+    "description": "<p>Cura 1d8 PV; 1d4+2 usos.</p><p>Cura imediata de campo — não se confunde com a <strong>Cápsula de Bacta</strong> (recuperação por hora de descanso) nem com o <strong>Injetor de Bacta de Emergência</strong> (estabiliza quem está com PV negativos).</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p>",
     "quantity": 1,
     "cost": "200 CR",
     "weight_in_load": 0,

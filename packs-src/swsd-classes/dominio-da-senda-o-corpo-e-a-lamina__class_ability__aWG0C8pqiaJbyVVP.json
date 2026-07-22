@@ -1,0 +1,50 @@
+{
+  "folder": "ojACSqA12gZPBeW3",
+  "name": "Domínio da Senda — O Corpo e a Lâmina",
+  "type": "class_ability",
+  "_id": "aWG0C8pqiaJbyVVP",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p>O <strong>Domínio</strong> do Guardião é <strong>O Corpo e a Lâmina</strong>: a Força que <strong>empurra, sustenta, apara e golpeia matéria</strong> — telecinese aplicada ao mundo físico, mobilidade de combate, deflexão, e a mão que aperta uma garganta a dez metros.</p><p>É este o conjunto que dispara o <strong>Eco da Senda</strong> da classe-base — a chance de o Foco voltar no 10º nível e a gratuidade dos poderes de 1ª Grandeza no 15º. A lista completa de exemplos está na habilidade <em>Eco da Senda</em>.</p>",
+    "level": 10,
+    "level3": "",
+    "level6": "",
+    "level10": "",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!aWG0C8pqiaJbyVVP"
+}

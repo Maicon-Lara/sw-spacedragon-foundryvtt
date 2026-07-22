@@ -13,10 +13,10 @@
     "necromancer": "null",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
+    "range": "100 metros + 10 m por nível",
+    "duration": "12 turnos",
     "jp": "nenhuma",
-    "description": "<p><strong>Grandeza:</strong> 4ª</p><p>Você projeta um <strong>sensor invisível</strong> que se desprende de você e percorre o ambiente à distância, transmitindo de volta o que \"vê\" e \"ouve\". Um olho espião feito de pura percepção, ideal para vasculhar o corredor seguinte, contar guardas ou espiar uma reunião sem pôr um pé na sala.</p><p><em>(adaptação — 4ª.)</em></p>"
+    "description": "<p><strong>Grandeza:</strong> 4ª</p><p><strong>Alcance:</strong> 100 metros + 10 m por nível · <strong>Duração:</strong> 12 turnos · <strong>JP:</strong> nenhuma</p><p>Você projeta um <strong>sensor invisível</strong> que se desprende de você e percorre o ambiente à distância, transmitindo de volta o que \"vê\" e \"ouve\". Um olho espião feito de pura percepção, ideal para vasculhar o corredor seguinte, contar guardas ou espiar uma reunião sem pôr um pé na sala.</p><p><em>(adaptação — 4ª.)</em></p>"
   },
   "effects": [],
   "flags": {},

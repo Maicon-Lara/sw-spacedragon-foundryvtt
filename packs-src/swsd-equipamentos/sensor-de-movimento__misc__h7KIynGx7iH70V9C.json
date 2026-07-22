@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "sensor-de-movimento",
-    "description": "<p>Detecta movimento em 9 m.</p><p><em>Aparato utilitário: qualquer um pode operar.</em></p>",
+    "description": "<p>Detecta movimento em 9 m.</p><p><strong>Equivalência:</strong> o ED-07 <strong>não tem</strong> um sensor de movimento. O parente mais próximo é o <strong>Visor Térmico</strong> (<em>Óculos de visão térmica</em>, NT 1, 200 CR), que lê assinatura térmica. Trate este item como uma <strong>modificação de finalidade</strong> daquele projeto (§7.5: mesmo preço-base, tempo dobrado), sem a penalidade de −4 nos ataques — não é um visor que se usa no rosto.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p>",
     "quantity": 1,
     "cost": "350 CR",
     "weight_in_load": 0,

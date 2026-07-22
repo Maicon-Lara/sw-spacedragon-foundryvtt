@@ -13,10 +13,10 @@
     "necromancer": "null",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
+    "range": "18 metros + 2 m por nível",
+    "duration": "concentração",
     "jp": "nenhuma",
-    "description": "<p><strong>Grandeza:</strong> 2ª</p><p>Você fixa na mente um objeto, uma nave ou uma pessoa que já conheceu e a Força aponta a <strong>direção</strong> dela, como uma bússola viva. Não dá distância exata nem mapa, mas basta para seguir um rastro pela galáxia: um padawan perdido, um artefato roubado, o cargueiro que fugiu.</p><p><em>(adaptação — 2ª.)</em></p>"
+    "description": "<p><strong>Grandeza:</strong> 2ª</p><p><strong>Alcance:</strong> 18 metros + 2 m por nível · <strong>Duração:</strong> concentração · <strong>JP:</strong> nenhuma</p><p>Você fixa na mente um objeto, uma nave ou uma pessoa que já conheceu e a Força aponta a <strong>direção</strong> dela, como uma bússola viva. Não dá distância exata nem mapa, mas basta para seguir um rastro pela galáxia: um padawan perdido, um artefato roubado, o cargueiro que fugiu.</p><p><em>(adaptação — 2ª.)</em></p>"
   },
   "effects": [],
   "flags": {},

@@ -1,0 +1,50 @@
+{
+  "folder": "sx2a6RABFHs13ngt",
+  "name": "A Tentação — a Corrupção como moeda",
+  "type": "class_ability",
+  "_id": "5144e7nWRFpqE0eB",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p>Até agora a Corrupção só sabia <strong>punir</strong>. Mas na galáxia a Sombra não multa ninguém — ela <strong>oferece</strong>. É mais rápida, é mais fácil, e funciona.</p><p>Quando você <strong>falha numa rolagem decisiva</strong> — ou quando um golpe seu acerta e você quer que ele <em>termine</em> a questão —, a Força propõe um negócio. Escolha uma das três formas:</p><ul><li><strong>Insistir — +1 de Corrupção:</strong> <strong>rerrola</strong> a jogada falha e fica com o <strong>segundo resultado, seja ele qual for</strong>. A Força atende ao chamado, mas não obedece a você.</li><li><strong>Arrancar — +2 de Corrupção:</strong> <strong>rerrola</strong> e fica com o <strong>melhor dos dois</strong>. Não é mais pedir: é tomar. Custa o dobro porque a certeza é o que a Sombra vende mais caro.</li><li><strong>Sentenciar — +1 de Corrupção:</strong> um ataque que <strong>já acertou</strong> vira <strong>crítico</strong>, ou um poder que <strong>já passou</strong> tem dano, duração ou número de alvos <strong>dobrado</strong>.</li></ul><p><strong>Rolagem decisiva</strong> é aquela cuja falha <strong>fecha um caminho</strong>: o Duelo da Força que decide a sala, o teste que impede a nave de cair, o ataque que separa o aliado da morte. <strong>Não</strong> vale para rotina, iniciativa, dano avulso ou testes repetíveis. Quem decide é o Mestre, e decide <strong>antes</strong> da rolagem.</p><p><strong>Trava: uma vez por cena, no máximo três vezes por dia de jogo.</strong> Sem ela a regra se autodestrói — um Padawan sereno viraria Lorde Sith na segunda sessão e a Queda deixaria de ser tragédia para virar contabilidade. Com a trava, ir de 0 a 10 só pela Tentação leva no mínimo <strong>quatro dias de jogo</strong>.</p><p><strong>Vale igualmente para a Luz e para a Sombra</strong> — mesmo preço, mesma trilha, sem desconto para ninguém. O que muda é a cara da cena, não a matemática: para o Jedi a voz sussurra <em>\"só desta vez\"</em> e o empurra para a <strong>Queda</strong>; para quem já é da Sombra ela diz <em>\"você já pagou por isso, use\"</em> e o empurra para ser <strong>Consumido</strong>.</p><p><strong>Com os poderes ★, os custos somam.</strong> A Tentação <strong>nunca substitui</strong> a Corrupção que a ação já cobrava. Um personagem da Luz que lança um poder da Sombra (+1), erra e <em>Arranca</em> a rerrolagem (+2) sobe <strong>3 pontos numa única ação</strong>.</p><p><strong>Em Corrupção 9 — a última oferta.</strong> Nada impede o negócio. A Sombra oferece <strong>sozinha</strong>: o Mestre descreve a oferta em voz alta e <strong>avisa o preço</strong> — aceitar leva a <strong>10</strong>, e 10 é a <strong>Queda</strong> (Luz/neutro) ou o <strong>Consumido</strong> (Sombra). Você <strong>recebe o que pediu</strong> na hora; a Queda se resolve <strong>ao fim da cena</strong>. O herói ganha a luta e perde a si mesmo no mesmo plano.</p><p><strong>Recusar nunca exige rolagem</strong> e nunca tem penalidade mecânica. Uma Corrupção que se pega sem escolher não é tentação, é imposto.</p><p>A Corrupção ganha assim é <strong>Corrupção comum</strong>: conta na tabela de estados e <strong>sai pelos mesmos caminhos</strong> (os atos de compaixão e sacrifício que dão −1).</p><hr><p>🜂 <strong>Criação da casa.</strong> A ideia nasceu do suplemento oficial <em>Jedi e Sith para Space Dragon</em>, de Jonas Picholaro — de lá veio a ideia do Sith de 15º nível que podia \"gastar 1 ponto da força <strong>ou receber 1 ponto do lado negro</strong> e refazer qualquer teste de poder\", ou seja, <strong>pagar em Corrupção por um resultado</strong>. Os <strong>números de lá não servem aqui</strong>: aquele suplemento roda noutra escala (personagens até o <strong>20º nível</strong>, especializações que só abrem no <strong>5º</strong>) e noutro vocabulário (\"pontos da força\", \"atributos da força\"). O que atravessou foi só a intuição; a mecânica foi reconstruída sobre o que este cenário já tem — <strong>Foco Diário</strong>, <strong>Grandezas</strong>, <strong>Sendas</strong> e a trilha de <strong>Corrupção</strong>.</p>",
+    "level": 1,
+    "level3": "",
+    "level6": "",
+    "level10": "",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!5144e7nWRFpqE0eB"
+}

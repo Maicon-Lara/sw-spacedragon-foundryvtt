@@ -1,0 +1,50 @@
+{
+  "folder": "knlgzJBXuoA1ma6r",
+  "name": "Eco da Senda",
+  "type": "class_ability",
+  "_id": "VFvdNleDR3nqS3TE",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p>Chega um ponto em que a Força para de ser esforço. O gesto que lhe custava concentração vira respiração — e a corrente que você empurrou volta sozinha para a mão. Não em tudo: <strong>só naquilo que é o seu ofício</strong>.</p><p><strong>Eco (10º):</strong> sempre que gastar Foco num <strong>poder da sua Senda</strong>, role <strong>1d10</strong> depois de resolver o poder — num <strong>1</strong>, o ponto de Foco <strong>volta</strong> para a Grandeza de onde saiu. Vale <strong>por ponto gasto</strong> (um poder de 2 pontos rola dois d10).</p><p><strong>Eco Maior (15º):</strong> a rolagem passa a ser <strong>1d4</strong> (25%). Além disso, os <strong>poderes de 1ª Grandeza da sua Senda não custam mais Foco algum</strong> — <strong>no máximo um por rodada</strong>.</p><p><em>Por que 1ª Grandeza e não 2ª: aqui as Grandezas vão até a 10ª e a 1ª já carrega os cavalos de batalha do Sensível (Empurrão da Força, Truque Mental, Detectar a Força, Cura pela Força). Libertar a 2ª junto, num teto de 15º nível, faria o Consular abrir portas de aço o dia inteiro de graça. A trava de um por rodada existe pelo mesmo motivo: gratuito não pode significar infinito dentro de um combate.</em></p><p><strong>O que é \"poder da sua Senda\":</strong> cada Senda tem um <strong>Domínio</strong> — a família de efeitos que ela pratica até virar hábito. Vale para poderes de <strong>qualquer lista</strong> (Universal, Luz ou Sombra): conta <em>o que o poder faz</em>, não de que lado ele vem.</p><ul><li><strong>Guardião — O Corpo e a Lâmina:</strong> Empurrão da Força · Correr com a Força · Salto da Força · Telecinésia · Prisão Telecinética · Lâmina Guiada · Deflexão da Força · Choque da Força · Estrangular · Relâmpagos da Força ★</li><li><strong>Consular — A Mente e o Domínio:</strong> Truque Mental · Vínculo Telepático · Percepção Ampliada · Calma · Coragem · Aterrorizar · Sussurro Sombrio · Hipnose · Perturbar Mente · Reescrever Memória · Dominação Absoluta</li><li><strong>Sentinela — O Rastro e o Véu:</strong> Detectar a Força · Sentir o Perigo · Localizar pela Força · Véu da Força · Olho da Força · Discernir a Verdade · Manto de Escuridão · Enfraquecimento</li><li><strong>Vidente — A Vida e a Presciência:</strong> Cura pela Força · Cura de Aflições · Cura Maior · Serenidade · Estase da Força · Premonição · Visão da Verdade · Dissipar a Sombra · Libertar da Corrupção · Toque Sombrio · Repelir a Fera</li></ul><p><em>As listas são exemplos, não um cadastro. Um poder pode caber em dois Domínios — nesse caso conta se a <strong>maneira como foi usado na cena</strong> pertence ao Domínio do personagem. Na dúvida o Mestre decide, e decide antes da rolagem. Ninguém acumula dois Domínios.</em></p><p><strong>Quem trilhou a Senda Mandaloriana não tem Eco da Senda</strong> — abriu mão da especialização e, com ela, do Domínio. O clã lhe ensinou uma lâmina, não um atalho da Força.</p><hr><p>🜂 <strong>Criação da casa.</strong> A ideia nasceu do suplemento oficial <em>Jedi e Sith para Space Dragon</em>, de Jonas Picholaro — de lá veio a ideia do Jedi que escolhe um \"atributo da força favorito\" e passa a ter <strong>10% de chance no 10º nível</strong> e <strong>25% no 15º</strong> de recuperar o ponto gasto, além de não gastar mais nada com os poderes baixos daquele atributo. Os <strong>números de lá não servem aqui</strong>: aquele suplemento roda noutra escala (personagens até o <strong>20º nível</strong>, especializações que só abrem no <strong>5º</strong>) e noutro vocabulário (\"pontos da força\", \"atributos da força\"). O que atravessou foi só a intuição; a mecânica foi reconstruída sobre o que este cenário já tem — <strong>Foco Diário</strong>, <strong>Grandezas</strong>, <strong>Sendas</strong> e a trilha de <strong>Corrupção</strong>.</p>",
+    "level": 10,
+    "level3": "",
+    "level6": "",
+    "level10": "",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VFvdNleDR3nqS3TE"
+}

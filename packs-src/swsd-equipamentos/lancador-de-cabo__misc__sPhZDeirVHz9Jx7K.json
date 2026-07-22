@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "lancador-de-cabo",
-    "description": "<p>Como um Arpéu, dispara a 18 m sem teste.</p>",
+    "description": "<p>Como um Arpéu, dispara a 18 m sem teste.</p><p><strong>Equivalência:</strong> é o <em>Lançador de gancho</em> do ED-07 (utilitário, NT 2), cujo alcance de projeção é de <strong>30 m</strong> e cuja <strong>corda não vem inclusa</strong>. Valor convertido: <strong>800 CR</strong> (ED $80.000 ÷ 100); vale o preço do cenário.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p>",
     "quantity": 1,
     "cost": "150 CR",
     "weight_in_load": 0,

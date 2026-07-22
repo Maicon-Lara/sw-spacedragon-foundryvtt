@@ -1,0 +1,35 @@
+{
+  "folder": "UTSGRALCcUpjz5fT",
+  "name": "Estimulante de Combate",
+  "type": "misc",
+  "_id": "iZmosXAVwr6VSBVI",
+  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "system": {
+    "odo_id": "estimulante-de-combate",
+    "description": "<p><strong>Utilitário, NT 5.</strong> Aumenta temporariamente <strong>um atributo em 2 pontos</strong> (definido na criação). Começa a agir <strong>1 minuto</strong> após ingerido e dura <strong>1 hora</strong>. Rende <strong>4 doses</strong>. <strong>Ilegal em boa parte da galáxia e pode causar vício</strong> — mais de uma por vez arrisca uma <strong>overdose potencialmente fatal</strong>.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d6 horas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "quantity": 1,
+    "cost": "2.000 CR",
+    "weight_in_load": 0,
+    "weight_in_grams": 0,
+    "magic_item": false,
+    "is_equipped": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 3800000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!iZmosXAVwr6VSBVI"
+}

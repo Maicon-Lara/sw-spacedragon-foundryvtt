@@ -1,0 +1,35 @@
+{
+  "folder": "UTSGRALCcUpjz5fT",
+  "name": "Botas de Aderência Antigravidade",
+  "type": "misc",
+  "_id": "PDzwZMOmGkyXz7bM",
+  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "system": {
+    "odo_id": "botas-de-aderencia-antigravidade",
+    "description": "<p><strong>Utilitário, NT 4.</strong> Permitem andar sobre superfícies íngremes como se fossem terreno plano. <strong>Operativos</strong> as usam perfeitamente — <strong>sucesso automático, não role</strong>. As demais classes rolam <strong>1-4 em 1d6</strong> para não se desequilibrar e cair.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d6 dias. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "quantity": 1,
+    "cost": "2.000 CR",
+    "weight_in_load": 0,
+    "weight_in_grams": 0,
+    "magic_item": false,
+    "is_equipped": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 3400000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!PDzwZMOmGkyXz7bM"
+}
