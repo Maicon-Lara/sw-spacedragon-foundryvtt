@@ -157,6 +157,15 @@ const EQ_SENSIVEL = {
   magic_items: "Apenas aparatos utilitários. Construir e operar qualquer aparato é o nicho do Técnico.",
 };
 
+// Espécies que podem ser Sensíveis à Força. O campo `restrictions.races` do OD2
+// é uma LISTA DE PERMITIDAS (allowlist): a ficha recusa o drop da classe se a
+// raça do personagem não estiver aqui. Como a regra do cenário é negativa
+// ("Droides não podem"), ela vira a lista das oito espécies vivas.
+const RACAS_SENSIVEL = [
+  "Humano", "Wookiee", "Twi'lek", "Rodiano", "Zabrak",
+  "Mon Calamari", "Trandoshano", "Chiss",
+];
+
 export const classes = [
   // ══════════════════════════════════════════════════════════════════════════
   // VETERANO — chassi Cosmonauta (d10)
@@ -479,6 +488,7 @@ export const classes = [
   // ══════════════════════════════════════════════════════════════════════════
   {
     nome: "Sensível à Força",
+    restricao_racas: RACAS_SENSIVEL,
     tabela: "sensivel",
     coluna: "normal",
     dv: 8,
@@ -507,6 +517,7 @@ export const classes = [
   },
   {
     nome: "Sensível à Força — Guardião",
+    restricao_racas: RACAS_SENSIVEL,
     tabela: "sensivel",
     coluna: "especial",
     // Adestramento de Combate [1]: a Base de Ataque evolui como a de um
@@ -561,6 +572,7 @@ export const classes = [
   },
   {
     nome: "Sensível à Força — Consular",
+    restricao_racas: RACAS_SENSIVEL,
     tabela: "sensivel",
     coluna: "especial",
     dv: 8,
@@ -581,6 +593,7 @@ export const classes = [
   },
   {
     nome: "Sensível à Força — Sentinela",
+    restricao_racas: RACAS_SENSIVEL,
     tabela: "sensivel",
     coluna: "especial",
     dv: 8,
@@ -607,6 +620,7 @@ export const classes = [
   },
   {
     nome: "Sensível à Força — Vidente",
+    restricao_racas: RACAS_SENSIVEL,
     tabela: "sensivel",
     coluna: "especial",
     dv: 8,

@@ -16,7 +16,16 @@
     },
     "restrictions": {
       "alignments": [],
-      "races": []
+      "races": [
+        "Humano",
+        "Wookiee",
+        "Twi'lek",
+        "Rodiano",
+        "Zabrak",
+        "Mon Calamari",
+        "Trandoshano",
+        "Chiss"
+      ]
     },
     "levels": {
       "1": {
