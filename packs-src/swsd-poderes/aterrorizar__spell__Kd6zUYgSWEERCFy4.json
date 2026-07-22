@@ -13,10 +13,10 @@
     "necromancer": "2",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
+    "range": "10 m + 3 m/nível",
+    "duration": "30 segundos/nível",
     "jp": "JPS nega",
-    "description": "<p><strong>Grandeza:</strong> 2ª</p><p>Você projeta uma onda de pavor e <strong>inimigos fracos na área ficam apavorados</strong>: testes Difíceis, e <strong>1 em 1d6 de largar o que seguram</strong> a cada rodada (uma <strong>JPS</strong> nega). O grito silencioso que esvazia a coragem de um pelotão.</p><p><em>Poder-base: Aterrorizar (2ª).</em></p>"
+    "description": "<p><strong>Grandeza:</strong> 2ª</p><p><strong>Alcance:</strong> 10 m + 3 m/nível · <strong>Duração:</strong> 30 segundos/nível · <strong>JP:</strong> JPS nega</p><p>Afeta inimigos com <strong>até 5 DV</strong> ao alcance.</p><p>Você projeta uma onda de pavor e <strong>inimigos fracos na área ficam apavorados</strong>: testes Difíceis, e <strong>1 em 1d6 de largar o que seguram</strong> a cada rodada (uma <strong>JPS</strong> nega). O grito silencioso que esvazia a coragem de um pelotão.</p><p><em>Poder-base: Aterrorizar (2ª).</em></p>"
   },
   "effects": [],
   "flags": {},

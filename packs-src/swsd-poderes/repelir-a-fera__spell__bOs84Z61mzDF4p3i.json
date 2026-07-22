@@ -13,10 +13,10 @@
     "necromancer": "5",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
+    "range": "Visual",
+    "duration": "instantâneo",
     "jp": "JPS nega",
-    "description": "<p><strong>Grandeza:</strong> 5ª</p><p>Você projeta repulsa pura e <strong>força criaturas não-humanas a recuar ou fugir</strong> — até <strong>8 DV</strong> afetados (uma <strong>JPS</strong> nega). O gesto que espanta a matilha, esvazia o fosso da fera ou abre caminho por um enxame.</p><p><em>Poder-base: Afastar Criatura (5ª).</em></p>"
+    "description": "<p><strong>Grandeza:</strong> 5ª</p><p><strong>Alcance:</strong> Visual · <strong>Duração:</strong> instantâneo · <strong>JP:</strong> JPS nega</p><p>Até <strong>8 DV</strong> afetados, começando pelas criaturas com <strong>menos</strong> DV (o excedente é desperdiçado). Uma <strong>falha crítica</strong> faz a criatura fugir a todo custo.</p><p>Você projeta repulsa pura e <strong>força criaturas não-humanas a recuar ou fugir</strong> — até <strong>8 DV</strong> afetados (uma <strong>JPS</strong> nega). O gesto que espanta a matilha, esvazia o fosso da fera ou abre caminho por um enxame.</p><p><em>Poder-base: Afastar Criatura (5ª).</em></p>"
   },
   "effects": [],
   "flags": {},

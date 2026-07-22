@@ -13,10 +13,10 @@
     "necromancer": "3",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
+    "range": "Visual",
+    "duration": "1 minuto/nível",
     "jp": "JPS nega",
-    "description": "<p><strong>Grandeza:</strong> 3ª</p><p>Você captura a atenção de um alvo e o deixa <strong>dócil e sugestionável</strong> (uma <strong>JPS</strong> nega), pronto a ouvir e obedecer ordens brandas. O olhar que prende antes de a vontade quebrar.</p><p><em>Poder-base: Hipnose (3ª).</em></p>"
+    "description": "<p><strong>Grandeza:</strong> 3ª</p><p><strong>Alcance:</strong> Visual · <strong>Duração:</strong> 1 minuto/nível · <strong>JP:</strong> JPS nega</p><p>Permite <strong>fazer perguntas</strong> e <strong>uma única sugestão</strong>. O alvo dorme por toda a duração e <strong>não lembra de nada</strong>.</p><p>Você captura a atenção de um alvo e o deixa <strong>dócil e sugestionável</strong> (uma <strong>JPS</strong> nega), pronto a ouvir e obedecer ordens brandas. O olhar que prende antes de a vontade quebrar.</p><p><em>Poder-base: Hipnose (3ª).</em></p>"
   },
   "effects": [],
   "flags": {},

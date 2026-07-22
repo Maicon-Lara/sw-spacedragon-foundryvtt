@@ -13,10 +13,10 @@
     "necromancer": "2",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
+    "range": "Visual",
+    "duration": "30 segundos/nível",
     "jp": "JPS resiste",
-    "description": "<p><strong>Grandeza:</strong> 2ª</p><p>Você mina por dentro a <strong>força física e a resolução</strong> de um alvo, que definha e vacila (uma <strong>JPS</strong> resiste). Deixa o brutamontes fraco e o herói inseguro na hora exata do confronto.</p><p><em>Poder-base: Enfraquecimento (2ª).</em></p>"
+    "description": "<p><strong>Grandeza:</strong> 2ª</p><p><strong>Alcance:</strong> Visual · <strong>Duração:</strong> 30 segundos/nível · <strong>JP:</strong> JPS resiste</p><p>O alvo sofre <strong>−2 no atributo Força</strong>.</p><p>Você mina por dentro a <strong>força física e a resolução</strong> de um alvo, que definha e vacila (uma <strong>JPS</strong> resiste). Deixa o brutamontes fraco e o herói inseguro na hora exata do confronto.</p><p><em>Poder-base: Enfraquecimento (2ª).</em></p>"
   },
   "effects": [],
   "flags": {},

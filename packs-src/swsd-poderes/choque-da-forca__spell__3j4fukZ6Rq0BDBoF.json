@@ -13,10 +13,10 @@
     "necromancer": "1",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
+    "range": "Visual",
+    "duration": "instantâneo",
     "jp": "nenhuma",
-    "description": "<p><strong>Grandeza:</strong> 1ª</p><p>Você concentra a Força num raio breve e o descarrega no alvo, causando <strong>1d6</strong> de dano (<strong>+2 por Foco extra gasto, até +10</strong>), <strong>sem direito a JPS</strong>. É o \"Force lightning\" menor, o primeiro fio de eletricidade da Sombra e o gatilho dos <strong>Relâmpagos</strong> que virão.</p><p><em>Poder-base: Disparo Mental (1ª).</em></p>"
+    "description": "<p><strong>Grandeza:</strong> 1ª</p><p><strong>Alcance:</strong> Visual · <strong>Duração:</strong> instantâneo · <strong>JP:</strong> nenhuma</p><p>Você concentra a Força num raio breve e o descarrega no alvo, causando <strong>1d6</strong> de dano (<strong>+2 por Foco extra gasto, até +10</strong>), <strong>sem direito a JPS</strong>. É o \"Force lightning\" menor, o primeiro fio de eletricidade da Sombra e o gatilho dos <strong>Relâmpagos</strong> que virão.</p><p><em>Poder-base: Disparo Mental (1ª).</em></p>"
   },
   "effects": [],
   "flags": {},

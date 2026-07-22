@@ -13,10 +13,10 @@
     "necromancer": "null",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
+    "range": "Visual",
     "duration": "o resto da cena",
     "jp": "nenhuma",
-    "description": "<p><strong>Grandeza:</strong> 1ª</p><p>Você toca a emoção de um aliado e <strong>dissipa o medo e o pânico</strong>, firmando-o contra novo terror pelo resto da cena. A voz baixa que faz o soldado tremendo levantar a arma de novo.</p><p><em>Poder-base: Ajustar Emoções (1ª).</em></p>"
+    "description": "<p><strong>Grandeza:</strong> 1ª</p><p><strong>Alcance:</strong> Visual · <strong>Duração:</strong> o resto da cena · <strong>JP:</strong> nenhuma</p><p>Você toca a emoção de um aliado e <strong>dissipa o medo e o pânico</strong>, firmando-o contra novo terror pelo resto da cena. A voz baixa que faz o soldado tremendo levantar a arma de novo.</p><p><em>Poder-base: Ajustar Emoções (1ª).</em></p>"
   },
   "effects": [],
   "flags": {},

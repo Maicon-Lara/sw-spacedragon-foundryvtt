@@ -13,10 +13,10 @@
     "necromancer": "4",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
+    "range": "Visual",
+    "duration": "permanente",
     "jp": "JPS resiste",
-    "description": "<p><strong>Grandeza:</strong> 4ª</p><p>Você <strong>altera um elemento da memória</strong> do alvo (uma <strong>JPS</strong> resiste): apaga o que ele viu, troca um rosto, some com uma conversa. O crime perfeito do Lado Sombrio — a testemunha que jura nunca ter visto nada.</p><p><em>Poder-base: Alterar Memória (4ª).</em></p>"
+    "description": "<p><strong>Grandeza:</strong> 4ª</p><p><strong>Alcance:</strong> Visual · <strong>Duração:</strong> permanente · <strong>JP:</strong> JPS resiste</p><p>Alcança memórias de fatos ocorridos há até <strong>1 mês por nível</strong>; altera <strong>um elemento a cada 3 níveis</strong>.</p><p>Você <strong>altera um elemento da memória</strong> do alvo (uma <strong>JPS</strong> resiste): apaga o que ele viu, troca um rosto, some com uma conversa. O crime perfeito do Lado Sombrio — a testemunha que jura nunca ter visto nada.</p><p><em>Poder-base: Alterar Memória (4ª).</em></p>"
   },
   "effects": [],
   "flags": {},

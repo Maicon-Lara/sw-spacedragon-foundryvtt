@@ -16,7 +16,7 @@
     "range": "toque",
     "duration": "",
     "jp": "nenhuma",
-    "description": "<p><strong>Grandeza:</strong> 1ª</p><p>Você entrega a mão que empunha à Força, e ela guia o golpe: pela duração, seus <strong>ataques com a arma tocada</strong> (o sabre, tipicamente) tornam-se <strong>Fáceis</strong>. Não é fúria — é a certeza tranquila de quem deixa a Força mirar por si.</p><p><em>(adaptação — 1ª.)</em></p>"
+    "description": "<p><strong>Grandeza:</strong> 1ª</p><p><strong>Alcance:</strong> toque</p><p>Você entrega a mão que empunha à Força, e ela guia o golpe: pela duração, seus <strong>ataques com a arma tocada</strong> (o sabre, tipicamente) tornam-se <strong>Fáceis</strong>. Não é fúria — é a certeza tranquila de quem deixa a Força mirar por si.</p><p><em>(adaptação — 1ª.)</em></p>"
   },
   "effects": [],
   "flags": {},

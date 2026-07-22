@@ -13,10 +13,10 @@
     "necromancer": "4",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
+    "range": "Visual",
+    "duration": "15 segundos/nível",
     "jp": "nenhuma",
-    "description": "<p><strong>Grandeza:</strong> 4ª</p><p>Você embaralha os pensamentos do alvo e ele passa a <strong>agir de forma errática e imprevisível</strong>, tão capaz de atacar o próprio aliado quanto o inimigo. O caos injetado numa mente inteira.</p><p><em>Poder-base: Confundir Mente (4ª).</em></p>"
+    "description": "<p><strong>Grandeza:</strong> 4ª</p><p><strong>Alcance:</strong> Visual · <strong>Duração:</strong> 15 segundos/nível · <strong>JP:</strong> nenhuma</p><p>A <strong>Inteligência do alvo é reduzida em 1/3</strong> e ele sofre <strong>−3 em qualquer rolagem</strong>.</p><p>Você embaralha os pensamentos do alvo e ele passa a <strong>agir de forma errática e imprevisível</strong>, tão capaz de atacar o próprio aliado quanto o inimigo. O caos injetado numa mente inteira.</p><p><em>Poder-base: Confundir Mente (4ª).</em></p>"
   },
   "effects": [],
   "flags": {},

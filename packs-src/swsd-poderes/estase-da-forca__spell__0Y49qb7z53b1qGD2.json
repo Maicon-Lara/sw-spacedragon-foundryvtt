@@ -13,10 +13,10 @@
     "necromancer": "null",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
+    "range": "Visual",
+    "duration": "30 segundos/nível",
     "jp": "JPS nega",
-    "description": "<p><strong>Grandeza:</strong> 3ª</p><p>Você prende a vontade de um humanoide e o <strong>paralisa no lugar</strong> (uma <strong>JPS</strong> nega). A Luz a usa para conter sem ferir — segurar o fugitivo, congelar o refém-tomador, encerrar a briga antes do sangue.</p><p><em>Poder-base: Imobilizar Pessoa (3ª).</em></p>"
+    "description": "<p><strong>Grandeza:</strong> 3ª</p><p><strong>Alcance:</strong> Visual · <strong>Duração:</strong> 30 segundos/nível · <strong>JP:</strong> JPS nega</p><p>Afeta um humanoide com <strong>tantos DV quantos forem os seus níveis</strong>.</p><p>Você prende a vontade de um humanoide e o <strong>paralisa no lugar</strong> (uma <strong>JPS</strong> nega). A Luz a usa para conter sem ferir — segurar o fugitivo, congelar o refém-tomador, encerrar a briga antes do sangue.</p><p><em>Poder-base: Imobilizar Pessoa (3ª).</em></p>"
   },
   "effects": [],
   "flags": {},

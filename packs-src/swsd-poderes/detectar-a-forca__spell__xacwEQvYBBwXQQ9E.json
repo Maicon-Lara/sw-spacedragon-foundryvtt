@@ -13,10 +13,10 @@
     "necromancer": "null",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
+    "range": "100 m + 10 m/nível",
+    "duration": "instantâneo",
     "jp": "nenhuma",
-    "description": "<p><strong>Grandeza:</strong> 1ª</p><p>Você abre os sentidos e a Força responde: sente a assinatura viva de criaturas, o peso de lugares carregados, o brilho latente de um cristal ou artefato, e o rastro fresco de qualquer poder usado por perto há pouco. Não diz nomes nem intenções — apenas <em>que ali há Força, e quanto</em>. É o primeiro poder de todo aprendiz e o radar silencioso do grupo.</p><p><em>Poder-base: Detectar Poderes Mentais (1ª).</em></p>"
+    "description": "<p><strong>Grandeza:</strong> 1ª</p><p><strong>Alcance:</strong> 100 m + 10 m/nível · <strong>Duração:</strong> instantâneo · <strong>JP:</strong> nenhuma</p><p>Intui a <strong>direção</strong> e <strong>qual poder</strong> foi usado. Só capta poderes <strong>em execução naquele momento</strong> ou de <strong>efeito prolongado</strong> sobre um local.</p><p>Você abre os sentidos e a Força responde: sente a assinatura viva de criaturas, o peso de lugares carregados, o brilho latente de um cristal ou artefato, e o rastro fresco de qualquer poder usado por perto há pouco. Não diz nomes nem intenções — apenas <em>que ali há Força, e quanto</em>. É o primeiro poder de todo aprendiz e o radar silencioso do grupo.</p><p><em>Poder-base: Detectar Poderes Mentais (1ª).</em></p>"
   },
   "effects": [],
   "flags": {},

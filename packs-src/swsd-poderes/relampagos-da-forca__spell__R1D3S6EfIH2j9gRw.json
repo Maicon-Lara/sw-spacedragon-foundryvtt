@@ -13,10 +13,10 @@
     "necromancer": "3",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
+    "range": "Visual",
+    "duration": "instantâneo",
     "jp": "JPS",
-    "description": "<p><strong>Grandeza:</strong> 3ª</p><p>A linha icônica de raios azul-brancos que jorra das mãos: <strong>1d4</strong> de dano e, se o alvo falhar numa <strong>JPS</strong>, <strong>atordoa por 1d6 rodadas</strong> (atordoado = todos os testes Difíceis). Escalável com Foco extra. A assinatura do Imperador.</p><p><strong>★ Marca +1 de Corrupção sempre — inclusive para quem já trilha a Sombra.</strong></p><p><em>Poder-base: Choque Mental (3ª).</em></p>"
+    "description": "<p><strong>Grandeza:</strong> 3ª</p><p><strong>Alcance:</strong> Visual · <strong>Duração:</strong> instantâneo · <strong>JP:</strong> JPS</p><p>A linha icônica de raios azul-brancos que jorra das mãos: <strong>1d4</strong> de dano e, se o alvo falhar numa <strong>JPS</strong>, <strong>atordoa por 1d6 rodadas</strong> (atordoado = todos os testes Difíceis). Escalável com Foco extra. A assinatura do Imperador.</p><p><strong>★ Marca +1 de Corrupção sempre — inclusive para quem já trilha a Sombra.</strong></p><p><em>Poder-base: Choque Mental (3ª).</em></p>"
   },
   "effects": [],
   "flags": {},

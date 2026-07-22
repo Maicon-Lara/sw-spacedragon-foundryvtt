@@ -13,10 +13,10 @@
     "necromancer": "5",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
-    "jp": "nenhuma",
-    "description": "<p><strong>Grandeza:</strong> 5ª</p><p>Você subjuga <strong>corpo e vontade até de criaturas poderosas</strong>, prendendo no lugar o que uma prisão comum não seguraria: feras colossais, brutamontes, alvos de vontade férrea.</p><p><em>Poder-base: Imobilizar Criatura (5ª).</em></p>"
+    "range": "Visual",
+    "duration": "30 segundos/nível",
+    "jp": "JPS",
+    "description": "<p><strong>Grandeza:</strong> 5ª</p><p><strong>Alcance:</strong> Visual · <strong>Duração:</strong> 30 segundos/nível · <strong>JP:</strong> JPS</p><p>Afeta uma criatura com <strong>tantos DV quantos forem os seus níveis</strong>.</p><p>Você subjuga <strong>corpo e vontade até de criaturas poderosas</strong>, prendendo no lugar o que uma prisão comum não seguraria: feras colossais, brutamontes, alvos de vontade férrea.</p><p><em>Poder-base: Imobilizar Criatura (5ª).</em></p>"
   },
   "effects": [],
   "flags": {},

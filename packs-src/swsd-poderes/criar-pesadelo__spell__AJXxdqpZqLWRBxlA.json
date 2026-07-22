@@ -13,10 +13,10 @@
     "necromancer": "4",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
-    "jp": "nenhuma",
-    "description": "<p><strong>Grandeza:</strong> 4ª</p><p>Você infesta o sono do alvo com <strong>terror recorrente</strong>, drenando-lhe descanso, vontade e sanidade noite após noite. A tortura à distância que deixa a vítima exausta e quebrada sem uma marca no corpo.</p><p><em>Poder-base: Criar Pesadelo (4ª).</em></p>"
+    "range": "Visual",
+    "duration": "1 minuto/nível",
+    "jp": "JPS",
+    "description": "<p><strong>Grandeza:</strong> 4ª</p><p><strong>Alcance:</strong> Visual · <strong>Duração:</strong> 1 minuto/nível · <strong>JP:</strong> JPS</p><p>O alvo precisa estar <strong>adormecido</strong>. Ao acordar, a falha na JPS o deixa <strong>amedrontado por 24 horas</strong>: <strong>−2</strong> nas rolagens e <strong>−4</strong> em situações que lembrem o pesadelo.</p><p>Você infesta o sono do alvo com <strong>terror recorrente</strong>, drenando-lhe descanso, vontade e sanidade noite após noite. A tortura à distância que deixa a vítima exausta e quebrada sem uma marca no corpo.</p><p><em>Poder-base: Criar Pesadelo (4ª).</em></p>"
   },
   "effects": [],
   "flags": {},

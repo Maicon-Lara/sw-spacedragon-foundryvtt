@@ -13,10 +13,10 @@
     "necromancer": "null",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
+    "range": "1 km/nível",
+    "duration": "30 minutos/nível",
     "jp": "nenhuma",
-    "description": "<p><strong>Grandeza:</strong> 1ª</p><p>Você tece um fio mental com um aliado conhecido e conversa mente a mente, sem palavra falada, à distância. Útil para coordenar uma infiltração em silêncio ou pedir socorro sem acionar um comunicador rastreável. O vínculo carrega intenção e imagens simples, não frases longas nem segredos que o outro não queira dar.</p><p><em>Poder-base: Conexão Psíquica (1ª).</em></p>"
+    "description": "<p><strong>Grandeza:</strong> 1ª</p><p><strong>Alcance:</strong> 1 km/nível · <strong>Duração:</strong> 30 minutos/nível · <strong>JP:</strong> nenhuma</p><p>Você mantém <strong>tantos vínculos quanto metade do seu nível</strong>. O vínculo se perde se o alvo sair do alcance, ficar inconsciente ou morrer.</p><p>Você tece um fio mental com um aliado conhecido e conversa mente a mente, sem palavra falada, à distância. Útil para coordenar uma infiltração em silêncio ou pedir socorro sem acionar um comunicador rastreável. O vínculo carrega intenção e imagens simples, não frases longas nem segredos que o outro não queira dar.</p><p><em>Poder-base: Conexão Psíquica (1ª).</em></p>"
   },
   "effects": [],
   "flags": {},

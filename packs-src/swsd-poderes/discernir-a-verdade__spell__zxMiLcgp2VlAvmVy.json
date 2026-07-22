@@ -13,10 +13,10 @@
     "necromancer": "null",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
+    "range": "Visual",
+    "duration": "1 minuto",
     "jp": "nenhuma",
-    "description": "<p><strong>Grandeza:</strong> 2ª</p><p>Você ouve não só as palavras, mas a intenção sob elas, e <strong>sabe quando lhe mentem</strong>. Não revela a verdade escondida — apenas acende o alarme de que aquilo é falso. O dom que desmonta o vilão cordial na mesa de negociação.</p><p><em>Poder-base: Detectar Mentiras (2ª).</em></p>"
+    "description": "<p><strong>Grandeza:</strong> 2ª</p><p><strong>Alcance:</strong> Visual · <strong>Duração:</strong> 1 minuto · <strong>JP:</strong> nenhuma</p><p>Você ouve não só as palavras, mas a intenção sob elas, e <strong>sabe quando lhe mentem</strong>. Não revela a verdade escondida — apenas acende o alarme de que aquilo é falso. O dom que desmonta o vilão cordial na mesa de negociação.</p><p><em>Poder-base: Detectar Mentiras (2ª).</em></p>"
   },
   "effects": [],
   "flags": {},

@@ -16,7 +16,7 @@
     "range": "toque",
     "duration": "instantâneo",
     "jp": "nenhuma",
-    "description": "<p><strong>Grandeza:</strong> 3ª</p><p>Você entra na mente ferida de um aliado e <strong>acalma o espírito quebrado</strong>, estabilizando quem foi despedaçado por tortura, terror ou um poder da Sombra. <strong>Toque · instantâneo, sem dano.</strong></p><p>Encerra na hora <strong>medo, pânico, terror, confusão e atordoamento</strong>, e <strong>cancela um efeito mental ou da Força em curso sobre o alvo, de até 3ª Grandeza</strong> (poderes de Grandeza maior exigem <em>Dissipar a Sombra</em>). Não cura pontos de vida — isso é <em>Cura pela Força</em>. Para insanidade permanente ou trauma enraizado, use <em>Curar Insanidade</em> (8ª) do v1.0.</p><p><em>(adaptação do cenário — não use o poder-base do v1.0.)</em></p>"
+    "description": "<p><strong>Grandeza:</strong> 3ª</p><p><strong>Alcance:</strong> toque · <strong>Duração:</strong> instantâneo</p><p>Você entra na mente ferida de um aliado e <strong>acalma o espírito quebrado</strong>, estabilizando quem foi despedaçado por tortura, terror ou um poder da Sombra. <strong>Toque · instantâneo, sem dano.</strong></p><p>Encerra na hora <strong>medo, pânico, terror, confusão e atordoamento</strong>, e <strong>cancela um efeito mental ou da Força em curso sobre o alvo, de até 3ª Grandeza</strong> (poderes de Grandeza maior exigem <em>Dissipar a Sombra</em>). Não cura pontos de vida — isso é <em>Cura pela Força</em>. Para insanidade permanente ou trauma enraizado, use <em>Curar Insanidade</em> (8ª) do v1.0.</p><p><em>(adaptação do cenário — não use o poder-base do v1.0.)</em></p>"
   },
   "effects": [],
   "flags": {},

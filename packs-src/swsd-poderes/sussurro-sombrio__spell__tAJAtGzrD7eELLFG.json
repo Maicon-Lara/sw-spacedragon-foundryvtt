@@ -13,10 +13,10 @@
     "necromancer": "3",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
+    "range": "Visual",
+    "duration": "instantâneo",
     "jp": "nenhuma",
-    "description": "<p><strong>Grandeza:</strong> 3ª</p><p>Você planta na mente do alvo <strong>um pensamento ou impulso</strong> que ele toma por seu e passa a agir sobre ele. A dúvida semeada, a traição sugerida, o medo que ninguém plantou — só que plantou.</p><p><em>Poder-base: Induzir Pensamento (3ª).</em></p>"
+    "description": "<p><strong>Grandeza:</strong> 3ª</p><p><strong>Alcance:</strong> Visual · <strong>Duração:</strong> instantâneo · <strong>JP:</strong> nenhuma</p><p>A frase implantada deve ser <strong>curta</strong> e <strong>não pode conter conclusões lógicas</strong>.</p><p>Você planta na mente do alvo <strong>um pensamento ou impulso</strong> que ele toma por seu e passa a agir sobre ele. A dúvida semeada, a traição sugerida, o medo que ninguém plantou — só que plantou.</p><p><em>Poder-base: Induzir Pensamento (3ª).</em></p>"
   },
   "effects": [],
   "flags": {},

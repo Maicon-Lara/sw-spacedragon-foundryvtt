@@ -13,10 +13,10 @@
     "necromancer": "null",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
-    "jp": "nenhuma",
-    "description": "<p><strong>Grandeza:</strong> 5ª</p><p>A garra telecinética levada ao extremo: você fecha o punho da vontade em torno de <strong>corpo e nervo</strong> de uma criatura, ainda que poderosa, e a trava no lugar — músculos presos, arma imóvel no ar. Onde a Estase apenas paralisa um humanoide, esta prende feras, brutamontes e alvos que uma mente fraca jamais seguraria.</p><p><em>Poder-base: Imobilizar Criatura (5ª).</em></p>"
+    "range": "Visual",
+    "duration": "30 segundos/nível",
+    "jp": "JPS",
+    "description": "<p><strong>Grandeza:</strong> 5ª</p><p><strong>Alcance:</strong> Visual · <strong>Duração:</strong> 30 segundos/nível · <strong>JP:</strong> JPS</p><p>Afeta uma criatura com <strong>tantos DV quantos forem os seus níveis</strong>.</p><p>A garra telecinética levada ao extremo: você fecha o punho da vontade em torno de <strong>corpo e nervo</strong> de uma criatura, ainda que poderosa, e a trava no lugar — músculos presos, arma imóvel no ar. Onde a Estase apenas paralisa um humanoide, esta prende feras, brutamontes e alvos que uma mente fraca jamais seguraria.</p><p><em>Poder-base: Imobilizar Criatura (5ª).</em></p>"
   },
   "effects": [],
   "flags": {},

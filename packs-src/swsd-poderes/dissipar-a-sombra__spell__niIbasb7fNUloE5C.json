@@ -13,10 +13,10 @@
     "necromancer": "null",
     "illusionist": "null",
     "reverse": false,
-    "range": "",
-    "duration": "",
-    "jp": "nenhuma",
-    "description": "<p><strong>Grandeza:</strong> 3ª</p><p>Você desfaz o tecido de um poder inimigo, <strong>cancelando poderes da Força e efeitos sobrenaturais ativos</strong>. O antídoto direto contra a magia da Sombra em campo — apaga o terror, solta o estrangulamento, dissipa as trevas.</p><p>Funciona como o <strong>Duelo da Força</strong>, inclusive quanto a gastar Foco extra para bônus — mas o alvo <strong>não</strong> ganha a chance de revidar, e o sucesso significa que o poder foi simplesmente <strong>dissipado</strong>.</p><p><em>Poder-base: Dissipar Poder Mental (3ª).</em></p>"
+    "range": "10 m + 1 m/nível",
+    "duration": "instantâneo",
+    "jp": "nenhuma (teste resistido)",
+    "description": "<p><strong>Grandeza:</strong> 3ª</p><p><strong>Alcance:</strong> 10 m + 1 m/nível · <strong>Duração:</strong> instantâneo · <strong>JP:</strong> nenhuma (teste resistido)</p><p>Você desfaz o tecido de um poder inimigo, <strong>cancelando poderes da Força e efeitos sobrenaturais ativos</strong>. O antídoto direto contra a magia da Sombra em campo — apaga o terror, solta o estrangulamento, dissipa as trevas.</p><p>Funciona como o <strong>Duelo da Força</strong>, inclusive quanto a gastar Foco extra para bônus — mas o alvo <strong>não</strong> ganha a chance de revidar, e o sucesso significa que o poder foi simplesmente <strong>dissipado</strong>.</p><p><em>Poder-base: Dissipar Poder Mental (3ª).</em></p>"
   },
   "effects": [],
   "flags": {},
