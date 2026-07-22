@@ -24,7 +24,13 @@ export const especies = [
     alignment_notes: "Qualquer.",
     habilidades: [
       { nome: "Onipresente", xp: 10, desc: "<p>+10% em toda a experiência (XP) recebida.</p>" },
-      { nome: "Versátil", desc: "<p>+1 em uma única Jogada de Proteção à sua escolha.</p>" },
+      {
+        nome: "Versátil",
+        // Escolha livre: marcar as três faz a ficha exibir o seletor de JP
+        // da aba Raça (system.jp_race_bonus), que aplica o +1 na escolhida.
+        jp: { jpc: true, jpd: true, jps: true },
+        desc: "<p>+1 em uma única Jogada de Proteção <strong>à sua escolha</strong>.</p><p><em>Na ficha:</em> escolha qual JP recebe o bônus no seletor que aparece nesta habilidade, na aba <strong>Raça</strong>.</p>",
+      },
     ],
   },
   {
@@ -97,7 +103,6 @@ export const especies = [
     habilidades: [
       {
         nome: "Corpo Robótico",
-        jp: { jpc: true },
         desc: "<p>Metal e polímeros avançados não dormem, não comem, não respiram, não adoecem nem se envenenam — todas as suas <strong>Jogadas de Proteção de Constituição (JPC) são Fáceis</strong>. <strong>Não pode aprender poderes da Força.</strong> Nunca regenera pontos de vida sozinho: precisa de <strong>reparo especializado</strong> (ferramentas + teste de Inteligência, ou cura tecnológica). Ainda é suscetível a morte, alguns tipos de paralisia, cegueira, surdez e drenagem de energia.</p>",
       },
       { nome: "Cérebro Positrônico", desc: "<p>Efeitos que afetam a mente são <strong>Difíceis</strong> contra o Droide — mas seus Testes de Reação e interações sociais também são <strong>Difíceis</strong>: a máquina não charmeia.</p>" },
@@ -116,9 +121,9 @@ export const especies = [
     alignment_tendency: "none",
     alignment_notes: "Qualquer.",
     habilidades: [
-      { nome: "Dois Corações", jp: { jpc: true }, desc: "<p><strong>+2 na JPC</strong> contra veneno, doença e asfixia. Recupera pontos de vida naturalmente como se sempre houvesse descansado adequadamente.</p>" },
+      { nome: "Dois Corações", desc: "<p><strong>+2 na JPC</strong> contra veneno, doença e asfixia. Recupera pontos de vida naturalmente como se sempre houvesse descansado adequadamente.</p>" },
       { nome: "Resistência à Dor", daily_uses: 1, desc: "<p>Ao chegar a 0 PV sem morrer, faz uma <strong>JPC</strong>; se passar, continua agindo (cambaleante) até o fim da próxima rodada. Uma vez por combate.</p>" },
-      { nome: "Vontade Férrea", jp: { jps: true }, desc: "<p><strong>+1 em JPS</strong> contra medo, encantamento e controle mental.</p>" },
+      { nome: "Vontade Férrea", desc: "<p><strong>+1 em JPS</strong> contra medo, encantamento e controle mental.</p>" },
     ],
   },
   {
@@ -177,7 +182,7 @@ export const especies = [
     habilidades: [
       { nome: "Visão Infravermelha", desc: "<p>Infravisão de <strong>18 metros</strong> — calor e seres vivos no escuro.</p>" },
       { nome: "Mente Tática", desc: "<p>+1 na Iniciativa e +1 para analisar inimigos e prever manobras. Começa o jogo com um idioma adicional.</p>" },
-      { nome: "Sangue-frio", jp: { jps: true }, desc: "<p><strong>+1 em JPS</strong> contra medo, provocação e intimidação. Nunca age por pânico.</p>" },
+      { nome: "Sangue-frio", desc: "<p><strong>+1 em JPS</strong> contra medo, provocação e intimidação. Nunca age por pânico.</p>" },
       { nome: "Disciplina de Csilla", desc: "<p>Imune a penalidades por frio extremo.</p>" },
     ],
   },

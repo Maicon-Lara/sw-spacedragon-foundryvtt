@@ -8,7 +8,7 @@
     "description": "<p><strong>+2 na JPC</strong> contra veneno, doença e asfixia. Recupera pontos de vida naturalmente como se sempre houvesse descansado adequadamente.</p>",
     "xp": null,
     "jp": {
-      "jpc": true,
+      "jpc": false,
       "jpd": false,
       "jps": false
     },

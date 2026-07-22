@@ -10,7 +10,7 @@
     "jp": {
       "jpc": false,
       "jpd": false,
-      "jps": true
+      "jps": false
     },
     "bonus_damage": 0,
     "bonus_damage_condition": "none",

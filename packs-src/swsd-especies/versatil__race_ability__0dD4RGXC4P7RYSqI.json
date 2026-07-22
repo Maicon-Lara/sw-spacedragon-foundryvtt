@@ -5,12 +5,12 @@
   "_id": "0dD4RGXC4P7RYSqI",
   "img": "systems/olddragon2e/assets/icons/diamond.svg",
   "system": {
-    "description": "<p>+1 em uma única Jogada de Proteção à sua escolha.</p>",
+    "description": "<p>+1 em uma única Jogada de Proteção <strong>à sua escolha</strong>.</p><p><em>Na ficha:</em> escolha qual JP recebe o bônus no seletor que aparece nesta habilidade, na aba <strong>Raça</strong>.</p>",
     "xp": null,
     "jp": {
-      "jpc": false,
-      "jpd": false,
-      "jps": false
+      "jpc": true,
+      "jpd": true,
+      "jps": true
     },
     "bonus_damage": 0,
     "bonus_damage_condition": "none",
