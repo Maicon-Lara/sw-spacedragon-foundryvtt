@@ -5,7 +5,7 @@
   "_id": "wyi5yM3Mu6rf0Ezk",
   "img": "systems/olddragon2e/assets/icons/kit.svg",
   "system": {
-    "description": "<p>Versátil, feita para enfrentar vários oponentes de uma vez.</p><p><strong>Sequência Aberta:</strong> ao derrubar ou errar um inimigo, transfere o ataque a <strong>outro adjacente</strong>; e ao acertar pode <strong>desarmar</strong> (a manobra do Veterano) sem gastar o ataque.</p>",
+    "description": "<p>Versátil, feita para enfrentar vários oponentes de uma vez.</p><p><strong>Sequência Aberta:</strong> ao derrubar ou errar um inimigo, transfere o ataque a <strong>outro adjacente</strong>; e ao acertar pode <strong>desarmar</strong> (a manobra do Veterano) sem gastar o ataque.</p><hr><p><strong>Como adicionar na ficha:</strong> o sistema não aceita soltar uma habilidade de classe direto no personagem. Abra o item da <strong>classe que já está na ficha</strong> (aba Classe, clique no nome) e arraste esta habilidade <strong>para dentro dessa janela</strong> — ela é sincronizada para o personagem automaticamente.</p><p><em>Atalho:</em> o compêndio de Classes já traz variantes prontas (ex.: <em>Guardião (Soresu)</em>, <em>Veterano — Senda Mandaloriana</em>) com estas habilidades embutidas — basta arrastar a variante e pular este passo.</p>",
     "level": 3,
     "level3": "",
     "level6": "<p><strong>Domínio do Enxame:</strong> cercado por 2 ou mais inimigos, ganha <strong>+2 na CA</strong> e um <strong>ataque extra</strong> por rodada contra um flanqueador.</p>",

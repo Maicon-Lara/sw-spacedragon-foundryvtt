@@ -1,0 +1,124 @@
+{
+  "folder": "ojACSqA12gZPBeW3",
+  "name": "Sensível à Força — Guardião (Niman)",
+  "type": "class",
+  "_id": "rfprpJG9k0b4ITsA",
+  "img": "systems/olddragon2e/assets/icons/level-up.svg",
+  "system": {
+    "flavor": "<p>O Jedi/Sith de sabre, na Forma <strong>Niman</strong>. <em>Especialização de Sensível à Força (neutro).</em></p>",
+    "description": "<p>Obi-Wan, Anakin, Ahsoka, Darth Maul, Darth Vader. A Força serve à lâmina.</p><p>Troca a amplitude do poder pela maestria da lâmina. Com o d8 da base, encara a linha de frente.</p><p><strong>Troca:</strong> seu <strong>teto de Grandeza passa a ser a 6ª</strong> — os feitos lendários (7ª a 10ª) ficam para os conjuradores. A lâmina cobra o preço da profundidade.</p><p><em>Especialização escolhida no 1º nível (padrão OD2). Evolui pela coluna <strong>XP Especial</strong> da tabela. Variante: mesas que queiram preservar o espírito original do Space Dragon podem adiar a escolha para o 3º nível.</em></p><p><strong>Esta variante já traz a Forma Niman embutida</strong> — arraste-a para a ficha e a Forma vem junto, com as evoluções de 3º, 6º e 10º nível. Se quiser trocar de Forma depois, use a versão genérica da classe e adicione a Forma pelo compêndio <em>Formas de Sabre</em>.</p>",
+    "hp": 8,
+    "high_level_hp_bonus": 1,
+    "equipment_restrictions": {
+      "weapons": "Empunha o sabre de luz sem risco, além de armas simples.",
+      "armors": "Usa armaduras médias sem penalizar a Força — exceção deliberada do cenário à regra de Vestes (o Jedi de armadura de guerra das Guerras Clônicas).",
+      "magic_items": "Apenas aparatos utilitários. Construir e operar qualquer aparato é o nicho do Técnico."
+    },
+    "restrictions": {
+      "alignments": [
+        "neutro"
+      ],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 3000
+      },
+      "3": {
+        "ba": 3,
+        "jp": 5,
+        "xp": 6000
+      },
+      "4": {
+        "ba": 4,
+        "jp": 5,
+        "xp": 10000
+      },
+      "5": {
+        "ba": 5,
+        "jp": 7,
+        "xp": 13000
+      },
+      "6": {
+        "ba": 6,
+        "jp": 7,
+        "xp": 26000
+      },
+      "7": {
+        "ba": 7,
+        "jp": 7,
+        "xp": 36000
+      },
+      "8": {
+        "ba": 8,
+        "jp": 7,
+        "xp": 46000
+      },
+      "9": {
+        "ba": 9,
+        "jp": 7,
+        "xp": 56000
+      },
+      "10": {
+        "ba": 10,
+        "jp": 10,
+        "xp": 112000
+      },
+      "11": {
+        "ba": 11,
+        "jp": 10,
+        "xp": 220000
+      },
+      "12": {
+        "ba": 12,
+        "jp": 10,
+        "xp": 340000
+      },
+      "13": {
+        "ba": 13,
+        "jp": 10,
+        "xp": 460000
+      },
+      "14": {
+        "ba": 14,
+        "jp": 13,
+        "xp": 580000
+      },
+      "15": {
+        "ba": 15,
+        "jp": 13,
+        "xp": 700000
+      }
+    },
+    "class_abilities": [
+      "Compendium.sw-spacedragon.swsd-classes.Item.0MhjxhVNpmWJgP3w",
+      "Compendium.sw-spacedragon.swsd-classes.Item.n1LwqliicAe0YLAt",
+      "Compendium.sw-spacedragon.swsd-classes.Item.TJHfW7VGG2tsvuEd",
+      "Compendium.sw-spacedragon.swsd-classes.Item.LOonlalDGJeYYWcX"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!rfprpJG9k0b4ITsA"
+}

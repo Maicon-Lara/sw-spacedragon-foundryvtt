@@ -16,6 +16,7 @@ import {
 import { monsterDoc } from "./lib-actors.mjs";
 
 import { classes } from "./data/classes.mjs";
+import { variantes } from "./data/variantes.mjs";
 import { especies, especieAbilitiesAvulsas } from "./data/especies.mjs";
 import { classAbilitiesAvulsas, origensAvulsas } from "./data/avulsas.mjs";
 import { categorias } from "./data/equipamentos.mjs";
@@ -51,7 +52,7 @@ function agrupaAvulsas(docs, lista, seed, build) {
 // ── Pack de classes (classes + class_abilities, agrupadas em folders) ──
 function buildClassesDocs() {
   const docs = [];
-  for (const cls of classes) {
+  for (const cls of [...classes, ...variantes]) {
     const folder = folderDoc(cls.nome, "Item", "classes");
     docs.push(folder);
     const abilityUuids = [];

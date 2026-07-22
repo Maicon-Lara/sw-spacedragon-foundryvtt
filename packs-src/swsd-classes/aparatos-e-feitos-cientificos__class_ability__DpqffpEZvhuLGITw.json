@@ -1,0 +1,50 @@
+{
+  "folder": "kJGwSJu69cJEyBMC",
+  "name": "Aparatos e Feitos Científicos",
+  "type": "class_ability",
+  "_id": "DpqffpEZvhuLGITw",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p>Cria <strong>aparatos</strong> (Nível Tecnológico = seu nível de classe, <strong>NT máximo 10</strong>; não há limite para os aparatos que pode <em>usar</em>) e realiza <strong>feitos científicos</strong>:</p><ul><li><strong>Feitos médicos:</strong> diagnosticar e curar doenças, operações cirúrgicas (simples a complexa), destilar antídotos, imunizar pacientes, cirurgia e membros ou órgãos biônicos.</li><li><strong>Feitos de laboratório:</strong> construir e consertar droides, reparos robóticos, decodificar DNA, clonagem e afins.</li></ul><p><strong>Consertar, recarregar ou adaptar</strong> um aparato custa <strong>25% do valor</strong> e <strong>metade do tempo</strong> de criação; construir do zero já sai com o seu Desconto Tecnológico. Feitos costumam levar mais tempo que aparatos, e a maioria é permanente.</p>",
+    "level": 1,
+    "level3": "",
+    "level6": "",
+    "level10": "",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!DpqffpEZvhuLGITw"
+}

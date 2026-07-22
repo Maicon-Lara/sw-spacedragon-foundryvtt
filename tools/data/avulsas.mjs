@@ -8,10 +8,16 @@
 //  · a Origem "Filho de Mandalore" — escolhida no 1º nível por cima da espécie
 //    e da classe, é habilidade de ESPÉCIE (vai no pack de espécies).
 
+// Nota anexada a toda habilidade avulsa: o sistema OD2 não deixa soltar
+// class_ability direto no personagem, então o jogador precisa saber o caminho.
+const COMO_ADICIONAR =
+  "<hr><p><strong>Como adicionar na ficha:</strong> o sistema não aceita soltar uma habilidade de classe direto no personagem. Abra o item da <strong>classe que já está na ficha</strong> (aba Classe, clique no nome) e arraste esta habilidade <strong>para dentro dessa janela</strong> — ela é sincronizada para o personagem automaticamente.</p>" +
+  "<p><em>Atalho:</em> o compêndio de Classes já traz variantes prontas (ex.: <em>Guardião (Soresu)</em>, <em>Veterano — Senda Mandaloriana</em>) com estas habilidades embutidas — basta arrastar a variante e pular este passo.</p>";
+
 const FORMAS = "Formas de Sabre (Guardião)";
 const SENDA = "Senda Mandaloriana";
 
-export const classAbilitiesAvulsas = [
+const AVULSAS = [
   // ── As 7 Formas de Sabre ──────────────────────────────────────────────────
   {
     folder: FORMAS, nome: "Shii-Cho (I) — a forma fundamental", level: 3,
@@ -101,3 +107,8 @@ export const origensAvulsas = [
       "</ul><p>A Origem é leve e <strong>não substitui habilidades de classe</strong>. É a porta de entrada para a <em>Senda Mandaloriana</em> — mas não é obrigatória, e um Filho de Mandalore pode nunca se converter formalmente.</p>",
   },
 ];
+
+export const classAbilitiesAvulsas = AVULSAS.map((a) => ({
+  ...a,
+  desc: (a.desc || "") + COMO_ADICIONAR,
+}));

@@ -5,7 +5,7 @@
   "_id": "AxF3HJA0anfLs5aq",
   "img": "systems/olddragon2e/assets/icons/kit.svg",
   "system": {
-    "description": "<p>Saltos, giros e ataques em movimento.</p><p><strong>Ímpeto Acrobático:</strong> se você <strong>se moveu</strong> antes de atacar, <strong>+1 no ataque e no dano</strong>; combina com o <em>Salto da Força</em> — atacar de cima torna o primeiro golpe <strong>Fácil</strong>.</p>",
+    "description": "<p>Saltos, giros e ataques em movimento.</p><p><strong>Ímpeto Acrobático:</strong> se você <strong>se moveu</strong> antes de atacar, <strong>+1 no ataque e no dano</strong>; combina com o <em>Salto da Força</em> — atacar de cima torna o primeiro golpe <strong>Fácil</strong>.</p><hr><p><strong>Como adicionar na ficha:</strong> o sistema não aceita soltar uma habilidade de classe direto no personagem. Abra o item da <strong>classe que já está na ficha</strong> (aba Classe, clique no nome) e arraste esta habilidade <strong>para dentro dessa janela</strong> — ela é sincronizada para o personagem automaticamente.</p><p><em>Atalho:</em> o compêndio de Classes já traz variantes prontas (ex.: <em>Guardião (Soresu)</em>, <em>Veterano — Senda Mandaloriana</em>) com estas habilidades embutidas — basta arrastar a variante e pular este passo.</p>",
     "level": 3,
     "level3": "",
     "level6": "<p><strong>Turbilhão:</strong> gastando 1 de Foco, um <strong>ataque extra</strong> enquanto se reposiciona (precisa terminar em outra casa).</p>",

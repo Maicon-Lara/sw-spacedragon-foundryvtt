@@ -5,7 +5,7 @@
   "_id": "g2qh3gs3xPWNhlqJ",
   "img": "systems/olddragon2e/assets/icons/kit.svg",
   "system": {
-    "description": "<p>O gish: mistura lâmina e poderes numa dança só.</p><p><strong>Fluxo Equilibrado:</strong> na rodada em que usa um poder da Força, ainda faz um <strong>ataque de sabre</strong> (ou vice-versa) sem penalidade; e empunha a lâmina com a Força para atacar a curta distância ou desarmar telecineticamente.</p>",
+    "description": "<p>O gish: mistura lâmina e poderes numa dança só.</p><p><strong>Fluxo Equilibrado:</strong> na rodada em que usa um poder da Força, ainda faz um <strong>ataque de sabre</strong> (ou vice-versa) sem penalidade; e empunha a lâmina com a Força para atacar a curta distância ou desarmar telecineticamente.</p><hr><p><strong>Como adicionar na ficha:</strong> o sistema não aceita soltar uma habilidade de classe direto no personagem. Abra o item da <strong>classe que já está na ficha</strong> (aba Classe, clique no nome) e arraste esta habilidade <strong>para dentro dessa janela</strong> — ela é sincronizada para o personagem automaticamente.</p><p><em>Atalho:</em> o compêndio de Classes já traz variantes prontas (ex.: <em>Guardião (Soresu)</em>, <em>Veterano — Senda Mandaloriana</em>) com estas habilidades embutidas — basta arrastar a variante e pular este passo.</p>",
     "level": 3,
     "level3": "",
     "level6": "<p><strong>Golpe Carregado:</strong> ao acertar, gasta <strong>1 de Foco</strong> para somar ao golpe o efeito de um poder de <strong>1ª Grandeza</strong>.</p>",

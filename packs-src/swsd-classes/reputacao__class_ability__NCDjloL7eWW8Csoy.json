@@ -1,0 +1,50 @@
+{
+  "folder": "alWGBvnqIyv2v8Is",
+  "name": "Reputação",
+  "type": "class_ability",
+  "_id": "NCDjloL7eWW8Csoy",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p>A partir do 11º nível o personagem já é um nome conhecido no seu meio. Sempre que <strong>invocar o próprio nome</strong> para obter algo do mundo — ser recebido por um governador, conseguir crédito num estaleiro, ser reconhecido por um contato, fazer um oficial imperial fechar os olhos —, role <strong>1d6</strong> contra a Reputação: sucesso significa que a fama dele chegou ali antes dele.</p><p>A chance começa em <strong>1 em 1d6 no 11º nível</strong> e sobe <strong>1 a cada nível</strong>, chegando a <strong>1-5 em 1d6 no 15º</strong>.</p>",
+    "level": 11,
+    "level3": "",
+    "level6": "",
+    "level10": "",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!NCDjloL7eWW8Csoy"
+}

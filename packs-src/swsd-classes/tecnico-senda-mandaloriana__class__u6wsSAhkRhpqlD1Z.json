@@ -1,0 +1,129 @@
+{
+  "folder": "kJGwSJu69cJEyBMC",
+  "name": "Técnico — Senda Mandaloriana",
+  "type": "class",
+  "_id": "u6wsSAhkRhpqlD1Z",
+  "img": "systems/olddragon2e/assets/icons/level-up.svg",
+  "system": {
+    "flavor": "<p>O Técnico adotado no Credo de um clã mandaloriano.</p>",
+    "description": "<p><strong>A Senda Mandaloriana substitui a especialização</strong> desta classe: o personagem ganha o Núcleo Mandaloriano e passa a evoluir pela coluna <strong>XP Especial</strong>.</p><p><strong>O que este Técnico troca:</strong> <strong>perde o Desconto Tecnológico</strong>; mantém aparatos e feitos — o <strong>Armeiro</strong> de um clã é, em regra, um Técnico.</p><p><em>Mandaloriano não é uma espécie, é uma cultura</em> — qualquer espécie pode trilhar a Senda. A Origem <strong>Filho de Mandalore</strong>, no compêndio de Espécies, é a porta de entrada (opcional).</p><p>Mecânicos de droides, médicos de campo, engenheiros e slicers que dobram a tecnologia à própria vontade. Onde o Jedi tem a Força, o Técnico tem a engenhoca: seus <strong>aparatos e feitos científicos</strong> são os \"itens mágicos\" deste universo, e ele os constrói com as próprias mãos. Numa tripulação, é quem mantém a nave voando, o droide obediente e o grupo respirando.</p><p><strong>Créditos iniciais:</strong> 1d8 × 5.000 CR.</p><p><strong>Aparatos tecnológicos</strong> são os \"itens mágicos\" desta galáxia. <em>Ofensivos</em> (armas especiais, bombas, redes de choque): só o Técnico — e, por exceção, o Caçador de Recompensas. <em>Defensivos</em> (escudos pessoais, cintos, braceletes): Técnico e Veterano. <em>Utilitários</em> (visores, medpacs, jetpacks, scanners): todos.</p>",
+    "hp": 8,
+    "high_level_hp_bonus": 1,
+    "equipment_restrictions": {
+      "weapons": "Armas leves e utilitárias, de energia. Jamais projéteis ou armas marciais.",
+      "armors": "Apenas vestes leves.",
+      "magic_items": "Constrói e opera qualquer aparato — ofensivos, defensivos e utilitários."
+    },
+    "restrictions": {
+      "alignments": [],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 2000
+      },
+      "3": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 4000
+      },
+      "4": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 7000
+      },
+      "5": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 10000
+      },
+      "6": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 20000
+      },
+      "7": {
+        "ba": 5,
+        "jp": 9,
+        "xp": 30000
+      },
+      "8": {
+        "ba": 5,
+        "jp": 9,
+        "xp": 40000
+      },
+      "9": {
+        "ba": 5,
+        "jp": 9,
+        "xp": 50000
+      },
+      "10": {
+        "ba": 7,
+        "jp": 11,
+        "xp": 100000
+      },
+      "11": {
+        "ba": 7,
+        "jp": 11,
+        "xp": 200000
+      },
+      "12": {
+        "ba": 7,
+        "jp": 11,
+        "xp": 300000
+      },
+      "13": {
+        "ba": 9,
+        "jp": 13,
+        "xp": 400000
+      },
+      "14": {
+        "ba": 9,
+        "jp": 13,
+        "xp": 500000
+      },
+      "15": {
+        "ba": 9,
+        "jp": 13,
+        "xp": 600000
+      }
+    },
+    "class_abilities": [
+      "Compendium.sw-spacedragon.swsd-classes.Item.T3sqmlF8Kt20liF1",
+      "Compendium.sw-spacedragon.swsd-classes.Item.DpqffpEZvhuLGITw",
+      "Compendium.sw-spacedragon.swsd-classes.Item.NfWHzABhqhC1fUCG",
+      "Compendium.sw-spacedragon.swsd-classes.Item.PXVyLz22OvX8SXlp",
+      "Compendium.sw-spacedragon.swsd-classes.Item.lFRt0VqFCf5i7Bia",
+      "Compendium.sw-spacedragon.swsd-classes.Item.CYWpdF98eXpNdD10",
+      "Compendium.sw-spacedragon.swsd-classes.Item.YJFYz8pDJtQQPVvx",
+      "Compendium.sw-spacedragon.swsd-classes.Item.4FxOEMa7zgz3lFp6",
+      "Compendium.sw-spacedragon.swsd-classes.Item.52KpUAnLChrORmWb",
+      "Compendium.sw-spacedragon.swsd-classes.Item.wFe61U1bLRZVfneS",
+      "Compendium.sw-spacedragon.swsd-classes.Item.N7yy1dIfEyohHFqG"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!u6wsSAhkRhpqlD1Z"
+}

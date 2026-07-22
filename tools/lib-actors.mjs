@@ -245,9 +245,11 @@ export function monsterDoc(monstro, folderId, seedPrefix, sort) {
     const { dv, bonus } = splitDv(monstro.dv);
     system.dv = dv;
     if (bonus) system.dv_bonus = bonus;
-    const pv = hpFromDv(monstro.dv);
-    system.hp = { value: pv, max: pv };
   }
+  // PV: quando a FONTE declara pontos de vida (`pv`), esse valor manda —
+  // derivar do DV só vale como último recurso.
+  const pv = monstro.pv != null ? parseInt(monstro.pv, 10) : (monstro.dv != null ? hpFromDv(monstro.dv) : null);
+  if (pv != null && !isNaN(pv)) system.hp = { value: pv, max: pv };
   if (monstro.ca != null) system.ca = String(monstro.ca);
   if (monstro.jp != null) system.jp = String(monstro.jp);
   if (monstro.moral != null) system.mo = String(monstro.moral);

@@ -1,0 +1,50 @@
+{
+  "folder": "ojACSqA12gZPBeW3",
+  "name": "Niman (VI) — o equilíbrio sabre e Força",
+  "type": "class_ability",
+  "_id": "LOonlalDGJeYYWcX",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p>O gish: mistura lâmina e poderes numa dança só.</p><p><strong>Fluxo Equilibrado:</strong> na rodada em que usa um poder da Força, ainda faz um <strong>ataque de sabre</strong> (ou vice-versa) sem penalidade; e empunha a lâmina com a Força para atacar a curta distância ou desarmar telecineticamente.</p><hr><p><strong>Como adicionar na ficha:</strong> o sistema não aceita soltar uma habilidade de classe direto no personagem. Abra o item da <strong>classe que já está na ficha</strong> (aba Classe, clique no nome) e arraste esta habilidade <strong>para dentro dessa janela</strong> — ela é sincronizada para o personagem automaticamente.</p><p><em>Atalho:</em> o compêndio de Classes já traz variantes prontas (ex.: <em>Guardião (Soresu)</em>, <em>Veterano — Senda Mandaloriana</em>) com estas habilidades embutidas — basta arrastar a variante e pular este passo.</p>",
+    "level": 3,
+    "level3": "",
+    "level6": "<p><strong>Golpe Carregado:</strong> ao acertar, gasta <strong>1 de Foco</strong> para somar ao golpe o efeito de um poder de <strong>1ª Grandeza</strong>.</p>",
+    "level10": "<p><strong>Mestre Niman:</strong> uma vez por rodada, <strong>um poder da Força e um ataque de sabre</strong> contam como uma só ação.</p>",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!LOonlalDGJeYYWcX"
+}

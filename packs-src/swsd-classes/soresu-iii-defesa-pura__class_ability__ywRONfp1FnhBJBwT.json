@@ -5,7 +5,7 @@
   "_id": "ywRONfp1FnhBJBwT",
   "img": "systems/olddragon2e/assets/icons/kit.svg",
   "system": {
-    "description": "<p>A muralha que sobrevive a qualquer tiroteio.</p><p><strong>Postura Defensiva:</strong> <strong>+2 na CA</strong> contra ataques à distância e você <strong>deflete disparos de blaster</strong> sem gastar ação; gastando a ação, deflete <strong>todos</strong> os disparos contra você e aliados adjacentes.</p>",
+    "description": "<p>A muralha que sobrevive a qualquer tiroteio.</p><p><strong>Postura Defensiva:</strong> <strong>+2 na CA</strong> contra ataques à distância e você <strong>deflete disparos de blaster</strong> sem gastar ação; gastando a ação, deflete <strong>todos</strong> os disparos contra você e aliados adjacentes.</p><hr><p><strong>Como adicionar na ficha:</strong> o sistema não aceita soltar uma habilidade de classe direto no personagem. Abra o item da <strong>classe que já está na ficha</strong> (aba Classe, clique no nome) e arraste esta habilidade <strong>para dentro dessa janela</strong> — ela é sincronizada para o personagem automaticamente.</p><p><em>Atalho:</em> o compêndio de Classes já traz variantes prontas (ex.: <em>Guardião (Soresu)</em>, <em>Veterano — Senda Mandaloriana</em>) com estas habilidades embutidas — basta arrastar a variante e pular este passo.</p>",
     "level": 3,
     "level3": "",
     "level6": "<p><strong>Devolver ao Remetente:</strong> ao defletir um disparo, pode <strong>redirecioná-lo ao atirador</strong> com um ataque seu.</p>",

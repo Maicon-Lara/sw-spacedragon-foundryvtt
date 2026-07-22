@@ -5,7 +5,7 @@
   "_id": "9Aky66MbRVMW5H8t",
   "img": "systems/olddragon2e/assets/icons/kit.svg",
   "system": {
-    "description": "<p>Canaliza a agressão — e beira a Sombra.</p><p><strong>Fúria Canalizada:</strong> <strong>+1 no ataque e no dano</strong>, mas usá-la movido pela raiva arrisca <strong>+1 de Corrupção</strong> por combate (a critério do Mestre); e inimigos têm desvantagem para aparar ou anular seus golpes.</p>",
+    "description": "<p>Canaliza a agressão — e beira a Sombra.</p><p><strong>Fúria Canalizada:</strong> <strong>+1 no ataque e no dano</strong>, mas usá-la movido pela raiva arrisca <strong>+1 de Corrupção</strong> por combate (a critério do Mestre); e inimigos têm desvantagem para aparar ou anular seus golpes.</p><hr><p><strong>Como adicionar na ficha:</strong> o sistema não aceita soltar uma habilidade de classe direto no personagem. Abra o item da <strong>classe que já está na ficha</strong> (aba Classe, clique no nome) e arraste esta habilidade <strong>para dentro dessa janela</strong> — ela é sincronizada para o personagem automaticamente.</p><p><em>Atalho:</em> o compêndio de Classes já traz variantes prontas (ex.: <em>Guardião (Soresu)</em>, <em>Veterano — Senda Mandaloriana</em>) com estas habilidades embutidas — basta arrastar a variante e pular este passo.</p>",
     "level": 3,
     "level3": "",
     "level6": "<p><strong>Sede de Batalha:</strong> ao <strong>derrubar</strong> um inimigo, ganha um <strong>ataque extra</strong> imediato.</p>",

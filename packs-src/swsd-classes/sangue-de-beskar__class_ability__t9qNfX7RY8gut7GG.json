@@ -5,7 +5,7 @@
   "_id": "t9qNfX7RY8gut7GG",
   "img": "systems/olddragon2e/assets/icons/kit.svg",
   "system": {
-    "description": "<p>Ao vestir Armadura Beskar (ou pesada de clã), a Carga cai uma categoria e <strong>sabres de luz deixam de ignorar seu bônus de CA</strong> enquanto a usar.</p><p><em>É por isso que a mistura Sensível à Força + Beskar é lendária: o guerreiro que encara um Jedi sem temer a lâmina.</em></p>",
+    "description": "<p>Ao vestir Armadura Beskar (ou pesada de clã), a Carga cai uma categoria e <strong>sabres de luz deixam de ignorar seu bônus de CA</strong> enquanto a usar.</p><p><em>É por isso que a mistura Sensível à Força + Beskar é lendária: o guerreiro que encara um Jedi sem temer a lâmina.</em></p><hr><p><strong>Como adicionar na ficha:</strong> o sistema não aceita soltar uma habilidade de classe direto no personagem. Abra o item da <strong>classe que já está na ficha</strong> (aba Classe, clique no nome) e arraste esta habilidade <strong>para dentro dessa janela</strong> — ela é sincronizada para o personagem automaticamente.</p><p><em>Atalho:</em> o compêndio de Classes já traz variantes prontas (ex.: <em>Guardião (Soresu)</em>, <em>Veterano — Senda Mandaloriana</em>) com estas habilidades embutidas — basta arrastar a variante e pular este passo.</p>",
     "level": 3,
     "level3": "",
     "level6": "",
