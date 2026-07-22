@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/armor.svg",
   "system": {
     "odo_id": "armadura-beskar-beskar-gam",
-    "description": "<p>Pesada, mas leve para o peso.</p><p><strong>Resistente a Sabres:</strong> sabres não ignoram seu bônus de CA.</p><p><em>Sem preço — herança/conquista.</em></p>",
+    "description": "<p>Pesada, mas leve para o peso. <strong>Movimento: −1 m.</strong></p><p><strong>Resistente a Sabres:</strong> sabres não ignoram seu bônus de CA.</p><p><em>Sem preço — herança/conquista.</em></p><p><em>O Beskar paga menos (−1 m) porque isso <strong>é</strong> a lenda do beskar: proteção de armadura pesada com a mobilidade de uma média. É a vantagem mecânica do Mandaloriano, não um esquecimento.</em></p><p><em>A redução de movimento é subtraída do movimento-base de <strong>9 m</strong>, antes das penalidades de gravidade, terreno e carga.</em></p>",
     "quantity": 1,
     "cost": "",
     "weight_in_load": 2,

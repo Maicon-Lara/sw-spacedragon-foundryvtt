@@ -1,0 +1,22 @@
+{
+  "name": "Sensível à Força — Vidente",
+  "sorting": "m",
+  "folder": null,
+  "type": "Item",
+  "_id": "XubfmemJO8PFrUaB",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld"
+  },
+  "_key": "!folders!XubfmemJO8PFrUaB"
+}

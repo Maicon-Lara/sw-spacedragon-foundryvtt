@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/ranged.svg",
   "system": {
     "odo_id": "detonador-termico",
-    "description": "<p>Pequena, Arremesso (9 m), <strong>Área</strong>.</p>",
+    "description": "<p>Pequena, Arremesso (9 m), <strong>Área</strong>.</p><p><strong>Alcance — as três faixas.</strong> O valor listado é o <strong>alcance curto</strong>, sem penalidade. Até o <strong>dobro</strong> dele o ataque sofre <strong>−2</strong>; até o <strong>triplo</strong>, <strong>−4</strong>. Além do triplo não há tiro.</p>",
     "quantity": 1,
     "cost": "400 CR",
     "weight_in_load": 1,

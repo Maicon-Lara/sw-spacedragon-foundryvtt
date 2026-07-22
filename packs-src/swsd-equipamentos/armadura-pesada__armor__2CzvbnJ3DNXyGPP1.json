@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/armor.svg",
   "system": {
     "odo_id": "armadura-pesada",
-    "description": "<p>Veste Pesada.</p>",
+    "description": "<p>Veste Pesada. <strong>Movimento: −3 m.</strong></p><p><em>A redução de movimento é subtraída do movimento-base de <strong>9 m</strong>, antes das penalidades de gravidade, terreno e carga.</em></p>",
     "quantity": 1,
     "cost": "3.000 CR",
     "weight_in_load": 3,

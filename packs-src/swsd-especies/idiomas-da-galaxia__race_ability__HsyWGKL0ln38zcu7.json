@@ -1,0 +1,44 @@
+{
+  "folder": "l8Q1XFobMrdFjQxB",
+  "name": "Idiomas da galáxia",
+  "type": "race_ability",
+  "_id": "HsyWGKL0ln38zcu7",
+  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "system": {
+    "description": "<p><strong>Idiomas.</strong> Todo personagem começa falando o <strong>idioma do seu povo</strong> e o <strong>Básico Galáctico</strong> — o idioma comum das rotas comerciais. Idiomas <strong>adicionais</strong> vêm do <strong>modificador de Inteligência</strong>. <strong>Ler e escrever</strong> é outra coisa: divida a <strong>Inteligência por 6</strong>, arredondando para baixo — o resultado é em quantos idiomas o personagem é alfabetizado (escolha quais). <strong>Inteligência 6 ou menos = analfabeto</strong>, nem no idioma natal. Quem fala mas não escreve tem um <strong>sotaque</strong> que o denuncia como forasteiro.</p><table><thead><tr><th>Idioma</th><th>Quem fala</th><th>Observação</th></tr></thead><tbody><tr><td><strong>Básico Galáctico</strong></td><td>Praticamente todo mundo</td><td>Todos os personagens começam com ele</td></tr><tr><td><strong>Shyriiwook</strong></td><td>Wookiees</td><td>Humanos <strong>entendem</strong>, mas não conseguem <strong>falar</strong> (aparelho vocal)</td></tr><tr><td><strong>Ryl</strong></td><td>Twi'leks</td><td>Tem um dialeto silencioso de <strong>lekku</strong>, que só Twi'leks leem</td></tr><tr><td><strong>Rodês</strong></td><td>Rodianos</td><td>—</td></tr><tr><td><strong>Zabraki</strong></td><td>Zabraks</td><td>—</td></tr><tr><td><strong>Mon Calamariano</strong></td><td>Mon Calamari e Quarren</td><td>Difícil de pronunciar fora d'água</td></tr><tr><td><strong>Dosh</strong></td><td>Trandoshanos</td><td>—</td></tr><tr><td><strong>Cheunh</strong></td><td>Chiss</td><td>Raro fora das Regiões Desconhecidas; o Chiss já começa com um idioma extra</td></tr><tr><td><strong>Huttês</strong></td><td>Cartéis, submundo, Tatooine</td><td>O \"idioma do crime\" — vale mais que o Básico em muita doca</td></tr><tr><td><strong>Binário</strong></td><td>Droides</td><td>Não se <em>fala</em>: entende-se. Droides são fluentes por construção</td></tr><tr><td><strong>Ur-Kittât / Sith antigo</strong></td><td>Sith, arqueólogos, holocrons</td><td>Idioma <strong>morto</strong>; ler exige alfabetização e costuma ser gancho de aventura</td></tr></tbody></table><p><em>Nota: o Space Dragon lia os idiomas adicionais pelo atributo Comunicação (hoje Carisma). A conversão do Estrela Dracônica moveu-os para a <strong>Inteligência</strong>, e a alfabetização foi junto — não faria sentido um personagem carismático e ignorante ler mais idiomas do que fala.</em></p>",
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage": 0,
+    "bonus_damage_condition": "none",
+    "bonus_damage_condition_2": "none",
+    "rogue_talent": "none",
+    "rogue_talent_2": "none",
+    "daily_uses": 0,
+    "natural_armor": 0,
+    "load_modifier": 0,
+    "max_load_override": 0,
+    "armor_weight_modifier": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!HsyWGKL0ln38zcu7"
+}

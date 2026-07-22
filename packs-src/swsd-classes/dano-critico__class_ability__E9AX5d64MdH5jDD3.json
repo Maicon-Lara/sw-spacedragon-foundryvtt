@@ -1,0 +1,50 @@
+{
+  "folder": "BDQ5an8ef9vy1kbP",
+  "name": "Dano Crítico",
+  "type": "class_ability",
+  "_id": "E9AX5d64MdH5jDD3",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p>A intimidade do Veterano com armas faz seus acertos certeiros doerem mais. Sempre que uma rolagem de ataque resultar em <strong>acerto crítico</strong>, o dano final é multiplicado por <strong>×2</strong>.</p><p><em>No Space Dragon o dano crítico era uma coluna da tabela do Cosmonauta, escalando de ×2 a ×5 — a marca registrada da classe. O Estrela Dracônica a transferiu inteira para o Mercenário, deixando a classe-base sem crítico nenhum. Aqui a progressão volta para o Veterano em versão modesta (×2/×3); o <strong>Mercenário</strong> continua sendo o especialista, escalando até ×5 e ganhando a chance de forçar críticos.</em></p>",
+    "level": 1,
+    "level3": "",
+    "level6": "",
+    "level10": "<p>O multiplicador de dano crítico passa a <strong>×3</strong>.</p>",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!E9AX5d64MdH5jDD3"
+}

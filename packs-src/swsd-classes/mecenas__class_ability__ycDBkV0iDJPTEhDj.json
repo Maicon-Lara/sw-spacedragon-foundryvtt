@@ -5,7 +5,7 @@
   "_id": "ycDBkV0iDJPTEhDj",
   "img": "systems/olddragon2e/assets/icons/kit.svg",
   "system": {
-    "description": "<p>Recebe salário mensal do indivíduo ou organização que representa, equivalente a <strong>20.000 CR × seu nível</strong>.</p>",
+    "description": "<p>Recebe salário mensal do indivíduo ou organização que representa, equivalente a <strong>300 CR × seu nível</strong>.</p><p><em>No Space Dragon era $20.000 × nível — o preço de uma pistola laser por nível, por mês. Aqui o valor foi convertido para a escala de Créditos do cenário, mantendo a proporção: cerca de um blaster pesado por nível.</em></p>",
     "level": 3,
     "level3": "",
     "level6": "",

@@ -1,0 +1,121 @@
+{
+  "folder": "XubfmemJO8PFrUaB",
+  "name": "Sensível à Força — Vidente",
+  "type": "class",
+  "_id": "UlkXadJbakG5dFsZ",
+  "img": "systems/olddragon2e/assets/icons/level-up.svg",
+  "system": {
+    "flavor": "<p>O místico dos nexos. <em>Especialização de Sensível à Força — base: Radiestésico.</em></p>",
+    "description": "<p><em>\"A Força não está em mim. Eu é que estou nela.\"</em></p><p>As Nightsisters de Dathomir, Bendu, os místicos dos Whills, o guardião do Mundo-Entre-Mundos, a velha do vilarejo que sabia que você vinha.</p><p>Nem Jedi nem Sith: o Sensível que nunca passou por uma Ordem e aprendeu a Força ouvindo o <strong>lugar</strong>. Onde o Consular escava a própria mente e o Guardião treina o corpo, o Vidente <strong>puxa a Força do mundo ao redor</strong> — dos vivos, das raízes, das pedras, dos nexos onde a corrente corre grossa. É o místico de fronteira, a bruxa de Dathomir, o guardião de um templo esquecido, o eremita que sente uma nave se aproximar antes do sensor.</p><p><strong>Troca:</strong> o Vidente <strong>não é treinado</strong>. Nunca teve um mestre de sabre nem uma biblioteca de holocrons, e paga por isso: <strong>não pode usar sabre de luz sem a penalidade de quem não é Guardião</strong> (empunha, mas sem qualquer bônus de Forma) e seu <strong>teto de Grandeza é a 8ª</strong> — os feitos de 9ª e 10ª exigem uma disciplina formal que ele não tem.</p><p><em>Nota de conversão: esta Senda resgata o <strong>Radiestésico</strong> do Mentálico, que era a especialização Neutra da classe e tinha ficado de fora do cenário — o Sentinela ocupou a vaga sem herdar a mecânica. Canalizar a Força do ambiente é temático demais para Star Wars (Dathomir, a Ilha do Sagrado, os nexos) para ficar sem casa.</em></p><p><em>Especialização escolhida no 1º nível (padrão OD2). Evolui pela coluna <strong>XP Especial</strong> da tabela. Variante: mesas que queiram preservar o espírito original do Space Dragon podem adiar a escolha para o 3º nível.</em></p><p><strong>As Sendas NÃO têm restrição de alinhamento</strong> (correção da casa). Nas classes mundanas cada especialização é presa a um alinhamento; aqui isso foi <strong>removido</strong>. O motivo é de design: a restrição existe para diferenciar as trilhas — e no Sensível essa diferenciação <em>já é feita pelo Caminho (Luz/Sombra) e pela Corrupção</em>. Manter os dois eixos produzia aberrações: um Sith de sabre seria obrigatoriamente \"Guardião neutro\" com Corrupção 10, e um Inquisidor caçador de Jedi seria \"Sentinela caótico\" a serviço do regime mais ordeiro da galáxia. O Sensível <strong>escolhe livremente</strong> a Senda e o alinhamento; quem manda na moral dele é o <strong>Caminho</strong>.</p><p><em>Variante opcional — se a sua mesa preferir a amarração antiga, a leitura mais coerente seria pelo <strong>Caminho</strong>, não pela Senda: Luz → Ordeiro ou Neutro · Sombra → Caótico ou Ordeiro (o Império é ordeiro) · sem Caminho → Neutro.</em></p>",
+    "hp": 8,
+    "high_level_hp_bonus": 1,
+    "equipment_restrictions": {
+      "weapons": "Armas simples. Empunha o sabre de luz, mas sem treino formal: sofre a penalidade de quem não é Guardião e não recebe bônus de Forma alguma.",
+      "armors": "Regra de Vestes. (O Guardião usa armaduras médias — ver a especialização.)",
+      "magic_items": "Apenas aparatos utilitários. Construir e operar qualquer aparato é o nicho do Técnico."
+    },
+    "restrictions": {
+      "alignments": [],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 0,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 3000
+      },
+      "3": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 6000
+      },
+      "4": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 10000
+      },
+      "5": {
+        "ba": 2,
+        "jp": 7,
+        "xp": 13000
+      },
+      "6": {
+        "ba": 2,
+        "jp": 7,
+        "xp": 26000
+      },
+      "7": {
+        "ba": 2,
+        "jp": 7,
+        "xp": 36000
+      },
+      "8": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 46000
+      },
+      "9": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 56000
+      },
+      "10": {
+        "ba": 3,
+        "jp": 10,
+        "xp": 112000
+      },
+      "11": {
+        "ba": 4,
+        "jp": 10,
+        "xp": 220000
+      },
+      "12": {
+        "ba": 4,
+        "jp": 10,
+        "xp": 340000
+      },
+      "13": {
+        "ba": 4,
+        "jp": 10,
+        "xp": 460000
+      },
+      "14": {
+        "ba": 5,
+        "jp": 13,
+        "xp": 580000
+      },
+      "15": {
+        "ba": 5,
+        "jp": 13,
+        "xp": 700000
+      }
+    },
+    "class_abilities": [
+      "Compendium.sw-spacedragon.swsd-classes.Item.DBSqBz5dh8keT0hQ",
+      "Compendium.sw-spacedragon.swsd-classes.Item.aGV3ZlbLNCAmbbbP",
+      "Compendium.sw-spacedragon.swsd-classes.Item.dEmO6B5eComDm3NE"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!UlkXadJbakG5dFsZ"
+}

@@ -1,0 +1,50 @@
+{
+  "folder": "XubfmemJO8PFrUaB",
+  "name": "Comunhão",
+  "type": "class_ability",
+  "_id": "aGV3ZlbLNCAmbbbP",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p><strong>Uma vez por dia</strong>, o Vidente canaliza a Força que corre nos seres vivos inteligentes <strong>amigáveis ou neutros a até 20 metros</strong>. Ganha Foco extra igual à <strong>soma dos modificadores de Sabedoria</strong> de cada um deles, distribuído entre as Grandezas que ele já acessa — <strong>sem ultrapassar 1/4</strong> do seu Foco Diário total. O Foco assim obtido dura até ele <strong>dormir ou cair inconsciente</strong>.</p><p><em>Quem é canalizado não perde nada, mas sente: a cena pede descrição.</em></p>",
+    "level": 3,
+    "level3": "",
+    "level6": "<p><strong>Comunhão Profunda:</strong> a Comunhão passa a alcançar <strong>40 metros</strong> e o teto sobe para <strong>1/3</strong> do Foco Diário. Num <strong>nexo da Força</strong> (a critério do Mestre), o Vidente pode canalizar <strong>o próprio lugar</strong> em vez de pessoas, como se houvesse ali um número de criaturas com Sabedoria 18 igual ao seu nível de classe.</p>",
+    "level10": "<p><strong>Mente Coletiva:</strong> a Comunhão alcança <strong>100 metros</strong> e o teto sobe para <strong>metade</strong> do Foco Diário. Mas a fronteira entre ele e o mundo praticamente sumiu: ele <strong>interfere em ondas eletromagnéticas ao seu bel-prazer</strong> (comunicadores falham ou funcionam, sensores mentem, portas se abrem) — e a atração involuntária de energia agora é <strong>1-5 em 1d6</strong>. Estar perto do Vidente numa tempestade, num tiroteio de blasters ou numa sala de reatores é perigoso para ele <strong>e para quem está do lado</strong>.</p>",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "10": 1,
+      "11": 1,
+      "12": 1,
+      "13": 1,
+      "14": 1,
+      "15": 1
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!aGV3ZlbLNCAmbbbP"
+}

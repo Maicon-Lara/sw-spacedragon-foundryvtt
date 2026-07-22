@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/alignment.svg",
   "system": {
     "flavor": "<p>Anfíbios de olhos salientes, líderes serenos e engenheiros natos de Mon Cala.</p>",
-    "description": "<p>Nasceram nos oceanos e acabaram desenhando as frotas que os tiraram deles. Calma que desarma, engenho que constrói.</p><p><strong>Perguntas ao criar um Mon Calamari:</strong> Deixou os oceanos por dever, exílio ou curiosidade? Constrói, lidera, ou ambos? O que a calma esconde quando provocada?</p>",
+    "description": "<p>Nasceram nos oceanos e acabaram desenhando as frotas que os tiraram deles. Calma que desarma, engenho que constrói.</p><p><strong>Perguntas ao criar um Mon Calamari:</strong> Deixou os oceanos por dever, exílio ou curiosidade? Constrói, lidera, ou ambos? O que a calma esconde quando provocada?</p><p><strong>Idioma próprio: Mon Calamariano</strong> (compartilhado com os Quarren) — difícil de pronunciar fora d'água.</p><p><strong>Idiomas.</strong> Todo personagem começa falando o <strong>idioma do seu povo</strong> e o <strong>Básico Galáctico</strong> — o idioma comum das rotas comerciais. Idiomas <strong>adicionais</strong> vêm do <strong>modificador de Inteligência</strong>. <strong>Ler e escrever</strong> é outra coisa: divida a <strong>Inteligência por 6</strong>, arredondando para baixo — o resultado é em quantos idiomas o personagem é alfabetizado (escolha quais). <strong>Inteligência 6 ou menos = analfabeto</strong>, nem no idioma natal. Quem fala mas não escreve tem um <strong>sotaque</strong> que o denuncia como forasteiro.</p>",
     "movement": 9,
     "movement_fly": 0,
     "movement_notes": "Nada com deslocamento pleno.",

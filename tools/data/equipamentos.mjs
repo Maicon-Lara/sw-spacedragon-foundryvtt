@@ -3,8 +3,11 @@
 // armaduras/vestes e aparatos) e de SW-SD-Sabre-e-Cristais.md (cristal kyber,
 // sangramento e o Sabre Sombrio).
 //
-// Moeda: Crédito (CR), equivalência 1:1 com Peças de Ouro. 100 CR em chips
-// pesam 1 ponto de carga.
+// Moeda: Crédito (CR). A tabela de preços deste arquivo É a escala canônica do
+// cenário: ignore a antiga equivalência "1 CR = 1 Peça de Ouro" e os valores em
+// dezenas de milhares do Space Dragon/Estrela Dracônica (um preço do
+// ED-04-Equipamento dividido por 100 dá a ordem de grandeza certa aqui).
+// 100 CR em chips pesam 1 ponto de carga.
 // Carga (Tabela 5-1 do SD): armas pequenas = 1, médias = 2, grandes = 3.
 // Munição de energia não conta carga; aparatos são leves demais para contar
 // (ou usam a carga de um equipamento similar) — por isso vários itens saem sem
@@ -18,20 +21,38 @@
 // magic_item: reservado a sabres de luz e cristais kyber — o "loot mágico"
 // desta galáxia.
 
+// Faixas de alcance (SW-SD-Equipamentos.md § Alcance — as três faixas).
+// O número entre parênteses é o alcance CURTO, sem penalidade.
+const ALCANCE_NOTA =
+  "<p><strong>Alcance — as três faixas.</strong> O valor listado é o <strong>alcance curto</strong>, sem penalidade. Até o <strong>dobro</strong> dele o ataque sofre <strong>−2</strong>; até o <strong>triplo</strong>, <strong>−4</strong>. Além do triplo não há tiro.</p>";
+
+// Propriedade Atordoante (SW-SD-Equipamentos.md § Tipos de Dano).
+const ATORDOANTE_NOTA =
+  "<p><strong>Atordoante (stun).</strong> Dano <strong>não-letal</strong>. O alvo faz uma <strong>JPC</strong>: falhando, cai <strong>inconsciente por 1d6 rodadas</strong>; passando, fica <strong>Difícil em tudo por 1 rodada</strong>. Ao acordar (ou ao passar na JPC) fica <strong>imune a novo atordoamento por 1 turno</strong>. Alvos <strong>sem sistema nervoso</strong> (droides, construtos) ignoram completamente o efeito.</p>";
+
+// Todo blaster tem seletor de modo (mesma seção do cofre).
+const MODO_ATORDOANTE_NOTA =
+  "<p><strong>Modo atordoante.</strong> Este blaster tem um <strong>seletor de modo</strong>. No modo atordoante não causa dano: aplica a propriedade <strong>Atordoante</strong>. Trocar o modo é uma <strong>ação livre</strong> no início do turno.</p>" +
+  ATORDOANTE_NOTA;
+
+// Redução de movimento das vestes (SW-SD-Equipamentos.md § Armaduras).
+const MOVIMENTO_NOTA =
+  "<p><em>A redução de movimento é subtraída do movimento-base de <strong>9 m</strong>, antes das penalidades de gravidade, terreno e carga.</em></p>";
+
 export const categorias = [
   {
     folder: "Armas Corpo a Corpo",
     tipo: "weapon",
     itens: [
-      { nome: "Vibro-Adaga", damage: "1d4", damage_type: "perfurante", cost: "15 CR", weight_in_load: 1, throw_range: 9, desc: "<p>Pequena, Vibro, Perfurante, Arremesso (9 m).</p>" },
+      { nome: "Vibro-Adaga", damage: "1d4", damage_type: "perfurante", cost: "15 CR", weight_in_load: 1, throw_range: 9, desc: "<p>Pequena, Vibro, Perfurante, Arremesso (9 m).</p>" + ALCANCE_NOTA },
       { nome: "Bastão de Treinamento", damage: "1d4", damage_type: "impactante", cost: "10 CR", weight_in_load: 1, two_handed: true, desc: "<p>Pequena, Impactante, Duas Mãos.</p>" },
       { nome: "Cassetete de Choque", damage: "1d4", damage_type: "impactante", cost: "20 CR", weight_in_load: 1, desc: "<p>Pequena, Impactante, <em>Nocaute</em>.</p><p><strong>Nocaute:</strong> causa metade do dano e aplica a regra de nocaute (1 em 1d6, ou pelo modificador de Força, para desacordar o alvo).</p>" },
       { nome: "Vibro-Lâmina Curta", damage: "1d6", damage_type: "cortante", cost: "60 CR", weight_in_load: 1, desc: "<p>Pequena, Vibro, Cortante.</p>" },
-      { nome: "Lança Vibro", damage: "1d6", damage_type: "perfurante", cost: "80 CR", weight_in_load: 2, throw_range: 12, versatile: true, desc: "<p>Média, Vibro, Perfurante, Arremesso (12 m), Haste, Versátil.</p>" },
+      { nome: "Lança Vibro", damage: "1d6", damage_type: "perfurante", cost: "80 CR", weight_in_load: 2, throw_range: 12, versatile: true, desc: "<p>Média, Vibro, Perfurante, Arremesso (12 m), Haste, Versátil.</p>" + ALCANCE_NOTA },
       { nome: "Vibro-Lâmina", damage: "1d8", damage_type: "cortante", cost: "100 CR", weight_in_load: 2, desc: "<p>Média, Vibro, Cortante.</p>" },
       { nome: "Vibro-Machado", damage: "1d8", damage_type: "cortante", cost: "90 CR", weight_in_load: 2, desc: "<p>Média, Vibro, Cortante.</p>" },
       { nome: "Vibro-Lâmina Pesada", damage: "1d8", damage_type: "cortante", cost: "150 CR", weight_in_load: 2, versatile: true, desc: "<p>Média, Vibro, Versátil, Cortante.</p>" },
-      { nome: "Lança-Vibro Mandaloriana", damage: "1d10", damage_type: "perfurante", cost: "400 CR", weight_in_load: 2, throw_range: 9, desc: "<p>Média, Vibro, Perfurante, Haste, Arremesso (9 m).</p><p>Exige <strong>treino cultural Mandaloriano</strong>.</p>" },
+      { nome: "Lança-Vibro Mandaloriana", damage: "1d10", damage_type: "perfurante", cost: "400 CR", weight_in_load: 2, throw_range: 9, desc: "<p>Média, Vibro, Perfurante, Haste, Arremesso (9 m).</p><p>Exige <strong>treino cultural Mandaloriano</strong>.</p>" + ALCANCE_NOTA },
       { nome: "Vibro-Machado Pesado", damage: "2d6", damage_type: "cortante", cost: "220 CR", weight_in_load: 3, two_handed: true, desc: "<p>Grande, Vibro, Cortante, Duas Mãos.</p>" },
       { nome: "Bastão Eletrificado", damage: "1d8", damage_type: "impactante", cost: "250 CR", weight_in_load: 3, two_handed: true, desc: "<p>Grande, Impactante, Duas Mãos, <em>Nocaute</em>.</p><p><strong>Nocaute:</strong> causa metade do dano e aplica a regra de nocaute (1 em 1d6, ou pelo modificador de Força, para desacordar o alvo).</p>" },
     ],
@@ -40,16 +61,16 @@ export const categorias = [
     folder: "Blasters e Armas de Energia",
     tipo: "weapon",
     itens: [
-      { nome: "Blaster Leve", damage: "1d6", cost: "150 CR", weight_in_load: 1, ranged: true, shoot_range: 36, desc: "<p>Pequena, Energia, Disparo (36 m).</p>" },
-      { nome: "Carabina Blaster", damage: "1d6", cost: "350 CR", weight_in_load: 2, ranged: true, shoot_range: 54, two_handed: true, desc: "<p>Média, Energia, Disparo (54 m), Duas Mãos.</p>" },
-      { nome: "Blaster Pesado (pistola)", damage: "1d8", cost: "300 CR", weight_in_load: 1, ranged: true, shoot_range: 30, desc: "<p>Pequena, Energia, Disparo (30 m), <strong>Recarga</strong>.</p>" },
-      { nome: "Rifle Blaster", damage: "1d8", cost: "450 CR", weight_in_load: 2, ranged: true, shoot_range: 72, two_handed: true, desc: "<p>Média, Energia, Disparo (72 m), Duas Mãos.</p>" },
-      { nome: "Besta Wookiee (Bowcaster)", damage: "1d10", cost: "700 CR", weight_in_load: 2, ranged: true, shoot_range: 54, two_handed: true, desc: "<p>Média, Energia, Disparo (54 m), Duas Mãos, <strong>Recarga</strong>.</p><p>Exige <strong>FOR 15+</strong>.</p>" },
-      { nome: "Blaster de Assalto Pesado", damage: "2d6", cost: "900 CR", weight_in_load: 3, ranged: true, shoot_range: 90, two_handed: true, desc: "<p>Grande, Energia, Disparo (90 m), Duas Mãos, <strong>Recarga</strong>.</p>" },
-      { nome: "Lançador de Rede", cost: "200 CR", weight_in_load: 1, ranged: true, shoot_range: 18, desc: "<p>Pequena, Especial, Disparo (18 m), <strong>Enreda</strong>. Não causa dano.</p>" },
-      { nome: "Granada de Fragmentação", damage: "2d6", cost: "150 CR", weight_in_load: 1, melee: false, throw_range: 9, desc: "<p>Pequena, Arremesso (9 m), <strong>Área</strong>.</p>" },
-      { nome: "Detonador Térmico", damage: "3d6", cost: "400 CR", weight_in_load: 1, melee: false, throw_range: 9, desc: "<p>Pequena, Arremesso (9 m), <strong>Área</strong>.</p>" },
-      { nome: "Granada Atordoante", cost: "180 CR", weight_in_load: 1, melee: false, throw_range: 9, desc: "<p>Pequena, Arremesso (9 m), <strong>Área</strong>, <strong>Nocaute (sem dano)</strong>.</p>" },
+      { nome: "Blaster Leve", damage: "1d6", cost: "150 CR", weight_in_load: 1, ranged: true, shoot_range: 36, desc: "<p>Pequena, Energia, Disparo (36 m).</p>" + ALCANCE_NOTA + MODO_ATORDOANTE_NOTA },
+      { nome: "Carabina Blaster", damage: "1d6", cost: "350 CR", weight_in_load: 2, ranged: true, shoot_range: 54, two_handed: true, desc: "<p>Média, Energia, Disparo (54 m), Duas Mãos.</p>" + ALCANCE_NOTA + MODO_ATORDOANTE_NOTA },
+      { nome: "Blaster Pesado (pistola)", damage: "1d8", cost: "300 CR", weight_in_load: 1, ranged: true, shoot_range: 30, desc: "<p>Pequena, Energia, Disparo (30 m), <strong>Recarga</strong>.</p>" + ALCANCE_NOTA + MODO_ATORDOANTE_NOTA },
+      { nome: "Rifle Blaster", damage: "1d8", cost: "450 CR", weight_in_load: 2, ranged: true, shoot_range: 72, two_handed: true, desc: "<p>Média, Energia, Disparo (72 m), Duas Mãos.</p>" + ALCANCE_NOTA + MODO_ATORDOANTE_NOTA },
+      { nome: "Besta Wookiee (Bowcaster)", damage: "1d10", cost: "700 CR", weight_in_load: 2, ranged: true, shoot_range: 54, two_handed: true, desc: "<p>Média, Energia, Disparo (54 m), Duas Mãos, <strong>Recarga</strong>.</p><p>Exige <strong>FOR 15+</strong>.</p>" + ALCANCE_NOTA + MODO_ATORDOANTE_NOTA },
+      { nome: "Blaster de Assalto Pesado", damage: "2d6", cost: "900 CR", weight_in_load: 3, ranged: true, shoot_range: 90, two_handed: true, desc: "<p>Grande, Energia, Disparo (90 m), Duas Mãos, <strong>Recarga</strong>.</p>" + ALCANCE_NOTA + MODO_ATORDOANTE_NOTA },
+      { nome: "Lançador de Rede", cost: "200 CR", weight_in_load: 1, ranged: true, shoot_range: 18, desc: "<p>Pequena, Especial, Disparo (18 m), <strong>Enreda</strong>. Não causa dano.</p>" + ALCANCE_NOTA },
+      { nome: "Granada de Fragmentação", damage: "2d6", cost: "150 CR", weight_in_load: 1, melee: false, throw_range: 9, desc: "<p>Pequena, Arremesso (9 m), <strong>Área</strong>.</p>" + ALCANCE_NOTA },
+      { nome: "Detonador Térmico", damage: "3d6", cost: "400 CR", weight_in_load: 1, melee: false, throw_range: 9, desc: "<p>Pequena, Arremesso (9 m), <strong>Área</strong>.</p>" + ALCANCE_NOTA },
+      { nome: "Granada Atordoante", cost: "180 CR", weight_in_load: 1, melee: false, throw_range: 9, desc: "<p>Pequena, Arremesso (9 m), <strong>Área</strong>, <strong>Atordoante</strong>. Não causa dano.</p>" + ALCANCE_NOTA + ATORDOANTE_NOTA },
     ],
   },
   {
@@ -71,14 +92,16 @@ export const categorias = [
     folder: "Armaduras e Vestes",
     tipo: "armor",
     itens: [
-      { nome: "Traje Reforçado", bonus_ca: 1, cost: "50 CR", weight_in_load: 1, desc: "<p>Veste Leve.</p>" },
-      { nome: "Armadura de Combate Leve", bonus_ca: 2, cost: "200 CR", weight_in_load: 1, desc: "<p>Veste Leve.</p>" },
-      { nome: "Armadura Compósita", bonus_ca: 3, cost: "350 CR", weight_in_load: 2, desc: "<p>Veste Média.</p>" },
-      { nome: "Armadura de Assalto", bonus_ca: 4, cost: "600 CR", weight_in_load: 2, desc: "<p>Veste Média.</p>" },
-      { nome: "Armadura Pesada", bonus_ca: 5, cost: "3.000 CR", weight_in_load: 3, desc: "<p>Veste Pesada.</p>" },
-      { nome: "Armadura de Batalha Completa", bonus_ca: 7, cost: "20.000 CR", weight_in_load: 3, desc: "<p>Veste Pesada.</p>" },
-      { nome: "Gerador de Escudo Pessoal", bonus_ca: 1, cost: "80 CR", desc: "<p>Leve. Ocupa uma <strong>mão exclusiva</strong>.</p>" },
-      { nome: "Armadura Beskar (Beskar'gam)", bonus_ca: 6, weight_in_load: 2, desc: "<p>Pesada, mas leve para o peso.</p><p><strong>Resistente a Sabres:</strong> sabres não ignoram seu bônus de CA.</p><p><em>Sem preço — herança/conquista.</em></p>" },
+      { nome: "Traje Reforçado", bonus_ca: 1, cost: "50 CR", weight_in_load: 1, desc: "<p>Veste Leve. <strong>Movimento:</strong> sem redução.</p>" },
+      { nome: "Armadura de Combate Leve", bonus_ca: 2, cost: "200 CR", weight_in_load: 1, desc: "<p>Veste Leve. <strong>Movimento:</strong> sem redução.</p>" },
+      { nome: "Armadura Compósita", bonus_ca: 3, cost: "350 CR", weight_in_load: 2, desc: "<p>Veste Média. <strong>Movimento: −1 m.</strong></p>" + MOVIMENTO_NOTA },
+      { nome: "Armadura de Assalto", bonus_ca: 4, cost: "600 CR", weight_in_load: 2, desc: "<p>Veste Média. <strong>Movimento: −1 m.</strong></p>" + MOVIMENTO_NOTA },
+      { nome: "Armadura Pesada", bonus_ca: 5, cost: "3.000 CR", weight_in_load: 3, desc: "<p>Veste Pesada. <strong>Movimento: −3 m.</strong></p>" + MOVIMENTO_NOTA },
+      { nome: "Armadura de Batalha Completa", bonus_ca: 7, cost: "20.000 CR", weight_in_load: 3, desc: "<p>Veste Pesada. <strong>Movimento: −3 m.</strong></p>" + MOVIMENTO_NOTA },
+      { nome: "Gerador de Escudo Pessoal", bonus_ca: 1, cost: "80 CR", desc: "<p>Leve. <strong>Acoplado ao cinto, sempre ativo — não ocupa a mão.</strong> Movimento: sem redução.</p>" },
+      { nome: "Armadura Beskar (Beskar'gam)", bonus_ca: 6, weight_in_load: 2, desc: "<p>Pesada, mas leve para o peso. <strong>Movimento: −1 m.</strong></p><p><strong>Resistente a Sabres:</strong> sabres não ignoram seu bônus de CA.</p><p><em>Sem preço — herança/conquista.</em></p><p><em>O Beskar paga menos (−1 m) porque isso <strong>é</strong> a lenda do beskar: proteção de armadura pesada com a mobilidade de uma média. É a vantagem mecânica do Mandaloriano, não um esquecimento.</em></p>" + MOVIMENTO_NOTA },
+      { nome: "Selagem Espacial (acréscimo)", bonus_ca: 0, cost: "+400 CR", weight_in_load: 1, desc: "<p><strong>Acréscimo</strong> a qualquer armadura desta lista: capacete e pressurização acoplados. Permite <strong>vácuo e atmosferas tóxicas</strong> enquanto houver oxigênio. <strong>Movimento: −2 m</strong> (soma-se à redução da armadura de base) e <strong>+1 de carga</strong>.</p><p>Exige um <strong>Cilindro de Oxigênio</strong> para funcionar: sem ele, o traje só protege de temperatura e pressão, não da falta de ar.</p>" + MOVIMENTO_NOTA },
+      { nome: "Selagem Aquática (acréscimo)", bonus_ca: 0, cost: "+300 CR", weight_in_load: 1, desc: "<p><strong>Acréscimo</strong> a qualquer armadura desta lista, para <strong>submersão</strong>. <strong>Movimento: −2 m</strong> em terra (<strong>sem redução</strong> dentro d'água) e <strong>+1 de carga</strong>.</p><p>Exige um <strong>Cilindro de Oxigênio</strong> para funcionar.</p>" + MOVIMENTO_NOTA },
     ],
   },
   {
@@ -101,6 +124,7 @@ export const categorias = [
       { nome: "Kit Médico (Medpac)", cost: "200 CR", desc: "<p>Cura 1d8 PV; 1d4+2 usos.</p><p><em>Aparato utilitário: qualquer um pode operar.</em></p>" },
       { nome: "Comunicador (Comlink)", cost: "40 CR", desc: "<p>Alcance planetário/orbital.</p>" },
       { nome: "Datapad", cost: "100 CR", desc: "<p>Serve como livro, mapa ou dicionário reutilizável.</p>" },
+      { nome: "Cilindro de Oxigênio", cost: "400 CR", weight_in_load: 1, desc: "<p><strong>Obrigatório</strong> para usar a <strong>Selagem Espacial</strong> ou a <strong>Selagem Aquática</strong>. Dura cerca de <strong>6 horas</strong>. Sem ele, o traje só protege de temperatura e pressão, não da falta de ar.</p>" },
     ],
   },
 ];

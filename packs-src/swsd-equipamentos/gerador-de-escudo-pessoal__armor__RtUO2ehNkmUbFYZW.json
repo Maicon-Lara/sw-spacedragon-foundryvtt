@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/armor.svg",
   "system": {
     "odo_id": "gerador-de-escudo-pessoal",
-    "description": "<p>Leve. Ocupa uma <strong>mão exclusiva</strong>.</p>",
+    "description": "<p>Leve. <strong>Acoplado ao cinto, sempre ativo — não ocupa a mão.</strong> Movimento: sem redução.</p>",
     "quantity": 1,
     "cost": "80 CR",
     "weight_in_load": 0,

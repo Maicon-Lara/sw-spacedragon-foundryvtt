@@ -5,7 +5,7 @@
   "_id": "w1sK4YvewHJ7PNrh",
   "img": "systems/olddragon2e/assets/icons/diamond.svg",
   "system": {
-    "description": "<p>Metal e polímeros avançados não dormem, não comem, não respiram, não adoecem nem se envenenam — todas as suas <strong>Jogadas de Proteção de Constituição (JPC) são Fáceis</strong>. <strong>Não pode aprender poderes da Força.</strong> Nunca regenera pontos de vida sozinho: precisa de <strong>reparo especializado</strong> (ferramentas + teste de Inteligência, ou cura tecnológica). Ainda é suscetível a morte, alguns tipos de paralisia, cegueira, surdez e drenagem de energia.</p>",
+    "description": "<p>Metal e polímeros avançados não dormem, não comem e não respiram, e adoecer ou envenenar-se é quase impossível para eles — todas as suas <strong>Jogadas de Proteção de Constituição (JPC) são Fáceis</strong> (+2).</p><p><em>\"Não adoecem nem se envenenam\" é sabor; mecanicamente, o Droide <strong>rola</strong> a JPC, com a categoria Fácil. No Space Dragon original o andróide <strong>vencia automaticamente</strong> toda JPF — o rebaixamento para +2 é deliberado, porque sucesso automático apaga cenas inteiras de perigo ambiental.</em></p><p><strong>Não pode aprender poderes da Força.</strong> Nunca regenera pontos de vida sozinho: precisa de <strong>reparo especializado</strong> (ferramentas + teste de Inteligência, ou cura tecnológica). Ainda é suscetível a morte, alguns tipos de paralisia, cegueira, surdez e drenagem de energia.</p>",
     "xp": null,
     "jp": {
       "jpc": false,

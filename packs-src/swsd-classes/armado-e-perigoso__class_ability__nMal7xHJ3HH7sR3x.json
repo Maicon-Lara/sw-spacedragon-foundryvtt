@@ -5,7 +5,7 @@
   "_id": "nMal7xHJ3HH7sR3x",
   "img": "systems/olddragon2e/assets/icons/kit.svg",
   "system": {
-    "description": "<p>O dano crítico com uma arma de sua escolha é sempre <strong>multiplicado por 2</strong>.</p>",
+    "description": "<p>O dano crítico com uma arma de sua escolha é sempre <strong>multiplicado por 2</strong>.</p><p><em>Esta progressão substitui a do Veterano quando ele usa a arma escolhida — e a partir do 3º nível ela é sempre superior. Com qualquer outra arma, vale o <strong>Dano Crítico</strong> normal da classe.</em></p>",
     "level": 1,
     "level3": "<p><strong>Golpe Impiedoso:</strong> os críticos com a arma escolhida passam a causar dano <strong>×3</strong>.</p>",
     "level6": "<p><strong>Mestre de Arma:</strong> <strong>−5</strong> ao usar uma arma que não seja a preferida e <strong>+2</strong> em todas as jogadas com ela. Suas Jogadas de Proteção param de evoluir, mas ele pode <strong>sacrificar o segundo ataque</strong> para ter chance maior de crítico: <strong>1-3 em 1d6</strong>. Críticos com a arma escolhida passam a <strong>×4</strong>.</p>",
@@ -42,7 +42,7 @@
     "lastModifiedBy": "swspacedragonbld",
     "exportSource": null
   },
-  "sort": 200000,
+  "sort": 300000,
   "ownership": {
     "default": 0
   },

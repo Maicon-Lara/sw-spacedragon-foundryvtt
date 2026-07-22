@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/level-up.svg",
   "system": {
     "flavor": "<p>O trapaceiro do submundo. <em>Chassi: Gatuno.</em></p>",
-    "description": "<p>Contrabandistas, ladrões, espiões, piratas e assassinos onde a lei não chega. <strong>Han Solo é um Operativo.</strong></p><p><strong>Créditos iniciais:</strong> 2d6 × 5.000 CR.</p>",
+    "description": "<p>Contrabandistas, ladrões, espiões, piratas e assassinos onde a lei não chega. <strong>Han Solo é um Operativo.</strong></p><p><strong>Créditos iniciais:</strong> 2d6 × 50 CR.</p><p><strong>Seguidores.</strong> Onde uma habilidade falar em \"seu número máximo de seguidores\", vale: <strong>Número Máximo de Seguidores = 1 + modificador de Carisma</strong> (mínimo <strong>1</strong>). Carisma 9-12 → 1 seguidor · 13-14 → 2 · 15-16 → 3 · 17-18 → 4 · 19-20 → 5. São companheiros leais <strong>por vínculo</strong>, não contratados — subalternos e mercenários pagos entram pelo limite de contratação de ajudantes do OD2 (LB1, p. 78) e contam à parte.</p><p><strong>Alinhamento e especialização.</strong> Cada especialização das classes mundanas é presa a um alinhamento (o antigo <em>Leal/Neutro/Rebelde</em> do Space Dragon): <strong>Emissário, Espião e Médico de Campo são ordeiros</strong>; <strong>Mercenário, Sabotador e Assassino são neutros</strong>; <strong>Caçador de Recompensas, Contrabandista e Slicer são caóticos</strong>. O <strong>Sensível à Força</strong> é a exceção — as Sendas dele não têm trava de alinhamento.</p>",
     "hp": 6,
     "high_level_hp_bonus": 1,
     "equipment_restrictions": {

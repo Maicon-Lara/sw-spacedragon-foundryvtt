@@ -5,8 +5,8 @@
   "_id": "u6Xhn3tsRGsC8IhV",
   "img": "systems/olddragon2e/assets/icons/kit.svg",
   "system": {
-    "description": "<p>Adquire um <strong>segundo ataque</strong> (corpo a corpo ou à distância), realizado logo em sequência ao primeiro — antes da ação do próximo jogador na iniciativa — <strong>com a mesma Base de Ataque</strong> do primeiro.</p>",
-    "level": 1,
+    "description": "<p>Adquire um <strong>segundo ataque</strong> (corpo a corpo ou à distância), realizado logo em sequência ao primeiro — antes da ação do próximo jogador na iniciativa — <strong>com a mesma Base de Ataque</strong> do primeiro.</p><p><em>Nota de balanço (correção da casa): o Space Dragon só dava o segundo ataque no 7º nível, e com a Base de Ataque menor; o Estrela Dracônica antecipou para o 1º nível com a BA cheia, o que dobra o dano por rodada da classe marcial já na primeira sessão e esvazia a troca do Mercenário [6]. Aqui o ganho foi movido para o <strong>3º nível</strong>, alinhado ao degrau que todas as outras habilidades usam. <strong>Variante:</strong> mesas que preferirem a versão do Estrela Dracônica podem devolvê-lo ao 1º nível.</em></p>",
+    "level": 3,
     "level3": "",
     "level6": "",
     "level10": "",

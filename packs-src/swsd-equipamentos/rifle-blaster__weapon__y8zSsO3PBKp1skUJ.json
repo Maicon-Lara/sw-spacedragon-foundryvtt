@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/ranged.svg",
   "system": {
     "odo_id": "rifle-blaster",
-    "description": "<p>Média, Energia, Disparo (72 m), Duas Mãos.</p>",
+    "description": "<p>Média, Energia, Disparo (72 m), Duas Mãos.</p><p><strong>Alcance — as três faixas.</strong> O valor listado é o <strong>alcance curto</strong>, sem penalidade. Até o <strong>dobro</strong> dele o ataque sofre <strong>−2</strong>; até o <strong>triplo</strong>, <strong>−4</strong>. Além do triplo não há tiro.</p><p><strong>Modo atordoante.</strong> Este blaster tem um <strong>seletor de modo</strong>. No modo atordoante não causa dano: aplica a propriedade <strong>Atordoante</strong>. Trocar o modo é uma <strong>ação livre</strong> no início do turno.</p><p><strong>Atordoante (stun).</strong> Dano <strong>não-letal</strong>. O alvo faz uma <strong>JPC</strong>: falhando, cai <strong>inconsciente por 1d6 rodadas</strong>; passando, fica <strong>Difícil em tudo por 1 rodada</strong>. Ao acordar (ou ao passar na JPC) fica <strong>imune a novo atordoamento por 1 turno</strong>. Alvos <strong>sem sistema nervoso</strong> (droides, construtos) ignoram completamente o efeito.</p>",
     "quantity": 1,
     "cost": "450 CR",
     "weight_in_load": 2,

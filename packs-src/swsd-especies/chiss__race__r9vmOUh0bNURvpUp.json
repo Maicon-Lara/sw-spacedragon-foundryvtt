@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/alignment.svg",
   "system": {
     "flavor": "<p>Estrategistas de pele azul e olhos rubros das Regiões Desconhecidas.</p>",
-    "description": "<p>A Ascendência raramente deixa os seus saírem. Quem sai carrega a disciplina de Csilla e uma frieza que os outros povos confundem com desprezo.</p><p><strong>Perguntas ao criar um Chiss:</strong> O que fez um Chiss deixar a reclusão da Ascendência? O que procura ao ler as pessoas? Sua frieza é armadura, disciplina ou vazio?</p>",
+    "description": "<p>A Ascendência raramente deixa os seus saírem. Quem sai carrega a disciplina de Csilla e uma frieza que os outros povos confundem com desprezo.</p><p><strong>Perguntas ao criar um Chiss:</strong> O que fez um Chiss deixar a reclusão da Ascendência? O que procura ao ler as pessoas? Sua frieza é armadura, disciplina ou vazio?</p><p><strong>Idioma próprio: Cheunh</strong> — raro fora das Regiões Desconhecidas. O Chiss já começa com um idioma extra (ver <em>Mente Tática</em>).</p><p><strong>Idiomas.</strong> Todo personagem começa falando o <strong>idioma do seu povo</strong> e o <strong>Básico Galáctico</strong> — o idioma comum das rotas comerciais. Idiomas <strong>adicionais</strong> vêm do <strong>modificador de Inteligência</strong>. <strong>Ler e escrever</strong> é outra coisa: divida a <strong>Inteligência por 6</strong>, arredondando para baixo — o resultado é em quantos idiomas o personagem é alfabetizado (escolha quais). <strong>Inteligência 6 ou menos = analfabeto</strong>, nem no idioma natal. Quem fala mas não escreve tem um <strong>sotaque</strong> que o denuncia como forasteiro.</p>",
     "movement": 9,
     "movement_fly": 0,
     "movement_notes": "",

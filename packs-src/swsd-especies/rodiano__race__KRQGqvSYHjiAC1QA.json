@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/alignment.svg",
   "system": {
     "flavor": "<p>Caçadores natos de Rodia, guiados por instinto e tradição.</p>",
-    "description": "<p>Para um Rodiano, a caça é cultura, esporte e religião. Os olhos multifacetados enxergam calor onde outros só veem escuro.</p><p><strong>Perguntas ao criar um Rodiano:</strong> O que (ou quem) seu Rodiano caça? A honra da caça ainda importa? Como reage ao ser o caçado?</p>",
+    "description": "<p>Para um Rodiano, a caça é cultura, esporte e religião. Os olhos multifacetados enxergam calor onde outros só veem escuro.</p><p><strong>Perguntas ao criar um Rodiano:</strong> O que (ou quem) seu Rodiano caça? A honra da caça ainda importa? Como reage ao ser o caçado?</p><p><strong>Idioma próprio: Rodês.</strong></p><p><strong>Idiomas.</strong> Todo personagem começa falando o <strong>idioma do seu povo</strong> e o <strong>Básico Galáctico</strong> — o idioma comum das rotas comerciais. Idiomas <strong>adicionais</strong> vêm do <strong>modificador de Inteligência</strong>. <strong>Ler e escrever</strong> é outra coisa: divida a <strong>Inteligência por 6</strong>, arredondando para baixo — o resultado é em quantos idiomas o personagem é alfabetizado (escolha quais). <strong>Inteligência 6 ou menos = analfabeto</strong>, nem no idioma natal. Quem fala mas não escreve tem um <strong>sotaque</strong> que o denuncia como forasteiro.</p>",
     "movement": 9,
     "movement_fly": 0,
     "movement_notes": "",

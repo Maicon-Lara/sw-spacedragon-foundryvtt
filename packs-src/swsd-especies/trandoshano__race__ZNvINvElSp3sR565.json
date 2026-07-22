@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/alignment.svg",
   "system": {
     "flavor": "<p>Caçadores reptilianos de Dosha, cuja carne se fecha sozinha.</p>",
-    "description": "<p>Cada presa vale pontos aos olhos da Guardiã dos Placares. Voltar de mãos vazias é pior que morrer.</p><p><strong>Perguntas ao criar um Trandoshano:</strong> Que presas somam pontos para a Guardiã dos Placares? A rivalidade com Wookiees é pessoal ou herdada? O que faria para não voltar de mãos vazias?</p>",
+    "description": "<p>Cada presa vale pontos aos olhos da Guardiã dos Placares. Voltar de mãos vazias é pior que morrer.</p><p><strong>Perguntas ao criar um Trandoshano:</strong> Que presas somam pontos para a Guardiã dos Placares? A rivalidade com Wookiees é pessoal ou herdada? O que faria para não voltar de mãos vazias?</p><p><strong>Idioma próprio: Dosh.</strong></p><p><strong>Idiomas.</strong> Todo personagem começa falando o <strong>idioma do seu povo</strong> e o <strong>Básico Galáctico</strong> — o idioma comum das rotas comerciais. Idiomas <strong>adicionais</strong> vêm do <strong>modificador de Inteligência</strong>. <strong>Ler e escrever</strong> é outra coisa: divida a <strong>Inteligência por 6</strong>, arredondando para baixo — o resultado é em quantos idiomas o personagem é alfabetizado (escolha quais). <strong>Inteligência 6 ou menos = analfabeto</strong>, nem no idioma natal. Quem fala mas não escreve tem um <strong>sotaque</strong> que o denuncia como forasteiro.</p>",
     "movement": 9,
     "movement_fly": 0,
     "movement_notes": "",

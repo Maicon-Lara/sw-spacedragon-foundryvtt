@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/level-up.svg",
   "system": {
     "flavor": "<p>O soldado e o pistoleiro. <em>Especialização de Veterano (neutro).</em></p>",
-    "description": "<p>Stormtroopers de elite, mercenários, pistoleiros do submundo, soldados clones. A arma preferida vira extensão do corpo.</p><p><strong>Perde</strong> acesso a <em>Pilotar</em> e <em>Desarmar e Subjugar</em> — mas <strong>mantém Ataques Múltiplos</strong>, que já era seu desde o 1º nível.</p><p><em>Especialização escolhida no 1º nível (padrão OD2). Evolui pela coluna <strong>XP Especial</strong> da tabela. Variante: mesas que queiram preservar o espírito original do Space Dragon podem adiar a escolha para o 3º nível.</em></p>",
+    "description": "<p>Stormtroopers de elite, mercenários, pistoleiros do submundo, soldados clones. A arma preferida vira extensão do corpo.</p><p><strong>Perde</strong> acesso a <em>Pilotar</em> e <em>Desarmar e Subjugar</em> — mas <strong>mantém Ataques Múltiplos</strong> (no 3º nível, como todo Veterano) e o <strong>Dano Crítico</strong> da classe.</p><p><em>Especialização escolhida no 1º nível (padrão OD2). Evolui pela coluna <strong>XP Especial</strong> da tabela. Variante: mesas que queiram preservar o espírito original do Space Dragon podem adiar a escolha para o 3º nível.</em></p><p><strong>Mudança de alinhamento em jogo.</strong> Um personagem que muda de alinhamento <strong>não perde</strong> as habilidades de especialização que já conquistou, mas <strong>não ganha as próximas</strong> enquanto sua conduta e sua trilha estiverem em desacordo. Ele tem duas saídas: reconciliar-se com a trilha antiga, ou negociar com o Mestre a <strong>troca da especialização</strong> por outra do alinhamento novo, mantendo o nível e refazendo as habilidades correspondentes.</p>",
     "hp": 10,
     "high_level_hp_bonus": 1,
     "equipment_restrictions": {
@@ -98,6 +98,7 @@
     },
     "class_abilities": [
       "Compendium.sw-spacedragon.swsd-classes.Item.MNyHe4hFYNNywx7D",
+      "Compendium.sw-spacedragon.swsd-classes.Item.srk09Jb92CADthjY",
       "Compendium.sw-spacedragon.swsd-classes.Item.nMal7xHJ3HH7sR3x",
       "Compendium.sw-spacedragon.swsd-classes.Item.NC8lSWpDiJJkQo0E"
     ]

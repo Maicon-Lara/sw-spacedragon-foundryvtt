@@ -5,7 +5,7 @@
   "_id": "9DeBBntFnCpJnYGa",
   "img": "systems/olddragon2e/assets/icons/diamond.svg",
   "system": {
-    "description": "<p><em>(acréscimo de Star Wars)</em> Ataques de pulso iônico causam <strong>dano dobrado</strong>; em um acerto crítico, o Droide fica <strong>desativado</strong> (equivalente a nocauteado) até ser reinicializado.</p>",
+    "description": "<p><em>(acréscimo de Star Wars)</em> Ataques de pulso iônico causam <strong>dano dobrado</strong>; em um acerto crítico, o Droide fica <strong>desativado</strong> até ser reinicializado — uma rodada inteira de outro personagem, ou um teste de <em>Operar e Consertar Máquinas</em>.</p><p><strong>A propriedade Íon, por inteiro</strong> (afeta apenas <strong>máquinas</strong>: droides, veículos, naves, aparatos e portas):</p><ul><li><strong>Droides e construtos:</strong> dano dobrado; em crítico, desativado até ser reinicializado.</li><li><strong>Veículos e naves:</strong> não causa dano no casco — <strong>desliga um sistema</strong> (escudo, propulsão, armas, sensores — role ou escolha) por <strong>1d4 rodadas</strong>.</li><li><strong>Criaturas vivas:</strong> <strong>nenhum efeito</strong>. Um canhão de íon é inútil contra um Wookiee, e é exatamente essa a graça dele.</li><li><strong>Aparatos tecnológicos</strong> atingidos sofrem <strong>curto-circuito</strong> e precisam de reparo.</li></ul>",
     "xp": null,
     "jp": {
       "jpc": false,
