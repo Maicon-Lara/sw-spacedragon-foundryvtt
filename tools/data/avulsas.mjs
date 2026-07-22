@@ -122,6 +122,12 @@ export const origensAvulsas = [
   },
 ];
 
+// Versão CRUA, sem as notas de uso. É o que as variantes de classe embutem:
+// quem arrasta "Guardião (Soresu)" já usou o atalho, então a instrução de
+// "como adicionar manualmente" e a nota de Forma secundária só fariam ruído
+// na ficha dele.
+export const classAbilitiesBase = AVULSAS;
+
 export const classAbilitiesAvulsas = AVULSAS.map((a) => ({
   ...a,
   desc:

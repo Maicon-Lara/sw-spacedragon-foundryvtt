@@ -5,7 +5,7 @@
   "_id": "t8D924TPJYRYdDSX",
   "img": "systems/olddragon2e/assets/icons/kit.svg",
   "system": {
-    "description": "<p>Usa a Mochila de Propulsão em combate: o primeiro golpe da rodada vindo de cima é <strong>Fácil</strong>, ou você se reposiciona verticalmente sem gastar movimento extra.</p><hr><p><strong>Como adicionar na ficha:</strong> o sistema não aceita soltar uma habilidade de classe direto no personagem. Abra o item da <strong>classe que já está na ficha</strong> (aba Classe, clique no nome) e arraste esta habilidade <strong>para dentro dessa janela</strong> — ela é sincronizada para o personagem automaticamente.</p><p><em>Atalho:</em> o compêndio de Classes já traz variantes prontas (ex.: <em>Guardião (Soresu)</em>, <em>Veterano — Senda Mandaloriana</em>) com estas habilidades embutidas — basta arrastar a variante e pular este passo.</p>",
+    "description": "<p>Usa a Mochila de Propulsão em combate: o primeiro golpe da rodada vindo de cima é <strong>Fácil</strong>, ou você se reposiciona verticalmente sem gastar movimento extra.</p>",
     "level": 6,
     "level3": "",
     "level6": "",

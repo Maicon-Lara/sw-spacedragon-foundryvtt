@@ -17,10 +17,10 @@
 // avulsas.mjs, para não haver duas fontes de verdade do mesmo texto.
 
 import { classes } from "./classes.mjs";
-import { classAbilitiesAvulsas } from "./avulsas.mjs";
+import { classAbilitiesBase } from "./avulsas.mjs";
 
-const FORMAS = classAbilitiesAvulsas.filter((a) => a.folder === "Formas de Sabre (Guardião)");
-const NUCLEO = classAbilitiesAvulsas.filter((a) => a.folder === "Senda Mandaloriana");
+const FORMAS = classAbilitiesBase.filter((a) => a.folder === "Formas de Sabre (Guardião)");
+const NUCLEO = classAbilitiesBase.filter((a) => a.folder === "Senda Mandaloriana");
 
 const acha = (nome) => {
   const c = classes.find((x) => x.nome === nome);
@@ -44,7 +44,7 @@ const guardioes = FORMAS.map((forma) => {
   return {
     ...guardiao,
     nome: `Sensível à Força — Guardião (${curto})`,
-    flavor: `<p>O Jedi/Sith de sabre, na Forma <strong>${curto}</strong>. <em>Especialização de Sensível à Força (neutro).</em></p>`,
+    flavor: `<p>O Jedi/Sith de sabre, na Forma <strong>${curto}</strong>. <em>Especialização de Sensível à Força.</em></p>`,
     descricao:
       guardiao.descricao +
       `<p><strong>Esta variante já traz a Forma ${curto} embutida</strong> — arraste-a para a ficha e a Forma vem junto, com as evoluções de 3º, 6º e 10º nível. Se quiser trocar de Forma depois, use a versão genérica da classe e adicione a Forma pelo compêndio <em>Formas de Sabre</em>.</p>`,
@@ -52,7 +52,15 @@ const guardioes = FORMAS.map((forma) => {
     // genérico "Formas de Sabre".
     habilidades: [
       ...guardiao.habilidades.filter((h) => h.nome !== "Formas de Sabre"),
-      { ...forma, folder: undefined },
+      {
+        ...forma,
+        folder: undefined,
+        // Nota curta e específica: nesta variante a Forma É a Mestra.
+        desc:
+          forma.desc +
+          "<hr><p><strong>Esta é a sua Forma Mestra</strong> — progride inteira, nos degraus 3º, 6º e 10º.</p>" +
+          "<p>A partir do <strong>10º nível</strong> você pode aprender uma <strong>segunda Forma</strong> (que vai só até o degrau do 6º) e, no <strong>15º</strong>, uma <strong>terceira</strong> (só até o 3º). Elas ficam no compêndio <em>Formas de Sabre</em> e são adicionadas ao item desta classe na ficha. Trocar de Forma em combate consome sua ação da rodada e deixa você com −2 na CA até o próximo turno; no 15º, a <em>Guarda Fluida</em> troca isso por 1 de Foco.</p>",
+      },
     ],
   };
 });
