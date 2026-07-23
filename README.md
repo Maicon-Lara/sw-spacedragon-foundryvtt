@@ -10,7 +10,8 @@ Star Wars © Lucasfilm Ltd.
 ## Fonte de verdade
 
 O conteúdo é transcrito dos arquivos do cofre Obsidian em
-`Documents\Ekhoria\STAR WARS SPACE DRAGON\` (`#SW-SD-Index.md` e `SW-SD-*.md`).
+`Documents\Ekhoria\STAR WARS - OD2 - SD\` (`#SW-SD-Index.md` e `SW-SD-*.md`).
+*(Pasta renomeada de "STAR WARS SPACE DRAGON" em jul/2026, quando o nome "Space Dragon" passou a designar a versão nativa.)*
 **Mudou o compêndio? Edite `tools/data/*.mjs` e rode o build** — os packs nunca
 são editados à mão.
 
