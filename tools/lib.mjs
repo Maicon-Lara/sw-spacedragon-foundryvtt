@@ -21,6 +21,14 @@ export function makeId(seed) {
   return id;
 }
 
+// Normaliza uma lista de restrição (raças/alinhamentos) para o formato que o
+// sistema olddragon2e espera: um array de UM elemento contendo os valores
+// separados por vírgula. O sistema faz `races[0].split(',')`, então uma lista
+// com vários itens faria ele ler só o primeiro (o bug do "só Humano").
+export function csvRestricao(lista) {
+  return Array.isArray(lista) && lista.length ? [lista.join(", ")] : [];
+}
+
 // Slug simples para usar em seeds.
 export function slug(s) {
   return String(s)
@@ -157,8 +165,11 @@ export function classDoc(cls, folderId, abilityUuids) {
         magic_items: cls.equipment_restrictions?.magic_items ?? "Sem restrições.",
       },
       restrictions: {
-        alignments: cls.restricao_alinhamentos || [],
-        races: cls.restricao_racas || [],
+        // O sistema olddragon2e lê estes campos como UMA string separada por
+        // vírgulas (pega só o [0] e faz split). Um array de N itens faria o
+        // sistema enxergar apenas o primeiro — por isso juntamos numa string.
+        alignments: csvRestricao(cls.restricao_alinhamentos),
+        races: csvRestricao(cls.restricao_racas),
       },
       levels: cls.levels,
       class_abilities: abilityUuids,
