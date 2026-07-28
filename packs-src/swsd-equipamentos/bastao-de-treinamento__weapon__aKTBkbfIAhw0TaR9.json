@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/bludgeoning.svg",
   "system": {
     "odo_id": "bastao-de-treinamento",
-    "description": "<p>Pequena, Impactante, Duas Mãos.</p>",
+    "description": "Pequena, Impactante, Duas Mãos.",
     "quantity": 1,
     "cost": "10 CR",
     "weight_in_load": 1,

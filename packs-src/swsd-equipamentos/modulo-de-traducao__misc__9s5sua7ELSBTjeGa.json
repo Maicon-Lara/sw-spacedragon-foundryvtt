@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "modulo-de-traducao",
-    "description": "<p><strong>Utilitário, NT 3.</strong> Fones e microfone que traduzem bilateralmente <strong>um idioma</strong>. Durante a criação, é preciso ter contato com um <strong>falante nativo</strong> e gravá-lo.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d6 semanas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Utilitário, NT 3. Fones e microfone que traduzem bilateralmente um idioma. Durante a criação, é preciso ter contato com um falante nativo e gravá-lo.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d6 semanas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "1.800 CR",
     "weight_in_load": 0,

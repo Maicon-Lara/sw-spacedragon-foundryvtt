@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "repetidor-blaster-pesado",
-    "description": "<p><strong>Ofensivo, NT 8.</strong> Dispara <strong>até 4 vezes por rodada</strong>, causando <strong>1d10</strong> cada, com rolagem de ataque própria por disparo. Após <strong>duas rodadas consecutivas</strong> de uso, precisa <strong>esfriar por 30 segundos</strong>.</p><p><em>Aparato <strong>ofensivo</strong>: só o Técnico e o Caçador de Recompensas o operam.</em></p><p><em>Construção: 1d4 dias. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Ofensivo, NT 8. Dispara até 4 vezes por rodada, causando 1d10 cada, com rolagem de ataque própria por disparo. Após duas rodadas consecutivas de uso, precisa esfriar por 30 segundos.\nAparato ofensivo: só o Técnico e o Caçador de Recompensas o operam.\nConstrução: 1d4 dias. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "2.400 CR",
     "weight_in_load": 3,

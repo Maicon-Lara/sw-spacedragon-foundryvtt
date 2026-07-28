@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "comlink-holografico",
-    "description": "<p><strong>Utilitário, NT 3.</strong> Como o Comlink, mas com <strong>imagem</strong>. Alcance menor: <strong>5 km</strong>; até <strong>4 aparelhos</strong> na mesma frequência.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d10 horas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Utilitário, NT 3. Como o Comlink, mas com imagem. Alcance menor: 5 km; até 4 aparelhos na mesma frequência.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d10 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "1.500 CR",
     "weight_in_load": 0,

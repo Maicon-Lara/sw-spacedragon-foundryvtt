@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "pistola-desintegradora",
-    "description": "<p><strong>Ofensivo, NT 9.</strong> <strong>Desintegra completamente</strong> qualquer inimigo atingido — <strong>sem direito a Jogada de Proteção</strong>. <strong>Uso único</strong>: fica permanentemente inutilizável depois.</p><p><em>Aparato <strong>ofensivo</strong>: só o Técnico e o Caçador de Recompensas o operam.</em></p><p><em>Construção: 1d4 meses. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Ofensivo, NT 9. Desintegra completamente qualquer inimigo atingido — sem direito a Jogada de Proteção. Uso único: fica permanentemente inutilizável depois.\nAparato ofensivo: só o Técnico e o Caçador de Recompensas o operam.\nConstrução: 1d4 meses. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "6.300 CR",
     "weight_in_load": 1,

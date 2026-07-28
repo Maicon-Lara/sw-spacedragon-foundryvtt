@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "visor-de-realidade-alternativa",
-    "description": "<p><strong>Utilitário, NT 8.</strong> Permite observar uma realidade alternativa à que está ocorrendo. Na prática: em <strong>qualquer jogada de dados</strong>, o jogador <strong>rola duas vezes e fica com o melhor resultado</strong>.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d10 dias. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Utilitário, NT 8. Permite observar uma realidade alternativa à que está ocorrendo. Na prática: em qualquer jogada de dados, o jogador rola duas vezes e fica com o melhor resultado.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d10 dias. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "6.000 CR",
     "weight_in_load": 0,

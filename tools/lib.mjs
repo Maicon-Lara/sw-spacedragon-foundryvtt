@@ -29,6 +29,44 @@ export function csvRestricao(lista) {
   return Array.isArray(lista) && lista.length ? [lista.join(", ")] : [];
 }
 
+// Converte a descrição de HTML para texto puro.
+//
+// Por que: no olddragon2e o campo `system.description` muda de contrato conforme
+// o tipo do item. Classe, habilidade, magia e monstro são renderizados com
+// {{{ }}} e aceitam HTML. Mas weapon/armor/misc aparecem em
+// `templates/sheets/*-sheet.hbs` dentro de um <textarea>, que exibe tag como
+// texto, e a lista de equipamento da ficha passa por {{truncate ... 35}} — um
+// corte cego que, caindo no meio de uma tag, deixa elemento aberto e faz as
+// tabelas seguintes da ficha aninharem umas nas outras.
+//
+// O conteúdo oficial do OD2 segue essa mesma divisão: 0 de 96 itens do pack
+// `equipment` têm HTML na descrição, enquanto 139 de 179 das classes têm.
+//
+// A autoria em `data/*.mjs` continua em HTML (é mais legível e as notas são
+// compartilhadas com journals); a conversão acontece só na saída.
+export function htmlParaTexto(html) {
+  if (!html) return "";
+  return String(html)
+    .replace(/<\s*br\s*\/?>/gi, "\n")
+    .replace(/<\s*li[^>]*>/gi, "• ")
+    .replace(/<\s*\/\s*(p|div|li|tr|h[1-6]|ul|ol)\s*>/gi, "\n")
+    .replace(/<[^>]+>/g, "")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&mdash;/g, "—")
+    .replace(/&ndash;/g, "–")
+    .replace(/&hellip;/g, "…")
+    .replace(/&times;/g, "×")
+    .replace(/&quot;/g, '"')
+    .replace(/&(?:#0?39|apos);/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&amp;/g, "&") // por último: senão reintroduz entidade
+    .replace(/[ \t]+/g, " ")
+    .replace(/[ \t]*\n[ \t]*/g, "\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
 // Slug simples para usar em seeds.
 export function slug(s) {
   return String(s)
@@ -339,7 +377,8 @@ export function spellDoc(spell, folderId, seedPrefix, sort) {
 function equipmentBase(it) {
   return {
     odo_id: slug(it.nome),
-    description: it.desc || "",
+    // weapon/armor/misc: a ficha exibe num <textarea>. Ver htmlParaTexto().
+    description: htmlParaTexto(it.desc),
     quantity: 1,
     cost: it.cost || "",
     weight_in_load: it.weight_in_load ?? 0,

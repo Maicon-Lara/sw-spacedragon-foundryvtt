@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "coleira-de-domesticacao",
-    "description": "<p><strong>Ofensivo, NT 7.</strong> Coloca sob controle do operador qualquer <strong>espécie de inteligência inferior à humana</strong>, que obedece a qualquer comando enquanto a usar. <strong>No ato da criação</strong> define-se <strong>para qual espécie</strong> ela serve — não funciona em outras.</p><p><em>Aparato <strong>ofensivo</strong>: só o Técnico e o Caçador de Recompensas o operam.</em></p><p><em>Construção: 1d4 dias. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Ofensivo, NT 7. Coloca sob controle do operador qualquer espécie de inteligência inferior à humana, que obedece a qualquer comando enquanto a usar. No ato da criação define-se para qual espécie ela serve — não funciona em outras.\nAparato ofensivo: só o Técnico e o Caçador de Recompensas o operam.\nConstrução: 1d4 dias. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "7.000 CR",
     "weight_in_load": 0,

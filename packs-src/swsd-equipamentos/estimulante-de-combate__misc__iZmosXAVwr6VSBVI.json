@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "estimulante-de-combate",
-    "description": "<p><strong>Utilitário, NT 5.</strong> Aumenta temporariamente <strong>um atributo em 2 pontos</strong> (definido na criação). Começa a agir <strong>1 minuto</strong> após ingerido e dura <strong>1 hora</strong>. Rende <strong>4 doses</strong>. <strong>Ilegal em boa parte da galáxia e pode causar vício</strong> — mais de uma por vez arrisca uma <strong>overdose potencialmente fatal</strong>.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d6 horas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Utilitário, NT 5. Aumenta temporariamente um atributo em 2 pontos (definido na criação). Começa a agir 1 minuto após ingerido e dura 1 hora. Rende 4 doses. Ilegal em boa parte da galáxia e pode causar vício — mais de uma por vez arrisca uma overdose potencialmente fatal.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d6 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "2.000 CR",
     "weight_in_load": 0,

@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "holocamera-remota",
-    "description": "<p><strong>Utilitário, NT 2.</strong> Câmera minúscula que transmite imagem e som para um comunicador de vídeo, a até <strong>5 km</strong>. Sujeita a interferência.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d4 dias. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Utilitário, NT 2. Câmera minúscula que transmite imagem e som para um comunicador de vídeo, a até 5 km. Sujeita a interferência.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d4 dias. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "160 CR",
     "weight_in_load": 0,

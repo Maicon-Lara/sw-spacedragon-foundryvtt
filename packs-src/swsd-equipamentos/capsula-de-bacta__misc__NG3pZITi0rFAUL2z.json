@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "capsula-de-bacta",
-    "description": "<p><strong>Utilitário, NT 4.</strong> Recupera <strong>1 PV a cada 2 níveis do personagem, por hora de descanso</strong>, no máximo por 24 horas. Quem tem <strong>Recuperação Acelerada</strong> recupera <strong>o dobro</strong> da taxa normal. Rende <strong>4 doses</strong>.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d4 horas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Utilitário, NT 4. Recupera 1 PV a cada 2 níveis do personagem, por hora de descanso, no máximo por 24 horas. Quem tem Recuperação Acelerada recupera o dobro da taxa normal. Rende 4 doses.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d4 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "1.800 CR",
     "weight_in_load": 0,

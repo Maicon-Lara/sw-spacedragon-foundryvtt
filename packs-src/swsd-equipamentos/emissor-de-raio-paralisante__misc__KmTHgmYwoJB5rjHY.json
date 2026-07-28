@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "emissor-de-raio-paralisante",
-    "description": "<p><strong>Ofensivo, NT 7.</strong> Ataque à distância; acertando, o alvo faz uma <strong>JPC</strong>. Falhando, fica <strong>completamente imobilizado por 30 segundos</strong>. <strong>Criaturas muito maiores que um humano não são afetadas.</strong> Só pode ser usado <strong>2 vezes</strong> antes de recarregar.</p><p><em>Aparato <strong>ofensivo</strong>: só o Técnico e o Caçador de Recompensas o operam.</em></p><p><em>Construção: 1d6 dias. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Ofensivo, NT 7. Ataque à distância; acertando, o alvo faz uma JPC. Falhando, fica completamente imobilizado por 30 segundos. Criaturas muito maiores que um humano não são afetadas. Só pode ser usado 2 vezes antes de recarregar.\nAparato ofensivo: só o Técnico e o Caçador de Recompensas o operam.\nConstrução: 1d6 dias. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "3.500 CR",
     "weight_in_load": 1,

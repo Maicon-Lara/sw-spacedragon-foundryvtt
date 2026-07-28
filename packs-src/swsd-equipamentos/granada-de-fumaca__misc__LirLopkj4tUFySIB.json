@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "granada-de-fumaca",
-    "description": "<p><strong>Utilitário, NT 3.</strong> Fumaça espessa num raio de <strong>20 m</strong>. Todos na área sofrem <strong>−4 em rolagens de ataque</strong>.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d6 horas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Utilitário, NT 3. Fumaça espessa num raio de 20 m. Todos na área sofrem −4 em rolagens de ataque.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d6 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "600 CR",
     "weight_in_load": 1,

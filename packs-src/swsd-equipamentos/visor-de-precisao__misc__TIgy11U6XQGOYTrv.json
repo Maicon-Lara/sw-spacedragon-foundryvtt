@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "visor-de-precisao",
-    "description": "<p><strong>Utilitário, NT 4.</strong> Acoplável a qualquer arma à distância: <strong>+2 nas rolagens de ataque</strong>. Também faz o usuário <strong>ignorar cobertura não sólida</strong> (fumaça, neblina) ao calcular penalidades de visibilidade.</p><p>É o aparato completo de que a <strong>Mira a Laser</strong> e o <strong>Capacete com Visor Tático</strong> são versões comerciais de +1 — <strong>não acumulam</strong>: use o melhor.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d6 horas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Utilitário, NT 4. Acoplável a qualquer arma à distância: +2 nas rolagens de ataque. Também faz o usuário ignorar cobertura não sólida (fumaça, neblina) ao calcular penalidades de visibilidade.\nÉ o aparato completo de que a Mira a Laser e o Capacete com Visor Tático são versões comerciais de +1 — não acumulam: use o melhor.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d6 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "800 CR",
     "weight_in_load": 0,

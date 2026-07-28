@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/bludgeoning.svg",
   "system": {
     "odo_id": "cassetete-de-choque",
-    "description": "<p>Pequena, Impactante, <em>Nocaute</em>.</p><p><strong>Nocaute:</strong> causa metade do dano e aplica a regra de nocaute (1 em 1d6, ou pelo modificador de Força, para desacordar o alvo).</p>",
+    "description": "Pequena, Impactante, Nocaute.\nNocaute: causa metade do dano e aplica a regra de nocaute (1 em 1d6, ou pelo modificador de Força, para desacordar o alvo).",
     "quantity": 1,
     "cost": "20 CR",
     "weight_in_load": 1,

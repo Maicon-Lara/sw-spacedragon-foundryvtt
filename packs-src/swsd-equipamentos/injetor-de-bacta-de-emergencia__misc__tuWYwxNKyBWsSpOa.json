@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "injetor-de-bacta-de-emergencia",
-    "description": "<p><strong>Utilitário, NT 4.</strong> Injetado num personagem com <strong>PV negativos</strong>, ele <strong>estabiliza automaticamente</strong> e recupera <strong>2 PV a cada 10 segundos</strong>, até chegar a <strong>1 PV</strong> — e para aí. O soro <strong>estabiliza o moribundo, não o cura</strong>. Ferimentos graves exigem uma <strong>JPC</strong> para que funcione. Rende <strong>2 doses</strong>.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d6 horas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Utilitário, NT 4. Injetado num personagem com PV negativos, ele estabiliza automaticamente e recupera 2 PV a cada 10 segundos, até chegar a 1 PV — e para aí. O soro estabiliza o moribundo, não o cura. Ferimentos graves exigem uma JPC para que funcione. Rende 2 doses.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d6 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "1.200 CR",
     "weight_in_load": 0,

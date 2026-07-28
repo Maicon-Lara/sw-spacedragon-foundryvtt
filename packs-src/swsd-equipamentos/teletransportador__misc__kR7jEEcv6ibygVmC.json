@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "teletransportador",
-    "description": "<p><strong>Utilitário, NT 9.</strong> Bracelete ou cinto que teletransporta o usuário até o local para o qual foi configurado. A criação envolve uma <strong>plataforma</strong> (marco zero) e o <strong>ativador</strong>; ativadores extras podem ser feitos no mesmo período, pagando o valor.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d10 semanas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Utilitário, NT 9. Bracelete ou cinto que teletransporta o usuário até o local para o qual foi configurado. A criação envolve uma plataforma (marco zero) e o ativador; ativadores extras podem ser feitos no mesmo período, pagando o valor.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d10 semanas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "8.000 CR",
     "weight_in_load": 0,

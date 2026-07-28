@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "blaster-de-disparo-duplo",
-    "description": "<p><strong>Ofensivo, NT 4.</strong> Quase idêntico a uma pistola blaster, mas numa rolagem de ataque bem-sucedida <strong>efetua um segundo disparo automaticamente</strong>: dano <strong>2d6</strong>.</p><p><em>Aparato <strong>ofensivo</strong>: só o Técnico e o Caçador de Recompensas o operam.</em></p><p><em>Construção: 1d10 horas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Ofensivo, NT 4. Quase idêntico a uma pistola blaster, mas numa rolagem de ataque bem-sucedida efetua um segundo disparo automaticamente: dano 2d6.\nAparato ofensivo: só o Técnico e o Caçador de Recompensas o operam.\nConstrução: 1d10 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "3.200 CR",
     "weight_in_load": 1,

@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "cupula-defletora-de-perimetro",
-    "description": "<p><strong>Defensivo, NT 8.</strong> Torna impenetrável uma área com <strong>20 m de raio</strong>. O interior é visível através da parede hemisférica semitransparente. Quem tenta entrar sofre <strong>1d4 de dano</strong> por choque. Funciona por <strong>1 hora</strong>.</p><p><em>Aparato <strong>defensivo</strong>: Técnico e Veterano.</em></p><p><em>Construção: 1d6 dias. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Defensivo, NT 8. Torna impenetrável uma área com 20 m de raio. O interior é visível através da parede hemisférica semitransparente. Quem tenta entrar sofre 1d4 de dano por choque. Funciona por 1 hora.\nAparato defensivo: Técnico e Veterano.\nConstrução: 1d6 dias. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "7.000 CR",
     "weight_in_load": 0,

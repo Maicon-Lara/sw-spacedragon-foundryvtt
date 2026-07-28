@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "traje-antirradiacao",
-    "description": "<p><strong>Defensivo, NT 1.</strong> Traje hermético que protege de emissões radioativas. <strong>Se a vedação for comprometida</strong>, o usuário fica exposto — e não dá para reparar antes que isso aconteça.</p><p><em>Aparato <strong>defensivo</strong>: Técnico e Veterano.</em></p><p><em>Construção: 1d10 horas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Defensivo, NT 1. Traje hermético que protege de emissões radioativas. Se a vedação for comprometida, o usuário fica exposto — e não dá para reparar antes que isso aconteça.\nAparato defensivo: Técnico e Veterano.\nConstrução: 1d10 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "80 CR",
     "weight_in_load": 1,

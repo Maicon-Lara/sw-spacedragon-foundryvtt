@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "visor-de-varredura-densitometrica",
-    "description": "<p><strong>Utilitário, NT 4.</strong> Enxerga através de <strong>um único obstáculo</strong> (chumbo bloqueia). A imagem é apenas razoável: <strong>−2 nos ataques</strong> do usuário. Pode virar binóculo pelo dobro do custo e do tempo.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d4 dias. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Utilitário, NT 4. Enxerga através de um único obstáculo (chumbo bloqueia). A imagem é apenas razoável: −2 nos ataques do usuário. Pode virar binóculo pelo dobro do custo e do tempo.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d4 dias. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "3.000 CR",
     "weight_in_load": 0,

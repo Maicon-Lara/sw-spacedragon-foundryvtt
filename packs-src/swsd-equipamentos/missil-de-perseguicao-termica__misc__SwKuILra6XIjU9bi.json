@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "missil-de-perseguicao-termica",
-    "description": "<p><strong>Ofensivo, NT 6.</strong> Persegue a assinatura térmica do alvo por <strong>1d4+1 rodadas</strong>. Disparado por um lança-mísseis comum, <strong>não exige rolagem de ataque</strong>: só acerta se o alvo <strong>falhar numa JPD</strong> feita a cada rodada, causando <strong>2d10</strong>. Cada construção rende <strong>um único míssil</strong>.</p><p><em>Aparato <strong>ofensivo</strong>: só o Técnico e o Caçador de Recompensas o operam.</em></p><p><em>Construção: 1d6 horas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Ofensivo, NT 6. Persegue a assinatura térmica do alvo por 1d4+1 rodadas. Disparado por um lança-mísseis comum, não exige rolagem de ataque: só acerta se o alvo falhar numa JPD feita a cada rodada, causando 2d10. Cada construção rende um único míssil.\nAparato ofensivo: só o Técnico e o Caçador de Recompensas o operam.\nConstrução: 1d6 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "1.000 CR",
     "weight_in_load": 1,

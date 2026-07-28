@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/armor.svg",
   "system": {
     "odo_id": "selagem-espacial-acrescimo",
-    "description": "<p><strong>Acréscimo</strong> a qualquer armadura desta lista: capacete e pressurização acoplados. Permite <strong>vácuo e atmosferas tóxicas</strong> enquanto houver oxigênio. <strong>Movimento: −2 m</strong> (soma-se à redução da armadura de base) e <strong>+1 de carga</strong>.</p><p>Exige um <strong>Cilindro de Oxigênio</strong> para funcionar: sem ele, o traje só protege de temperatura e pressão, não da falta de ar.</p><p><em>A redução de movimento é subtraída do movimento-base de <strong>9 m</strong>, antes das penalidades de gravidade, terreno e carga.</em></p>",
+    "description": "Acréscimo a qualquer armadura desta lista: capacete e pressurização acoplados. Permite vácuo e atmosferas tóxicas enquanto houver oxigênio. Movimento: −2 m (soma-se à redução da armadura de base) e +1 de carga.\nExige um Cilindro de Oxigênio para funcionar: sem ele, o traje só protege de temperatura e pressão, não da falta de ar.\nA redução de movimento é subtraída do movimento-base de 9 m, antes das penalidades de gravidade, terreno e carga.",
     "quantity": 1,
     "cost": "+400 CR",
     "weight_in_load": 1,

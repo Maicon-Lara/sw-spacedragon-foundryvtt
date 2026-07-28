@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "laco-energetico",
-    "description": "<p><strong>Utilitário, NT 5.</strong> Ataque à distância que <strong>não causa dano</strong>: se acertar, a criatura faz um <strong>teste de Força</strong> para resistir. Um sucesso <strong>interrompe o fluxo de energia</strong> do laço, mas não o destrói. Autonomia de <strong>4 horas</strong>.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d4 semanas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Utilitário, NT 5. Ataque à distância que não causa dano: se acertar, a criatura faz um teste de Força para resistir. Um sucesso interrompe o fluxo de energia do laço, mas não o destrói. Autonomia de 4 horas.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d4 semanas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "4.000 CR",
     "weight_in_load": 1,

@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "medidor-de-radiacao",
-    "description": "<p><strong>Utilitário, NT 1.</strong> Detecta os níveis de radiação de um local, dizendo se é seguro permanecer sem traje.</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d4 horas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Utilitário, NT 1. Detecta os níveis de radiação de um local, dizendo se é seguro permanecer sem traje.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d4 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "70 CR",
     "weight_in_load": 0,

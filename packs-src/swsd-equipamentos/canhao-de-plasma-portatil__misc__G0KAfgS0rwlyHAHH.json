@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "canhao-de-plasma-portatil",
-    "description": "<p><strong>Ofensivo, NT 6.</strong> Formato de lança-granadas, dispara um feixe concentrado. Dano base <strong>1d10</strong>; é possível <strong>carregar o feixe</strong> por até duas rodadas, aumentando o dano para <strong>1d12</strong> e depois <strong>2d8</strong>.</p><p><em>Aparato <strong>ofensivo</strong>: só o Técnico e o Caçador de Recompensas o operam.</em></p><p><em>Construção: 1d6 semanas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Ofensivo, NT 6. Formato de lança-granadas, dispara um feixe concentrado. Dano base 1d10; é possível carregar o feixe por até duas rodadas, aumentando o dano para 1d12 e depois 2d8.\nAparato ofensivo: só o Técnico e o Caçador de Recompensas o operam.\nConstrução: 1d6 semanas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "4.800 CR",
     "weight_in_load": 3,

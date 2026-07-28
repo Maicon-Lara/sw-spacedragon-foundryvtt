@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "escudo-defletor-coletivo",
-    "description": "<p><strong>Defensivo, NT 6.</strong> Como o escudo individual, mas cobre um raio de <strong>10 m</strong> ao redor do usuário. <strong>Dentro da área, escudos de energia não funcionam.</strong> Duração de <strong>1 minuto</strong>; recarga de <strong>1d8 horas</strong>.</p><p><em>Aparato <strong>defensivo</strong>: Técnico e Veterano.</em></p><p><em>Construção: 1d6 dias. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Defensivo, NT 6. Como o escudo individual, mas cobre um raio de 10 m ao redor do usuário. Dentro da área, escudos de energia não funcionam. Duração de 1 minuto; recarga de 1d8 horas.\nAparato defensivo: Técnico e Veterano.\nConstrução: 1d6 dias. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "4.200 CR",
     "weight_in_load": 0,

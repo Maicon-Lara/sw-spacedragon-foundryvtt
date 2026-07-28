@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "capacete-blindado-contra-a-forca",
-    "description": "<p><strong>Defensivo, NT 7.</strong> Todo poder mental usado contra quem veste o capacete tem a <strong>JPS do alvo considerada Muito Fácil (+5)</strong> — ou, se preferir, o poder simplesmente <strong>falha com 1-4 em 1d6</strong>. Quem realiza o poder contra o portador corre risco de <strong>sofrer um choque mental</strong> (1-2 em 1d6).</p><p><em>Aparato <strong>defensivo</strong>: Técnico e Veterano.</em></p><p><em>Construção: 1d4 semanas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Defensivo, NT 7. Todo poder mental usado contra quem veste o capacete tem a JPS do alvo considerada Muito Fácil (+5) — ou, se preferir, o poder simplesmente falha com 1-4 em 1d6. Quem realiza o poder contra o portador corre risco de sofrer um choque mental (1-2 em 1d6).\nAparato defensivo: Técnico e Veterano.\nConstrução: 1d4 semanas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "2.100 CR",
     "weight_in_load": 0,

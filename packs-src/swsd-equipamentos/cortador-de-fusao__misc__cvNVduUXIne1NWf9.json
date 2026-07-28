@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "cortador-de-fusao",
-    "description": "<p><strong>Ofensivo, NT 1.</strong> Feixe de laser que corta lentamente superfícies finas (portas, paredes). Como arma: <strong>ataque corpo a corpo, 1d4 de dano</strong>.</p><p><em>Aparato <strong>ofensivo</strong>: só o Técnico e o Caçador de Recompensas o operam.</em></p><p><em>Construção: 1d10 horas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Ofensivo, NT 1. Feixe de laser que corta lentamente superfícies finas (portas, paredes). Como arma: ataque corpo a corpo, 1d4 de dano.\nAparato ofensivo: só o Técnico e o Caçador de Recompensas o operam.\nConstrução: 1d10 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "40 CR",
     "weight_in_load": 1,

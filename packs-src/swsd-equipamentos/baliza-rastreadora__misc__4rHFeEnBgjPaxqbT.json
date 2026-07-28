@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/misc.svg",
   "system": {
     "odo_id": "baliza-rastreadora",
-    "description": "<p><strong>Utilitário, NT 2.</strong> Transmissor acoplável a qualquer superfície; transmite a localização em tempo real para um comunicador de vídeo. Só funciona se o alvo estiver <strong>no mesmo planeta</strong> (ou a distância similar no espaço).</p><p><em>Aparato <strong>utilitário</strong>: qualquer um pode operar.</em></p><p><em>Construção: 1d4 horas. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>",
+    "description": "Utilitário, NT 2. Transmissor acoplável a qualquer superfície; transmite a localização em tempo real para um comunicador de vídeo. Só funciona se o alvo estiver no mesmo planeta (ou a distância similar no espaço).\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d4 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "60 CR",
     "weight_in_load": 0,
