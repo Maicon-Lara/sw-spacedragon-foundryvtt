@@ -64,6 +64,17 @@ em volta do conteúdo das páginas.
 > módulo precisa ser adicionada lá** — senão o arquivo existe no repositório e
 > nunca chega ao servidor.
 
+## Capas dos compêndios
+
+```sh
+python tools/make-banners.py
+```
+
+Gera os seis PNGs em `sw-spacedragon-module/assets/banners/`. **PNG, não SVG:**
+o navegador de compêndios do Foundry não exibiu as capas em SVG (o próprio OD2
+usa `.webp` nas dele). O campo de estrelas usa semente fixa — sem isso cada
+execução produziria um arquivo diferente e sujaria o diff sem motivo.
+
 ## Build
 
 ```sh
