@@ -1,28 +1,28 @@
 /**
  * Star Wars — Space Dragon (OD2)
  *
- * O módulo é de conteúdo; este script existe por um motivo só: marcar as
- * janelas de ficha com a classe `swsd-tema`, que é o gancho do CSS do tema.
+ * O módulo é de conteúdo; este script existe por um motivo só: ligar e
+ * desligar o tema visual das fichas.
  *
- * Por que não estilizar `.olddragon2e.sheet.character` direto: isso repintaria
- * a ficha de qualquer mundo que instale o módulo, sem pedir licença. Com a
- * classe e a opção abaixo, quem não quiser o tema desliga e o sistema volta a
- * ficar exatamente como era.
+ * A marca é uma classe no <body>, não uma classe por janela. A primeira
+ * versão usava `Hooks.on("renderActorSheet")` para marcar cada ficha, e o
+ * gancho nunca disparou: o Foundry monta o nome do gancho a partir do nome
+ * interno da classe, e a ficha do OD2 herda da camada de compatibilidade
+ * (`foundry.appv1.sheets.ActorSheet`), cujo nome interno não é garantido.
+ * Uma classe no <body> não depende de gancho de render nenhum — vale para
+ * ficha de personagem, de item, de monstro e para o que o sistema criar
+ * depois.
+ *
+ * Por que não estilizar `.olddragon2e.sheet` direto: isso repintaria a ficha
+ * de qualquer mundo que instale o módulo, sem pedir licença. Com a opção
+ * abaixo, quem não quiser desliga e o sistema volta a ser o que era.
  */
 
 const ID = "sw-spacedragon";
 const CLASSE = "swsd-tema";
 
-/** Elemento raiz da janela, seja AppV1 (jQuery) ou AppV2 (HTMLElement). */
-function raiz(app) {
-  const el = app?.element;
-  if (!el) return null;
-  return el instanceof HTMLElement ? el : el[0] ?? null;
-}
-
-function aplicar(app) {
-  if (!game.settings.get(ID, "tema")) return;
-  raiz(app)?.classList.add(CLASSE);
+function aplicarTema(ligado) {
+  document.body.classList.toggle(CLASSE, !!ligado);
 }
 
 Hooks.once("init", () => {
@@ -35,15 +35,20 @@ Hooks.once("init", () => {
     config: true,
     type: Boolean,
     default: true,
-    onChange: (ligado) => {
-      // Aplica na hora, sem exigir recarregar o mundo.
-      for (const app of Object.values(ui.windows)) {
-        const el = raiz(app);
-        if (el?.classList.contains("olddragon2e")) el.classList.toggle(CLASSE, ligado);
-      }
-    },
+    onChange: aplicarTema, // sem recarregar: a classe sai e o sistema volta
   });
 });
 
-Hooks.on("renderActorSheet", aplicar);
-Hooks.on("renderItemSheet", aplicar);
+Hooks.once("ready", () => {
+  aplicarTema(game.settings.get(ID, "tema"));
+
+  // Diagnóstico de uma linha: se o tema não aparecer, é esta linha que diz
+  // onde parou, sem precisar colar nada no console.
+  const cssCarregado = [...document.styleSheets].some((s) =>
+    (s.href ?? "").includes("sw-spacedragon")
+  );
+  console.log(
+    `${ID} | tema=${game.settings.get(ID, "tema")} ` +
+      `css=${cssCarregado} body=${document.body.classList.contains(CLASSE)}`
+  );
+});

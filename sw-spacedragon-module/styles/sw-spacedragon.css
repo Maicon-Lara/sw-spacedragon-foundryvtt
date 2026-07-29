@@ -109,8 +109,10 @@
 /* ══════════════════════════════════════════════════════════════════════════
  * Tema "Holocron" para as fichas do Old Dragon 2
  *
- * Escopado em `.swsd-tema`, classe que module/sw-spacedragon.js põe na janela
- * quando a opção do módulo está ligada — sem ela, o sistema fica intacto.
+ * Escopado em `body.swsd-tema`, classe que module/sw-spacedragon.js põe no
+ * <body> quando a opção do módulo está ligada — sem ela, o sistema fica
+ * intacto. A marca é no <body> e não por janela porque gancho de render de
+ * ficha AppV1 não tem nome garantido no v13.
  *
  * `!important` aqui não é preguiça: o sistema pinta as barras em seletores
  * profundos como
@@ -123,7 +125,7 @@
  * por um cinza-azulado. Contraste de texto continua o do sistema.
  * ══════════════════════════════════════════════════════════════════════════ */
 
-.swsd-tema.olddragon2e.sheet {
+body.swsd-tema .olddragon2e.sheet {
   --swsd-barra: #2f5c8a;
   --swsd-barra-escura: #1b3a5c;
   --swsd-acento: #24557f;
@@ -134,54 +136,54 @@
 
 /* ── Barras de seção e cabeçalhos de lista ─────────────────────────────── */
 
-.swsd-tema.olddragon2e.sheet .list,
-.swsd-tema.olddragon2e.sheet .tab-title,
-.swsd-tema.olddragon2e.sheet .ability-level {
+body.swsd-tema .olddragon2e.sheet .list,
+body.swsd-tema .olddragon2e.sheet .tab-title,
+body.swsd-tema .olddragon2e.sheet .ability-level {
   background-color: var(--swsd-barra) !important;
 }
 
 /* ── Texto de acento (era carmesim) ────────────────────────────────────── */
 
-.swsd-tema.olddragon2e.sheet .tabs .item.active,
-.swsd-tema.olddragon2e.sheet .class-ability-tabs .item.active,
-.swsd-tema.olddragon2e.sheet a:hover,
-.swsd-tema.olddragon2e.sheet a.item:hover,
-.swsd-tema.olddragon2e.sheet .border-button:hover,
-.swsd-tema.olddragon2e.sheet .overview,
-.swsd-tema.olddragon2e.sheet .sheet-container h1,
-.swsd-tema.olddragon2e.sheet .sheet-container h2,
-.swsd-tema.olddragon2e.sheet .sheet-container h3,
-.swsd-tema.olddragon2e.sheet .sheet-container h4,
-.swsd-tema.olddragon2e.sheet .sheet-container h5,
-.swsd-tema.olddragon2e.sheet li span.diamond,
-.swsd-tema.olddragon2e.sheet li span.ability-on-level {
+body.swsd-tema .olddragon2e.sheet .tabs .item.active,
+body.swsd-tema .olddragon2e.sheet .class-ability-tabs .item.active,
+body.swsd-tema .olddragon2e.sheet a:hover,
+body.swsd-tema .olddragon2e.sheet a.item:hover,
+body.swsd-tema .olddragon2e.sheet .border-button:hover,
+body.swsd-tema .olddragon2e.sheet .overview,
+body.swsd-tema .olddragon2e.sheet .sheet-container h1,
+body.swsd-tema .olddragon2e.sheet .sheet-container h2,
+body.swsd-tema .olddragon2e.sheet .sheet-container h3,
+body.swsd-tema .olddragon2e.sheet .sheet-container h4,
+body.swsd-tema .olddragon2e.sheet .sheet-container h5,
+body.swsd-tema .olddragon2e.sheet li span.diamond,
+body.swsd-tema .olddragon2e.sheet li span.ability-on-level {
   color: var(--swsd-acento) !important;
 }
 
 /* A barra já tem fundo azul: o texto dentro dela continua claro. */
-.swsd-tema.olddragon2e.sheet .list,
-.swsd-tema.olddragon2e.sheet .list a,
-.swsd-tema.olddragon2e.sheet .tab-title {
+body.swsd-tema .olddragon2e.sheet .list,
+body.swsd-tema .olddragon2e.sheet .list a,
+body.swsd-tema .olddragon2e.sheet .tab-title {
   color: #f2f6fa !important;
 }
 
-.swsd-tema.olddragon2e.sheet .border-button:hover {
+body.swsd-tema .olddragon2e.sheet .border-button:hover {
   border-color: var(--swsd-acento) !important;
 }
 
 /* ── Painéis (eram creme) ──────────────────────────────────────────────── */
 
-.swsd-tema.olddragon2e.sheet .sidebar {
+body.swsd-tema .olddragon2e.sheet .sidebar {
   background-color: var(--swsd-painel) !important;
 }
 
-.swsd-tema.olddragon2e.sheet .stat-modifier {
+body.swsd-tema .olddragon2e.sheet .stat-modifier {
   background-color: var(--swsd-painel-fundo) !important;
 }
 
 /* ── Aba ativa ─────────────────────────────────────────────────────────── */
 
-.swsd-tema.olddragon2e.sheet .tabs .item.active {
+body.swsd-tema .olddragon2e.sheet .tabs .item.active {
   text-decoration-color: var(--swsd-ouro) !important;
   text-decoration-thickness: 2px;
 }
@@ -204,21 +206,21 @@
  * lado e que a próxima habilidade suba para a direita de um selo.
  */
 
-.swsd-tema.olddragon2e.sheet li span.ability-on-level {
+body.swsd-tema .olddragon2e.sheet li span.ability-on-level {
   float: left;
   clear: left;
   margin: 0.2rem 0.45rem 0.2rem 0;
 }
 
-.swsd-tema.olddragon2e.sheet li .ability,
-.swsd-tema.olddragon2e.sheet li .rogue-talent-points,
-.swsd-tema.olddragon2e.sheet li .daily-uses {
+body.swsd-tema .olddragon2e.sheet li .ability,
+body.swsd-tema .olddragon2e.sheet li .rogue-talent-points,
+body.swsd-tema .olddragon2e.sheet li .daily-uses {
   clear: both;
 }
 
 /* Evolução recuada e com fio à esquerda: deixa claro, de relance, que aquele
    parágrafo pertence à habilidade acima e não é uma entrada nova. */
-.swsd-tema.olddragon2e.sheet li span.ability-on-level ~ p {
+body.swsd-tema .olddragon2e.sheet li span.ability-on-level ~ p {
   padding-left: 0.3rem;
   border-left: 2px solid rgba(47, 92, 138, 0.25);
 }
