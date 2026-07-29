@@ -1,11 +1,11 @@
 {
-  "name": "Poderes da Força — Luz",
+  "name": "3ª Grandeza",
   "sorting": "m",
-  "folder": null,
+  "folder": "isXRSHm4LlxBLJKH",
   "type": "Item",
-  "_id": "4vey1yLAAENwdrjT",
+  "_id": "nkSxe9EoHMBVLJsk",
   "description": "",
-  "sort": 0,
+  "sort": 300000,
   "color": null,
   "flags": {},
   "_stats": {
@@ -18,5 +18,5 @@
     "modifiedTime": 0,
     "lastModifiedBy": "swspacedragonbld"
   },
-  "_key": "!folders!4vey1yLAAENwdrjT"
+  "_key": "!folders!nkSxe9EoHMBVLJsk"
 }

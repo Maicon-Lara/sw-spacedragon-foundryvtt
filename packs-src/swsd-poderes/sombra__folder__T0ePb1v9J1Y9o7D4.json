@@ -1,11 +1,11 @@
 {
-  "name": "1ª Grandeza",
+  "name": "Sombra",
   "sorting": "m",
-  "folder": "lhf3leSPQSjfq3yK",
+  "folder": null,
   "type": "Item",
-  "_id": "adgr314PsUCFYOIs",
+  "_id": "T0ePb1v9J1Y9o7D4",
   "description": "",
-  "sort": 100000,
+  "sort": 0,
   "color": null,
   "flags": {},
   "_stats": {
@@ -18,5 +18,5 @@
     "modifiedTime": 0,
     "lastModifiedBy": "swspacedragonbld"
   },
-  "_key": "!folders!adgr314PsUCFYOIs"
+  "_key": "!folders!T0ePb1v9J1Y9o7D4"
 }

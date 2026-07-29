@@ -26,7 +26,7 @@ const g = (n) => `<p><strong>Grandeza:</strong> ${n}ª</p>`;
 
 export const listasDePoder = [
   {
-    folder: "Poderes da Força — Universal",
+    folder: "Universal",
     school: "arcane",
     poderes: [
       {
@@ -220,7 +220,7 @@ export const listasDePoder = [
     ],
   },
   {
-    folder: "Poderes da Força — Luz",
+    folder: "Luz",
     school: "divine",
     poderes: [
       {
@@ -416,7 +416,7 @@ export const listasDePoder = [
     ],
   },
   {
-    folder: "Poderes da Força — Sombra",
+    folder: "Sombra",
     school: "necromancer",
     poderes: [
       {

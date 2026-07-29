@@ -1,11 +1,11 @@
 {
-  "name": "Poderes da Força — Sombra",
+  "name": "5ª Grandeza",
   "sorting": "m",
-  "folder": null,
+  "folder": "T0ePb1v9J1Y9o7D4",
   "type": "Item",
-  "_id": "lhf3leSPQSjfq3yK",
+  "_id": "xMLTCLYjxbngUyMP",
   "description": "",
-  "sort": 0,
+  "sort": 500000,
   "color": null,
   "flags": {},
   "_stats": {
@@ -18,5 +18,5 @@
     "modifiedTime": 0,
     "lastModifiedBy": "swspacedragonbld"
   },
-  "_key": "!folders!lhf3leSPQSjfq3yK"
+  "_key": "!folders!xMLTCLYjxbngUyMP"
 }

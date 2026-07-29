@@ -1,11 +1,11 @@
 {
-  "name": "2ª Grandeza",
+  "name": "1ª Grandeza",
   "sorting": "m",
-  "folder": "4vey1yLAAENwdrjT",
+  "folder": "T0ePb1v9J1Y9o7D4",
   "type": "Item",
-  "_id": "OlyK0QhmubYy9HT8",
+  "_id": "A5lmmawcT0NdVYlL",
   "description": "",
-  "sort": 200000,
+  "sort": 100000,
   "color": null,
   "flags": {},
   "_stats": {
@@ -18,5 +18,5 @@
     "modifiedTime": 0,
     "lastModifiedBy": "swspacedragonbld"
   },
-  "_key": "!folders!OlyK0QhmubYy9HT8"
+  "_key": "!folders!A5lmmawcT0NdVYlL"
 }
