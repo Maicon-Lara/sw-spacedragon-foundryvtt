@@ -13,6 +13,13 @@
   "styles": [
     "styles/sw-spacedragon.css"
   ],
+  "languages": [
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    }
+  ],
   "authors": [
     {
       "name": "Maicon Lara"

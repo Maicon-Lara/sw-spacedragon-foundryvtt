@@ -252,3 +252,19 @@ body.swsd-tema .olddragon2e.sheet li span.ability-on-level ~ p {
   border-left-color: rgba(91, 131, 171, 0.45);
   color: #2b3d4f;
 }
+
+/* ── Moeda: só Crédito ─────────────────────────────────────────────────────
+ *
+ * A galáxia usa uma moeda só. O arquivo de idioma do módulo renomeia PO para
+ * CR (Crédito); Prata e Cobre não têm equivalente e ficariam como caixas
+ * mudas na ficha, então saem daqui — a régua de preços do compêndio é toda em
+ * Créditos.
+ *
+ * Some da tela, mas o dado continua no ator: desligar o tema traz as duas
+ * caixas de volta com o valor intacto.
+ */
+
+body.swsd-tema .olddragon2e.sheet .economy .currency .sp,
+body.swsd-tema .olddragon2e.sheet .economy .currency .cp {
+  display: none;
+}
