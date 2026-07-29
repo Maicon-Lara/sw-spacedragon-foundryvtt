@@ -1,0 +1,22 @@
+{
+  "name": "1ª Grandeza",
+  "sorting": "m",
+  "folder": "4vey1yLAAENwdrjT",
+  "type": "Item",
+  "_id": "HkyyhZI4Ee6ZSF2h",
+  "description": "",
+  "sort": 100000,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld"
+  },
+  "_key": "!folders!HkyyhZI4Ee6ZSF2h"
+}

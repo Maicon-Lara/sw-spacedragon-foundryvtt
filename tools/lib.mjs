@@ -129,21 +129,94 @@ export function stats() {
 }
 
 // Pasta (folder) que agrupa, dentro de um pack, uma classe/raça com suas habilidades.
-export function folderDoc(name, contentType /* "Item" */, seedPrefix) {
+export function folderDoc(name, contentType /* "Item" */, seedPrefix, opts = {}) {
   const id = makeId(`folder:${seedPrefix}:${name}`);
   return {
     name,
     sorting: "m",
-    folder: null,
+    folder: opts.parentId ?? null,
     type: contentType,
     _id: id,
     description: "",
-    sort: 0,
-    color: null,
+    sort: opts.sort ?? 0,
+    color: opts.color ?? null,
     flags: {},
     _stats: { ...stats(), exportSource: undefined },
     _key: `!folders!${id}`,
   };
+}
+
+// Transforma a hierarquia que hoje só existe no NOME da pasta em hierarquia de
+// verdade. O projeto já nomeia por convenção — "Operativo — Assassino",
+// "Sensível à Força — Guardião (Ataru)" —, então a própria convenção vira a
+// regra: se existe uma pasta com o nome do prefixo, a pasta vira filha dela e
+// fica só com o sufixo no rótulo.
+//
+// Duas formas de prefixo, aplicadas em laço até estabilizar (para encadear
+// Sensível à Força > Guardião > Ataru):
+//   "Pai — Filho"   (travessão)
+//   "Pai (Filho)"   (parêntese, usado pelas Formas de Sabre)
+//
+// O _id continua derivado do nome COMPLETO original, então renomear aqui não
+// muda ID nenhum: referências por UUID seguem válidas.
+export function aninhaPastas(docs) {
+  const pastas = docs.filter((d) => d._key?.startsWith("!folders!"));
+  const porId = new Map(pastas.map((f) => [f._id, f]));
+
+  // Nome curto -> pasta. Só registra o primeiro: nomes repetidos (várias
+  // "Senda Mandaloriana", uma por classe) não devem virar pai de ninguém.
+  const porNome = new Map();
+  const ambiguos = new Set();
+  const registra = (nome, pasta) => {
+    if (ambiguos.has(nome)) return;
+    if (porNome.has(nome) && porNome.get(nome) !== pasta) {
+      porNome.delete(nome);
+      ambiguos.add(nome);
+      return;
+    }
+    porNome.set(nome, pasta);
+  };
+  for (const f of pastas) registra(f.name, f);
+
+  // Evita ciclo: um pai não pode ser descendente do próprio filho.
+  const ehDescendente = (possivel, ancestral) => {
+    let atual = possivel;
+    while (atual?.folder) {
+      if (atual.folder === ancestral._id) return true;
+      atual = porId.get(atual.folder);
+    }
+    return false;
+  };
+
+  let mudou = true;
+  while (mudou) {
+    mudou = false;
+    for (const pasta of pastas) {
+      const travessao = pasta.name.lastIndexOf(" — ");
+      const parenteses = pasta.name.match(/^(.+) \(([^)]+)\)$/);
+
+      let pai = null;
+      let rotulo = null;
+      if (travessao > 0) {
+        pai = porNome.get(pasta.name.slice(0, travessao)) ?? null;
+        if (pai) rotulo = pasta.name.slice(travessao + 3);
+      }
+      if (!pai && parenteses) {
+        pai = porNome.get(parenteses[1]) ?? null;
+        if (pai) rotulo = parenteses[2];
+      }
+
+      if (!pai || pai === pasta) continue;
+      if (pasta.folder === pai._id && pasta.name === rotulo) continue;
+      if (ehDescendente(pai, pasta)) continue;
+
+      pasta.folder = pai._id;
+      pasta.name = rotulo;
+      registra(rotulo, pasta); // permite descer mais um nível na volta do laço
+      mudou = true;
+    }
+  }
+  return docs;
 }
 
 // daily_uses por nível (1..15). Se a habilidade tem `usos_dia`, aplica esse

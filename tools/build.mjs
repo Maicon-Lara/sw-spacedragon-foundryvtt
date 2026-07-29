@@ -10,7 +10,7 @@ import { fileURLToPath } from "node:url";
 import { compilePack } from "@foundryvtt/foundryvtt-cli";
 
 import {
-  folderDoc, classDoc, classAbilityDoc, raceDoc, raceAbilityDoc,
+  folderDoc, aninhaPastas, classDoc, classAbilityDoc, raceDoc, raceAbilityDoc,
   weaponDoc, armorDoc, miscDoc, spellDoc, journalDoc, itemUuid, writeSource,
 } from "./lib.mjs";
 import { monsterDoc } from "./lib-actors.mjs";
@@ -113,11 +113,30 @@ function buildEquipamentosDocs() {
 function buildPoderesDocs() {
   const docs = [];
   for (const lista of listasDePoder) {
-    const folder = folderDoc(lista.folder, "Item", "poderes");
-    docs.push(folder);
-    lista.poderes.forEach((p, i) => {
-      docs.push(spellDoc({ ...p, school: lista.school }, folder._id, lista.school, (i + 1) * 100000));
-    });
+    const vertente = folderDoc(lista.folder, "Item", "poderes");
+    docs.push(vertente);
+
+    // Dentro da vertente, uma subpasta por Grandeza. `circle` é a Grandeza:
+    // as de 1ª a 5ª viram spell (as de 6ª a 10ª vivem no journal).
+    const porGrandeza = new Map();
+    for (const p of lista.poderes) {
+      const g = p.circle ?? 1;
+      if (!porGrandeza.has(g)) porGrandeza.set(g, []);
+      porGrandeza.get(g).push(p);
+    }
+
+    for (const g of [...porGrandeza.keys()].sort((a, b) => a - b)) {
+      // A seed inclui a vertente: sem isso, a "1ª Grandeza" da Luz e a da
+      // Sombra gerariam o mesmo _id e uma sobrescreveria a outra.
+      const sub = folderDoc(`${g}ª Grandeza`, "Item", `poderes:${lista.folder}`, {
+        parentId: vertente._id,
+        sort: g * 100000,
+      });
+      docs.push(sub);
+      porGrandeza.get(g).forEach((p, i) => {
+        docs.push(spellDoc({ ...p, school: lista.school }, sub._id, lista.school, (i + 1) * 100000));
+      });
+    }
   }
   return docs;
 }
@@ -145,7 +164,9 @@ function buildJournalDocs() {
 async function compile(packName, docs) {
   const srcDir = path.join(SRC, packName);
   const outDir = path.join(OUT, packName);
-  const n = writeSource(srcDir, docs);
+  // Converte a hierarquia dos NOMES ("Operativo — Assassino") em pastas
+  // aninhadas de verdade. Vale para todos os packs, por isso mora aqui.
+  const n = writeSource(srcDir, aninhaPastas(docs));
   fs.rmSync(outDir, { recursive: true, force: true });
   fs.mkdirSync(outDir, { recursive: true });
   await compilePack(srcDir, outDir, { log: false });

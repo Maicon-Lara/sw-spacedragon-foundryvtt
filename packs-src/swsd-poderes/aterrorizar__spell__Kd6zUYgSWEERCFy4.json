@@ -1,5 +1,5 @@
 {
-  "folder": "lhf3leSPQSjfq3yK",
+  "folder": "vGz8AA2ohrkGF3mH",
   "name": "Aterrorizar",
   "type": "spell",
   "_id": "Kd6zUYgSWEERCFy4",
@@ -31,7 +31,7 @@
     "lastModifiedBy": "swspacedragonbld",
     "exportSource": null
   },
-  "sort": 300000,
+  "sort": 100000,
   "ownership": {
     "default": 0
   },
