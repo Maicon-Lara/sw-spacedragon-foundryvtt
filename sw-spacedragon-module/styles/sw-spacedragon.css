@@ -1,17 +1,43 @@
 /* Star Wars — Space Dragon (OD2)
  *
- * Tudo aqui é escopado em `.swsd-doc`, o container que journalDoc() coloca em
- * volta do conteúdo das páginas deste módulo. Sem esse escopo, estilizar
- * tabela e título vazaria para os journals do sistema e de outros módulos —
- * um módulo de conteúdo não tem o direito de repintar a interface alheia.
+ * Duas camadas, com escopos diferentes e de propósito:
+ *
+ *   .swsd-doc      conteúdo dos journals deste módulo (container posto por
+ *                  journalDoc()). Sem esse escopo, estilizar tabela e título
+ *                  vazaria para os journals do sistema e de outros módulos.
+ *
+ *   body.swsd-tema tema visual das fichas do OD2. A classe entra no <body>
+ *                  quando a opção "Tema Star Wars nas fichas" está ligada;
+ *                  desligou, o sistema volta a ser exatamente o que era.
+ *
+ * TODA cor do módulo mora no bloco abaixo. Para mudar o tema, edite só aqui —
+ * nenhuma regra daqui para baixo carrega valor de cor solto.
  */
 
-.swsd-doc {
-  --swsd-azul: #1b3a5c; /* mesmo tom já usado no packFolders do module.json */
-  --swsd-azul-claro: #2f5c8a;
+:root {
+  /* Azuis, do mais escuro ao mais claro */
+  --swsd-azul-noite: #1b3a5c;  /* títulos e cabeçalho de tabela nos journals   */
+  --swsd-azul-escuro: #24557f; /* texto de acento na ficha: aba ativa, títulos */
+  --swsd-azul: #2f5c8a;        /* barras de seção e cabeçalhos de lista        */
+  --swsd-azul-claro: #5b83ab;  /* selo de upgrade por nível (3, 6, 10)         */
+
+  /* Superfícies claras */
+  --swsd-fundo: #f4f7fa;         /* área da ficha       */
+  --swsd-painel: #e7ecf2;        /* barra lateral       */
+  --swsd-painel-fundo: #dfe6ef;  /* caixas de modificador */
+
+  /* Texto */
+  --swsd-texto-claro: #f2f6fa;     /* sobre barra azul            */
+  --swsd-texto-evolucao: #2b3d4f;  /* corpo das evoluções         */
+
+  /* Destaque */
   --swsd-ouro: #b8862b;
+
+  /* Fios e fundos translúcidos, derivados dos azuis acima */
   --swsd-linha: rgba(27, 58, 92, 0.25);
   --swsd-zebra: rgba(27, 58, 92, 0.06);
+  --swsd-fio-evolucao: rgba(91, 131, 171, 0.45);
+  --swsd-aviso-fundo: rgba(184, 134, 43, 0.1);
 }
 
 /* ── Títulos ───────────────────────────────────────────────────────────── */
@@ -19,15 +45,15 @@
 .swsd-doc h2 {
   margin: 1.4em 0 0.5em;
   padding-bottom: 0.2em;
-  border-bottom: 2px solid var(--swsd-azul);
-  color: var(--swsd-azul);
+  border-bottom: 2px solid var(--swsd-azul-noite);
+  color: var(--swsd-azul-noite);
   font-variant: small-caps;
   letter-spacing: 0.02em;
 }
 
 .swsd-doc h3 {
   margin: 1.1em 0 0.4em;
-  color: var(--swsd-azul-claro);
+  color: var(--swsd-azul);
 }
 
 /* ── Tabelas ───────────────────────────────────────────────────────────── */
@@ -40,8 +66,8 @@
 }
 
 .swsd-doc thead th {
-  background: var(--swsd-azul);
-  color: #eef4fa;
+  background: var(--swsd-azul-noite);
+  color: var(--swsd-texto-claro);
   text-align: left;
   font-variant: small-caps;
   letter-spacing: 0.03em;
@@ -77,7 +103,7 @@
   margin: 0.8em 0;
   padding: 0.6em 0.8em;
   border-left: 4px solid var(--swsd-ouro);
-  background: rgba(184, 134, 43, 0.1);
+  background: var(--swsd-aviso-fundo);
   border-radius: 0 3px 3px 0;
 }
 
@@ -125,21 +151,12 @@
  * por um cinza-azulado. Contraste de texto continua o do sistema.
  * ══════════════════════════════════════════════════════════════════════════ */
 
-body.swsd-tema .olddragon2e.sheet {
-  --swsd-barra: #2f5c8a;
-  --swsd-barra-escura: #1b3a5c;
-  --swsd-acento: #24557f;
-  --swsd-painel: #e7ecf2;
-  --swsd-painel-fundo: #dfe6ef;
-  --swsd-ouro: #b8862b;
-}
-
 /* ── Barras de seção e cabeçalhos de lista ─────────────────────────────── */
 
 body.swsd-tema .olddragon2e.sheet .list,
 body.swsd-tema .olddragon2e.sheet .tab-title,
 body.swsd-tema .olddragon2e.sheet .ability-level {
-  background-color: var(--swsd-barra) !important;
+  background-color: var(--swsd-azul) !important;
 }
 
 /* ── Texto de acento (era carmesim) ────────────────────────────────────── */
@@ -157,18 +174,18 @@ body.swsd-tema .olddragon2e.sheet .sheet-container h4,
 body.swsd-tema .olddragon2e.sheet .sheet-container h5,
 body.swsd-tema .olddragon2e.sheet li span.diamond,
 body.swsd-tema .olddragon2e.sheet li span.ability-on-level {
-  color: var(--swsd-acento) !important;
+  color: var(--swsd-azul-escuro) !important;
 }
 
 /* A barra já tem fundo azul: o texto dentro dela continua claro. */
 body.swsd-tema .olddragon2e.sheet .list,
 body.swsd-tema .olddragon2e.sheet .list a,
 body.swsd-tema .olddragon2e.sheet .tab-title {
-  color: #f2f6fa !important;
+  color: var(--swsd-texto-claro) !important;
 }
 
 body.swsd-tema .olddragon2e.sheet .border-button:hover {
-  border-color: var(--swsd-acento) !important;
+  border-color: var(--swsd-azul-escuro) !important;
 }
 
 /* ── Painéis (eram creme) ──────────────────────────────────────────────── */
@@ -222,7 +239,7 @@ body.swsd-tema .olddragon2e.sheet li .daily-uses {
    parágrafo pertence à habilidade acima e não é uma entrada nova. */
 body.swsd-tema .olddragon2e.sheet li span.ability-on-level ~ p {
   padding-left: 0.3rem;
-  border-left: 2px solid rgba(47, 92, 138, 0.25);
+  border-left: 2px solid var(--swsd-fio-evolucao);
 }
 
 /* ── Fundo da ficha e selo de upgrade ──────────────────────────────────────
@@ -238,19 +255,19 @@ body.swsd-tema .olddragon2e.sheet li span.ability-on-level ~ p {
  */
 
 body.swsd-tema .olddragon2e.sheet .window-content {
-  background: #f4f7fa !important;
+  background: var(--swsd-fundo) !important;
 }
 
 body.swsd-tema .olddragon2e.sheet li span.ability-on-level {
-  background-color: #5b83ab !important;
-  color: #ffffff !important;
+  background-color: var(--swsd-azul-claro) !important;
+  color: var(--swsd-texto-claro) !important;
 }
 
 /* O texto da evolução acompanha o selo, um tom abaixo do corpo do texto:
    distingue upgrade de regra-base sem perder legibilidade. */
 body.swsd-tema .olddragon2e.sheet li span.ability-on-level ~ p {
-  border-left-color: rgba(91, 131, 171, 0.45);
-  color: #2b3d4f;
+  border-left-color: var(--swsd-fio-evolucao);
+  color: var(--swsd-texto-evolucao);
 }
 
 /* ── Moeda: só Crédito ─────────────────────────────────────────────────────
