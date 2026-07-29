@@ -185,3 +185,40 @@
   text-decoration-color: var(--swsd-ouro) !important;
   text-decoration-thickness: 2px;
 }
+
+/* ── Selo de evolução por nível ────────────────────────────────────────────
+ *
+ * O OD2 emite o selo como <span> inline entre dois <p>:
+ *
+ *   <p>descrição…</p>
+ *   <span class="ability-on-level">3</span>
+ *   <p>A chance aumenta…</p>
+ *
+ * Dois blocos em volta de um inline deixam o selo sozinho numa linha, e o
+ * texto da evolução cai embaixo — parece uma habilidade nova, não a evolução
+ * da anterior. Acontece igual com o conteúdo oficial do sistema.
+ *
+ * `float` resolve sem tocar na marcação: o selo sai do fluxo e o parágrafo
+ * seguinte se enrola ao lado dele, do mesmo jeito que o selo de nível fica ao
+ * lado do nome da habilidade. `clear` impede que dois selos se alinhem lado a
+ * lado e que a próxima habilidade suba para a direita de um selo.
+ */
+
+.swsd-tema.olddragon2e.sheet li span.ability-on-level {
+  float: left;
+  clear: left;
+  margin: 0.2rem 0.45rem 0.2rem 0;
+}
+
+.swsd-tema.olddragon2e.sheet li .ability,
+.swsd-tema.olddragon2e.sheet li .rogue-talent-points,
+.swsd-tema.olddragon2e.sheet li .daily-uses {
+  clear: both;
+}
+
+/* Evolução recuada e com fio à esquerda: deixa claro, de relance, que aquele
+   parágrafo pertence à habilidade acima e não é uma entrada nova. */
+.swsd-tema.olddragon2e.sheet li span.ability-on-level ~ p {
+  padding-left: 0.3rem;
+  border-left: 2px solid rgba(47, 92, 138, 0.25);
+}
