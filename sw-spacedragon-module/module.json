@@ -50,7 +50,7 @@
       "path": "packs/swsd-especies",
       "type": "Item",
       "system": "olddragon2e",
-      "banner": "modules/sw-spacedragon/assets/banners/especies.png"
+      "banner": "modules/sw-spacedragon/assets/banners/especies.svg"
     },
     {
       "name": "swsd-classes",
@@ -58,7 +58,7 @@
       "path": "packs/swsd-classes",
       "type": "Item",
       "system": "olddragon2e",
-      "banner": "modules/sw-spacedragon/assets/banners/classes.png"
+      "banner": "modules/sw-spacedragon/assets/banners/classes.svg"
     },
     {
       "name": "swsd-equipamentos",
@@ -66,7 +66,7 @@
       "path": "packs/swsd-equipamentos",
       "type": "Item",
       "system": "olddragon2e",
-      "banner": "modules/sw-spacedragon/assets/banners/equipamentos.png"
+      "banner": "modules/sw-spacedragon/assets/banners/equipamentos.svg"
     },
     {
       "name": "swsd-poderes",
@@ -74,7 +74,7 @@
       "path": "packs/swsd-poderes",
       "type": "Item",
       "system": "olddragon2e",
-      "banner": "modules/sw-spacedragon/assets/banners/poderes.png"
+      "banner": "modules/sw-spacedragon/assets/banners/poderes.svg"
     },
     {
       "name": "swsd-bestiario",
@@ -82,7 +82,7 @@
       "path": "packs/swsd-bestiario",
       "type": "Actor",
       "system": "olddragon2e",
-      "banner": "modules/sw-spacedragon/assets/banners/bestiario.png"
+      "banner": "modules/sw-spacedragon/assets/banners/bestiario.svg"
     },
     {
       "name": "swsd-journal",
@@ -90,7 +90,7 @@
       "path": "packs/swsd-journal",
       "type": "JournalEntry",
       "system": "olddragon2e",
-      "banner": "modules/sw-spacedragon/assets/banners/journal.png"
+      "banner": "modules/sw-spacedragon/assets/banners/journal.svg"
     }
   ],
   "packFolders": [
