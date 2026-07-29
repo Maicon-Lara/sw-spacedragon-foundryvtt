@@ -2,11 +2,14 @@
   "id": "sw-spacedragon",
   "title": "Star Wars — Space Dragon (OD2)",
   "description": "Módulo de conteúdo da adaptação de Star Wars para Old Dragon 2 com o suplemento sci-fi Estrela Dracônica / Space Dragon. Espécies, classes e material de cenário. Obra de fã, não oficial e sem fins lucrativos.",
-  "version": "0.7.8",
+  "version": "0.7.9",
   "compatibility": {
     "minimum": "13",
     "verified": "14"
   },
+  "styles": [
+    "styles/sw-spacedragon.css"
+  ],
   "authors": [
     {
       "name": "Maicon Lara"
@@ -31,42 +34,48 @@
       "label": "Star Wars: Espécies",
       "path": "packs/swsd-especies",
       "type": "Item",
-      "system": "olddragon2e"
+      "system": "olddragon2e",
+      "banner": "modules/sw-spacedragon/assets/banners/especies.svg"
     },
     {
       "name": "swsd-classes",
       "label": "Star Wars: Classes",
       "path": "packs/swsd-classes",
       "type": "Item",
-      "system": "olddragon2e"
+      "system": "olddragon2e",
+      "banner": "modules/sw-spacedragon/assets/banners/classes.svg"
     },
     {
       "name": "swsd-equipamentos",
       "label": "Star Wars: Equipamentos",
       "path": "packs/swsd-equipamentos",
       "type": "Item",
-      "system": "olddragon2e"
+      "system": "olddragon2e",
+      "banner": "modules/sw-spacedragon/assets/banners/equipamentos.svg"
     },
     {
       "name": "swsd-poderes",
       "label": "Star Wars: Poderes da Força",
       "path": "packs/swsd-poderes",
       "type": "Item",
-      "system": "olddragon2e"
+      "system": "olddragon2e",
+      "banner": "modules/sw-spacedragon/assets/banners/poderes.svg"
     },
     {
       "name": "swsd-bestiario",
       "label": "Star Wars: Bestiário",
       "path": "packs/swsd-bestiario",
       "type": "Actor",
-      "system": "olddragon2e"
+      "system": "olddragon2e",
+      "banner": "modules/sw-spacedragon/assets/banners/bestiario.svg"
     },
     {
       "name": "swsd-journal",
       "label": "Star Wars: Referência do Mestre",
       "path": "packs/swsd-journal",
       "type": "JournalEntry",
-      "system": "olddragon2e"
+      "system": "olddragon2e",
+      "banner": "modules/sw-spacedragon/assets/banners/journal.svg"
     }
   ],
   "packFolders": [

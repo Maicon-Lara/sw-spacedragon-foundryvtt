@@ -449,6 +449,14 @@ export function raceDoc(race, folderId, abilityUuids) {
 }
 
 // JournalEntry com páginas de texto (HTML).
+// Marca como callout os parágrafos que começam com o sinal de aviso.
+function destacaAvisos(html) {
+  return String(html).replace(
+    /<p>(\s*(?:&#9888;|⚠)\s*)/g,
+    '<p class="swsd-aviso">$1'
+  );
+}
+
 export function journalDoc(entry, sort) {
   const id = makeId(`journal:${entry.title}`);
   const pages = (entry.pages || [{ title: entry.title, content: entry.content }]).map(
@@ -461,7 +469,13 @@ export function journalDoc(entry, sort) {
         _id: pid,
         title: { show: true, level: 1 },
         image: {},
-        text: { format: 1, content: `<div class="odo-markdown">${p.content}</div>` },
+        // `swsd-doc` é o gancho de escopo do CSS do módulo: sem ele, estilizar
+        // tabela e título vazaria para os journals do sistema e de outros módulos.
+        // Parágrafos de aviso (⚠) viram callout — o marcador já estava no texto.
+        text: {
+          format: 1,
+          content: `<div class="odo-markdown swsd-doc">${destacaAvisos(p.content)}</div>`,
+        },
         video: { controls: true, volume: 0.5 },
         src: null,
         system: {},

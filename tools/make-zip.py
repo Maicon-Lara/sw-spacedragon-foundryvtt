@@ -16,7 +16,9 @@ SRC = os.path.join(ROOT, "sw-spacedragon-module")
 OUT = os.path.join(ROOT, "sw-spacedragon.zip")
 
 # Conteúdo do módulo, com os arquivos na raiz do zip (layout que o Foundry espera).
-ITEMS = ["module.json", "packs"]
+# `styles` e `assets` entram aqui: sem isso o CSS e as capas dos compêndios
+# existem no repositório mas nunca chegam ao servidor.
+ITEMS = ["module.json", "packs", "styles", "assets"]
 
 
 def main():
