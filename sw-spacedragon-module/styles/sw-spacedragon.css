@@ -105,3 +105,83 @@
   border-left: 2px solid var(--swsd-linha);
   opacity: 0.85;
 }
+
+/* ══════════════════════════════════════════════════════════════════════════
+ * Tema "Holocron" para as fichas do Old Dragon 2
+ *
+ * Escopado em `.swsd-tema`, classe que module/sw-spacedragon.js põe na janela
+ * quando a opção do módulo está ligada — sem ela, o sistema fica intacto.
+ *
+ * `!important` aqui não é preguiça: o sistema pinta as barras em seletores
+ * profundos como
+ *   .olddragon2e.sheet.character .character-tab-equipment .weapon .list
+ * (0,6,0 de especificidade). Igualar isso exigiria replicar a árvore inteira
+ * de cada aba, e qualquer refatoração do OD2 quebraria o tema em silêncio.
+ *
+ * A troca é conservadora de propósito: mantém o fundo claro da ficha e só
+ * substitui o carmesim (#d72240) por azul-aço e o creme (#ece9d5 / #e0ddca)
+ * por um cinza-azulado. Contraste de texto continua o do sistema.
+ * ══════════════════════════════════════════════════════════════════════════ */
+
+.swsd-tema.olddragon2e.sheet {
+  --swsd-barra: #2f5c8a;
+  --swsd-barra-escura: #1b3a5c;
+  --swsd-acento: #24557f;
+  --swsd-painel: #e7ecf2;
+  --swsd-painel-fundo: #dfe6ef;
+  --swsd-ouro: #b8862b;
+}
+
+/* ── Barras de seção e cabeçalhos de lista ─────────────────────────────── */
+
+.swsd-tema.olddragon2e.sheet .list,
+.swsd-tema.olddragon2e.sheet .tab-title,
+.swsd-tema.olddragon2e.sheet .ability-level {
+  background-color: var(--swsd-barra) !important;
+}
+
+/* ── Texto de acento (era carmesim) ────────────────────────────────────── */
+
+.swsd-tema.olddragon2e.sheet .tabs .item.active,
+.swsd-tema.olddragon2e.sheet .class-ability-tabs .item.active,
+.swsd-tema.olddragon2e.sheet a:hover,
+.swsd-tema.olddragon2e.sheet a.item:hover,
+.swsd-tema.olddragon2e.sheet .border-button:hover,
+.swsd-tema.olddragon2e.sheet .overview,
+.swsd-tema.olddragon2e.sheet .sheet-container h1,
+.swsd-tema.olddragon2e.sheet .sheet-container h2,
+.swsd-tema.olddragon2e.sheet .sheet-container h3,
+.swsd-tema.olddragon2e.sheet .sheet-container h4,
+.swsd-tema.olddragon2e.sheet .sheet-container h5,
+.swsd-tema.olddragon2e.sheet li span.diamond,
+.swsd-tema.olddragon2e.sheet li span.ability-on-level {
+  color: var(--swsd-acento) !important;
+}
+
+/* A barra já tem fundo azul: o texto dentro dela continua claro. */
+.swsd-tema.olddragon2e.sheet .list,
+.swsd-tema.olddragon2e.sheet .list a,
+.swsd-tema.olddragon2e.sheet .tab-title {
+  color: #f2f6fa !important;
+}
+
+.swsd-tema.olddragon2e.sheet .border-button:hover {
+  border-color: var(--swsd-acento) !important;
+}
+
+/* ── Painéis (eram creme) ──────────────────────────────────────────────── */
+
+.swsd-tema.olddragon2e.sheet .sidebar {
+  background-color: var(--swsd-painel) !important;
+}
+
+.swsd-tema.olddragon2e.sheet .stat-modifier {
+  background-color: var(--swsd-painel-fundo) !important;
+}
+
+/* ── Aba ativa ─────────────────────────────────────────────────────────── */
+
+.swsd-tema.olddragon2e.sheet .tabs .item.active {
+  text-decoration-color: var(--swsd-ouro) !important;
+  text-decoration-thickness: 2px;
+}

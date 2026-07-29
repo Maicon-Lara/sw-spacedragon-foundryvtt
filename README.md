@@ -48,6 +48,22 @@ são editados à mão.
 - **Ícones:** apenas os empacotados pelo próprio sistema OD2
   (`systems/olddragon2e/assets/...`), nunca ícones core de caminho incerto.
 
+## Aparência
+
+O módulo repinta as fichas do OD2 com uma paleta azul-aço ("Holocron"), mas só
+depois de marcar a janela com a classe `swsd-tema` — o que
+`sw-spacedragon-module/module/sw-spacedragon.js` faz, e a opção **Tema Star Wars
+nas fichas** (Configurações → Módulos) desliga. Estilizar
+`.olddragon2e.sheet.character` direto repintaria a ficha de qualquer mundo que
+instalasse o módulo, sem pedir licença.
+
+O CSS dos journals é escopado em `.swsd-doc`, container que `journalDoc()` põe
+em volta do conteúdo das páginas.
+
+> `tools/make-zip.py` tem a lista `ITEMS` do que vai no pacote. **Pasta nova no
+> módulo precisa ser adicionada lá** — senão o arquivo existe no repositório e
+> nunca chega ao servidor.
+
 ## Build
 
 ```sh
