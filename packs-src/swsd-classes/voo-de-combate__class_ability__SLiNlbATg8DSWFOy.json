@@ -3,7 +3,7 @@
   "name": "Voo de Combate",
   "type": "class_ability",
   "_id": "SLiNlbATg8DSWFOy",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/melee.svg",
   "system": {
     "description": "<p>Usa a Mochila de Propulsão em combate: o primeiro golpe da rodada vindo de cima é <strong>Fácil</strong>, ou você se reposiciona verticalmente sem gastar movimento extra.</p>",
     "level": 6,

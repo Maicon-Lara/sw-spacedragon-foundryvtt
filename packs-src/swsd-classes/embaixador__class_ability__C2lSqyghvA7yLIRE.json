@@ -3,7 +3,7 @@
   "name": "Embaixador",
   "type": "class_ability",
   "_id": "C2lSqyghvA7yLIRE",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/coins.svg",
   "system": {
     "description": "<p>A tripulação <strong>triplica</strong>, e os testes de Moral ou Carisma para obter reação amigável de uma criatura inteligente são <strong>Fáceis</strong>.</p>",
     "level": 10,

@@ -3,7 +3,7 @@
   "name": "Desarmar e Subjugar",
   "type": "class_ability",
   "_id": "bYgTU75jKjDh5D10",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/unarmed.svg",
   "system": {
     "description": "<p>Sacrificando um de seus ataques, desarma um oponente (<strong>1-2 em 1d6</strong>). Se o alvo já está desarmado, pode subjugá-lo — também sacrificando um ataque, com a mesma chance.</p>",
     "level": 1,

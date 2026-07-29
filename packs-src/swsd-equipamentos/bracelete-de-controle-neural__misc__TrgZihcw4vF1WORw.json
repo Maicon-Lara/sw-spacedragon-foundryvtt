@@ -3,7 +3,7 @@
   "name": "Bracelete de Controle Neural",
   "type": "misc",
   "_id": "TrgZihcw4vF1WORw",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/magic-ring.svg",
   "system": {
     "odo_id": "bracelete-de-controle-neural",
     "description": "Ofensivo, NT 6. Comandado remotamente a até 100 m. O membro onde o bracelete estiver obedece ao operador, negando o controle ao usuário. O efeito se quebra se o bracelete for removido.\nAparato ofensivo: só o Técnico e o Caçador de Recompensas o operam.\nConstrução: 1d4 dias. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",

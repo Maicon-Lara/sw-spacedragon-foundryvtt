@@ -3,7 +3,7 @@
   "name": "Datapad",
   "type": "misc",
   "_id": "sHyFbEwuZg7aFcwP",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/magic-scroll.svg",
   "system": {
     "odo_id": "datapad",
     "description": "Serve como livro, mapa ou dicionário reutilizável.",

@@ -3,7 +3,7 @@
   "name": "Vontade Férrea",
   "type": "race_ability",
   "_id": "MsZyA8psDivcMuCA",
-  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "img": "systems/olddragon2e/assets/icons/shield.svg",
   "system": {
     "description": "<p><strong>+1 em JPS</strong> contra medo, encantamento e controle mental.</p>",
     "xp": null,

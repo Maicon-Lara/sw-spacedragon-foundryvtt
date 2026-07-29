@@ -3,7 +3,7 @@
   "name": "Lenda do Submundo",
   "type": "class_ability",
   "_id": "BIupog8ihz3vkhxD",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/coins.svg",
   "system": {
     "description": "<p>Sempre terá uma tripulação fiel igual a <strong>3× seu número máximo de seguidores</strong> (mínimo 4).</p>",
     "level": 10,

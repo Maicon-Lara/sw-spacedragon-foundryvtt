@@ -3,7 +3,7 @@
   "name": "Investida da Força",
   "type": "class_ability",
   "_id": "AdQj96WgonC0gG4y",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/brain.svg",
   "system": {
     "description": "<p>Gastando <strong>1 de Foco</strong>, você desfere <strong>um ataque de sabre extra</strong> na rodada.</p>",
     "level": 10,

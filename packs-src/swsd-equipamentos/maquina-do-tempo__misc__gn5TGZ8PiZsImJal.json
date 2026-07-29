@@ -3,7 +3,7 @@
   "name": "Máquina do Tempo",
   "type": "misc",
   "_id": "gn5TGZ8PiZsImJal",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
   "system": {
     "odo_id": "maquina-do-tempo",
     "description": "Utilitário, NT 10. Transporta uma ou mais pessoas pelo espaço-tempo a qualquer ponto do passado ou do futuro. Sua existência é apenas hipotética — nunca foi construída, pelas implicações paradoxais. Quem construir uma estará sujeito a todo tipo de controvérsia.\nSem preço de mercado, como o Sabre Sombrio e a Beskar: não se compra, se conquista. Se entrar numa campanha, é gancho de arco inteiro.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d4 anos. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",

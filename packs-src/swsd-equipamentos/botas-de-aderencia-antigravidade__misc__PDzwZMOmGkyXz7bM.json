@@ -3,7 +3,7 @@
   "name": "Botas de Aderência Antigravidade",
   "type": "misc",
   "_id": "PDzwZMOmGkyXz7bM",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/movement.svg",
   "system": {
     "odo_id": "botas-de-aderencia-antigravidade",
     "description": "Utilitário, NT 4. Permitem andar sobre superfícies íngremes como se fossem terreno plano. Operativos as usam perfeitamente — sucesso automático, não role. As demais classes rolam 1-4 em 1d6 para não se desequilibrar e cair.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d6 dias. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",

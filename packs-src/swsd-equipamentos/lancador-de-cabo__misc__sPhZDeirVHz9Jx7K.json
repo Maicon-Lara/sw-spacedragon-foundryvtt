@@ -3,7 +3,7 @@
   "name": "Lançador de Cabo",
   "type": "misc",
   "_id": "sPhZDeirVHz9Jx7K",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/movement.svg",
   "system": {
     "odo_id": "lancador-de-cabo",
     "description": "Como um Arpéu, dispara a 18 m sem teste.\nEquivalência: é o Lançador de gancho do ED-07 (utilitário, NT 2), cujo alcance de projeção é de 30 m e cuja corda não vem inclusa. Valor convertido: 800 CR (ED $80.000 ÷ 100); vale o preço do cenário.\nAparato utilitário: qualquer um pode operar.",

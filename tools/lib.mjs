@@ -95,6 +95,76 @@ function damageType(v) {
   return DANO_PT_EN[v] ?? v;
 }
 
+// Ícone semântico por palavra-chave.
+//
+// Sem isto, 194 habilidades dividiam kit.svg e 61 aparatos dividiam misc.svg:
+// abrir o compêndio era uma parede de linhas idênticas. As regras abaixo usam
+// só os 35 ícones que o próprio olddragon2e empacota — a mesma regra que o
+// projeto já seguia para não depender de caminho de ícone core.
+//
+// Ordem importa: vence a primeira regra que casar, então o específico vem
+// antes do genérico ("Força Bruta" é músculo, não a Força mística).
+const REGRAS_ICONE = [
+  // Sabre de luz e suas sete formas
+  [/shii-cho|makashi|soresu|ataru|djem so|niman|juyo|vaapad|forma de sabre|formas de sabre|mudar de guarda|sabre/, "slashing"],
+  // Cultura mandaloriana
+  [/mandalor|resol'?nare|beskar|do cla|de cla|eco da senda/, "legiao-shield"],
+  // Físico bruto (antes da Força: "Força Bruta" não é mística)
+  [/forca bruta|furia|desarmar|subjugar|manopla/, "unarmed"],
+  // A Força e a mente
+  [/forca|nexo|comunhao|presciencia|extrassensorial|oculto|corrupcao|tentacao|luz e sombra|apice da mente|mente superior|dominio da senda|cerebro|mente|disciplina|tatica/, "brain"],
+  // Talentos de Operativo: familia unica, antes de "assassin" levar so um deles
+  [/talentos de|infiltracao|fantasma|espia|contraband|oficios do submundo/, "bag"],
+  // Ataque furtivo antes do combate genérico
+  [/furtiv|ataque furtivo|golpe fatal|execucao|assassin/, "piercing"],
+  // Tiro e armas de energia
+  [/armado e perigoso|marcar alvo|mira|blaster|canhao|pistola|repetidor|desintegrador|disruptor|paralisante|lanca-chamas|arma de energia/, "ranged"],
+  // Explosivos e arremesso
+  [/granada|detonita|missil|carga de|bomba/, "throw"],
+  // Combate corpo a corpo
+  [/combate|ataque|ataques multiplos|dano critico|acao ousada|adestramento|duelo/, "melee"],
+  // Defesa
+  [/defletor|escudo|cupula|blindad|vontade|inabalavel|inquebravel|resistencia|resistente|a dor/, "shield"],
+  // Medicina
+  [/medicina|medico|medpac|bacta|estimulante|injetor|cura|regeneracao/, "magic-potion"],
+  // Pilotagem e veículo
+  [/pilotar|piloto|voo|nave|veiculo/, "vehicle"],
+  // Movimento e mobilidade
+  [/jetpack|propulsao|botas|aderencia|lancador de cabo|anfibio|nautico|aquatic/, "movement"],
+  // Percepção, sensores e visores
+  [/percepcao|instinto|sensor|visor|visao|detector|analisador|medidor|holocamera|varredura|noturno|termic|lekku/, "diamond"],
+  // Dados, comunicação e tradução
+  [/datapad|cilindro de dados|comlink|comunicador|projetor|holografic|traducao|protocolo|baliza|rastread|bloqueador|jammer|idiomas/, "magic-scroll"],
+  // Implantes e cibernética
+  [/cibernetic|membro|orgao|neural|positronic|robotic|implante/, "magic-ring"],
+  // Cristais
+  [/cristal|kyber|gema/, "gem"],
+  // Contenção e recipientes
+  [/algema|coleira|laco|cilindro|capsula|mochila/, "container"],
+  // Trajes e proteção corporal
+  [/traje|respirador|oxigenio|antirradiacao|armadura|casca|escama|garras/, "armor"],
+  // Técnico, oficina e sabotagem
+  [/aparato|maquina|droide|sistema|invencao|inventor|oficina|engenho|armadilha|tecnolog|desativar|sequestrar|quebrar|consertar|operar|sabotagem|slicer|cortador|broca|compressor|teletransport/, "kit"],
+  // Social, reputação e comércio
+  [/embaixador|enviado|mecenas|reputacao|mercado|desconto|submundo|lenda|seducao|lideranca|negocia/, "coins"],
+];
+
+// Remove acentos e caixa para as regras acima casarem sem depender de grafia.
+function normaliza(s) {
+  return String(s ?? "")
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase();
+}
+
+export function iconeSemantico(texto, padrao) {
+  const alvo = normaliza(texto);
+  for (const [regra, icone] of REGRAS_ICONE) {
+    if (regra.test(alvo)) return `${OD2I}/${icone}.svg`;
+  }
+  return padrao;
+}
+
 // Ícone de arma conforme o tipo (alcance ou tipo de dano).
 function weaponIcon(it) {
   if (it.ranged || it.melee === false) return `${OD2I}/ranged.svg`;
@@ -237,7 +307,7 @@ export function classAbilityDoc(ability, folderId, seedPrefix, sort) {
     name: ability.nome,
     type: "class_ability",
     _id: id,
-    img: ability.img || ICONS.class_ability,
+    img: ability.img || iconeSemantico(ability.nome, ICONS.class_ability),
     system: {
       description: ability.desc || "",
       level: ability.level ?? 1,
@@ -335,7 +405,7 @@ export function raceAbilityDoc(ability, folderId, seedPrefix, sort) {
     name: ability.nome,
     type: "race_ability",
     _id: id,
-    img: ability.img || ICONS.race_ability,
+    img: ability.img || iconeSemantico(ability.nome, ICONS.race_ability),
     system: sys,
     effects: [],
     flags: {},
@@ -523,7 +593,7 @@ export function miscDoc(it, folderId, seedPrefix, sort) {
     name: it.nome,
     type: "misc",
     _id: id,
-    img: it.img || `${OD2I}/misc.svg`,
+    img: it.img || iconeSemantico(it.nome, `${OD2I}/misc.svg`),
     system: equipmentBase(it),
     effects: [],
     flags: {},

@@ -3,7 +3,7 @@
   "name": "Cinto Defletor",
   "type": "misc",
   "_id": "VabCRua128P9JRwc",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/shield.svg",
   "system": {
     "odo_id": "cinto-defletor",
     "description": "Defensivo, NT 5. Qualquer ataque de energia ou projétil tem 1-2 em 1d6 de chance de ricochetear no campo de força e voltar contra o atacante. Se falhar, o ataque atravessa e atinge o usuário normalmente.\nAparato defensivo: Técnico e Veterano.\nConstrução: 1d10 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",

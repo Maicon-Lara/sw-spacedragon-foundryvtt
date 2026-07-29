@@ -3,7 +3,7 @@
   "name": "Caçador da Força",
   "type": "class_ability",
   "_id": "fyGaZmfC6AyQhztr",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/brain.svg",
   "system": {
     "description": "<p>Sente a presença de outros Sensíveis por perto e ganha <strong>vantagem no primeiro Duelo da Força</strong> de cada confronto.</p>",
     "level": 6,

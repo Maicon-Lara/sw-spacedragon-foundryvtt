@@ -3,7 +3,7 @@
   "name": "Enviado",
   "type": "class_ability",
   "_id": "zjCksLlRH0JXrl3C",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/coins.svg",
   "system": {
     "description": "<p>Ganha uma <strong>nave patrocinada</strong> (combustível e reparos custeados) e pode ter tripulação conforme seu número de seguidores.</p>",
     "level": 6,

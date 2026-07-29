@@ -3,7 +3,7 @@
   "name": "Algemas de Choque",
   "type": "misc",
   "_id": "BBy4ey9vqh3jDW2D",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/container.svg",
   "system": {
     "odo_id": "algemas-de-choque",
     "description": "+1d4 de choque se a vítima tentar se soltar sem o código.\nEquivalência: são as Algemas eletrônicas do ED-07 (utilitário, NT 2). Funcionam indefinidamente, mas podem sofrer curto-circuito se atingidas ou sabotadas, e só é possível algemar um inimigo inconsciente, imobilizado ou sob controle de outro personagem. Valor convertido: 800 CR; vale o preço do cenário.\nAparato utilitário: qualquer um pode operar.",

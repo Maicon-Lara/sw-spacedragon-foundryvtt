@@ -3,7 +3,7 @@
   "name": "Combate Rápido",
   "type": "class_ability",
   "_id": "vrXDHmD3A3CfRa2f",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/melee.svg",
   "system": {
     "description": "<p>Tenta um <strong>terceiro ataque</strong> (<strong>1-4 em 1d6</strong>, com a Base de Ataque do segundo). Falhar nessa jogada encerra o turno.</p>",
     "level": 10,

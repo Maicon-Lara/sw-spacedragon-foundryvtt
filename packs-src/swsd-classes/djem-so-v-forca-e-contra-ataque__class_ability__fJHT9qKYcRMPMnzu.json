@@ -3,7 +3,7 @@
   "name": "Djem So (V) — força e contra-ataque",
   "type": "class_ability",
   "_id": "fJHT9qKYcRMPMnzu",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/slashing.svg",
   "system": {
     "description": "<p>Devolve com juros a agressão do inimigo.</p><p><strong>Contra-Ataque:</strong> quando um inimigo adjacente <strong>erra</strong> você em corpo a corpo, ganha um <strong>ataque de resposta</strong> imediato; e pode trocar precisão (<strong>−2 no ataque</strong>) por <strong>+1d8 de dano</strong>.</p><hr><p><strong>Esta é a sua Forma Mestra</strong> — progride inteira, nos degraus 3º, 6º e 10º.</p><p>A partir do <strong>10º nível</strong> você pode aprender uma <strong>segunda Forma</strong> (que vai só até o degrau do 6º) e, no <strong>15º</strong>, uma <strong>terceira</strong> (só até o 3º). Elas ficam no compêndio <em>Formas de Sabre</em> e são adicionadas ao item desta classe na ficha. Trocar de Forma em combate consome sua ação da rodada e deixa você com −2 na CA até o próximo turno; no 15º, a <em>Guarda Fluida</em> troca isso por 1 de Foco.</p>",
     "level": 3,

@@ -3,7 +3,7 @@
   "name": "Capacete com Visor Tático",
   "type": "misc",
   "_id": "MQfDgiAIuXAkESUq",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/diamond.svg",
   "system": {
     "odo_id": "capacete-com-visor-tatico",
     "description": "+1 em Procurar e em ataques à distância contra alvos distantes.\nAcessório comercial. O aparato de verdade é o Visor de Precisão (+2 e ignora cobertura não sólida) — não acumulam: use o melhor.\nAparato utilitário: qualquer um pode operar.",

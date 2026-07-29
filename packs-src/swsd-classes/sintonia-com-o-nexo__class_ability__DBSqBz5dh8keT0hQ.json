@@ -3,7 +3,7 @@
   "name": "Sintonia com o Nexo",
   "type": "class_ability",
   "_id": "DBSqBz5dh8keT0hQ",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/brain.svg",
   "system": {
     "description": "<p>O Vidente <strong>sente a Força ao redor como quem sente vento</strong>. Percebe automaticamente lugares de convergência (nexos, templos, sítios de morte em massa), reconhece se um local tende à <strong>Luz ou à Sombra</strong> e sabe quando um Sensível esteve ali nas últimas <strong>24 horas</strong>.</p><p>Em compensação, sua sintonia é <strong>involuntária</strong>: energias soltas — raios, descargas, disparos de energia desviados, surtos de aparatos — são atraídas para ele com <strong>1-2 em 1d6</strong> sempre que ocorrerem por perto.</p>",
     "level": 1,

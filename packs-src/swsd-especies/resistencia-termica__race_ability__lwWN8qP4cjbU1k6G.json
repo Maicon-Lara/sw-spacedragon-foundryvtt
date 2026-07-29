@@ -3,7 +3,7 @@
   "name": "Resistência Térmica",
   "type": "race_ability",
   "_id": "lwWN8qP4cjbU1k6G",
-  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "img": "systems/olddragon2e/assets/icons/shield.svg",
   "system": {
     "description": "<p>Imune a penalidades por calor extremo.</p>",
     "xp": null,

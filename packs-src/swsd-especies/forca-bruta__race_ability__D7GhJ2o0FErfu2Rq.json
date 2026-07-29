@@ -3,7 +3,7 @@
   "name": "Força Bruta",
   "type": "race_ability",
   "_id": "D7GhJ2o0FErfu2Rq",
-  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "img": "systems/olddragon2e/assets/icons/unarmed.svg",
   "system": {
     "description": "<p>Seu dano desarmado é <strong>1d6</strong>, em vez do nocaute padrão.</p>",
     "xp": null,

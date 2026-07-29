@@ -3,7 +3,7 @@
   "name": "Percepção",
   "type": "class_ability",
   "_id": "eM30qJPbGMC1SvXA",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/diamond.svg",
   "system": {
     "description": "<p>Sentidos superiores: ouvir ruídos, identificar odores e sabores, perceber detalhes em superfícies pelo toque. Chance de <strong>1-2 em 1d6</strong>.</p>",
     "level": 1,

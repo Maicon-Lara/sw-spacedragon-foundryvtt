@@ -3,7 +3,7 @@
   "name": "Cúpula Defletora de Perímetro",
   "type": "misc",
   "_id": "vU6ZcEuzg6wMAceu",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/shield.svg",
   "system": {
     "odo_id": "cupula-defletora-de-perimetro",
     "description": "Defensivo, NT 8. Torna impenetrável uma área com 20 m de raio. O interior é visível através da parede hemisférica semitransparente. Quem tenta entrar sofre 1d4 de dano por choque. Funciona por 1 hora.\nAparato defensivo: Técnico e Veterano.\nConstrução: 1d6 dias. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",

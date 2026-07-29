@@ -3,7 +3,7 @@
   "name": "Trocador Instantâneo de Trajes",
   "type": "misc",
   "_id": "YfMicF0QJbUOqFmF",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/armor.svg",
   "system": {
     "odo_id": "trocador-instantaneo-de-trajes",
     "description": "Utilitário, NT 5. Troca instantaneamente as vestes do personagem. Funciona com qualquer veste que não seja pressurizada ou hermética.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d4 semanas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",

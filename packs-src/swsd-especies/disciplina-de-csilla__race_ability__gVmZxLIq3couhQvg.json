@@ -3,7 +3,7 @@
   "name": "Disciplina de Csilla",
   "type": "race_ability",
   "_id": "gVmZxLIq3couhQvg",
-  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "img": "systems/olddragon2e/assets/icons/brain.svg",
   "system": {
     "description": "<p>Imune a penalidades por frio extremo.</p>",
     "xp": null,

@@ -3,7 +3,7 @@
   "name": "Formas de Sabre",
   "type": "class_ability",
   "_id": "Cd2vAbaaA4Dy9f42",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/slashing.svg",
   "system": {
     "description": "<p>Domina <strong>uma das sete Formas</strong> — Shii-Cho, Makashi, Soresu, Ataru, Djem So, Niman ou Juyo/Vaapad. A Forma é a linha de habilidades do Guardião: um poder de combate que <strong>progride com o nível</strong> nos degraus 3, 6 e 10.</p>",
     "level": 3,

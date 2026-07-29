@@ -3,7 +3,7 @@
   "name": "Niman (VI) — o equilíbrio sabre e Força",
   "type": "class_ability",
   "_id": "LOonlalDGJeYYWcX",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/slashing.svg",
   "system": {
     "description": "<p>O gish: mistura lâmina e poderes numa dança só.</p><p><strong>Fluxo Equilibrado:</strong> na rodada em que usa um poder da Força, ainda faz um <strong>ataque de sabre</strong> (ou vice-versa) sem penalidade; e empunha a lâmina com a Força para atacar a curta distância ou desarmar telecineticamente.</p><hr><p><strong>Esta é a sua Forma Mestra</strong> — progride inteira, nos degraus 3º, 6º e 10º.</p><p>A partir do <strong>10º nível</strong> você pode aprender uma <strong>segunda Forma</strong> (que vai só até o degrau do 6º) e, no <strong>15º</strong>, uma <strong>terceira</strong> (só até o 3º). Elas ficam no compêndio <em>Formas de Sabre</em> e são adicionadas ao item desta classe na ficha. Trocar de Forma em combate consome sua ação da rodada e deixa você com −2 na CA até o próximo turno; no 15º, a <em>Guarda Fluida</em> troca isso por 1 de Foco.</p>",
     "level": 3,

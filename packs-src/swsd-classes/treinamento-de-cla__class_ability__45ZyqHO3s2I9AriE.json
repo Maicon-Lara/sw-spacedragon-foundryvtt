@@ -3,7 +3,7 @@
   "name": "Treinamento de Clã",
   "type": "class_ability",
   "_id": "45ZyqHO3s2I9AriE",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/legiao-shield.svg",
   "system": {
     "description": "<p>Domina o arsenal Mandaloriano: <strong>+1 no dano</strong> com armas de haste, de arremesso e blasters, e usa livremente jetpack e capacete tático.</p>",
     "level": 1,

@@ -3,7 +3,7 @@
   "name": "Mente Superior",
   "type": "class_ability",
   "_id": "HJ3fdD7U9tnIzOVh",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/brain.svg",
   "system": {
     "description": "<p>Seu Foco da Força passa a contar como o de um Sensível <strong>+2 níveis</strong> — atinge as Grandezas altas mais cedo.</p>",
     "level": 3,

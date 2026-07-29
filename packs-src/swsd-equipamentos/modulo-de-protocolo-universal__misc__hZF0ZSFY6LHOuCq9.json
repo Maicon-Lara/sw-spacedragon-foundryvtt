@@ -3,7 +3,7 @@
   "name": "Módulo de Protocolo Universal",
   "type": "misc",
   "_id": "hZF0ZSFY6LHOuCq9",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/magic-scroll.svg",
   "system": {
     "odo_id": "modulo-de-protocolo-universal",
     "description": "Utilitário, NT 7. Como o Módulo de Tradução, mas traduz virtualmente qualquer idioma — desde que o usuário tenha tido contato com um nativo de cada idioma que queira adicionar, durante ou após a construção.\nAparato utilitário: qualquer um pode operar.\nConstrução: 2d6 semanas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",

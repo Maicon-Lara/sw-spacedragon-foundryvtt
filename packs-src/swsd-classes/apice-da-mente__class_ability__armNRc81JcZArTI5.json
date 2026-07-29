@@ -3,7 +3,7 @@
   "name": "Ápice da Mente",
   "type": "class_ability",
   "_id": "armNRc81JcZArTI5",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/brain.svg",
   "system": {
     "description": "<p>Uma vez por dia, você conjura um poder de <strong>uma Grandeza acima do seu teto atual</strong> ou <strong>dobra a área, a duração ou o número de alvos</strong> de um poder conhecido. Ao fazê-lo, faça <strong>JPC ou perca 1 de Constituição</strong> até o próximo descanso longo.</p><p>Se o feito for de <strong>10ª Grandeza</strong>, a perda de Constituição é <strong>permanente</strong> — e uma falha crítica significa <strong>morte por sobrecarga mental</strong>.</p>",
     "level": 10,

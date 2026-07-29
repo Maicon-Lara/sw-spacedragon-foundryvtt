@@ -3,7 +3,7 @@
   "name": "Liderança Serena",
   "type": "race_ability",
   "_id": "fvqCXjthV7WMCCnt",
-  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "img": "systems/olddragon2e/assets/icons/coins.svg",
   "system": {
     "description": "<p>Uma vez por dia, concede a um aliado que o escute um novo teste em uma Jogada de Proteção contra medo ou pânico.</p>",
     "xp": null,

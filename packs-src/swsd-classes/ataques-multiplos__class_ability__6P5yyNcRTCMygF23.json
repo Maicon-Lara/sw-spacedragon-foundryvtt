@@ -3,7 +3,7 @@
   "name": "Ataques Múltiplos",
   "type": "class_ability",
   "_id": "6P5yyNcRTCMygF23",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/melee.svg",
   "system": {
     "description": "<p>Ganha um <strong>segundo ataque</strong> com a mesma Base de Ataque.</p>",
     "level": 6,

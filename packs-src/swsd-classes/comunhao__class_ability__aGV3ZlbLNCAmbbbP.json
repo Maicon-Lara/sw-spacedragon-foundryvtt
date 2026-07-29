@@ -3,7 +3,7 @@
   "name": "Comunhão",
   "type": "class_ability",
   "_id": "aGV3ZlbLNCAmbbbP",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/brain.svg",
   "system": {
     "description": "<p><strong>Uma vez por dia</strong>, o Vidente canaliza a Força que corre nos seres vivos inteligentes <strong>amigáveis ou neutros a até 20 metros</strong>. Ganha Foco extra igual à <strong>soma dos modificadores de Sabedoria</strong> de cada um deles, distribuído entre as Grandezas que ele já acessa — <strong>sem ultrapassar 1/4</strong> do seu Foco Diário total. O Foco assim obtido dura até ele <strong>dormir ou cair inconsciente</strong>.</p><p><em>Quem é canalizado não perde nada, mas sente: a cena pede descrição.</em></p>",
     "level": 3,

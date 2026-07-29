@@ -3,7 +3,7 @@
   "name": "Progressão de Força",
   "type": "class_ability",
   "_id": "V7VEHDj4GswzcYrO",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/brain.svg",
   "system": {
     "description": "<p>Mantém a coluna normal da tabela do Sensível — sem o teto do Guardião nem o salto do Consular. É o mais versátil dos três.</p>",
     "level": 10,

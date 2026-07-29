@@ -3,7 +3,7 @@
   "name": "Ataru (IV) — acrobática",
   "type": "class_ability",
   "_id": "qGUB9AoB1m3GQoKq",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/slashing.svg",
   "system": {
     "description": "<p>Saltos, giros e ataques em movimento.</p><p><strong>Ímpeto Acrobático:</strong> se você <strong>se moveu</strong> antes de atacar, <strong>+1 no ataque e no dano</strong>; combina com o <em>Salto da Força</em> — atacar de cima torna o primeiro golpe <strong>Fácil</strong>.</p><hr><p><strong>Esta é a sua Forma Mestra</strong> — progride inteira, nos degraus 3º, 6º e 10º.</p><p>A partir do <strong>10º nível</strong> você pode aprender uma <strong>segunda Forma</strong> (que vai só até o degrau do 6º) e, no <strong>15º</strong>, uma <strong>terceira</strong> (só até o 3º). Elas ficam no compêndio <em>Formas de Sabre</em> e são adicionadas ao item desta classe na ficha. Trocar de Forma em combate consome sua ação da rodada e deixa você com −2 na CA até o próximo turno; no 15º, a <em>Guarda Fluida</em> troca isso por 1 de Foco.</p>",
     "level": 3,

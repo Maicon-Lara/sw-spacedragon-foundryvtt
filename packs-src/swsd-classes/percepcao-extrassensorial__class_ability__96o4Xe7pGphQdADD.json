@@ -3,7 +3,7 @@
   "name": "Percepção Extrassensorial",
   "type": "class_ability",
   "_id": "96o4Xe7pGphQdADD",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/brain.svg",
   "system": {
     "description": "<p>Concentrando-se por 1 minuto, lê os pensamentos de criaturas inteligentes em <strong>18 metros</strong>, mesmo sem idioma comum. Não atravessa barreira grossa; com muitos alvos, gasta um turno extra para isolar a mente que quer.</p>",
     "level": 1,

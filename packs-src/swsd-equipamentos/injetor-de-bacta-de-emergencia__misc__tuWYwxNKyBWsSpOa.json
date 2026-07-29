@@ -3,7 +3,7 @@
   "name": "Injetor de Bacta de Emergência",
   "type": "misc",
   "_id": "tuWYwxNKyBWsSpOa",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/magic-potion.svg",
   "system": {
     "odo_id": "injetor-de-bacta-de-emergencia",
     "description": "Utilitário, NT 4. Injetado num personagem com PV negativos, ele estabiliza automaticamente e recupera 2 PV a cada 10 segundos, até chegar a 1 PV — e para aí. O soro estabiliza o moribundo, não o cura. Ferimentos graves exigem uma JPC para que funcione. Rende 2 doses.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d6 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",

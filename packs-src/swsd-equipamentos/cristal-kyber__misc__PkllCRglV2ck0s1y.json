@@ -3,7 +3,7 @@
   "name": "Cristal Kyber",
   "type": "misc",
   "_id": "PkllCRglV2ck0s1y",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/gem.svg",
   "system": {
     "odo_id": "cristal-kyber",
     "description": "No coração de todo sabre há um cristal kyber, pedra sensível à Força que focaliza a lâmina. Cristais são incolores ou pálidos; quando um usuário se sintoniza por meditação, o cristal assume uma cor que reflete o vínculo.\nA cor é narrativa, não mecânica — não dá bônus —, mas costuma seguir a Senda do portador:\n• Azul: Guardiões da Luz (o Jedi de sabre).\n• Verde: Consulares da Luz (mais ligados à Força que à lâmina).\n• Amarelo / raros: Sentinelas e híbridos que equilibram combate e mística.\n• Vermelho: Caminho da Sombra — obtido pelo Sangramento.\n\nSangrar o cristal (o vermelho Sith): um personagem do Caminho da Sombra pode sangrar um cristal, derramando ódio e dor até que ele racha e se recolore num vermelho ardente.\n• Custo: o ato marca +1 de Corrupção.\n• Benefício: enquanto o portador estiver com Corrupção 3+, o sabre vermelho concede +1 no dano. Abaixo disso, é um sabre comum vermelho.\n• Purificar: um cristal sangrado pode ser purificado por um ato da Luz, voltando à cor clara. Conta como um gesto de Redenção — simbólico e mecânico.\n\nO vermelho é uma tentação, não um upgrade grátis: o dano extra custa Corrupção e só vale enquanto o portador está fundo na Sombra.\nCristais raros/lendários podem conceder propriedades especiais (um segundo dado de dano, resistência a desarme), a critério do Mestre como recompensa única — não como padrão.",

@@ -3,7 +3,7 @@
   "name": "Execução",
   "type": "class_ability",
   "_id": "B5ClNKNocQGiH32d",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/piercing.svg",
   "system": {
     "description": "<p><em>(Assassinato)</em> Abre mão do ataque normal para desferir um golpe que <strong>mata o alvo na hora</strong>: <strong>1-2 em 1d6</strong>. Cada Dado de Vida do alvo igual ou acima do seu reduz a chance em 1. Falha = o alvo não sofre dano e fica <strong>imune a nova Execução</strong> até você subir de nível.</p>",
     "level": 6,

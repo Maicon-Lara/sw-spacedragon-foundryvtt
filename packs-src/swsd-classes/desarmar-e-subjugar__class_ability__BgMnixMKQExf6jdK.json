@@ -3,7 +3,7 @@
   "name": "Desarmar e Subjugar",
   "type": "class_ability",
   "_id": "BgMnixMKQExf6jdK",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/unarmed.svg",
   "system": {
     "description": "<p>Recupera a manobra da classe-base, com chance de <strong>1-2 em 1d6</strong>.</p>",
     "level": 3,

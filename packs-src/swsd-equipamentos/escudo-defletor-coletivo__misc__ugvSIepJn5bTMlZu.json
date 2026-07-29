@@ -3,7 +3,7 @@
   "name": "Escudo Defletor Coletivo",
   "type": "misc",
   "_id": "ugvSIepJn5bTMlZu",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/shield.svg",
   "system": {
     "odo_id": "escudo-defletor-coletivo",
     "description": "Defensivo, NT 6. Como o escudo individual, mas cobre um raio de 10 m ao redor do usuário. Dentro da área, escudos de energia não funcionam. Duração de 1 minuto; recarga de 1d8 horas.\nAparato defensivo: Técnico e Veterano.\nConstrução: 1d6 dias. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",

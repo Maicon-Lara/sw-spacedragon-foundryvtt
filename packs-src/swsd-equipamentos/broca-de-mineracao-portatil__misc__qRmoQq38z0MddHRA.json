@@ -3,7 +3,7 @@
   "name": "Broca de Mineração Portátil",
   "type": "misc",
   "_id": "qRmoQq38z0MddHRA",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
   "system": {
     "odo_id": "broca-de-mineracao-portatil",
     "description": "Utilitário, NT 2. Escava rocha e minerais ou força entrada por portas e paredes. Vida útil de 6 horas de uso contínuo, depois precisa de reparos.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d6 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",

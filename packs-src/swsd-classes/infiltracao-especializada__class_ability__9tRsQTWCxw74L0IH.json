@@ -3,7 +3,7 @@
   "name": "Infiltração Especializada",
   "type": "class_ability",
   "_id": "9tRsQTWCxw74L0IH",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/bag.svg",
   "system": {
     "description": "<p><strong>Sabotador Furtivo:</strong> sua chance de <em>Sabotagem</em> <strong>aumenta em 1 ponto</strong> quando ele obtém sucesso numa jogada de <em>Furtividade</em> (máximo 1-5 em 1d6).</p>",
     "level": 3,

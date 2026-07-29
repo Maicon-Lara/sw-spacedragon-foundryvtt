@@ -3,7 +3,7 @@
   "name": "Ação Ousada",
   "type": "class_ability",
   "_id": "HqSUfH7smEFv4Fpf",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/melee.svg",
   "system": {
     "description": "<p><em>(Ataques Múltiplos)</em> Adquire um <strong>segundo ataque</strong>, com a mesma Base de Ataque, logo em sequência ao primeiro.</p>",
     "level": 6,

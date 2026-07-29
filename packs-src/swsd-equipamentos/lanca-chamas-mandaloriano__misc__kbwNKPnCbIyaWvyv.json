@@ -3,7 +3,7 @@
   "name": "Lança-Chamas Mandaloriano",
   "type": "misc",
   "_id": "kbwNKPnCbIyaWvyv",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/legiao-shield.svg",
   "system": {
     "odo_id": "lanca-chamas-mandaloriano",
     "description": "Ofensivo, NT 8. Rajada de fogo a até 6 m. Dano por distância: até 2 m → 1d10 · 2 a 4 m → 1d6 · além disso → 1d4. Chance de deixar o alvo em chamas: respectivamente 1-3, 1-2 e 1 em 1d6. Um alvo em chamas sofre o mesmo dano inicial a cada rodada até apagar o fogo.\nAparato ofensivo: só o Técnico e o Caçador de Recompensas o operam.\nConstrução: 1d4 dias. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",

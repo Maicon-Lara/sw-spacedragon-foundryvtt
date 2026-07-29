@@ -3,7 +3,7 @@
   "name": "Garras e Escamas",
   "type": "race_ability",
   "_id": "sh5dlo0QA0XlQxeA",
-  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "img": "systems/olddragon2e/assets/icons/armor.svg",
   "system": {
     "description": "<p>Dano desarmado <strong>1d4 perfurante</strong> e <strong>+1 natural na Classe de Armadura</strong>.</p>",
     "xp": null,

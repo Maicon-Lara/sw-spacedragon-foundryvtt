@@ -3,7 +3,7 @@
   "name": "Cilindro de Oxigênio",
   "type": "misc",
   "_id": "hehsqKNhx0kl1PqV",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/container.svg",
   "system": {
     "odo_id": "cilindro-de-oxigenio",
     "description": "Obrigatório para usar a Selagem Espacial ou a Selagem Aquática. Dura cerca de 6 horas. Sem ele, o traje só protege de temperatura e pressão, não da falta de ar.",

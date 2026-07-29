@@ -3,7 +3,7 @@
   "name": "Mira a Laser",
   "type": "misc",
   "_id": "xEDsv1tdFdlRlw0x",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/ranged.svg",
   "system": {
     "odo_id": "mira-a-laser",
     "description": "+1 no primeiro ataque de cada combate com arma de energia.\nAcessório comercial, versão barata do Visor de Precisão (+2 sempre e ignora cobertura não sólida). Não acumulam: use o melhor.\nAparato utilitário: qualquer um pode operar.",

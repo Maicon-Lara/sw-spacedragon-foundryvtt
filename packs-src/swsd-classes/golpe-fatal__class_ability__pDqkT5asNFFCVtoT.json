@@ -3,7 +3,7 @@
   "name": "Golpe Fatal",
   "type": "class_ability",
   "_id": "pDqkT5asNFFCVtoT",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/piercing.svg",
   "system": {
     "description": "<p><em>(Ataque Assassino)</em> Ao atacar após aproximação furtiva, faz um ataque <strong>muito fácil</strong> com dano <strong>×2</strong>.</p>",
     "level": 1,

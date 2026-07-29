@@ -3,7 +3,7 @@
   "name": "Resistência à Dor",
   "type": "race_ability",
   "_id": "xxxBpmTfV4HZT4FA",
-  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "img": "systems/olddragon2e/assets/icons/shield.svg",
   "system": {
     "description": "<p>Ao chegar a 0 PV sem morrer, faz uma <strong>JPC</strong>; se passar, continua agindo (cambaleante) até o fim da próxima rodada. Uma vez por combate.</p>",
     "xp": null,

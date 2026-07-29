@@ -3,7 +3,7 @@
   "name": "Casca Peluda",
   "type": "race_ability",
   "_id": "oeZCCDNht4skCwwg",
-  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "img": "systems/olddragon2e/assets/icons/armor.svg",
   "system": {
     "description": "<p>O pelo denso e a pele grossa concedem <strong>+1 natural na Classe de Armadura</strong>.</p>",
     "xp": null,

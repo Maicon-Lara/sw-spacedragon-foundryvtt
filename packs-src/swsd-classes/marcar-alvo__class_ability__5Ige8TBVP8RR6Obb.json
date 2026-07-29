@@ -3,7 +3,7 @@
   "name": "Marcar Alvo",
   "type": "class_ability",
   "_id": "5Ige8TBVP8RR6Obb",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/ranged.svg",
   "system": {
     "description": "<p><em>(Espreitar)</em> Uma rodada completa apenas observando o alvo torna o primeiro ataque contra ele <strong>Fácil</strong>; após <strong>4 rodadas</strong> de observação, <strong>Muito Fácil</strong>.</p>",
     "level": 3,

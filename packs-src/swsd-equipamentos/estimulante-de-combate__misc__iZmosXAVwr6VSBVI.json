@@ -3,7 +3,7 @@
   "name": "Estimulante de Combate",
   "type": "misc",
   "_id": "iZmosXAVwr6VSBVI",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/melee.svg",
   "system": {
     "odo_id": "estimulante-de-combate",
     "description": "Utilitário, NT 5. Aumenta temporariamente um atributo em 2 pontos (definido na criação). Começa a agir 1 minuto após ingerido e dura 1 hora. Rende 4 doses. Ilegal em boa parte da galáxia e pode causar vício — mais de uma por vez arrisca uma overdose potencialmente fatal.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d6 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",

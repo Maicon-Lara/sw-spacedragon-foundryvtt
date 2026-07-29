@@ -3,7 +3,7 @@
   "name": "Piloto Nato",
   "type": "class_ability",
   "_id": "CzW4T2jMu9EBzpiB",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/vehicle.svg",
   "system": {
     "description": "<p>Pilota qualquer nave: <strong>1-2 em 1d6</strong>.</p>",
     "level": 1,

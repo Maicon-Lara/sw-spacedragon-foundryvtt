@@ -3,7 +3,7 @@
   "name": "Sedução Inata",
   "type": "race_ability",
   "_id": "81AfjGz3L5tvHzCM",
-  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "img": "systems/olddragon2e/assets/icons/coins.svg",
   "system": {
     "description": "<p>+1 em testes de Carisma e em testes de reação a seu favor.</p>",
     "xp": null,

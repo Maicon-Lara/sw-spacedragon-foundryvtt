@@ -3,7 +3,7 @@
   "name": "Vontade Inquebrável",
   "type": "class_ability",
   "_id": "0oT4wUsCnPbs8rop",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/shield.svg",
   "system": {
     "description": "<p>Suas Jogadas de Proteção contra poderes da Força e efeitos mentais são <strong>Fáceis</strong> — resiste ao Duelo e ao terror da Sombra melhor que qualquer um.</p>",
     "level": 3,

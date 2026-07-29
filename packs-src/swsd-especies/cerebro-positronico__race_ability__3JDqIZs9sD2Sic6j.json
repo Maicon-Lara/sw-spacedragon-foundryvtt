@@ -3,7 +3,7 @@
   "name": "Cérebro Positrônico",
   "type": "race_ability",
   "_id": "3JDqIZs9sD2Sic6j",
-  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "img": "systems/olddragon2e/assets/icons/brain.svg",
   "system": {
     "description": "<p>Efeitos que afetam a mente são <strong>Difíceis</strong> contra o Droide — mas seus Testes de Reação e interações sociais também são <strong>Difíceis</strong>: a máquina não charmeia.</p>",
     "xp": null,

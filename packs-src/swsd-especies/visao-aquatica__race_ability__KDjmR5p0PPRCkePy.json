@@ -3,7 +3,7 @@
   "name": "Visão Aquática",
   "type": "race_ability",
   "_id": "KDjmR5p0PPRCkePy",
-  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "img": "systems/olddragon2e/assets/icons/movement.svg",
   "system": {
     "description": "<p>Infravisão de <strong>18 metros</strong> debaixo d'água ou em luz fraca.</p>",
     "xp": null,

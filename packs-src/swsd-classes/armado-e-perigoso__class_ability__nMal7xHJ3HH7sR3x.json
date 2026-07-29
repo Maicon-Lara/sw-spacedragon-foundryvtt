@@ -3,7 +3,7 @@
   "name": "Armado e Perigoso",
   "type": "class_ability",
   "_id": "nMal7xHJ3HH7sR3x",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/ranged.svg",
   "system": {
     "description": "<p>O dano crítico com uma arma de sua escolha é sempre <strong>multiplicado por 2</strong>.</p><p><em>Esta progressão substitui a do Veterano quando ele usa a arma escolhida — e a partir do 3º nível ela é sempre superior. Com qualquer outra arma, vale o <strong>Dano Crítico</strong> normal da classe.</em></p>",
     "level": 1,

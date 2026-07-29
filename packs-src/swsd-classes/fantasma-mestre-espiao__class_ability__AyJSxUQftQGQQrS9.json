@@ -3,7 +3,7 @@
   "name": "Fantasma (Mestre Espião)",
   "type": "class_ability",
   "_id": "AyJSxUQftQGQQrS9",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/bag.svg",
   "system": {
     "description": "<p><strong>Todos os seus talentos passam a ter a mesma chance de sucesso do maior deles.</strong></p>",
     "level": 10,

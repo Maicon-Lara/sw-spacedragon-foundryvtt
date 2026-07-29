@@ -3,7 +3,7 @@
   "name": "Mente Tática",
   "type": "race_ability",
   "_id": "YhSlvWjhBQjC57d8",
-  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "img": "systems/olddragon2e/assets/icons/brain.svg",
   "system": {
     "description": "<p>+1 na Iniciativa e +1 para analisar inimigos e prever manobras. Começa o jogo com um idioma adicional.</p>",
     "xp": null,

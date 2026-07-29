@@ -3,7 +3,7 @@
   "name": "Detector de Poderes (capacete sensorial)",
   "type": "misc",
   "_id": "xkxgxAX9yn1PVhMa",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/diamond.svg",
   "system": {
     "odo_id": "detector-de-poderes-capacete-sensorial",
     "description": "Utilitário, NT 6. Detecta poderes mentais em ação a até 200 m e indica a direção — os que estão sendo executados naquele momento ou os de efeito prolongado num local. Só detecta um poder de manipulação individual se o próprio usuário tiver sido afetado por ele.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d4 dias. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",

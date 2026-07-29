@@ -3,7 +3,7 @@
   "name": "Emissor de Raio Paralisante",
   "type": "misc",
   "_id": "KmTHgmYwoJB5rjHY",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/ranged.svg",
   "system": {
     "odo_id": "emissor-de-raio-paralisante",
     "description": "Ofensivo, NT 7. Ataque à distância; acertando, o alvo faz uma JPC. Falhando, fica completamente imobilizado por 30 segundos. Criaturas muito maiores que um humano não são afetadas. Só pode ser usado 2 vezes antes de recarregar.\nAparato ofensivo: só o Técnico e o Caçador de Recompensas o operam.\nConstrução: 1d6 dias. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",

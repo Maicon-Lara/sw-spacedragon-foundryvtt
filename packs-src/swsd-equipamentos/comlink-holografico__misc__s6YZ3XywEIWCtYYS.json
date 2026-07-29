@@ -3,7 +3,7 @@
   "name": "Comlink Holográfico",
   "type": "misc",
   "_id": "s6YZ3XywEIWCtYYS",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/magic-scroll.svg",
   "system": {
     "odo_id": "comlink-holografico",
     "description": "Utilitário, NT 3. Como o Comlink, mas com imagem. Alcance menor: 5 km; até 4 aparelhos na mesma frequência.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d10 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",

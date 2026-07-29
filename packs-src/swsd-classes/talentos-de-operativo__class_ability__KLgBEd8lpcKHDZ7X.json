@@ -3,7 +3,7 @@
   "name": "Talentos de Operativo",
   "type": "class_ability",
   "_id": "KLgBEd8lpcKHDZ7X",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/bag.svg",
   "system": {
     "description": "<p>O núcleo do Gatuno, vestido de submundo galáctico. <strong>Bônus:</strong> no 1º nível, +1 ponto para cada ponto do modificador de <strong>Destreza</strong>.</p><p>Começa com <strong>2 pontos em cada um</strong> dos cinco talentos + <strong>2 pontos livres</strong>. Nos níveis <strong>3, 6 e 10</strong> recebe <strong>+2 pontos</strong> para distribuir.</p><p><strong>Teste:</strong> um talento tem chance em 1d6 igual ao seu valor (2 pontos = 1-2 em 1d6; 5 pontos = 1-5 em 1d6). <strong>Máximo: 5.</strong></p><p><strong>Trava:</strong> ao subir de nível ele <strong>não pode pôr os 2 pontos no mesmo talento</strong> — tem que espalhar. A trava não vale para a distribuição inicial do 1º nível.</p>",
     "level": 1,

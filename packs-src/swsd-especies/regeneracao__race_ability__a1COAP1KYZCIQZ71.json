@@ -3,7 +3,7 @@
   "name": "Regeneração",
   "type": "race_ability",
   "_id": "a1COAP1KYZCIQZ71",
-  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "img": "systems/olddragon2e/assets/icons/magic-potion.svg",
   "system": {
     "description": "<p>A cada rodada inteira sem sofrer dano, recupera <strong>1 PV</strong>. Fora de combate, a recuperação natural é dobrada, e membros perdidos voltam a crescer em semanas. Não funciona abaixo de 0 PV.</p>",
     "xp": null,

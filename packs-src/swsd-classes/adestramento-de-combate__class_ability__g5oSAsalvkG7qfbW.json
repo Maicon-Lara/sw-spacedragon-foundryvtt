@@ -3,7 +3,7 @@
   "name": "Adestramento de Combate",
   "type": "class_ability",
   "_id": "g5oSAsalvkG7qfbW",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/melee.svg",
   "system": {
     "description": "<p>Sua <strong>Base de Ataque passa a evoluir como a de um Veterano</strong> (não mais a lenta do místico) e você usa <strong>armaduras médias</strong> sem penalizar a Força.</p><p><em>Na ficha: use a coluna de BA do Veterano no lugar da coluna desta classe.</em></p>",
     "level": 1,

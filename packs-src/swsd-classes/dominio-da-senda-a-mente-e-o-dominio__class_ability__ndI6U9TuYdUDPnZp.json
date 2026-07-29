@@ -3,7 +3,7 @@
   "name": "Domínio da Senda — A Mente e o Domínio",
   "type": "class_ability",
   "_id": "ndI6U9TuYdUDPnZp",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/brain.svg",
   "system": {
     "description": "<p>O <strong>Domínio</strong> do Consular é <strong>A Mente e o Domínio</strong>: a Força que <strong>fala, convence, dobra e escraviza vontades</strong> — telepatia, sugestão, terror, ilusão e domínio, da conversa cordial à coroa na cabeça alheia.</p><p>É este o conjunto que dispara o <strong>Eco da Senda</strong> da classe-base — a chance de o Foco voltar no 10º nível e a gratuidade dos poderes de 1ª Grandeza no 15º. A lista completa de exemplos está na habilidade <em>Eco da Senda</em>.</p>",
     "level": 10,

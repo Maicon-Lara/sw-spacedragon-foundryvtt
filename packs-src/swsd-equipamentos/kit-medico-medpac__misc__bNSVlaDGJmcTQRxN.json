@@ -3,7 +3,7 @@
   "name": "Kit Médico (Medpac)",
   "type": "misc",
   "_id": "bNSVlaDGJmcTQRxN",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/magic-potion.svg",
   "system": {
     "odo_id": "kit-medico-medpac",
     "description": "Cura 1d8 PV; 1d4+2 usos.\nCura imediata de campo — não se confunde com a Cápsula de Bacta (recuperação por hora de descanso) nem com o Injetor de Bacta de Emergência (estabiliza quem está com PV negativos).\nAparato utilitário: qualquer um pode operar.",

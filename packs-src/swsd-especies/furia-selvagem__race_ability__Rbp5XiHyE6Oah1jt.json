@@ -3,7 +3,7 @@
   "name": "Fúria Selvagem",
   "type": "race_ability",
   "_id": "Rbp5XiHyE6Oah1jt",
-  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "img": "systems/olddragon2e/assets/icons/unarmed.svg",
   "system": {
     "description": "<p>Com os pontos de vida abaixo da metade, causa <strong>+2 no dano corpo a corpo</strong>.</p>",
     "xp": null,

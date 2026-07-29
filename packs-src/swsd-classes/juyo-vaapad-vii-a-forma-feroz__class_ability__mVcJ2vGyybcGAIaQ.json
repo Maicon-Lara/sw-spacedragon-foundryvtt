@@ -3,7 +3,7 @@
   "name": "Juyo / Vaapad (VII) — a forma feroz",
   "type": "class_ability",
   "_id": "mVcJ2vGyybcGAIaQ",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/slashing.svg",
   "system": {
     "description": "<p>Canaliza a agressão — e beira a Sombra.</p><p><strong>Fúria Canalizada:</strong> <strong>+1 no ataque e no dano</strong>, mas usá-la movido pela raiva arrisca <strong>+1 de Corrupção</strong> por combate (a critério do Mestre); e inimigos têm desvantagem para aparar ou anular seus golpes.</p><hr><p><strong>Esta é a sua Forma Mestra</strong> — progride inteira, nos degraus 3º, 6º e 10º.</p><p>A partir do <strong>10º nível</strong> você pode aprender uma <strong>segunda Forma</strong> (que vai só até o degrau do 6º) e, no <strong>15º</strong>, uma <strong>terceira</strong> (só até o 3º). Elas ficam no compêndio <em>Formas de Sabre</em> e são adicionadas ao item desta classe na ficha. Trocar de Forma em combate consome sua ação da rodada e deixa você com −2 na CA até o próximo turno; no 15º, a <em>Guarda Fluida</em> troca isso por 1 de Foco.</p>",
     "level": 3,

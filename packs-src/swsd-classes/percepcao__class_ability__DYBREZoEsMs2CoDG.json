@@ -3,7 +3,7 @@
   "name": "Percepção",
   "type": "class_ability",
   "_id": "DYBREZoEsMs2CoDG",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/diamond.svg",
   "system": {
     "description": "<p>Como a do Operativo: <strong>1-2 em 1d6</strong>.</p>",
     "level": 1,

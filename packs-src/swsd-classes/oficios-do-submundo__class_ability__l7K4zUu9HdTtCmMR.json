@@ -3,7 +3,7 @@
   "name": "Ofícios do Submundo",
   "type": "class_ability",
   "_id": "l7K4zUu9HdTtCmMR",
-  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "img": "systems/olddragon2e/assets/icons/bag.svg",
   "system": {
     "description": "<p>Ganha <strong>três talentos de Operativo</strong> à escolha, com a chance de um Operativo de <strong>metade</strong> do seu nível — nível mínimo 1 (nunca cai abaixo disso).</p>",
     "level": 1,

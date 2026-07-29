@@ -3,7 +3,7 @@
   "name": "Bloqueador de Sinal (jammer)",
   "type": "misc",
   "_id": "tQw4W7OgJwnAOR0g",
-  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "img": "systems/olddragon2e/assets/icons/magic-scroll.svg",
   "system": {
     "odo_id": "bloqueador-de-sinal-jammer",
     "description": "Utilitário, NT 2. Bloqueia transmissão e recepção de rádio num raio de 50 m. Nenhum transmissor ou controle remoto funciona até que o aparato seja desativado.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d6 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",

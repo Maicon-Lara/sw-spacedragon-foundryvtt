@@ -3,7 +3,7 @@
   "name": "Anfíbio",
   "type": "race_ability",
   "_id": "00JyBHiBaQruvZI2",
-  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "img": "systems/olddragon2e/assets/icons/movement.svg",
   "system": {
     "description": "<p>Respira dentro e fora d'água, nada com deslocamento pleno e ignora penalidades de combate submerso.</p>",
     "xp": null,
