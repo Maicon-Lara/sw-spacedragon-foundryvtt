@@ -11,7 +11,7 @@ import { compilePack } from "@foundryvtt/foundryvtt-cli";
 
 import {
   folderDoc, aninhaPastas, classDoc, classAbilityDoc, raceDoc, raceAbilityDoc,
-  weaponDoc, armorDoc, miscDoc, spellDoc, journalDoc, itemUuid, writeSource,
+  weaponDoc, armorDoc, miscDoc, nivelTecnologico, spellDoc, journalDoc, itemUuid, writeSource,
 } from "./lib.mjs";
 import { monsterDoc } from "./lib-actors.mjs";
 
@@ -95,10 +95,31 @@ function buildEspeciesDocs() {
 }
 
 // ── Pack de equipamentos (armas, armaduras, aparatos) ──
+const PASTA_APARATOS = "Aparatos Tecnológicos";
+
 function buildEquipamentosDocs() {
   const builders = { weapon: weaponDoc, armor: armorDoc, misc: miscDoc };
   const docs = [];
+
+  // Aparatos saem das categorias e voltam agrupados por Nível Tecnológico.
+  // `seed` viaja junto com o item: o _id deriva dela (makeId("misc:SEED:nome")),
+  // entao trocar a semente pelo nome da pasta nova mudaria todos os IDs e
+  // quebraria as referencias por UUID de quem ja importou o compendio.
+  const porNT = new Map();
+  const acessorios = [];
+
   for (const cat of categorias) {
+    if (cat.folder.startsWith(PASTA_APARATOS)) {
+      for (const it of cat.itens) {
+        const nt = it.acessorio ? null : nivelTecnologico(it);
+        if (nt === null) acessorios.push({ it, seed: cat.folder });
+        else {
+          if (!porNT.has(nt)) porNT.set(nt, []);
+          porNT.get(nt).push({ it, seed: cat.folder });
+        }
+      }
+      continue;
+    }
     const folder = folderDoc(cat.folder, "Item", "equipamentos");
     docs.push(folder);
     const build = builders[cat.tipo];
@@ -106,6 +127,35 @@ function buildEquipamentosDocs() {
       docs.push(build(it, folder._id, cat.folder, (i + 1) * 100000));
     });
   }
+
+  const raiz = folderDoc(PASTA_APARATOS, "Item", "equipamentos");
+  docs.push(raiz);
+
+  for (const nt of [...porNT.keys()].sort((a, b) => a - b)) {
+    const sub = folderDoc(`NT ${nt}`, "Item", "equipamentos:aparatos", {
+      parentId: raiz._id,
+      sort: nt * 100000,
+    });
+    docs.push(sub);
+    porNT.get(nt).forEach(({ it, seed }, i) => {
+      docs.push(miscDoc(it, sub._id, seed, (i + 1) * 100000));
+    });
+  }
+
+  // Acessorios comerciais nao sao aparatos: sao a versao de prateleira, sem NT.
+  // O cofre os agrupa assim ("São acessórios comerciais de +1; o aparato de
+  // verdade é o Visor de Precisão").
+  if (acessorios.length) {
+    const sub = folderDoc("Acessórios comerciais", "Item", "equipamentos:aparatos", {
+      parentId: raiz._id,
+      sort: 9900000,
+    });
+    docs.push(sub);
+    acessorios.forEach(({ it, seed }, i) => {
+      docs.push(miscDoc(it, sub._id, seed, (i + 1) * 100000));
+    });
+  }
+
   return docs;
 }
 

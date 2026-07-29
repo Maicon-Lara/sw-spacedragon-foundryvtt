@@ -1,12 +1,12 @@
 {
-  "folder": "UTSGRALCcUpjz5fT",
+  "folder": "9HIRWUE9k9AiDFL5",
   "name": "Respirador Aquático",
   "type": "misc",
   "_id": "dZwLXPAqA2tEtmiI",
   "img": "systems/olddragon2e/assets/icons/movement.svg",
   "system": {
     "odo_id": "respirador-aquatico",
-    "description": "Utilitário, NT 5. Respirar normalmente embaixo d'água, com ou sem capacete. Autonomia indefinida na água; menos efetivo em outros líquidos.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d4 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
+    "description": "Utilitário, NT 3. Respirar normalmente embaixo d'água, com ou sem capacete. Autonomia indefinida na água; menos efetivo em outros líquidos.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d4 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
     "cost": "2.500 CR",
     "weight_in_load": 0,
@@ -27,7 +27,7 @@
     "lastModifiedBy": "swspacedragonbld",
     "exportSource": null
   },
-  "sort": 3900000,
+  "sort": 800000,
   "ownership": {
     "default": 0
   },

@@ -189,6 +189,20 @@ export function iconeSemantico(texto, padrao) {
   return padrao;
 }
 
+// Nível Tecnológico de um aparato.
+//
+// A fonte preferencial é o campo `nt` do item. O texto entra como fallback,
+// mas SÓ no padrão de declaração do início ("Utilitário, NT 3."): descrições
+// citam o NT de OUTROS itens nas equivalências com o ED-07, e uma busca solta
+// por /NT \d/ classifica errado — foi o que fez o Sensor de Movimento parecer
+// NT 1 (o NT é do Visor Térmico, que ele cita) e a Máquina do Tempo, NT 10,
+// parecer NT 1 (a regex pegava só o primeiro dígito).
+export function nivelTecnologico(it) {
+  if (Number.isInteger(it.nt)) return it.nt;
+  const m = /^<p><strong>(?:Utilit[áa]rio|Ofensivo|Defensivo)[^<]*?,\s*NT\s*(\d+)/.exec(it.desc ?? "");
+  return m ? Number(m[1]) : null;
+}
+
 // Ícone de arma conforme o tipo (alcance ou tipo de dano).
 function weaponIcon(it) {
   if (it.ranged || it.melee === false) return `${OD2I}/ranged.svg`;
