@@ -224,3 +224,31 @@ body.swsd-tema .olddragon2e.sheet li span.ability-on-level ~ p {
   padding-left: 0.3rem;
   border-left: 2px solid rgba(47, 92, 138, 0.25);
 }
+
+/* ── Fundo da ficha e selo de upgrade ──────────────────────────────────────
+ *
+ * O creme não vem do OD2: não há regra de `background` nas folhas do sistema.
+ * É o core do Foundry pintando `.window-content`. Por isso a troca acontece
+ * aqui, no elemento do core, e não em algum seletor do sistema.
+ *
+ * O selo de upgrade era @cinza-600 (#808082), neutro por design — num tema
+ * azul ele vira sujeira. Passa a um azul mais claro que o da barra, para
+ * ficar clara a hierarquia: nível da habilidade em azul forte, upgrade em
+ * azul claro.
+ */
+
+body.swsd-tema .olddragon2e.sheet .window-content {
+  background: #f4f7fa !important;
+}
+
+body.swsd-tema .olddragon2e.sheet li span.ability-on-level {
+  background-color: #5b83ab !important;
+  color: #ffffff !important;
+}
+
+/* O texto da evolução acompanha o selo, um tom abaixo do corpo do texto:
+   distingue upgrade de regra-base sem perder legibilidade. */
+body.swsd-tema .olddragon2e.sheet li span.ability-on-level ~ p {
+  border-left-color: rgba(91, 131, 171, 0.45);
+  color: #2b3d4f;
+}
