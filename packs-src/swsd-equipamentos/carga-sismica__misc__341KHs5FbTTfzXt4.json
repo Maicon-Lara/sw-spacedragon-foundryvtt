@@ -1,0 +1,35 @@
+{
+  "folder": "HdrzJH6OW29JdFZV",
+  "name": "Carga Sísmica",
+  "type": "misc",
+  "_id": "341KHs5FbTTfzXt4",
+  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "system": {
+    "odo_id": "carga-sismica",
+    "description": "Ofensivo, NT 8. Enterrada ou fixada no solo e detonada por comunicador. Abala 50 m de raio: 4d6 a tudo em contato com o chão (JPD reduz à metade) e estruturas frágeis desabam. Inútil no vácuo, na água ou em queda livre — precisa de solo para transmitir.\nCriação da casa: não tem equivalente no ED-07 — foi escrito para fechar uma lacuna do catálogo. Valores calibrados contra os aparatos vizinhos, não convertidos.\nAparato ofensivo: só o Técnico e o Caçador de Recompensas o operam.\nConstrução: 1d6 dias. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
+    "quantity": 1,
+    "cost": "4.000 CR",
+    "weight_in_load": 2,
+    "weight_in_grams": 0,
+    "magic_item": false,
+    "is_equipped": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!341KHs5FbTTfzXt4"
+}

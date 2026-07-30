@@ -1,0 +1,35 @@
+{
+  "folder": "7XXutVO81jbuszCG",
+  "name": "Plataforma Repulsora de Carga",
+  "type": "misc",
+  "_id": "AGiVfMnz0P9gkER3",
+  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "system": {
+    "odo_id": "plataforma-repulsora-de-carga",
+    "description": "Utilitário, NT 2. Disco repulsor que sustenta 200 kg e acompanha quem o comanda a até 20 m. Não sobe mais de 1 m do chão nem atravessa terreno quebrado.\nCriação da casa: não tem equivalente no ED-07 — foi escrito para fechar uma lacuna do catálogo. Valores calibrados contra os aparatos vizinhos, não convertidos.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d4 dias. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
+    "quantity": 1,
+    "cost": "160 CR",
+    "weight_in_load": 0,
+    "weight_in_grams": 0,
+    "magic_item": false,
+    "is_equipped": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!AGiVfMnz0P9gkER3"
+}

@@ -8,7 +8,7 @@
     "odo_id": "modulo-de-traducao",
     "description": "Utilitário, NT 3. Fones e microfone que traduzem bilateralmente um idioma. Durante a criação, é preciso ter contato com um falante nativo e gravá-lo.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d6 semanas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
-    "cost": "1.800 CR",
+    "cost": "600 CR",
     "weight_in_load": 0,
     "weight_in_grams": 0,
     "magic_item": false,
@@ -27,7 +27,7 @@
     "lastModifiedBy": "swspacedragonbld",
     "exportSource": null
   },
-  "sort": 700000,
+  "sort": 800000,
   "ownership": {
     "default": 0
   },

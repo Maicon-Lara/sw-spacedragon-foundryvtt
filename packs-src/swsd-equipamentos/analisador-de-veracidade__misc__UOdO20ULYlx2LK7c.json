@@ -8,7 +8,7 @@
     "odo_id": "analisador-de-veracidade",
     "description": "Utilitário, NT 3. Pequeno indicador preso às vestes que vibra quando alguém a até 10 m mente. Não indica quem mentiu nem qual parte da informação é falsa.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d8 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
-    "cost": "900 CR",
+    "cost": "300 CR",
     "weight_in_load": 0,
     "weight_in_grams": 0,
     "magic_item": false,
@@ -27,7 +27,7 @@
     "lastModifiedBy": "swspacedragonbld",
     "exportSource": null
   },
-  "sort": 500000,
+  "sort": 600000,
   "ownership": {
     "default": 0
   },

@@ -1,0 +1,35 @@
+{
+  "folder": "HdrzJH6OW29JdFZV",
+  "name": "Inibidor de Campo da Força",
+  "type": "misc",
+  "_id": "fiIutRfArKRqSPXt",
+  "img": "systems/olddragon2e/assets/icons/brain.svg",
+  "system": {
+    "odo_id": "inibidor-de-campo-da-forca",
+    "description": "Defensivo, NT 8. Emissor fixo que cria uma zona morta de 15 m de raio: dentro dela nenhum poder da Força funciona, inclusive os de quem o ligou. Dura 1 hora, recarga de 1d6 h. Um Sensível dentro da zona sente a ausência — é uma experiência descrita como surdez.\nCriação da casa: não tem equivalente no ED-07 — foi escrito para fechar uma lacuna do catálogo. Valores calibrados contra os aparatos vizinhos, não convertidos.\nAparato defensivo: Técnico e Veterano.\nConstrução: 1d6 semanas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
+    "quantity": 1,
+    "cost": "5.000 CR",
+    "weight_in_load": 3,
+    "weight_in_grams": 0,
+    "magic_item": false,
+    "is_equipped": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!fiIutRfArKRqSPXt"
+}

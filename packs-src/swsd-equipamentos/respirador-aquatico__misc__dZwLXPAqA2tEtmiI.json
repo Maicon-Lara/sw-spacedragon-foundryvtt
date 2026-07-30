@@ -8,7 +8,7 @@
     "odo_id": "respirador-aquatico",
     "description": "Utilitário, NT 3. Respirar normalmente embaixo d'água, com ou sem capacete. Autonomia indefinida na água; menos efetivo em outros líquidos.\nAparato utilitário: qualquer um pode operar.\nConstrução: 1d4 horas. Consertar, recarregar ou adaptar custa ¼ do valor e até metade do tempo.",
     "quantity": 1,
-    "cost": "2.500 CR",
+    "cost": "850 CR",
     "weight_in_load": 0,
     "weight_in_grams": 0,
     "magic_item": false,
@@ -27,7 +27,7 @@
     "lastModifiedBy": "swspacedragonbld",
     "exportSource": null
   },
-  "sort": 800000,
+  "sort": 900000,
   "ownership": {
     "default": 0
   },
