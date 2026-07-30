@@ -1,0 +1,106 @@
+{
+  "name": "Tmennit En'Dey — Mestra Jedi Caamasi",
+  "type": "monster",
+  "_id": "uYLFPHESGOjhtRds",
+  "img": "systems/olddragon2e/assets/monsters-concepts/humanoide-medio.webp",
+  "system": {
+    "odo_id": "tmennit-en-dey-mestra-jedi-caamasi",
+    "concept": "Humanoide",
+    "size": "medio",
+    "description": "<p><strong>Tipo (fonte):</strong> PNJ da campanha</p>\n<p>Caamasi idosa de pelo cinza-escuro. Foi a mestra de Lorik Feryss antes das Guerras Clônicas. Nunca foi Generala — era diplomata na Orla Exterior quando a Ordem 66 chegou, e por isso sobreviveu. Está em Mon Calamari há anos, tentando fechar a ferida entre Mon Calamari e Quarren.</p>\n<ul>\n  <li><p><strong>Jogadas de Proteção</strong>: <strong>JPD</strong> 11 · <strong>JPC</strong> 10 · <strong>JPS</strong> 8. O campo JP da ficha usa a mediana.</p></li>\n  <li><p><strong>Armadura</strong>: manto acolchoado</p></li>\n  <li><p><strong>Notas da aventura</strong>: <strong>Poderes da Força:</strong> <em>Mover</em>, <em>Influenciar</em>, <em>Sentir</em>, <em>Amparar</em> (até 5ª Grandeza)</p></li>\n</ul>",
+    "mv": "9",
+    "dv": "6",
+    "hp": {
+      "value": 28,
+      "max": 28
+    },
+    "ca": "13",
+    "jp": "10",
+    "mo": "12",
+    "xp": "375"
+  },
+  "prototypeToken": {
+    "name": "Tmennit En'Dey — Mestra Jedi Caamasi",
+    "displayName": 20,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "systems/olddragon2e/assets/monsters-concepts/humanoide-medio.webp",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "color": null,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "5Wltx46Ei0JDGENi",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 1800000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!uYLFPHESGOjhtRds"
+}

@@ -1,0 +1,141 @@
+{
+  "name": "Speng — traficante de death sticks",
+  "type": "monster",
+  "_id": "S4ehUcWFSZcLpuqL",
+  "img": "systems/olddragon2e/assets/monsters-concepts/humanoide-medio.webp",
+  "system": {
+    "odo_id": "speng-traficante-de-death-sticks",
+    "concept": "Humanoide",
+    "size": "medio",
+    "description": "<p><strong>Tipo (fonte):</strong> PNJ da campanha</p>\n<p>Humano magro e bem-vestido, permanentemente à beira de um ataque de nervos. Valoriza a própria pele muito mais que a privacidade dos clientes.</p>\n<ul>\n  <li><p><strong>Jogadas de Proteção</strong>: <strong>JPD</strong> 14 · <strong>JPC</strong> 15 · <strong>JPS</strong> 14. O campo JP da ficha usa a mediana.</p></li>\n  <li><p><strong>Notas da aventura</strong>: (foge cedo, sempre)</p></li>\n</ul>",
+    "mv": "9",
+    "dv": "2",
+    "hp": {
+      "value": 10,
+      "max": 10
+    },
+    "ca": "12",
+    "jp": "14",
+    "mo": "5",
+    "xp": "40"
+  },
+  "prototypeToken": {
+    "name": "Speng — traficante de death sticks",
+    "displayName": 20,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "systems/olddragon2e/assets/monsters-concepts/humanoide-medio.webp",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "color": null,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "_id": "C1NTUyMALMoYVTPo",
+      "name": "1 × pistola blaster +2 (1d6)",
+      "type": "monster_attack",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "times": 1,
+        "ba": 2,
+        "damage_bonus": 0,
+        "weapon": false,
+        "description": "pistola blaster",
+        "damage_description": "1d6",
+        "damage": "1d6"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swspacedragonbld",
+        "exportSource": null
+      },
+      "_key": "!actors.items!S4ehUcWFSZcLpuqL.C1NTUyMALMoYVTPo"
+    }
+  ],
+  "effects": [],
+  "folder": "MsAdVjwutJ35GvB0",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 1100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!S4ehUcWFSZcLpuqL"
+}

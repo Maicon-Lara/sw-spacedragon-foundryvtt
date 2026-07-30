@@ -1,0 +1,176 @@
+{
+  "name": "Executor da gangue Quarren",
+  "type": "monster",
+  "_id": "Kd33dKxi56weaeGD",
+  "img": "systems/olddragon2e/assets/monsters-concepts/humanoide-medio.webp",
+  "system": {
+    "odo_id": "executor-da-gangue-quarren",
+    "concept": "Humanoide",
+    "size": "medio",
+    "description": "<p><strong>Tipo (fonte):</strong> PNJ da campanha</p>\n<ul>\n  <li><p><strong>Jogadas de Proteção</strong>: <strong>JPD</strong> 13 · <strong>JPC</strong> 14 · <strong>JPS</strong> 15. O campo JP da ficha usa a mediana.</p></li>\n</ul>",
+    "mv": "9",
+    "mvn": "9",
+    "dv": "2",
+    "hp": {
+      "value": 12,
+      "max": 12
+    },
+    "ca": "13",
+    "jp": "14",
+    "mo": "8",
+    "xp": "55"
+  },
+  "prototypeToken": {
+    "name": "Executor da gangue Quarren",
+    "displayName": 20,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "systems/olddragon2e/assets/monsters-concepts/humanoide-medio.webp",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "color": null,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "_id": "zKEkhCVVa2RhKjnS",
+      "name": "1 × pistola blaster pesada +3 (1d8)",
+      "type": "monster_attack",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "times": 1,
+        "ba": 3,
+        "damage_bonus": 0,
+        "weapon": false,
+        "description": "pistola blaster pesada",
+        "damage_description": "1d8",
+        "damage": "1d8"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swspacedragonbld",
+        "exportSource": null
+      },
+      "_key": "!actors.items!Kd33dKxi56weaeGD.zKEkhCVVa2RhKjnS"
+    },
+    {
+      "_id": "uPD4Oj7bsdkBs0ll",
+      "name": "1 × blaster de íon +3 (dano dobrado contra droides; contra orgânicos)",
+      "type": "monster_attack",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "times": 1,
+        "ba": 3,
+        "damage_bonus": 0,
+        "weapon": false,
+        "description": "blaster de íon",
+        "damage_description": "dano dobrado contra droides; contra orgânicos",
+        "damage": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swspacedragonbld",
+        "exportSource": null
+      },
+      "_key": "!actors.items!Kd33dKxi56weaeGD.uPD4Oj7bsdkBs0ll"
+    }
+  ],
+  "effects": [],
+  "folder": "5Wltx46Ei0JDGENi",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!Kd33dKxi56weaeGD"
+}

@@ -1,0 +1,175 @@
+{
+  "name": "Tamsin Vel — agente da Aliança",
+  "type": "monster",
+  "_id": "EZu1MCMnbudACGIr",
+  "img": "systems/olddragon2e/assets/monsters-concepts/humanoide-medio.webp",
+  "system": {
+    "odo_id": "tamsin-vel-agente-da-alianca",
+    "concept": "Humanoide",
+    "size": "medio",
+    "description": "<p><strong>Tipo (fonte):</strong> PNJ da campanha</p>\n<p>Corelliana de meia-idade, credencial falsa de inspetora de carga, e a paciência de quem espera há dois meses.</p>\n<ul>\n  <li><p><strong>Jogadas de Proteção</strong>: <strong>JPD</strong> 12 · <strong>JPC</strong> 13 · <strong>JPS</strong> 12. O campo JP da ficha usa a mediana.</p></li>\n  <li><p><strong>Armadura</strong>: roupas blindadas</p></li>\n</ul>",
+    "mv": "9",
+    "dv": "3",
+    "hp": {
+      "value": 15,
+      "max": 15
+    },
+    "ca": "14",
+    "jp": "12",
+    "mo": "9",
+    "xp": "90"
+  },
+  "prototypeToken": {
+    "name": "Tamsin Vel — agente da Aliança",
+    "displayName": 20,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "systems/olddragon2e/assets/monsters-concepts/humanoide-medio.webp",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "color": null,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "_id": "7vVTuh3vNJE8fiOi",
+      "name": "1 × blaster de bolso +3 (1d4+1)",
+      "type": "monster_attack",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "times": 1,
+        "ba": 3,
+        "damage_bonus": 1,
+        "weapon": false,
+        "description": "blaster de bolso",
+        "damage_description": "1d4+1",
+        "damage": "1d4"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swspacedragonbld",
+        "exportSource": null
+      },
+      "_key": "!actors.items!EZu1MCMnbudACGIr.7vVTuh3vNJE8fiOi"
+    },
+    {
+      "_id": "A06QobVNhmgfkh2z",
+      "name": "1 × pistola blaster pesada +3 (1d8)",
+      "type": "monster_attack",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "times": 1,
+        "ba": 3,
+        "damage_bonus": 0,
+        "weapon": false,
+        "description": "pistola blaster pesada",
+        "damage_description": "1d8",
+        "damage": "1d8"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swspacedragonbld",
+        "exportSource": null
+      },
+      "_key": "!actors.items!EZu1MCMnbudACGIr.A06QobVNhmgfkh2z"
+    }
+  ],
+  "effects": [],
+  "folder": "eDfLMdwydYUJqw5d",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!EZu1MCMnbudACGIr"
+}

@@ -1,0 +1,103 @@
+{
+  "name": "Blaster automático de teto",
+  "type": "monster",
+  "_id": "7y6Hs8lBjGOWGKGG",
+  "img": "systems/olddragon2e/assets/monsters-concepts/constructo-medio.webp",
+  "system": {
+    "odo_id": "blaster-automatico-de-teto",
+    "concept": "Constructo",
+    "size": "medio",
+    "description": "<p><strong>Tipo (fonte):</strong> PNJ da campanha</p>\n<p>Torreta automatizada montada no teto que dispara em quem for marcado como hostil pelos donos.</p>\n<ul>\n  <li><p><strong>Armadura</strong>: <strong>alvo minúsculo:</strong> todo ataque contra ela sofre <strong>−2</strong> adicional</p></li>\n</ul>",
+    "dv": "1",
+    "hp": {
+      "value": 6,
+      "max": 6
+    },
+    "ca": "17",
+    "xp": "35"
+  },
+  "prototypeToken": {
+    "name": "Blaster automático de teto",
+    "displayName": 20,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "systems/olddragon2e/assets/monsters-concepts/constructo-medio.webp",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "color": null,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "5Wltx46Ei0JDGENi",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!7y6Hs8lBjGOWGKGG"
+}

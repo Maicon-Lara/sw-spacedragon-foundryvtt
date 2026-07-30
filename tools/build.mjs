@@ -22,6 +22,7 @@ import { classAbilitiesAvulsas, origensAvulsas } from "./data/avulsas.mjs";
 import { categorias } from "./data/equipamentos.mjs";
 import { listasDePoder, poderesJournal } from "./data/poderes.mjs";
 import { grupos as grupasBestiario } from "./data/bestiario.mjs";
+import { ameacas } from "./data/ameacas.mjs";
 import { navesJournal } from "./data/naves.mjs";
 import { bestiarioJournal } from "./data/bestiario-journal.mjs";
 import { progressao } from "./data/progressoes.mjs";
@@ -201,6 +202,20 @@ function buildBestiarioDocs() {
       docs.push(monsterDoc(m, folder._id, grupo.folder, (i + 1) * 100000));
     });
   }
+
+  // Ameaças das aventuras de "A Longa Sombra", transcritas dos blocos de PNJ
+  // do cofre. A pasta-mãe existe para aninhaPastas() encaixar
+  // "Ameaças — Ecos do Passado" dentro dela pelo travessão.
+  const mae = folderDoc("Ameaças", "Actor", "ameacas");
+  docs.push(mae);
+  for (const grupo of ameacas) {
+    const pasta = folderDoc(grupo.folder, "Actor", "ameacas");
+    docs.push(pasta);
+    grupo.monstros.forEach((m, i) => {
+      docs.push(monsterDoc(m, pasta._id, grupo.folder, (i + 1) * 100000));
+    });
+  }
+
   return docs;
 }
 
