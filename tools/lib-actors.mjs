@@ -106,16 +106,66 @@ function hpFromDv(dvRaw) {
   return Math.max(1, Math.floor(n * 4.5) + (parseInt(bonus, 10) || 0));
 }
 
-// "6 m (escavando)" → { mv: "6", mvo: "escavando" }; "9 m (nadando)" → mvn.
+// Deslocamento. O OD2 guarda quatro campos: mv (terrestre), mvn (natação),
+// mvv (voo) e mvo (outro, ex.: escavação). O cofre escreve isso de sete jeitos
+// diferentes, e a versão anterior — /(\d+)\s*m\s*(?:\(([^)]+)\))?/ — errava em
+// quatro deles:
+//
+//   "9 m (nada 12 m)"      dava natação 9, o valor de TERRA, não o 12
+//   "voa 12 m"             virava 12 m andando; o voo sumia
+//   "9 m, voa 12 m"        perdia o voo em silêncio
+//   "9 m (regeneração...)" punha 9 em "outro deslocamento" — regeneração não é
+//                          deslocamento, mas qualquer nota não reconhecida caía ali
+//   "12/24Vo" · "6 (voo 36)"  não casavam com nada: ficha SEM deslocamento
+//
+// Agora cada trecho separado por vírgula ou parêntese é lido por conta própria:
+// procura-se o qualificador (voa/nada/escava) e o número que o acompanha. Um
+// número só entra se abrir o trecho ou vier logo depois de um qualificador —
+// é o que impede "1 PV/rodada" de virar movimento. Qualificador sem número
+// herda o valor de terra ("9 m (nadando)" = nada 9 m).
+const QUALIFICADOR = [
+  [/\b(?:voa|voo|voando)\b/, "mvv"],
+  [/\b(?:nada|nado|nadando|natacao)\b/, "mvn"],
+  [/\b(?:escava|escavando|escavacao|cava)\b/, "mvo"],
+];
+
+// Forma compacta do livro: "9/12Vo", "9/9E", "6/18V".
+const SUFIXO = { v: "mvv", vo: "mvv", n: "mvn", e: "mvo" };
+
+const APOS_QUALIFICADOR =
+  /(?:voa|voo|voando|nada|nado|nadando|natacao|escava|escavando|escavacao|cava)\w*\s*(\d+)/;
+
+function campoDeMovimento(txt) {
+  for (const [re, campo] of QUALIFICADOR) if (re.test(txt)) return campo;
+  return null;
+}
+
 function movement(mov) {
   if (!mov) return {};
-  const m = String(mov).match(/(\d+)\s*m\s*(?:\(([^)]+)\))?/i);
-  if (!m) return {};
-  const out = { mv: m[1] };
-  const nota = normalize(m[2]);
-  if (nota.startsWith("nad")) out.mvn = m[1];
-  else if (nota.startsWith("vo")) out.mvv = m[1];
-  else if (nota) out.mvo = m[1];
+  const txt = normalize(String(mov));
+  const out = {};
+
+  const compacta = txt.match(/^(\d+)\s*\/\s*(\d+)\s*([a-z]*)/);
+  if (compacta) {
+    out.mv = compacta[1];
+    out[SUFIXO[compacta[3]] ?? "mvo"] = compacta[2];
+    return out;
+  }
+
+  const pendentes = [];
+  for (const trecho of txt.split(/[,;()]+/)) {
+    if (!trecho.trim()) continue;
+    const campo = campoDeMovimento(trecho);
+    const m = trecho.match(/^\s*(\d+)\s*m?\b/) || trecho.match(APOS_QUALIFICADOR);
+    if (!m) {
+      if (campo) pendentes.push(campo);
+      continue;
+    }
+    const alvo = campo ?? "mv";
+    if (!out[alvo]) out[alvo] = m[1];
+  }
+  // "9 m (nadando)": o qualificador não trouxe número, então vale o de terra.
+  for (const campo of pendentes) if (!out[campo] && out.mv) out[campo] = out.mv;
   return out;
 }
 

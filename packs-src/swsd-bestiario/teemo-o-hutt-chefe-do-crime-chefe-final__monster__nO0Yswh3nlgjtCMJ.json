@@ -9,7 +9,6 @@
     "size": "medio",
     "description": "<p><strong>Tipo (fonte):</strong> PNJ da campanha</p>\n<p>Uma tonelada de músculo lento, ganância rápida e absoluta ausência de medo. Ambicioso demais para o próprio bem.</p>\n<ul>\n  <li><p><strong>Jogadas de Proteção</strong>: <strong>JPD</strong> 10 · <strong>JPC</strong> 15 · <strong>JPS</strong> 16. O campo JP da ficha usa a mediana.</p></li>\n  <li><p><strong>Armadura</strong>: couro grosso e gordura</p></li>\n</ul>",
     "mv": "6",
-    "mvo": "6",
     "dv": "8",
     "hp": {
       "value": 45,

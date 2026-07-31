@@ -8,7 +8,7 @@
     "concept": "Humanoide",
     "size": "medio",
     "description": "<p><strong>Tipo (fonte):</strong> PNJ da campanha</p>\n<p>Essencialmente uma baleia — mas uma espécie <strong>senciente e inteligente</strong>, normalmente pacífica, que raramente interage com os Mon Calamari ou os Quarren. Este está enlouquecido pelo nexo.</p>\n<ul>\n  <li><p><strong>Jogadas de Proteção</strong>: <strong>JPD</strong> 12 · <strong>JPC</strong> 10 · <strong>JPS</strong> 13. O campo JP da ficha usa a mediana.</p></li>\n</ul>",
-    "mv": "15",
+    "mvn": "15",
     "dv": "8",
     "hp": {
       "value": 42,

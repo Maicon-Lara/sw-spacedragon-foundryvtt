@@ -9,7 +9,6 @@
     "size": "medio",
     "description": "<p><strong>Tipo (fonte):</strong> PNJ da campanha</p>\n<p>opcional, se sobreviveu à aventura anterior</p>\n<ul>\n  <li><p><strong>Jogadas de Proteção</strong>: <strong>JPD</strong> 13 · <strong>JPC</strong> 12 · <strong>JPS</strong> 14. O campo JP da ficha usa a mediana.</p></li>\n  <li><p><strong>Notas da aventura</strong>: (ou 12, se voltou ferido)</p></li>\n</ul>",
     "mv": "9",
-    "mvo": "9",
     "dv": "4",
     "hp": {
       "value": 22,

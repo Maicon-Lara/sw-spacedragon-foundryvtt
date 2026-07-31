@@ -8,7 +8,7 @@
     "concept": "Constructo",
     "size": "medio",
     "description": "<p><strong>Tipo (fonte):</strong> PNJ da campanha</p>\n<ul>\n  <li><p><strong>Jogadas de Proteção</strong>: <strong>JPD</strong> 14 · <strong>JPS</strong> 13. O campo JP da ficha usa a mediana.</p></li>\n  <li><p><strong>Notas da aventura</strong>: Moral — (construto)</p></li>\n</ul>",
-    "mv": "12",
+    "mvv": "12",
     "dv": "2",
     "hp": {
       "value": 9,

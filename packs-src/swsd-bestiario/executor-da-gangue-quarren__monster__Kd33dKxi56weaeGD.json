@@ -9,7 +9,7 @@
     "size": "medio",
     "description": "<p><strong>Tipo (fonte):</strong> PNJ da campanha</p>\n<ul>\n  <li><p><strong>Jogadas de Proteção</strong>: <strong>JPD</strong> 13 · <strong>JPC</strong> 14 · <strong>JPS</strong> 15. O campo JP da ficha usa a mediana.</p></li>\n</ul>",
     "mv": "9",
-    "mvn": "9",
+    "mvn": "12",
     "dv": "2",
     "hp": {
       "value": 12,
