@@ -1,0 +1,135 @@
+{
+  "folder": null,
+  "name": "Equipamento — regras de uso e serviços",
+  "_id": "RljsQHzd9COsEkDL",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Quem pode usar o quê",
+      "type": "text",
+      "_id": "2txAOvkJe5wa4VNt",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<div class=\"odo-markdown stardragon-doc\"><p>Toda arma traz uma etiqueta de <strong>Uso</strong> e toda armadura uma de <strong>Tipo</strong>, e é com essas duas palavras que as classes escrevem as suas restrições. A etiqueta está na descrição de cada item do compêndio.</p><h2>As três etiquetas de arma</h2><ul><li><strong>Leve</strong> — arma de uma mão que qualquer pessoa treinada maneja: pistolas blaster, adagas, lâminas curtas, cassetetes.</li><li><strong>Marcial</strong> — exige treino de soldado: rifles, carabinas, lanças, machados, tudo que é Média ou Grande.</li><li><strong>Utilitária</strong> — engenhoca ou ferramenta que se aciona, não que se esgrime: granadas, detonadores, lançador de rede, cortador de fusão. <strong>Não exige treino de combate</strong> — é por isso que o Técnico e o Sabotador jogam granada sem ser gente de guerra.</li></ul><h2>A tabela mestra</h2><table><thead><tr><th>Classe</th><th>Armas</th><th>Armaduras</th><th>Escudo</th><th>Aparatos</th></tr></thead><tbody><tr><td><strong>Veterano</strong> <em>(e Mercenário, Caçador de Recompensas, Emissário)</em></td><td>Leve · Marcial · Utilitária</td><td>Leve · Média · <strong>Pesada</strong></td><td><strong>sim</strong></td><td>defensivos e utilitários — o <strong>Caçador de Recompensas</strong> opera ofensivos também</td></tr><tr><td><strong>Operativo</strong> <em>(e Espião, Contrabandista, Assassino, Sabotador)</em></td><td>Leve · Utilitária — <strong>nenhuma de Duas Mãos</strong></td><td>Leve · Média</td><td>não</td><td>utilitários</td></tr><tr><td><strong>Técnico</strong> <em>(e Médico de Campo, Engenheiro, Slicer)</em></td><td>Leve <strong>de energia</strong> · Utilitária</td><td>Leve</td><td>não</td><td><strong>constrói e opera todos</strong></td></tr><tr><td><strong>Sensível à Força</strong> <em>(e Consular, Sentinela, Vidente)</em></td><td><strong>sabre de luz</strong> · Leve</td><td>Leve</td><td>não</td><td>utilitários</td></tr><tr><td><strong>Guardião</strong> <em>(Senda do Sensível)</em></td><td><strong>sabre de luz</strong> · Leve</td><td>Leve · <strong>Média</strong></td><td>não</td><td>utilitários</td></tr></tbody></table><h2>O que acontece se usar fora da faixa</h2><p>Vestir armadura mais pesada que a permitida, ou empunhar arma fora da lista, <strong>não é proibido pelo universo — é proibido pelo treino</strong>. O personagem sofre <strong>−2 em todas as rolagens de ataque</strong> com a arma e <strong>perde o acesso às habilidades de classe que dependem de mobilidade ou de precisão</strong> enquanto estiver assim: os <strong>talentos do Operativo</strong>, a <strong>Forma de Sabre</strong> do Guardião, o <strong>Ataque Furtivo</strong>. As habilidades passivas continuam valendo.</p><p><em>Antes esta consequência só estava escrita para o Operativo; as outras três classes ficavam em silêncio.</em></p><h2>Porte — quantas mãos a arma pede</h2><table><thead><tr><th>Porte</th><th>Como se usa</th></tr></thead><tbody><tr><td><strong>Pequena</strong></td><td>Uma mão. Pode ser usada <strong>com as duas mãos</strong> para <strong>+2 na rolagem de ataque</strong></td></tr><tr><td><strong>Média</strong></td><td>Preferencialmente duas mãos. Pode ser empunhada <strong>com uma mão só</strong>, ao custo de <strong>−2 no ataque</strong></td></tr><tr><td><strong>Grande</strong></td><td><strong>Sempre</strong> as duas mãos. Não há como usá-la com uma</td></tr></tbody></table><p><em>É a regra de Porte do Space Dragon. O cenário herdou os rótulos Pequena/Média/Grande e a etiqueta Duas Mãos, mas nunca escreveu o que eles faziam. Ela dá uma opção real a quem precisa de uma mão livre: um Rifle Blaster empunhado numa mão só é −2, não é proibido.</em></p><h2>Disponibilidade — o que a lei deixa você carregar</h2><p>Não muda nada em combate: muda <strong>onde você compra</strong> e <strong>o que acontece se um posto de controle te revistar</strong>.</p><table><thead><tr><th>Faixa</th><th>O que significa</th></tr></thead><tbody><tr><td><strong>—</strong></td><td>Livre. Se vende em qualquer doca, e ninguém olha duas vezes</td></tr><tr><td><strong>Licenciada</strong></td><td>Precisa de licença de porte. Fácil de obter num mundo civilizado, e um caçador de recompensas registrado tem a dele</td></tr><tr><td><strong>Restrita</strong></td><td>Mercado cinzento. Não se compra numa loja de superfície — se compra de um contato, num cais, numa sala dos fundos</td></tr><tr><td><strong>Militar</strong></td><td>Só forças armadas. Um civil com isso na mão está <strong>roubando de alguém</strong>, e o dono vai querer de volta</td></tr><tr><td><strong>Ilegal</strong></td><td>Proibido em toda parte que se diga civilizada. Portar já é crime, e usar é o que fecha o caso</td></tr><tr><td><strong>Rara</strong></td><td>Não é questão de lei, é de <strong>existir</strong>. Não tem preço de prateleira: consegue-se por herança, conquista ou uma aventura inteira</td></tr></tbody></table><p><strong>A regra, em uma frase:</strong> fora dos mundos de fronteira, portar item Restrito, Militar ou Ilegal <strong>de forma visível</strong> atrai a lei. Escondido, é um <strong>teste de Destreza</strong> contra a revista — Fácil se for pequeno, Difícil se for Grande, impossível se for uma armadura.</p><p><em>Esta coluna é escolha de projeto, não conserto: não vem do Space Dragon, vem da adaptação \"Star Wars para Space Dragon\" de Jonas Picholaro (CC BY 3.0). Se a sua mesa achar burocrático, ignore a coluna inteira e nada mais quebra. Um desvio consciente da fonte: o Picholaro marca a pistola blaster pesada como Militar; aqui ela é Restrita, porque o Blaster Pesado de 300 CR é a arma do contrabandista, não a do exército.</em></p></div>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swspacedragonbld",
+        "exportSource": null
+      },
+      "_key": "!journal.pages!RljsQHzd9COsEkDL.2txAOvkJe5wa4VNt"
+    },
+    {
+      "sort": 200000,
+      "name": "Surpresa, emboscada e mexer no que não é seu",
+      "type": "text",
+      "_id": "KRvMvibxDNnLlB7A",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<div class=\"odo-markdown stardragon-doc\"><h2>Surpresa e emboscada</h2><p>O Old Dragon 2 resolve surpresa com <strong>1d6: surpreendido em 1-2</strong>. O que faltava era o que o Space Dragon tinha e ninguém converteu — <strong>os fatores que mexem nessa chance</strong>, e o que exatamente acontece com quem foi pego.</p><p><strong>Some e subtraia da faixa</strong> (mínimo: ninguém é surpreendido · máximo: 1-5 em 1d6):</p><table><thead><tr><th>Situação</th><th>Chance de surpreender</th></tr></thead><tbody><tr><td>O grupo se move em silêncio</td><td><strong>+1</strong></td></tr><tr><td>Emboscada com cobertura preparada ou camuflagem</td><td><strong>+2</strong></td></tr><tr><td>Aproximação furtiva — <em>Furtividade</em> bem-sucedida</td><td><strong>+3</strong></td></tr><tr><td>Pouca luz, fumaça, tempestade de areia</td><td><strong>+2</strong></td></tr><tr><td>O alvo está relaxado: acampado, bebendo, dormindo</td><td><strong>+1</strong></td></tr><tr><td>O alvo está atento, com sentinela postada ou alarme disparado</td><td><strong>−3</strong></td></tr></tbody></table><p><strong>Quem é surpreendido não age na primeira rodada e sofre −2 na CA até o fim dela.</strong></p><p><em>Sobre o −2: no Space Dragon a penalidade era −5 de CP. Foi comprimida pela mesma proporção que o Estrela Dracônica usou ao converter os efeitos críticos de nave (−5 → −2, −10 → −1) — a escala de CA do OD2 é mais apertada que a de CP, e −5 numa CA de 13 é praticamente um acerto automático. −2 já faz a emboscada valer a pena sem transformá-la em execução.</em></p><h2>Quando você mexe no que não é seu</h2><p>Três coisas neste cenário são exclusivas de uma classe — os <strong>talentos</strong> do Operativo, os <strong>aparatos</strong> fora da sua faixa e os <strong>feitos</strong> do Técnico. Isso não quer dizer que ninguém mais possa tentar; quer dizer que <strong>quem não é da área tenta mal</strong>.</p><table><thead><tr><th>A situação</th><th>Quem não é da área</th></tr></thead><tbody><tr><td><strong>Achar e desarmar uma armadilha</strong> <em>(talento do Operativo)</em></td><td><strong>1 em 1d6</strong>, ou um teste <strong>Difícil</strong> de Sabedoria para achar e de Inteligência para desarmar. <strong>Falhar dispara a armadilha</strong></td></tr><tr><td><strong>Operar um aparato fora da faixa da sua classe</strong> — o Operativo pega o aparato ofensivo do Técnico caído</td><td><strong>1 em 1d6</strong>. Na falha, o aparato <strong>sofre curto-circuito</strong> e precisa de reparo antes de funcionar de novo</td></tr><tr><td><strong>Realizar um feito científico</strong> sem ser Técnico</td><td><strong>Não dá.</strong> Cirurgia, clonagem e cérebro positrônico não têm versão improvisada — é a única das três que fecha de vez</td></tr></tbody></table><p><em>Esta regra existia no Space Dragon como porcentagem de aptidão tecnológica, e o Estrela Dracônica a converteu para 1 em 1d6 — mas o cenário nunca a repetiu, o que fazia parecer que a resposta era \"não pode\", quando a resposta certa é <strong>\"pode, mal, e provavelmente vai quebrar\"</strong>. É a diferença entre travar a cena e deixar o jogador tentar.</em></p></div>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swspacedragonbld",
+        "exportSource": null
+      },
+      "_key": "!journal.pages!RljsQHzd9COsEkDL.KRvMvibxDNnLlB7A"
+    },
+    {
+      "sort": 300000,
+      "name": "Serviços, despesas e contratação",
+      "type": "text",
+      "_id": "6GabJ8r6dJYSQZSa",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<div class=\"odo-markdown stardragon-doc\"><p>Entre uma aventura e outra, é aqui que o Crédito significa alguma coisa.</p><h2>Vida cotidiana <em>(por dia, salvo indicação)</em></h2><table><thead><tr><th>Serviço</th><th>Econômico</th><th>Comum</th><th>Bom</th><th>Luxuoso</th></tr></thead><tbody><tr><td><strong>Refeição</strong></td><td>1 CR</td><td>5 CR</td><td>25 CR</td><td>70 CR</td></tr><tr><td><strong>Alojamento</strong></td><td>10 CR</td><td>25 CR</td><td>50 CR</td><td>100 CR</td></tr></tbody></table><h2>Transporte</h2><table><thead><tr><th>Serviço</th><th>Custo</th></tr></thead><tbody><tr><td>Aluguel de moto speeder / speeder terrestre / speeder aéreo <em>(por dia)</em></td><td>20 / 50 / 250 CR</td></tr><tr><td>Passagem interplanetária <em>(por dia de viagem, por pessoa)</em></td><td>900 CR</td></tr><tr><td>Taxa de pouso numa estação ou doca <em>(por dia)</em></td><td>20 – 100 CR, conforme o mundo</td></tr></tbody></table><h2>Cuidados médicos</h2><table><thead><tr><th>Serviço</th><th>Custo</th></tr></thead><tbody><tr><td>Cuidados médicos / aplicação de medpac <em>(por dia)</em></td><td>150 CR</td></tr><tr><td>Tanque de bacta <em>(por hora)</em></td><td>150 CR</td></tr><tr><td>Cirurgia <em>(por hora)</em></td><td>250 CR</td></tr><tr><td>Tratar doença <em>(por dia)</em></td><td>250 CR</td></tr><tr><td>Tratar veneno <em>(por dia)</em></td><td>50 CR</td></tr><tr><td>Tratar envenenamento por radiação <em>(por dia)</em></td><td>500 CR</td></tr></tbody></table><h2>Contratar tripulação</h2><p>Numa estação populosa se contrata quem falta ao grupo. <strong>Preço por mês de serviço</strong>; combate perigoso costuma pedir um bônus por fora, e nenhum contratado morre de graça pelos PJs.</p><table><thead><tr><th>Contratado</th><th>Custo</th><th>O que entrega</th></tr></thead><tbody><tr><td>Guarda-costas</td><td>200 CR</td><td>Um corpo a mais na porta. Não segue os PJs para dentro de encrenca</td></tr><tr><td>Piloto</td><td>300 CR</td><td>Tira a nave do chão sem ninguém do grupo largar o que está fazendo</td></tr><tr><td>Mecânico</td><td>500 CR</td><td>Mantém a nave voando entre aventuras</td></tr><tr><td>Médico</td><td>1.500 CR</td><td>Estabiliza, trata e opera</td></tr><tr><td>Especialista</td><td>3.000 CR</td><td>Slicer, arqueólogo, intérprete — o que a missão exigir</td></tr></tbody></table><p><strong>Contratado não é seguidor.</strong> Os <strong>seguidores</strong> do Emissário e do Contrabandista são leais por vínculo e limitados pelo Carisma; estes aqui são <strong>pagos</strong>, e param de aparecer no dia em que o pagamento para. Contam à parte.</p><p><em>Duas fontes: a tabela de tripulação vem dos serviços de estação espacial do Space Dragon (T10-8), pela régua ÷100. A de vida cotidiana e transporte vem da adaptação de Jonas Picholaro (CC BY 3.0), reescalada — os valores originais pressupunham uma pistola blaster a 500 CR, e aqui ela custa 150. O período de contratação (por mês) é leitura da casa: o livro traz o preço e não diz o prazo.</em></p></div>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swspacedragonbld",
+        "exportSource": null
+      },
+      "_key": "!journal.pages!RljsQHzd9COsEkDL.6GabJ8r6dJYSQZSa"
+    }
+  ],
+  "flags": {},
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "_key": "!journal!RljsQHzd9COsEkDL"
+}

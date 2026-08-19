@@ -56,7 +56,7 @@ const NOTA_SPEC_MUNDANA = NOTA_SPEC;
 
 // Talentos do Operativo — o campo `rogue_talents` é o que faz a ficha do OD2
 // exibir o alocador de pontos.
-const T = {
+export const T = {
   sabotagem: { key: "sabotagem", name: "Sabotagem", description: "Destranca portas e provoca defeitos em máquinas. Exige os instrumentos consigo e vale uma vez por máquina — se falhar, só tenta de novo naquela máquina ao subir de nível. O tempo cai com a perícia: 2 pts → até 1d6 turnos; 3 pts → 1d4; 4 pts → 1d3; 5 pts → 1 turno." },
   escalar: { key: "escalar", name: "Escalar", description: "Sobe qualquer superfície íngreme (uma jogada por escalada, deslocando seu movimento por rodada). Em falha, cai da metade da altura total e sofre 1d6 de dano a cada 3 metros de queda." },
   furtividade: { key: "furtividade", name: "Furtividade", description: "Esconde-se, move-se em silêncio e passa por vãos estreitos; com novo teste, anda furtivo em movimento normal — mas atacar (mesmo errando) o torna visível." },
@@ -153,8 +153,11 @@ const dominioDaSenda = (senda, dominio, frase) => ({
 // As restrições são escritas no vocabulário da tabela de Equipamentos: as armas
 // trazem a coluna "Uso" (Leve / Marcial / Utilitária) e as armaduras a coluna
 // "Tipo" (Leve / Média / Pesada). Antes as classes falavam em "armas de uma
-// mão", "armas simples" e "regra de Vestes" — termos que nenhuma tabela deste
-// cenário etiquetava, e que por isso o jogador não conseguia aplicar na loja.
+// mão", "armas simples" e "regra de Vestes" — termos herdados do Space Dragon
+// que nenhuma tabela deste
+// cenário etiquetava (a "regra de Vestes" apontava para um degrau de armadura
+// do SD que nunca foi transportado para cá), e que por isso o jogador não
+// conseguia aplicar na loja.
 const EQ_VETERANO = {
   weapons: "Leve, Marcial e Utilitária — qualquer arma do catálogo.",
   armors: "Leve, Média e Pesada, e pode usar escudo.",
@@ -549,7 +552,7 @@ export const classes = [
       "<p><strong>Formas de Sabre:</strong> a Forma escolhida no 3º nível é sua <strong>Forma Mestra</strong> e progride inteira ([3]/[6]/[10]). No <strong>10º</strong> você aprende uma <strong>segunda Forma</strong> (até o [6]) e passa a poder <strong>trocar de Forma em combate</strong> gastando 1 turno; no <strong>15º</strong>, uma <strong>terceira</strong> (até o [3]) e a <em>Guarda Fluida</em>. Ver a habilidade <strong>Mudar de Guarda</strong>.</p>" + NOTA_SPEC + NOTA_SENDA_SEM_ALINHAMENTO,
     equipment_restrictions: {
       ...EQ_SENSIVEL,
-      armors: "Usa armaduras médias sem penalizar a Força — exceção deliberada do cenário à regra de Vestes (o Jedi de armadura de guerra das Guerras Clônicas).",
+      armors: "Leve e Média, sem escudo — exceção deliberada da Senda à restrição de armadura Leve do Sensível (o Jedi de armadura de guerra das Guerras Clônicas).",
     },
     habilidades: [
       { nome: "Adestramento de Combate", level: 1, desc: "<p>Sua <strong>Base de Ataque passa a evoluir como a de um Veterano</strong> (não mais a lenta do místico) e você usa <strong>armaduras médias</strong> sem penalizar a Força.</p><p><em>Na ficha: use a coluna de BA do Veterano no lugar da coluna desta classe.</em></p>" },

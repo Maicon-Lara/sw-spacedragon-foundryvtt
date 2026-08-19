@@ -1,0 +1,50 @@
+{
+  "folder": "Qs7xYnLdafUOXnk1",
+  "name": "O Resol'nare",
+  "type": "class_ability",
+  "_id": "UkrSbIN1yYm9F7ew",
+  "img": "systems/olddragon2e/assets/icons/legiao-shield.svg",
+  "system": {
+    "description": "<p>Você adota o código mandaloriano, resumido em <strong>cinco votos</strong> criados com o Mestre — <strong>dois a mais</strong> que as outras Sendas. Enquanto o cumpre, <strong>+1 em JPS</strong>. Quebrá-lo <strong>suspende todas as habilidades da Senda</strong> até uma reparação.</p><p>Um dos cinco é sempre um <strong>dever de clã ativo</strong>, com nome e prazo: uma dívida de sangue a cobrar, um enjeitado para criar, um Sabre Sombrio para recuperar, um clã disperso para reunir. O Mestre é <strong>obrigado</strong> a cobrá-lo em cena ao menos uma vez por arco.</p><p><em>É o guerreiro que carrega o Credo na frente do corpo — e o Credo cobra na frente.</em></p>",
+    "level": 1,
+    "level3": "",
+    "level6": "",
+    "level10": "",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!UkrSbIN1yYm9F7ew"
+}

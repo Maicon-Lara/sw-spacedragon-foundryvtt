@@ -42,7 +42,7 @@ const paginas = [
   {
     title: "Naves e Veículos — como funcionam",
     content: `
-<p><strong>Regras:</strong> naves, caças e veículos usam o <strong>Capítulo de Espaçonaves e Estações do Space Dragon</strong> sem alteração — combate espacial, PV, Base de Ataque, Jogadas de Proteção da nave, combustível, salto hiperespacial e câmaras.</p>
+<p><strong>Regras:</strong> naves, caças e veículos usam o <strong>Capítulo de Espaçonaves e Estações do Space Dragon</strong> sem alteração — combate espacial, PV, Base de Ataque, Jogadas de Proteção da nave, salto hiperespacial e câmaras. O <strong>combustível</strong> tem página própria nesta referência.</p>
 <p>Esta referência é um <strong>de-para de nomenclatura</strong>: pegue a classe de nave que quiser e vista-a de Star Wars.</p>
 <p>&#9888; <strong>De onde vêm os números.</strong> Use a tabela do <strong>Estrela Dracônica (ED-09)</strong>, <strong>não</strong> a do livro do Space Dragon: ao consolidar o ED as naves foram <strong>reescaladas</strong> para o Old Dragon 2, e os dois conjuntos são incompatíveis. O Caça saiu de <em>CP 28 / BA +16 / 150 m</em> para <strong>CA 50 / BA +36 / 100 m</strong>. Misturar as duas tabelas na mesma cena quebra o combate.</p>
 <table><thead><tr><th>Tipo</th><th>Tripulação</th><th>PV</th><th>BA</th><th>CA</th><th>JP</th><th>Mov.</th></tr></thead><tbody>
@@ -69,6 +69,72 @@ const paginas = [
 </tbody>
 </table>
 <p><em><strong>Estrela da Morte</strong> e demais super-estruturas fixas são melhor tratadas como <strong>estações espaciais</strong> (também no capítulo de naves do SD), não como naves.</em></p>
+`,
+  },
+  {
+    title: "Combustível",
+    content: `
+<p><em>Regra do Space Dragon §10.3.1, que não estava em lugar nenhum da cadeia — antes o combustível era tratado como recurso narrativo.</em></p>
+<p>Toda nave tem um <strong>nível de combustível de 0% a 100%</strong>, independente de quantos tanques ela tenha. O gasto sai de dois números:</p>
+<ol>
+<li><strong>A autonomia da fonte de energia</strong> dá o dado: <strong>autonomia baixa &rarr; d6 · média &rarr; d4 · alta &rarr; d2</strong>.</li>
+<li><strong>O custo da ação</strong> dá quantos dados: <strong>1 a 3</strong>, a critério do Mestre.</li>
+</ol>
+<p>Role e desconte o resultado em <strong>pontos percentuais</strong>.</p>
+<table><thead><tr><th>Ação</th><th>Custo típico</th></tr></thead><tbody>
+<tr><td>Um dia de viagem espacial em rota tranquila</td><td><strong>1</strong></td></tr>
+<tr><td>Decolagem, pouso, atracagem</td><td><strong>1</strong></td></tr>
+<tr><td>Salto hiperespacial em espaço limpo</td><td><strong>2</strong></td></tr>
+<tr><td>Salto com interferência gravitacional, rota longa ou às cegas</td><td><strong>3</strong></td></tr>
+<tr><td>Manobra evasiva ou movimentação dupla em combate</td><td><strong>1</strong>, por uso</td></tr>
+</tbody></table>
+<p><em>Exemplo: o <strong>Falcon</strong> (particular, combustível líquido, autonomia média = <strong>d4</strong>) salta para um sistema distante sem interferência — gasto <strong>2</strong> &rarr; <strong>2d4%</strong> do tanque.</em></p>
+<h2>Abastecer</h2>
+<p>O preço é <strong>por ponto percentual</strong>, e varia com a fonte e o porte da nave.</p>
+<table><thead><tr><th>Fonte</th><th>Raridade</th><th>Autonomia</th><th>P</th><th>M</th><th>G</th><th>C</th></tr></thead><tbody>
+<tr><td>Incineração de detritos</td><td>Incomum</td><td><strong>Baixa (d6)</strong></td><td>0,5 CR</td><td>1 CR</td><td>10 CR</td><td>100 CR</td></tr>
+<tr><td><strong>Combustível líquido</strong></td><td>Comum</td><td><strong>Média (d4)</strong></td><td>5 CR</td><td>10 CR</td><td>100 CR</td><td>1.000 CR</td></tr>
+<tr><td>Reatores atômicos</td><td>Comum</td><td><strong>Alta (d2)</strong></td><td>10 CR</td><td>100 CR</td><td>1.000 CR</td><td>10.000 CR</td></tr>
+<tr><td>Painéis termoenergéticos</td><td><strong>Rara</strong></td><td>variável</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+</tbody></table>
+<p>&#9888; <strong>É aqui que o dinheiro da tripulação some, e é de propósito.</strong> Encher o tanque de uma nave particular a combustível líquido custa <strong>1.000 CR</strong> — quase o pagamento inteiro de um contrato de fronteira. É por isso que ninguém nesta galáxia recusa frete, e é por isso que <em>"não temos combustível para o salto"</em> é uma premissa de aventura em vez de uma desculpa.</p>
+<p><em>Os <strong>painéis termoenergéticos</strong> não custam nada para abastecer, e são raros justamente por isso — é a nave que não depende de ninguém. Se o grupo achar uma, é uma recompensa de arco inteiro.</em></p>
+`,
+  },
+  {
+    title: "Personagem contra veículo, e veículo contra personagem",
+    content: `
+<p><em>Regra do Space Dragon §10.6, ausente da cadeia inteira. É a cena de Hoth, do AT-ST em Endor e do blaster contra o speeder.</em></p>
+<h2>Atirando num veículo com arma de mão</h2>
+<p>É um <strong>ataque à distância normal contra a CA do veículo</strong>. Não há redução de dano nem regra especial — o que protege o veículo é a CA alta.</p>
+<ul>
+<li><strong>Contra veículos</strong> (CA 24–30), é difícil mas possível. Um Veterano experiente com um rifle blaster acerta um speeder ou um AT-ST com uma rolagem alta.</li>
+<li><strong>Contra naves de combate</strong> (CA 46–50), é <strong>impossível na prática</strong> — nem a melhor Base de Ataque de um personagem de 15º nível alcança. E está certo: <strong>blaster de mão não derruba caça.</strong></li>
+</ul>
+<p><strong>O que funciona contra o que não se acerta:</strong> explosivos e mísseis, que <strong>forçam uma JP da nave</strong> em vez de uma rolagem de ataque (e a JP passa pelo teste de <em>Pilotar</em>); armas <strong>Íon</strong>, que desligam sistema em vez de causar dano; e a solução clássica do gênero — <strong>abordar</strong>, e resolver lá dentro, onde a nave vira masmorra.</p>
+<h2>A arma montada atirando em você</h2>
+<p>Um canhão de veículo acertaria uma pessoa sem esforço. Como isto é space opera e não simulação, vale o contrário:</p>
+<ol>
+<li><strong>Role o ataque para cada alvo</strong>, somando o <strong>BA do veículo</strong> + o <strong>BA à distância de quem opera a arma</strong>.</li>
+<li><strong>O alvo faz uma JPD.</strong> Passando, sofre <strong>metade do dano</strong>.</li>
+<li><strong>A cada 20 pontos no resultado total do ataque, o alvo sofre &minus;2 na JPD.</strong></li>
+</ol>
+<p><em>Um resultado 37 impõe <strong>&minus;2</strong>; um resultado 41 impõe <strong>&minus;4</strong>.</em></p>
+<p>&#9888; <strong>O efeito de mesa é o certo:</strong> heróis <strong>não morrem</strong> de um tiro de turbolaser — eles voam para trás, se levantam e correm. Mas um canhão bem operado, com BA alto, empilha penalidade suficiente para que a JPD comece a falhar. É a diferença entre a fuga de Hoth e a morte de um figurante.</p>
+`,
+  },
+  {
+    title: "Veículos terrestres, aquáticos e aéreos",
+    content: `
+<p>Mesmas regras de pilotagem e combate das naves, e a mesma escala de porte. Os números saem da <strong>Tabela 9-8 do ED-09</strong>; abaixo, o de-para de Star Wars.</p>
+<table><thead><tr><th>Tipo (ED-09)</th><th>Porte · CA</th><th>Equivalentes em Star Wars</th></tr></thead><tbody>
+<tr><td><strong>Aerocarro</strong></td><td>P · CA 30</td><td><strong>Speeder bike</strong> (74-Z), <strong>landspeeder</strong> (X-34), <strong>swoop</strong>, <strong>snowspeeder</strong> (T-47), airspeeder de Coruscant</td></tr>
+<tr><td><strong>Hidrocarro</strong></td><td>P · CA 30</td><td>Barco de patrulha, skiff aquático de Naboo, transporte de superfície de Kamino</td></tr>
+<tr><td><strong>Submersível</strong></td><td>M · CA 28</td><td><strong>Bongo</strong> gungan, submersível de exploração de Mon Cala</td></tr>
+<tr><td><strong>Veículo de exploração</strong></td><td>M · CA 28</td><td><strong>AT-ST</strong>, AT-RT, AT-DP, skiff de carga do deserto, walker de reconhecimento</td></tr>
+<tr><td><strong>Submarino</strong></td><td>G · CA 26</td><td>Transporte subaquático de Mon Cala, submarino de guerra</td></tr>
+<tr><td><strong>Tanque de guerra</strong></td><td>G · CA 30</td><td><strong>AAT</strong> separatista, TX-130 <em>Saber</em>, AT-AP, canhoneira de solo</td></tr>
+</tbody></table>
 `,
   },
   {

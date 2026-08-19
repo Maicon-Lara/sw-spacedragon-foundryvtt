@@ -11,7 +11,7 @@
     "high_level_hp_bonus": 1,
     "equipment_restrictions": {
       "weapons": "Sabre de luz e armas Leves.",
-      "armors": "Usa armaduras médias sem penalizar a Força — exceção deliberada do cenário à regra de Vestes (o Jedi de armadura de guerra das Guerras Clônicas).",
+      "armors": "Leve e Média, sem escudo — exceção deliberada da Senda à restrição de armadura Leve do Sensível (o Jedi de armadura de guerra das Guerras Clônicas).",
       "magic_items": "Apenas aparatos utilitários. Construir e operar qualquer aparato é o nicho do Técnico."
     },
     "restrictions": {

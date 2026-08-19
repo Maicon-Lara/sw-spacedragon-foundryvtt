@@ -1,0 +1,128 @@
+{
+  "folder": "i4sKquBGYJPn0eBe",
+  "name": "Senda Mandaloriana — Caçador Solitário",
+  "type": "class",
+  "_id": "4PZXtaB4p6AAOLGz",
+  "img": "systems/olddragon2e/assets/icons/legiao-shield.svg",
+  "system": {
+    "flavor": "<p>O Operativo na Senda. <em>Senda Mandaloriana.</em></p>",
+    "description": "<p><strong>A Senda Mandaloriana substitui a especialização</strong> desta classe: o personagem entra no Credo de um clã e passa a evoluir pela coluna <strong>XP Especial</strong>.</p><p>O renegado sem lar — a leitura mais &ldquo;Boba Fett&rdquo; das quatro, e a que casa com o Caçador de Recompensas sem ser ele.</p><p><strong>O que este Operativo troca:</strong> o <strong>Ataque Furtivo</strong> e a <strong>Percepção</strong> param de progredir. Em troca, veste <strong>Beskar</strong> e usa <strong>jetpack</strong>, que a classe não tocaria, e troca <em>Escalar</em> por <em>Rastrear</em> na lista de talentos.</p><p><em>Mandaloriano não é uma espécie, é uma cultura</em> — qualquer espécie pode trilhar a Senda. A Origem <strong>Filho de Mandalore</strong>, no compêndio de Espécies, é a porta de entrada (opcional).</p><p>Contrabandistas, ladrões, espiões, piratas e assassinos onde a lei não chega. <strong>Han Solo é um Operativo.</strong></p><p><strong>Créditos iniciais:</strong> 2d6 × 50 CR.</p><p><strong>Seguidores.</strong> Onde uma habilidade falar em \"seu número máximo de seguidores\", vale: <strong>Número Máximo de Seguidores = 1 + modificador de Carisma</strong> (mínimo <strong>1</strong>). Carisma 9-12 → 1 seguidor · 13-14 → 2 · 15-16 → 3 · 17-18 → 4 · 19-20 → 5. São companheiros leais <strong>por vínculo</strong>, não contratados — subalternos e mercenários pagos entram pelo limite de contratação de ajudantes do OD2 (LB1, p. 78) e contam à parte.</p><p><strong>Alinhamento — livre em todas as classes.</strong> <strong>Nenhuma especialização deste cenário exige alinhamento.</strong> Escolha Ordeiro, Neutro ou Caótico pelo personagem que você quer jogar, não pela trilha: existe Emissário caótico, Assassino ordeiro e Contrabandista que cumpre a palavra dada.</p><p>O alinhamento continua na ficha e continua importando — guia a conduta, orienta reações de PNJ e é o que o Mestre cobra quando você age contra a própria natureza. O que ele <strong>não</strong> faz é fechar portas na criação.</p><p><em>Correção da casa. O Space Dragon prendia cada especialização a uma Afiliação, e este cenário carregava isso. Três motivos para cortar: <strong>(1)</strong> produzia personagens que a ficção contradiz — o Caçador de Recompensas era obrigatoriamente caótico, mas Boba Fett cumpre contrato à risca e Din Djarin segue um código religioso; <strong>(2)</strong> fechava espécies inteiras — cruzando a trava de alinhamento da espécie com a da trilha, um Rodiano só podia seguir três das dez trilhas mundanas; <strong>(3)</strong> a diferenciação das trilhas nunca veio do alinhamento, vem do kit de habilidades. Se a sua mesa quiser a amarração de volta, basta declarar que vale.</em></p><p><strong>Usar fora da faixa.</strong> Vestir armadura mais pesada que a permitida, ou empunhar arma fora da lista, não é proibido pelo universo — é proibido pelo treino. O personagem sofre <strong>−2 em todas as rolagens de ataque</strong> com a arma e <strong>perde o acesso às habilidades de classe que dependem de mobilidade ou precisão</strong> enquanto estiver assim (os talentos do Operativo, a Forma de Sabre do Guardião, o Ataque Furtivo). As habilidades passivas continuam valendo.</p>",
+    "hp": 6,
+    "high_level_hp_bonus": 1,
+    "equipment_restrictions": {
+      "weapons": "Leve e Utilitária, nenhuma de Duas Mãos.",
+      "armors": "Apenas Leve ou Média, e sem escudo — armadura Pesada ou escudo impede o uso dos talentos de classe.",
+      "magic_items": "Apenas aparatos utilitários."
+    },
+    "restrictions": {
+      "alignments": [],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 1500
+      },
+      "3": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 3000
+      },
+      "4": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 5500
+      },
+      "5": {
+        "ba": 3,
+        "jp": 8,
+        "xp": 8500
+      },
+      "6": {
+        "ba": 3,
+        "jp": 8,
+        "xp": 17000
+      },
+      "7": {
+        "ba": 4,
+        "jp": 8,
+        "xp": 27000
+      },
+      "8": {
+        "ba": 4,
+        "jp": 8,
+        "xp": 37000
+      },
+      "9": {
+        "ba": 5,
+        "jp": 11,
+        "xp": 47000
+      },
+      "10": {
+        "ba": 5,
+        "jp": 11,
+        "xp": 94000
+      },
+      "11": {
+        "ba": 6,
+        "jp": 11,
+        "xp": 190000
+      },
+      "12": {
+        "ba": 6,
+        "jp": 11,
+        "xp": 280000
+      },
+      "13": {
+        "ba": 7,
+        "jp": 14,
+        "xp": 370000
+      },
+      "14": {
+        "ba": 7,
+        "jp": 14,
+        "xp": 460000
+      },
+      "15": {
+        "ba": 8,
+        "jp": 14,
+        "xp": 550000
+      }
+    },
+    "class_abilities": [
+      "Compendium.stardragon.stardragon-classes.Item.dImNFw7do5ldyLeE",
+      "Compendium.stardragon.stardragon-classes.Item.2F5EQPeYl6Jlezlj",
+      "Compendium.stardragon.stardragon-classes.Item.bO13CRujGzn5YzHv",
+      "Compendium.stardragon.stardragon-classes.Item.kEJdNt77SZKVZ2i1",
+      "Compendium.stardragon.stardragon-classes.Item.HBW1dWbykc0pVUPa",
+      "Compendium.stardragon.stardragon-classes.Item.eG4DlnEokOYbRRe8",
+      "Compendium.stardragon.stardragon-classes.Item.DECDYFSupqHopw9B",
+      "Compendium.stardragon.stardragon-classes.Item.Cpe3vvC7w46PcdDk",
+      "Compendium.stardragon.stardragon-classes.Item.K9N9br49bB80hgZY",
+      "Compendium.stardragon.stardragon-classes.Item.IsUo29bFNRqiF7LQ"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!4PZXtaB4p6AAOLGz"
+}

@@ -26,6 +26,9 @@ import { ameacas } from "./data/ameacas.mjs";
 import { navesJournal } from "./data/naves.mjs";
 import { bestiarioJournal } from "./data/bestiario-journal.mjs";
 import { equipamentosJournal } from "./data/equipamentos-journal.mjs";
+import { feitosJournal } from "./data/feitos-journal.mjs";
+import { mestreJournal } from "./data/mestre-journal.mjs";
+import { criacaoJournal } from "./data/criacao-journal.mjs";
 import { progressao } from "./data/progressoes.mjs";
 
 const ROOT = path.resolve(fileURLToPath(import.meta.url), "../..");
@@ -72,7 +75,7 @@ function buildClassesDocs() {
     }
     docs.push(classDoc({ ...cls, levels }, folder._id, abilityUuids));
   }
-  // Formas de Sabre e Núcleo Mandaloriano: habilidades escolhidas à parte.
+  // Formas de Sabre e pacote de clã: habilidades escolhidas à parte.
   agrupaAvulsas(docs, classAbilitiesAvulsas, "classes", classAbilityDoc);
   return docs;
 }
@@ -222,7 +225,10 @@ function buildBestiarioDocs() {
 
 // ── Pack de journal (referência do mestre) ──
 function buildJournalDocs() {
-  return [poderesJournal, bestiarioJournal, navesJournal, equipamentosJournal].map((e, i) =>
+  return [
+    criacaoJournal, equipamentosJournal, feitosJournal, poderesJournal,
+    navesJournal, bestiarioJournal, mestreJournal,
+  ].map((e, i) =>
     journalDoc(e, (i + 1) * 100000)
   );
 }

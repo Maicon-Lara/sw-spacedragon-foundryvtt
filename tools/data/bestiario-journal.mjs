@@ -93,6 +93,20 @@ export const bestiarioJournal = {
         tabela(["Space Dragon", "Vira, em Star Wars…"], DE_PARA),
     },
     {
+      title: "Prêmio — o que a criatura tem no ninho",
+      content:
+        "<p>O Space Dragon dá a cada ficha de criatura um campo de <strong>Prêmio</strong>, e a conversão o perdeu. Ele responde a uma pergunta que a mesa faz sempre depois da luta: <em>\"tem alguma coisa aqui?\"</em></p>" +
+        "<p>Role <strong>1d6</strong> por covil, ninho ou carcaça que valha a pena revirar:</p>" +
+        tabela(["1d6", "Prêmio"], [
+          ["1-2", "<strong>Nenhum.</strong> Bicho é bicho"],
+          ["3", "<strong>Créditos e miudezas</strong> — 1d6 × 100 CR do último infeliz que passou por ali"],
+          ["4", "<strong>Aparato utilitário</strong> — visor, baliza, comunicador, kit"],
+          ["5", "<strong>Aparato defensivo</strong> — traje, cinto, gerador de escudo"],
+          ["6", "<strong>Aparato ofensivo</strong>, ou uma <strong>relíquia tecnológica</strong> se a criatura for antiga, guardiã de ruína ou grande demais"],
+        ]) +
+        "<p><em>Por que isso importa mais em Star Wars do que parece: o covil de uma fera é o único lugar da galáxia onde tecnologia aparece <strong>sem dono e sem preço</strong> — foi o caçador anterior que morreu tentando. É o que transforma \"matamos o Krayt\" em \"achamos o que o Krayt tinha comido\", e a <strong>pérola do dragão Krayt</strong> é literalmente isto no cânone.</em></p>",
+    },
+    {
       title: "Modelos de PNJ — as classes como inimigos",
       content:
         "<p>Use as <strong>criaturas-classe</strong> da Tabela 11-1 como gabarito e vista de Star Wars. As classes deste cenário são reskins do Space Dragon: <strong>Veterano = Cosmonauta</strong>, <strong>Operativo = Gatuno</strong>, <strong>Técnico = Cientista</strong>, <strong>Sensível à Força = Mentálico</strong>.</p>" +

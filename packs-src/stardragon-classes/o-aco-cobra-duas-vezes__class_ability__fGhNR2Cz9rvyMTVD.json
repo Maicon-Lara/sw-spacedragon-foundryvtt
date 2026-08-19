@@ -1,0 +1,50 @@
+{
+  "folder": "PLFT3BYTLZ2DRsX5",
+  "name": "O aço cobra duas vezes",
+  "type": "class_ability",
+  "_id": "fGhNR2Cz9rvyMTVD",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p>Vestir armadura e servir a um clã custa a meditação que a Força profunda exige. Duas travas, e as duas valem a carreira inteira:</p><ul><li>Seu <strong>Foco Diário é contado como o de um Sensível de −1 nível</strong>.</li><li>Seu <strong>Teto de Grandeza é a 6ª</strong> — o mesmo do Guardião, e pelo mesmo motivo: quem veste aço não chega ao fundo da Força.</li></ul><p>Em troca, o clã lhe ensina <strong>uma Forma de Sabre</strong>, que progride até o degrau do 6º nível. É só ela: <em>Mudar de Guarda</em> é patrimônio do Guardião, e você não tem para onde trocar.</p><p><em>E, sem Domínio, não há <strong>Eco da Senda</strong>: o Foco gasto nunca volta e nenhum poder de 1ª Grandeza fica gratuito no 15º. O clã lhe ensinou uma lâmina, não um atalho da Força. <strong>A Tentação, sim, ele tem</strong> — a Corrupção pertence ao Caminho, não à especialização.</em></p>",
+    "level": 1,
+    "level3": "",
+    "level6": "",
+    "level10": "",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 800000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!fGhNR2Cz9rvyMTVD"
+}

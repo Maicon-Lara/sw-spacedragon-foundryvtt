@@ -51,7 +51,7 @@ export const especies = [
     movement: 9,
     infravision: 0,
     alignment_tendency: "neutro",
-    alignment_notes: "Tendem ao Neutro.",
+    alignment_notes: "Qualquer, tende a Neutro.",
     habilidades: [
       {
         nome: "Força Bruta",
@@ -74,7 +74,7 @@ export const especies = [
     movement: 9,
     infravision: 0,
     alignment_tendency: "neutro",
-    alignment_notes: "Tendem ao Neutro.",
+    alignment_notes: "Qualquer, tende a Neutro.",
     habilidades: [
       { nome: "Sedução Inata", desc: "<p>+1 em testes de Carisma e em testes de reação a seu favor.</p>" },
       { nome: "Lekku Sensorial", desc: "<p>Chance de <strong>1-2 em 1d6</strong> de perceber más intenções ou mentiras a até 6 metros. O Mestre faz o teste em segredo.</p>" },
@@ -92,7 +92,7 @@ export const especies = [
     infravision: 18,
     infravision_notes: "Visão térmica: só detecta seres vivos e fontes de calor.",
     alignment_tendency: "caotico",
-    alignment_notes: "Tendem ao Caótico.",
+    alignment_notes: "Qualquer, tende a Caótico.",
     habilidades: [
       { nome: "Caçador Nato", desc: "<p>+1 em rastrear, procurar e ouvir ruídos.</p>" },
       { nome: "Visão Térmica", desc: "<p>Infravisão de <strong>18 metros</strong>, mas que só detecta seres vivos e fontes de calor.</p>" },

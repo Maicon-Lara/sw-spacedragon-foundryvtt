@@ -20,8 +20,8 @@ function tabela(cabecalho, linhas) {
 }
 
 export const equipamentosJournal = {
-  nome: "Equipamento — regras de uso e serviços",
-  paginas: [
+  title: "Equipamento — regras de uso e serviços",
+  pages: [
     {
       title: "Quem pode usar o quê",
       content:

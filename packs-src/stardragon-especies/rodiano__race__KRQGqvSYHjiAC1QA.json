@@ -13,7 +13,7 @@
     "infravision": 18,
     "infravision_notes": "Visão térmica: só detecta seres vivos e fontes de calor.",
     "alignment_tendency": "caotico",
-    "alignment_notes": "Tendem ao Caótico.",
+    "alignment_notes": "Qualquer, tende a Caótico.",
     "race_abilities": [
       "Compendium.stardragon.stardragon-especies.Item.Ulec6lDxcTY3gO3h",
       "Compendium.stardragon.stardragon-especies.Item.5nAfZ6RNgusKxpzo",

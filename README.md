@@ -22,11 +22,11 @@ são editados à mão.
 | Pack | Tipo | Conteúdo |
 |---|---|---|
 | `stardragon-especies` | Item | 9 espécies (`race` + `race_ability`), o molde Mutante e a Origem *Filho de Mandalore* |
-| `stardragon-classes` | Item | 4 classes-base + 13 especializações (`class`), as 7 Formas de Sabre e o Núcleo Mandaloriano |
+| `stardragon-classes` | Item | 4 classes-base + 14 especializações (`class`), as 7 variantes de Forma do Guardião e as 4 fichas da Senda Mandaloriana |
 | `stardragon-equipamentos` | Item | blasters, armas, sabres, cristais, armaduras e aparatos |
 | `stardragon-poderes` | Item | Poderes da Força de 1ª a 5ª Grandeza (`spell`) |
 | `stardragon-bestiario` | Actor | criaturas e modelos de PNJ (`monster`) |
-| `stardragon-journal` | JournalEntry | Poderes de 6ª a 10ª Grandeza e Naves & Veículos |
+| `stardragon-journal` | JournalEntry | Criando um Personagem, regras de equipamento e serviços, Feitos Científicos, Poderes de 6ª a 10ª Grandeza, Naves & Veículos, bestiário e Seção do Mestre |
 
 ## Decisões de modelagem
 
