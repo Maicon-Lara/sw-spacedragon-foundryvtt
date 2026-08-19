@@ -1,0 +1,44 @@
+{
+  "folder": "A4B78kRnE8UbTNF5",
+  "name": "Como usar o molde Mutante",
+  "type": "race_ability",
+  "_id": "oocD9ik6dCEqK9JV",
+  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "system": {
+    "description": "<p>Para \"quase-humanos\" exóticos não listados (Nautolanos, Cerianos, etc.), use a espécie <strong>Mutante</strong> deste mesmo compêndio: arraste a raça, escolha <strong>um Aprimoramento</strong> e <strong>uma Degeneração</strong> nas duas pastas dela, e trate o resto como Humano.</p><p>É o coringa para criar um povo na hora — e é assim que o cenário recomenda inventar uma espécie que ainda não tem ficha.</p><p><strong>As nove espécies escritas do compêndio não usam este molde</strong> — foram feitas do zero para Star Wars e não pagam Degeneração. Esta é uma divergência deliberada do Estrela Dracônica, onde todo povo fora do Humano e do Droide é Mutante.</p>",
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage": 0,
+    "bonus_damage_condition": "none",
+    "bonus_damage_condition_2": "none",
+    "rogue_talent": "none",
+    "rogue_talent_2": "none",
+    "daily_uses": 0,
+    "natural_armor": 0,
+    "load_modifier": 0,
+    "max_load_override": 0,
+    "armor_weight_modifier": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!oocD9ik6dCEqK9JV"
+}

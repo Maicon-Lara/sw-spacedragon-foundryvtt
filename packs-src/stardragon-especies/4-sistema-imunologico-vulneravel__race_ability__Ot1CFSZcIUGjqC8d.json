@@ -1,0 +1,44 @@
+{
+  "folder": "iMA2s1rtJvcl3ZV4",
+  "name": "4. Sistema Imunológico Vulnerável",
+  "type": "race_ability",
+  "_id": "Ot1CFSZcIUGjqC8d",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p><em>Genótipo:</em> os anticorpos não combatem agentes nocivos com eficácia. <em>Fenótipo:</em> vulnerabilidade a doenças.</p><p><strong>−2 em qualquer JPC</strong> para resistir a doenças, infecções e outros males que não envolvam ferimento ou trauma físico.</p>",
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage": 0,
+    "bonus_damage_condition": "none",
+    "bonus_damage_condition_2": "none",
+    "rogue_talent": "none",
+    "rogue_talent_2": "none",
+    "daily_uses": 0,
+    "natural_armor": 0,
+    "load_modifier": 0,
+    "max_load_override": 0,
+    "armor_weight_modifier": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 1600000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Ot1CFSZcIUGjqC8d"
+}

@@ -54,6 +54,7 @@ export const criacaoJournal = {
       content:
         "<h2>Passo 2 — Espécie</h2>" +
         "<p>Escolha entre as nove do compêndio <strong>Star Dragon: Espécies</strong>. <strong>Espécie não altera atributo neste cenário</strong> — ela dá habilidades.</p>" +
+        "<p>Há uma décima entrada, o <strong>Mutante</strong>: não é um povo, é o <em>molde coringa</em> para inventar um. Escolha um Aprimoramento e uma Degeneração nas pastas dele e trate o resto como Humano — é assim que se joga um Nautolano, um Ceriano ou qualquer povo que ainda não tem ficha. É também a <strong>única</strong> entrada do compêndio que mexe em atributo, e só se você escolher a mutação que faz isso.</p>" +
         tabela(
           ["Espécie", "O que ela te dá, em uma linha", "Trava"],
           [

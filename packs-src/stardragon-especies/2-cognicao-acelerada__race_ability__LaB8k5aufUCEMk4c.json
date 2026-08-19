@@ -1,0 +1,44 @@
+{
+  "folder": "78eASrnapPGjnwdX",
+  "name": "2. Cognição Acelerada",
+  "type": "race_ability",
+  "_id": "LaB8k5aufUCEMk4c",
+  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "system": {
+    "description": "<p><em>Genótipo:</em> o aprendizado ocorre mais rapidamente que o normal. <em>Fenótipo:</em> facilidade de entendimento e memorização.</p><p><strong>+30%</strong> em toda a experiência (XP) recebida.</p><p><em>Compare com o Humano, que ganha +10%: esta é a mutação que mais muda o ritmo de uma campanha, e é por isso que ela custa uma Degeneração como qualquer outra.</em></p>",
+    "xp": 30,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage": 0,
+    "bonus_damage_condition": "none",
+    "bonus_damage_condition_2": "none",
+    "rogue_talent": "none",
+    "rogue_talent_2": "none",
+    "daily_uses": 0,
+    "natural_armor": 0,
+    "load_modifier": 0,
+    "max_load_override": 0,
+    "armor_weight_modifier": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!LaB8k5aufUCEMk4c"
+}

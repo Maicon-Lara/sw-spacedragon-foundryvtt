@@ -1,0 +1,44 @@
+{
+  "folder": "AtCzqV4wRf1r9cFo",
+  "name": "Fenótipo",
+  "type": "race_ability",
+  "_id": "Egjckt8DZDB4swsv",
+  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "system": {
+    "description": "<p>O <strong>fenótipo</strong> é como a mutação aparece no corpo ou no comportamento. As descrições trazem sugestões, mas <strong>invente o seu</strong>: força ampliada pode ser braços extras, olfato aguçado pode ser antenas, longevidade pode dar uma pele arroxeada.</p><p><em>Mudanças cosméticas não alteram regra nenhuma — e são o melhor gancho de interpretação que o molde oferece.</em></p>",
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage": 0,
+    "bonus_damage_condition": "none",
+    "bonus_damage_condition_2": "none",
+    "rogue_talent": "none",
+    "rogue_talent_2": "none",
+    "daily_uses": 0,
+    "natural_armor": 0,
+    "load_modifier": 0,
+    "max_load_override": 0,
+    "armor_weight_modifier": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Egjckt8DZDB4swsv"
+}

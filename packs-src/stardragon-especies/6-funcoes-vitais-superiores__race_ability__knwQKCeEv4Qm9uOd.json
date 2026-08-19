@@ -1,0 +1,44 @@
+{
+  "folder": "78eASrnapPGjnwdX",
+  "name": "6. Funções Vitais Superiores",
+  "type": "race_ability",
+  "_id": "knwQKCeEv4Qm9uOd",
+  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "system": {
+    "description": "<p><em>Genótipo:</em> as funções vitais correm em ritmo mais acelerado que o normal. <em>Fenótipo:</em> aspecto saudável.</p><p>O <strong>Dado de Vida da sua classe sobe uma categoria</strong>: d4 vira d6, d6 vira d8, d8 vira d10 e d10 vira d12.</p><p><em>Na prática, neste cenário: Operativo d6 → d8 · Técnico e Sensível d8 → d10 · Veterano d10 → d12.</em></p>",
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage": 0,
+    "bonus_damage_condition": "none",
+    "bonus_damage_condition_2": "none",
+    "rogue_talent": "none",
+    "rogue_talent_2": "none",
+    "daily_uses": 0,
+    "natural_armor": 0,
+    "load_modifier": 0,
+    "max_load_override": 0,
+    "armor_weight_modifier": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 800000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!knwQKCeEv4Qm9uOd"
+}

@@ -1,0 +1,44 @@
+{
+  "folder": "iMA2s1rtJvcl3ZV4",
+  "name": "2. Cognição Retardada",
+  "type": "race_ability",
+  "_id": "hk2U1azZ7BMhtWdG",
+  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "system": {
+    "description": "<p><em>Genótipo:</em> o aprendizado se dá mais lentamente que o normal. <em>Fenótipo:</em> dificuldade de entendimento e memorização.</p><p><strong>−30%</strong> em toda a experiência (XP) recebida.</p>",
+    "xp": -30,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage": 0,
+    "bonus_damage_condition": "none",
+    "bonus_damage_condition_2": "none",
+    "rogue_talent": "none",
+    "rogue_talent_2": "none",
+    "daily_uses": 0,
+    "natural_armor": 0,
+    "load_modifier": 0,
+    "max_load_override": 0,
+    "armor_weight_modifier": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 1400000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!hk2U1azZ7BMhtWdG"
+}

@@ -6,6 +6,12 @@
 //
 // Lembrete do cenário: as sete espécies não-humanas NÃO usam o molde Mutante
 // do Space Dragon e não pagam Degeneração — são criações do cenário.
+//
+// EXCEÇÃO DE FONTE: a raça Mutante e as vinte mutações NÃO vêm do cofre —
+// vêm direto do PDF do Space Dragon (cap. 2.3, tabelas T2-1 a T2-5). O cofre
+// só traz o ponteiro ("escolha um Aprimoramento e uma Degeneração na T2-1"),
+// e a tabela nunca foi transportada para lá. Se um dia o cofre ganhar o
+// capítulo, ele passa a mandar — até lá, esta é a única cópia.
 
 const RODAPE_SENSIVEL =
   "<p><em>Todos os povos vivos podem gerar Sensíveis à Força; Droides não — cérebro positrônico não sonha.</em></p>";
@@ -209,9 +215,266 @@ export const especies = [
       { nome: "Disciplina de Csilla", desc: "<p>Imune a penalidades por frio extremo.</p>" },
     ],
   },
+  {
+    // ══════════════════════════════════════════════════════════════════════
+    // MUTANTE (Homo novus) — o molde do Space Dragon, cap. 2.3, virado raça.
+    //
+    // Até aqui o Mutante existia no módulo só como um PONTEIRO: uma habilidade
+    // avulsa dizendo "escolha um Aprimoramento e uma Degeneração na tabela
+    // T2-1 do SD". A tabela nunca foi transportada, então quem não tivesse o
+    // livro do Space Dragon aberto na mesa não conseguia usar o molde. Agora
+    // as vinte mutações estão no compêndio, cada uma como uma race_ability
+    // arrastável.
+    //
+    // O QUE A CONVERSÃO PRECISOU RESOLVER (o livro fala outra língua):
+    //   Intelecto → Inteligência · Ciência → Sabedoria · Comunicação → Carisma
+    //   JPR → JPD · JPF → JPC · JPM → JPS
+    //   coeficiente de proteção (CP) → CA, na compressão que o cenário já usa
+    //     em outros lugares (−5 de CP virou −2 de CA na regra de surpresa);
+    //     aqui, ±2 de CP vira ±1 de CA.
+    //   "resistência mental de 5%" → o OD2 não tem RM. Some, e o que sobra da
+    //     habilidade é o bônus de JPS, que é o que ela sempre quis dizer.
+    //   "poder mental" → Poder da Força · "magia de 1º círculo" → aparato,
+    //     pelo pilar do cenário: a Força ficou com a metade mental do livro de
+    //     magias e todo o resto virou bancada do Técnico.
+    //
+    // O QUE NÃO ENTROU, E POR QUÊ: o livro dá ao Homo sapiens um +2 num
+    // atributo e −2 em outro, e diz que o Mutante NÃO os recebe. Neste cenário
+    // o Humano já não tem modificador de atributo nenhum, então a cláusula não
+    // tem objeto — está anotada na descrição para ninguém "consertar" isso
+    // depois somando os modificadores de volta.
+    // ══════════════════════════════════════════════════════════════════════
+    nome: "Mutante",
+    flavor: "<p>Homo novus — a humanidade que a galáxia dobrou. <em>Molde coringa do Space Dragon.</em></p>",
+    descricao:
+      "<p>A mistura dos genes humanos por quase um milhão de anos, espalhada por milhares de mundos, gerou variações tão distantes da linha evolutiva padrão que se convencionou classificá-las como <strong>Homo novus</strong>. A chance de um bebê humano nascer assim é de cerca de <strong>0,1%</strong> — mas com a população humana passando dos trilhões, são <strong>milhões</strong> de mutantes na galáxia. Em comunidades isoladas, a probabilidade chega a 100%.</p>" +
+      "<p>Eles enfrentam mais resistência à aceitação que os droides, e em geral consideram o termo <em>mutante</em> ofensivo. Longe de formarem um grupo unido, adaptam-se ao ambiente ao redor como podem — uma parábola social da evolução biológica que os criou.</p>" +
+      "<p><strong>Como se joga:</strong> escolha <strong>um Aprimoramento</strong> e <strong>uma Degeneração</strong> nas pastas <em>Mutante — Aprimoramentos</em> e <em>Mutante — Degenerações</em>, e arraste as duas para a ficha. Todo o resto é igual ao <strong>Humano</strong>. Não há aprimoramento sem degeneração: é o balanço genético, e é a regra que impede o molde de virar um Humano melhor.</p>" +
+      "<p><em>Variante do livro: em vez de escolher, role <strong>2d10</strong> na tabela de mutações — um dado para cada coluna, repetindo a rolagem se saírem iguais. O cenário adotou a escolha porque o molde existe para <strong>criar um povo</strong> (um Nautolano, um Ceriano), e povo não se sorteia.</em></p>" +
+      "<p><strong>Atributos:</strong> o Mutante <strong>não recebe modificador de atributo nenhum</strong> por ser Mutante. <em>(No Space Dragon o Humano ganhava +2 num atributo e −2 em outro, e o livro tirava isso do Mutante. Aqui o Humano já não tem esses modificadores — a cláusula não tem o que remover. Os únicos ajustes de atributo do molde vêm das mutações</em> Atributo Ampliado <em>e</em> Atributo Diminuído<em>.)</em></p>" +
+      "<p><strong>Perguntas ao criar um Mutante:</strong> Que fenótipo o denuncia à primeira vista? Ele veio de uma comunidade isolada ou nasceu sozinho no meio de uma família comum? Quem já usou a palavra <em>mutante</em> na frente dele?</p>" +
+      "<p><strong>Idioma próprio:</strong> nenhum — fala o idioma de onde nasceu, como qualquer humano.</p>" +
+      IDIOMAS_REGRA +
+      "<p><em><strong>Droides não podem ser Mutantes.</strong> Homo novus é uma variação do humano; o droide é Homo machina, outro molde inteiro.</em></p>" +
+      RODAPE_SENSIVEL,
+    movement: 9,
+    infravision: 0,
+    alignment_tendency: "none",
+    alignment_notes: "Qualquer.",
+    habilidades: [
+      {
+        nome: "Balanço Genético",
+        desc:
+          "<p>Todo aprimoramento evolutivo vem acompanhado da degeneração de outra característica. Você escolhe <strong>uma mutação de cada coluna</strong> — nunca só a boa.</p>" +
+          "<p>As vinte mutações estão no compêndio como habilidades soltas, em duas pastas. Arraste <strong>a sua Aprimoramento</strong> e <strong>a sua Degeneração</strong> para a ficha, junto com esta.</p>",
+      },
+      {
+        nome: "Herança Humana",
+        desc:
+          "<p>Fora as duas mutações, você é um Humano: mesmo movimento, mesma expectativa de vida (salvo <em>Longevidade</em> ou <em>Baixa Expectativa de Vida</em>) e mesma liberdade de classe.</p>" +
+          "<p><strong>Você não recebe o <em>Onipresente</em> nem o <em>Versátil</em> do Humano</strong> — as duas mutações ocupam o lugar deles. Um Mutante com <em>Cognição Acelerada</em> ganha <strong>+30% de XP</strong>, e não +10% somado a +30%.</p>",
+      },
+      {
+        nome: "Fenótipo",
+        desc:
+          "<p>O <strong>fenótipo</strong> é como a mutação aparece no corpo ou no comportamento. As descrições trazem sugestões, mas <strong>invente o seu</strong>: força ampliada pode ser braços extras, olfato aguçado pode ser antenas, longevidade pode dar uma pele arroxeada.</p>" +
+          "<p><em>Mudanças cosméticas não alteram regra nenhuma — e são o melhor gancho de interpretação que o molde oferece.</em></p>",
+      },
+    ],
+  },
 ];
 
-// Habilidade avulsa: o molde Mutante do SD, coringa para criar povos na hora.
+// Habilidades avulsas de espécie, coringa para criar povos na hora.
+// ── As vinte mutações (T2-1 do Space Dragon) ─────────────────────────────────
+// Uma race_ability por mutação, agrupadas em duas pastas que aninhaPastas()
+// encaixa dentro de "Mutante". O jogador arrasta a sua de cada coluna.
+//
+// O número na frente do nome é a linha do 1d10 no livro — quem preferir rolar
+// em vez de escolher acha a mutação sorteada pelo nome, sem tabela de apoio.
+const APRIMORAMENTOS = [
+  {
+    nome: "1. Recuperação Acelerada",
+    desc:
+      "<p><em>Genótipo:</em> o organismo se recupera de ferimentos e traumas com mais eficiência. <em>Fenótipo:</em> feridas fecham-se mais rápido.</p>" +
+      "<p>Recupera <strong>2 PV por nível</strong> a cada dia de descanso.</p>",
+  },
+  {
+    nome: "2. Cognição Acelerada",
+    xp: 30,
+    desc:
+      "<p><em>Genótipo:</em> o aprendizado ocorre mais rapidamente que o normal. <em>Fenótipo:</em> facilidade de entendimento e memorização.</p>" +
+      "<p><strong>+30%</strong> em toda a experiência (XP) recebida.</p>" +
+      "<p><em>Compare com o Humano, que ganha +10%: esta é a mutação que mais muda o ritmo de uma campanha, e é por isso que ela custa uma Degeneração como qualquer outra.</em></p>",
+  },
+  {
+    nome: "3. Mente Avançada",
+    desc:
+      "<p><em>Genótipo:</em> o cérebro é mais desenvolvido que o normal. <em>Fenótipo:</em> massa encefálica proeminente.</p>" +
+      "<p><strong>+2 em JPS.</strong></p>" +
+      "<p><em>Conversão: o livro somava a isto uma \"resistência mental de 5%\". O Old Dragon 2 não tem Resistência Mental — o bestiário deste cenário já manda tratar RD e RM como habilidade descrita. O que sobra, e é o que a mutação sempre quis dizer, é o bônus de JPS.</em></p>",
+  },
+  {
+    nome: "4. Sistema Imunológico Evoluído",
+    desc:
+      "<p><em>Genótipo:</em> os anticorpos combatem agentes nocivos com muita eficácia. <em>Fenótipo:</em> saúde inabalável.</p>" +
+      "<p><strong>+2 em qualquer JPC</strong> para resistir a doenças, infecções e outros males que não envolvam ferimento ou trauma físico.</p>",
+  },
+  {
+    nome: "5. Longevidade",
+    desc:
+      "<p><em>Genótipo:</em> o organismo envelhece mais devagar. <em>Fenótipo:</em> envelhecimento tardio.</p>" +
+      "<p>Expectativa de vida de <strong>100 a 120 anos</strong>, com maturidade aos 30.</p>" +
+      "<p>Ao atingir o <strong>10º nível</strong> e a cada <strong>dois níveis</strong> seguintes, escolha um atributo e aumente-o em <strong>1 ponto</strong>.</p>",
+  },
+  {
+    nome: "6. Funções Vitais Superiores",
+    desc:
+      "<p><em>Genótipo:</em> as funções vitais correm em ritmo mais acelerado que o normal. <em>Fenótipo:</em> aspecto saudável.</p>" +
+      "<p>O <strong>Dado de Vida da sua classe sobe uma categoria</strong>: d4 vira d6, d6 vira d8, d8 vira d10 e d10 vira d12.</p>" +
+      "<p><em>Na prática, neste cenário: Operativo d6 → d8 · Técnico e Sensível d8 → d10 · Veterano d10 → d12.</em></p>",
+  },
+  {
+    nome: "7. Sentido Ampliado",
+    desc:
+      "<p><em>Genótipo:</em> um dos sentidos se destaca dos demais. <em>Fenótipo:</em> vário — role <strong>1d6</strong> ou escolha.</p>" +
+      "<table><thead><tr><th>1d6</th><th>Sentido</th><th>Fenótipo</th><th>O que faz</th></tr></thead><tbody>" +
+      "<tr><td>1</td><td><strong>Visão</strong></td><td>Olhos proeminentes ou de coloração diferenciada</td><td>Enxerga no escuro e à distância, e recebe <strong>+1 para usar armas à distância</strong>. O Operativo ganha <strong>+1</strong> em jogadas de Percepção que envolvam visão</td></tr>" +
+      "<tr><td>2</td><td><strong>Audição</strong></td><td>Orelhas proeminentes ou pontudas</td><td><strong>+1 em JPD</strong> e escuta com o dobro da capacidade de um humano. Operativo: <strong>+1</strong> em Percepção por audição</td></tr>" +
+      "<tr><td>3</td><td><strong>Olfato</strong></td><td>Nariz aquilino ou ausência de narina</td><td>Olfato duas vezes maior que o humano; prende a respiração por <strong>Constituição × 20 turnos</strong>. Operativo: <strong>+1</strong> em Percepção por olfato</td></tr>" +
+      "<tr><td>4</td><td><strong>Tato</strong></td><td>Pele com cor ou textura diferenciada</td><td>Reconhece qualquer material pelo toque e <strong>ignora 2 pontos de dano</strong> de qualquer tipo, podendo zerá-lo</td></tr>" +
+      "<tr><td>5</td><td><strong>Paladar</strong></td><td>Língua longa ou bifurcada</td><td>Precisa de <strong>metade</strong> do alimento de um humano, e o corpo é <strong>imune a doenças e venenos</strong></td></tr>" +
+      "<tr><td>6</td><td><strong>Sexto Sentido</strong></td><td>Percepção quase premonitiva do perigo</td><td><strong>+2 em JPD</strong> e <strong>+1 de CA</strong></td></tr>" +
+      "</tbody></table>" +
+      "<p><em>Conversão: o livro dá \"+2 no coeficiente de proteção\" no Sexto Sentido. CP não existe no OD2, e a escala de CA é mais apertada — o cenário já comprimiu −5 de CP para −2 de CA na regra de surpresa. Aqui, +2 de CP vira <strong>+1 de CA</strong>. Onde o livro dizia \"Gatuno\", leia <strong>Operativo</strong>.</em></p>",
+  },
+  {
+    nome: "8. Atributo Ampliado",
+    desc:
+      "<p><em>Genótipo:</em> um dos atributos se destaca dos demais. <em>Fenótipo:</em> vário — role <strong>1d6</strong> ou escolha.</p>" +
+      "<table><thead><tr><th>1d6</th><th>Atributo</th><th>Fenótipo</th></tr></thead><tbody>" +
+      "<tr><td>1</td><td><strong>Força +3</strong></td><td>Corpo musculoso</td></tr>" +
+      "<tr><td>2</td><td><strong>Destreza +3</strong></td><td>Corpo esguio e boa coordenação motora</td></tr>" +
+      "<tr><td>3</td><td><strong>Constituição +3</strong></td><td>Aparência saudável</td></tr>" +
+      "<tr><td>4</td><td><strong>Inteligência +3</strong></td><td>Massa encefálica proeminente</td></tr>" +
+      "<tr><td>5</td><td><strong>Sabedoria +3</strong></td><td>Facilmente distraído e absorto em pensamentos</td></tr>" +
+      "<tr><td>6</td><td><strong>Carisma +3</strong></td><td>Aptidão para socialização</td></tr>" +
+      "</tbody></table>" +
+      "<p><strong>+3 no valor do atributo</strong>, não no modificador — some ao número rolado e releia a tabela de modificadores.</p>" +
+      "<p><em>Conversão dos nomes: o Space Dragon chama Inteligência de</em> Intelecto<em>, Sabedoria de</em> Ciência <em>e Carisma de</em> Comunicação<em>.</em></p>" +
+      "<p><em>É a única mutação que mexe em atributo — as espécies deste cenário não alteram atributo nenhum, e esta é a exceção deliberada do molde.</em></p>",
+  },
+  {
+    nome: "9. Poderes da Força Inatos",
+    daily_uses: 1,
+    desc:
+      "<p><em>Genótipo:</em> o cérebro desenvolveu a capacidade inata de tocar a Força. <em>Fenótipo:</em> loucura aparente.</p>" +
+      "<p>Escolha <strong>um Poder da Força de 1ª Grandeza da lista Universal</strong>. Você o manifesta <strong>uma vez por dia</strong>, sem penalidade — <strong>mesmo não sendo Sensível à Força</strong>. Se você <em>for</em> um Sensível, este uso é <strong>adicional</strong> ao seu Foco Diário.</p>" +
+      "<p>Pode tentar de novo no mesmo dia com um teste de <strong>Sabedoria</strong>. <strong>Falhar custa 1d6 de dano</strong> e encerra as tentativas até o dia seguinte.</p>" +
+      "<p><em>Conversão: no livro isto é</em> Poderes Mentais<em>, e dá um poder mental de 1ª grandeza. Neste cenário o poder mental É o Poder da Força, e a lista <strong>Universal</strong> é a certa porque ela não é Luz nem Sombra — é a corrente viva do cosmos, sem Caminho. O precedente já existe: o <strong>Slicer</strong> alcança a 1ª Grandeza Universal pelo intelecto, no 10º nível.</em></p>" +
+      "<p><em>Isto <strong>não</strong> faz de você um Sensível à Força: não abre Grandezas, não dá Foco Diário, não dá Caminho e não conta para o Duelo da Força.</em></p>",
+  },
+  {
+    nome: "10. Superpoderes",
+    daily_uses: 1,
+    desc:
+      "<p><em>Genótipo:</em> o mutante é capaz de feitos incríveis e inexplicados pela ciência. <em>Fenótipo:</em> variável.</p>" +
+      "<p>Escolha <strong>um aparato utilitário de NT 1 ou 2</strong> do compêndio de equipamentos. Seu corpo <strong>replica o efeito dele uma vez por dia</strong>, sem que você possua o objeto — a pele que acende como um bastão luminoso, os olhos que leem calor como um visor térmico, a garganta que emite em frequência de comlink.</p>" +
+      "<p>O Mestre tem a palavra final sobre o que o corpo consegue imitar.</p>" +
+      "<p><em>Conversão da casa. O livro manda escolher \"uma magia arcana ou divina de 1º círculo do Old Dragon\" — e o Old Dragon de fantasia não existe nesta galáxia. O cenário parte a magia em duas: a metade mental virou <strong>Força</strong> e todo o resto virou <strong>aparato</strong> na bancada do Técnico. Como a Força já é a mutação 9, o que sobra para a 10 é o outro lado da partilha. É a leitura mais fiel possível do original dentro deste cenário — se a sua mesa preferir, troque por um segundo Poder da Força de 1ª Grandeza.</em></p>",
+  },
+];
+
+const DEGENERACOES = [
+  {
+    nome: "1. Recuperação Lenta",
+    desc:
+      "<p><em>Genótipo:</em> o organismo é mais lento em recuperar-se de ferimentos e traumas. <em>Fenótipo:</em> feridas fecham-se mais devagar.</p>" +
+      "<p>Recupera <strong>1 PV por nível a cada dois dias</strong> de descanso.</p>",
+  },
+  {
+    nome: "2. Cognição Retardada",
+    xp: -30,
+    desc:
+      "<p><em>Genótipo:</em> o aprendizado se dá mais lentamente que o normal. <em>Fenótipo:</em> dificuldade de entendimento e memorização.</p>" +
+      "<p><strong>−30%</strong> em toda a experiência (XP) recebida.</p>",
+  },
+  {
+    nome: "3. Mente Simplificada",
+    desc:
+      "<p><em>Genótipo:</em> o cérebro é menos desenvolvido que o normal. <em>Fenótipo:</em> massa encefálica reduzida.</p>" +
+      "<p><strong>−2 em JPS</strong>, e sua <strong>Inteligência não pode passar de 10</strong>.</p>" +
+      "<p><em>Pesa mais no Técnico, que é a classe regida por Inteligência — e é exatamente por isso que ela é uma escolha, e não um sorteio.</em></p>",
+  },
+  {
+    nome: "4. Sistema Imunológico Vulnerável",
+    desc:
+      "<p><em>Genótipo:</em> os anticorpos não combatem agentes nocivos com eficácia. <em>Fenótipo:</em> vulnerabilidade a doenças.</p>" +
+      "<p><strong>−2 em qualquer JPC</strong> para resistir a doenças, infecções e outros males que não envolvam ferimento ou trauma físico.</p>",
+  },
+  {
+    nome: "5. Baixa Expectativa de Vida",
+    desc:
+      "<p><em>Genótipo:</em> o organismo envelhece mais rapidamente. <em>Fenótipo:</em> envelhecimento precoce.</p>" +
+      "<p>Expectativa de vida de <strong>40 a 50 anos</strong>, com maturidade aos 10.</p>" +
+      "<p>Ao atingir o <strong>10º nível</strong> e a cada <strong>dois níveis</strong> seguintes, escolha um atributo e diminua-o em <strong>1 ponto</strong>.</p>",
+  },
+  {
+    nome: "6. Funções Vitais Debilitadas",
+    desc:
+      "<p><em>Genótipo:</em> as funções vitais correm em ritmo mais lento que o normal. <em>Fenótipo:</em> aspecto doentio.</p>" +
+      "<p>O <strong>Dado de Vida da sua classe cai uma categoria</strong>: d10 vira d8, d8 vira d6, d6 vira d4 e d4 vira d2.</p>" +
+      "<p><em>Na prática, neste cenário: Veterano d10 → d8 · Técnico e Sensível d8 → d6 · Operativo d6 → d4.</em></p>",
+  },
+  {
+    nome: "7. Sentido Diminuído",
+    desc:
+      "<p><em>Genótipo:</em> um dos sentidos é deficiente. <em>Fenótipo:</em> vário — role <strong>1d6</strong> ou escolha.</p>" +
+      "<table><thead><tr><th>1d6</th><th>Sentido</th><th>Fenótipo</th><th>O que faz</th></tr></thead><tbody>" +
+      "<tr><td>1</td><td><strong>Visão</strong></td><td>Olhos pequenos ou sem íris</td><td>Enxerga mal com muita luz e ao longe: <strong>−1 para usar armas à distância</strong>. O Operativo sofre <strong>−1</strong> em Percepção por visão</td></tr>" +
+      "<tr><td>2</td><td><strong>Audição</strong></td><td>Orelhas pouco desenvolvidas ou parcialmente cobertas</td><td><strong>−1 em JPD</strong> e escuta com metade da capacidade de um humano. Operativo: <strong>−1</strong> em Percepção por audição</td></tr>" +
+      "<tr><td>3</td><td><strong>Olfato</strong></td><td>Narinas parcialmente tampadas</td><td>Olfato duas vezes menor que o humano; prende a respiração por apenas <strong>Constituição × 5 segundos</strong>. Operativo: <strong>−1</strong> em Percepção por olfato</td></tr>" +
+      "<tr><td>4</td><td><strong>Tato</strong></td><td>Pele com cor ou textura diferenciada</td><td>Baixa sensibilidade tátil: <strong>−2 de Força</strong> e <strong>+2 pontos de dano</strong> sofridos de qualquer tipo</td></tr>" +
+      "<tr><td>5</td><td><strong>Paladar</strong></td><td>Língua de coloração diferente</td><td>Precisa do <strong>dobro</strong> do alimento de um humano; <strong>falha automaticamente</strong> em JP contra doença e veneno, e sofre o <strong>dobro</strong> do dano delas</td></tr>" +
+      "<tr><td>6</td><td><strong>Sexto Sentido</strong></td><td>Falta de noção precisa de perigo</td><td><strong>−2 em JPD</strong> e <strong>−1 de CA</strong></td></tr>" +
+      "</tbody></table>" +
+      "<p><em>O <strong>Paladar</strong> é de longe a pior linha desta tabela — falha automática é raro no OD2. Se a mesa achar pesado demais, trate como Difícil (−2) em vez de falha automática.</em></p>",
+  },
+  {
+    nome: "8. Atributo Diminuído",
+    desc:
+      "<p><em>Genótipo:</em> um dos atributos é deficiente. <em>Fenótipo:</em> vário — role <strong>1d6</strong> ou escolha.</p>" +
+      "<table><thead><tr><th>1d6</th><th>Atributo</th><th>Fenótipo</th></tr></thead><tbody>" +
+      "<tr><td>1</td><td><strong>Força −3</strong></td><td>Corpo franzino</td></tr>" +
+      "<tr><td>2</td><td><strong>Destreza −3</strong></td><td>Corpo pesado e coordenação motora prejudicada</td></tr>" +
+      "<tr><td>3</td><td><strong>Constituição −3</strong></td><td>Aparência doentia</td></tr>" +
+      "<tr><td>4</td><td><strong>Inteligência −3</strong></td><td>Massa encefálica diminuída</td></tr>" +
+      "<tr><td>5</td><td><strong>Sabedoria −3</strong></td><td>Comportamento animalesco</td></tr>" +
+      "<tr><td>6</td><td><strong>Carisma −3</strong></td><td>Introspecção inata</td></tr>" +
+      "</tbody></table>" +
+      "<p><strong>−3 no valor do atributo</strong>, não no modificador.</p>",
+  },
+  {
+    nome: "9. Dissonância Mental",
+    desc:
+      "<p><em>Genótipo:</em> instabilidade mental, na forma de uma dupla personalidade. <em>Fenótipo:</em> personalidades conflitantes.</p>" +
+      "<p>Você tem <strong>duas personalidades</strong> na mesma cabeça, e <strong>nenhuma tem memória do que a outra fez</strong>. Só uma está ativa por vez.</p>" +
+      "<ul>" +
+      "<li>A <strong>segunda personalidade</strong> é um personagem à parte, de <strong>1º nível</strong>, de qualquer classe — inclusive uma que você não jogaria.</li>" +
+      "<li>Ela <strong>não sobe de nível</strong> junto: fica no 1º enquanto a principal cresce.</li>" +
+      "<li>A troca acontece sob <strong>estresse mental grave</strong>, a critério do Mestre, ou por um Poder da Força que a force.</li>" +
+      "<li><strong>PV, ferimentos e equipamento são do corpo</strong>, e portanto compartilhados. O resto — classe, habilidades, JP, conduta — é da personalidade ativa.</li>" +
+      "</ul>" +
+      "<p><em>Conversão: o livro trata as duas como \"personagens separados de nível 1\", o que, numa escala de 15 níveis, deixaria metade da carreira do jogador parada no primeiro degrau. A leitura acima mantém o horror da coisa — você <strong>perde a cena</strong> quando ela vira — sem congelar o personagem principal. É a Degeneração mais interpretativa das dez: combine com o Mestre antes de escolhê-la.</em></p>",
+  },
+  {
+    nome: "10. Involução",
+    desc:
+      "<p><em>Genótipo:</em> algumas capacidades mentais e motoras apresentam lentidão. <em>Fenótipo:</em> falta de cognição para certas tarefas.</p>" +
+      "<p>Escolha <strong>um</strong> entre: <strong>testes de atributo</strong>, <strong>jogadas de proteção</strong> ou <strong>rolagens de ataque</strong>. Naquele tipo de rolagem você sempre joga <strong>2d20 e fica com o pior resultado</strong>.</p>" +
+      "<p><em>Escolher \"rolagens de ataque\" praticamente encerra a carreira marcial do personagem; escolher \"jogadas de proteção\" é o que mais mata. A escolha honesta costuma ser <strong>testes de atributo</strong> — e o preço é que o personagem fica ruim em tudo o que não é combate.</em></p>",
+  },
+];
+
 export const especieAbilitiesAvulsas = [
   {
     folder: "Idiomas da galáxia",
@@ -235,9 +498,17 @@ export const especieAbilitiesAvulsas = [
   },
   {
     folder: "Molde Mutante (opcional)",
-    nome: "Molde Mutante",
+    nome: "Como usar o molde Mutante",
     desc:
-      "<p>Para \"quase-humanos\" exóticos não listados (Nautolanos, Cerianos, etc.), use o molde <strong>Mutante</strong> do Space Dragon: escolha <strong>um Aprimoramento</strong> e <strong>uma Degeneração</strong> na tabela T2-1 do SD e trate o resto como Humano. É o coringa para criar povos na hora.</p>" +
-      "<p><strong>As nove espécies do compêndio não usam este molde</strong> — foram escritas do zero para Star Wars e não pagam Degeneração.</p>",
+      "<p>Para \"quase-humanos\" exóticos não listados (Nautolanos, Cerianos, etc.), use a espécie <strong>Mutante</strong> deste mesmo compêndio: arraste a raça, escolha <strong>um Aprimoramento</strong> e <strong>uma Degeneração</strong> nas duas pastas dela, e trate o resto como Humano.</p>" +
+      "<p>É o coringa para criar um povo na hora — e é assim que o cenário recomenda inventar uma espécie que ainda não tem ficha.</p>" +
+      "<p><strong>As nove espécies escritas do compêndio não usam este molde</strong> — foram feitas do zero para Star Wars e não pagam Degeneração. Esta é uma divergência deliberada do Estrela Dracônica, onde todo povo fora do Humano e do Droide é Mutante.</p>",
   },
 ];
+
+// As vinte entram na lista de avulsas já carimbadas com a pasta — o prefixo
+// "Mutante — " é o que faz aninhaPastas() encaixá-las dentro da raça.
+especieAbilitiesAvulsas.push(
+  ...APRIMORAMENTOS.map((m) => ({ ...m, folder: "Mutante — Aprimoramentos" })),
+  ...DEGENERACOES.map((m) => ({ ...m, folder: "Mutante — Degenerações" })),
+);

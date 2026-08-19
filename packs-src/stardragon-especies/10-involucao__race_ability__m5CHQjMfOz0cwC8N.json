@@ -1,0 +1,44 @@
+{
+  "folder": "iMA2s1rtJvcl3ZV4",
+  "name": "10. Involução",
+  "type": "race_ability",
+  "_id": "m5CHQjMfOz0cwC8N",
+  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "system": {
+    "description": "<p><em>Genótipo:</em> algumas capacidades mentais e motoras apresentam lentidão. <em>Fenótipo:</em> falta de cognição para certas tarefas.</p><p>Escolha <strong>um</strong> entre: <strong>testes de atributo</strong>, <strong>jogadas de proteção</strong> ou <strong>rolagens de ataque</strong>. Naquele tipo de rolagem você sempre joga <strong>2d20 e fica com o pior resultado</strong>.</p><p><em>Escolher \"rolagens de ataque\" praticamente encerra a carreira marcial do personagem; escolher \"jogadas de proteção\" é o que mais mata. A escolha honesta costuma ser <strong>testes de atributo</strong> — e o preço é que o personagem fica ruim em tudo o que não é combate.</em></p>",
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage": 0,
+    "bonus_damage_condition": "none",
+    "bonus_damage_condition_2": "none",
+    "rogue_talent": "none",
+    "rogue_talent_2": "none",
+    "daily_uses": 0,
+    "natural_armor": 0,
+    "load_modifier": 0,
+    "max_load_override": 0,
+    "armor_weight_modifier": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 2200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!m5CHQjMfOz0cwC8N"
+}

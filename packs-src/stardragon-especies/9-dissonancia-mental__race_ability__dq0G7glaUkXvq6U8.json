@@ -1,0 +1,44 @@
+{
+  "folder": "iMA2s1rtJvcl3ZV4",
+  "name": "9. Dissonância Mental",
+  "type": "race_ability",
+  "_id": "dq0G7glaUkXvq6U8",
+  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "system": {
+    "description": "<p><em>Genótipo:</em> instabilidade mental, na forma de uma dupla personalidade. <em>Fenótipo:</em> personalidades conflitantes.</p><p>Você tem <strong>duas personalidades</strong> na mesma cabeça, e <strong>nenhuma tem memória do que a outra fez</strong>. Só uma está ativa por vez.</p><ul><li>A <strong>segunda personalidade</strong> é um personagem à parte, de <strong>1º nível</strong>, de qualquer classe — inclusive uma que você não jogaria.</li><li>Ela <strong>não sobe de nível</strong> junto: fica no 1º enquanto a principal cresce.</li><li>A troca acontece sob <strong>estresse mental grave</strong>, a critério do Mestre, ou por um Poder da Força que a force.</li><li><strong>PV, ferimentos e equipamento são do corpo</strong>, e portanto compartilhados. O resto — classe, habilidades, JP, conduta — é da personalidade ativa.</li></ul><p><em>Conversão: o livro trata as duas como \"personagens separados de nível 1\", o que, numa escala de 15 níveis, deixaria metade da carreira do jogador parada no primeiro degrau. A leitura acima mantém o horror da coisa — você <strong>perde a cena</strong> quando ela vira — sem congelar o personagem principal. É a Degeneração mais interpretativa das dez: combine com o Mestre antes de escolhê-la.</em></p>",
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage": 0,
+    "bonus_damage_condition": "none",
+    "bonus_damage_condition_2": "none",
+    "rogue_talent": "none",
+    "rogue_talent_2": "none",
+    "daily_uses": 0,
+    "natural_armor": 0,
+    "load_modifier": 0,
+    "max_load_override": 0,
+    "armor_weight_modifier": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 2100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!dq0G7glaUkXvq6U8"
+}

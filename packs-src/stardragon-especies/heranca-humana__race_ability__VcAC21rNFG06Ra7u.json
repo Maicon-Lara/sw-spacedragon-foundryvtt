@@ -1,0 +1,44 @@
+{
+  "folder": "AtCzqV4wRf1r9cFo",
+  "name": "Herança Humana",
+  "type": "race_ability",
+  "_id": "VcAC21rNFG06Ra7u",
+  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "system": {
+    "description": "<p>Fora as duas mutações, você é um Humano: mesmo movimento, mesma expectativa de vida (salvo <em>Longevidade</em> ou <em>Baixa Expectativa de Vida</em>) e mesma liberdade de classe.</p><p><strong>Você não recebe o <em>Onipresente</em> nem o <em>Versátil</em> do Humano</strong> — as duas mutações ocupam o lugar deles. Um Mutante com <em>Cognição Acelerada</em> ganha <strong>+30% de XP</strong>, e não +10% somado a +30%.</p>",
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage": 0,
+    "bonus_damage_condition": "none",
+    "bonus_damage_condition_2": "none",
+    "rogue_talent": "none",
+    "rogue_talent_2": "none",
+    "daily_uses": 0,
+    "natural_armor": 0,
+    "load_modifier": 0,
+    "max_load_override": 0,
+    "armor_weight_modifier": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VcAC21rNFG06Ra7u"
+}

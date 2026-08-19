@@ -1,0 +1,44 @@
+{
+  "folder": "78eASrnapPGjnwdX",
+  "name": "7. Sentido Ampliado",
+  "type": "race_ability",
+  "_id": "aRCTCFzwEAd3435l",
+  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "system": {
+    "description": "<p><em>Genótipo:</em> um dos sentidos se destaca dos demais. <em>Fenótipo:</em> vário — role <strong>1d6</strong> ou escolha.</p><table><thead><tr><th>1d6</th><th>Sentido</th><th>Fenótipo</th><th>O que faz</th></tr></thead><tbody><tr><td>1</td><td><strong>Visão</strong></td><td>Olhos proeminentes ou de coloração diferenciada</td><td>Enxerga no escuro e à distância, e recebe <strong>+1 para usar armas à distância</strong>. O Operativo ganha <strong>+1</strong> em jogadas de Percepção que envolvam visão</td></tr><tr><td>2</td><td><strong>Audição</strong></td><td>Orelhas proeminentes ou pontudas</td><td><strong>+1 em JPD</strong> e escuta com o dobro da capacidade de um humano. Operativo: <strong>+1</strong> em Percepção por audição</td></tr><tr><td>3</td><td><strong>Olfato</strong></td><td>Nariz aquilino ou ausência de narina</td><td>Olfato duas vezes maior que o humano; prende a respiração por <strong>Constituição × 20 turnos</strong>. Operativo: <strong>+1</strong> em Percepção por olfato</td></tr><tr><td>4</td><td><strong>Tato</strong></td><td>Pele com cor ou textura diferenciada</td><td>Reconhece qualquer material pelo toque e <strong>ignora 2 pontos de dano</strong> de qualquer tipo, podendo zerá-lo</td></tr><tr><td>5</td><td><strong>Paladar</strong></td><td>Língua longa ou bifurcada</td><td>Precisa de <strong>metade</strong> do alimento de um humano, e o corpo é <strong>imune a doenças e venenos</strong></td></tr><tr><td>6</td><td><strong>Sexto Sentido</strong></td><td>Percepção quase premonitiva do perigo</td><td><strong>+2 em JPD</strong> e <strong>+1 de CA</strong></td></tr></tbody></table><p><em>Conversão: o livro dá \"+2 no coeficiente de proteção\" no Sexto Sentido. CP não existe no OD2, e a escala de CA é mais apertada — o cenário já comprimiu −5 de CP para −2 de CA na regra de surpresa. Aqui, +2 de CP vira <strong>+1 de CA</strong>. Onde o livro dizia \"Gatuno\", leia <strong>Operativo</strong>.</em></p>",
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage": 0,
+    "bonus_damage_condition": "none",
+    "bonus_damage_condition_2": "none",
+    "rogue_talent": "none",
+    "rogue_talent_2": "none",
+    "daily_uses": 0,
+    "natural_armor": 0,
+    "load_modifier": 0,
+    "max_load_override": 0,
+    "armor_weight_modifier": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 900000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!aRCTCFzwEAd3435l"
+}

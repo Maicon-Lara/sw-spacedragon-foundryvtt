@@ -1,11 +1,11 @@
 {
-  "folder": "A4B78kRnE8UbTNF5",
-  "name": "Molde Mutante",
+  "folder": "78eASrnapPGjnwdX",
+  "name": "3. Mente Avançada",
   "type": "race_ability",
-  "_id": "1YtC35rIW0VagXhR",
-  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "_id": "W27h3EGlvKY4wmbE",
+  "img": "systems/olddragon2e/assets/icons/brain.svg",
   "system": {
-    "description": "<p>Para \"quase-humanos\" exóticos não listados (Nautolanos, Cerianos, etc.), use o molde <strong>Mutante</strong> do Space Dragon: escolha <strong>um Aprimoramento</strong> e <strong>uma Degeneração</strong> na tabela T2-1 do SD e trate o resto como Humano. É o coringa para criar povos na hora.</p><p><strong>As nove espécies do compêndio não usam este molde</strong> — foram escritas do zero para Star Wars e não pagam Degeneração.</p>",
+    "description": "<p><em>Genótipo:</em> o cérebro é mais desenvolvido que o normal. <em>Fenótipo:</em> massa encefálica proeminente.</p><p><strong>+2 em JPS.</strong></p><p><em>Conversão: o livro somava a isto uma \"resistência mental de 5%\". O Old Dragon 2 não tem Resistência Mental — o bestiário deste cenário já manda tratar RD e RM como habilidade descrita. O que sobra, e é o que a mutação sempre quis dizer, é o bônus de JPS.</em></p>",
     "xp": null,
     "jp": {
       "jpc": false,
@@ -36,9 +36,9 @@
     "lastModifiedBy": "swspacedragonbld",
     "exportSource": null
   },
-  "sort": 200000,
+  "sort": 500000,
   "ownership": {
     "default": 0
   },
-  "_key": "!items!1YtC35rIW0VagXhR"
+  "_key": "!items!W27h3EGlvKY4wmbE"
 }

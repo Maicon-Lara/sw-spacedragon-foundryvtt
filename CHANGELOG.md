@@ -6,6 +6,52 @@ começou junto com o rename.
 
 ---
 
+## 1.1.0 — 19/08/2026
+
+### A raça Mutante (Homo novus)
+
+O Mutante existia no módulo só como um **ponteiro**: uma habilidade avulsa
+dizendo *"escolha um Aprimoramento e uma Degeneração na tabela T2-1 do SD"*. A
+tabela nunca foi transportada — quem não tivesse o livro do Space Dragon aberto
+na mesa não conseguia usar o molde.
+
+Agora é uma **raça de verdade**, com as **20 mutações** da T2-1 como habilidades
+arrastáveis, em duas pastas dentro dela. Fonte: o PDF do Space Dragon, cap. 2.3
+e tabelas T2-1 a T2-5 — **não** o cofre, que só traz o ponteiro.
+
+**O que a conversão precisou resolver** (o livro fala outra língua):
+
+| No Space Dragon | Aqui |
+|---|---|
+| Intelecto · Ciência · Comunicação | Inteligência · Sabedoria · Carisma |
+| JPR · JPF · JPM | JPD · JPC · JPS |
+| ±2 no coeficiente de proteção | ±1 de CA *(mesma compressão da regra de surpresa)* |
+| "resistência mental de 5%" | some — o OD2 não tem RM; sobra o bônus de JPS |
+| "poder mental de 1ª grandeza" | **Poder da Força de 1ª Grandeza**, lista Universal |
+| "magia arcana ou divina de 1º círculo" | **um aparato de NT 1–2** replicado pelo corpo |
+| "Gatuno" | Operativo |
+
+**Duas leituras da casa**, ambas declaradas na própria habilidade:
+
+- *Superpoderes* mandava escolher uma magia do Old Dragon de fantasia, que não
+  existe nesta galáxia. Pelo pilar do cenário — a Força ficou com a metade
+  mental do livro de magias e todo o resto virou bancada do Técnico — e como a
+  Força já é a mutação 9, o que sobra para a 10 é o **aparato**.
+- *Dissonância Mental* tratava as duas personalidades como personagens
+  separados **de 1º nível**. Numa escala de 15 níveis isso deixaria metade da
+  carreira parada no primeiro degrau; aqui a segunda personalidade fica no 1º
+  nível e a principal cresce, com PV e equipamento compartilhados pelo corpo.
+
+**O que não entrou, e por quê:** o livro dá ao Humano +2 num atributo e −2 em
+outro, e tira isso do Mutante. Neste cenário o Humano já não tem modificador de
+atributo nenhum, então a cláusula não tem objeto — está anotada na ficha para
+ninguém "consertar" somando os modificadores de volta. Os únicos ajustes de
+atributo do molde vêm de *Atributo Ampliado* e *Atributo Diminuído*.
+
+Pack de espécies: **56 → 83 documentos**.
+
+---
+
 ## 1.0.0 — 19/08/2026
 
 Duas coisas ao mesmo tempo: o módulo mudou de nome e o compêndio recebeu a

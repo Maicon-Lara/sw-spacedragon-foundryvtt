@@ -21,7 +21,7 @@ são editados à mão.
 
 | Pack | Tipo | Conteúdo |
 |---|---|---|
-| `stardragon-especies` | Item | 9 espécies (`race` + `race_ability`), o molde Mutante e a Origem *Filho de Mandalore* |
+| `stardragon-especies` | Item | 9 espécies escritas + o molde **Mutante** (`race` + `race_ability`), as 20 mutações da T2-1 do Space Dragon e a Origem *Filho de Mandalore* |
 | `stardragon-classes` | Item | 4 classes-base + 14 especializações (`class`), as 7 variantes de Forma do Guardião e as 4 fichas da Senda Mandaloriana |
 | `stardragon-equipamentos` | Item | blasters, armas, sabres, cristais, armaduras e aparatos |
 | `stardragon-poderes` | Item | Poderes da Força de 1ª a 5ª Grandeza (`spell`) |

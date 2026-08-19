@@ -1,0 +1,44 @@
+{
+  "folder": "iMA2s1rtJvcl3ZV4",
+  "name": "3. Mente Simplificada",
+  "type": "race_ability",
+  "_id": "g4DojQCmZixmPJza",
+  "img": "systems/olddragon2e/assets/icons/brain.svg",
+  "system": {
+    "description": "<p><em>Genótipo:</em> o cérebro é menos desenvolvido que o normal. <em>Fenótipo:</em> massa encefálica reduzida.</p><p><strong>−2 em JPS</strong>, e sua <strong>Inteligência não pode passar de 10</strong>.</p><p><em>Pesa mais no Técnico, que é a classe regida por Inteligência — e é exatamente por isso que ela é uma escolha, e não um sorteio.</em></p>",
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage": 0,
+    "bonus_damage_condition": "none",
+    "bonus_damage_condition_2": "none",
+    "rogue_talent": "none",
+    "rogue_talent_2": "none",
+    "daily_uses": 0,
+    "natural_armor": 0,
+    "load_modifier": 0,
+    "max_load_override": 0,
+    "armor_weight_modifier": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 1500000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!g4DojQCmZixmPJza"
+}

@@ -1,0 +1,44 @@
+{
+  "folder": "78eASrnapPGjnwdX",
+  "name": "8. Atributo Ampliado",
+  "type": "race_ability",
+  "_id": "kOk6ARc67WsAXFCH",
+  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "system": {
+    "description": "<p><em>Genótipo:</em> um dos atributos se destaca dos demais. <em>Fenótipo:</em> vário — role <strong>1d6</strong> ou escolha.</p><table><thead><tr><th>1d6</th><th>Atributo</th><th>Fenótipo</th></tr></thead><tbody><tr><td>1</td><td><strong>Força +3</strong></td><td>Corpo musculoso</td></tr><tr><td>2</td><td><strong>Destreza +3</strong></td><td>Corpo esguio e boa coordenação motora</td></tr><tr><td>3</td><td><strong>Constituição +3</strong></td><td>Aparência saudável</td></tr><tr><td>4</td><td><strong>Inteligência +3</strong></td><td>Massa encefálica proeminente</td></tr><tr><td>5</td><td><strong>Sabedoria +3</strong></td><td>Facilmente distraído e absorto em pensamentos</td></tr><tr><td>6</td><td><strong>Carisma +3</strong></td><td>Aptidão para socialização</td></tr></tbody></table><p><strong>+3 no valor do atributo</strong>, não no modificador — some ao número rolado e releia a tabela de modificadores.</p><p><em>Conversão dos nomes: o Space Dragon chama Inteligência de</em> Intelecto<em>, Sabedoria de</em> Ciência <em>e Carisma de</em> Comunicação<em>.</em></p><p><em>É a única mutação que mexe em atributo — as espécies deste cenário não alteram atributo nenhum, e esta é a exceção deliberada do molde.</em></p>",
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage": 0,
+    "bonus_damage_condition": "none",
+    "bonus_damage_condition_2": "none",
+    "rogue_talent": "none",
+    "rogue_talent_2": "none",
+    "daily_uses": 0,
+    "natural_armor": 0,
+    "load_modifier": 0,
+    "max_load_override": 0,
+    "armor_weight_modifier": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 1000000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!kOk6ARc67WsAXFCH"
+}

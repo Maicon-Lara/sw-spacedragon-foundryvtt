@@ -1,0 +1,44 @@
+{
+  "folder": "78eASrnapPGjnwdX",
+  "name": "5. Longevidade",
+  "type": "race_ability",
+  "_id": "x3eQqzY1jGe2g63J",
+  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "system": {
+    "description": "<p><em>Genótipo:</em> o organismo envelhece mais devagar. <em>Fenótipo:</em> envelhecimento tardio.</p><p>Expectativa de vida de <strong>100 a 120 anos</strong>, com maturidade aos 30.</p><p>Ao atingir o <strong>10º nível</strong> e a cada <strong>dois níveis</strong> seguintes, escolha um atributo e aumente-o em <strong>1 ponto</strong>.</p>",
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage": 0,
+    "bonus_damage_condition": "none",
+    "bonus_damage_condition_2": "none",
+    "rogue_talent": "none",
+    "rogue_talent_2": "none",
+    "daily_uses": 0,
+    "natural_armor": 0,
+    "load_modifier": 0,
+    "max_load_override": 0,
+    "armor_weight_modifier": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!x3eQqzY1jGe2g63J"
+}

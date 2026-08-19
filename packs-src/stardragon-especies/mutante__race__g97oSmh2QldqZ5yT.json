@@ -1,0 +1,41 @@
+{
+  "folder": "AtCzqV4wRf1r9cFo",
+  "name": "Mutante",
+  "type": "race",
+  "_id": "g97oSmh2QldqZ5yT",
+  "img": "systems/olddragon2e/assets/icons/alignment.svg",
+  "system": {
+    "flavor": "<p>Homo novus — a humanidade que a galáxia dobrou. <em>Molde coringa do Space Dragon.</em></p>",
+    "description": "<p>A mistura dos genes humanos por quase um milhão de anos, espalhada por milhares de mundos, gerou variações tão distantes da linha evolutiva padrão que se convencionou classificá-las como <strong>Homo novus</strong>. A chance de um bebê humano nascer assim é de cerca de <strong>0,1%</strong> — mas com a população humana passando dos trilhões, são <strong>milhões</strong> de mutantes na galáxia. Em comunidades isoladas, a probabilidade chega a 100%.</p><p>Eles enfrentam mais resistência à aceitação que os droides, e em geral consideram o termo <em>mutante</em> ofensivo. Longe de formarem um grupo unido, adaptam-se ao ambiente ao redor como podem — uma parábola social da evolução biológica que os criou.</p><p><strong>Como se joga:</strong> escolha <strong>um Aprimoramento</strong> e <strong>uma Degeneração</strong> nas pastas <em>Mutante — Aprimoramentos</em> e <em>Mutante — Degenerações</em>, e arraste as duas para a ficha. Todo o resto é igual ao <strong>Humano</strong>. Não há aprimoramento sem degeneração: é o balanço genético, e é a regra que impede o molde de virar um Humano melhor.</p><p><em>Variante do livro: em vez de escolher, role <strong>2d10</strong> na tabela de mutações — um dado para cada coluna, repetindo a rolagem se saírem iguais. O cenário adotou a escolha porque o molde existe para <strong>criar um povo</strong> (um Nautolano, um Ceriano), e povo não se sorteia.</em></p><p><strong>Atributos:</strong> o Mutante <strong>não recebe modificador de atributo nenhum</strong> por ser Mutante. <em>(No Space Dragon o Humano ganhava +2 num atributo e −2 em outro, e o livro tirava isso do Mutante. Aqui o Humano já não tem esses modificadores — a cláusula não tem o que remover. Os únicos ajustes de atributo do molde vêm das mutações</em> Atributo Ampliado <em>e</em> Atributo Diminuído<em>.)</em></p><p><strong>Perguntas ao criar um Mutante:</strong> Que fenótipo o denuncia à primeira vista? Ele veio de uma comunidade isolada ou nasceu sozinho no meio de uma família comum? Quem já usou a palavra <em>mutante</em> na frente dele?</p><p><strong>Idioma próprio:</strong> nenhum — fala o idioma de onde nasceu, como qualquer humano.</p><p><strong>Idiomas.</strong> Todo personagem começa falando o <strong>idioma do seu povo</strong> e o <strong>Básico Galáctico</strong> — o idioma comum das rotas comerciais. Idiomas <strong>adicionais</strong> vêm do <strong>modificador de Inteligência</strong>. <strong>Ler e escrever</strong> é outra coisa: divida a <strong>Inteligência por 6</strong>, arredondando para baixo — o resultado é em quantos idiomas o personagem é alfabetizado (escolha quais). <strong>Inteligência 6 ou menos = analfabeto</strong>, nem no idioma natal. Quem fala mas não escreve tem um <strong>sotaque</strong> que o denuncia como forasteiro.</p><p><em><strong>Droides não podem ser Mutantes.</strong> Homo novus é uma variação do humano; o droide é Homo machina, outro molde inteiro.</em></p><p><em>Todos os povos vivos podem gerar Sensíveis à Força; Droides não — cérebro positrônico não sonha.</em></p>",
+    "movement": 9,
+    "movement_fly": 0,
+    "movement_notes": "",
+    "infravision": 0,
+    "infravision_notes": "",
+    "alignment_tendency": "none",
+    "alignment_notes": "Qualquer.",
+    "race_abilities": [
+      "Compendium.stardragon.stardragon-especies.Item.yirtf36afFxEgoKs",
+      "Compendium.stardragon.stardragon-especies.Item.VcAC21rNFG06Ra7u",
+      "Compendium.stardragon.stardragon-especies.Item.Egjckt8DZDB4swsv"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!g97oSmh2QldqZ5yT"
+}

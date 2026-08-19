@@ -1,0 +1,44 @@
+{
+  "folder": "iMA2s1rtJvcl3ZV4",
+  "name": "7. Sentido Diminuído",
+  "type": "race_ability",
+  "_id": "6XBxCDkFGnA5egCF",
+  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "system": {
+    "description": "<p><em>Genótipo:</em> um dos sentidos é deficiente. <em>Fenótipo:</em> vário — role <strong>1d6</strong> ou escolha.</p><table><thead><tr><th>1d6</th><th>Sentido</th><th>Fenótipo</th><th>O que faz</th></tr></thead><tbody><tr><td>1</td><td><strong>Visão</strong></td><td>Olhos pequenos ou sem íris</td><td>Enxerga mal com muita luz e ao longe: <strong>−1 para usar armas à distância</strong>. O Operativo sofre <strong>−1</strong> em Percepção por visão</td></tr><tr><td>2</td><td><strong>Audição</strong></td><td>Orelhas pouco desenvolvidas ou parcialmente cobertas</td><td><strong>−1 em JPD</strong> e escuta com metade da capacidade de um humano. Operativo: <strong>−1</strong> em Percepção por audição</td></tr><tr><td>3</td><td><strong>Olfato</strong></td><td>Narinas parcialmente tampadas</td><td>Olfato duas vezes menor que o humano; prende a respiração por apenas <strong>Constituição × 5 segundos</strong>. Operativo: <strong>−1</strong> em Percepção por olfato</td></tr><tr><td>4</td><td><strong>Tato</strong></td><td>Pele com cor ou textura diferenciada</td><td>Baixa sensibilidade tátil: <strong>−2 de Força</strong> e <strong>+2 pontos de dano</strong> sofridos de qualquer tipo</td></tr><tr><td>5</td><td><strong>Paladar</strong></td><td>Língua de coloração diferente</td><td>Precisa do <strong>dobro</strong> do alimento de um humano; <strong>falha automaticamente</strong> em JP contra doença e veneno, e sofre o <strong>dobro</strong> do dano delas</td></tr><tr><td>6</td><td><strong>Sexto Sentido</strong></td><td>Falta de noção precisa de perigo</td><td><strong>−2 em JPD</strong> e <strong>−1 de CA</strong></td></tr></tbody></table><p><em>O <strong>Paladar</strong> é de longe a pior linha desta tabela — falha automática é raro no OD2. Se a mesa achar pesado demais, trate como Difícil (−2) em vez de falha automática.</em></p>",
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage": 0,
+    "bonus_damage_condition": "none",
+    "bonus_damage_condition_2": "none",
+    "rogue_talent": "none",
+    "rogue_talent_2": "none",
+    "daily_uses": 0,
+    "natural_armor": 0,
+    "load_modifier": 0,
+    "max_load_override": 0,
+    "armor_weight_modifier": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 1900000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!6XBxCDkFGnA5egCF"
+}
