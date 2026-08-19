@@ -25,6 +25,7 @@ import { grupos as grupasBestiario } from "./data/bestiario.mjs";
 import { ameacas } from "./data/ameacas.mjs";
 import { navesJournal } from "./data/naves.mjs";
 import { bestiarioJournal } from "./data/bestiario-journal.mjs";
+import { equipamentosJournal } from "./data/equipamentos-journal.mjs";
 import { progressao } from "./data/progressoes.mjs";
 
 const ROOT = path.resolve(fileURLToPath(import.meta.url), "../..");
@@ -221,7 +222,7 @@ function buildBestiarioDocs() {
 
 // ── Pack de journal (referência do mestre) ──
 function buildJournalDocs() {
-  return [poderesJournal, bestiarioJournal, navesJournal].map((e, i) =>
+  return [poderesJournal, bestiarioJournal, navesJournal, equipamentosJournal].map((e, i) =>
     journalDoc(e, (i + 1) * 100000)
   );
 }

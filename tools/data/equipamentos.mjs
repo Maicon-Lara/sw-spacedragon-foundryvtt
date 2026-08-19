@@ -48,6 +48,12 @@ const MODO_ATORDOANTE_NOTA =
   ATORDOANTE_NOTA;
 
 // Redução de movimento das vestes (SW-SD-Equipamentos.md § Armaduras).
+const ESCUDO_FAMILIA =
+  "<p><em>A família de escudos de energia tem três degraus e <strong>três permissões diferentes</strong>, que é o que impede o degrau de baixo de virar item obrigatório: <strong>Gerador de Escudo Pessoal</strong> (+1, 80 CR) é aparato defensivo — Técnico e Veterano; <strong>Escudo de Energia</strong> (+2, 1.500 CR) é escudo — só quem a classe permite; <strong>Campo de Força Individual</strong> (+4 por 1 minuto, 2.400 CR) é aparato defensivo. <strong>Nunca somam entre si:</strong> vale o maior bônus ativo. O Operativo e o Sensível não alcançam nenhum dos três — é a contrapartida de terem talento e Força.</em></p>";
+
+const SOMA_ESCUDO_NOTA =
+  "<p><strong>Escudo, armadura e gerador não se anulam</strong> — somam-se normalmente à CA, respeitada a restrição de classe. Só o <em>Gerador de Escudo Pessoal</em> e o <em>Campo de Força Individual</em> é que não acumulam entre si: vale o maior bônus ativo.</p>";
+
 const MOVIMENTO_NOTA =
   "<p><em>A redução de movimento é subtraída do movimento-base de <strong>9 m</strong>, antes das penalidades de gravidade, terreno e carga.</em></p>";
 
@@ -66,48 +72,82 @@ const ACESSO_UTILITARIO =
 const construcao = (tempo) =>
   `<p><em>Construção: ${tempo}. Consertar, recarregar ou adaptar custa <strong>¼ do valor</strong> e até <strong>metade do tempo</strong>.</em></p>`;
 
-export const categorias = [
+// Porte e Disponibilidade (SW-SD-Equipamentos.md § Porte / § Disponibilidade).
+// O cenário já herdara os rótulos Pequena/Média/Grande e a etiqueta "Duas
+// Mãos", mas nunca escrevera o que eles faziam.
+const PORTE_NOTA =
+  "<p><strong>Porte.</strong> <strong>Pequena:</strong> uma mão — pode ser usada com as duas para <strong>+2 na rolagem de ataque</strong>. <strong>Média:</strong> preferencialmente duas mãos; empunhada com uma só, <strong>−2 no ataque</strong>. <strong>Grande:</strong> sempre as duas mãos, sem alternativa.</p>";
+
+const DISP_NOTA =
+  "<p><strong>Disponibilidade</strong> não muda nada em combate: muda onde se compra e o que acontece numa revista. <strong>—</strong> livre · <strong>Licenciada</strong> exige licença de porte · <strong>Restrita</strong> mercado cinzento · <strong>Militar</strong> só forças armadas · <strong>Ilegal</strong> portar já é crime · <strong>Rara</strong> não é questão de lei, é de existir.</p>" +
+  "<p><em>Fora dos mundos de fronteira, portar item Restrito, Militar ou Ilegal de forma visível atrai a lei. Escondido, é um teste de Destreza contra a revista — Fácil se for pequeno, Difícil se for Grande, impossível se for uma armadura.</em></p>";
+
+// Consequência de usar fora da faixa da classe. Antes só o Operativo tinha isto
+// escrito; agora vale para as quatro classes.
+const FORA_DA_FAIXA_NOTA =
+  "<p><strong>Fora da faixa da sua classe:</strong> <strong>−2 em todas as rolagens de ataque</strong> com a arma e <strong>perda das habilidades de classe que dependem de mobilidade ou precisão</strong> (talentos do Operativo, Forma de Sabre do Guardião, Ataque Furtivo) enquanto estiver assim. As passivas continuam valendo.</p>";
+
+// A primeira linha da descrição de armas e armaduras é MONTADA a partir dos
+// campos `uso`/`tipo_armadura` e `disp`, em vez de escrita à mão em cada item:
+// etiqueta repetida em prosa é etiqueta que diverge da tabela na próxima
+// revisão. Só quem declara os campos ganha a linha.
+function anotaCategorias(cats) {
+  for (const cat of cats) {
+    for (const it of cat.itens) {
+      const rotulo = it.uso ? "Uso" : it.tipo_armadura ? "Tipo" : null;
+      if (!rotulo) continue;
+      const valor = it.uso || it.tipo_armadura;
+      const disp = it.disp && it.disp !== "—" ? ` · <strong>Disp.:</strong> ${it.disp}` : "";
+      it.desc = `<p><strong>${rotulo}:</strong> ${valor}${disp}</p>` + (it.desc || "");
+      if (it.uso) it.desc += PORTE_NOTA;
+      it.desc += DISP_NOTA + FORA_DA_FAIXA_NOTA;
+    }
+  }
+  return cats;
+}
+
+const CATEGORIAS = [
   {
     folder: "Armas Corpo a Corpo",
     tipo: "weapon",
     itens: [
-      { nome: "Vibro-Adaga", damage: "1d4", damage_type: "perfurante", cost: "15 CR", weight_in_load: 1, throw_range: 9, desc: "<p>Pequena, Vibro, Perfurante, Arremesso (9 m).</p>" + ALCANCE_NOTA },
-      { nome: "Bastão de Treinamento", damage: "1d4", damage_type: "impactante", cost: "10 CR", weight_in_load: 1, two_handed: true, desc: "<p>Pequena, Impactante, Duas Mãos.</p>" },
-      { nome: "Cassetete de Choque", damage: "1d4", damage_type: "impactante", cost: "20 CR", weight_in_load: 1, desc: "<p>Pequena, Impactante, <em>Nocaute</em>.</p><p><strong>Nocaute:</strong> causa metade do dano e aplica a regra de nocaute (1 em 1d6, ou pelo modificador de Força, para desacordar o alvo).</p>" },
-      { nome: "Vibro-Lâmina Curta", damage: "1d6", damage_type: "cortante", cost: "60 CR", weight_in_load: 1, desc: "<p>Pequena, Vibro, Cortante.</p>" },
-      { nome: "Lança Vibro", damage: "1d6", damage_type: "perfurante", cost: "80 CR", weight_in_load: 2, throw_range: 12, versatile: true, desc: "<p>Média, Vibro, Perfurante, Arremesso (12 m), Haste, Versátil.</p>" + ALCANCE_NOTA },
-      { nome: "Vibro-Lâmina", damage: "1d8", damage_type: "cortante", cost: "100 CR", weight_in_load: 2, desc: "<p>Média, Vibro, Cortante.</p>" },
-      { nome: "Vibro-Machado", damage: "1d8", damage_type: "cortante", cost: "90 CR", weight_in_load: 2, desc: "<p>Média, Vibro, Cortante.</p>" },
-      { nome: "Vibro-Lâmina Pesada", damage: "1d8", damage_type: "cortante", cost: "150 CR", weight_in_load: 2, versatile: true, desc: "<p>Média, Vibro, Versátil, Cortante.</p>" },
-      { nome: "Lança-Vibro Mandaloriana", damage: "1d10", damage_type: "perfurante", cost: "400 CR", weight_in_load: 2, throw_range: 9, desc: "<p>Média, Vibro, Perfurante, Haste, Arremesso (9 m).</p><p>Exige <strong>treino cultural Mandaloriano</strong>.</p>" + ALCANCE_NOTA },
-      { nome: "Vibro-Machado Pesado", damage: "2d6", damage_type: "cortante", cost: "220 CR", weight_in_load: 3, two_handed: true, desc: "<p>Grande, Vibro, Cortante, Duas Mãos.</p>" },
-      { nome: "Bastão Eletrificado", damage: "1d8", damage_type: "impactante", cost: "250 CR", weight_in_load: 3, two_handed: true, desc: "<p>Grande, Impactante, Duas Mãos, <em>Nocaute</em>.</p><p><strong>Nocaute:</strong> causa metade do dano e aplica a regra de nocaute (1 em 1d6, ou pelo modificador de Força, para desacordar o alvo).</p>" },
+      { nome: "Vibro-Adaga", uso: "Leve", disp: "—", damage: "1d4", damage_type: "perfurante", cost: "15 CR", weight_in_load: 1, throw_range: 9, desc: "<p>Pequena, Vibro, Perfurante, Arremesso (9 m).</p>" + ALCANCE_NOTA },
+      { nome: "Bastão de Treinamento", uso: "Leve", disp: "—", damage: "1d4", damage_type: "impactante", cost: "10 CR", weight_in_load: 1, two_handed: true, desc: "<p>Pequena, Impactante, Duas Mãos.</p>" },
+      { nome: "Cassetete de Choque", uso: "Leve", disp: "—", damage: "1d4", damage_type: "impactante", cost: "20 CR", weight_in_load: 1, desc: "<p>Pequena, Impactante, <em>Nocaute</em>.</p><p><strong>Nocaute:</strong> causa metade do dano e aplica a regra de nocaute (1 em 1d6, ou pelo modificador de Força, para desacordar o alvo).</p>" },
+      { nome: "Vibro-Lâmina Curta", uso: "Leve", disp: "Licenciada", damage: "1d6", damage_type: "cortante", cost: "60 CR", weight_in_load: 1, desc: "<p>Pequena, Vibro, Cortante.</p>" },
+      { nome: "Lança Vibro", uso: "Marcial", disp: "Licenciada", damage: "1d6", damage_type: "perfurante", cost: "80 CR", weight_in_load: 2, throw_range: 12, versatile: true, desc: "<p>Média, Vibro, Perfurante, Arremesso (12 m), Haste, Versátil.</p>" + ALCANCE_NOTA },
+      { nome: "Vibro-Lâmina", uso: "Marcial", disp: "Licenciada", damage: "1d8", damage_type: "cortante", cost: "100 CR", weight_in_load: 2, desc: "<p>Média, Vibro, Cortante.</p>" },
+      { nome: "Vibro-Machado", uso: "Marcial", disp: "Restrita", damage: "1d8", damage_type: "cortante", cost: "90 CR", weight_in_load: 2, desc: "<p>Média, Vibro, Cortante.</p>" },
+      { nome: "Vibro-Lâmina Pesada", uso: "Marcial", disp: "Licenciada", damage: "1d8", damage_type: "cortante", cost: "150 CR", weight_in_load: 2, versatile: true, desc: "<p>Média, Vibro, Versátil, Cortante.</p>" },
+      { nome: "Lança-Vibro Mandaloriana", uso: "Marcial", disp: "Rara", damage: "1d10", damage_type: "perfurante", cost: "400 CR", weight_in_load: 2, throw_range: 9, desc: "<p>Média, Vibro, Perfurante, Haste, Arremesso (9 m).</p><p>Exige <strong>treino cultural Mandaloriano</strong>.</p>" + ALCANCE_NOTA },
+      { nome: "Vibro-Machado Pesado", uso: "Marcial", disp: "Restrita", damage: "2d6", damage_type: "cortante", cost: "220 CR", weight_in_load: 3, two_handed: true, desc: "<p>Grande, Vibro, Cortante, Duas Mãos.</p>" },
+      { nome: "Bastão Eletrificado", uso: "Marcial", disp: "Restrita", damage: "1d8", damage_type: "impactante", cost: "250 CR", weight_in_load: 3, two_handed: true, desc: "<p>Grande, Impactante, Duas Mãos, <em>Nocaute</em>.</p><p><strong>Nocaute:</strong> causa metade do dano e aplica a regra de nocaute (1 em 1d6, ou pelo modificador de Força, para desacordar o alvo).</p>" },
     ],
   },
   {
     folder: "Blasters e Armas de Energia",
     tipo: "weapon",
     itens: [
-      { nome: "Blaster Leve", damage: "1d6", cost: "150 CR", weight_in_load: 1, ranged: true, shoot_range: 36, desc: "<p>Pequena, Energia, Disparo (36 m).</p>" + ALCANCE_NOTA + MODO_ATORDOANTE_NOTA },
-      { nome: "Carabina Blaster", damage: "1d6", cost: "350 CR", weight_in_load: 2, ranged: true, shoot_range: 54, two_handed: true, desc: "<p>Média, Energia, Disparo (54 m), Duas Mãos.</p>" + ALCANCE_NOTA + MODO_ATORDOANTE_NOTA },
-      { nome: "Blaster Pesado (pistola)", damage: "1d8", cost: "300 CR", weight_in_load: 1, ranged: true, shoot_range: 30, desc: "<p>Pequena, Energia, Disparo (30 m), <strong>Recarga</strong>.</p>" + ALCANCE_NOTA + MODO_ATORDOANTE_NOTA },
-      { nome: "Rifle Blaster", damage: "1d8", cost: "450 CR", weight_in_load: 2, ranged: true, shoot_range: 72, two_handed: true, desc: "<p>Média, Energia, Disparo (72 m), Duas Mãos.</p>" + ALCANCE_NOTA + MODO_ATORDOANTE_NOTA },
-      { nome: "Besta Wookiee (Bowcaster)", damage: "1d10", cost: "700 CR", weight_in_load: 2, ranged: true, shoot_range: 54, two_handed: true, desc: "<p>Média, Energia, Disparo (54 m), Duas Mãos, <strong>Recarga</strong>.</p><p>Exige <strong>FOR 15+</strong>.</p>" + ALCANCE_NOTA + MODO_ATORDOANTE_NOTA },
-      { nome: "Blaster de Assalto Pesado", damage: "2d6", cost: "900 CR", weight_in_load: 3, ranged: true, shoot_range: 90, two_handed: true, desc: "<p>Grande, Energia, Disparo (90 m), Duas Mãos, <strong>Recarga</strong>.</p>" + ALCANCE_NOTA + MODO_ATORDOANTE_NOTA },
-      { nome: "Rifle Íon", damage: "1d8", cost: "500 CR", weight_in_load: 2, ranged: true, shoot_range: 54, two_handed: true, desc: "<p>Média, Energia, Disparo (54 m), Duas Mãos, <strong>Íon</strong>. Rifle de projeção iônica, feito para derrubar droides sem furar a parede atrás deles.</p>" + ION_NOTA + ALCANCE_NOTA },
-      { nome: "Lançador de Rede", cost: "200 CR", weight_in_load: 1, ranged: true, shoot_range: 18, desc: "<p>Pequena, Especial, Disparo (18 m), <strong>Enreda</strong>. Não causa dano.</p>" + ALCANCE_NOTA },
-      { nome: "Granada de Fragmentação", damage: "2d6", cost: "150 CR", weight_in_load: 1, melee: false, throw_range: 9, desc: "<p>Pequena, Arremesso (9 m), <strong>Área</strong>.</p>" + ALCANCE_NOTA },
-      { nome: "Detonador Térmico", damage: "3d6", cost: "400 CR", weight_in_load: 1, melee: false, throw_range: 9, desc: "<p>Pequena, Arremesso (9 m), <strong>Área</strong>.</p>" + ALCANCE_NOTA },
-      { nome: "Granada Atordoante", cost: "180 CR", weight_in_load: 1, melee: false, throw_range: 9, desc: "<p>Pequena, Arremesso (9 m), <strong>Área</strong>, <strong>Atordoante</strong>. Não causa dano.</p>" + ALCANCE_NOTA + ATORDOANTE_NOTA },
-      { nome: "Granada de Íon", damage: "2d6", cost: "200 CR", weight_in_load: 1, melee: false, throw_range: 9, desc: "<p>Pequena, Arremesso (9 m), <strong>Área</strong>, <strong>Íon</strong>. Estoura numa cúpula azul e silenciosa que derruba um esquadrão de droides de uma vez; um alvo vivo no meio da área não sente nada.</p>" + ION_NOTA + ALCANCE_NOTA },
+      { nome: "Blaster Leve", uso: "Leve", disp: "Licenciada", damage: "1d6", cost: "150 CR", weight_in_load: 1, ranged: true, shoot_range: 36, desc: "<p>Pequena, Energia, Disparo (36 m).</p>" + ALCANCE_NOTA + MODO_ATORDOANTE_NOTA },
+      { nome: "Carabina Blaster", uso: "Marcial", disp: "Restrita", damage: "1d6", cost: "350 CR", weight_in_load: 2, ranged: true, shoot_range: 54, two_handed: true, desc: "<p>Média, Energia, Disparo (54 m), Duas Mãos.</p>" + ALCANCE_NOTA + MODO_ATORDOANTE_NOTA },
+      { nome: "Blaster Pesado (pistola)", uso: "Leve", disp: "Restrita", damage: "1d8", cost: "300 CR", weight_in_load: 1, ranged: true, shoot_range: 30, desc: "<p>Pequena, Energia, Disparo (30 m), <strong>Recarga</strong>.</p>" + ALCANCE_NOTA + MODO_ATORDOANTE_NOTA },
+      { nome: "Rifle Blaster", uso: "Marcial", disp: "Restrita", damage: "1d8", cost: "450 CR", weight_in_load: 2, ranged: true, shoot_range: 72, two_handed: true, desc: "<p>Média, Energia, Disparo (72 m), Duas Mãos.</p>" + ALCANCE_NOTA + MODO_ATORDOANTE_NOTA },
+      { nome: "Besta Wookiee (Bowcaster)", uso: "Marcial", disp: "Rara", damage: "1d10", cost: "700 CR", weight_in_load: 2, ranged: true, shoot_range: 54, two_handed: true, desc: "<p>Média, Energia, Disparo (54 m), Duas Mãos, <strong>Recarga</strong>.</p><p>Exige <strong>FOR 15+</strong>.</p>" + ALCANCE_NOTA + MODO_ATORDOANTE_NOTA },
+      { nome: "Blaster de Assalto Pesado", uso: "Marcial", disp: "Militar", damage: "2d6", cost: "900 CR", weight_in_load: 3, ranged: true, shoot_range: 90, two_handed: true, desc: "<p>Grande, Energia, Disparo (90 m), Duas Mãos, <strong>Recarga</strong>.</p>" + ALCANCE_NOTA + MODO_ATORDOANTE_NOTA },
+      { nome: "Rifle Íon", uso: "Marcial", disp: "Restrita", damage: "1d8", cost: "500 CR", weight_in_load: 2, ranged: true, shoot_range: 54, two_handed: true, desc: "<p>Média, Energia, Disparo (54 m), Duas Mãos, <strong>Íon</strong>. Rifle de projeção iônica, feito para derrubar droides sem furar a parede atrás deles.</p>" + ION_NOTA + ALCANCE_NOTA },
+      { nome: "Lançador de Rede", uso: "Utilitária", disp: "Licenciada", cost: "200 CR", weight_in_load: 1, ranged: true, shoot_range: 18, desc: "<p>Pequena, Especial, Disparo (18 m), <strong>Enreda</strong>. Não causa dano.</p>" + ALCANCE_NOTA },
+      { nome: "Granada de Fragmentação", uso: "Utilitária", disp: "Militar", damage: "2d6", cost: "150 CR", weight_in_load: 1, melee: false, throw_range: 9, desc: "<p>Pequena, Arremesso (9 m), <strong>Área</strong>.</p>" + ALCANCE_NOTA },
+      { nome: "Detonador Térmico", uso: "Utilitária", disp: "Ilegal", damage: "3d6", cost: "400 CR", weight_in_load: 1, melee: false, throw_range: 9, desc: "<p>Pequena, Arremesso (9 m), <strong>Área</strong>.</p>" + ALCANCE_NOTA },
+      { nome: "Granada Atordoante", uso: "Utilitária", disp: "Restrita", cost: "180 CR", weight_in_load: 1, melee: false, throw_range: 9, desc: "<p>Pequena, Arremesso (9 m), <strong>Área</strong>, <strong>Atordoante</strong>. Não causa dano.</p>" + ALCANCE_NOTA + ATORDOANTE_NOTA },
+      { nome: "Granada de Íon", uso: "Utilitária", disp: "Restrita", damage: "2d6", cost: "200 CR", weight_in_load: 1, melee: false, throw_range: 9, desc: "<p>Pequena, Arremesso (9 m), <strong>Área</strong>, <strong>Íon</strong>. Estoura numa cúpula azul e silenciosa que derruba um esquadrão de droides de uma vez; um alvo vivo no meio da área não sente nada.</p>" + ION_NOTA + ALCANCE_NOTA },
     ],
   },
   {
     folder: "Sabres de Luz",
     tipo: "weapon",
     itens: [
-      { nome: "Sabre de Luz", damage: "1d10", weight_in_load: 1, magic_item: true, desc: "<p>Pequena, Vibro-energia. <em>Exclusivo de personagens Sensíveis à Força.</em></p><p>Ignora o bônus de qualquer armadura que não seja <strong>Beskar</strong>.</p><p>Quem não for Sensível à Força e tentar empunhá-lo faz ataques sempre <strong>Muito Difíceis</strong>, com 1-2 em 1d6 de se ferir a cada uso.</p><p><strong>Sem preço de mercado</strong> — é construído por um rito da Força ou achado como item único.</p><p><strong>Construir o próprio sabre</strong> é um marco na vida de um Sensível — tradicionalmente sua primeira Provação, ou uma cena de <em>downtime</em> combinada com o Mestre. Exige um cristal kyber sintonizado + componentes técnicos (emissor, célula, empunhadura) + um período de concentração através da Força (horas a dias de meditação). Você pode empunhar o sabre alheio, mas <strong>o sabre que você mesmo construiu</strong> nunca falha nem \"sangra\" nas suas mãos — é uma extensão sua.</p>" },
-      { nome: "Sabre Sombrio (Darksaber)", damage: "1d10", weight_in_load: 1, magic_item: true, desc: "<p>Lâmina <strong>negra, achatada como uma espada</strong> e mais curta que um sabre comum, forjada há mais de mil anos por <strong>Tarre Vizsla — o primeiro Mandaloriano admitido na Ordem Jedi</strong>. Artefato único e, entre os Mandalorianos, símbolo de liderança de Mandalore.</p><p><em>Artefato único, sem preço — conquistado ou encontrado.</em></p><ul><li><strong>Ficha:</strong> como um Sabre de Luz (1d10, Pequena), porém a lâmina negra <strong>corta até a Beskar</strong> — a única lâmina que ignora o bônus de CA da Armadura Beskar.</li><li><strong>O Peso da Dúvida:</strong> quem o empunha <strong>sem tê-lo conquistado em combate</strong> sofre <strong>−1 nos ataques</strong> com ele até vencer um duelo empunhando a lâmina. Quem o ganha por vitória não sofre a penalidade.</li><li><strong>O Direito de Mandalore:</strong> portá-lo é <strong>reivindicar a liderança de Mandalore</strong> — enorme gancho político, casando com o papel Portador da Herança.</li></ul><p>O Sabre Sombrio não exige ser Sensível à Força (Mandalorianos comuns o carregaram) — mas nas mãos de um Sensível que o conquistou, é uma lenda viva.</p>" },
+      { nome: "Sabre de Luz", uso: "Leve", disp: "Rara", damage: "1d10", weight_in_load: 1, magic_item: true, desc: "<p>Pequena, Vibro-energia. <em>Exclusivo de personagens Sensíveis à Força.</em></p><p>Ignora o bônus de qualquer armadura que não seja <strong>Beskar</strong>.</p><p>Quem não for Sensível à Força e tentar empunhá-lo faz ataques sempre <strong>Muito Difíceis</strong>, com 1-2 em 1d6 de se ferir a cada uso.</p><p><strong>Sem preço de mercado</strong> — é construído por um rito da Força ou achado como item único.</p><p><strong>Construir o próprio sabre</strong> é um marco na vida de um Sensível — tradicionalmente sua primeira Provação, ou uma cena de <em>downtime</em> combinada com o Mestre. Exige um cristal kyber sintonizado + componentes técnicos (emissor, célula, empunhadura) + um período de concentração através da Força (horas a dias de meditação). Você pode empunhar o sabre alheio, mas <strong>o sabre que você mesmo construiu</strong> nunca falha nem \"sangra\" nas suas mãos — é uma extensão sua.</p>" },
+      { nome: "Sabre Sombrio (Darksaber)", uso: "Leve", disp: "Rara", damage: "1d10", weight_in_load: 1, magic_item: true, desc: "<p>Lâmina <strong>negra, achatada como uma espada</strong> e mais curta que um sabre comum, forjada há mais de mil anos por <strong>Tarre Vizsla — o primeiro Mandaloriano admitido na Ordem Jedi</strong>. Artefato único e, entre os Mandalorianos, símbolo de liderança de Mandalore.</p><p><em>Artefato único, sem preço — conquistado ou encontrado.</em></p><ul><li><strong>Ficha:</strong> como um Sabre de Luz (1d10, Pequena), porém a lâmina negra <strong>corta até a Beskar</strong> — a única lâmina que ignora o bônus de CA da Armadura Beskar.</li><li><strong>O Peso da Dúvida:</strong> quem o empunha <strong>sem tê-lo conquistado em combate</strong> sofre <strong>−1 nos ataques</strong> com ele até vencer um duelo empunhando a lâmina. Quem o ganha por vitória não sofre a penalidade.</li><li><strong>O Direito de Mandalore:</strong> portá-lo é <strong>reivindicar a liderança de Mandalore</strong> — enorme gancho político, casando com o papel Portador da Herança.</li></ul><p>O Sabre Sombrio não exige ser Sensível à Força (Mandalorianos comuns o carregaram) — mas nas mãos de um Sensível que o conquistou, é uma lenda viva.</p>" },
     ],
   },
   {
@@ -118,19 +158,21 @@ export const categorias = [
     ],
   },
   {
-    folder: "Armaduras e Vestes",
+    folder: "Armaduras e Escudos",
     tipo: "armor",
     itens: [
-      { nome: "Traje Reforçado", bonus_ca: 1, cost: "50 CR", weight_in_load: 1, desc: "<p>Veste Leve. <strong>Movimento:</strong> sem redução.</p>" },
-      { nome: "Armadura de Combate Leve", bonus_ca: 2, cost: "200 CR", weight_in_load: 1, desc: "<p>Veste Leve. <strong>Movimento:</strong> sem redução.</p>" },
-      { nome: "Armadura Compósita", bonus_ca: 3, cost: "350 CR", weight_in_load: 2, desc: "<p>Veste Média. <strong>Movimento: −1 m.</strong></p>" + MOVIMENTO_NOTA },
-      { nome: "Armadura de Assalto", bonus_ca: 4, cost: "600 CR", weight_in_load: 2, desc: "<p>Veste Média. <strong>Movimento: −1 m.</strong></p>" + MOVIMENTO_NOTA },
-      { nome: "Armadura Pesada", bonus_ca: 5, cost: "3.000 CR", weight_in_load: 3, desc: "<p>Veste Pesada. <strong>Movimento: −3 m.</strong></p>" + MOVIMENTO_NOTA },
-      { nome: "Armadura de Batalha Completa", bonus_ca: 7, cost: "20.000 CR", weight_in_load: 3, desc: "<p>Veste Pesada. <strong>Movimento: −3 m.</strong></p>" + MOVIMENTO_NOTA },
-      { nome: "Gerador de Escudo Pessoal", bonus_ca: 1, cost: "80 CR", desc: "<p>Leve. <strong>Acoplado ao cinto, sempre ativo — não ocupa a mão.</strong> Movimento: sem redução.</p><p><strong>Equivalência:</strong> é o <em>Campo de força individual</em> do ED-07 (defensivo, NT 4) na sua versão civil. <strong>Não são o mesmo item mecânico:</strong> o gerador de cinto dá <strong>+1 de CA permanente por 80 CR</strong>; o aparato militar dá <strong>+4 de CA por 1 minuto</strong>, recarrega em 1d4 horas e custa <strong>2.400 CR</strong> (ED $240.000 ÷ 100). Quem tiver os dois <strong>não soma</strong>: vale o maior bônus ativo.</p>" + ACESSO_DEFENSIVO },
-      { nome: "Armadura Beskar (Beskar'gam)", bonus_ca: 6, weight_in_load: 2, desc: "<p>Pesada, mas leve para o peso. <strong>Movimento: −1 m.</strong></p><p><strong>Resistente a Sabres:</strong> sabres não ignoram seu bônus de CA.</p><p><em>Sem preço — herança/conquista.</em></p><p><em>O Beskar paga menos (−1 m) porque isso <strong>é</strong> a lenda do beskar: proteção de armadura pesada com a mobilidade de uma média. É a vantagem mecânica do Mandaloriano, não um esquecimento.</em></p>" + MOVIMENTO_NOTA },
-      { nome: "Selagem Espacial (acréscimo)", bonus_ca: 0, cost: "+400 CR", weight_in_load: 1, desc: "<p><strong>Acréscimo</strong> a qualquer armadura desta lista: capacete e pressurização acoplados. Permite <strong>vácuo e atmosferas tóxicas</strong> enquanto houver oxigênio. <strong>Movimento: −2 m</strong> (soma-se à redução da armadura de base) e <strong>+1 de carga</strong>.</p><p>Exige um <strong>Cilindro de Oxigênio</strong> para funcionar: sem ele, o traje só protege de temperatura e pressão, não da falta de ar.</p>" + MOVIMENTO_NOTA },
-      { nome: "Selagem Aquática (acréscimo)", bonus_ca: 0, cost: "+300 CR", weight_in_load: 1, desc: "<p><strong>Acréscimo</strong> a qualquer armadura desta lista, para <strong>submersão</strong>. <strong>Movimento: −2 m</strong> em terra (<strong>sem redução</strong> dentro d'água) e <strong>+1 de carga</strong>.</p><p>Exige um <strong>Cilindro de Oxigênio</strong> para funcionar.</p>" + MOVIMENTO_NOTA },
+      { nome: "Traje Reforçado", tipo_armadura: "Leve", disp: "—", bonus_ca: 1, cost: "50 CR", weight_in_load: 1, desc: "<p>Veste Leve. <strong>Movimento:</strong> sem redução.</p>" },
+      { nome: "Armadura de Combate Leve", tipo_armadura: "Leve", disp: "Licenciada", bonus_ca: 2, cost: "200 CR", weight_in_load: 1, desc: "<p>Veste Leve. <strong>Movimento:</strong> sem redução.</p>" },
+      { nome: "Armadura Compósita", tipo_armadura: "Média", disp: "Licenciada", bonus_ca: 3, cost: "350 CR", weight_in_load: 2, desc: "<p>Veste Média. <strong>Movimento: −1 m.</strong></p>" + MOVIMENTO_NOTA },
+      { nome: "Armadura de Assalto", tipo_armadura: "Média", disp: "Restrita", bonus_ca: 4, cost: "600 CR", weight_in_load: 2, desc: "<p>Veste Média. <strong>Movimento: −1 m.</strong></p>" + MOVIMENTO_NOTA },
+      { nome: "Armadura Pesada", tipo_armadura: "Pesada", disp: "Militar", bonus_ca: 5, cost: "3.000 CR", weight_in_load: 3, desc: "<p>Veste Pesada. <strong>Movimento: −3 m.</strong></p>" + MOVIMENTO_NOTA },
+      { nome: "Armadura de Batalha Completa", tipo_armadura: "Pesada", disp: "Militar", bonus_ca: 7, cost: "20.000 CR", weight_in_load: 3, desc: "<p>Veste Pesada. <strong>Movimento: −3 m.</strong></p>" + MOVIMENTO_NOTA },
+      { nome: "Gerador de Escudo Pessoal", tipo_armadura: "aparato defensivo", disp: "—", bonus_ca: 1, cost: "80 CR", desc: "<p>Leve. <strong>Acoplado ao cinto, sempre ativo — não ocupa a mão.</strong> Movimento: sem redução.</p><p><strong>Equivalência:</strong> é o <em>Campo de força individual</em> do ED-07 (defensivo, NT 4) na sua versão civil. <strong>Não são o mesmo item mecânico:</strong> o gerador de cinto dá <strong>+1 de CA permanente por 80 CR</strong>; o aparato militar dá <strong>+4 de CA por 1 minuto</strong>, recarrega em 1d4 horas e custa <strong>2.400 CR</strong> (ED $240.000 ÷ 100). Quem tiver os dois <strong>não soma</strong>: vale o maior bônus ativo.</p>" + ACESSO_DEFENSIVO },
+      { nome: "Escudo de Energia", tipo_armadura: "Escudo", disp: "Restrita", bonus_ca: 2, cost: "1.500 CR", desc: "<p>Projetor de campo preso ao antebraço, sempre ativo. <strong>Não ocupa a mão.</strong> É <strong>o escudo</strong> a que as classes se referem quando dizem \"e escudo\". Leve demais para contar carga.</p><p><em>Resgatado do livro, não inventado: é o Escudo de energia da tabela de vestes do Space Dragon (+2 de proteção, $150.000, \"muito leve para contar carga\"), que a conversão não trouxe — e sem ele três classes tinham permissão para usar um item que não existia. Entra pela régua ÷100.</em></p>" + ESCUDO_FAMILIA },
+      { nome: "Escudo Antimotim", tipo_armadura: "Escudo", disp: "Licenciada", bonus_ca: 2, cost: "250 CR", weight_in_load: 2, desc: "<p>Placa física que cobre o corpo. <strong>Ocupa uma mão</strong> — esse é o preço de ser barato. <strong>Movimento: −1 m.</strong></p><p>O escudo da tropa de choque e da segurança corporativa, para quem não tem 1.500 CR.</p><p><em>Criação da casa — é o único da família que não vem do livro.</em></p>" },
+      { nome: "Armadura Beskar (Beskar'gam)", tipo_armadura: "Média", disp: "Rara", bonus_ca: 6, weight_in_load: 2, desc: "<p>Proteção de armadura pesada com o peso de uma <strong>média</strong>. <strong>Movimento: −1 m.</strong></p><p><strong>Resistente a Sabres:</strong> sabres não ignoram seu bônus de CA.</p><p><em>Sem preço — herança/conquista.</em></p><p><em>O Beskar paga menos (−1 m) porque isso <strong>é</strong> a lenda do beskar: proteção de armadura pesada com a mobilidade de uma média. É a vantagem mecânica do Mandaloriano, não um esquecimento.</em></p><p><em>Correção da casa: ela estava classificada como <strong>Pesada</strong>, e isso a proibia a Operativo, Técnico e Sensível à Força — ou seja, só um Veterano poderia ser Mandaloriano, o que contradiz a Senda Mandaloriana ser explicitamente cross-class. Como já pagava a redução de movimento de uma média, a categoria virou <strong>Média</strong>: vestível pelo Operativo e pelo Guardião, e ainda fora do alcance do Técnico. O +6 não mudou.</em></p>" + MOVIMENTO_NOTA },
+      { nome: "Selagem Espacial (acréscimo)", tipo_armadura: "acréscimo", disp: "—", bonus_ca: 0, cost: "+400 CR", weight_in_load: 1, desc: "<p><strong>Acréscimo</strong> a qualquer armadura desta lista: capacete e pressurização acoplados. Permite <strong>vácuo e atmosferas tóxicas</strong> enquanto houver oxigênio. <strong>Movimento: −2 m</strong> (soma-se à redução da armadura de base) e <strong>+1 de carga</strong>.</p><p>Exige um <strong>Cilindro de Oxigênio</strong> para funcionar: sem ele, o traje só protege de temperatura e pressão, não da falta de ar.</p>" + MOVIMENTO_NOTA },
+      { nome: "Selagem Aquática (acréscimo)", tipo_armadura: "acréscimo", disp: "—", bonus_ca: 0, cost: "+300 CR", weight_in_load: 1, desc: "<p><strong>Acréscimo</strong> a qualquer armadura desta lista, para <strong>submersão</strong>. <strong>Movimento: −2 m</strong> em terra (<strong>sem redução</strong> dentro d'água) e <strong>+1 de carga</strong>.</p><p>Exige um <strong>Cilindro de Oxigênio</strong> para funcionar.</p>" + MOVIMENTO_NOTA },
     ],
   },
   {
@@ -227,4 +269,49 @@ export const categorias = [
       { nome: "Cilindro de Oxigênio", cost: "400 CR", weight_in_load: 1, desc: "<p><strong>Obrigatório</strong> para usar a <strong>Selagem Espacial</strong> ou a <strong>Selagem Aquática</strong>. Dura cerca de <strong>6 horas</strong>. Sem ele, o traje só protege de temperatura e pressão, não da falta de ar.</p>" },
     ],
   },
+  {
+    folder: "Vestes sob Encomenda",
+    tipo: "misc",
+    itens: [
+      { nome: "Encomenda — Material mais Leve", cost: "400 CR", desc: "<p>Qualquer armadura pode ser levada a um alfaiate-armeiro e melhorada em <strong>um</strong> quesito. <strong>Uma melhoria por peça</strong> — não se acumulam. A encomenda leva de dias a semanas, a critério do Mestre, e não se faz em qualquer doca.</p><p><strong>Efeito:</strong> −1 de Carga.</p><p><em>Resgatado do livro: é a tabela T5-3, Vestes sob Encomenda, do Space Dragon, que o guia de conversão manda explicitamente manter. Uma coisa foi ajustada: o Reforço original dava +2 de proteção, e aqui dá +1 — lá a escada de vestes ia de 10 a 16 em quatro degraus largos, aqui vai de +1 a +7 em seis degraus finos, e um +2 avulso valeria dois degraus inteiros (a Armadura de Batalha Completa reforçada chegaria a +9). Se a sua mesa quiser o valor original, devolva o +2 e suba o preço para uns 1.200 CR.</em></p>" },
+      { nome: "Encomenda — Reforço de Placas", cost: "600 CR", desc: "<p>Qualquer armadura pode ser levada a um alfaiate-armeiro e melhorada em <strong>um</strong> quesito. <strong>Uma melhoria por peça</strong> — não se acumulam. A encomenda leva de dias a semanas, a critério do Mestre, e não se faz em qualquer doca.</p><p><strong>Efeito:</strong> +1 de CA.</p><p><em>Resgatado do livro: é a tabela T5-3, Vestes sob Encomenda, do Space Dragon, que o guia de conversão manda explicitamente manter. Uma coisa foi ajustada: o Reforço original dava +2 de proteção, e aqui dá +1 — lá a escada de vestes ia de 10 a 16 em quatro degraus largos, aqui vai de +1 a +7 em seis degraus finos, e um +2 avulso valeria dois degraus inteiros (a Armadura de Batalha Completa reforçada chegaria a +9). Se a sua mesa quiser o valor original, devolva o +2 e suba o preço para uns 1.200 CR.</em></p>" },
+      { nome: "Encomenda — Sob Medida", cost: "500 CR", desc: "<p>Qualquer armadura pode ser levada a um alfaiate-armeiro e melhorada em <strong>um</strong> quesito. <strong>Uma melhoria por peça</strong> — não se acumulam. A encomenda leva de dias a semanas, a critério do Mestre, e não se faz em qualquer doca.</p><p><strong>Efeito:</strong> +2 m de movimento, nunca acima dos 9 m base.</p><p><em>Resgatado do livro: é a tabela T5-3, Vestes sob Encomenda, do Space Dragon, que o guia de conversão manda explicitamente manter. Uma coisa foi ajustada: o Reforço original dava +2 de proteção, e aqui dá +1 — lá a escada de vestes ia de 10 a 16 em quatro degraus largos, aqui vai de +1 a +7 em seis degraus finos, e um +2 avulso valeria dois degraus inteiros (a Armadura de Batalha Completa reforçada chegaria a +9). Se a sua mesa quiser o valor original, devolva o +2 e suba o preço para uns 1.200 CR.</em></p>" },
+    ],
+  },
+  {
+    folder: "Kits e Estojos",
+    tipo: "misc",
+    itens: [
+      { nome: "Kit de Ferramentas", cost: "150 CR", weight_in_load: 1, desc: "<p>Reparar e reprogramar droides, veículos e naves.</p><p><strong>Necessário</strong> para o Técnico consertar máquina — sem ele, só improviso, e o Mestre pede o teste <strong>Difícil</strong>.</p><p><em>Kits e estojos não são conforto: sem eles, a habilidade de classe correspondente não rola.</em></p>" },
+      { nome: "Kit de Segurança", cost: "300 CR", weight_in_load: 1, desc: "<p>Gazuas eletrônicas e derivadores.</p><p><strong>Necessário</strong> para o talento <em>Sabotagem</em> do Operativo — o próprio talento diz \"exige os instrumentos consigo\".</p><p><strong>Ilegal sem licença</strong> em mundos do Núcleo.</p><p><em>Kits e estojos não são conforto: sem eles, a habilidade de classe correspondente não rola.</em></p>" },
+      { nome: "Estojo Médico", cost: "250 CR", weight_in_load: 1, desc: "<p><strong>Necessário</strong> para reviver um moribundo e para tratar doença, veneno ou radiação.</p><p><em>Kits e estojos não são conforto: sem eles, a habilidade de classe correspondente não rola.</em></p>" },
+      { nome: "Estojo Cirúrgico", cost: "500 CR", weight_in_load: 2, desc: "<p><strong>Necessário</strong> para as <em>operações cirúrgicas</em> do Médico de Campo.</p><p><em>Kits e estojos não são conforto: sem eles, a habilidade de classe correspondente não rola.</em></p>" },
+      { nome: "Kit de Reparos Emergenciais", cost: "100 CR", weight_in_load: 1, desc: "<p>Recupera <strong>2d4+1 PV</strong> de droide, veículo ou dispositivo, no campo. <strong>Um uso.</strong></p>" },
+      { nome: "Tanque de Bacta", cost: "5.000 CR (ou 150 CR/hora, alugado)", desc: "<p><em>Instalação</em> — cabe numa enfermaria de nave.</p><p>Recupera <strong>o dobro do nível em PV por dia</strong> dentro do tanque, além da recuperação normal.</p>" },
+    ],
+  },
+  {
+    folder: "Miudezas, Energia e Sobrevivência",
+    tipo: "misc",
+    itens: [
+      { nome: "Carga de Energia", cost: "10 CR", desc: "<p>O \"pente\" de uma arma de energia. Raramente acaba em jogo — use só se quiser tensão.</p>" },
+      { nome: "Carregador de Energia", cost: "50 CR", weight_in_load: 1, desc: "<p>Recarrega cargas e células: <strong>4 horas</strong> cada.</p>" },
+      { nome: "Célula de Energia", cost: "10 CR", desc: "<p>Bateria de aparato, lanterna ou visor.</p>" },
+      { nome: "Coldre de Cintura", cost: "15 CR", desc: "<p>Saque rápido.</p>" },
+      { nome: "Coldre Oculto", cost: "40 CR", desc: "<p>Saque dissimulado. Engana revista superficial.</p>" },
+      { nome: "Bandoleira", cost: "40 CR", weight_in_load: 1, desc: "<p>Munição e granadas de acesso rápido.</p>" },
+      { nome: "Cinto de Utilidades", cost: "100 CR", weight_in_load: 1, desc: "<p>Organiza pequenos itens. O Mestre é generoso com \"eu tenho isso no cinto\".</p>" },
+      { nome: "Macrobinóculos", cost: "120 CR", weight_in_load: 1, desc: "<p>Visão ampliada a longa distância. <em>Não dá bônus de ataque.</em></p>" },
+      { nome: "Arpéu e Corda (18 m)", cost: "50 CR", weight_in_load: 2, desc: "<p>Versão manual do Lançador de Cabo, para quem não tem 150 CR.</p>" },
+      { nome: "Bastão Extensível", cost: "10 CR", desc: "<p>Estende-se a até 3 m. Ferramenta, não arma.</p>" },
+      { nome: "Cobertor de Sobrevivência", cost: "20 CR", desc: "<p>Resiste a calor e frio extremos por algumas horas.</p>" },
+      { nome: "Barraca Térmica", cost: "200 CR", weight_in_load: 2, desc: "<p>Abriga 4 pessoas. Sobrevive à noite de um mundo extremo.</p>" },
+      { nome: "Cantil Térmico", cost: "30 CR", weight_in_load: 1, desc: "<p>1 litro, mantém a temperatura.</p>" },
+      { nome: "Frasco de Ácido", cost: "100 CR", desc: "<p>500 ml. Uso científico — ou arremessado, <strong>1d4</strong>.</p>" },
+      { nome: "Isqueiro de Fusão", cost: "5 CR", desc: "<p>Fogo. Custa quase nada e resolve mais cena do que parece.</p>" },
+      { nome: "Cartão de Identificação (2ª via)", cost: "20 CR", desc: "<p>Segunda via legítima. A <strong>falsa</strong> é serviço do submundo, e custa muito mais.</p>" },
+    ],
+  },
 ];
+
+export const categorias = anotaCategorias(CATEGORIAS);

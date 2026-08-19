@@ -1,0 +1,35 @@
+{
+  "folder": "yEdNQJt4ouwOtY7n",
+  "name": "Isqueiro de Fusão",
+  "type": "misc",
+  "_id": "WiAQVhofQXg0DuXv",
+  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "system": {
+    "odo_id": "isqueiro-de-fusao",
+    "description": "Fogo. Custa quase nada e resolve mais cena do que parece.",
+    "quantity": 1,
+    "cost": "5 CR",
+    "weight_in_load": 0,
+    "weight_in_grams": 0,
+    "magic_item": false,
+    "is_equipped": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 1500000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!WiAQVhofQXg0DuXv"
+}

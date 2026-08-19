@@ -1,0 +1,35 @@
+{
+  "folder": "bAHEjcDsWGUu700V",
+  "name": "Encomenda — Material mais Leve",
+  "type": "misc",
+  "_id": "hjCBLMFYpDlGI4aL",
+  "img": "systems/olddragon2e/assets/icons/misc.svg",
+  "system": {
+    "odo_id": "encomenda-material-mais-leve",
+    "description": "Qualquer armadura pode ser levada a um alfaiate-armeiro e melhorada em um quesito. Uma melhoria por peça — não se acumulam. A encomenda leva de dias a semanas, a critério do Mestre, e não se faz em qualquer doca.\nEfeito: −1 de Carga.\nResgatado do livro: é a tabela T5-3, Vestes sob Encomenda, do Space Dragon, que o guia de conversão manda explicitamente manter. Uma coisa foi ajustada: o Reforço original dava +2 de proteção, e aqui dá +1 — lá a escada de vestes ia de 10 a 16 em quatro degraus largos, aqui vai de +1 a +7 em seis degraus finos, e um +2 avulso valeria dois degraus inteiros (a Armadura de Batalha Completa reforçada chegaria a +9). Se a sua mesa quiser o valor original, devolva o +2 e suba o preço para uns 1.200 CR.",
+    "quantity": 1,
+    "cost": "400 CR",
+    "weight_in_load": 0,
+    "weight_in_grams": 0,
+    "magic_item": false,
+    "is_equipped": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!hjCBLMFYpDlGI4aL"
+}

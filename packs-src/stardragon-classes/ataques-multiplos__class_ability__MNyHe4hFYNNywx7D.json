@@ -5,7 +5,7 @@
   "_id": "MNyHe4hFYNNywx7D",
   "img": "systems/olddragon2e/assets/icons/melee.svg",
   "system": {
-    "description": "<p>Mantida da classe-base: um <strong>segundo ataque</strong> logo em sequência ao primeiro, com a mesma Base de Ataque.</p>",
+    "description": "<p>Adquire um <strong>segundo ataque</strong>, corpo a corpo ou à distância, feito em sequência ao primeiro — antes da ação do próximo jogador na iniciativa — <strong>com a mesma Base de Ataque</strong>.</p>",
     "level": 3,
     "level3": "",
     "level6": "",
@@ -42,7 +42,7 @@
     "lastModifiedBy": "swspacedragonbld",
     "exportSource": null
   },
-  "sort": 100000,
+  "sort": 200000,
   "ownership": {
     "default": 0
   },

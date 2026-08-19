@@ -5,7 +5,7 @@
   "_id": "Cbbj5iUv4MQHPsR5",
   "img": "systems/olddragon2e/assets/icons/kit.svg",
   "system": {
-    "description": "<p><em>(Aparatos e Feitos Científicos)</em> Cria máquinas e realiza experiências como um Técnico (NT = seu nível, máximo 10), mas com <strong>prejuízo tecnológico de 5%</strong> no custo.</p>",
+    "description": "<p><em>(Aparatos e Feitos Científicos)</em> Cria máquinas e realiza experiências como um Técnico (NT = seu nível, máximo 10), mas com <strong>prejuízo tecnológico de 5%</strong> no custo de cada aparato e feito.</p><p>Começa com <strong>2 aparatos de NT 1</strong> prontos — um a menos que os outros Técnicos — e ganha <strong>+1 por nível</strong>.</p><p><em>O prejuízo vale só para a bancada: aparatos e feitos. Compra normal de equipamento sai pelo preço de tabela — ele não tem o desconto do Técnico, mas também não paga a mais.</em></p>",
     "level": 1,
     "level3": "",
     "level6": "",

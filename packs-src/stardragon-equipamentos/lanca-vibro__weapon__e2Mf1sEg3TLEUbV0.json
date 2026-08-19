@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/piercing.svg",
   "system": {
     "odo_id": "lanca-vibro",
-    "description": "Média, Vibro, Perfurante, Arremesso (12 m), Haste, Versátil.\nAlcance — as três faixas. O valor listado é o alcance curto, sem penalidade. Até o dobro dele o ataque sofre −2; até o triplo, −4. Além do triplo não há tiro.",
+    "description": "Uso: Marcial · Disp.: Licenciada\nMédia, Vibro, Perfurante, Arremesso (12 m), Haste, Versátil.\nAlcance — as três faixas. O valor listado é o alcance curto, sem penalidade. Até o dobro dele o ataque sofre −2; até o triplo, −4. Além do triplo não há tiro.\nPorte. Pequena: uma mão — pode ser usada com as duas para +2 na rolagem de ataque. Média: preferencialmente duas mãos; empunhada com uma só, −2 no ataque. Grande: sempre as duas mãos, sem alternativa.\nDisponibilidade não muda nada em combate: muda onde se compra e o que acontece numa revista. — livre · Licenciada exige licença de porte · Restrita mercado cinzento · Militar só forças armadas · Ilegal portar já é crime · Rara não é questão de lei, é de existir.\nFora dos mundos de fronteira, portar item Restrito, Militar ou Ilegal de forma visível atrai a lei. Escondido, é um teste de Destreza contra a revista — Fácil se for pequeno, Difícil se for Grande, impossível se for uma armadura.\nFora da faixa da sua classe: −2 em todas as rolagens de ataque com a arma e perda das habilidades de classe que dependem de mobilidade ou precisão (talentos do Operativo, Forma de Sabre do Guardião, Ataque Furtivo) enquanto estiver assim. As passivas continuam valendo.",
     "quantity": 1,
     "cost": "80 CR",
     "weight_in_load": 2,

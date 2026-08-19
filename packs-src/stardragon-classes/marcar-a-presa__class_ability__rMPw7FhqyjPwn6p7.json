@@ -1,0 +1,50 @@
+{
+  "folder": "CUKsadcWW9Xjh3at",
+  "name": "Marcar a Presa",
+  "type": "class_ability",
+  "_id": "rMPw7FhqyjPwn6p7",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p>Declare um alvo como seu <strong>contrato</strong> — por nome, por rosto ou por um holo de recompensa. Contra ele, e só contra ele: <strong>+2 para acertar</strong>, seus críticos saem em <strong>18–20</strong>, e você sabe a <strong>direção geral</strong> em que ele está enquanto estiverem no mesmo planeta.</p><p><strong>Um contrato por vez</strong>; trocar exige um dia de preparação e uma pista nova.</p><p><em>Correção da casa: do 3º ao 5º nível o Caçador atacava uma vez enquanto o chassi atacava duas, sem nada no lugar — o segundo ataque da base foi antecipado para o 3º nível e ninguém revisou quem o recebia depois. (No Space Dragon o problema não existia: lá o segundo ataque só chegava no 7º para todo mundo.) A saída não foi empatar o número de ataques, foi inclinar a classe: contra o alvo que ele veio caçar, o Caçador é o melhor atirador do livro; contra tropa aleatória, continua atrás. É a diferença entre um soldado e um caçador.</em></p>",
+    "level": 3,
+    "level3": "",
+    "level6": "",
+    "level10": "",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!rMPw7FhqyjPwn6p7"
+}

@@ -33,15 +33,26 @@ const NOTA_SPEC =
 const SEGUIDORES_NOTA =
   "<p><strong>Seguidores.</strong> Onde uma habilidade falar em \"seu número máximo de seguidores\", vale: <strong>Número Máximo de Seguidores = 1 + modificador de Carisma</strong> (mínimo <strong>1</strong>). Carisma 9-12 → 1 seguidor · 13-14 → 2 · 15-16 → 3 · 17-18 → 4 · 19-20 → 5. São companheiros leais <strong>por vínculo</strong>, não contratados — subalternos e mercenários pagos entram pelo limite de contratação de ajudantes do OD2 (LB1, p. 78) e contam à parte.</p>";
 
-// Alinhamento e especialização (SW-SD-Classes.md § Alinhamento e especialização).
-// Vale para as três classes mundanas; o Sensível à Força é a exceção.
+// Alinhamento (SW-SD-Classes.md § Alinhamento — livre em todas as classes).
+// A amarração por especialização — o antigo Leal/Neutro/Rebelde do Space
+// Dragon — foi REMOVIDA em ago/2026, e com ela o campo `restricao_alinhamentos`
+// de todas as especializações mundanas. O Sensível à Força já era livre; agora
+// todo mundo é.
 const ALINHAMENTO_NOTA =
-  "<p><strong>Alinhamento e especialização.</strong> Cada especialização das classes mundanas é presa a um alinhamento (o antigo <em>Leal/Neutro/Rebelde</em> do Space Dragon): <strong>Emissário, Espião e Médico de Campo são ordeiros</strong>; <strong>Mercenário, Sabotador e Assassino são neutros</strong>; <strong>Caçador de Recompensas, Contrabandista e Slicer são caóticos</strong>. O <strong>Sensível à Força</strong> é a exceção — as Sendas dele não têm trava de alinhamento.</p>";
+  "<p><strong>Alinhamento — livre em todas as classes.</strong> <strong>Nenhuma especialização deste cenário exige alinhamento.</strong> Escolha Ordeiro, Neutro ou Caótico pelo personagem que você quer jogar, não pela trilha: existe Emissário caótico, Assassino ordeiro e Contrabandista que cumpre a palavra dada.</p>" +
+  "<p>O alinhamento continua na ficha e continua importando — guia a conduta, orienta reações de PNJ e é o que o Mestre cobra quando você age contra a própria natureza. O que ele <strong>não</strong> faz é fechar portas na criação.</p>" +
+  "<p><em>Correção da casa. O Space Dragon prendia cada especialização a uma Afiliação, e este cenário carregava isso. Três motivos para cortar: <strong>(1)</strong> produzia personagens que a ficção contradiz — o Caçador de Recompensas era obrigatoriamente caótico, mas Boba Fett cumpre contrato à risca e Din Djarin segue um código religioso; <strong>(2)</strong> fechava espécies inteiras — cruzando a trava de alinhamento da espécie com a da trilha, um Rodiano só podia seguir três das dez trilhas mundanas; <strong>(3)</strong> a diferenciação das trilhas nunca veio do alinhamento, vem do kit de habilidades. Se a sua mesa quiser a amarração de volta, basta declarar que vale.</em></p>";
 
-// Nota que acompanha cada especialização MUNDANA (as do Sensível não têm trava).
-const NOTA_SPEC_MUNDANA =
-  NOTA_SPEC +
-  "<p><strong>Mudança de alinhamento em jogo.</strong> Um personagem que muda de alinhamento <strong>não perde</strong> as habilidades de especialização que já conquistou, mas <strong>não ganha as próximas</strong> enquanto sua conduta e sua trilha estiverem em desacordo. Ele tem duas saídas: reconciliar-se com a trilha antiga, ou negociar com o Mestre a <strong>troca da especialização</strong> por outra do alinhamento novo, mantendo o nível e refazendo as habilidades correspondentes.</p>";
+// Consequência de usar equipamento fora da faixa da classe. Antes isto só
+// estava escrito para o Operativo; agora vale para as quatro classes, na
+// mesma frase (SW-SD-Equipamentos.md § Quem pode usar o quê).
+const FORA_DA_FAIXA_NOTA =
+  "<p><strong>Usar fora da faixa.</strong> Vestir armadura mais pesada que a permitida, ou empunhar arma fora da lista, não é proibido pelo universo — é proibido pelo treino. O personagem sofre <strong>−2 em todas as rolagens de ataque</strong> com a arma e <strong>perde o acesso às habilidades de classe que dependem de mobilidade ou precisão</strong> enquanto estiver assim (os talentos do Operativo, a Forma de Sabre do Guardião, o Ataque Furtivo). As habilidades passivas continuam valendo.</p>";
+
+// Nota que acompanha cada especialização mundana. Já foi maior: trazia também a
+// regra de mudança de alinhamento em jogo, que perdeu o objeto quando a trava
+// de alinhamento saiu.
+const NOTA_SPEC_MUNDANA = NOTA_SPEC;
 
 // Talentos do Operativo — o campo `rogue_talents` é o que faz a ficha do OD2
 // exibir o alocador de pontos.
@@ -69,9 +80,12 @@ const TALENTOS_REGRA =
   "<p><strong>Teste:</strong> um talento tem chance em 1d6 igual ao seu valor (2 pontos = 1-2 em 1d6; 5 pontos = 1-5 em 1d6). <strong>Máximo: 5.</strong></p>" +
   "<p><strong>Trava:</strong> ao subir de nível ele <strong>não pode pôr os 2 pontos no mesmo talento</strong> — tem que espalhar. A trava não vale para a distribuição inicial do 1º nível.</p>";
 
-// As Sendas do Sensível à Força não têm trava de alinhamento (correção da casa).
+// As Sendas do Sensível à Força nunca tiveram trava de alinhamento. Foram as
+// primeiras a ser soltas — e o argumento delas acabou valendo para o livro
+// inteiro: em ago/2026 a trava caiu também nas dez trilhas mundanas.
 const NOTA_SENDA_SEM_ALINHAMENTO =
-  "<p><strong>As Sendas NÃO têm restrição de alinhamento</strong> (correção da casa). Nas classes mundanas cada especialização é presa a um alinhamento; aqui isso foi <strong>removido</strong>. O motivo é de design: a restrição existe para diferenciar as trilhas — e no Sensível essa diferenciação <em>já é feita pelo Caminho (Luz/Sombra) e pela Corrupção</em>. Manter os dois eixos produzia aberrações: um Sith de sabre seria obrigatoriamente \"Guardião neutro\" com Corrupção 10, e um Inquisidor caçador de Jedi seria \"Sentinela caótico\" a serviço do regime mais ordeiro da galáxia. O Sensível <strong>escolhe livremente</strong> a Senda e o alinhamento; quem manda na moral dele é o <strong>Caminho</strong>.</p>"
+  "<p><strong>As Sendas não têm restrição de alinhamento</strong> — e, desde ago/2026, <strong>nenhuma trilha deste cenário tem</strong>. O Sensível foi só o primeiro a ser solto.</p>"
+      + "<p><em>O motivo é de design: a trava existia para diferenciar as trilhas, e no Sensível essa diferenciação já é feita pelo <strong>Caminho</strong> (Luz/Sombra) e pela <strong>Corrupção</strong>. Manter os dois eixos produzia aberrações: um Sith de sabre seria obrigatoriamente \"Guardião neutro\" com Corrupção 10, e um Inquisidor caçador de Jedi seria \"Sentinela caótico\" a serviço do regime mais ordeiro da galáxia. Depois se percebeu que o mesmo raciocínio valia fora: a diferenciação das trilhas mundanas também nunca veio do alinhamento, vem do kit de habilidades.</em></p>"
       + "<p><em>Variante opcional — se a sua mesa preferir a amarração antiga, a leitura mais coerente seria pelo <strong>Caminho</strong>, não pela Senda: Luz → Ordeiro ou Neutro · Sombra → Caótico ou Ordeiro (o Império é ordeiro) · sem Caminho → Neutro.</em></p>";
 
 // ── Criações da casa inspiradas no suplemento "Jedi e Sith para Space Dragon"
@@ -136,24 +150,29 @@ const dominioDaSenda = (senda, dominio, frase) => ({
 });
 
 // Restrições de equipamento por chassi.
+// As restrições são escritas no vocabulário da tabela de Equipamentos: as armas
+// trazem a coluna "Uso" (Leve / Marcial / Utilitária) e as armaduras a coluna
+// "Tipo" (Leve / Média / Pesada). Antes as classes falavam em "armas de uma
+// mão", "armas simples" e "regra de Vestes" — termos que nenhuma tabela deste
+// cenário etiquetava, e que por isso o jogador não conseguia aplicar na loja.
 const EQ_VETERANO = {
-  weapons: "Proficiente no uso de qualquer tipo de arma.",
-  armors: "Pode usar qualquer tipo de vestes e escudos.",
+  weapons: "Leve, Marcial e Utilitária — qualquer arma do catálogo.",
+  armors: "Leve, Média e Pesada, e pode usar escudo.",
   magic_items: "Aparatos defensivos e utilitários. Não opera aparatos ofensivos.",
 };
 const EQ_OPERATIVO = {
-  weapons: "Apenas armas que possam ser empunhadas com uma das mãos.",
-  armors: "Apenas vestes leves ou médias, sem escudos. Usar outras vestes ou escudo impede o uso dos talentos de classe.",
+  weapons: "Leve e Utilitária, nenhuma de Duas Mãos.",
+  armors: "Apenas Leve ou Média, e sem escudo — armadura Pesada ou escudo impede o uso dos talentos de classe.",
   magic_items: "Apenas aparatos utilitários.",
 };
 const EQ_TECNICO = {
-  weapons: "Armas leves e utilitárias, de energia. Jamais projéteis ou armas marciais.",
-  armors: "Apenas vestes leves.",
+  weapons: "Leve de energia e Utilitária (granadas, cortadores, lançadores). Nada Marcial.",
+  armors: "Apenas Leve, sem escudo.",
   magic_items: "Constrói e opera qualquer aparato — ofensivos, defensivos e utilitários.",
 };
 const EQ_SENSIVEL = {
-  weapons: "Empunha o sabre de luz sem risco, além de armas simples.",
-  armors: "Regra de Vestes. (O Guardião usa armaduras médias — ver a especialização.)",
+  weapons: "Sabre de luz e armas Leves.",
+  armors: "Apenas Leve, sem escudo. (O Guardião também usa Média — ver a especialização.)",
   magic_items: "Apenas aparatos utilitários. Construir e operar qualquer aparato é o nicho do Técnico.",
 };
 
@@ -179,13 +198,13 @@ export const classes = [
     flavor: "<p>O herói de ação e o piloto da galáxia. <em>Chassi: Cosmonauta.</em></p>",
     descricao:
       "<p>Soldados, pistoleiros, caçadores, capitães e diplomatas de gatilho rápido. É a classe marcial do cenário: não há \"Guerreiro\" separado. <strong>Cassian, Boba Fett, Leia e um piloto de caça</strong> são todos Veteranos de especializações diferentes.</p>" +
-      "<p><strong>Créditos iniciais:</strong> 2d10 × 50 CR.</p>" + APARATOS_NOTA + SEGUIDORES_NOTA + ALINHAMENTO_NOTA,
+      "<p><strong>Créditos iniciais:</strong> 2d10 × 50 CR.</p>" + APARATOS_NOTA + SEGUIDORES_NOTA + ALINHAMENTO_NOTA + FORA_DA_FAIXA_NOTA,
     equipment_restrictions: EQ_VETERANO,
     habilidades: [
       { nome: "Pilotar", level: 1, desc: "<p>Pilota qualquer nave ou veículo, e é o <strong>capitão natural</strong> de uma nave. Chance de <strong>1-2 em 1d6</strong>.</p>", level3: "<p>A chance aumenta para <strong>1-3 em 1d6</strong>.</p>", level6: "<p>A chance aumenta para <strong>1-4 em 1d6</strong>.</p>", level10: "<p>A chance aumenta para <strong>1-5 em 1d6</strong>.</p>" },
       { nome: "Desarmar e Subjugar", level: 1, desc: "<p>Sacrificando um de seus ataques, desarma um oponente (<strong>1-2 em 1d6</strong>). Se o alvo já está desarmado, pode subjugá-lo — também sacrificando um ataque, com a mesma chance.</p>", level3: "<p>Chance de <strong>1-3 em 1d6</strong>.</p>", level6: "<p>Chance de <strong>1-4 em 1d6</strong>.</p>", level10: "<p>Chance de <strong>1-5 em 1d6</strong>.</p>" },
       { nome: "Ataques Múltiplos", level: 3, desc: "<p>Adquire um <strong>segundo ataque</strong> (corpo a corpo ou à distância), realizado logo em sequência ao primeiro — antes da ação do próximo jogador na iniciativa — <strong>com a mesma Base de Ataque</strong> do primeiro.</p><p><em>Nota de balanço (correção da casa): o Space Dragon só dava o segundo ataque no 7º nível, e com a Base de Ataque menor; o Estrela Dracônica antecipou para o 1º nível com a BA cheia, o que dobra o dano por rodada da classe marcial já na primeira sessão e esvazia a troca do Mercenário [6]. Aqui o ganho foi movido para o <strong>3º nível</strong>, alinhado ao degrau que todas as outras habilidades usam. <strong>Variante:</strong> mesas que preferirem a versão do Estrela Dracônica podem devolvê-lo ao 1º nível.</em></p>" },
-      { nome: "Dano Crítico", level: 1, desc: "<p>A intimidade do Veterano com armas faz seus acertos certeiros doerem mais. Sempre que uma rolagem de ataque resultar em <strong>acerto crítico</strong>, o dano final é multiplicado por <strong>×2</strong>.</p><p><em>No Space Dragon o dano crítico era uma coluna da tabela do Cosmonauta, escalando de ×2 a ×5 — a marca registrada da classe. O Estrela Dracônica a transferiu inteira para o Mercenário, deixando a classe-base sem crítico nenhum. Aqui a progressão volta para o Veterano em versão modesta (×2/×3); o <strong>Mercenário</strong> continua sendo o especialista, escalando até ×5 e ganhando a chance de forçar críticos.</em></p>", level10: "<p>O multiplicador de dano crítico passa a <strong>×3</strong>.</p>" },
+      { nome: "Dano Crítico", level: 1, desc: "<p>A intimidade do Veterano com armas faz seus acertos certeiros saírem <strong>mais vezes</strong> — e, no fim da carreira, doerem mais. <strong>Seus acertos críticos acontecem em 19–20</strong>, e não só no 20 natural: o dobro da frequência de qualquer outro personagem da galáxia. O dano segue <strong>dobrado</strong>, como manda o OD2.</p><p><em>Correção da casa: este degrau dizia \"[1] dano ×2\" — e ×2 é o que o OD2 já dá a todo mundo (\"quando um acerto crítico ocorre, o dano da arma deve ser dobrado\", LB1 p. 92). Na prática a assinatura da classe marcial entregava <strong>nada</strong> até o 10º nível. A causa foi uma compressão de escala: no Space Dragon o Cosmonauta tinha uma coluna de crítico ao longo de 20 níveis (×2 do 1º ao 5º, chegando a ×5 no 18º), e lá o crítico-padrão rolava numa tabela de 1d6 com o multiplicador da classe somando por cima. Espremida para 15 níveis e pousada num sistema cujo crítico já é ×2 por definição, a base da escada afundou abaixo do piso. A correção troca o <strong>multiplicador</strong> pela <strong>faixa</strong>: o Veterano não bate mais forte no 1º nível — ele <strong>crita duas vezes mais</strong>. É a forma nativa do OD2 de dizer \"esta pessoa vive com uma arma na mão\", e o cenário já a usa em Mestre Makashi e no Tiro de Passagem. <strong>Variante:</strong> mesas que preferirem a leitura antiga podem devolver o 1º nível a \"dano ×2\" — sabendo que ele não muda nada.</em></p>", level10: "<p>O dano crítico passa a <strong>×3</strong>.</p>" },
       reputacao(),
     ],
   },
@@ -195,16 +214,16 @@ export const classes = [
     coluna: "especial",
     dv: 10,
     high_level_hp_bonus: 1,
-    restricao_alinhamentos: ["neutro"],
-    flavor: "<p>O soldado e o pistoleiro. <em>Especialização de Veterano (neutro).</em></p>",
+    flavor: "<p>O soldado e o pistoleiro. <em>Especialização de Veterano.</em></p>",
     descricao:
       "<p>Stormtroopers de elite, mercenários, pistoleiros do submundo, soldados clones. A arma preferida vira extensão do corpo.</p>" +
-      "<p><strong>Perde</strong> acesso a <em>Pilotar</em> e <em>Desarmar e Subjugar</em> — mas <strong>mantém Ataques Múltiplos</strong> (no 3º nível, como todo Veterano) e o <strong>Dano Crítico</strong> da classe.</p>" + NOTA_SPEC_MUNDANA,
+      "<p><strong>Em relação ao Veterano-base:</strong> abre mão de <em>Pilotar</em> e <em>Desarmar e Subjugar</em> já no 1º nível — em troca, é quem mais crita na galáxia: <strong>18–20 e ×3 desde o 1º nível</strong>, subindo até ×5. E, a partir do 10º, <strong>suas Jogadas de Proteção param de evoluir</strong>.</p>" + NOTA_SPEC_MUNDANA,
     equipment_restrictions: EQ_VETERANO,
     habilidades: [
-      { nome: "Ataques Múltiplos", level: 3, desc: "<p>Mantida da classe-base: um <strong>segundo ataque</strong> logo em sequência ao primeiro, com a mesma Base de Ataque.</p>" },
-      { nome: "Dano Crítico", level: 1, desc: "<p>Mantido da classe-base: em um <strong>acerto crítico</strong>, o dano final é multiplicado por <strong>×2</strong>.</p><p><em>Vale para qualquer arma que não seja a preferida — com a arma escolhida, quem manda é a progressão de <strong>Armado e Perigoso</strong>, abaixo.</em></p>", level10: "<p>O multiplicador passa a <strong>×3</strong> (ainda para as armas que não sejam a preferida).</p>" },
-      { nome: "Armado e Perigoso", level: 1, desc: "<p>O dano crítico com uma arma de sua escolha é sempre <strong>multiplicado por 2</strong>.</p><p><em>Esta progressão substitui a do Veterano quando ele usa a arma escolhida — e a partir do 3º nível ela é sempre superior. Com qualquer outra arma, vale o <strong>Dano Crítico</strong> normal da classe.</em></p>", level3: "<p><strong>Golpe Impiedoso:</strong> os críticos com a arma escolhida passam a causar dano <strong>×3</strong>.</p>", level6: "<p><strong>Mestre de Arma:</strong> <strong>−5</strong> ao usar uma arma que não seja a preferida e <strong>+2</strong> em todas as jogadas com ela. Suas Jogadas de Proteção param de evoluir, mas ele pode <strong>sacrificar o segundo ataque</strong> para ter chance maior de crítico: <strong>1-3 em 1d6</strong>. Críticos com a arma escolhida passam a <strong>×4</strong>.</p>", level10: "<p><strong>Super Comando:</strong> pode causar dano crítico com <strong>ambos</strong> os ataques, <strong>1-4 em 1d6</strong>. Críticos passam a <strong>×5</strong>.</p>" },
+      { nome: "Armado e Perigoso", level: 1, desc: "<p>Escolha <strong>uma arma</strong> — é a sua. Com ela, seus acertos críticos acontecem em <strong>18–20</strong> e o dano crítico é <strong>×3</strong>.</p><p>Com qualquer outra arma vale o <strong>Dano Crítico do Veterano</strong>: crítico em 19–20, dano dobrado.</p><p><em>Correção da casa: esta habilidade dava \"×2 na arma escolhida\", que é o padrão do OD2 restrito a uma arma — o próprio texto admitia que ela só ligava no 3º nível. Somada ao Dano Crítico ×2 herdado, a conta do 1º nível era: paga Pilotar e Desarmar, recebe nada. Agora a trilha nasce fazendo o que promete, e o <strong>Golpe Impiedoso</strong> do 3º nível foi absorvido aqui — a escada ficou ×3 → ×4 → ×5, sem degrau repetido nem degrau morto.</em></p>" },
+      { nome: "Ataques Múltiplos", level: 3, desc: "<p>Adquire um <strong>segundo ataque</strong>, corpo a corpo ou à distância, feito em sequência ao primeiro — antes da ação do próximo jogador na iniciativa — <strong>com a mesma Base de Ataque</strong>.</p>" },
+      { nome: "Mestre de Arma", level: 6, desc: "<p><strong>−5</strong> ao usar qualquer arma que não seja a sua, e <strong>+2</strong> em todas as jogadas com ela. Os críticos com a arma escolhida passam a <strong>×4</strong>.</p><p><strong>Golpe Certeiro — a aposta do Mercenário.</strong> No início do seu turno, declare que <strong>abre mão do segundo ataque</strong> para forçar um crítico e role <strong>1d6</strong>. Com <strong>1-3</strong>, você faz o ataque normalmente e, <strong>se ele acertar, é automaticamente um acerto crítico</strong>, não importa o que o d20 disser. Com <strong>4-6</strong>, você <strong>perde o resto do turno</strong> — nem ataque, nem manobra, nem movimento. É aposta, não bônus.</p><p><em>Correção da casa: o texto anterior dizia só \"sacrifique o segundo ataque para ter chance maior de crítico: 1-3 em 1d6\", sem dizer o que a jogada significa, se o ataque ainda precisa acertar ou o que acontece na falha. Não dava para rolar. O procedimento acima é o do livro, traduzido de porcentagem para 1d6.</em></p>" },
+      { nome: "Super Comando", level: 10, desc: "<p>Os críticos com a arma escolhida passam a <strong>×5</strong>, e o <strong>Golpe Certeiro</strong> passa a valer para os <strong>dois</strong> ataques do turno, com a chance melhorada de <strong>1-4 em 1d6</strong> — uma jogada para cada ataque. A cláusula de falha continua de pé: errar a jogada encerra o turno na hora.</p><p>E, a partir daqui, <strong>suas Jogadas de Proteção param de evoluir</strong> — é o preço de ter dado a vida inteira a uma arma só.</p><p><em>Correção da casa: no Space Dragon o congelamento de JP caía no 10º de 20 níveis e custava 3 pontos. Herdado no 6º de uma escala de 15, passou a custar 8 — JP travada em 8 contra os 16 de todo mundo — por dois terços da carreira, o que fazia dele a habilidade mais cara do livro apresentada como upgrade. Movido para o 10º, volta a valer metade da carreira e chega junto com o prêmio. <strong>Variante:</strong> devolva-o ao 6º nível se quiser a versão dura.</em></p>" },
       reputacao("A fama do soldado que nunca erra — vale em quartéis, cantinas e mesas de contratação."),
     ],
   },
@@ -214,17 +233,18 @@ export const classes = [
     coluna: "especial",
     dv: 10,
     high_level_hp_bonus: 1,
-    restricao_alinhamentos: ["caotico"],
-    flavor: "<p>O caçador. <em>Especialização de Veterano (caótico).</em></p>",
+    flavor: "<p>O caçador. <em>Especialização de Veterano.</em></p>",
     descricao:
       "<p>Boba Fett, Cad Bane, Bossk, Fennec. Casa perfeitamente com a <strong>Senda Mandaloriana</strong>.</p>" +
-      "<p><strong>Perde</strong> <em>Desarmar e Subjugar</em> e <em>Ataques Múltiplos</em> nos níveis iniciais; <em>Pilotar</em> é substituída por <em>Operar Aparatos Ofensivos e Consertar Máquinas</em>. É a única especialização fora do Técnico que opera <strong>aparatos ofensivos</strong>.</p>" + NOTA_SPEC_MUNDANA,
+      "<p><strong>Em relação ao Veterano-base:</strong> abre mão de <em>Pilotar</em> (a pilotagem vem embutida em <em>Operar Aparatos Ofensivos</em>, que também conserta máquinas) e recebe os <em>Ataques Múltiplos</em> mais tarde, no 6º nível. Em troca, é a única trilha não-Técnica que opera <strong>aparatos ofensivos</strong>, a única com um alvo marcado e a única classe do livro com um <strong>terceiro ataque</strong>.</p>" + NOTA_SPEC_MUNDANA,
     equipment_restrictions: {
       ...EQ_VETERANO,
       magic_items: "Exceção da trilha: opera aparatos ofensivos, defensivos e utilitários.",
     },
     habilidades: [
+      { nome: "Dano Crítico", level: 1, desc: "<p>Como o Veterano: seus acertos críticos acontecem em <strong>19–20</strong>, e não só no 20 natural. O dano segue dobrado.</p>", level10: "<p>O dano crítico passa a <strong>×3</strong>.</p>" },
       { nome: "Operar Aparatos Ofensivos e Consertar Máquinas", level: 1, desc: "<p>Opera aparatos ofensivos (redes, detonadores, grilhões), <strong>pilota naves</strong> e conserta máquinas: <strong>1-2 em 1d6</strong>.</p>", level3: "<p>A chance sobe para <strong>1-3 em 1d6</strong>.</p>", level6: "<p>A chance sobe para <strong>1-4 em 1d6</strong>.</p>", level10: "<p>A chance sobe para <strong>1-5 em 1d6</strong>.</p>" },
+      { nome: "Marcar a Presa", level: 3, desc: "<p>Declare um alvo como seu <strong>contrato</strong> — por nome, por rosto ou por um holo de recompensa. Contra ele, e só contra ele: <strong>+2 para acertar</strong>, seus críticos saem em <strong>18–20</strong>, e você sabe a <strong>direção geral</strong> em que ele está enquanto estiverem no mesmo planeta.</p><p><strong>Um contrato por vez</strong>; trocar exige um dia de preparação e uma pista nova.</p><p><em>Correção da casa: do 3º ao 5º nível o Caçador atacava uma vez enquanto o chassi atacava duas, sem nada no lugar — o segundo ataque da base foi antecipado para o 3º nível e ninguém revisou quem o recebia depois. (No Space Dragon o problema não existia: lá o segundo ataque só chegava no 7º para todo mundo.) A saída não foi empatar o número de ataques, foi inclinar a classe: contra o alvo que ele veio caçar, o Caçador é o melhor atirador do livro; contra tropa aleatória, continua atrás. É a diferença entre um soldado e um caçador.</em></p>" },
       { nome: "Desarmar e Subjugar", level: 3, desc: "<p>Recupera a manobra da classe-base, com chance de <strong>1-2 em 1d6</strong>.</p>" },
       { nome: "Ataques Múltiplos", level: 6, desc: "<p>Ganha um <strong>segundo ataque</strong> com a mesma Base de Ataque.</p>" },
       { nome: "Combate Rápido", level: 10, desc: "<p>Tenta um <strong>terceiro ataque</strong> (<strong>1-4 em 1d6</strong>, com a Base de Ataque do segundo). Falhar nessa jogada encerra o turno.</p>" },
@@ -237,16 +257,18 @@ export const classes = [
     coluna: "especial",
     dv: 10,
     high_level_hp_bonus: 1,
-    restricao_alinhamentos: ["ordeiro"],
-    flavor: "<p>O diplomata, o senador, o capitão-líder. <em>Especialização de Veterano (ordeiro).</em></p>",
+    flavor: "<p>O diplomata, o senador, o capitão-líder. <em>Especialização de Veterano.</em></p>",
     descricao:
       "<p>Leia Organa, Bail, Mon Mothma, um capitão contrabandista que virou general da Aliança.</p>" +
-      "<p><strong>Perde</strong> <em>Desarmar e Subjugar</em> e <em>Ataques Múltiplos</em>, mas <strong>mantém e melhora Pilotar</strong>.</p>" + SEGUIDORES_NOTA + NOTA_SPEC_MUNDANA,
+      "<p><strong>Em relação ao Veterano-base:</strong> abre mão de <em>Desarmar e Subjugar</em> e de <em>Ataques Múltiplos</em> — <strong>ele nunca ataca duas vezes na mesma rodada</strong>, a carreira inteira. É a trilha menos marcial das três, de propósito. Em troca, é a única com <strong>renda passiva</strong>, <strong>nave patrocinada</strong>, <strong>tripulação</strong> e um número próprio na mesa de negociação.</p><p><em>As duas perdas nunca foram do livro: o Space Dragon não tira Ataques Múltiplos nem Desarmar do Emissário — quem inventou as duas perdas foi o Estrela Dracônica, provavelmente para fechar três trilhas simétricas. Ficaram, mas agora <strong>pagas</strong>, não herdadas em silêncio.</em></p>" + SEGUIDORES_NOTA + NOTA_SPEC_MUNDANA,
     equipment_restrictions: EQ_VETERANO,
     habilidades: [
+      { nome: "Dano Crítico", level: 1, desc: "<p>Como o Veterano: seus acertos críticos acontecem em <strong>19–20</strong>, e não só no 20 natural. O dano segue dobrado.</p><p><em>A progressão <strong>para no 3º nível</strong>, com <strong>Palavra que Corta</strong> — o Emissário nunca chega ao ×3.</em></p>" },
       { nome: "Pilotar", level: 1, desc: "<p>Pilota qualquer nave: <strong>1-2 em 1d6</strong>.</p>", level3: "<p>Chance de <strong>1-3 em 1d6</strong>.</p>", level6: "<p>Chance de <strong>1-4 em 1d6</strong>.</p>", level10: "<p>Chance de <strong>1-5 em 1d6</strong>.</p>" },
       { nome: "Mecenas", level: 3, desc: "<p>Recebe salário mensal do indivíduo ou organização que representa, equivalente a <strong>200 CR × seu nível</strong>.</p><p><em>No Space Dragon era $20.000 × nível — o preço de uma pistola laser por nível, por mês. Aqui o valor foi convertido para a escala de Créditos do cenário, mantendo a proporção: cerca de um blaster pesado por nível.</em></p>" },
+      { nome: "Palavra que Corta", level: 3, desc: "<p>Sua progressão de <strong>Dano Crítico para aqui</strong> — você nunca chega ao ×3. Em troca, a mesma perícia que multiplicava um golpe passa a multiplicar uma palavra: <strong>+2 em testes de reação, negociação e Moral</strong> que você conduza pessoalmente.</p><p><em>É a assinatura original da trilha, de volta. O Space Dragon dizia que o Emissário \"interrompe a progressão de dano crítico, mas pode usar essa mesma progressão como multiplicador do ajuste de reação\". A conversão a perdeu porque o atributo Comunicação não existe no OD2 — e, sem ela, a trilha social ficou sem número nenhum no único pilar que é dela.</em></p>", level6: "<p>O bônus sobe para <strong>+3</strong>.</p>", level10: "<p>O bônus sobe para <strong>+4</strong>.</p>" },
       { nome: "Enviado", level: 6, desc: "<p>Ganha uma <strong>nave patrocinada</strong> (combustível e reparos custeados) e pode ter tripulação conforme seu número de seguidores.</p>" },
+      { nome: "Voz de Comando", level: 6, desc: "<p>Uma vez por combate, gaste <strong>sua ação</strong> para dar uma ordem a um aliado que possa ouvi-lo — ele <strong>age imediatamente</strong>, fora da iniciativa, com um ataque, um movimento ou uma manobra.</p><p><em>O Emissário abre mão de <strong>Ataques Múltiplos</strong> e nunca ataca duas vezes na mesma rodada, a carreira inteira. Em vez de devolver o segundo ataque tarde, esta habilidade transforma a falta em desenho: ele não ataca duas vezes, ele faz <strong>outra pessoa</strong> agir fora da iniciativa. É o capitão-líder que a trilha diz ser, e o segundo ataque dele é sempre o de quem faz melhor.</em></p>", level10: "<p><strong>Duas vezes</strong> por combate, e a <strong>primeira delas não custa a sua ação</strong>.</p>" },
       { nome: "Embaixador", level: 10, desc: "<p>A tripulação <strong>triplica</strong>, e os testes de Moral ou Carisma para obter reação amigável de uma criatura inteligente são <strong>Fáceis</strong>.</p>" },
       reputacao("A fama do diplomata respeitado — esta abre salões, audiências e linhas de crédito."),
     ],
@@ -264,7 +286,7 @@ export const classes = [
     flavor: "<p>O trapaceiro do submundo. <em>Chassi: Gatuno.</em></p>",
     descricao:
       "<p>Contrabandistas, ladrões, espiões, piratas e assassinos onde a lei não chega. <strong>Han Solo é um Operativo.</strong></p>" +
-      "<p><strong>Créditos iniciais:</strong> 2d6 × 50 CR.</p>" + SEGUIDORES_NOTA + ALINHAMENTO_NOTA,
+      "<p><strong>Créditos iniciais:</strong> 2d6 × 50 CR.</p>" + SEGUIDORES_NOTA + ALINHAMENTO_NOTA + FORA_DA_FAIXA_NOTA,
     equipment_restrictions: EQ_OPERATIVO,
     habilidades: [
       { nome: "Ataque Furtivo", level: 1, desc: "<p>Atacando após aproximação furtiva, faz um ataque <strong>muito fácil</strong> com dano <strong>×2</strong>.</p>", level6: "<p>O dano passa a <strong>×3</strong>.</p>", level10: "<p>O dano passa a <strong>×4</strong>.</p>" },
@@ -284,8 +306,7 @@ export const classes = [
     coluna: "especial",
     dv: 6,
     high_level_hp_bonus: 1,
-    restricao_alinhamentos: ["ordeiro"],
-    flavor: "<p>O agente de inteligência. <em>Especialização de Operativo (ordeiro).</em></p>",
+    flavor: "<p>O agente de inteligência. <em>Especialização de Operativo.</em></p>",
     descricao:
       "<p>Cassian Andor, Fulcrum, agentes do ISB. Leal a uma organização ou governo.</p>" +
       "<p><strong>Perde Ataque Furtivo</strong>, mas <strong>mantém Percepção</strong>. <strong>Substituição de talentos:</strong> <em>Disfarce</em> substitui <em>Furtar</em> e <em>Obter Informação</em> substitui <em>Escalar</em> — ambos herdam os pontos do talento substituído e evoluem junto com os demais.</p>" + NOTA_SPEC_MUNDANA,
@@ -310,8 +331,7 @@ export const classes = [
     coluna: "especial",
     dv: 6,
     high_level_hp_bonus: 1,
-    restricao_alinhamentos: ["caotico"],
-    flavor: "<p>O malandro espacial. <em>Especialização de Operativo (caótico) — base: Pirata Espacial.</em></p>",
+    flavor: "<p>O malandro espacial. <em>Especialização de Operativo — base: Pirata Espacial.</em></p>",
     descricao:
       "<p>Hondo Ohnaka, os capitães do Cartel, o próprio Han em modo pirataria.</p>" +
       "<p><strong>Perde Percepção e Ataque Furtivo</strong>; ganha pilotagem e uma lista de talentos própria.</p>" + SEGUIDORES_NOTA + NOTA_SPEC_MUNDANA,
@@ -336,8 +356,7 @@ export const classes = [
     coluna: "especial",
     dv: 6,
     high_level_hp_bonus: 1,
-    restricao_alinhamentos: ["neutro"],
-    flavor: "<p>A lâmina do submundo. <em>Especialização de Operativo (neutro).</em></p>",
+    flavor: "<p>A lâmina do submundo. <em>Especialização de Operativo.</em></p>",
     descricao:
       "<p>Matadores da Aurora Negra, agentes de eliminação do submundo.</p>" +
       "<p><strong>Perde Percepção e Ataque Furtivo</strong> (substituído pelo Golpe Fatal).</p>" + NOTA_SPEC_MUNDANA,
@@ -361,8 +380,7 @@ export const classes = [
     coluna: "especial",
     dv: 6,
     high_level_hp_bonus: 1,
-    restricao_alinhamentos: ["neutro"],
-    flavor: "<p>Demolições e armadilhas. <em>Especialização de Operativo (neutro).</em></p>",
+    flavor: "<p>Demolições e armadilhas. <em>Especialização de Operativo.</em></p>",
     descricao:
       "<p>Demolicionistas rebeldes, saboteurs de bases imperiais.</p>" +
       "<p><strong>Para de progredir</strong> em <em>Furtar</em> e em <em>Ataque Furtivo</em>.</p>" + NOTA_SPEC_MUNDANA,
@@ -394,11 +412,11 @@ export const classes = [
     flavor: "<p>O gênio prático da galáxia. <em>Chassi: Cientista.</em></p>",
     descricao:
       "<p>Mecânicos de droides, médicos de campo, engenheiros e slicers que dobram a tecnologia à própria vontade. Onde o Jedi tem a Força, o Técnico tem a engenhoca: seus <strong>aparatos e feitos científicos</strong> são os \"itens mágicos\" deste universo, e ele os constrói com as próprias mãos. Numa tripulação, é quem mantém a nave voando, o droide obediente e o grupo respirando.</p>" +
-      "<p><strong>Créditos iniciais:</strong> 1d8 × 50 CR.</p>" + APARATOS_NOTA + SEGUIDORES_NOTA + ALINHAMENTO_NOTA,
+      "<p><strong>Créditos iniciais:</strong> 1d8 × 50 CR.</p>" + APARATOS_NOTA + SEGUIDORES_NOTA + ALINHAMENTO_NOTA + FORA_DA_FAIXA_NOTA,
     equipment_restrictions: EQ_TECNICO,
     habilidades: [
-      { nome: "Operar e Consertar Máquinas", level: 1, desc: "<p>Opera e conserta máquinas — religar um gerador, forçar um sistema, remendar tecnologia quebrada. Chance de <strong>1-2 em 1d6</strong>.</p><p><strong>Quando NÃO se rola:</strong> aparelhos que ele mesmo criou dispensam o teste, e usar um aparato pronto qualquer também não pede jogada. Só se rola ao lidar com um aparato <strong>desconhecido, alheio, danificado ou acima do seu NT</strong> — e a falha traz um defeito, a critério do Mestre.</p><p><strong>Pilotar</strong> naves com esta habilidade é só <strong>1 em 1d6</strong>: Veteranos pilotam melhor.</p>", level3: "<p>Chance de <strong>1-3 em 1d6</strong>.</p>", level6: "<p>Chance de <strong>1-4 em 1d6</strong>.</p>", level10: "<p>Chance de <strong>1-5 em 1d6</strong>.</p>" },
-      { nome: "Aparatos e Feitos Científicos", level: 1, desc: "<p>Cria <strong>aparatos</strong> (Nível Tecnológico = seu nível de classe, <strong>NT máximo 10</strong>; não há limite para os aparatos que pode <em>usar</em>) e realiza <strong>feitos científicos</strong>:</p><ul><li><strong>Feitos médicos:</strong> diagnosticar e curar doenças, operações cirúrgicas (simples a complexa), destilar antídotos, imunizar pacientes, cirurgia e membros ou órgãos biônicos.</li><li><strong>Feitos de laboratório:</strong> construir e consertar droides, reparos robóticos, decodificar DNA, clonagem e afins.</li></ul><p><strong>Consertar, recarregar ou adaptar</strong> um aparato custa <strong>25% do valor</strong> e <strong>metade do tempo</strong> de criação; construir do zero já sai com o seu Desconto Tecnológico. Feitos costumam levar mais tempo que aparatos, e a maioria é permanente.</p>" },
+      { nome: "Operar e Consertar Máquinas", level: 1, desc: "<p>Opera e conserta máquinas — religar um gerador, forçar um sistema, remendar tecnologia quebrada. Chance de <strong>1-2 em 1d6</strong>.</p><p><strong>Quando NÃO se rola:</strong> aparelhos que ele mesmo criou dispensam o teste, e usar um aparato pronto qualquer também não pede jogada. Só se rola ao lidar com um aparato <strong>desconhecido, alheio, danificado ou acima do seu NT</strong> — e a falha traz um defeito, a critério do Mestre.</p><p><strong>Pilotar</strong> naves com esta habilidade é só <strong>1 em 1d6</strong>, e <strong>não melhora</strong> com a escada abaixo — Veteranos pilotam melhor.</p>", level3: "<p>Chance de <strong>1-3 em 1d6</strong>.</p>", level6: "<p>Chance de <strong>1-4 em 1d6</strong>.</p>", level10: "<p>Chance de <strong>1-5 em 1d6</strong>.</p>" },
+      { nome: "Aparatos e Feitos Científicos", level: 1, desc: "<p>Cria <strong>aparatos</strong> (Nível Tecnológico = seu nível de classe, <strong>NT máximo 10</strong>; não há limite para os aparatos que pode <em>usar</em>) e realiza <strong>feitos científicos</strong> — as duas famílias são a magia que a Força não absorveu:</p><ul><li><strong>Feitos médicos:</strong> diagnosticar e curar doenças, operações cirúrgicas (simples a complexa), destilar antídotos, imunizar pacientes, cirurgia e membros ou órgãos biônicos.</li><li><strong>Feitos genéticos e de laboratório:</strong> construir e consertar droides, reparos robóticos, decodificar DNA, clonagem e afins.</li></ul><p>A lista completa, com NT, custo, tempo e regra de cada feito, está no journal <strong>Feitos Científicos</strong>.</p><p><strong>Consertar, recarregar ou adaptar</strong> um aparato custa <strong>25% do valor</strong> e <strong>metade do tempo</strong> de criação; construir do zero já sai com o seu Desconto Tecnológico. Feitos costumam levar mais tempo que aparatos, e a maioria é permanente.</p><p><strong>Você começa o jogo com aparatos prontos, e ganha mais a cada nível.</strong> Eles <strong>não custam Créditos</strong>: você já os construiu, e a bancada, o tempo e as peças ficaram no passado do personagem. Um Técnico de 1º nível não é alguém que <em>poderá</em> construir coisas — é alguém que <strong>já construiu</strong>. São <strong>três de NT 1</strong> no 1º nível e <strong>mais um a cada nível</strong>, de qualquer NT que você já alcance.</p><p><strong>Nível Tecnológico e aparatos prontos, por nível.</strong> O <strong>NT</strong> é o teto do que você consegue <em>construir</em> — o equivalente ao círculo de magia mais alto de um conjurador. Não há teto para o que você consegue <em>usar</em>.</p><table><thead><tr><th>Nível</th><th>NT</th><th>Aparatos</th></tr></thead><tbody><tr><td>1º</td><td>1</td><td>3</td></tr><tr><td>2º</td><td>2</td><td>4</td></tr><tr><td>3º</td><td>3</td><td>5</td></tr><tr><td>4º</td><td>4</td><td>6</td></tr><tr><td>5º</td><td>5</td><td>7</td></tr><tr><td>6º</td><td>6</td><td>8</td></tr><tr><td>7º</td><td>7</td><td>9</td></tr><tr><td>8º</td><td>8</td><td>10</td></tr><tr><td>9º</td><td>9</td><td>11</td></tr><tr><td>10º</td><td>10</td><td>12</td></tr><tr><td>11º</td><td>10</td><td>13</td></tr><tr><td>12º</td><td>10</td><td>14</td></tr><tr><td>13º</td><td>10</td><td>15</td></tr><tr><td>14º</td><td>10</td><td>16</td></tr><tr><td>15º</td><td>10</td><td>17</td></tr></tbody></table><p><em>O <strong>Engenheiro</strong> anda uma casa atrás na coluna de aparatos (seu nível + 1): ele começa com dois.</em></p><p><em>É o que acontece com todo conjurador do sistema: o Sensível à Força começa com dois poderes de 1ª Grandeza e ganha mais a cada Grandeza que abre; o Mago de OD2 começa com o grimório escrito e acrescenta magias ao subir de nível. Ninguém entra em jogo com a lista em branco, e ninguém para de aprender.</em></p><p>Os <strong>Créditos iniciais continuam servindo para todo o resto</strong> — armas, roupa, passagem, suborno — e para comprar ou construir aparatos <em>além</em> destes, se você quiser mais.</p><p><strong>Sugestão de mesa:</strong> que um dos três primeiros seja o <strong>Disruptor Positrônico</strong> — é o aparato-assinatura da classe, é NT 1, e é o que faz <em>Desativar Droides</em> funcionar.</p><p><em>Variante para mesas mais duras: o aparato ganho ao subir de nível é de NT igual ou menor que o nível anterior — os brinquedos de ponta chegam com um nível de atraso.</em></p>" },
       { nome: "Desativar Droides", level: 1, desc: "<p>Com um <strong>disruptor positrônico</strong>, desativa droides a até <strong>18 metros</strong> que falhem num teste de Moral no fim da rodada.</p><p><strong>Destruição:</strong> se o droide falhar no teste <strong>e os dois dados saírem iguais</strong>, ele não é apenas desligado — é destruído.</p><p><strong>Tentativas extras:</strong> além dos usos seguros do dia dá para insistir, mas cada tentativa cumulativa torna o teste <strong>Difícil (−2)</strong> e depois <strong>Muito Difícil (−5)</strong>. Uma falha nessas condições causa um curto-circuito no disruptor, que precisa ser reparado.</p><p>No 1º nível, desativa droides sem bônus.</p>" +
         "<p><strong>Resistência por classe de droide:</strong> nem todo droide é igual diante de um disruptor. Aplique este ajuste <strong>ao Moral do alvo</strong> — quanto maior o Moral, mais difícil desligá-lo.</p>" +
         "<table><thead><tr><th>Classe do droide</th><th>Ajuste no Moral</th><th>Exemplos</th></tr></thead><tbody>" +
@@ -418,8 +436,7 @@ export const classes = [
     coluna: "especial",
     dv: 8,
     high_level_hp_bonus: 1,
-    restricao_alinhamentos: ["ordeiro"],
-    flavor: "<p>O curandeiro. <em>Especialização de Técnico (ordeiro) — base: Pesquisador.</em></p>",
+    flavor: "<p>O curandeiro. <em>Especialização de Técnico — base: Pesquisador.</em></p>",
     descricao:
       "<p><em>\"Enquanto houver um batimento, há trabalho a fazer.\"</em></p>" +
       "<p>O Médico de Campo é o Pesquisador que voltou as lentes para dentro do corpo. Onde o Engenheiro constrói e o Slicer invade, ele <strong>remenda, cura e mantém vivo</strong>. Como todo Pesquisador, prende-se a uma disciplina rígida: <strong>só usa armas e dispositivos que ele mesmo construiu</strong>.</p>" +
@@ -429,10 +446,10 @@ export const classes = [
       "<li><em>Doença e veneno:</em> Diagnosticar Doença · Curar Doença · Identificar Veneno · Destilar Antídoto · Identificar Micro-organismo · Imunizar Paciente.</li>" +
       "<li><em>Suporte e aprimoramento:</em> Pílula de Aprimoramento · Aprimoramento Permanente · Fórmula de Controle Corporal · Respirador Subaquático.</li>" +
       "<li><em>Biônica:</em> Cirurgia Biônica · Membro Biônico · Órgão Biônico.</li>" +
-      "<li><em>Preservação:</em> Hibernação Criogênica.</li></ul>" + NOTA_SPEC_MUNDANA,
+      "<li><em>Preservação:</em> Hibernação Criogênica.</li></ul>" + "<p><strong>Aparatos prontos:</strong> <strong>3 de NT 1</strong> no 1º nível e <strong>+1 a cada nível</strong> (= seu nível + 2), sem custar Créditos — como todo Técnico. Ver a habilidade correspondente na classe-base.</p>" + NOTA_SPEC_MUNDANA,
     equipment_restrictions: {
       ...EQ_TECNICO,
-      weapons: "Armas leves e utilitárias de energia — e, por disciplina do Pesquisador, apenas as que ele mesmo construiu.",
+      weapons: "Leve de energia e Utilitária — e, por disciplina do Pesquisador, apenas as que ele mesmo construiu.",
     },
     habilidades: [
       { nome: "Perito em Medicina", level: 1, desc: "<p>Cria aparatos e realiza feitos com <strong>Nível Tecnológico igual ao seu nível</strong> (NT máximo 10). Mas sobre os <strong>feitos e aparatos de cura e suporte</strong> da sua caixa de ferramentas, é um perito: realiza-os <strong>em metade do tempo</strong> e <strong>sem precisar de um laboratório completo</strong> — um kit de campo, uma maca improvisada e as próprias mãos bastam.</p><p>Ganha <strong>+1</strong> em todos os testes de Inteligência de diagnóstico, tratamento e cirurgia, e cada lote de consumíveis médicos que fabrica (injeções, pílulas, doses de antídoto) rende <strong>uma dose a mais</strong>. Quando é ele quem aplica uma <strong>Soro Reanimador</strong>, o paciente <strong>dispensa a JPC</strong> que o soro exige de quem tem ferimentos graves.</p>", level6: "<p><strong>Aparatos e Feitos Científicos Avançados:</strong> passa a criar aparatos e realizar feitos com <strong>Nível Tecnológico igual ao seu nível + 2</strong> (NT máximo 10) — medpacs de bacta, próteses cibernéticas, estimulantes e câmaras de recuperação anos além do que um técnico comum de seu nível alcançaria.</p>" },
@@ -446,15 +463,14 @@ export const classes = [
     coluna: "especial",
     dv: 8,
     high_level_hp_bonus: 1,
-    restricao_alinhamentos: ["neutro"],
-    flavor: "<p>O inventor. <em>Especialização de Técnico (neutro) — base: Inventor.</em></p>",
+    flavor: "<p>O inventor. <em>Especialização de Técnico — base: Inventor.</em></p>",
     descricao:
       "<p><em>\"Se existe, eu conserto. Se não existe, eu invento. Se quebrar, a culpa é da peça.\"</em></p>" +
       "<p>Construtores de droides (um Anakin criança), os engenheiros de estaleiro de Mon Cala, o gênio que monta uma nave com sucata.</p>" +
-      "<p><strong>Perde</strong> <em>Operar e Consertar Máquinas</em> e <em>Desativar Droides</em>, e seu Desconto Tecnológico vira <strong>prejuízo</strong> — inventar do zero custa mais caro do que comprar pronto.</p>" + NOTA_SPEC_MUNDANA,
+      "<p><strong>Perde</strong> <em>Operar e Consertar Máquinas</em> e <em>Desativar Droides</em>, começa com <strong>um aparato a menos</strong>, e paga <strong>prejuízo</strong> na bancada onde o Técnico tem desconto. É a trilha que mais perde — e a que ganha o pacote mais forte: <em>Tecnologia de Ponta</em> sozinha salta quatro Níveis Tecnológicos de uma vez, no 3º nível.</p>" + "<p><strong>Prejuízo Tecnológico — o que ele encarece, e o que não.</strong></p><p><strong>Encarece:</strong> aparatos e feitos científicos — construir, combinar, consertar e recarregar. É a bancada dele que custa caro.</p><p><strong>Não encarece:</strong> compra normal de equipamento. Um blaster, uma armadura, uma passagem ou um suborno custam a ele exatamente o que custam a qualquer um — ele apenas <strong>não tem o desconto</strong> do Técnico. Não é um mau comprador; é um construtor caro.</p><table><thead><tr><th>Nível</th><th>O aparato de 100 CR sai por</th></tr></thead><tbody><tr><td>1º</td><td><strong>105 CR</strong> (+5%)</td></tr><tr><td>3º</td><td><strong>115 CR</strong> (+15%)</td></tr><tr><td>6º</td><td><strong>130 CR</strong> (+30%)</td></tr><tr><td>10º</td><td><strong>150 CR</strong> (+50%)</td></tr></tbody></table><p><strong>Aparatos prontos:</strong> <strong>2 de NT 1</strong> no 1º nível — <em>um a menos</em> que os outros Técnicos — e <strong>+1 a cada nível</strong> (= seu nível + 1), sem custar Créditos. Enquanto os outros compram e adaptam, ele insiste em fazer do zero, e do zero demora.</p>" + NOTA_SPEC_MUNDANA,
     equipment_restrictions: EQ_TECNICO,
     habilidades: [
-      { nome: "Oficina do Inventor", level: 1, desc: "<p><em>(Aparatos e Feitos Científicos)</em> Cria máquinas e realiza experiências como um Técnico (NT = seu nível, máximo 10), mas com <strong>prejuízo tecnológico de 5%</strong> no custo.</p>" },
+      { nome: "Oficina do Inventor", level: 1, desc: "<p><em>(Aparatos e Feitos Científicos)</em> Cria máquinas e realiza experiências como um Técnico (NT = seu nível, máximo 10), mas com <strong>prejuízo tecnológico de 5%</strong> no custo de cada aparato e feito.</p><p>Começa com <strong>2 aparatos de NT 1</strong> prontos — um a menos que os outros Técnicos — e ganha <strong>+1 por nível</strong>.</p><p><em>O prejuízo vale só para a bancada: aparatos e feitos. Compra normal de equipamento sai pelo preço de tabela — ele não tem o desconto do Técnico, mas também não paga a mais.</em></p>" },
       { nome: "Tecnologia de Ponta", level: 3, desc: "<p>Salta direto para o <strong>5º Nível Tecnológico</strong> e evolui dali em diante, a cada nível (NT máximo 10). Prejuízo: <strong>15%</strong>.</p>" },
       { nome: "Engenho Improvisado", level: 6, desc: "<p>Combina até <strong>3 aparatos diferentes</strong> num só engenho: <strong>1-3 em 1d6</strong> (regras de combinação de aparatos do Space Dragon). Prejuízo: <strong>30%</strong>.</p>" },
       { nome: "Gênio da Invenção", level: 10, desc: "<p>Cria qualquer máquina e realiza qualquer experiência <strong>independente das condições</strong> — sem bancada, no meio de uma tempestade de areia, dentro de uma cela. Prejuízo: <strong>50%</strong>.</p>" },
@@ -467,12 +483,11 @@ export const classes = [
     coluna: "especial",
     dv: 8,
     high_level_hp_bonus: 1,
-    restricao_alinhamentos: ["caotico"],
-    flavor: "<p>O mestre dos sistemas. <em>Especialização de Técnico (caótico) — base: Niilógico.</em></p>",
+    flavor: "<p>O mestre dos sistemas. <em>Especialização de Técnico — base: Niilógico.</em></p>",
     descricao:
       "<p><em>\"A máquina não tem dono. Ela só ainda não me conheceu.\"</em></p>" +
       "<p>O Slicer é o Niilógico que deixou a lógica escorrer pelas beiradas. Onde o Médico cura e o Engenheiro constrói, ele <strong>conversa com as máquinas como quem sussurra segredos</strong> — e elas obedecem. Renegou o establishment tecnológico, seus fornecedores e seus selos de garantia.</p>" +
-      "<p><strong>Perde</strong> <em>Operar e Consertar Máquinas</em> e o <em>Desconto Tecnológico</em>; <em>Desativar Droides</em> é substituída por <strong>Sequestrar Droides</strong> — no lugar de <em>desligar</em> um droide, ele aprendeu a <strong>tomá-lo para si</strong>.</p>" + NOTA_SPEC_MUNDANA,
+      "<p><strong>Perde</strong> <em>Operar e Consertar Máquinas</em> e o <em>Desconto Tecnológico</em>; <em>Desativar Droides</em> é substituída por <strong>Sequestrar Droides</strong> — no lugar de <em>desligar</em> um droide, ele aprendeu a <strong>tomá-lo para si</strong>.</p>" + "<p><strong>Aparatos prontos:</strong> <strong>3 de NT 1</strong> no 1º nível e <strong>+1 a cada nível</strong> (= seu nível + 2), sem custar Créditos — como todo Técnico. Ver a habilidade correspondente na classe-base.</p>" + NOTA_SPEC_MUNDANA,
     equipment_restrictions: EQ_TECNICO,
     habilidades: [
       { nome: "Aparatos e Feitos Científicos", level: 1, desc: "<p>Cria aparatos e realiza feitos em seus improvisos de laboratório, com <strong>Nível Tecnológico igual ao seu nível</strong> (NT máximo 10). Sem desconto nem prejuízo — o Slicer não barganha com ninguém: monta o que precisa com sucata, mercado negro e engenharia reversa, pagando o valor cheio dos componentes.</p>" },
@@ -501,8 +516,7 @@ export const classes = [
       "<p><strong>Foco Extra por Grandeza:</strong> some ao Foco Diário o Foco Extra lido na Tabela 1-2 do Estrela Dracônica — só que, aqui, pelo valor de <strong>Sabedoria</strong>. A tabela dá Foco Extra para 1ª, 2ª e 3ª Grandezas.</p>"
       + "<p><strong>Três regras da casa</strong> vivem nesta classe e valem para todas as Sendas: <strong>A Tentação</strong> (a Corrupção deixa de ser só castigo e vira moeda — a Força te dá o que você quer e cobra depois), o <strong>Eco da Senda</strong> (a partir do 10º nível o Foco gasto no seu próprio ofício às vezes volta) e, para o Guardião, o <strong>Mudar de Guarda</strong> (trocar de Forma de Sabre no meio do duelo). As três são detalhadas nas habilidades abaixo, cada uma com a caixa que diz de onde veio a ideia.</p>"
       + "<p><strong>Sendas (especializações):</strong> Guardião (sabre) · Consular (poderes) · Sentinela (caçador) · Vidente (os nexos da Força). Escolhidas no 1º nível e independentes do Caminho — existe Guardião da Luz e Guardião da Sombra.</p>"
-      + "<p><strong>As Sendas NÃO têm restrição de alinhamento</strong> (correção da casa). Nas classes mundanas cada especialização é presa a um alinhamento; aqui isso foi <strong>removido</strong>. O motivo é de design: a restrição existe para diferenciar as trilhas — e no Sensível essa diferenciação <em>já é feita pelo Caminho (Luz/Sombra) e pela Corrupção</em>. Manter os dois eixos produzia aberrações: um Sith de sabre seria obrigatoriamente \"Guardião neutro\" com Corrupção 10, e um Inquisidor caçador de Jedi seria \"Sentinela caótico\" a serviço do regime mais ordeiro da galáxia. O Sensível <strong>escolhe livremente</strong> a Senda e o alinhamento; quem manda na moral dele é o <strong>Caminho</strong>.</p>"
-      + "<p><em>Variante opcional — se a sua mesa preferir a amarração antiga, a leitura mais coerente seria pelo <strong>Caminho</strong>, não pela Senda: Luz → Ordeiro ou Neutro · Sombra → Caótico ou Ordeiro (o Império é ordeiro) · sem Caminho → Neutro.</em></p>",
+      + NOTA_SENDA_SEM_ALINHAMENTO + FORA_DA_FAIXA_NOTA,
     equipment_restrictions: EQ_SENSIVEL,
     habilidades: [
       { nome: "Poderes da Força", level: 1, desc: "<p><em>(= Poderes Mentais)</em> Você canaliza a Força para mover, proteger, enganar ou destruir. Cada poder tem uma <strong>Grandeza</strong> (1ª a 10ª); o <strong>Foco Diário</strong> de cada uma vem da tabela da classe, somado ao <strong>Foco Extra</strong> da Sabedoria. Você <strong>começa com dois poderes de 1ª Grandeza</strong> de livre escolha (lista Universal + a do seu Caminho).</p>" },

@@ -1,0 +1,50 @@
+{
+  "folder": "apPGrIzXSjXs9ye3",
+  "name": "Dano Crítico",
+  "type": "class_ability",
+  "_id": "3jyljSJsDYS597cU",
+  "img": "systems/olddragon2e/assets/icons/melee.svg",
+  "system": {
+    "description": "<p>Como o Veterano: seus acertos críticos acontecem em <strong>19–20</strong>, e não só no 20 natural. O dano segue dobrado.</p><p><em>A progressão <strong>para no 3º nível</strong>, com <strong>Palavra que Corta</strong> — o Emissário nunca chega ao ×3.</em></p>",
+    "level": 1,
+    "level3": "",
+    "level6": "",
+    "level10": "",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!3jyljSJsDYS597cU"
+}

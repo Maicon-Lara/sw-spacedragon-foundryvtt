@@ -1,15 +1,15 @@
 {
-  "folder": "MpIZaQIDyd4kh0QQ",
+  "folder": "CUKsadcWW9Xjh3at",
   "name": "Dano Crítico",
   "type": "class_ability",
-  "_id": "srk09Jb92CADthjY",
+  "_id": "Zv1SEoT53XKnRZJD",
   "img": "systems/olddragon2e/assets/icons/melee.svg",
   "system": {
-    "description": "<p>Mantido da classe-base: em um <strong>acerto crítico</strong>, o dano final é multiplicado por <strong>×2</strong>.</p><p><em>Vale para qualquer arma que não seja a preferida — com a arma escolhida, quem manda é a progressão de <strong>Armado e Perigoso</strong>, abaixo.</em></p>",
+    "description": "<p>Como o Veterano: seus acertos críticos acontecem em <strong>19–20</strong>, e não só no 20 natural. O dano segue dobrado.</p>",
     "level": 1,
     "level3": "",
     "level6": "",
-    "level10": "<p>O multiplicador passa a <strong>×3</strong> (ainda para as armas que não sejam a preferida).</p>",
+    "level10": "<p>O dano crítico passa a <strong>×3</strong>.</p>",
     "rogue_talents": [],
     "daily_uses": {
       "1": 0,
@@ -42,9 +42,9 @@
     "lastModifiedBy": "swspacedragonbld",
     "exportSource": null
   },
-  "sort": 200000,
+  "sort": 100000,
   "ownership": {
     "default": 0
   },
-  "_key": "!items!srk09Jb92CADthjY"
+  "_key": "!items!Zv1SEoT53XKnRZJD"
 }

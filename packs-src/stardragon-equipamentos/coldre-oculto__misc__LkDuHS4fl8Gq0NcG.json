@@ -1,19 +1,18 @@
 {
-  "folder": "SZtXl5p9ckqNHO6l",
-  "name": "Traje Reforçado",
-  "type": "armor",
-  "_id": "9zgdfoZdDgDIEQSN",
-  "img": "systems/olddragon2e/assets/icons/armor.svg",
+  "folder": "yEdNQJt4ouwOtY7n",
+  "name": "Coldre Oculto",
+  "type": "misc",
+  "_id": "LkDuHS4fl8Gq0NcG",
+  "img": "systems/olddragon2e/assets/icons/brain.svg",
   "system": {
-    "odo_id": "traje-reforcado",
-    "description": "Veste Leve. Movimento: sem redução.",
+    "odo_id": "coldre-oculto",
+    "description": "Saque dissimulado. Engana revista superficial.",
     "quantity": 1,
-    "cost": "50 CR",
-    "weight_in_load": 1,
+    "cost": "40 CR",
+    "weight_in_load": 0,
     "weight_in_grams": 0,
     "magic_item": false,
-    "is_equipped": false,
-    "bonus_ca": 1
+    "is_equipped": false
   },
   "effects": [],
   "flags": {},
@@ -28,9 +27,9 @@
     "lastModifiedBy": "swspacedragonbld",
     "exportSource": null
   },
-  "sort": 100000,
+  "sort": 500000,
   "ownership": {
     "default": 0
   },
-  "_key": "!items!9zgdfoZdDgDIEQSN"
+  "_key": "!items!LkDuHS4fl8Gq0NcG"
 }
