@@ -1,6 +1,6 @@
-// Build dos compêndios de "Star Wars — Space Dragon (OD2)".
+// Build dos compêndios de "Star Dragon (Star Wars no OD2)".
 // 1) Gera os arquivos-fonte JSON (versionados em packs-src/).
-// 2) Compila cada pack para LevelDB em sw-spacedragon-module/packs/.
+// 2) Compila cada pack para LevelDB em stardragon-module/packs/.
 //
 // Uso: npm run build   (a partir da raiz do repositório)
 
@@ -29,14 +29,14 @@ import { progressao } from "./data/progressoes.mjs";
 
 const ROOT = path.resolve(fileURLToPath(import.meta.url), "../..");
 const SRC = path.join(ROOT, "packs-src");
-const OUT = path.join(ROOT, "sw-spacedragon-module", "packs");
+const OUT = path.join(ROOT, "stardragon-module", "packs");
 
-const CLASSES_PACK = "swsd-classes";
-const ESPECIES_PACK = "swsd-especies";
-const EQUIPAMENTOS_PACK = "swsd-equipamentos";
-const PODERES_PACK = "swsd-poderes";
-const BESTIARIO_PACK = "swsd-bestiario";
-const JOURNAL_PACK = "swsd-journal";
+const CLASSES_PACK = "stardragon-classes";
+const ESPECIES_PACK = "stardragon-especies";
+const EQUIPAMENTOS_PACK = "stardragon-equipamentos";
+const PODERES_PACK = "stardragon-poderes";
+const BESTIARIO_PACK = "stardragon-bestiario";
+const JOURNAL_PACK = "stardragon-journal";
 
 // Agrupa documentos avulsos em pastas nomeadas pelo campo `folder`.
 function agrupaAvulsas(docs, lista, seed, build) {
@@ -239,7 +239,7 @@ async function compile(packName, docs) {
 }
 
 async function main() {
-  console.log("Gerando compêndios de Star Wars — Space Dragon…");
+  console.log("Gerando compêndios de Star Dragon…");
   await compile(ESPECIES_PACK, buildEspeciesDocs());
   await compile(CLASSES_PACK, buildClassesDocs());
   await compile(EQUIPAMENTOS_PACK, buildEquipamentosDocs());

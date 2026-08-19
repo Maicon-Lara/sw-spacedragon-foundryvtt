@@ -1,0 +1,114 @@
+{
+  "id": "stardragon",
+  "title": "Star Dragon — Star Wars no Old Dragon 2",
+  "description": "Módulo de conteúdo do Star Dragon — a adaptação de Star Wars para Old Dragon 2 sobre o suplemento sci-fi Space Dragon / Estrela Dracônica. Espécies, classes, equipamentos, poderes da Força, bestiário e material de cenário. Obra de fã, não oficial e sem fins lucrativos.",
+  "version": "0.9.1",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "esmodules": [
+    "module/stardragon.js"
+  ],
+  "styles": [
+    "styles/stardragon.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Maicon Lara"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "olddragon2e",
+        "type": "system",
+        "manifest": "https://github.com/olddragoneditora/olddragon2e-foundryvtt/releases/latest/download/olddragon2e.json",
+        "compatibility": {
+          "minimum": "2.0.0",
+          "verified": "2.4.0"
+        }
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "stardragon-especies",
+      "label": "Star Dragon: Espécies",
+      "path": "packs/stardragon-especies",
+      "type": "Item",
+      "system": "olddragon2e",
+      "banner": "modules/stardragon/assets/banners/especies.svg"
+    },
+    {
+      "name": "stardragon-classes",
+      "label": "Star Dragon: Classes",
+      "path": "packs/stardragon-classes",
+      "type": "Item",
+      "system": "olddragon2e",
+      "banner": "modules/stardragon/assets/banners/classes.svg"
+    },
+    {
+      "name": "stardragon-equipamentos",
+      "label": "Star Dragon: Equipamentos",
+      "path": "packs/stardragon-equipamentos",
+      "type": "Item",
+      "system": "olddragon2e",
+      "banner": "modules/stardragon/assets/banners/equipamentos.svg"
+    },
+    {
+      "name": "stardragon-poderes",
+      "label": "Star Dragon: Poderes da Força",
+      "path": "packs/stardragon-poderes",
+      "type": "Item",
+      "system": "olddragon2e",
+      "banner": "modules/stardragon/assets/banners/poderes.svg"
+    },
+    {
+      "name": "stardragon-bestiario",
+      "label": "Star Dragon: Bestiário",
+      "path": "packs/stardragon-bestiario",
+      "type": "Actor",
+      "system": "olddragon2e",
+      "banner": "modules/stardragon/assets/banners/bestiario.svg"
+    },
+    {
+      "name": "stardragon-journal",
+      "label": "Star Dragon: Referência do Mestre",
+      "path": "packs/stardragon-journal",
+      "type": "JournalEntry",
+      "system": "olddragon2e",
+      "banner": "modules/stardragon/assets/banners/journal.svg"
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Star Dragon",
+      "sorting": "m",
+      "color": "#1b3a5c",
+      "packs": [
+        "stardragon-especies",
+        "stardragon-classes",
+        "stardragon-equipamentos",
+        "stardragon-poderes",
+        "stardragon-bestiario",
+        "stardragon-journal"
+      ]
+    }
+  ],
+  "url": "https://github.com/Maicon-Lara/sw-spacedragon-foundryvtt",
+  "manifest": "https://raw.githubusercontent.com/Maicon-Lara/sw-spacedragon-foundryvtt/main/stardragon-module/module.json",
+  "download": "https://raw.githubusercontent.com/Maicon-Lara/sw-spacedragon-foundryvtt/main/stardragon.zip"
+}

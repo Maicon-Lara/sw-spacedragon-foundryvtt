@@ -1,0 +1,287 @@
+/* Star Dragon (Star Wars no OD2)
+ *
+ * Duas camadas, com escopos diferentes e de propósito:
+ *
+ *   .stardragon-doc      conteúdo dos journals deste módulo (container posto por
+ *                  journalDoc()). Sem esse escopo, estilizar tabela e título
+ *                  vazaria para os journals do sistema e de outros módulos.
+ *
+ *   body.stardragon-tema tema visual das fichas do OD2. A classe entra no <body>
+ *                  quando a opção "Tema Star Wars nas fichas" está ligada;
+ *                  desligou, o sistema volta a ser exatamente o que era.
+ *
+ * TODA cor do módulo mora no bloco abaixo. Para mudar o tema, edite só aqui —
+ * nenhuma regra daqui para baixo carrega valor de cor solto.
+ */
+
+:root {
+  /* Azuis, do mais escuro ao mais claro */
+  --stardragon-azul-noite: #1b3a5c;  /* títulos e cabeçalho de tabela nos journals   */
+  --stardragon-azul-escuro: #24557f; /* texto de acento na ficha: aba ativa, títulos */
+  --stardragon-azul: #2f5c8a;        /* barras de seção e cabeçalhos de lista        */
+  --stardragon-azul-claro: #5b83ab;  /* selo de upgrade por nível (3, 6, 10)         */
+
+  /* Superfícies claras */
+  --stardragon-fundo: #f4f7fa;         /* área da ficha       */
+  --stardragon-painel: #e7ecf2;        /* barra lateral       */
+  --stardragon-painel-fundo: #dfe6ef;  /* caixas de modificador */
+
+  /* Texto */
+  --stardragon-texto-claro: #f2f6fa;     /* sobre barra azul            */
+  --stardragon-texto-evolucao: #2b3d4f;  /* corpo das evoluções         */
+
+  /* Destaque */
+  --stardragon-ouro: #b8862b;
+
+  /* Fios e fundos translúcidos, derivados dos azuis acima */
+  --stardragon-linha: rgba(27, 58, 92, 0.25);
+  --stardragon-zebra: rgba(27, 58, 92, 0.06);
+  --stardragon-fio-evolucao: rgba(91, 131, 171, 0.45);
+  --stardragon-aviso-fundo: rgba(184, 134, 43, 0.1);
+}
+
+/* ── Títulos ───────────────────────────────────────────────────────────── */
+
+.stardragon-doc h2 {
+  margin: 1.4em 0 0.5em;
+  padding-bottom: 0.2em;
+  border-bottom: 2px solid var(--stardragon-azul-noite);
+  color: var(--stardragon-azul-noite);
+  font-variant: small-caps;
+  letter-spacing: 0.02em;
+}
+
+.stardragon-doc h3 {
+  margin: 1.1em 0 0.4em;
+  color: var(--stardragon-azul);
+}
+
+/* ── Tabelas ───────────────────────────────────────────────────────────── */
+
+.stardragon-doc table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.8em 0;
+  font-size: 0.95em;
+}
+
+.stardragon-doc thead th {
+  background: var(--stardragon-azul-noite);
+  color: var(--stardragon-texto-claro);
+  text-align: left;
+  font-variant: small-caps;
+  letter-spacing: 0.03em;
+}
+
+.stardragon-doc th,
+.stardragon-doc td {
+  padding: 0.35em 0.6em;
+  border: 1px solid var(--stardragon-linha);
+  vertical-align: top;
+}
+
+.stardragon-doc tbody tr:nth-child(even) {
+  background: var(--stardragon-zebra);
+}
+
+/* A primeira coluna quase sempre é o rótulo da linha (tipo de nave, faixa de
+   teste, classe de equivalência) — destacá-la faz a tabela ser lida em L. */
+.stardragon-doc tbody td:first-child {
+  font-weight: 600;
+  color: var(--stardragon-azul);
+}
+
+/* Tabela larga não pode empurrar a página: rola dentro do próprio bloco. */
+.stardragon-doc table {
+  display: block;
+  overflow-x: auto;
+}
+
+/* ── Avisos ────────────────────────────────────────────────────────────── */
+
+.stardragon-doc .stardragon-aviso {
+  margin: 0.8em 0;
+  padding: 0.6em 0.8em;
+  border-left: 4px solid var(--stardragon-ouro);
+  background: var(--stardragon-aviso-fundo);
+  border-radius: 0 3px 3px 0;
+}
+
+/* ── Listas e ênfase ───────────────────────────────────────────────────── */
+
+.stardragon-doc ul,
+.stardragon-doc ol {
+  margin: 0.6em 0;
+  padding-left: 1.4em;
+}
+
+.stardragon-doc li {
+  margin: 0.25em 0;
+}
+
+.stardragon-doc li > strong:first-child {
+  color: var(--stardragon-azul);
+}
+
+/* Nota autoral em itálico solto no fim da seção: recua e esmaece um pouco,
+   para separar comentário de regra. */
+.stardragon-doc p > em:only-child {
+  display: inline-block;
+  padding-left: 0.6em;
+  border-left: 2px solid var(--stardragon-linha);
+  opacity: 0.85;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+ * Tema "Holocron" para as fichas do Old Dragon 2
+ *
+ * Escopado em `body.stardragon-tema`, classe que module/stardragon.js põe no
+ * <body> quando a opção do módulo está ligada — sem ela, o sistema fica
+ * intacto. A marca é no <body> e não por janela porque gancho de render de
+ * ficha AppV1 não tem nome garantido no v13.
+ *
+ * `!important` aqui não é preguiça: o sistema pinta as barras em seletores
+ * profundos como
+ *   .olddragon2e.sheet.character .character-tab-equipment .weapon .list
+ * (0,6,0 de especificidade). Igualar isso exigiria replicar a árvore inteira
+ * de cada aba, e qualquer refatoração do OD2 quebraria o tema em silêncio.
+ *
+ * A troca é conservadora de propósito: mantém o fundo claro da ficha e só
+ * substitui o carmesim (#d72240) por azul-aço e o creme (#ece9d5 / #e0ddca)
+ * por um cinza-azulado. Contraste de texto continua o do sistema.
+ * ══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Barras de seção e cabeçalhos de lista ─────────────────────────────── */
+
+body.stardragon-tema .olddragon2e.sheet .list,
+body.stardragon-tema .olddragon2e.sheet .tab-title,
+body.stardragon-tema .olddragon2e.sheet .ability-level {
+  background-color: var(--stardragon-azul) !important;
+}
+
+/* ── Texto de acento (era carmesim) ────────────────────────────────────── */
+
+body.stardragon-tema .olddragon2e.sheet .tabs .item.active,
+body.stardragon-tema .olddragon2e.sheet .class-ability-tabs .item.active,
+body.stardragon-tema .olddragon2e.sheet a:hover,
+body.stardragon-tema .olddragon2e.sheet a.item:hover,
+body.stardragon-tema .olddragon2e.sheet .border-button:hover,
+body.stardragon-tema .olddragon2e.sheet .overview,
+body.stardragon-tema .olddragon2e.sheet .sheet-container h1,
+body.stardragon-tema .olddragon2e.sheet .sheet-container h2,
+body.stardragon-tema .olddragon2e.sheet .sheet-container h3,
+body.stardragon-tema .olddragon2e.sheet .sheet-container h4,
+body.stardragon-tema .olddragon2e.sheet .sheet-container h5,
+body.stardragon-tema .olddragon2e.sheet li span.diamond,
+body.stardragon-tema .olddragon2e.sheet li span.ability-on-level {
+  color: var(--stardragon-azul-escuro) !important;
+}
+
+/* A barra já tem fundo azul: o texto dentro dela continua claro. */
+body.stardragon-tema .olddragon2e.sheet .list,
+body.stardragon-tema .olddragon2e.sheet .list a,
+body.stardragon-tema .olddragon2e.sheet .tab-title {
+  color: var(--stardragon-texto-claro) !important;
+}
+
+body.stardragon-tema .olddragon2e.sheet .border-button:hover {
+  border-color: var(--stardragon-azul-escuro) !important;
+}
+
+/* ── Painéis (eram creme) ──────────────────────────────────────────────── */
+
+body.stardragon-tema .olddragon2e.sheet .sidebar {
+  background-color: var(--stardragon-painel) !important;
+}
+
+body.stardragon-tema .olddragon2e.sheet .stat-modifier {
+  background-color: var(--stardragon-painel-fundo) !important;
+}
+
+/* ── Aba ativa ─────────────────────────────────────────────────────────── */
+
+body.stardragon-tema .olddragon2e.sheet .tabs .item.active {
+  text-decoration-color: var(--stardragon-ouro) !important;
+  text-decoration-thickness: 2px;
+}
+
+/* ── Selo de evolução por nível ────────────────────────────────────────────
+ *
+ * O OD2 emite o selo como <span> inline entre dois <p>:
+ *
+ *   <p>descrição…</p>
+ *   <span class="ability-on-level">3</span>
+ *   <p>A chance aumenta…</p>
+ *
+ * Dois blocos em volta de um inline deixam o selo sozinho numa linha, e o
+ * texto da evolução cai embaixo — parece uma habilidade nova, não a evolução
+ * da anterior. Acontece igual com o conteúdo oficial do sistema.
+ *
+ * `float` resolve sem tocar na marcação: o selo sai do fluxo e o parágrafo
+ * seguinte se enrola ao lado dele, do mesmo jeito que o selo de nível fica ao
+ * lado do nome da habilidade. `clear` impede que dois selos se alinhem lado a
+ * lado e que a próxima habilidade suba para a direita de um selo.
+ */
+
+body.stardragon-tema .olddragon2e.sheet li span.ability-on-level {
+  float: left;
+  clear: left;
+  margin: 0.2rem 0.45rem 0.2rem 0;
+}
+
+body.stardragon-tema .olddragon2e.sheet li .ability,
+body.stardragon-tema .olddragon2e.sheet li .rogue-talent-points,
+body.stardragon-tema .olddragon2e.sheet li .daily-uses {
+  clear: both;
+}
+
+/* Evolução recuada e com fio à esquerda: deixa claro, de relance, que aquele
+   parágrafo pertence à habilidade acima e não é uma entrada nova. */
+body.stardragon-tema .olddragon2e.sheet li span.ability-on-level ~ p {
+  padding-left: 0.3rem;
+  border-left: 2px solid var(--stardragon-fio-evolucao);
+}
+
+/* ── Fundo da ficha e selo de upgrade ──────────────────────────────────────
+ *
+ * O creme não vem do OD2: não há regra de `background` nas folhas do sistema.
+ * É o core do Foundry pintando `.window-content`. Por isso a troca acontece
+ * aqui, no elemento do core, e não em algum seletor do sistema.
+ *
+ * O selo de upgrade era @cinza-600 (#808082), neutro por design — num tema
+ * azul ele vira sujeira. Passa a um azul mais claro que o da barra, para
+ * ficar clara a hierarquia: nível da habilidade em azul forte, upgrade em
+ * azul claro.
+ */
+
+body.stardragon-tema .olddragon2e.sheet .window-content {
+  background: var(--stardragon-fundo) !important;
+}
+
+body.stardragon-tema .olddragon2e.sheet li span.ability-on-level {
+  background-color: var(--stardragon-azul-claro) !important;
+  color: var(--stardragon-texto-claro) !important;
+}
+
+/* O texto da evolução acompanha o selo, um tom abaixo do corpo do texto:
+   distingue upgrade de regra-base sem perder legibilidade. */
+body.stardragon-tema .olddragon2e.sheet li span.ability-on-level ~ p {
+  border-left-color: var(--stardragon-fio-evolucao);
+  color: var(--stardragon-texto-evolucao);
+}
+
+/* ── Moeda: só Crédito ─────────────────────────────────────────────────────
+ *
+ * A galáxia usa uma moeda só. O arquivo de idioma do módulo renomeia PO para
+ * CR (Crédito); Prata e Cobre não têm equivalente e ficariam como caixas
+ * mudas na ficha, então saem daqui — a régua de preços do compêndio é toda em
+ * Créditos.
+ *
+ * Some da tela, mas o dado continua no ator: desligar o tema traz as duas
+ * caixas de volta com o valor intacto.
+ */
+
+body.stardragon-tema .olddragon2e.sheet .economy .currency .sp,
+body.stardragon-tema .olddragon2e.sheet .economy .currency .cp {
+  display: none;
+}

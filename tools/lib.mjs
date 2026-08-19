@@ -1,4 +1,4 @@
-// Biblioteca de geração dos compêndios de "Star Wars — Space Dragon (OD2)".
+// Biblioteca de geração dos compêndios de "Star Dragon (Star Wars no OD2)".
 // Derivada da lib do módulo Ekhoria (mesmo autor); MODULE_ID parametrizado.
 // Constrói documentos no formato-fonte do foundryvtt-cli (um JSON por documento,
 // com o campo "_key") e compila para LevelDB.
@@ -491,7 +491,7 @@ export function raceDoc(race, folderId, abilityUuids) {
 function destacaAvisos(html) {
   return String(html).replace(
     /<p>(\s*(?:&#9888;|⚠)\s*)/g,
-    '<p class="swsd-aviso">$1'
+    '<p class="stardragon-aviso">$1'
   );
 }
 
@@ -507,12 +507,12 @@ export function journalDoc(entry, sort) {
         _id: pid,
         title: { show: true, level: 1 },
         image: {},
-        // `swsd-doc` é o gancho de escopo do CSS do módulo: sem ele, estilizar
+        // `stardragon-doc` é o gancho de escopo do CSS do módulo: sem ele, estilizar
         // tabela e título vazaria para os journals do sistema e de outros módulos.
         // Parágrafos de aviso (⚠) viram callout — o marcador já estava no texto.
         text: {
           format: 1,
-          content: `<div class="odo-markdown swsd-doc">${destacaAvisos(p.content)}</div>`,
+          content: `<div class="odo-markdown stardragon-doc">${destacaAvisos(p.content)}</div>`,
         },
         video: { controls: true, volume: 0.5 },
         src: null,
@@ -694,7 +694,7 @@ export function rollTableDoc(table, sort) {
 }
 
 // ID do módulo — precisa bater com o "id" do module.json.
-export const MODULE_ID = "sw-spacedragon";
+export const MODULE_ID = "stardragon";
 
 // Caminho de UUID de um item dentro de um pack deste módulo.
 export function itemUuid(packName, itemId) {

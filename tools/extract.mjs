@@ -9,7 +9,7 @@ import { fileURLToPath } from "node:url";
 import { extractPack } from "@foundryvtt/foundryvtt-cli";
 
 const ROOT = path.resolve(fileURLToPath(import.meta.url), "../..");
-const PACKS = path.join(ROOT, "sw-spacedragon-module", "packs");
+const PACKS = path.join(ROOT, "stardragon-module", "packs");
 const OUT = path.join(ROOT, "_verify");
 
 // Extrai o que existir — a lista de packs cresce conforme o módulo evolui.

@@ -17,7 +17,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(fileURLToPath(import.meta.url), "../..");
-const OUT = path.join(ROOT, "sw-spacedragon-module", "assets", "banners");
+const OUT = path.join(ROOT, "stardragon-module", "assets", "banners");
 
 const L = 600;
 const A = 200;

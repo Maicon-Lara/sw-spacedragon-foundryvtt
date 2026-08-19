@@ -1,4 +1,4 @@
-// Equipamento de "Star Wars — Space Dragon" — transcrito de
+// Equipamento de "Star Dragon" — transcrito de
 // SW-SD-Equipamentos.md (armas corpo a corpo, blasters, sabre de luz,
 // armaduras/vestes e aparatos) e de SW-SD-Sabre-e-Cristais.md (cristal kyber,
 // sangramento e o Sabre Sombrio).

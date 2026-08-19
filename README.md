@@ -1,4 +1,4 @@
-# Star Wars — Space Dragon (OD2) · módulo para Foundry VTT
+# Star Dragon (Star Wars no OD2) · módulo para Foundry VTT
 
 Módulo de conteúdo da adaptação **Star Wars para Old Dragon 2** com o suplemento
 sci-fi **Estrela Dracônica / Space Dragon**, para o sistema
@@ -10,8 +10,10 @@ Star Wars © Lucasfilm Ltd.
 ## Fonte de verdade
 
 O conteúdo é transcrito dos arquivos do cofre Obsidian em
-`Documents\Ekhoria\STAR WARS - OD2 - SD\` (`#SW-SD-Index.md` e `SW-SD-*.md`).
-*(Pasta renomeada de "STAR WARS SPACE DRAGON" em jul/2026, quando o nome "Space Dragon" passou a designar a versão nativa.)*
+`Documents\Ekhoria\20 Space Dragon\Star Dragon\` (`#SW-SD-Index.md` e `SW-SD-*.md`).
+*(A pasta já se chamou "STAR WARS SPACE DRAGON" e depois "STAR WARS - OD2 - SD"; em
+ago/2026 virou `20 Space Dragon/Star Dragon`, com "Space Dragon" reservado para a
+versão nativa e "Star Dragon" para esta adaptação de Star Wars.)*
 **Mudou o compêndio? Edite `tools/data/*.mjs` e rode o build** — os packs nunca
 são editados à mão.
 
@@ -19,12 +21,12 @@ são editados à mão.
 
 | Pack | Tipo | Conteúdo |
 |---|---|---|
-| `swsd-especies` | Item | 9 espécies (`race` + `race_ability`), o molde Mutante e a Origem *Filho de Mandalore* |
-| `swsd-classes` | Item | 4 classes-base + 13 especializações (`class`), as 7 Formas de Sabre e o Núcleo Mandaloriano |
-| `swsd-equipamentos` | Item | blasters, armas, sabres, cristais, armaduras e aparatos |
-| `swsd-poderes` | Item | Poderes da Força de 1ª a 5ª Grandeza (`spell`) |
-| `swsd-bestiario` | Actor | criaturas e modelos de PNJ (`monster`) |
-| `swsd-journal` | JournalEntry | Poderes de 6ª a 10ª Grandeza e Naves & Veículos |
+| `stardragon-especies` | Item | 9 espécies (`race` + `race_ability`), o molde Mutante e a Origem *Filho de Mandalore* |
+| `stardragon-classes` | Item | 4 classes-base + 13 especializações (`class`), as 7 Formas de Sabre e o Núcleo Mandaloriano |
+| `stardragon-equipamentos` | Item | blasters, armas, sabres, cristais, armaduras e aparatos |
+| `stardragon-poderes` | Item | Poderes da Força de 1ª a 5ª Grandeza (`spell`) |
+| `stardragon-bestiario` | Actor | criaturas e modelos de PNJ (`monster`) |
+| `stardragon-journal` | JournalEntry | Poderes de 6ª a 10ª Grandeza e Naves & Veículos |
 
 ## Decisões de modelagem
 
@@ -51,13 +53,13 @@ são editados à mão.
 ## Aparência
 
 O módulo repinta as fichas do OD2 com uma paleta azul-aço ("Holocron"), mas só
-depois de marcar a janela com a classe `swsd-tema` — o que
-`sw-spacedragon-module/module/sw-spacedragon.js` faz, e a opção **Tema Star Wars
+depois de marcar a janela com a classe `stardragon-tema` — o que
+`stardragon-module/module/stardragon.js` faz, e a opção **Tema Star Wars
 nas fichas** (Configurações → Módulos) desliga. Estilizar
 `.olddragon2e.sheet.character` direto repintaria a ficha de qualquer mundo que
 instalasse o módulo, sem pedir licença.
 
-O CSS dos journals é escopado em `.swsd-doc`, container que `journalDoc()` põe
+O CSS dos journals é escopado em `.stardragon-doc`, container que `journalDoc()` põe
 em volta do conteúdo das páginas.
 
 > `tools/make-zip.py` tem a lista `ITEMS` do que vai no pacote. **Pasta nova no
@@ -67,9 +69,9 @@ em volta do conteúdo das páginas.
 ## Build
 
 ```sh
-npm run build      # tools/data/*.mjs -> packs-src/*.json -> LevelDB em sw-spacedragon-module/packs/
+npm run build      # tools/data/*.mjs -> packs-src/*.json -> LevelDB em stardragon-module/packs/
 npm run extract    # extrai os packs de volta para _verify/, para conferência
-python tools/make-zip.py   # gera sw-spacedragon.zip para distribuição
+python tools/make-zip.py   # gera stardragon.zip para distribuição
 ```
 
 Os IDs são **determinísticos** (sha1 do nome, em `tools/lib.mjs`), então
@@ -77,7 +79,7 @@ referências por UUID continuam válidas entre builds e entre mundos que já
 importaram o conteúdo. Renomear um item **quebra** o vínculo — trate nome como
 chave.
 
-`.gitattributes` marca `sw-spacedragon-module/packs/**` como binário: LevelDB
+`.gitattributes` marca `stardragon-module/packs/**` como binário: LevelDB
 corrompe se o git converter LF↔CRLF.
 
 ## Instalação no Foundry
@@ -85,10 +87,17 @@ corrompe se o git converter LF↔CRLF.
 O módulo instala por URL de manifesto, sem precisar de acesso ao servidor:
 
 ```
-https://raw.githubusercontent.com/Maicon-Lara/sw-spacedragon-foundryvtt/main/sw-spacedragon-module/module.json
+https://raw.githubusercontent.com/Maicon-Lara/sw-spacedragon-foundryvtt/main/stardragon-module/module.json
 ```
 
 Requer Foundry v13+ e o sistema Old Dragon 2e 2.4.0+.
+
+> ⚠️ **O módulo mudou de `id` em ago/2026:** era `sw-spacedragon`, agora é
+> `stardragon`. Para o Foundry são dois módulos diferentes — quem tinha a versão
+> antiga precisa **desinstalar** e instalar por esta URL. Documentos já copiados
+> para dentro de um mundo continuam lá, mas os links `@UUID` que apontavam para
+> `Compendium.sw-spacedragon.*` deixam de resolver: eles precisam ser refeitos a
+> partir dos compêndios novos. O nome do repositório não mudou, só o do módulo.
 
 > Ao atualizar o módulo, abra o documento **direto do compêndio** — cópias já
 > importadas para dentro de um mundo não se atualizam sozinhas.

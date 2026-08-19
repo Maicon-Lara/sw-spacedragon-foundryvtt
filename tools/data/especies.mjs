@@ -1,4 +1,4 @@
-// Espécies de "Star Wars — Space Dragon" — transcritas de SW-SD-Especies.md.
+// Espécies de "Star Dragon" — transcritas de SW-SD-Especies.md.
 //
 // Tipo nativo do OD2: "race" + uma "race_ability" por habilidade. Campos
 // mecânicos seguros são preenchidos (natural_armor, jp, infravision, movement);

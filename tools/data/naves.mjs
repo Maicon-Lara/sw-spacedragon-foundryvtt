@@ -1,4 +1,4 @@
-// Naves e Veículos de "Star Wars — Space Dragon" — transcrito de SW-SD-Naves.md.
+// Naves e Veículos de "Star Dragon" — transcrito de SW-SD-Naves.md.
 //
 // As naves NÃO viram Actors: o cenário as trata pelo Capítulo de Espaçonaves e
 // Estações do Space Dragon, e este arquivo é apenas um de-para de nomenclatura.

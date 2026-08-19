@@ -1,4 +1,4 @@
-// Classes de "Star Wars — Space Dragon" — transcritas de SW-SD-Classes.md e
+// Classes de "Star Dragon" — transcritas de SW-SD-Classes.md e
 // SW-SD-Forca-Sensitivo.md.
 //
 // Modelagem: as 4 classes-base e as 13 especializações são todas itens do tipo

@@ -24,8 +24,8 @@ import subprocess
 import unicodedata
 
 COFRE = os.path.join(
-    os.path.expanduser("~"), "Documents", "Ekhoria", "20 Star Wars",
-    "Space Dragon", "A Longa Sombra",
+    os.path.expanduser("~"), "Documents", "Ekhoria", "20 Space Dragon",
+    "Star Dragon", "A Longa Sombra",
 )
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SAIDA = os.path.join(RAIZ, "tools", "data", "ameacas.mjs")

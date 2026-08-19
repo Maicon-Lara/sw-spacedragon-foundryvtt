@@ -1,4 +1,4 @@
-// Poderes da Força de "Star Wars — Space Dragon" — transcritos de
+// Poderes da Força de "Star Dragon" — transcritos de
 // SW-SD-Poderes-da-Forca.md.
 //
 // Os poderes do cenário são os Poderes Mentais do Space Dragon reskinados e

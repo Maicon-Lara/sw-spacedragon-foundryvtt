@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Gera o sw-spacedragon.zip de distribuição a partir de sw-spacedragon-module/.
+"""Gera o stardragon.zip de distribuição a partir de stardragon-module/.
 
 Usa zipfile (zip padrão, separadores '/', sem data descriptors) — compatível
 com o extrator do Foundry (unzipper). NÃO usar `tar` do Windows: o bsdtar/GNU
@@ -12,8 +12,8 @@ import os
 import zipfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SRC = os.path.join(ROOT, "sw-spacedragon-module")
-OUT = os.path.join(ROOT, "sw-spacedragon.zip")
+SRC = os.path.join(ROOT, "stardragon-module")
+OUT = os.path.join(ROOT, "stardragon.zip")
 
 # Conteúdo do módulo, com os arquivos na raiz do zip (layout que o Foundry espera).
 # `styles` e `assets` entram aqui: sem isso o CSS e as capas dos compêndios
@@ -41,7 +41,7 @@ def main():
     with zipfile.ZipFile(OUT) as z:
         assert z.testzip() is None, "zip corrompido"
         assert not any("\\" in n for n in z.namelist()), "separador inválido"
-        print(f"  OK sw-spacedragon.zip: {len(z.namelist())} entradas")
+        print(f"  OK stardragon.zip: {len(z.namelist())} entradas")
 
 
 if __name__ == "__main__":

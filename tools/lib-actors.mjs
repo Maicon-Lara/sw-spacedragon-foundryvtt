@@ -1,4 +1,4 @@
-// Geração de Actors de monstro do OD2 para "Star Wars — Space Dragon".
+// Geração de Actors de monstro do OD2 para "Star Dragon".
 //
 // ─────────────────────────────────────────────────────────────────────────────
 // ONDE ESTÁ O SCHEMA (o template.json do sistema NÃO descreve estes tipos —

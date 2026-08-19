@@ -1,4 +1,4 @@
-// Bestiário de "Star Wars — Space Dragon" — transcrito de SW-SD-Bestiario.md.
+// Bestiário de "Star Dragon" — transcrito de SW-SD-Bestiario.md.
 //
 // O bestiário do cenário é sobretudo um DE-PARA: pega-se a criatura do Space
 // Dragon (Tabela 11-1 do guia v1.0) e veste-se de fera da galáxia. Só os
