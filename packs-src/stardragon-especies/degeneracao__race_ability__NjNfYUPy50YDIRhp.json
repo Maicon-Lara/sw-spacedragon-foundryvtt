@@ -1,0 +1,149 @@
+{
+  "folder": "AtCzqV4wRf1r9cFo",
+  "name": "Degeneração",
+  "type": "race_ability",
+  "_id": "NjNfYUPy50YDIRhp",
+  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "system": {
+    "description": "<p>A conta que a evolução cobra. Escolha <strong>uma</strong> no seletor abaixo — ou role <strong>1d10</strong>.</p><p><em>Não há aprimoramento sem degeneração: é o que impede o molde de virar um Humano melhor. Se você rolou os dois dados e caiu no mesmo número, o livro manda rolar de novo até saírem diferentes.</em></p>",
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage": 0,
+    "bonus_damage_condition": "none",
+    "bonus_damage_condition_2": "none",
+    "rogue_talent": "none",
+    "rogue_talent_2": "none",
+    "daily_uses": 0,
+    "natural_armor": 0,
+    "load_modifier": 0,
+    "max_load_override": 0,
+    "armor_weight_modifier": 0,
+    "variable_construction": {
+      "choices_count": 1,
+      "available_options": [
+        {
+          "key": "01-recuperacao-lenta",
+          "name": "1. Recuperação Lenta",
+          "description": "Recupera 1 PV por nível a cada dois dias de descanso."
+        },
+        {
+          "key": "02-cognicao-retardada",
+          "name": "2. Cognição Retardada",
+          "description": "−30% em toda a experiência (XP) recebida."
+        },
+        {
+          "key": "03-mente-simplificada",
+          "name": "3. Mente Simplificada",
+          "description": "−2 em JPS, e a Inteligência não passa de 10."
+        },
+        {
+          "key": "04-sistema-imunologico-vulneravel",
+          "name": "4. Sistema Imunológico Vulnerável",
+          "description": "−2 em JPC contra doença, infecção e males que não sejam ferimento ou trauma físico."
+        },
+        {
+          "key": "05-baixa-expectativa-de-vida",
+          "name": "5. Baixa Expectativa de Vida",
+          "description": "Vive de 40 a 50 anos, maturidade aos 10. No 10º nível e a cada dois níveis depois, −1 ponto num atributo à escolha."
+        },
+        {
+          "key": "06-funcoes-vitais-debilitadas",
+          "name": "6. Funções Vitais Debilitadas",
+          "description": "O Dado de Vida da sua classe cai uma categoria: d10 vira d8, d8 vira d6, d6 vira d4."
+        },
+        {
+          "key": "07-visao",
+          "name": "7. Sentido Diminuído — 1. Visão",
+          "description": "Enxerga mal com muita luz e ao longe: −1 para usar armas à distância. Operativo: −1 em Percepção por visão. Fenótipo: olhos pequenos ou sem íris."
+        },
+        {
+          "key": "07-audicao",
+          "name": "7. Sentido Diminuído — 2. Audição",
+          "description": "−1 em JPD; escuta com metade da capacidade humana. Operativo: −1 em Percepção por audição. Fenótipo: orelhas pouco desenvolvidas ou cobertas."
+        },
+        {
+          "key": "07-olfato",
+          "name": "7. Sentido Diminuído — 3. Olfato",
+          "description": "Olfato duas vezes menor; prende a respiração por apenas Constituição × 5 segundos. Operativo: −1 em Percepção por olfato. Fenótipo: narinas parcialmente tampadas."
+        },
+        {
+          "key": "07-tato",
+          "name": "7. Sentido Diminuído — 4. Tato",
+          "description": "Baixa sensibilidade tátil: −2 de Força e +2 pontos de dano sofridos de qualquer tipo. Fenótipo: pele com cor ou textura diferenciada."
+        },
+        {
+          "key": "07-paladar",
+          "name": "7. Sentido Diminuído — 5. Paladar",
+          "description": "Precisa do dobro do alimento humano; falha automaticamente em JP contra doença e veneno, e sofre o dobro do dano delas. Fenótipo: língua de coloração diferente."
+        },
+        {
+          "key": "07-sexto",
+          "name": "7. Sentido Diminuído — 6. Sexto Sentido",
+          "description": "−2 em JPD e −1 de CA. Fenótipo: falta de noção precisa de perigo."
+        },
+        {
+          "key": "08-forca",
+          "name": "8. Atributo Diminuído — 1. Força −3",
+          "description": "−3 no valor de Força, não no modificador. Fenótipo: corpo franzino."
+        },
+        {
+          "key": "08-destreza",
+          "name": "8. Atributo Diminuído — 2. Destreza −3",
+          "description": "−3 no valor de Destreza, não no modificador. Fenótipo: corpo pesado e coordenação motora prejudicada."
+        },
+        {
+          "key": "08-constituicao",
+          "name": "8. Atributo Diminuído — 3. Constituição −3",
+          "description": "−3 no valor de Constituição, não no modificador. Fenótipo: aparência doentia."
+        },
+        {
+          "key": "08-inteligencia",
+          "name": "8. Atributo Diminuído — 4. Inteligência −3",
+          "description": "−3 no valor de Inteligência, não no modificador. Fenótipo: massa encefálica diminuída."
+        },
+        {
+          "key": "08-sabedoria",
+          "name": "8. Atributo Diminuído — 5. Sabedoria −3",
+          "description": "−3 no valor de Sabedoria, não no modificador. Fenótipo: comportamento animalesco."
+        },
+        {
+          "key": "08-carisma",
+          "name": "8. Atributo Diminuído — 6. Carisma −3",
+          "description": "−3 no valor de Carisma, não no modificador. Fenótipo: introspecção inata."
+        },
+        {
+          "key": "09-dissonancia-mental",
+          "name": "9. Dissonância Mental",
+          "description": "Duas personalidades na mesma cabeça, e nenhuma lembra do que a outra fez. A segunda é um personagem de 1º nível que não sobe junto. PV e equipamento são do corpo."
+        },
+        {
+          "key": "10-involucao",
+          "name": "10. Involução",
+          "description": "Num tipo de rolagem à escolha (atributo, proteção ou ataque), sempre 2d20 ficando com o pior."
+        }
+      ]
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!NjNfYUPy50YDIRhp"
+}

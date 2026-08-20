@@ -98,7 +98,7 @@ Um build limpo hoje produz:
 
 | Pack | Documentos |
 |---|--:|
-| espécies | 83 |
+| espécies | 84 |
 | classes | 258 |
 | equipamentos | 154 |
 | poderes | 60 |
@@ -163,6 +163,20 @@ cinco.
 vão até a 10ª. Os de **1ª a 5ª viram `spell`** (usáveis na ficha, com a Grandeza
 real declarada no início da descrição); os de **6ª a 10ª vivem no journal**, com
 texto integral. Nada foi capado nem renumerado.
+
+**Escolha do jogador usa o seletor nativo.** O molde Mutante pede uma escolha
+de cada coluna, e o OD2 tem campo para isso: `variable_construction` numa
+`race_ability` declara `choices_count` e `available_options`, e a aba **Raça** da
+ficha desenha o dropdown, mostra a descrição da opção escolhida e grava a
+seleção em `actor.system.variable_construction_selections`. É o mesmo lugar onde
+o Humano escolhe qual JP recebe o +1.
+
+As vinte mutações saem de **uma lista só** (`tools/data/especies.mjs`) em duas
+formas: as habilidades soltas do compêndio, com texto completo em HTML, e as
+opções do dropdown, em texto puro — o sistema passa a descrição da opção por
+`escapeExpression`, e HTML sairia como texto literal. As chaves das opções
+(`08-constituicao`) são **estáveis por contrato**: elas ficam gravadas na ficha
+do personagem, e renomear uma apaga a escolha de quem já a tinha feito.
 
 **Regra que não cabe em campo vira texto.** O OD2 não tem campo para "o DV da
 classe sobe uma categoria" nem para "role 2d20 e fique com o pior". Onde existe

@@ -6,6 +6,50 @@ começou junto com o rename.
 
 ---
 
+## 1.2.0 — 20/08/2026
+
+### O Mutante virou escolha na ficha
+
+As vinte mutações já estavam no compêndio, mas escolher uma exigia abrir duas
+pastas e arrastar dois itens. Agora a raça traz **dois seletores na aba Raça** —
+*Aprimoramento* e *Degeneração* —, no mesmo lugar onde o Humano escolhe qual JP
+recebe o +1.
+
+É o campo nativo `variable_construction` da `race_ability` do OD2: a habilidade
+declara `choices_count` e `available_options`, a ficha desenha o dropdown, mostra
+a descrição da opção escolhida e grava a seleção em
+`actor.system.variable_construction_selections`.
+
+**Um seletor por coluna, não um só com vinte opções.** Duas habilidades separadas
+com uma escolha cada é o que garante, por construção, que ninguém saia com dois
+Aprimoramentos e nenhuma Degeneração — o *balanço genético* deixa de depender de
+o jogador lembrar da regra.
+
+**As sub-tabelas vêm abertas.** *Sentido* e *Atributo* (ampliado e diminuído)
+pediam um segundo 1d6 e uma consulta a outra tabela. Agora cada uma entra no
+dropdown já nas seis variantes — escolhe-se "8. Atributo Ampliado — 3.
+Constituição +3" numa tacada. Quem preferir rolar continua achando pelo número:
+os rótulos mantêm o 1d10 e o 1d6. São 20 opções por coluna.
+
+**"Personalizado" é regra, não sobra.** O dropdown do sistema sempre oferece uma
+entrada personalizada com nome e descrição livres — e o livro **recomenda**
+inventar o próprio fenótipo. A engenhoca do sistema calhou de ser exatamente o
+que o texto pedia.
+
+**Uma fonte, duas renderizações.** As mesmas listas geram as habilidades soltas
+(texto completo em HTML) e as opções do dropdown (texto puro — o sistema passa a
+descrição da opção por `escapeExpression`, e HTML sairia como texto literal). As
+habilidades soltas continuam no compêndio para quem preferir arrastar a mutação
+inteira.
+
+> As chaves das opções (`08-constituicao`) ficam gravadas na ficha do
+> personagem. **Renomear uma mutação apaga a escolha de quem já a tinha feito** —
+> trate a chave como contrato.
+
+Pack de espécies: **83 → 84 documentos**.
+
+---
+
 ## 1.1.0 — 19/08/2026
 
 ### A raça Mutante (Homo novus)

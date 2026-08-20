@@ -1,0 +1,149 @@
+{
+  "folder": "AtCzqV4wRf1r9cFo",
+  "name": "Aprimoramento",
+  "type": "race_ability",
+  "_id": "TWEgdS8V1BFjR390",
+  "img": "systems/olddragon2e/assets/icons/diamond.svg",
+  "system": {
+    "description": "<p>A metade boa do <strong>balanço genético</strong>. Escolha <strong>uma</strong> no seletor abaixo — ou role <strong>1d10</strong> e pegue a de número correspondente.</p><p><em>As duas mutações com sub-tabela já vêm abertas nas seis variantes: escolha direto, sem rolar 1d6 de novo. E <strong>Personalizado</strong> existe para a mutação que você inventar — o livro recomenda inventar.</em></p>",
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage": 0,
+    "bonus_damage_condition": "none",
+    "bonus_damage_condition_2": "none",
+    "rogue_talent": "none",
+    "rogue_talent_2": "none",
+    "daily_uses": 0,
+    "natural_armor": 0,
+    "load_modifier": 0,
+    "max_load_override": 0,
+    "armor_weight_modifier": 0,
+    "variable_construction": {
+      "choices_count": 1,
+      "available_options": [
+        {
+          "key": "01-recuperacao-acelerada",
+          "name": "1. Recuperação Acelerada",
+          "description": "Recupera 2 PV por nível a cada dia de descanso."
+        },
+        {
+          "key": "02-cognicao-acelerada",
+          "name": "2. Cognição Acelerada",
+          "description": "+30% em toda a experiência (XP) recebida."
+        },
+        {
+          "key": "03-mente-avancada",
+          "name": "3. Mente Avançada",
+          "description": "+2 em JPS."
+        },
+        {
+          "key": "04-sistema-imunologico-evoluido",
+          "name": "4. Sistema Imunológico Evoluído",
+          "description": "+2 em JPC contra doença, infecção e males que não sejam ferimento ou trauma físico."
+        },
+        {
+          "key": "05-longevidade",
+          "name": "5. Longevidade",
+          "description": "Vive de 100 a 120 anos, maturidade aos 30. No 10º nível e a cada dois níveis depois, +1 ponto num atributo à escolha."
+        },
+        {
+          "key": "06-funcoes-vitais-superiores",
+          "name": "6. Funções Vitais Superiores",
+          "description": "O Dado de Vida da sua classe sobe uma categoria: d6 vira d8, d8 vira d10, d10 vira d12."
+        },
+        {
+          "key": "07-visao",
+          "name": "7. Sentido Ampliado — 1. Visão",
+          "description": "Enxerga no escuro e à distância; +1 para usar armas à distância. O Operativo ganha +1 em Percepção por visão. Fenótipo: olhos proeminentes ou de coloração diferenciada."
+        },
+        {
+          "key": "07-audicao",
+          "name": "7. Sentido Ampliado — 2. Audição",
+          "description": "+1 em JPD; escuta com o dobro da capacidade humana. Operativo: +1 em Percepção por audição. Fenótipo: orelhas proeminentes ou pontudas."
+        },
+        {
+          "key": "07-olfato",
+          "name": "7. Sentido Ampliado — 3. Olfato",
+          "description": "Olfato duas vezes maior; prende a respiração por Constituição × 20 turnos. Operativo: +1 em Percepção por olfato. Fenótipo: nariz aquilino ou ausência de narina."
+        },
+        {
+          "key": "07-tato",
+          "name": "7. Sentido Ampliado — 4. Tato",
+          "description": "Reconhece qualquer material pelo toque e ignora 2 pontos de dano de qualquer tipo, podendo zerá-lo. Fenótipo: pele com cor ou textura diferenciada."
+        },
+        {
+          "key": "07-paladar",
+          "name": "7. Sentido Ampliado — 5. Paladar",
+          "description": "Precisa de metade do alimento humano, e o corpo é imune a doenças e venenos. Fenótipo: língua longa ou bifurcada."
+        },
+        {
+          "key": "07-sexto",
+          "name": "7. Sentido Ampliado — 6. Sexto Sentido",
+          "description": "+2 em JPD e +1 de CA. Fenótipo: percepção quase premonitiva do perigo."
+        },
+        {
+          "key": "08-forca",
+          "name": "8. Atributo Ampliado — 1. Força +3",
+          "description": "+3 no valor de Força, não no modificador. Fenótipo: corpo musculoso."
+        },
+        {
+          "key": "08-destreza",
+          "name": "8. Atributo Ampliado — 2. Destreza +3",
+          "description": "+3 no valor de Destreza, não no modificador. Fenótipo: corpo esguio e boa coordenação motora."
+        },
+        {
+          "key": "08-constituicao",
+          "name": "8. Atributo Ampliado — 3. Constituição +3",
+          "description": "+3 no valor de Constituição, não no modificador. Fenótipo: aparência saudável."
+        },
+        {
+          "key": "08-inteligencia",
+          "name": "8. Atributo Ampliado — 4. Inteligência +3",
+          "description": "+3 no valor de Inteligência, não no modificador. Fenótipo: massa encefálica proeminente."
+        },
+        {
+          "key": "08-sabedoria",
+          "name": "8. Atributo Ampliado — 5. Sabedoria +3",
+          "description": "+3 no valor de Sabedoria, não no modificador. Fenótipo: facilmente distraído e absorto em pensamentos."
+        },
+        {
+          "key": "08-carisma",
+          "name": "8. Atributo Ampliado — 6. Carisma +3",
+          "description": "+3 no valor de Carisma, não no modificador. Fenótipo: aptidão para socialização."
+        },
+        {
+          "key": "09-poderes-da-forca-inatos",
+          "name": "9. Poderes da Força Inatos",
+          "description": "Um Poder da Força de 1ª Grandeza da lista Universal, uma vez por dia, mesmo não sendo Sensível. Tentar de novo no mesmo dia pede teste de Sabedoria; falhar custa 1d6 de dano."
+        },
+        {
+          "key": "10-superpoderes",
+          "name": "10. Superpoderes",
+          "description": "O corpo replica um aparato utilitário de NT 1 ou 2, uma vez por dia, sem possuir o objeto."
+        }
+      ]
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!TWEgdS8V1BFjR390"
+}
