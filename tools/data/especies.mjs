@@ -7,11 +7,12 @@
 // Lembrete do cenário: as sete espécies não-humanas NÃO usam o molde Mutante
 // do Space Dragon e não pagam Degeneração — são criações do cenário.
 //
-// EXCEÇÃO DE FONTE: a raça Mutante e as vinte mutações NÃO vêm do cofre —
-// vêm direto do PDF do Space Dragon (cap. 2.3, tabelas T2-1 a T2-5). O cofre
-// só traz o ponteiro ("escolha um Aprimoramento e uma Degeneração na T2-1"),
-// e a tabela nunca foi transportada para lá. Se um dia o cofre ganhar o
-// capítulo, ele passa a mandar — até lá, esta é a única cópia.
+// O molde Mutante chegou aqui ANTES do cofre: foi transcrito do PDF do Space
+// Dragon (cap. 2.3, tabelas T2-1 a T2-5) porque o cofre só tinha o ponteiro
+// ("escolha um Aprimoramento e uma Degeneração na T2-1") e a tabela nunca
+// tinha sido transportada. Em 20/08/2026 o capítulo entrou no cofre, com a
+// mesma conversão — o SW-SD-Especies.md voltou a ser a fonte de verdade
+// também para ele. Mudou lá? Mude aqui.
 
 const RODAPE_SENSIVEL =
   "<p><em>Todos os povos vivos podem gerar Sensíveis à Força; Droides não — cérebro positrônico não sonha.</em></p>";
