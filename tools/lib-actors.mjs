@@ -222,7 +222,7 @@ function buildDescription(m) {
       .join("\n  ");
     partes.push(`<ul>\n  ${itens}\n</ul>`);
   }
-  if (m.base) partes.push(`<p><em>Base no Space Dragon: ${m.base}.</em></p>`);
+  if (m.base) partes.push(`<p class='nota-casa'><em>Base no Space Dragon: ${m.base}.</em></p>`);
   if (m.nota) partes.push(`<p>${m.nota}</p>`);
   return partes.join("\n");
 }

@@ -7,7 +7,7 @@
     "odo_id": "droide-de-combate",
     "concept": "Constructo",
     "size": "medio",
-    "description": "<p><strong>Tipo (fonte):</strong> Humanoide robótico</p>\n<ul>\n  <li><p><strong>Construto</strong>: imune a <strong>medo</strong> e <strong>veneno</strong>.</p></li>\n  <li><p><strong>Desativação</strong>: <strong>só testa Moral contra Desativação</strong> (habilidade do Técnico) — em qualquer outra situação não foge.</p></li>\n  <li><p><strong>Vulnerável a Íon</strong>: armas e granadas de íon o afetam em cheio.</p></li>\n</ul>\n<p><em>Base no Space Dragon: Autômato.</em></p>",
+    "description": "<p><strong>Tipo (fonte):</strong> Humanoide robótico</p>\n<ul>\n  <li><p><strong>Construto</strong>: imune a <strong>medo</strong> e <strong>veneno</strong>.</p></li>\n  <li><p><strong>Desativação</strong>: <strong>só testa Moral contra Desativação</strong> (habilidade do Técnico) — em qualquer outra situação não foge.</p></li>\n  <li><p><strong>Vulnerável a Íon</strong>: armas e granadas de íon o afetam em cheio.</p></li>\n</ul>",
     "flavor": "<p>Soldado sintético descartável.</p>",
     "habitat": "Postos militares, naves de guerra, ruínas",
     "alignment": "neutro",

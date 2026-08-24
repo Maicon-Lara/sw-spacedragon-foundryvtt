@@ -5,7 +5,7 @@
   "_id": "VLuJwZjt4wCsiURj",
   "img": "systems/olddragon2e/assets/icons/kit.svg",
   "system": {
-    "description": "<p>Sua progressão de <strong>Dano Crítico para aqui</strong> — você nunca chega ao ×3. Em troca, a mesma perícia que multiplicava um golpe passa a multiplicar uma palavra: <strong>+2 em testes de reação, negociação e Moral</strong> que você conduza pessoalmente.</p><p><em>É a assinatura original da trilha, de volta. O Space Dragon dizia que o Emissário \"interrompe a progressão de dano crítico, mas pode usar essa mesma progressão como multiplicador do ajuste de reação\". A conversão a perdeu porque o atributo Comunicação não existe no OD2 — e, sem ela, a trilha social ficou sem número nenhum no único pilar que é dela.</em></p>",
+    "description": "<p>Sua progressão de <strong>Dano Crítico para aqui</strong> — você nunca chega ao ×3. Em troca, a mesma perícia que multiplicava um golpe passa a multiplicar uma palavra: <strong>+2 em testes de reação, negociação e Moral</strong> que você conduza pessoalmente.</p>",
     "level": 3,
     "level3": "",
     "level6": "<p>O bônus sobe para <strong>+3</strong>.</p>",

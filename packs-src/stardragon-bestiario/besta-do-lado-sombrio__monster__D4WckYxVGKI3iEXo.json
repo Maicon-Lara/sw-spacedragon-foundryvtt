@@ -7,7 +7,7 @@
     "odo_id": "besta-do-lado-sombrio",
     "concept": "Besta",
     "size": "medio",
-    "description": "<p><strong>Tipo (fonte):</strong> Aberração</p>\n<ul>\n  <li><p><strong>Dreno vital</strong>: o que ela drena (Foco/PV) <strong>cura a besta</strong>.</p></li>\n  <li><p><strong>Invisível aos cegos da Força</strong>: só quem é <strong>Sensível</strong> consegue vê-la.</p></li>\n  <li><p><strong>Terror dos Sensíveis</strong>: Sensíveis na presença dela fazem <strong>JPS</strong> ou ficam <strong>abalados</strong>.</p></li>\n  <li><p><strong>Nula a Força</strong>: anula poderes da Força na área.</p></li>\n</ul>\n<p><em>Base no Space Dragon: Vampiro Energético / Devorador de Mentes.</em></p>",
+    "description": "<p><strong>Tipo (fonte):</strong> Aberração</p>\n<ul>\n  <li><p><strong>Dreno vital</strong>: o que ela drena (Foco/PV) <strong>cura a besta</strong>.</p></li>\n  <li><p><strong>Invisível aos cegos da Força</strong>: só quem é <strong>Sensível</strong> consegue vê-la.</p></li>\n  <li><p><strong>Terror dos Sensíveis</strong>: Sensíveis na presença dela fazem <strong>JPS</strong> ou ficam <strong>abalados</strong>.</p></li>\n  <li><p><strong>Nula a Força</strong>: anula poderes da Força na área.</p></li>\n</ul>",
     "flavor": "<p>Aberração que se alimenta da Força.</p>",
     "habitat": "Ruínas e nexos do Lado Sombrio",
     "alignment": "caotico",

@@ -52,7 +52,7 @@ const APRIMORAMENTOS = [
     desc:
       "<p><em>Genótipo:</em> o cérebro é mais desenvolvido que o normal. <em>Fenótipo:</em> massa encefálica proeminente.</p>" +
       "<p><strong>+2 em JPS.</strong></p>" +
-      "<p><em>Conversão: o livro somava a isto uma \"resistência mental de 5%\". O Old Dragon 2 não tem Resistência Mental — o bestiário deste cenário já manda tratar RD e RM como habilidade descrita. O que sobra, e é o que a mutação sempre quis dizer, é o bônus de JPS.</em></p>",
+      "<p class='nota-casa'><em>Conversão: o livro somava a isto uma \"resistência mental de 5%\". O Old Dragon 2 não tem Resistência Mental — o bestiário deste cenário já manda tratar RD e RM como habilidade descrita. O que sobra, e é o que a mutação sempre quis dizer, é o bônus de JPS.</em></p>",
   },
   {
     nome: "4. Sistema Imunológico Evoluído",
@@ -97,7 +97,7 @@ const APRIMORAMENTOS = [
       "<tr><td>5</td><td><strong>Paladar</strong></td><td>Língua longa ou bifurcada</td><td>Precisa de <strong>metade</strong> do alimento de um humano, e o corpo é <strong>imune a doenças e venenos</strong></td></tr>" +
       "<tr><td>6</td><td><strong>Sexto Sentido</strong></td><td>Percepção quase premonitiva do perigo</td><td><strong>+2 em JPD</strong> e <strong>+1 de CA</strong></td></tr>" +
       "</tbody></table>" +
-      "<p><em>Conversão: o livro dá \"+2 no coeficiente de proteção\" no Sexto Sentido. CP não existe no OD2, e a escala de CA é mais apertada — o cenário já comprimiu −5 de CP para −2 de CA na regra de surpresa. Aqui, +2 de CP vira <strong>+1 de CA</strong>. Onde o livro dizia \"Gatuno\", leia <strong>Operativo</strong>.</em></p>",
+      "<p class='nota-casa'><em>Conversão: o livro dá \"+2 no coeficiente de proteção\" no Sexto Sentido. CP não existe no OD2, e a escala de CA é mais apertada — o cenário já comprimiu −5 de CP para −2 de CA na regra de surpresa. Aqui, +2 de CP vira <strong>+1 de CA</strong>. Onde o livro dizia \"Gatuno\", leia <strong>Operativo</strong>.</em></p>",
   },
   {
     nome: "8. Atributo Ampliado",
@@ -121,7 +121,7 @@ const APRIMORAMENTOS = [
       "</tbody></table>" +
       "<p><strong>+3 no valor do atributo</strong>, não no modificador — some ao número rolado e releia a tabela de modificadores.</p>" +
       "<p><em>Conversão dos nomes: o Space Dragon chama Inteligência de</em> Intelecto<em>, Sabedoria de</em> Ciência <em>e Carisma de</em> Comunicação<em>.</em></p>" +
-      "<p><em>É a única mutação que mexe em atributo — as espécies deste cenário não alteram atributo nenhum, e esta é a exceção deliberada do molde.</em></p>",
+      "<p class='nota-casa'><em>É a única mutação que mexe em atributo — as espécies deste cenário não alteram atributo nenhum, e esta é a exceção deliberada do molde.</em></p>",
   },
   {
     nome: "9. Poderes da Força Inatos",
@@ -131,7 +131,7 @@ const APRIMORAMENTOS = [
       "<p><em>Genótipo:</em> o cérebro desenvolveu a capacidade inata de tocar a Força. <em>Fenótipo:</em> loucura aparente.</p>" +
       "<p>Escolha <strong>um Poder da Força de 1ª Grandeza da lista Universal</strong>. Você o manifesta <strong>uma vez por dia</strong>, sem penalidade — <strong>mesmo não sendo Sensível à Força</strong>. Se você <em>for</em> um Sensível, este uso é <strong>adicional</strong> ao seu Foco Diário.</p>" +
       "<p>Pode tentar de novo no mesmo dia com um teste de <strong>Sabedoria</strong>. <strong>Falhar custa 1d6 de dano</strong> e encerra as tentativas até o dia seguinte.</p>" +
-      "<p><em>Conversão: no livro isto é</em> Poderes Mentais<em>, e dá um poder mental de 1ª grandeza. Neste cenário o poder mental É o Poder da Força, e a lista <strong>Universal</strong> é a certa porque ela não é Luz nem Sombra — é a corrente viva do cosmos, sem Caminho. O precedente já existe: o <strong>Slicer</strong> alcança a 1ª Grandeza Universal pelo intelecto, no 10º nível.</em></p>" +
+      "<p class='nota-casa'><em>Conversão: no livro isto é</em> Poderes Mentais<em>, e dá um poder mental de 1ª grandeza. Neste cenário o poder mental É o Poder da Força, e a lista <strong>Universal</strong> é a certa porque ela não é Luz nem Sombra — é a corrente viva do cosmos, sem Caminho. O precedente já existe: o <strong>Slicer</strong> alcança a 1ª Grandeza Universal pelo intelecto, no 10º nível.</em></p>" +
       "<p><em>Isto <strong>não</strong> faz de você um Sensível à Força: não abre Grandezas, não dá Foco Diário, não dá Caminho e não conta para o Duelo da Força.</em></p>",
   },
   {
@@ -142,7 +142,7 @@ const APRIMORAMENTOS = [
       "<p><em>Genótipo:</em> o mutante é capaz de feitos incríveis e inexplicados pela ciência. <em>Fenótipo:</em> variável.</p>" +
       "<p>Escolha <strong>um aparato utilitário de NT 1 ou 2</strong> do compêndio de equipamentos. Seu corpo <strong>replica o efeito dele uma vez por dia</strong>, sem que você possua o objeto — a pele que acende como um bastão luminoso, os olhos que leem calor como um visor térmico, a garganta que emite em frequência de comlink.</p>" +
       "<p>O Mestre tem a palavra final sobre o que o corpo consegue imitar.</p>" +
-      "<p><em>Conversão da casa. O livro manda escolher \"uma magia arcana ou divina de 1º círculo do Old Dragon\" — e o Old Dragon de fantasia não existe nesta galáxia. O cenário parte a magia em duas: a metade mental virou <strong>Força</strong> e todo o resto virou <strong>aparato</strong> na bancada do Técnico. Como a Força já é a mutação 9, o que sobra para a 10 é o outro lado da partilha. É a leitura mais fiel possível do original dentro deste cenário — se a sua mesa preferir, troque por um segundo Poder da Força de 1ª Grandeza.</em></p>",
+      "<p class='nota-casa'><em>Conversão da casa. O livro manda escolher \"uma magia arcana ou divina de 1º círculo do Old Dragon\" — e o Old Dragon de fantasia não existe nesta galáxia. O cenário parte a magia em duas: a metade mental virou <strong>Força</strong> e todo o resto virou <strong>aparato</strong> na bancada do Técnico. Como a Força já é a mutação 9, o que sobra para a 10 é o outro lado da partilha. É a leitura mais fiel possível do original dentro deste cenário — se a sua mesa preferir, troque por um segundo Poder da Força de 1ª Grandeza.</em></p>",
   },
 ];
 
@@ -249,7 +249,7 @@ const DEGENERACOES = [
       "<li>A troca acontece sob <strong>estresse mental grave</strong>, a critério do Mestre, ou por um Poder da Força que a force.</li>" +
       "<li><strong>PV, ferimentos e equipamento são do corpo</strong>, e portanto compartilhados. O resto — classe, habilidades, JP, conduta — é da personalidade ativa.</li>" +
       "</ul>" +
-      "<p><em>Conversão: o livro trata as duas como \"personagens separados de nível 1\", o que, numa escala de 15 níveis, deixaria metade da carreira do jogador parada no primeiro degrau. A leitura acima mantém o horror da coisa — você <strong>perde a cena</strong> quando ela vira — sem congelar o personagem principal. É a Degeneração mais interpretativa das dez: combine com o Mestre antes de escolhê-la.</em></p>",
+      "<p class='nota-casa'><em>Conversão: o livro trata as duas como \"personagens separados de nível 1\", o que, numa escala de 15 níveis, deixaria metade da carreira do jogador parada no primeiro degrau. A leitura acima mantém o horror da coisa — você <strong>perde a cena</strong> quando ela vira — sem congelar o personagem principal. É a Degeneração mais interpretativa das dez: combine com o Mestre antes de escolhê-la.</em></p>",
   },
   {
     nome: "10. Involução",
@@ -350,7 +350,7 @@ export const especies = [
     descricao:
       "<p>Usam o molde <strong>Andróide</strong> do Space Dragon. <strong>Restrição importante:</strong> Droides não são sensíveis à Força e não podem ser da classe Sensível à Força.</p>" +
       "<p><strong>Perguntas ao criar um Droide:</strong> Qual seu propósito original? Sua memória já foi apagada? Ele se considera uma pessoa?</p>" +
-      "<p><em>Nota de conversão:</em> o texto original do Andróide trazia <em>Corpo Robótico</em> (JPC Fáceis) <strong>e</strong> <em>Resistência Física</em> (+2 na JPC) — a mesma coisa vinda de duas fontes. Aqui foram fundidas numa habilidade só: a JPC Fácil já <em>é</em> o +2.</p>" +
+      "<p class='nota-casa'><em>Nota de conversão:</em> o texto original do Andróide trazia <em>Corpo Robótico</em> (JPC Fáceis) <strong>e</strong> <em>Resistência Física</em> (+2 na JPC) — a mesma coisa vinda de duas fontes. Aqui foram fundidas numa habilidade só: a JPC Fácil já <em>é</em> o +2.</p>" +
       "<p><strong>Idioma próprio: Binário.</strong> Não se <em>fala</em>: entende-se. Droides são fluentes por construção.</p>" + IDIOMAS_REGRA,
     movement: 9,
     infravision: 18,
@@ -490,7 +490,7 @@ export const especies = [
       "<p>Eles enfrentam mais resistência à aceitação que os droides, e em geral consideram o termo <em>mutante</em> ofensivo. Longe de formarem um grupo unido, adaptam-se ao ambiente ao redor como podem — uma parábola social da evolução biológica que os criou.</p>" +
       "<p><strong>Como se joga:</strong> arraste a raça para a ficha e escolha <strong>um Aprimoramento</strong> e <strong>uma Degeneração</strong> nos dois seletores que aparecem na aba <strong>Raça</strong>. As vinte mutações também existem como habilidades soltas, nas pastas <em>Mutante — Aprimoramentos</em> e <em>Mutante — Degenerações</em>, para quem preferir arrastar a ficha inteira da mutação. Todo o resto é igual ao <strong>Humano</strong>. Não há aprimoramento sem degeneração: é o balanço genético, e é a regra que impede o molde de virar um Humano melhor.</p>" +
       "<p><em>Variante do livro: em vez de escolher, role <strong>2d10</strong> na tabela de mutações — um dado para cada coluna, repetindo a rolagem se saírem iguais. O cenário adotou a escolha porque o molde existe para <strong>criar um povo</strong> (um Nautolano, um Ceriano), e povo não se sorteia.</em></p>" +
-      "<p><strong>Atributos:</strong> o Mutante <strong>não recebe modificador de atributo nenhum</strong> por ser Mutante. <em>(No Space Dragon o Humano ganhava +2 num atributo e −2 em outro, e o livro tirava isso do Mutante. Aqui o Humano já não tem esses modificadores — a cláusula não tem o que remover. Os únicos ajustes de atributo do molde vêm das mutações</em> Atributo Ampliado <em>e</em> Atributo Diminuído<em>.)</em></p>" +
+      "<p><strong>Atributos:</strong> o Mutante <strong>não recebe modificador de atributo nenhum</strong> por ser Mutante.</p><p class='nota-casa'><em>(No Space Dragon o Humano ganhava +2 num atributo e −2 em outro, e o livro tirava isso do Mutante. Aqui o Humano já não tem esses modificadores — a cláusula não tem o que remover. Os únicos ajustes de atributo do molde vêm das mutações</em> Atributo Ampliado <em>e</em> Atributo Diminuído<em>.)</em></p>" +
       "<p><strong>Perguntas ao criar um Mutante:</strong> Que fenótipo o denuncia à primeira vista? Ele veio de uma comunidade isolada ou nasceu sozinho no meio de uma família comum? Quem já usou a palavra <em>mutante</em> na frente dele?</p>" +
       "<p><strong>Idioma próprio:</strong> nenhum — fala o idioma de onde nasceu, como qualquer humano.</p>" +
       IDIOMAS_REGRA +
@@ -557,7 +557,7 @@ export const especieAbilitiesAvulsas = [
       "<tr><td><strong>Binário</strong></td><td>Droides</td><td>Não se <em>fala</em>: entende-se. Droides são fluentes por construção</td></tr>" +
       "<tr><td><strong>Ur-Kittât / Sith antigo</strong></td><td>Sith, arqueólogos, holocrons</td><td>Idioma <strong>morto</strong>; ler exige alfabetização e costuma ser gancho de aventura</td></tr>" +
       "</tbody></table>" +
-      "<p><em>Nota: o Space Dragon lia os idiomas adicionais pelo atributo Comunicação (hoje Carisma). A conversão do Estrela Dracônica moveu-os para a <strong>Inteligência</strong>, e a alfabetização foi junto — não faria sentido um personagem carismático e ignorante ler mais idiomas do que fala.</em></p>",
+      "<p class='nota-casa'><em>Nota: o Space Dragon lia os idiomas adicionais pelo atributo Comunicação (hoje Carisma). A conversão do Estrela Dracônica moveu-os para a <strong>Inteligência</strong>, e a alfabetização foi junto — não faria sentido um personagem carismático e ignorante ler mais idiomas do que fala.</em></p>",
   },
   {
     folder: "Molde Mutante (opcional)",

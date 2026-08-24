@@ -6,6 +6,83 @@ começou junto com o rename.
 
 ---
 
+## 1.2.1 — 24/08/2026
+
+### As Sendas estavam fora do padrão do próprio compêndio
+
+Toda especialização deste módulo traz na ficha só o que é dela: o Guardião não
+repete o motor do Sensível, o Mercenário não repete Pilotar. As quatro Sendas
+Mandalorianas repetiam a classe-base inteira e chegavam a **14 habilidades**
+contra as 6 da irmã Guardião.
+
+Agora seguem a mesma regra — a ficha carrega o que a Senda **toca** (congelou,
+trocou, substituiu), o pacote de clã e a Reputação. O que ela mantém intacto é
+citado por nome na descrição e continua na classe-base.
+
+| ficha | antes | agora |
+|---|---|---|
+| Herege de Armadura | 14 | 7 |
+| Guerreiro de Clã | 11 | 9 |
+| Caçador Solitário | 10 | 9 |
+| Armeiro | 9 | 6 |
+
+Duas coisas junto: *A Senda Mandaloriana — como funciona* saiu das quatro fichas
+(é verbete de compêndio — descrevia as trocas das quatro de uma vez, então cada
+jogador lia na própria ficha o que os outros três trocam) e as habilidades
+passaram a sair **ordenadas por nível**.
+
+As Sendas também eram as únicas especializações que anexavam a descrição inteira
+da classe-base. O Herege repetia o cartão do Sensível — *Créditos iniciais*,
+*Restrição: Droides não podem* — que a ficha já renderiza a partir dos campos
+estruturados. Descrições caíram de 2.083–3.390 para 635–932 caracteres.
+
+### Bug de regra: a Senda proibia o que ela mesma dá
+
+As variantes herdavam `equipment_restrictions` da classe-base sem tocar. Com
+isso o **Herege de Armadura** — cuja habilidade-assinatura é o *Sangue de
+Beskar* — vinha com *"Apenas Leve, sem escudo"* e ficava **proibido de vestir
+Beskar**, que é armadura Média. O mesmo com o **Armeiro**, que é quem a forja. E
+os dois ganhavam *+1 no dano com armas de haste* por *Treinamento de Clã* com a
+linha de armas dizendo *"Nada Marcial"*.
+
+O Guardião já resolvia isso do jeito certo. As Sendas passam a fazer o mesmo, e
+**por detecção**: se a linha herdada já cobre o caso, nada é acrescentado — por
+isso o Guerreiro de Clã não ganhou cláusula nenhuma e o Caçador Solitário só
+ganhou a de armas. Se a restrição da classe-base mudar, a cláusula se ajusta.
+
+### A prosa de conversão saiu das fichas
+
+*"Correção da casa"*, *"Por que 1ª Grandeza e não 2ª"*, o de-para com o Space
+Dragon no bestiário, a caixa *"Criação da casa"* repetida onze vezes: **22.415
+caracteres** de documentação de conversão que serve a quem mantém o repositório,
+não a quem está jogando. O maior era um ensaio de 527 caracteres sobre a trava
+de alinhamento, copiado em **treze** fichas do Sensível.
+
+Nada foi apagado. A prosa vive marcada como `<p class='nota-casa'>` nos arquivos
+de `tools/data/` e é removida em `writeSource()`, o único ponto por onde todo
+documento passa antes de virar pack — mesma convenção do compêndio em Markdown,
+cujo `build_docx.py` corta os blocos *"Correção da casa"* antes de distribuir.
+
+Para gerar o módulo **com** as notas: `NOTAS_CASA=1 npm run build`.
+
+Sobraram 926 caracteres, deliberados: regra, conselho de mesa, a página de
+de-para do bestiário (que existe para ser um de-para) e o aviso de não misturar
+a tabela de naves do ED-09 com a do Space Dragon.
+
+### Quatro cacos do corte
+
+Achados varrendo o `packs-src` desta versão contra o da anterior:
+
+- **Seção do Mestre** apontava *"ver a nota abaixo"* para uma nota cortada, e o
+  parágrafo seguinte abria com *"E o problema maior é o outro"* sem antecedente.
+  Essa nota não era arqueologia, era carga: a regra virou parágrafo normal e só
+  o *"uma versão anterior dizia…"* ficou marcado.
+- **Sensível à Força** apontava para *"a caixa que diz de onde veio a ideia"*.
+- **Guerreiro de Clã** dizia duas vezes seguidas que mantém *Ataques Múltiplos*.
+- Doze *"Criação da casa"* no equipamento que escaparam da primeira passada.
+
+---
+
 ## 1.2.0 — 20/08/2026
 
 ### O Mutante virou escolha na ficha

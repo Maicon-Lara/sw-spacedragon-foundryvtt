@@ -7,7 +7,7 @@
     "odo_id": "operativo-contrabandista",
     "concept": "Humanoide",
     "size": "medio",
-    "description": "<p><strong>Tipo (fonte):</strong> PNJ com classe — Operativo de 5º nível</p>\n<ul>\n  <li><p><strong>Ataque Furtivo</strong></p></li>\n</ul>\n<p><em>Base no Space Dragon: Operativo Nível 5 (Gatuno).</em></p>",
+    "description": "<p><strong>Tipo (fonte):</strong> PNJ com classe — Operativo de 5º nível</p>\n<ul>\n  <li><p><strong>Ataque Furtivo</strong></p></li>\n</ul>",
     "dv": "5",
     "dv_bonus": "+5",
     "hp": {

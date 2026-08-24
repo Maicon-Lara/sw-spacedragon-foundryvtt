@@ -20,7 +20,13 @@ import { classes, T } from "./classes.mjs";
 import { classAbilitiesBase } from "./avulsas.mjs";
 
 const FORMAS = classAbilitiesBase.filter((a) => a.folder === "Formas de Sabre (Guardião)");
-const NUCLEO = classAbilitiesBase.filter((a) => a.folder === "Senda Mandaloriana");
+const SENDA_TODAS = classAbilitiesBase.filter((a) => a.folder === "Senda Mandaloriana");
+
+// "A Senda Mandaloriana — como funciona" é um VERBETE de compêndio: descreve as
+// quatro fichas de uma vez. Embutido nas quatro, cada jogador lia na própria
+// ficha as trocas das outras três. Fica só no compêndio (avulsas.mjs); o que a
+// ficha carrega é o pacote de clã.
+const NUCLEO = SENDA_TODAS.filter((a) => !a.nome.startsWith("A Senda Mandaloriana"));
 
 const acha = (nome) => {
   const c = classes.find((x) => x.nome === nome);
@@ -94,7 +100,7 @@ const SENDAS = [
       "Dano Crítico": "<p><em>Não escala nesta Senda: fica na faixa <strong>19–20</strong> e nunca chega ao ×3.</em></p>",
     },
     troca:
-      "<strong>Pilotar</strong>, <strong>Desarmar e Subjugar</strong> e o <strong>Dano Crítico</strong> param de progredir, e o Resol&rsquo;nare pede <strong>cinco</strong> votos em vez de três. Mantém os <em>Ataques Múltiplos</em> inteiros.",
+      "<strong>Pilotar</strong>, <strong>Desarmar e Subjugar</strong> e o <strong>Dano Crítico</strong> param de progredir, e o Resol&rsquo;nare pede <strong>cinco</strong> votos em vez de três.",
     // Cinco votos em vez de três, e um deles com nome e prazo.
     substitui: {
       "O Resol'nare":
@@ -103,8 +109,8 @@ const SENDAS = [
         "<p><em>É o guerreiro que carrega o Credo na frente do corpo — e o Credo cobra na frente.</em></p>",
     },
     nota:
-      "<p>&#9888; <strong>Correção da casa — esta Senda não custava nada.</strong> A tabela de trocas admitia em voz alta: <em>&ldquo;o pacote de clã inteiro, sem atrito nenhum&rdquo;</em>. As outras três pagam preço real — o Operativo congela o Ataque Furtivo, o Técnico perde o Desconto Tecnológico, o Sensível joga com o Foco de um nível abaixo. Só o Veterano levava cinco habilidades novas por meia habilidade antiga, o que tornava as três trilhas oficiais dele mecanicamente sem sentido.</p>" +
-      "<p><strong>O Resol&rsquo;nare do guerreiro também pesa mais.</strong> Onde as outras Sendas pedem três votos, a dele pede <strong>cinco</strong> — e um deles é sempre um <strong>dever de clã ativo</strong>, com nome e prazo: uma dívida de sangue a cobrar, um enjeitado para criar, um Sabre Sombrio para recuperar, um clã disperso para reunir. O Mestre é <strong>obrigado</strong> a cobrá-lo em cena ao menos uma vez por arco.</p>",
+      "<p class='nota-casa'>&#9888; <strong>Correção da casa — esta Senda não custava nada.</strong> A tabela de trocas admitia em voz alta: <em>&ldquo;o pacote de clã inteiro, sem atrito nenhum&rdquo;</em>. As outras três pagam preço real — o Operativo congela o Ataque Furtivo, o Técnico perde o Desconto Tecnológico, o Sensível joga com o Foco de um nível abaixo. Só o Veterano levava cinco habilidades novas por meia habilidade antiga, o que tornava as três trilhas oficiais dele mecanicamente sem sentido.</p>" +
+      "<p class='nota-casa'><strong>O Resol&rsquo;nare do guerreiro também pesa mais.</strong> Onde as outras Sendas pedem três votos, a dele pede <strong>cinco</strong> — e um deles é sempre um <strong>dever de clã ativo</strong>, com nome e prazo: uma dívida de sangue a cobrar, um enjeitado para criar, um Sabre Sombrio para recuperar, um clã disperso para reunir. O Mestre é <strong>obrigado</strong> a cobrá-lo em cena ao menos uma vez por arco.</p>",
   },
   {
     base: "Operativo",
@@ -134,7 +140,7 @@ const SENDAS = [
     troca:
       "perde o <strong>Desconto Tecnológico</strong> — o dever de clã rouba o tempo de barganha — e <strong>Desativar Droides</strong>: o Armeiro forja, não sabota.",
     nota:
-      "<p>&#11088; <strong>Repare no que isso significa.</strong> As três trilhas normais do Técnico abrem mão de <strong>Operar e Consertar Máquinas</strong>. A Senda Mandaloriana <strong>não</strong> — ela é a <strong>única especialização do Técnico que mantém a habilidade-assinatura da classe</strong>, e portanto o único Técnico especializado que ainda pilota e remenda tecnologia alheia. <em>(Desligar droides, não — isso ele entregou ao clã.)</em> Se a sua mesa sentia falta de um Técnico &ldquo;completo&rdquo; com trilha, é este.</p>",
+      "<p class='nota-casa'>&#11088; <strong>Repare no que isso significa.</strong> As três trilhas normais do Técnico abrem mão de <strong>Operar e Consertar Máquinas</strong>. A Senda Mandaloriana <strong>não</strong> — ela é a <strong>única especialização do Técnico que mantém a habilidade-assinatura da classe</strong>, e portanto o único Técnico especializado que ainda pilota e remenda tecnologia alheia. <em>(Desligar droides, não — isso ele entregou ao clã.)</em> Se a sua mesa sentia falta de um Técnico &ldquo;completo&rdquo; com trilha, é este.</p>",
   },
   {
     base: "Sensível à Força",
@@ -170,26 +176,77 @@ function congelada(hab, nota) {
   return { ...resto, desc: hab.desc + nota };
 }
 
+// Toda especialização deste compêndio traz na ficha SÓ o que é dela — o
+// Guardião não repete o motor do Sensível, o Mercenário não repete Pilotar.
+// As Sendas repetiam a classe-base inteira e chegavam a 14 habilidades contra
+// as 6 da irmã Guardião. Agora seguem a mesma regra: a ficha carrega o que a
+// Senda TOCA (congelou, trocou, substituiu), o pacote de clã e a Reputação —
+// que toda classe do compêndio traz. O que a Senda mantém intacto continua na
+// classe-base e é citado por nome na descrição.
+const REPUTACAO = "Reputação";
+
+// ── Equipamento: a Senda contradizia a própria ficha ─────────────────────────
+// As variantes herdavam equipment_restrictions da classe-base sem tocar. Com
+// isso o Herege de Armadura — cuja habilidade-assinatura é o Sangue de Beskar
+// — vinha com "Apenas Leve, sem escudo" e ficava proibido de vestir Beskar,
+// que é armadura MÉDIA. O mesmo com o Armeiro, que é quem a forja. E os dois
+// ganhavam "+1 no dano com armas de haste" por Treinamento de Clã sendo que a
+// linha de armas dizia "Nada Marcial" / "Sabre de luz e armas Leves".
+//
+// O Guardião já resolvia isto do jeito certo (sobrescreve a linha de armadura
+// e diz que é exceção deliberada). As Sendas passam a fazer o mesmo, e por
+// detecção: se a linha herdada já cobre o caso, nada é acrescentado.
+const CLAUSULA_BESKAR =
+  " <strong>Exceção da Senda:</strong> a <strong>Armadura Beskar</strong> (Média) é permitida — e só ela, entre as Médias. É o que o <em>Sangue de Beskar</em> pressupõe.";
+const CLAUSULA_ARSENAL =
+  " <strong>Exceção da Senda:</strong> soma o arsenal de clã — armas de <strong>haste</strong>, de <strong>arremesso</strong> e <strong>blasters</strong>, mais <strong>jetpack</strong> e capacete tático (<em>Treinamento de Clã</em>).";
+
+function equipDaSenda(base) {
+  const eq = base || {};
+  // "(O Guardião também usa Média — ver a especialização.)" é herdado do
+  // Sensível-base e não diz nada numa ficha de Senda.
+  const armors = (eq.armors || "").replace(/\s*\(O Guardião[^)]*\)\.?/, "").trim();
+  const weapons = (eq.weapons || "").trim();
+  return {
+    ...eq,
+    armors: /M[ée]dia/i.test(armors) ? armors : armors + CLAUSULA_BESKAR,
+    weapons: /qualquer arma/i.test(weapons) ? weapons : weapons + CLAUSULA_ARSENAL,
+  };
+}
+
 const sendas = SENDAS.map((cfg) => {
   const c = acha(cfg.base);
-  let habilidades = c.habilidades
-    .filter((h) => !(cfg.remove || []).includes(h.nome))
-    .map((h) => (cfg.congela && cfg.congela[h.nome] ? congelada(h, cfg.congela[h.nome]) : h));
+  const congela = cfg.congela || {};
+  const remove = cfg.remove || [];
+  const [saiTalento, entraTalento] = cfg.trocaTalento || [];
 
-  if (cfg.trocaTalento) {
-    const [sai, entra] = cfg.trocaTalento;
+  const tocada = (h) =>
+    !!congela[h.nome] || (saiTalento && !!h.rogue_talents) || h.nome === REPUTACAO;
+
+  const mantidas = c.habilidades
+    .filter((h) => !remove.includes(h.nome) && !tocada(h))
+    .map((h) => h.nome);
+
+  let habilidades = c.habilidades
+    .filter((h) => !remove.includes(h.nome) && tocada(h))
+    .map((h) => (congela[h.nome] ? congelada(h, congela[h.nome]) : h));
+
+  if (saiTalento) {
     habilidades = habilidades.map((h) =>
       h.rogue_talents
         ? {
             ...h,
-            rogue_talents: h.rogue_talents.map((t) => (t.key === sai ? T[entra] : t)),
+            rogue_talents: h.rogue_talents.map((t) => (t.key === saiTalento ? T[entraTalento] : t)),
             desc:
               h.desc +
-              `<p><em><strong>${T[entra].name}</strong> entra no lugar de <strong>${T[sai].name}</strong> e <strong>herda os pontos</strong> dele — quem tem mochila de propulsão não sobe parede na unha.</em></p>`,
+              `<p><em><strong>${T[entraTalento].name}</strong> entra no lugar de <strong>${T[saiTalento].name}</strong> e <strong>herda os pontos</strong> dele — quem tem mochila de propulsão não sobe parede na unha.</em></p>`,
           }
         : h
     );
   }
+
+  const lista = (nomes) =>
+    nomes.map((n) => `<strong>${n}</strong>`).join(", ").replace(/, ([^,]*)$/, " e $1");
 
   return {
     ...c,
@@ -199,14 +256,22 @@ const sendas = SENDAS.map((cfg) => {
     // "Veterano — Mercenário" e "Sensível à Força — Guardião".
     nome: `Senda Mandaloriana — ${cfg.nome}`,
     coluna: "especial", // a Senda ocupa o lugar da especialização
+    equipment_restrictions: equipDaSenda(c.equipment_restrictions),
     flavor: `<p>${cfg.subtitulo[0].toUpperCase()}${cfg.subtitulo.slice(1)}. <em>Senda Mandaloriana.</em></p>`,
     descricao:
       `<p><strong>A Senda Mandaloriana substitui a especialização</strong> desta classe: o personagem entra no Credo de um clã e passa a evoluir pela coluna <strong>XP Especial</strong>.</p>` +
       cfg.sabor +
       `<p><strong>O que este ${cfg.base} troca:</strong> ${cfg.troca}</p>` +
+      (mantidas.length
+        ? `<p><strong>Mantém do ${cfg.base}, ${mantidas.length > 1 ? "inteiras" : "inteira"}:</strong> ` +
+          `${lista(mantidas)}. ${mantidas.length > 1 ? "Não estão repetidas" : "Não está repetida"} ` +
+          `nesta ficha — leia na classe-base <em>${cfg.base}</em>.</p>`
+        : "") +
       (cfg.nota || "") +
-      `<p><em>Mandaloriano não é uma espécie, é uma cultura</em> — qualquer espécie pode trilhar a Senda. A Origem <strong>Filho de Mandalore</strong>, no compêndio de Espécies, é a porta de entrada (opcional).</p>` +
-      c.descricao,
+      `<p><em>Mandaloriano não é uma espécie, é uma cultura</em> — qualquer espécie pode trilhar a Senda. A Origem <strong>Filho de Mandalore</strong>, no compêndio de Espécies, é a porta de entrada (opcional).</p>`,
+    // NÃO anexa c.descricao: nenhuma outra especialização do compêndio repete o
+    // cartão da classe-base, e os números que importam (Vida, BA, JP, Créditos
+    // iniciais) já vêm nos campos estruturados que a ficha renderiza sozinha.
     habilidades: [
       ...habilidades,
       ...(cfg.extra || []),
@@ -214,7 +279,7 @@ const sendas = SENDAS.map((cfg) => {
         const troca = cfg.substitui && cfg.substitui[h.nome];
         return { ...h, folder: undefined, ...(troca ? { desc: troca } : {}) };
       }),
-    ],
+    ].sort((a, b) => (a.level ?? 1) - (b.level ?? 1)),
   };
 });
 

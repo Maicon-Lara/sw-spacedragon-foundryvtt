@@ -6,7 +6,7 @@
   "img": "systems/olddragon2e/assets/icons/melee.svg",
   "system": {
     "flavor": "<p>O soldado e o pistoleiro. <em>Especialização de Veterano.</em></p>",
-    "description": "<p>Stormtroopers de elite, mercenários, pistoleiros do submundo, soldados clones. A arma preferida vira extensão do corpo.</p><p><strong>Em relação ao Veterano-base:</strong> abre mão de <em>Pilotar</em> e <em>Desarmar e Subjugar</em> já no 1º nível — em troca, é quem mais crita na galáxia: <strong>18–20 e ×3 desde o 1º nível</strong>, subindo até ×5. E, a partir do 10º, <strong>suas Jogadas de Proteção param de evoluir</strong>.</p><p><em>Especialização escolhida no 1º nível (padrão OD2). Evolui pela coluna <strong>XP Especial</strong> da tabela. Variante: mesas que queiram preservar o espírito original do Space Dragon podem adiar a escolha para o 3º nível.</em></p>",
+    "description": "<p>Stormtroopers de elite, mercenários, pistoleiros do submundo, soldados clones. A arma preferida vira extensão do corpo.</p><p><strong>Em relação ao Veterano-base:</strong> abre mão de <em>Pilotar</em> e <em>Desarmar e Subjugar</em> já no 1º nível — em troca, é quem mais crita na galáxia: <strong>18–20 e ×3 desde o 1º nível</strong>, subindo até ×5. E, a partir do 10º, <strong>suas Jogadas de Proteção param de evoluir</strong>.</p><p><em>Especialização escolhida no 1º nível (padrão OD2). Evolui pela coluna <strong>XP Especial</strong> da tabela.</em></p>",
     "hp": 10,
     "high_level_hp_bonus": 1,
     "equipment_restrictions": {

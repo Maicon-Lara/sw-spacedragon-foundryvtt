@@ -5,7 +5,7 @@
   "_id": "nMal7xHJ3HH7sR3x",
   "img": "systems/olddragon2e/assets/icons/ranged.svg",
   "system": {
-    "description": "<p>Escolha <strong>uma arma</strong> — é a sua. Com ela, seus acertos críticos acontecem em <strong>18–20</strong> e o dano crítico é <strong>×3</strong>.</p><p>Com qualquer outra arma vale o <strong>Dano Crítico do Veterano</strong>: crítico em 19–20, dano dobrado.</p><p><em>Correção da casa: esta habilidade dava \"×2 na arma escolhida\", que é o padrão do OD2 restrito a uma arma — o próprio texto admitia que ela só ligava no 3º nível. Somada ao Dano Crítico ×2 herdado, a conta do 1º nível era: paga Pilotar e Desarmar, recebe nada. Agora a trilha nasce fazendo o que promete, e o <strong>Golpe Impiedoso</strong> do 3º nível foi absorvido aqui — a escada ficou ×3 → ×4 → ×5, sem degrau repetido nem degrau morto.</em></p>",
+    "description": "<p>Escolha <strong>uma arma</strong> — é a sua. Com ela, seus acertos críticos acontecem em <strong>18–20</strong> e o dano crítico é <strong>×3</strong>.</p><p>Com qualquer outra arma vale o <strong>Dano Crítico do Veterano</strong>: crítico em 19–20, dano dobrado.</p>",
     "level": 1,
     "level3": "",
     "level6": "",

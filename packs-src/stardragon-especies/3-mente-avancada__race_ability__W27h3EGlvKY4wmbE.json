@@ -5,7 +5,7 @@
   "_id": "W27h3EGlvKY4wmbE",
   "img": "systems/olddragon2e/assets/icons/brain.svg",
   "system": {
-    "description": "<p><em>Genótipo:</em> o cérebro é mais desenvolvido que o normal. <em>Fenótipo:</em> massa encefálica proeminente.</p><p><strong>+2 em JPS.</strong></p><p><em>Conversão: o livro somava a isto uma \"resistência mental de 5%\". O Old Dragon 2 não tem Resistência Mental — o bestiário deste cenário já manda tratar RD e RM como habilidade descrita. O que sobra, e é o que a mutação sempre quis dizer, é o bônus de JPS.</em></p>",
+    "description": "<p><em>Genótipo:</em> o cérebro é mais desenvolvido que o normal. <em>Fenótipo:</em> massa encefálica proeminente.</p><p><strong>+2 em JPS.</strong></p>",
     "xp": null,
     "jp": {
       "jpc": false,

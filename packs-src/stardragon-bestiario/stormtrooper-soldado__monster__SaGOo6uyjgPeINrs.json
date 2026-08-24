@@ -7,7 +7,7 @@
     "odo_id": "stormtrooper-soldado",
     "concept": "Humanoide",
     "size": "medio",
-    "description": "<p><strong>Tipo (fonte):</strong> PNJ com classe — Veterano de 1º nível</p>\n<p><em>Base no Space Dragon: Veterano Nível 1 (Cosmonauta).</em></p>\n<p>Use as <strong>criaturas-classe</strong> da Tabela 11-1 como gabarito e vista de Star Wars.</p>",
+    "description": "<p><strong>Tipo (fonte):</strong> PNJ com classe — Veterano de 1º nível</p>\n<p>Use as <strong>criaturas-classe</strong> da Tabela 11-1 como gabarito e vista de Star Wars.</p>",
     "dv": "1",
     "dv_bonus": "+1",
     "hp": {

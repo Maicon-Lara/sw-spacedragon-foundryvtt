@@ -5,7 +5,7 @@
   "_id": "fizsPhyNmhSmjCoF",
   "img": "systems/olddragon2e/assets/icons/melee.svg",
   "system": {
-    "description": "<p>A intimidade do Veterano com armas faz seus acertos certeiros saírem <strong>mais vezes</strong> — e, no fim da carreira, doerem mais. <strong>Seus acertos críticos acontecem em 19–20</strong>, e não só no 20 natural: o dobro da frequência de qualquer outro personagem da galáxia. O dano segue <strong>dobrado</strong>, como manda o OD2.</p><p><em>Correção da casa: este degrau dizia \"[1] dano ×2\" — e ×2 é o que o OD2 já dá a todo mundo (\"quando um acerto crítico ocorre, o dano da arma deve ser dobrado\", LB1 p. 92). Na prática a assinatura da classe marcial entregava <strong>nada</strong> até o 10º nível. A causa foi uma compressão de escala: no Space Dragon o Cosmonauta tinha uma coluna de crítico ao longo de 20 níveis (×2 do 1º ao 5º, chegando a ×5 no 18º), e lá o crítico-padrão rolava numa tabela de 1d6 com o multiplicador da classe somando por cima. Espremida para 15 níveis e pousada num sistema cujo crítico já é ×2 por definição, a base da escada afundou abaixo do piso. A correção troca o <strong>multiplicador</strong> pela <strong>faixa</strong>: o Veterano não bate mais forte no 1º nível — ele <strong>crita duas vezes mais</strong>. É a forma nativa do OD2 de dizer \"esta pessoa vive com uma arma na mão\", e o cenário já a usa em Mestre Makashi e no Tiro de Passagem. <strong>Variante:</strong> mesas que preferirem a leitura antiga podem devolver o 1º nível a \"dano ×2\" — sabendo que ele não muda nada.</em></p><p><em>Não escala nesta Senda: fica na faixa <strong>19–20</strong> e nunca chega ao ×3.</em></p>",
+    "description": "<p>A intimidade do Veterano com armas faz seus acertos certeiros saírem <strong>mais vezes</strong> — e, no fim da carreira, doerem mais. <strong>Seus acertos críticos acontecem em 19–20</strong>, e não só no 20 natural: o dobro da frequência de qualquer outro personagem da galáxia. O dano segue <strong>dobrado</strong>, como manda o OD2.</p><p><em>Não escala nesta Senda: fica na faixa <strong>19–20</strong> e nunca chega ao ×3.</em></p>",
     "level": 1,
     "level3": "",
     "level6": "",
@@ -42,7 +42,7 @@
     "lastModifiedBy": "swspacedragonbld",
     "exportSource": null
   },
-  "sort": 400000,
+  "sort": 300000,
   "ownership": {
     "default": 0
   },

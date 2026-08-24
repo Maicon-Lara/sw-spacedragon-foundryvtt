@@ -85,7 +85,7 @@ export const equipamentosJournal = {
             ["<strong>Grande</strong>", "<strong>Sempre</strong> as duas mãos. Não há como usá-la com uma"],
           ],
         ) +
-        "<p><em>É a regra de Porte do Space Dragon. O cenário herdou os rótulos Pequena/Média/Grande e a etiqueta Duas Mãos, mas nunca escreveu o que eles faziam. Ela dá uma opção real a quem precisa de uma mão livre: um Rifle Blaster empunhado numa mão só é −2, não é proibido.</em></p>" +
+        "<p class='nota-casa'><em>É a regra de Porte do Space Dragon. O cenário herdou os rótulos Pequena/Média/Grande e a etiqueta Duas Mãos, mas nunca escreveu o que eles faziam. Ela dá uma opção real a quem precisa de uma mão livre: um Rifle Blaster empunhado numa mão só é −2, não é proibido.</em></p>" +
         "<h2>Disponibilidade — o que a lei deixa você carregar</h2>" +
         "<p>Não muda nada em combate: muda <strong>onde você compra</strong> e <strong>o que acontece se um posto de controle te revistar</strong>.</p>" +
         tabela(
@@ -100,7 +100,7 @@ export const equipamentosJournal = {
           ],
         ) +
         "<p><strong>A regra, em uma frase:</strong> fora dos mundos de fronteira, portar item Restrito, Militar ou Ilegal <strong>de forma visível</strong> atrai a lei. Escondido, é um <strong>teste de Destreza</strong> contra a revista — Fácil se for pequeno, Difícil se for Grande, impossível se for uma armadura.</p>" +
-        "<p><em>Esta coluna é escolha de projeto, não conserto: não vem do Space Dragon, vem da adaptação \"Star Wars para Space Dragon\" de Jonas Picholaro (CC BY 3.0). Se a sua mesa achar burocrático, ignore a coluna inteira e nada mais quebra. Um desvio consciente da fonte: o Picholaro marca a pistola blaster pesada como Militar; aqui ela é Restrita, porque o Blaster Pesado de 300 CR é a arma do contrabandista, não a do exército.</em></p>",
+        "<p class='nota-casa'><em>Esta coluna é escolha de projeto, não conserto: não vem do Space Dragon, vem da adaptação \"Star Wars para Space Dragon\" de Jonas Picholaro (CC BY 3.0). Se a sua mesa achar burocrático, ignore a coluna inteira e nada mais quebra. Um desvio consciente da fonte: o Picholaro marca a pistola blaster pesada como Militar; aqui ela é Restrita, porque o Blaster Pesado de 300 CR é a arma do contrabandista, não a do exército.</em></p>",
     },
     {
       title: "Surpresa, emboscada e mexer no que não é seu",
@@ -120,7 +120,7 @@ export const equipamentosJournal = {
           ],
         ) +
         "<p><strong>Quem é surpreendido não age na primeira rodada e sofre −2 na CA até o fim dela.</strong></p>" +
-        "<p><em>Sobre o −2: no Space Dragon a penalidade era −5 de CP. Foi comprimida pela mesma proporção que o Estrela Dracônica usou ao converter os efeitos críticos de nave (−5 → −2, −10 → −1) — a escala de CA do OD2 é mais apertada que a de CP, e −5 numa CA de 13 é praticamente um acerto automático. −2 já faz a emboscada valer a pena sem transformá-la em execução.</em></p>" +
+        "<p class='nota-casa'><em>Sobre o −2: no Space Dragon a penalidade era −5 de CP. Foi comprimida pela mesma proporção que o Estrela Dracônica usou ao converter os efeitos críticos de nave (−5 → −2, −10 → −1) — a escala de CA do OD2 é mais apertada que a de CP, e −5 numa CA de 13 é praticamente um acerto automático. −2 já faz a emboscada valer a pena sem transformá-la em execução.</em></p>" +
         "<h2>Quando você mexe no que não é seu</h2>" +
         "<p>Três coisas neste cenário são exclusivas de uma classe — os <strong>talentos</strong> do Operativo, os <strong>aparatos</strong> fora da sua faixa e os <strong>feitos</strong> do Técnico. Isso não quer dizer que ninguém mais possa tentar; quer dizer que <strong>quem não é da área tenta mal</strong>.</p>" +
         tabela(
@@ -140,7 +140,7 @@ export const equipamentosJournal = {
             ],
           ],
         ) +
-        "<p><em>Esta regra existia no Space Dragon como porcentagem de aptidão tecnológica, e o Estrela Dracônica a converteu para 1 em 1d6 — mas o cenário nunca a repetiu, o que fazia parecer que a resposta era \"não pode\", quando a resposta certa é <strong>\"pode, mal, e provavelmente vai quebrar\"</strong>. É a diferença entre travar a cena e deixar o jogador tentar.</em></p>",
+        "<p class='nota-casa'><em>Esta regra existia no Space Dragon como porcentagem de aptidão tecnológica, e o Estrela Dracônica a converteu para 1 em 1d6 — mas o cenário nunca a repetiu, o que fazia parecer que a resposta era \"não pode\", quando a resposta certa é <strong>\"pode, mal, e provavelmente vai quebrar\"</strong>. É a diferença entre travar a cena e deixar o jogador tentar.</em></p>",
     },
     {
       title: "Serviços, despesas e contratação",
@@ -188,7 +188,7 @@ export const equipamentosJournal = {
           ],
         ) +
         "<p><strong>Contratado não é seguidor.</strong> Os <strong>seguidores</strong> do Emissário e do Contrabandista são leais por vínculo e limitados pelo Carisma; estes aqui são <strong>pagos</strong>, e param de aparecer no dia em que o pagamento para. Contam à parte.</p>" +
-        "<p><em>Duas fontes: a tabela de tripulação vem dos serviços de estação espacial do Space Dragon (T10-8), pela régua ÷100. A de vida cotidiana e transporte vem da adaptação de Jonas Picholaro (CC BY 3.0), reescalada — os valores originais pressupunham uma pistola blaster a 500 CR, e aqui ela custa 150. O período de contratação (por mês) é leitura da casa: o livro traz o preço e não diz o prazo.</em></p>",
+        "<p class='nota-casa'><em>Duas fontes: a tabela de tripulação vem dos serviços de estação espacial do Space Dragon (T10-8), pela régua ÷100. A de vida cotidiana e transporte vem da adaptação de Jonas Picholaro (CC BY 3.0), reescalada — os valores originais pressupunham uma pistola blaster a 500 CR, e aqui ela custa 150. O período de contratação (por mês) é leitura da casa: o livro traz o preço e não diz o prazo.</em></p>",
     },
   ],
 };

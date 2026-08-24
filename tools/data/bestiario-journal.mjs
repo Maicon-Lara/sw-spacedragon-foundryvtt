@@ -104,7 +104,7 @@ export const bestiarioJournal = {
           ["5", "<strong>Aparato defensivo</strong> — traje, cinto, gerador de escudo"],
           ["6", "<strong>Aparato ofensivo</strong>, ou uma <strong>relíquia tecnológica</strong> se a criatura for antiga, guardiã de ruína ou grande demais"],
         ]) +
-        "<p><em>Por que isso importa mais em Star Wars do que parece: o covil de uma fera é o único lugar da galáxia onde tecnologia aparece <strong>sem dono e sem preço</strong> — foi o caçador anterior que morreu tentando. É o que transforma \"matamos o Krayt\" em \"achamos o que o Krayt tinha comido\", e a <strong>pérola do dragão Krayt</strong> é literalmente isto no cânone.</em></p>",
+        "<p class='nota-casa'><em>Por que isso importa mais em Star Wars do que parece: o covil de uma fera é o único lugar da galáxia onde tecnologia aparece <strong>sem dono e sem preço</strong> — foi o caçador anterior que morreu tentando. É o que transforma \"matamos o Krayt\" em \"achamos o que o Krayt tinha comido\", e a <strong>pérola do dragão Krayt</strong> é literalmente isto no cânone.</em></p>",
     },
     {
       title: "Modelos de PNJ — as classes como inimigos",

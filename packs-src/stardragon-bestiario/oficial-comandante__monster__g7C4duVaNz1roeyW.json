@@ -7,7 +7,7 @@
     "odo_id": "oficial-comandante",
     "concept": "Humanoide",
     "size": "medio",
-    "description": "<p><strong>Tipo (fonte):</strong> PNJ com classe — Veterano de 5º nível</p>\n<ul>\n  <li><p><strong>Comanda tropas</strong></p></li>\n</ul>\n<p><em>Base no Space Dragon: Veterano Nível 5 (Cosmonauta).</em></p>",
+    "description": "<p><strong>Tipo (fonte):</strong> PNJ com classe — Veterano de 5º nível</p>\n<ul>\n  <li><p><strong>Comanda tropas</strong></p></li>\n</ul>",
     "dv": "5",
     "dv_bonus": "+5",
     "hp": {

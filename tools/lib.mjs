@@ -702,10 +702,38 @@ export function itemUuid(packName, itemId) {
 }
 
 // Escreve os documentos de um pack como arquivos JSON-fonte (um por documento).
+// ── Notas da casa ───────────────────────────────────────────────────────────
+// A prosa que explica POR QUE um número saiu diferente do livro ("Correção da
+// casa", "de onde veio a ideia", o de-para com o Space Dragon) é documentação
+// de conversão: serve a quem mantém o repositório, não a quem está jogando.
+// Ela vive marcada como <p class='nota-casa'> nos arquivos de tools/data/ e é
+// removida aqui, no único ponto por onde todo doc passa antes de virar pack.
+//
+// Mesma convenção do compêndio em Markdown do cofre, cujo build_docx.py corta
+// os blocos "Correção da casa" antes de distribuir.
+//
+// Para gerar o módulo COM as notas:  NOTAS_CASA=1 npm run build
+const MANTER_NOTAS = process.env.NOTAS_CASA === "1";
+const RE_NOTA = /(?:<hr\s*\/?>)?\s*<p class='nota-casa'>[\s\S]*?<\/p>/g;
+
+function limpaNotas(valor) {
+  if (typeof valor === "string") {
+    return valor.includes("class='nota-casa'") ? valor.replace(RE_NOTA, "") : valor;
+  }
+  if (Array.isArray(valor)) return valor.map(limpaNotas);
+  if (valor && typeof valor === "object") {
+    const o = {};
+    for (const [k, v] of Object.entries(valor)) o[k] = limpaNotas(v);
+    return o;
+  }
+  return valor;
+}
+
 export function writeSource(srcDir, docs) {
   fs.rmSync(srcDir, { recursive: true, force: true });
   fs.mkdirSync(srcDir, { recursive: true });
-  for (const doc of docs) {
+  for (const bruto of docs) {
+    const doc = MANTER_NOTAS ? bruto : limpaNotas(bruto);
     const kind = doc._key.startsWith("!folders!") ? "folder" : doc.type || "doc";
     const fname = `${slug(doc.name)}__${kind}__${doc._id}.json`;
     fs.writeFileSync(

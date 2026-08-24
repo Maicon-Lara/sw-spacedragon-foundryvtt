@@ -5,7 +5,7 @@
   "_id": "3v9ltZjh5U0gf8n5",
   "img": "systems/olddragon2e/assets/icons/kit.svg",
   "system": {
-    "description": "<p>Os críticos com a arma escolhida passam a <strong>×5</strong>, e o <strong>Golpe Certeiro</strong> passa a valer para os <strong>dois</strong> ataques do turno, com a chance melhorada de <strong>1-4 em 1d6</strong> — uma jogada para cada ataque. A cláusula de falha continua de pé: errar a jogada encerra o turno na hora.</p><p>E, a partir daqui, <strong>suas Jogadas de Proteção param de evoluir</strong> — é o preço de ter dado a vida inteira a uma arma só.</p><p><em>Correção da casa: no Space Dragon o congelamento de JP caía no 10º de 20 níveis e custava 3 pontos. Herdado no 6º de uma escala de 15, passou a custar 8 — JP travada em 8 contra os 16 de todo mundo — por dois terços da carreira, o que fazia dele a habilidade mais cara do livro apresentada como upgrade. Movido para o 10º, volta a valer metade da carreira e chega junto com o prêmio. <strong>Variante:</strong> devolva-o ao 6º nível se quiser a versão dura.</em></p>",
+    "description": "<p>Os críticos com a arma escolhida passam a <strong>×5</strong>, e o <strong>Golpe Certeiro</strong> passa a valer para os <strong>dois</strong> ataques do turno, com a chance melhorada de <strong>1-4 em 1d6</strong> — uma jogada para cada ataque. A cláusula de falha continua de pé: errar a jogada encerra o turno na hora.</p><p>E, a partir daqui, <strong>suas Jogadas de Proteção param de evoluir</strong> — é o preço de ter dado a vida inteira a uma arma só.</p>",
     "level": 10,
     "level3": "",
     "level6": "",

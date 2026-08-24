@@ -7,7 +7,7 @@
     "odo_id": "krayt-maior",
     "concept": "Dragão",
     "size": "colossal",
-    "description": "<p><strong>Tipo (fonte):</strong> Dragão</p>\n<p>Variação anciã do <strong>Dragão Krayt</strong>. Um no coração de uma tempestade de areia vale uma campanha inteira.</p>\n<ul>\n  <li><p><strong>Perlas de dragão</strong>: guarda <strong>perlas de dragão</strong> como tesouro.</p></li>\n</ul>\n<p><em>Base no Space Dragon: Dragão Terraniano Ancião.</em></p>",
+    "description": "<p><strong>Tipo (fonte):</strong> Dragão</p>\n<p>Variação anciã do <strong>Dragão Krayt</strong>. Um no coração de uma tempestade de areia vale uma campanha inteira.</p>\n<ul>\n  <li><p><strong>Perlas de dragão</strong>: guarda <strong>perlas de dragão</strong> como tesouro.</p></li>\n</ul>",
     "variant": true,
     "dv": "24",
     "dv_bonus": "+10",
