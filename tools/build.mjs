@@ -58,11 +58,21 @@ function agrupaAvulsas(docs, lista, seed, build) {
 function buildClassesDocs() {
   const docs = [];
   for (const cls of [...classes, ...variantes]) {
-    const folder = folderDoc(cls.nome, "Item", "classes");
+    // O item da classe mostra só a especialização: "Espião", não
+    // "Operativo — Espião". A pasta já dizia isso — aninhaPastas() monta
+    // Operativo › Espião e o prefixo no item era repetição.
+    //
+    // PASTAS E _id CONTINUAM NO NOME COMPLETO. O aninhamento depende do
+    // padrão "Pai — Filho" no nome da pasta, e os _id são semeados por ele:
+    // encurtar o seed trocaria o UUID de todas as classes e habilidades e
+    // quebraria as fichas já montadas.
+    const nomeCompleto = cls.nome;
+    const nomeCurto = nomeCompleto.split(" — ").pop();
+    const folder = folderDoc(nomeCompleto, "Item", "classes");
     docs.push(folder);
     const abilityUuids = [];
     cls.habilidades.forEach((ab, i) => {
-      const doc = classAbilityDoc(ab, folder._id, cls.nome, (i + 1) * 100000);
+      const doc = classAbilityDoc(ab, folder._id, nomeCompleto, (i + 1) * 100000);
       docs.push(doc);
       abilityUuids.push(itemUuid(CLASSES_PACK, doc._id));
     });
@@ -73,7 +83,7 @@ function buildClassesDocs() {
       const outra = progressao(cls.baDe, cls.coluna);
       for (const lvl of Object.keys(levels)) levels[lvl].ba = outra[lvl].ba;
     }
-    docs.push(classDoc({ ...cls, levels }, folder._id, abilityUuids));
+    docs.push(classDoc({ ...cls, nome: nomeCurto, seedNome: nomeCompleto, levels }, folder._id, abilityUuids));
   }
   // Formas de Sabre e pacote de clã: habilidades escolhidas à parte.
   agrupaAvulsas(docs, classAbilitiesAvulsas, "classes", classAbilityDoc);

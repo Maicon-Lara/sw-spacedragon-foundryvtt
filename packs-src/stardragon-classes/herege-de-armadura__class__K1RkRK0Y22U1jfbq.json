@@ -1,17 +1,17 @@
 {
   "folder": "PLFT3BYTLZ2DRsX5",
-  "name": "Senda Mandaloriana — Herege de Armadura",
+  "name": "Herege de Armadura",
   "type": "class",
   "_id": "K1RkRK0Y22U1jfbq",
-  "img": "systems/olddragon2e/assets/icons/legiao-shield.svg",
+  "img": "systems/olddragon2e/assets/icons/level-up.svg",
   "system": {
     "flavor": "<p>O Sensível na Senda. <em>Senda Mandaloriana.</em></p>",
     "description": "<p><strong>A Senda Mandaloriana substitui a especialização</strong> desta classe: o personagem entra no Credo de um clã e passa a evoluir pela coluna <strong>XP Especial</strong>.</p><p>A mistura lendária: o <strong>Sangue de Beskar</strong> protege contra o próprio sabre, e o resultado é o Mandaloriano que encara um Jedi sem temer a lâmina.</p><p><strong>O que este Sensível à Força troca:</strong> o <strong>Foco cai um nível</strong> e o <strong>Teto de Grandeza para na 6ª</strong>. Em troca, o clã lhe ensina <strong>uma Forma de Sabre</strong>, que nenhum Sensível sem Senda tem, e a Beskar que o protege da lâmina inimiga.</p><p><strong>Mantém do Sensível à Força, inteiras:</strong> <strong>Poderes da Força</strong>, <strong>Duelo da Força</strong>, <strong>Aprender Poderes da Força</strong>, <strong>O Caminho: Luz e Sombra</strong>, <strong>Corrupção — Queda e Redenção</strong> e <strong>A Tentação — a Corrupção como moeda</strong>. Não estão repetidas nesta ficha — leia na classe-base <em>Sensível à Força</em>.</p><p><em>Mandaloriano não é uma espécie, é uma cultura</em> — qualquer espécie pode trilhar a Senda. A Origem <strong>Filho de Mandalore</strong>, no compêndio de Espécies, é a porta de entrada (opcional).</p>",
     "hp": 8,
     "high_level_hp_bonus": 1,
     "equipment_restrictions": {
-      "weapons": "Sabre de luz e armas Leves. <strong>Exceção da Senda:</strong> soma o arsenal de clã — armas de <strong>haste</strong>, de <strong>arremesso</strong> e <strong>blasters</strong>, mais <strong>jetpack</strong> e capacete tático (<em>Treinamento de Clã</em>).",
-      "armors": "Apenas Leve, sem escudo. <strong>Exceção da Senda:</strong> a <strong>Armadura Beskar</strong> (Média) é permitida — e só ela, entre as Médias. É o que o <em>Sangue de Beskar</em> pressupõe.",
+      "weapons": "Sabre de luz e armas Leves. Exceção da Senda: soma o arsenal de clã — armas de haste, de arremesso e blasters, mais jetpack e capacete tático (Treinamento de Clã).",
+      "armors": "Apenas Leve, sem escudo. Exceção da Senda: a Armadura Beskar (Média) é permitida — e só ela, entre as Médias. É o que o Sangue de Beskar pressupõe.",
       "magic_items": "Apenas aparatos utilitários. Construir e operar qualquer aparato é o nicho do Técnico."
     },
     "restrictions": {

@@ -364,9 +364,26 @@ export function classAbilityDoc(ability, folderId, seedPrefix, sort) {
   };
 }
 
+// A ficha do OD2 renderiza equipment_restrictions como TEXTO, não HTML: uma
+// tag aqui chega crua ao jogador ("<strong>Exceção...</strong>" escrito na
+// ficha). Falha o build em vez de publicar isso.
+function textoPuro(cls, campo) {
+  const v = cls.equipment_restrictions?.[campo] ?? "Sem restrições.";
+  if (/<[a-z/][^>]*>/i.test(v)) {
+    throw new Error(
+      `equipment_restrictions.${campo} de "${cls.nome}" tem HTML — este campo é texto puro:
+  ${v}`
+    );
+  }
+  return v;
+}
+
 // Item do tipo class.
 export function classDoc(cls, folderId, abilityUuids) {
-  const id = makeId(`class:${cls.nome}`);
+  // `seedNome` é o nome COMPLETO ("Operativo — Espião"); `nome` é o que o
+  // jogador lê na ficha ("Espião"). O _id continua semeado pelo completo para
+  // que encurtar o rótulo não troque o UUID de nenhuma classe já em uso.
+  const id = makeId(`class:${cls.seedNome ?? cls.nome}`);
   return {
     folder: folderId,
     name: cls.nome,
@@ -379,9 +396,9 @@ export function classDoc(cls, folderId, abilityUuids) {
       hp: cls.dv ?? null,
       high_level_hp_bonus: cls.high_level_hp_bonus ?? null,
       equipment_restrictions: {
-        weapons: cls.equipment_restrictions?.weapons ?? "Sem restrições.",
-        armors: cls.equipment_restrictions?.armors ?? "Sem restrições.",
-        magic_items: cls.equipment_restrictions?.magic_items ?? "Sem restrições.",
+        weapons: textoPuro(cls, "weapons"),
+        armors: textoPuro(cls, "armors"),
+        magic_items: textoPuro(cls, "magic_items"),
       },
       restrictions: {
         // O sistema olddragon2e lê estes campos como UMA string separada por

@@ -1,12 +1,12 @@
 {
-  "folder": "uT7QdDBC3uUdPsGI",
-  "name": "Operativo — Assassino",
+  "folder": "YUxJyKoIrlUKBrZp",
+  "name": "Espião",
   "type": "class",
-  "_id": "H8K5v1ve3biJOw4O",
+  "_id": "szFsBtHEBUE7y7FJ",
   "img": "systems/olddragon2e/assets/icons/bag.svg",
   "system": {
-    "flavor": "<p>A lâmina do submundo. <em>Especialização de Operativo.</em></p>",
-    "description": "<p>Matadores da Aurora Negra, agentes de eliminação do submundo.</p><p><strong>Perde Percepção e Ataque Furtivo</strong> (substituído pelo Golpe Fatal).</p><p><em>Especialização escolhida no 1º nível (padrão OD2). Evolui pela coluna <strong>XP Especial</strong> da tabela.</em></p>",
+    "flavor": "<p>O agente de inteligência. <em>Especialização de Operativo.</em></p>",
+    "description": "<p>Cassian Andor, Fulcrum, agentes do ISB. Leal a uma organização ou governo.</p><p><strong>Perde Ataque Furtivo</strong>, mas <strong>mantém Percepção</strong>. <strong>Substituição de talentos:</strong> <em>Disfarce</em> substitui <em>Furtar</em> e <em>Obter Informação</em> substitui <em>Escalar</em> — ambos herdam os pontos do talento substituído e evoluem junto com os demais.</p><p><em>Especialização escolhida no 1º nível (padrão OD2). Evolui pela coluna <strong>XP Especial</strong> da tabela.</em></p>",
     "hp": 6,
     "high_level_hp_bonus": 1,
     "equipment_restrictions": {
@@ -95,11 +95,12 @@
       }
     },
     "class_abilities": [
-      "Compendium.stardragon.stardragon-classes.Item.pDqkT5asNFFCVtoT",
-      "Compendium.stardragon.stardragon-classes.Item.nYftEiBINRQjVA7n",
-      "Compendium.stardragon.stardragon-classes.Item.5Ige8TBVP8RR6Obb",
-      "Compendium.stardragon.stardragon-classes.Item.B5ClNKNocQGiH32d",
-      "Compendium.stardragon.stardragon-classes.Item.kAwa0kJl0cKEzStH"
+      "Compendium.stardragon.stardragon-classes.Item.TNHBFXh8DXmXbAqP",
+      "Compendium.stardragon.stardragon-classes.Item.CSNghCPrqCKhNpay",
+      "Compendium.stardragon.stardragon-classes.Item.9tRsQTWCxw74L0IH",
+      "Compendium.stardragon.stardragon-classes.Item.ZfAHzyV7Xa4TNpl0",
+      "Compendium.stardragon.stardragon-classes.Item.AyJSxUQftQGQQrS9",
+      "Compendium.stardragon.stardragon-classes.Item.NdBHwD5s4N4C6yFe"
     ]
   },
   "effects": [],
@@ -119,5 +120,5 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!items!H8K5v1ve3biJOw4O"
+  "_key": "!items!szFsBtHEBUE7y7FJ"
 }

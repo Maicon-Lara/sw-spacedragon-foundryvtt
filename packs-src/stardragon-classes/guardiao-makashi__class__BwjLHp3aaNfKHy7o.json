@@ -1,12 +1,12 @@
 {
-  "folder": "ojACSqA12gZPBeW3",
-  "name": "Sensível à Força — Guardião (Niman)",
+  "folder": "alWGBvnqIyv2v8Is",
+  "name": "Guardião (Makashi)",
   "type": "class",
-  "_id": "rfprpJG9k0b4ITsA",
+  "_id": "BwjLHp3aaNfKHy7o",
   "img": "systems/olddragon2e/assets/icons/slashing.svg",
   "system": {
-    "flavor": "<p>O Jedi/Sith de sabre, na Forma <strong>Niman</strong>. <em>Especialização de Sensível à Força.</em></p>",
-    "description": "<p>Obi-Wan, Anakin, Ahsoka, Darth Maul, Darth Vader. A Força serve à lâmina.</p><p>Troca a amplitude do poder pela maestria da lâmina. Com o d8 da base, encara a linha de frente.</p><p><strong>Troca:</strong> seu <strong>teto de Grandeza passa a ser a 6ª</strong> — os feitos lendários (7ª a 10ª) ficam para os conjuradores. A lâmina cobra o preço da profundidade.</p><p><strong>Formas de Sabre:</strong> a Forma escolhida no 3º nível é sua <strong>Forma Mestra</strong> e progride inteira ([3]/[6]/[10]). No <strong>10º</strong> você aprende uma <strong>segunda Forma</strong> (até o [6]) e passa a poder <strong>trocar de Forma em combate</strong> gastando 1 turno; no <strong>15º</strong>, uma <strong>terceira</strong> (até o [3]) e a <em>Guarda Fluida</em>. Ver a habilidade <strong>Mudar de Guarda</strong>.</p><p><em>Especialização escolhida no 1º nível (padrão OD2). Evolui pela coluna <strong>XP Especial</strong> da tabela.</em></p><p><strong>As Sendas não têm restrição de alinhamento</strong> — e, desde ago/2026, <strong>nenhuma trilha deste cenário tem</strong>. O Sensível foi só o primeiro a ser solto.</p><p><strong>Esta variante já traz a Forma Niman embutida</strong> — arraste-a para a ficha e a Forma vem junto, com as evoluções de 3º, 6º e 10º nível. Se quiser trocar de Forma depois, use a versão genérica da classe e adicione a Forma pelo compêndio <em>Formas de Sabre</em>.</p>",
+    "flavor": "<p>O Jedi/Sith de sabre, na Forma <strong>Makashi</strong>. <em>Especialização de Sensível à Força.</em></p>",
+    "description": "<p>Obi-Wan, Anakin, Ahsoka, Darth Maul, Darth Vader. A Força serve à lâmina.</p><p>Troca a amplitude do poder pela maestria da lâmina. Com o d8 da base, encara a linha de frente.</p><p><strong>Troca:</strong> seu <strong>teto de Grandeza passa a ser a 6ª</strong> — os feitos lendários (7ª a 10ª) ficam para os conjuradores. A lâmina cobra o preço da profundidade.</p><p><strong>Formas de Sabre:</strong> a Forma escolhida no 3º nível é sua <strong>Forma Mestra</strong> e progride inteira ([3]/[6]/[10]). No <strong>10º</strong> você aprende uma <strong>segunda Forma</strong> (até o [6]) e passa a poder <strong>trocar de Forma em combate</strong> gastando 1 turno; no <strong>15º</strong>, uma <strong>terceira</strong> (até o [3]) e a <em>Guarda Fluida</em>. Ver a habilidade <strong>Mudar de Guarda</strong>.</p><p><em>Especialização escolhida no 1º nível (padrão OD2). Evolui pela coluna <strong>XP Especial</strong> da tabela.</em></p><p><strong>As Sendas não têm restrição de alinhamento</strong> — e, desde ago/2026, <strong>nenhuma trilha deste cenário tem</strong>. O Sensível foi só o primeiro a ser solto.</p><p><strong>Esta variante já traz a Forma Makashi embutida</strong> — arraste-a para a ficha e a Forma vem junto, com as evoluções de 3º, 6º e 10º nível. Se quiser trocar de Forma depois, use a versão genérica da classe e adicione a Forma pelo compêndio <em>Formas de Sabre</em>.</p>",
     "hp": 8,
     "high_level_hp_bonus": 1,
     "equipment_restrictions": {
@@ -97,12 +97,12 @@
       }
     },
     "class_abilities": [
-      "Compendium.stardragon.stardragon-classes.Item.0MhjxhVNpmWJgP3w",
-      "Compendium.stardragon.stardragon-classes.Item.n1LwqliicAe0YLAt",
-      "Compendium.stardragon.stardragon-classes.Item.1GQr97J393ywEB4Z",
-      "Compendium.stardragon.stardragon-classes.Item.aWG0C8pqiaJbyVVP",
-      "Compendium.stardragon.stardragon-classes.Item.TJHfW7VGG2tsvuEd",
-      "Compendium.stardragon.stardragon-classes.Item.LOonlalDGJeYYWcX"
+      "Compendium.stardragon.stardragon-classes.Item.X8Lq2TjE8VTEpdU5",
+      "Compendium.stardragon.stardragon-classes.Item.bQKSUHNhzewTFy28",
+      "Compendium.stardragon.stardragon-classes.Item.CnPH9KOBgPTjXfeH",
+      "Compendium.stardragon.stardragon-classes.Item.HDafHMQEqpvkeZ1c",
+      "Compendium.stardragon.stardragon-classes.Item.NCDjloL7eWW8Csoy",
+      "Compendium.stardragon.stardragon-classes.Item.nyi7egTmdBRiPB59"
     ]
   },
   "effects": [],
@@ -122,5 +122,5 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!items!rfprpJG9k0b4ITsA"
+  "_key": "!items!BwjLHp3aaNfKHy7o"
 }

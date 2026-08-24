@@ -1,12 +1,12 @@
 {
-  "folder": "xGgOVFDYQfdltwI9",
-  "name": "Operativo — Contrabandista",
+  "folder": "MUhBVJTAHfUC55UA",
+  "name": "Sabotador",
   "type": "class",
-  "_id": "9CMAGVyY9UB7UW9u",
+  "_id": "oG3MaDY8wJHKCdrC",
   "img": "systems/olddragon2e/assets/icons/bag.svg",
   "system": {
-    "flavor": "<p>O malandro espacial. <em>Especialização de Operativo — base: Pirata Espacial.</em></p>",
-    "description": "<p>Hondo Ohnaka, os capitães do Cartel, o próprio Han em modo pirataria.</p><p><strong>Perde Percepção e Ataque Furtivo</strong>; ganha pilotagem e uma lista de talentos própria.</p><p><strong>Seguidores.</strong> Onde uma habilidade falar em \"seu número máximo de seguidores\", vale: <strong>Número Máximo de Seguidores = 1 + modificador de Carisma</strong> (mínimo <strong>1</strong>). Carisma 9-12 → 1 seguidor · 13-14 → 2 · 15-16 → 3 · 17-18 → 4 · 19-20 → 5. São companheiros leais <strong>por vínculo</strong>, não contratados — subalternos e mercenários pagos entram pelo limite de contratação de ajudantes do OD2 (LB1, p. 78) e contam à parte.</p><p><em>Especialização escolhida no 1º nível (padrão OD2). Evolui pela coluna <strong>XP Especial</strong> da tabela.</em></p>",
+    "flavor": "<p>Demolições e armadilhas. <em>Especialização de Operativo.</em></p>",
+    "description": "<p>Demolicionistas rebeldes, saboteurs de bases imperiais.</p><p><strong>Para de progredir</strong> em <em>Furtar</em> e em <em>Ataque Furtivo</em>.</p><p><em>Especialização escolhida no 1º nível (padrão OD2). Evolui pela coluna <strong>XP Especial</strong> da tabela.</em></p>",
     "hp": 6,
     "high_level_hp_bonus": 1,
     "equipment_restrictions": {
@@ -95,12 +95,12 @@
       }
     },
     "class_abilities": [
-      "Compendium.stardragon.stardragon-classes.Item.CzW4T2jMu9EBzpiB",
-      "Compendium.stardragon.stardragon-classes.Item.DxjYrDGXvBkhdeYH",
-      "Compendium.stardragon.stardragon-classes.Item.GsOpZhpMFkXb9Rvu",
-      "Compendium.stardragon.stardragon-classes.Item.HqSUfH7smEFv4Fpf",
-      "Compendium.stardragon.stardragon-classes.Item.BIupog8ihz3vkhxD",
-      "Compendium.stardragon.stardragon-classes.Item.u5JvTFYPQCcqmh0Z"
+      "Compendium.stardragon.stardragon-classes.Item.DYBREZoEsMs2CoDG",
+      "Compendium.stardragon.stardragon-classes.Item.WE6pvoOzY1EMSt3Y",
+      "Compendium.stardragon.stardragon-classes.Item.6taatat3AYLCnAXF",
+      "Compendium.stardragon.stardragon-classes.Item.FqPcLdPMPdHhzt7t",
+      "Compendium.stardragon.stardragon-classes.Item.6yZF73hW4K28Wur5",
+      "Compendium.stardragon.stardragon-classes.Item.2AE46MjHll9S8NkU"
     ]
   },
   "effects": [],
@@ -120,5 +120,5 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!items!9CMAGVyY9UB7UW9u"
+  "_key": "!items!oG3MaDY8wJHKCdrC"
 }

@@ -1,12 +1,12 @@
 {
-  "folder": "MUhBVJTAHfUC55UA",
-  "name": "Operativo — Sabotador",
+  "folder": "uT7QdDBC3uUdPsGI",
+  "name": "Assassino",
   "type": "class",
-  "_id": "oG3MaDY8wJHKCdrC",
+  "_id": "H8K5v1ve3biJOw4O",
   "img": "systems/olddragon2e/assets/icons/bag.svg",
   "system": {
-    "flavor": "<p>Demolições e armadilhas. <em>Especialização de Operativo.</em></p>",
-    "description": "<p>Demolicionistas rebeldes, saboteurs de bases imperiais.</p><p><strong>Para de progredir</strong> em <em>Furtar</em> e em <em>Ataque Furtivo</em>.</p><p><em>Especialização escolhida no 1º nível (padrão OD2). Evolui pela coluna <strong>XP Especial</strong> da tabela.</em></p>",
+    "flavor": "<p>A lâmina do submundo. <em>Especialização de Operativo.</em></p>",
+    "description": "<p>Matadores da Aurora Negra, agentes de eliminação do submundo.</p><p><strong>Perde Percepção e Ataque Furtivo</strong> (substituído pelo Golpe Fatal).</p><p><em>Especialização escolhida no 1º nível (padrão OD2). Evolui pela coluna <strong>XP Especial</strong> da tabela.</em></p>",
     "hp": 6,
     "high_level_hp_bonus": 1,
     "equipment_restrictions": {
@@ -95,12 +95,11 @@
       }
     },
     "class_abilities": [
-      "Compendium.stardragon.stardragon-classes.Item.DYBREZoEsMs2CoDG",
-      "Compendium.stardragon.stardragon-classes.Item.WE6pvoOzY1EMSt3Y",
-      "Compendium.stardragon.stardragon-classes.Item.6taatat3AYLCnAXF",
-      "Compendium.stardragon.stardragon-classes.Item.FqPcLdPMPdHhzt7t",
-      "Compendium.stardragon.stardragon-classes.Item.6yZF73hW4K28Wur5",
-      "Compendium.stardragon.stardragon-classes.Item.2AE46MjHll9S8NkU"
+      "Compendium.stardragon.stardragon-classes.Item.pDqkT5asNFFCVtoT",
+      "Compendium.stardragon.stardragon-classes.Item.nYftEiBINRQjVA7n",
+      "Compendium.stardragon.stardragon-classes.Item.5Ige8TBVP8RR6Obb",
+      "Compendium.stardragon.stardragon-classes.Item.B5ClNKNocQGiH32d",
+      "Compendium.stardragon.stardragon-classes.Item.kAwa0kJl0cKEzStH"
     ]
   },
   "effects": [],
@@ -120,5 +119,5 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!items!oG3MaDY8wJHKCdrC"
+  "_key": "!items!H8K5v1ve3biJOw4O"
 }

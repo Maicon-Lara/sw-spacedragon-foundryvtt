@@ -6,6 +6,33 @@ começou junto com o rename.
 
 ---
 
+## 1.2.2 — 24/08/2026
+
+### As restrições de equipamento apareciam com as tags cruas
+
+`equipment_restrictions` é renderizado pela ficha do OD2 como **texto**, não
+HTML. A cláusula que a 1.2.1 acrescentou às Sendas vinha com `<strong>`, e o
+jogador lia `<strong>Exceção da Senda:</strong>` escrito na ficha. Reescrita em
+texto puro.
+
+O build agora **falha** se qualquer classe puser uma tag nesse campo, em vez de
+publicar o erro.
+
+### O item da classe mostra só a especialização
+
+`Operativo — Espião` virou **`Espião`**. O prefixo era repetição: a pasta já diz
+`Operativo › Espião`, e o *flavor* logo abaixo do título continua dizendo
+*"Especialização de Operativo"*. Vale para as 25 especializações, incluindo as
+Sendas (`Guerreiro de Clã`, `Armeiro`…) e as Formas (`Guardião (Ataru)`).
+
+**Nenhum UUID mudou** — 620 documentos antes, 620 depois, zero criados, zero
+removidos. As pastas e os `_id` continuam semeados pelo nome completo: o
+aninhamento depende do padrão `Pai — Filho` no nome da pasta, e trocar o seed
+renomearia todas as classes e habilidades e quebraria as fichas já montadas.
+Só o rótulo do item encurtou, então **não precisa reinstalar nem re-arrastar**.
+
+---
+
 ## 1.2.1 — 24/08/2026
 
 ### As Sendas estavam fora do padrão do próprio compêndio

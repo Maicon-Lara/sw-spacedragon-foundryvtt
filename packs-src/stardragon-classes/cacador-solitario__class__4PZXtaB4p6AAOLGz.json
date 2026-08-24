@@ -1,16 +1,16 @@
 {
   "folder": "i4sKquBGYJPn0eBe",
-  "name": "Senda Mandaloriana — Caçador Solitário",
+  "name": "Caçador Solitário",
   "type": "class",
   "_id": "4PZXtaB4p6AAOLGz",
-  "img": "systems/olddragon2e/assets/icons/legiao-shield.svg",
+  "img": "systems/olddragon2e/assets/icons/level-up.svg",
   "system": {
     "flavor": "<p>O Operativo na Senda. <em>Senda Mandaloriana.</em></p>",
     "description": "<p><strong>A Senda Mandaloriana substitui a especialização</strong> desta classe: o personagem entra no Credo de um clã e passa a evoluir pela coluna <strong>XP Especial</strong>.</p><p>O renegado sem lar — a leitura mais &ldquo;Boba Fett&rdquo; das quatro, e a que casa com o Caçador de Recompensas sem ser ele.</p><p><strong>O que este Operativo troca:</strong> o <strong>Ataque Furtivo</strong> e a <strong>Percepção</strong> param de progredir. Em troca, veste <strong>Beskar</strong> e usa <strong>jetpack</strong>, que a classe não tocaria, e troca <em>Escalar</em> por <em>Rastrear</em> na lista de talentos.</p><p><em>Mandaloriano não é uma espécie, é uma cultura</em> — qualquer espécie pode trilhar a Senda. A Origem <strong>Filho de Mandalore</strong>, no compêndio de Espécies, é a porta de entrada (opcional).</p>",
     "hp": 6,
     "high_level_hp_bonus": 1,
     "equipment_restrictions": {
-      "weapons": "Leve e Utilitária, nenhuma de Duas Mãos. <strong>Exceção da Senda:</strong> soma o arsenal de clã — armas de <strong>haste</strong>, de <strong>arremesso</strong> e <strong>blasters</strong>, mais <strong>jetpack</strong> e capacete tático (<em>Treinamento de Clã</em>).",
+      "weapons": "Leve e Utilitária, nenhuma de Duas Mãos. Exceção da Senda: soma o arsenal de clã — armas de haste, de arremesso e blasters, mais jetpack e capacete tático (Treinamento de Clã).",
       "armors": "Apenas Leve ou Média, e sem escudo — armadura Pesada ou escudo impede o uso dos talentos de classe.",
       "magic_items": "Apenas aparatos utilitários."
     },

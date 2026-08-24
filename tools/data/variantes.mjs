@@ -196,10 +196,12 @@ const REPUTACAO = "Reputação";
 // O Guardião já resolvia isto do jeito certo (sobrescreve a linha de armadura
 // e diz que é exceção deliberada). As Sendas passam a fazer o mesmo, e por
 // detecção: se a linha herdada já cobre o caso, nada é acrescentado.
+// TEXTO PURO, sem tags: a ficha do OD2 renderiza equipment_restrictions como
+// texto, então HTML aqui aparece cru para o jogador.
 const CLAUSULA_BESKAR =
-  " <strong>Exceção da Senda:</strong> a <strong>Armadura Beskar</strong> (Média) é permitida — e só ela, entre as Médias. É o que o <em>Sangue de Beskar</em> pressupõe.";
+  " Exceção da Senda: a Armadura Beskar (Média) é permitida — e só ela, entre as Médias. É o que o Sangue de Beskar pressupõe.";
 const CLAUSULA_ARSENAL =
-  " <strong>Exceção da Senda:</strong> soma o arsenal de clã — armas de <strong>haste</strong>, de <strong>arremesso</strong> e <strong>blasters</strong>, mais <strong>jetpack</strong> e capacete tático (<em>Treinamento de Clã</em>).";
+  " Exceção da Senda: soma o arsenal de clã — armas de haste, de arremesso e blasters, mais jetpack e capacete tático (Treinamento de Clã).";
 
 function equipDaSenda(base) {
   const eq = base || {};
