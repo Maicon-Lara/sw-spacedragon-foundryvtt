@@ -301,7 +301,26 @@ function tokenForaDeEscala() {
   }
 }
 
-// 13. Prosa de conversão NÃO marcada. Deveria estar em <p class='nota-casa'>.
+// 13. natural_armor escrito como BÔNUS em vez de CA base.
+//
+//     O sistema faz `if (naturalArmor) return naturalArmor` — o valor SUBSTITUI
+//     os 10 padrão. Escrever 1 para dizer "+1 natural" deu um Wookiee com CA
+//     base 1 e total −3: acertava-se nele automaticamente. Qualquer valor
+//     abaixo de 10 é bônus disfarçado de base.
+function armaduraNaturalComoBonus() {
+  for (const d of docs) {
+    if (d.type !== "race_ability") continue;
+    const na = d.system?.natural_armor ?? 0;
+    if (na > 0 && na < 10)
+      erro(
+        "armadura-natural-e-base",
+        d,
+        `natural_armor=${na} substitui a CA base de 10 (ficaria ${na}). Para "+${na} natural", escreva ${10 + na}`
+      );
+  }
+}
+
+// 14. Prosa de conversão NÃO marcada. Deveria estar em <p class='nota-casa'>.
 function prosaSolta() {
   const RE = /(Corre[çc][ãa]o da casa|Convers[ãa]o da casa|Cria[çc][ãa]o da casa|Nota de convers|Nota de balan|no Space Dragon (o|a|era|tinha|dizia)|o livro (dizia|tirava|manda))/i;
   for (const d of docs) {
@@ -332,6 +351,7 @@ conectivoOrfao();
 referenciaPendurada();
 monstroSemAtaque();
 tokenForaDeEscala();
+armaduraNaturalComoBonus();
 prosaSolta();
 
 // ── Relatório ───────────────────────────────────────────────────────────────

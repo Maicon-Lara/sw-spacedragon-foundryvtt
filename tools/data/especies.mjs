@@ -304,7 +304,8 @@ export const especies = [
         natural_weapon: { damage: "1d6", damage_type: "bludgeoning", weapon_size: "medium" },
       },
       { nome: "Fúria Selvagem", desc: "<p>Com os pontos de vida abaixo da metade, causa <strong>+2 no dano corpo a corpo</strong>.</p>" },
-      { nome: "Casca Peluda", natural_armor: 1, desc: "<p>O pelo denso e a pele grossa concedem <strong>+1 natural na Classe de Armadura</strong>.</p>" },
+      { nome: "Casca Peluda", natural_armor: 11, // CA base 10 + 1 natural; ver a nota em lib.mjs
+       desc: "<p>O pelo denso e a pele grossa concedem <strong>+1 natural na Classe de Armadura</strong>.</p>" },
       { nome: "Inabalável", desc: "<p><strong>+2 em Jogadas de Proteção</strong> contra medo e intimidação.</p>" },
       { nome: "Restrição — Mãos Grandes Demais", desc: "<p>Armas pequenas causam <strong>−1 no dano</strong> nas suas mãos.</p>" },
     ],
@@ -427,7 +428,7 @@ export const especies = [
       { nome: "Regeneração", desc: "<p>A cada rodada inteira sem sofrer dano, recupera <strong>1 PV</strong>. Fora de combate, a recuperação natural é dobrada, e membros perdidos voltam a crescer em semanas. Não funciona abaixo de 0 PV.</p>" },
       {
         nome: "Garras e Escamas",
-        natural_armor: 1,
+        natural_armor: 11, // CA base 10 + 1 natural; ver a nota em lib.mjs
         desc: "<p>Dano desarmado <strong>1d4 perfurante</strong> e <strong>+1 natural na Classe de Armadura</strong>.</p>",
         natural_weapon: { damage: "1d4", damage_type: "piercing", weapon_size: "small" },
       },

@@ -437,6 +437,13 @@ export function raceAbilityDoc(ability, folderId, seedPrefix, sort) {
     rogue_talent: ability.rogue_talent ?? "none",
     rogue_talent_2: ability.rogue_talent_2 ?? "none",
     daily_uses: ability.daily_uses ?? 0,
+    // ATENÇÃO: natural_armor é a CA BASE, não um bônus. O sistema faz
+    // `get ac_base() { ... if (naturalArmor) return naturalArmor; ... return 10 }`
+    // — ele RETORNA o valor no lugar dos 10 padrão, não soma.
+    //
+    // O módulo escrevia 1 aqui para dizer "+1 natural na CA", e o resultado era
+    // um Wookiee com ac_base 1 e CA total −3: toda criatura da galáxia acertava
+    // nele automaticamente. Escreva a CA base final (11 para um "+1 natural").
     natural_armor: ability.natural_armor ?? 0,
     load_modifier: ability.load_modifier ?? 0,
     max_load_override: ability.max_load_override ?? 0,

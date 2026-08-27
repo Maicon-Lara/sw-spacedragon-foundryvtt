@@ -6,6 +6,37 @@ começou junto com o rename.
 
 ---
 
+## 1.4.1 — 27/08/2026
+
+### O Wookiee e o Trandoshano jogavam com CA −3
+
+`natural_armor` **não é um bônus: é a CA base.** O sistema faz
+
+```js
+get ac_base() {
+  for (const ability of this.race_abilities) {
+    const naturalArmor = ability.system.natural_armor;
+    if (naturalArmor && naturalArmor !== 0) return naturalArmor;  // RETORNA
+  }
+  return 10;
+}
+```
+
+— o valor **substitui** os 10 padrão em vez de somar. A *Casca Peluda* do
+Wookiee e as *Garras e Escamas* do Trandoshano diziam `natural_armor: 1` para
+significar *"+1 natural na Classe de Armadura"*. Resultado, medido num
+personagem de verdade: **CA base 1, CA total −3**. Toda criatura da galáxia
+acertava automaticamente.
+
+Agora escrevem **11** (os 10 de base mais o +1 natural), e o texto da habilidade
+não mudou — ele sempre esteve certo.
+
+Verificação nova no validador: **`armadura-natural-e-base`** (erro), que recusa
+qualquer `natural_armor` entre 1 e 9 — nessa faixa é sempre bônus disfarçado de
+base — e diz o número certo a escrever.
+
+---
+
 ## 1.4.0 — 27/08/2026
 
 Auditoria do que o **sistema** oferece e o módulo não estava usando, feita
