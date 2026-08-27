@@ -86,11 +86,54 @@ O conteúdo é **transcrito do cofre Obsidian**, em
 
 ---
 
+## A Trilha de Corrupção
+
+A Corrupção é a única engrenagem do cenário que o sistema não tem como saber
+que existe: não é PV, não é Foco, não é uma JP. Vivia na memória da mesa — e é
+o tipo de coisa que a memória perde, porque a trilha sobe de 1 em 1 ao longo de
+sessões inteiras e só cobra no 10.
+
+No compêndio **Star Dragon: Macros**, arraste para a barra:
+
+| Macro | Quem usa |
+|---|---|
+| **Trilha de Corrupção** | o jogador — abre a trilha do personagem selecionado |
+| **Corrupção — Nova cena** | o Mestre — libera a Tentação (é *uma vez por cena*) |
+| **Corrupção — Novo dia** | o Mestre — zera também o teto de *três vezes por dia* |
+
+A janela mostra a barra 0–10, a faixa (Sereno · Marcado · Tomado · À beira) com
+a penalidade daquela faixa escrita, e quatro botões: **A Tentação**, ganhar +1,
+perder −1 e declarar o **Caminho**. Cada mudança sai num cartão de chat no
+formato nativo do OD2.
+
+**O que ele decide sozinho, e o que não decide.** A **Queda** é determinística e
+está na regra — ao chegar a 10 vindo da Luz ou do neutro, o Caminho vira Sombra
+e a Corrupção volta para **7**; isso ele aplica. O **Consumido** (chegar a 10 já
+sendo da Sombra) ele apenas **anuncia**: o personagem sair das mãos do jogador é
+decisão de mesa, não de script, e a ficha fica intacta.
+
+> **Permissão:** são macros de script. Em **Configurações → Configurar
+> Permissões → "Usar Macros de Script"**, marque **Jogador** — por padrão o
+> Foundry só libera de Jogador Confiável para cima.
+
+O estado mora em `flags.stardragon` do ator (`corrupcao`, `caminho`,
+`tentacaoCena`, `tentacaoDia`). Não toca em `system.*`: o módulo é de conteúdo e
+não inventa campo no sistema de outra pessoa. Desinstalar deixa as flags para
+trás, inertes.
+
+A lógica fica no script do módulo, não dentro da macro — a macro é uma linha que
+chama `game.stardragon.*`. Assim atualizar o módulo atualiza a regra, e uma
+macro já arrastada para a barra continua valendo. Se algo não abrir,
+`game.stardragon.diagnostico()` no console diz onde parou.
+
+---
+
 ## Build
 
 ```sh
 npm run build              # tools/data/*.mjs → packs-src/*.json → LevelDB
 npm run validar            # build + confere o que saiu (use -- -v para os avisos)
+npm run teste              # regra da Trilha de Corrupção, fora do Foundry
 npm run extract            # extrai os packs de volta para _verify/, para conferência
 python tools/make-zip.py   # gera stardragon.zip para distribuição
 NOTAS_CASA=1 npm run build # inclui as notas de conversão nos compêndios

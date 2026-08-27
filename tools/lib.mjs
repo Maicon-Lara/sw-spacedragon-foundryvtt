@@ -761,3 +761,26 @@ export function writeSource(srcDir, docs) {
   }
   return docs.length;
 }
+
+// Item do tipo Macro. O compêndio de macros existe para dar ao jogador um
+// botão arrastável — a LÓGICA fica no script do módulo (game.stardragon.*),
+// não aqui. Assim atualizar o módulo atualiza a regra, e uma macro já
+// arrastada para a barra continua valendo.
+export function macroDoc(macro, folderId, sort) {
+  const id = makeId(`macro:${macro.nome}`);
+  return {
+    folder: folderId ?? null,
+    name: macro.nome,
+    type: "script",
+    _id: id,
+    img: macro.img || "icons/svg/dice-target.svg",
+    scope: "global",
+    command: macro.comando,
+    author: "swspacedragonbld",
+    ownership: { default: 2 }, // Observador: o jogador precisa poder executar
+    flags: {},
+    _stats: stats(),
+    sort: sort ?? 0,
+    _key: `!macros!${id}`,
+  };
+}

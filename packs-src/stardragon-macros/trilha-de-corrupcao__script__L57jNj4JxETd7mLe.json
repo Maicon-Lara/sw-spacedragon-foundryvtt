@@ -1,0 +1,27 @@
+{
+  "folder": null,
+  "name": "Trilha de Corrupção",
+  "type": "script",
+  "_id": "L57jNj4JxETd7mLe",
+  "img": "icons/magic/unholy/silhouette-robe-evil-power.webp",
+  "scope": "global",
+  "command": "if (!game.stardragon) {\n  ui.notifications.error(\"O módulo Star Dragon está desligado — ligue-o em Gerenciar Módulos.\");\n} else {\n  game.stardragon.corrupcao();\n}",
+  "author": "swspacedragonbld",
+  "ownership": {
+    "default": 2
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "_key": "!macros!L57jNj4JxETd7mLe"
+}

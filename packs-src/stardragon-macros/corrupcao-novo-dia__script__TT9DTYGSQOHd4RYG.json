@@ -1,0 +1,27 @@
+{
+  "folder": null,
+  "name": "Corrupção — Novo dia",
+  "type": "script",
+  "_id": "TT9DTYGSQOHd4RYG",
+  "img": "icons/magic/time/sundial-orange-elm.webp",
+  "scope": "global",
+  "command": "if (!game.stardragon) {\n  ui.notifications.error(\"O módulo Star Dragon está desligado — ligue-o em Gerenciar Módulos.\");\n} else {\n  game.stardragon.novoDia();\n}",
+  "author": "swspacedragonbld",
+  "ownership": {
+    "default": 2
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 300000,
+  "_key": "!macros!TT9DTYGSQOHd4RYG"
+}

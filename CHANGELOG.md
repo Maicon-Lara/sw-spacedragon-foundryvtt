@@ -6,6 +6,57 @@ começou junto com o rename.
 
 ---
 
+## 1.3.0 — 27/08/2026
+
+### A Trilha de Corrupção
+
+A Corrupção é a única engrenagem do cenário que o sistema não tem como saber que
+existe: não é PV, não é Foco, não é uma JP. Vivia na memória da mesa — e é o tipo
+de coisa que a memória perde, porque a trilha sobe de 1 em 1 ao longo de sessões
+inteiras e só cobra no 10.
+
+Novo compêndio **Star Dragon: Macros**, com três botões arrastáveis: a trilha do
+personagem, *Nova cena* (libera a Tentação) e *Novo dia* (zera o teto de três).
+
+A janela traz a barra 0–10, a faixa com a penalidade escrita, e os quatro
+caminhos: **A Tentação** (Insistir +1 · Arrancar +2 · Sentenciar +1, com a trava
+de uma vez por cena e três por dia), ganhar +1 pelos três motivos da regra,
+perder −1 pelos outros três, e declarar o Caminho. Tudo sai em cartão de chat no
+formato nativo do OD2.
+
+**O que ele decide, e o que não decide.** A **Queda** está na regra e é
+determinística — chegar a 10 vindo da Luz ou do neutro troca o Caminho para
+Sombra e devolve a Corrupção para **7**; isso ele aplica. O **Consumido** ele
+apenas anuncia: o personagem sair das mãos do jogador é decisão de mesa, não de
+script, e a ficha fica intacta.
+
+### Sobre onde a lógica mora
+
+Dentro do módulo, não dentro da macro. A macro que o jogador arrasta vira uma
+cópia dele, e cópias não recebem atualização; chamando `game.stardragon.*`,
+atualizar o módulo atualiza a regra sem ninguém re-arrastar nada. A macro ainda
+avisa, em vez de falhar calada, se o módulo estiver desligado.
+
+Não há campo novo em `system.*` — o estado são flags do ator. O módulo é de
+conteúdo e não inventa campo no sistema de outra pessoa.
+
+Nada de gancho de render: `renderActorSheet` não dispara neste sistema (a ficha
+herda da camada de compatibilidade `foundry.appv1.sheets.ActorSheet`), e o tema
+já tinha apanhado disso na 1.0. Um diálogo próprio não depende de gancho nenhum.
+
+### `npm run teste`
+
+25 verificações da regra, fora do Foundry: as cinco faixas, a trava 0–10, a
+Queda que pousa em 7 e troca o Caminho, o Consumido que não mexe na ficha, o
+neutro que cai como a Luz, o *Arrancar* de 8 que estoura o 10, o exemplo da
+própria habilidade (poder da Sombra +1 seguido de Arrancar +2 = 3 pontos numa
+ação) e a diferença entre *nova cena* e *novo dia*.
+
+O diálogo e os cartões não dá para testar aqui — dependem do Foundry. A regra
+dá, e é onde um erro custa caro.
+
+---
+
 ## 1.2.3 — 27/08/2026
 
 ### `npm run validar`

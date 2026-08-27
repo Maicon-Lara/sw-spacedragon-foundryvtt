@@ -18,6 +18,8 @@
  * abaixo, quem não quiser desliga e o sistema volta a ser o que era.
  */
 
+import { abrirCorrupcao, novaCena, novoDia, diagnostico } from "./corrupcao.js";
+
 const ID = "stardragon";
 const CLASSE = "stardragon-tema";
 
@@ -41,6 +43,11 @@ Hooks.once("init", () => {
 
 Hooks.once("ready", () => {
   aplicarTema(game.settings.get(ID, "tema"));
+
+  // A API que a macro do compêndio chama. Fica aqui, e não dentro da macro,
+  // para que atualizar o módulo atualize a regra — uma macro já arrastada para
+  // a barra continua valendo, porque ela só chama isto.
+  game.stardragon = { corrupcao: abrirCorrupcao, novaCena, novoDia, diagnostico };
 
   // Diagnóstico de uma linha: se o tema não aparecer, é esta linha que diz
   // onde parou, sem precisar colar nada no console.

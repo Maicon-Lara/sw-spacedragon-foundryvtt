@@ -1,0 +1,27 @@
+{
+  "folder": null,
+  "name": "Corrupção — Nova cena",
+  "type": "script",
+  "_id": "VwEZRCuWoRBGjrxZ",
+  "img": "icons/magic/time/hourglass-brown-orange.webp",
+  "scope": "global",
+  "command": "if (!game.stardragon) {\n  ui.notifications.error(\"O módulo Star Dragon está desligado — ligue-o em Gerenciar Módulos.\");\n} else {\n  game.stardragon.novaCena();\n}",
+  "author": "swspacedragonbld",
+  "ownership": {
+    "default": 2
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "_key": "!macros!VwEZRCuWoRBGjrxZ"
+}

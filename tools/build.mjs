@@ -11,7 +11,7 @@ import { compilePack } from "@foundryvtt/foundryvtt-cli";
 
 import {
   folderDoc, aninhaPastas, classDoc, classAbilityDoc, raceDoc, raceAbilityDoc,
-  weaponDoc, armorDoc, miscDoc, nivelTecnologico, spellDoc, journalDoc, itemUuid, writeSource,
+  weaponDoc, armorDoc, miscDoc, nivelTecnologico, spellDoc, journalDoc, macroDoc, itemUuid, writeSource,
 } from "./lib.mjs";
 import { monsterDoc } from "./lib-actors.mjs";
 
@@ -30,6 +30,7 @@ import { feitosJournal } from "./data/feitos-journal.mjs";
 import { mestreJournal } from "./data/mestre-journal.mjs";
 import { criacaoJournal } from "./data/criacao-journal.mjs";
 import { progressao } from "./data/progressoes.mjs";
+import { macros } from "./data/macros.mjs";
 
 const ROOT = path.resolve(fileURLToPath(import.meta.url), "../..");
 const SRC = path.join(ROOT, "packs-src");
@@ -41,6 +42,7 @@ const EQUIPAMENTOS_PACK = "stardragon-equipamentos";
 const PODERES_PACK = "stardragon-poderes";
 const BESTIARIO_PACK = "stardragon-bestiario";
 const JOURNAL_PACK = "stardragon-journal";
+const MACROS_PACK = "stardragon-macros";
 
 // Agrupa documentos avulsos em pastas nomeadas pelo campo `folder`.
 function agrupaAvulsas(docs, lista, seed, build) {
@@ -243,6 +245,12 @@ function buildJournalDocs() {
   );
 }
 
+// ── Pack de macros ──
+// Botões arrastáveis; a lógica mora no script do módulo (game.stardragon.*).
+function buildMacrosDocs() {
+  return macros.map((m, i) => macroDoc(m, null, (i + 1) * 100000));
+}
+
 async function compile(packName, docs) {
   const srcDir = path.join(SRC, packName);
   const outDir = path.join(OUT, packName);
@@ -263,6 +271,7 @@ async function main() {
   await compile(PODERES_PACK, buildPoderesDocs());
   await compile(BESTIARIO_PACK, buildBestiarioDocs());
   await compile(JOURNAL_PACK, buildJournalDocs());
+  await compile(MACROS_PACK, buildMacrosDocs());
   console.log("Concluído.");
 }
 

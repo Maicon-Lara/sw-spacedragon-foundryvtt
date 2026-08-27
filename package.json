@@ -1,12 +1,13 @@
 {
   "name": "sw-spacedragon-foundryvtt",
-  "version": "1.2.3",
+  "version": "1.3.0",
   "description": "Módulo de conteúdo \"Star Dragon\" para o sistema Old Dragon 2e (Foundry VTT). Espécies, classes e material de cenário.",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "node tools/build.mjs",
     "validar": "node tools/build.mjs && node tools/validar.mjs",
+    "teste": "node tools/_teste-corrupcao.mjs",
     "extract": "node tools/extract.mjs"
   },
   "author": "Maicon Lara",
