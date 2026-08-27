@@ -272,7 +272,36 @@ function referenciaPendurada() {
   }
 }
 
-// 11. Prosa de conversão NÃO marcada. Deveria estar em <p class='nota-casa'>.
+// 11. Monstro sem nenhum ataque. O DataModel aceita, e a ficha abre — mas na
+//     cena o Mestre não tem o que clicar. Foi assim que o Krayt Maior (24+10
+//     DV, colossal) e uma torreta automática ficaram sem como atacar.
+function monstroSemAtaque() {
+  for (const d of docs) {
+    if (d.type !== "monster") continue;
+    const golpes = (d.items ?? []).filter((i) => i.type === "monster_attack").length;
+    if (!golpes && !d.system?.described_attacks)
+      aviso("monstro-sem-ataque", d, `DV ${d.system?.dv ?? "?"}, e nada para clicar em cena`);
+  }
+}
+
+// 12. Token do tamanho errado. O sistema declara o tamanho em system.size; se
+//     o token continuar 1×1, o Rancor entra na cena do tamanho de um capanga.
+const QUADRADOS = { miudo: 1, pequeno: 1, medio: 1, grande: 2, imenso: 3, colossal: 4 };
+function tokenForaDeEscala() {
+  for (const d of docs) {
+    if (d.type !== "monster") continue;
+    const esperado = QUADRADOS[d.system?.size] ?? 1;
+    const largura = d.prototypeToken?.width ?? 1;
+    if (largura !== esperado)
+      erro(
+        "token-fora-de-escala",
+        d,
+        `system.size é "${d.system?.size}" (esperado ${esperado}×${esperado}), mas o token é ${largura}×${d.prototypeToken?.height}`
+      );
+  }
+}
+
+// 13. Prosa de conversão NÃO marcada. Deveria estar em <p class='nota-casa'>.
 function prosaSolta() {
   const RE = /(Corre[çc][ãa]o da casa|Convers[ãa]o da casa|Cria[çc][ãa]o da casa|Nota de convers|Nota de balan|no Space Dragon (o|a|era|tinha|dizia)|o livro (dizia|tirava|manda))/i;
   for (const d of docs) {
@@ -301,6 +330,8 @@ irmasDesiguais();
 fraseRepetida();
 conectivoOrfao();
 referenciaPendurada();
+monstroSemAtaque();
+tokenForaDeEscala();
 prosaSolta();
 
 // ── Relatório ───────────────────────────────────────────────────────────────

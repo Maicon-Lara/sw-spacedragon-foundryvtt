@@ -636,12 +636,25 @@ export function weaponDoc(it, folderId, seedPrefix, sort) {
 }
 
 // Item do tipo armor (armadura).
+// Item do tipo armor — ou shield.
+//
+// A ficha do OD2 tem uma CAIXA SEPARADA para escudo
+// (templates/partials/tabs/character-tab-equipment.hbs), com card próprio. Um
+// escudo tipado como `armor` cai na lista de armaduras, no box errado, e as
+// classes que dizem "pode usar escudo" / "sem escudo" ficam sem como conferir.
+// O schema dos dois tipos é idêntico (ambos têm bonus_ca), então só o `type`
+// muda.
+//
+// O SEED DO _id continua "armor:": trocar para "shield:" renomearia o UUID dos
+// escudos e quebraria quem já os tem na ficha. O seed é interno; o tipo é o
+// que a ficha lê.
 export function armorDoc(it, folderId, seedPrefix, sort) {
   const id = makeId(`armor:${seedPrefix}:${it.nome}`);
+  const ehEscudo = /^escudo$/i.test((it.tipo_armadura ?? "").trim());
   return {
     folder: folderId,
     name: it.nome,
-    type: "armor",
+    type: ehEscudo ? "shield" : "armor",
     _id: id,
     img: it.img || `${OD2I}/armor.svg`,
     system: { ...equipmentBase(it), bonus_ca: it.bonus_ca ?? 0 },

@@ -6,6 +6,65 @@ começou junto com o rename.
 
 ---
 
+## 1.4.0 — 27/08/2026
+
+Auditoria do que o **sistema** oferece e o módulo não estava usando, feita
+contra o `olddragon2e` 2.6.0 rodando no servidor da mesa.
+
+### O Rancor entrava em cena do tamanho de um stormtrooper
+
+`prototypeToken` tinha `width: 1, height: 1` fixo, para todos. Os 63 monstros
+nasciam ocupando **um quadrado**, incluindo os seis que o próprio módulo declara
+como grandes em `system.size`:
+
+| Criatura | Tamanho | Token antes | Agora |
+|---|---|--:|--:|
+| Exogorth (Verme das Areias) | colossal | 1×1 | **4×4** |
+| Krayt Maior | colossal | 1×1 | **4×4** |
+| Dragão Krayt | imenso | 1×1 | **3×3** |
+| Rancor | imenso | 1×1 | **3×3** |
+| Dianoga | grande | 1×1 | **2×2** |
+| Wampa | grande | 1×1 | **2×2** |
+
+O tamanho declarado já estava certo e no vocabulário do sistema
+(`CONFIG.olddragon2e.monster_sizes`); só nunca chegava ao token. É o tipo de
+erro que não aparece em teste nenhum e aparece na primeira vez que o bicho
+entra na cena.
+
+### Escudo é um tipo próprio no sistema
+
+A ficha do OD2 tem uma **caixa separada** para escudo
+(`templates/partials/tabs/character-tab-equipment.hbs`), com card próprio. O
+módulo montava tudo como `armor`, então o **Escudo Antimotim** e o **Escudo de
+Energia** caíam na lista de armaduras — no box errado, e sem como as classes
+que dizem *"pode usar escudo"* conferirem.
+
+O schema dos dois tipos é idêntico (ambos têm `bonus_ca`), então só o `type`
+mudou. O **Gerador de Escudo Pessoal** continua `armor`: é aparato defensivo,
+não escudo de mão.
+
+O seed do `_id` continua `armor:` de propósito — trocar renomearia o UUID dos
+escudos e quebraria quem já os tem na ficha. 623 documentos antes, 623 depois,
+nenhum renomeado.
+
+### Duas verificações novas no validador
+
+- **`token-fora-de-escala`** (erro) — `system.size` e o token discordando.
+- **`monstro-sem-ataque`** (aviso) — hoje aponta quatro: **Krayt Maior**
+  (24+10 DV, colossal, e nada para clicar), **Blaster automático de teto** (uma
+  torreta que não atira), **Técnico / engenheiro imperial** e **Tmennit En'Dey
+  — Mestra Jedi Caamasi**. Os números são decisão de mesa e ficam para o autor;
+  o validador só garante que não passem mais em silêncio.
+
+### Verificado e descartado
+
+`vehicle` existe no sistema, mas o schema é só equipamento genérico — naves
+como item não ganhariam nada sobre o journal atual. `container`,
+`monster_attack` e o ator `retainer` seguem sem uso; os ataques de monstro já
+são itens `monster_attack` em 59 dos 63.
+
+---
+
 ## 1.3.1 — 27/08/2026
 
 Testado no servidor da mesa, em Foundry 13.351 com `olddragon2e` 2.6.0.

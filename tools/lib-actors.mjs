@@ -227,7 +227,24 @@ function buildDescription(m) {
   return partes.join("\n");
 }
 
-function prototypeToken(name, img) {
+// Quadrados que a criatura ocupa no mapa, pelo tamanho declarado. O
+// vocabulário é o do sistema (CONFIG.olddragon2e.monster_sizes): miudo,
+// pequeno, medio, grande, imenso, colossal.
+//
+// Sem isto todo monstro nascia 1×1 — o Rancor, os dois Krayt e o Exogorth
+// caíam no mapa do tamanho de um stormtrooper. É o tipo de erro que não
+// aparece em teste nenhum e aparece na primeira vez que o bicho entra em cena.
+const QUADRADOS = {
+  miudo: 1,     // ocupa menos de um quadrado, mas o Foundry não desenha abaixo de 1
+  pequeno: 1,
+  medio: 1,
+  grande: 2,
+  imenso: 3,
+  colossal: 4,
+};
+
+function prototypeToken(name, img, size) {
+  const lado = QUADRADOS[size] ?? 1;
   return {
     name,
     displayName: 20,
@@ -235,8 +252,8 @@ function prototypeToken(name, img) {
     appendNumber: false,
     prependAdjective: false,
     texture: { src: img, scaleX: 1, scaleY: 1, offsetX: 0, offsetY: 0, rotation: 0 },
-    width: 1,
-    height: 1,
+    width: lado,
+    height: lado,
     lockRotation: false,
     rotation: 0,
     alpha: 1,
@@ -316,7 +333,7 @@ export function monsterDoc(monstro, folderId, seedPrefix, sort) {
     _id: id,
     img,
     system,
-    prototypeToken: prototypeToken(monstro.nome, img),
+    prototypeToken: prototypeToken(monstro.nome, img, size),
     items,
     effects: [],
     folder: folderId,
