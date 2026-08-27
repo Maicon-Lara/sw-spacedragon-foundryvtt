@@ -6,6 +6,34 @@ começou junto com o rename.
 
 ---
 
+## 1.2.3 — 27/08/2026
+
+### `npm run validar`
+
+Nenhum erro desta semana quebrou o build. O pack compilou feliz nas cinco vezes,
+e o problema só apareceu quando alguém abriu a ficha — as tags cruas do campo de
+restrição só foram descobertas por um print de tela.
+
+O validador confere o que o build **gerou**, e procura exatamente o que já
+passou batido: tag em campo de texto puro, UUID quebrado, `_id` duplicado, tag
+vazia (sobra de corte), nota de conversão vazando, habilidade que promete
+equipamento que a restrição da classe proíbe, irmãs com contagem muito
+desigual, frase repetida, parágrafo abrindo com conectivo sem antecedente e
+ponteiro para nota que não existe mais.
+
+Erro trava (`exit 1`); aviso só relata — são heurísticas, e falso positivo não
+pode travar o trabalho de ninguém. Cada uma das cinco travas foi testada
+injetando o bug num pack e conferindo que ela dispara.
+
+### Um achado do próprio validador
+
+A regra do **Consumido** trazia a atribuição no meio da frase — *"Consumido
+(criação da casa — a trilha nunca teve fim marcado…)"*. Todas as outras
+"criação da casa" já estavam marcadas; essa escapou por ser inline. Separada: a
+regra ficou limpa e a atribuição virou nota.
+
+---
+
 ## 1.2.2 — 24/08/2026
 
 ### As restrições de equipamento apareciam com as tags cruas

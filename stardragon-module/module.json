@@ -2,7 +2,7 @@
   "id": "stardragon",
   "title": "Star Dragon — Star Wars no Old Dragon 2",
   "description": "Módulo de conteúdo do Star Dragon — a adaptação de Star Wars para Old Dragon 2 sobre o suplemento sci-fi Space Dragon / Estrela Dracônica. Espécies, classes, equipamentos, poderes da Força, bestiário e material de cenário. Obra de fã, não oficial e sem fins lucrativos.",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "compatibility": {
     "minimum": "13",
     "verified": "14"

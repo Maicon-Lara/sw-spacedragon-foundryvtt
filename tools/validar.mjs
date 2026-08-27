@@ -1,0 +1,339 @@
+// Confere o que o build gerou, ANTES de virar LevelDB.
+//
+// POR QUE ISTO EXISTE: todo erro que este arquivo procura já chegou na mesa.
+// Nenhum deles quebra o build — o pack compila feliz e o problema só aparece
+// quando alguém abre a ficha. Alguns exemplos reais:
+//
+//   · <strong> num campo que a ficha renderiza como TEXTO: o jogador leu
+//     "<strong>Exceção da Senda:</strong>" escrito na ficha (v1.2.2)
+//   · o Herege de Armadura, cuja habilidade-assinatura é o Sangue de Beskar,
+//     vinha com "Apenas Leve, sem escudo" e ficava proibido de vestir Beskar
+//   · quatro fichas de Senda com 14 habilidades contra as 6 da irmã Guardião
+//   · "ver a nota abaixo" apontando para uma nota que tinha sido cortada
+//   · "Mantém os Ataques Múltiplos inteiros" dito duas vezes seguidas
+//
+// Uso:  npm run validar        (roda o build antes, para validar o que sai)
+//       npm run validar -- -v  (mostra também os avisos já conhecidos)
+//
+// ERRO quebra o processo (exit 1). AVISO só relata: são heurísticas, e um
+// falso positivo não pode travar o trabalho de ninguém.
+
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const ROOT = path.resolve(fileURLToPath(import.meta.url), "../..");
+const SRC = path.join(ROOT, "packs-src");
+const VERBOSO = process.argv.includes("-v") || process.argv.includes("--verbose");
+
+// ── Carrega tudo ────────────────────────────────────────────────────────────
+const docs = [];
+for (const pack of fs.readdirSync(SRC)) {
+  const dir = path.join(SRC, pack);
+  if (!fs.statSync(dir).isDirectory()) continue;
+  for (const arq of fs.readdirSync(dir)) {
+    if (!arq.endsWith(".json")) continue;
+    const doc = JSON.parse(fs.readFileSync(path.join(dir, arq), "utf8"));
+    docs.push({ ...doc, __pack: pack, __arq: arq });
+  }
+}
+
+const problemas = [];
+const erro = (check, doc, msg) =>
+  problemas.push({ nivel: "erro", check, doc: doc?.name ?? "?", pack: doc?.__pack, msg });
+const aviso = (check, doc, msg) =>
+  problemas.push({ nivel: "aviso", check, doc: doc?.name ?? "?", pack: doc?.__pack, msg });
+
+// Percorre todo campo string de um documento.
+function textos(doc) {
+  const saida = [];
+  const anda = (o, caminho) => {
+    if (typeof o === "string") saida.push([caminho, o]);
+    else if (Array.isArray(o)) o.forEach((v, i) => anda(v, `${caminho}[${i}]`));
+    else if (o && typeof o === "object")
+      for (const [k, v] of Object.entries(o)) anda(v, caminho ? `${caminho}.${k}` : k);
+  };
+  anda(doc.system ?? {}, "system");
+  anda(doc.pages ?? [], "pages");
+  return saida;
+}
+
+const semTags = (s) => s.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+const ehPasta = (d) => d._key?.startsWith("!folders!");
+
+// ═══ ERROS ══════════════════════════════════════════════════════════════════
+
+// 1. Dois documentos com o mesmo _id: um sobrescreve o outro no LevelDB, em
+//    silêncio. Aconteceu quando duas habilidades tinham o mesmo nome.
+function idDuplicado() {
+  const vistos = new Map();
+  for (const d of docs) {
+    if (!d._id) continue;
+    const chave = `${d.__pack}:${d._id}`;
+    if (vistos.has(chave))
+      erro("id-duplicado", d, `_id ${d._id} já usado por "${vistos.get(chave)}" no mesmo pack`);
+    else vistos.set(chave, d.name);
+  }
+}
+
+// 2. Referência a um documento que não existe. O link fica morto na ficha.
+function uuidQuebrado() {
+  const existem = new Set(docs.filter((d) => d._id).map((d) => `${d.__pack}:${d._id}`));
+  const porPack = new Map();
+  for (const d of docs) porPack.set(`${d.__pack}:${d._id}`, d);
+  let total = 0;
+  for (const d of docs) {
+    const bruto = JSON.stringify(d);
+    for (const m of bruto.matchAll(
+      /Compendium\.stardragon\.(stardragon-[a-z]+)\.\w+\.([A-Za-z0-9]{16})/g
+    )) {
+      total++;
+      if (!existem.has(`${m[1]}:${m[2]}`))
+        erro("uuid-quebrado", d, `aponta para ${m[1]}.${m[2]}, que não existe`);
+    }
+  }
+  return total;
+}
+
+// 3. HTML num campo que a ficha do OD2 renderiza como TEXTO PURO. A tag chega
+//    crua ao jogador. Foi o bug da v1.2.2.
+const CAMPOS_TEXTO_PURO = [
+  /^system\.equipment_restrictions\./,
+  /^system\.restrictions\./,
+  /^system\.(alignment|movement|size|source)$/,
+];
+function htmlEmTextoPuro() {
+  for (const d of docs) {
+    for (const [campo, valor] of textos(d)) {
+      if (!CAMPOS_TEXTO_PURO.some((re) => re.test(campo))) continue;
+      if (/<[a-z/][^>]*>/i.test(valor))
+        erro("html-em-texto-puro", d, `${campo} tem tag: ${valor.slice(0, 70)}…`);
+    }
+  }
+}
+
+// 4. Prosa de conversão vazando para o pack. Só é legítimo com NOTAS_CASA=1.
+function notaVazando() {
+  if (process.env.NOTAS_CASA === "1") return;
+  for (const d of docs)
+    for (const [campo, valor] of textos(d))
+      if (valor.includes("class='nota-casa'"))
+        erro("nota-vazando", d, `${campo} ainda tem uma nota da casa não removida`);
+}
+
+// 5. HTML quebrado: tag vazia ou <hr>/<br> pendurado no fim. Quase sempre é
+//    sobra de um corte — o parágrafo saiu e a moldura ficou.
+function htmlQuebrado() {
+  // td/th ficam de fora: célula vazia é normal numa tabela de linhas irregulares.
+  const VAZIAS = ["p", "em", "strong", "li", "ul", "ol", "h2", "h3", "blockquote"];
+  for (const d of docs) {
+    for (const [campo, valor] of textos(d)) {
+      if (!valor.includes("<")) continue;
+      for (const t of VAZIAS)
+        if (new RegExp(`<${t}[^>]*>\\s*</${t}>`, "i").test(valor))
+          erro("html-quebrado", d, `${campo} tem <${t}> vazio`);
+      if (/(<hr\s*\/?>|<br\s*\/?>)\s*$/i.test(valor))
+        erro("html-quebrado", d, `${campo} termina com <hr>/<br> pendurado`);
+    }
+  }
+}
+
+// ═══ AVISOS ═════════════════════════════════════════════════════════════════
+
+// 6. A habilidade promete um equipamento que a restrição da classe proíbe.
+//    Era o Herege de Armadura proibido de vestir a própria Beskar.
+const CONTRADICOES = [
+  {
+    citado: /Armadura Beskar|Beskar['’]?gam|armadura pesada de clã/i,
+    campo: "armors",
+    cobre: /M[ée]dia|Pesada|Beskar|Sem restri/i,
+    diz: "veste Beskar (armadura Média)",
+  },
+  {
+    citado: /armas? de haste/i,
+    campo: "weapons",
+    cobre: /Marcial|qualquer arma|haste|Sem restri/i,
+    diz: "usa armas de haste (Marcial)",
+  },
+  {
+    // "droide blindado com escudo próprio" descreve o inimigo, não o personagem.
+    citado: /(usa|veste|empunha|pode usar|passa a usar) (um |o )?escudo/i,
+    campo: "armors",
+    cobre: /pode usar escudo|com escudo|Sem restri/i,
+    diz: "usa escudo",
+  },
+];
+function contradizRestricao(porId) {
+  for (const d of docs) {
+    if (d.type !== "class") continue;
+    const er = d.system?.equipment_restrictions ?? {};
+    const habs = (d.system.class_abilities ?? [])
+      .map((u) => porId.get(`${d.__pack}:${u.split(".").pop()}`))
+      .filter(Boolean);
+    for (const regra of CONTRADICOES) {
+      const culpada = habs.find((h) => regra.citado.test(semTags(h.system?.description ?? "")));
+      if (!culpada) continue;
+      const linha = er[regra.campo] ?? "";
+      if (!regra.cobre.test(linha))
+        aviso(
+          "contradiz-restricao",
+          d,
+          `"${culpada.name}" ${regra.diz}, mas ${regra.campo} diz: "${linha.slice(0, 60)}"`
+        );
+    }
+  }
+}
+
+// 7. Especializações da mesma classe-base com contagem de habilidades muito
+//    diferente. As Sendas chegaram a 14 contra as 6 da irmã Guardião.
+function irmasDesiguais() {
+  const familias = new Map();
+  for (const d of docs) {
+    if (d.type !== "class") continue;
+    const pai = (d.system?.flavor ?? "").match(
+      /Especializa[çc][ãa]o de ([^.<—]+)|O ([^.<]+?) na Senda/i
+    );
+    if (!pai) continue;
+    const base = (pai[1] ?? pai[2]).trim();
+    if (!familias.has(base)) familias.set(base, []);
+    familias.get(base).push([d, (d.system.class_abilities ?? []).length]);
+  }
+  for (const [base, membros] of familias) {
+    if (membros.length < 2) continue;
+    const ns = membros.map(([, n]) => n).sort((a, b) => a - b);
+    const mediana = ns[Math.floor(ns.length / 2)];
+    for (const [d, n] of membros)
+      if (n > mediana * 2)
+        aviso(
+          "irmas-desiguais",
+          d,
+          `${n} habilidades; as irmãs de ${base} têm mediana ${mediana}`
+        );
+  }
+}
+
+// 8. A mesma frase dita duas vezes no mesmo campo. Pega o "Mantém os Ataques
+//    Múltiplos inteiros" logo antes do "Mantém do Veterano: Ataques Múltiplos".
+function fraseRepetida() {
+  for (const d of docs) {
+    for (const [campo, valor] of textos(d)) {
+      const t = semTags(valor);
+      if (t.length < 120) continue;
+      // Só vale se a repetição está PERTO. Uma linha que se repete de propósito
+      // ao longo de uma tabela ("Não existe como item de ficha") não é erro; o
+      // bug real era a frase colada na anterior.
+      const PERTO = 240;
+      const frases = [];
+      let pos = 0;
+      for (const f of t.split(/(?<=[.!?])\s+/)) {
+        if (f.length >= 40) frases.push([f, pos]);
+        pos += f.length + 1;
+      }
+      const nu = (f) => f.toLowerCase().replace(/[^a-záéíóúâêôãõç ]/g, "");
+      for (let i = 0; i < frases.length; i++)
+        for (let j = i + 1; j < frases.length; j++) {
+          if (frases[j][1] - frases[i][1] > PERTO) break;
+          if (nu(frases[i][0]) === nu(frases[j][0]))
+            aviso("frase-repetida", d, `${campo}: "${frases[j][0].slice(0, 70)}…"`);
+        }
+    }
+  }
+}
+
+// 9. Parágrafo que abre com conectivo sem antecedente — sobra de um corte.
+//    Foi o "E o problema maior é o outro" da Seção do Mestre.
+function conectivoOrfao() {
+  const RE = /<p[^>]*>\s*(?:<em>|<strong>)?\s*(E |Mas |Além disso|Por isso|Ou seja|Daí )/g;
+  for (const d of docs) {
+    for (const [campo, valor] of textos(d)) {
+      for (const m of valor.matchAll(RE)) {
+        const antes = semTags(valor.slice(0, m.index));
+        // Só é suspeito se o conectivo abre o campo inteiro.
+        if (antes.length === 0)
+          aviso("conectivo-orfao", d, `${campo} começa com "${m[1].trim()}" sem antecedente`);
+      }
+    }
+  }
+}
+
+// 10. Ponteiro para algo que não está mais lá: "ver a nota abaixo", "a caixa".
+function referenciaPendurada() {
+  const RE = /(ver a nota|a nota abaixo|a caixa que|as caixas|conforme a nota|na nota acima)/i;
+  for (const d of docs) {
+    for (const [campo, valor] of textos(d)) {
+      const t = semTags(valor);
+      const m = t.match(RE);
+      if (!m) continue;
+      // Depois do ponteiro tem que sobrar texto — senão aponta para o vazio.
+      const depois = t.slice(t.indexOf(m[0]) + m[0].length);
+      if (depois.length < 120)
+        aviso("referencia-pendurada", d, `${campo}: "${m[0]}" e quase nada depois`);
+    }
+  }
+}
+
+// 11. Prosa de conversão NÃO marcada. Deveria estar em <p class='nota-casa'>.
+function prosaSolta() {
+  const RE = /(Corre[çc][ãa]o da casa|Convers[ãa]o da casa|Cria[çc][ãa]o da casa|Nota de convers|Nota de balan|no Space Dragon (o|a|era|tinha|dizia)|o livro (dizia|tirava|manda))/i;
+  for (const d of docs) {
+    for (const [campo, valor] of textos(d)) {
+      for (const p of valor.matchAll(/<p(?![^>]*nota-casa)[^>]*>[\s\S]*?<\/p>/g)) {
+        const t = semTags(p[0]);
+        // A marca tem que ABRIR o parágrafo. Uma menção de passagem no meio de
+        // uma regra ("o livro manda rolar de novo") não é nota de conversão.
+        if (t.length > 140 && RE.test(t.slice(0, 60)))
+          aviso("prosa-solta", d, `${campo}: "${t.slice(0, 80)}…"`);
+      }
+    }
+  }
+}
+
+// ── Roda tudo ───────────────────────────────────────────────────────────────
+const porId = new Map(docs.filter((d) => d._id).map((d) => [`${d.__pack}:${d._id}`, d]));
+
+idDuplicado();
+const refs = uuidQuebrado();
+htmlEmTextoPuro();
+notaVazando();
+htmlQuebrado();
+contradizRestricao(porId);
+irmasDesiguais();
+fraseRepetida();
+conectivoOrfao();
+referenciaPendurada();
+prosaSolta();
+
+// ── Relatório ───────────────────────────────────────────────────────────────
+const erros = problemas.filter((p) => p.nivel === "erro");
+const avisos = problemas.filter((p) => p.nivel === "aviso");
+
+const conta = { docs: docs.length, pastas: docs.filter(ehPasta).length, refs };
+console.log(
+  `Validando ${conta.docs} documentos (${conta.pastas} pastas) e ${conta.refs} referências…\n`
+);
+
+function mostra(lista, rotulo) {
+  const porCheck = new Map();
+  for (const p of lista) {
+    if (!porCheck.has(p.check)) porCheck.set(p.check, []);
+    porCheck.get(p.check).push(p);
+  }
+  for (const [check, itens] of [...porCheck].sort((a, b) => b[1].length - a[1].length)) {
+    console.log(`  ${rotulo} ${check} — ${itens.length}`);
+    for (const p of itens.slice(0, 8)) console.log(`      ${p.doc}: ${p.msg}`);
+    if (itens.length > 8) console.log(`      … e mais ${itens.length - 8}`);
+  }
+}
+
+if (erros.length) mostra(erros, "✘");
+if (avisos.length && (VERBOSO || !erros.length)) mostra(avisos, "▲");
+
+if (!erros.length && !avisos.length) console.log("Tudo verde.");
+else {
+  console.log(
+    `\n${erros.length} erro(s), ${avisos.length} aviso(s).` +
+      (avisos.length && !VERBOSO && erros.length ? " Use -v para ver os avisos." : "")
+  );
+}
+
+process.exit(erros.length ? 1 : 0);

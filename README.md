@@ -90,9 +90,36 @@ O conteúdo é **transcrito do cofre Obsidian**, em
 
 ```sh
 npm run build              # tools/data/*.mjs → packs-src/*.json → LevelDB
+npm run validar            # build + confere o que saiu (use -- -v para os avisos)
 npm run extract            # extrai os packs de volta para _verify/, para conferência
 python tools/make-zip.py   # gera stardragon.zip para distribuição
+NOTAS_CASA=1 npm run build # inclui as notas de conversão nos compêndios
 ```
+
+### O que o validador procura
+
+Nenhum destes quebra o build — o pack compila feliz e o erro só aparece quando
+alguém abre a ficha. Todos já chegaram na mesa pelo menos uma vez.
+
+| Erro (quebra) | O que era na prática |
+|---|---|
+| `html-em-texto-puro` | `equipment_restrictions` é texto, não HTML: o jogador leu `<strong>Exceção da Senda:</strong>` escrito na ficha |
+| `uuid-quebrado` | referência a um documento que não existe — link morto |
+| `id-duplicado` | dois documentos com o mesmo `_id`: um sobrescreve o outro, em silêncio |
+| `html-quebrado` | tag vazia ou `<hr>` pendurado — quase sempre sobra de um corte |
+| `nota-vazando` | prosa de conversão chegando ao pack sem `NOTAS_CASA=1` |
+
+| Aviso (relata) | O que era na prática |
+|---|---|
+| `contradiz-restricao` | o Herege de Armadura, cuja assinatura é o *Sangue de Beskar*, vinha proibido de vestir Beskar |
+| `irmas-desiguais` | Sendas com 14 habilidades contra as 6 da irmã Guardião |
+| `frase-repetida` | *"Mantém os Ataques Múltiplos inteiros"* dito duas vezes seguidas |
+| `conectivo-orfao` | *"E o problema maior é o outro"* abrindo um campo, sem antecedente |
+| `referencia-pendurada` | *"ver a nota abaixo"* apontando para nota que foi cortada |
+| `prosa-solta` | nota de conversão que ninguém marcou como `nota-casa` |
+
+Avisos são heurísticas e podem dar falso positivo — por isso não travam o build.
+Erro trava (`exit 1`).
 
 Um build limpo hoje produz:
 
