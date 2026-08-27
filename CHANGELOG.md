@@ -6,6 +6,50 @@ começou junto com o rename.
 
 ---
 
+## 1.6.0 — 27/08/2026
+
+### Compêndio novo: Star Dragon: Tabelas
+
+As tabelas de preparação do Mestre existiam como **texto estático** nas páginas
+do journal — dava para ler e rolar de cabeça, não para clicar. Agora são
+**10 RollTables** de verdade, em duas pastas:
+
+- **Gerador de PNJ** — Espécie (1d8), Papel (1d8), Traço marcante (1d10)
+- **Relíquia tecnológica** — Tipo (1d20), Função do aparato (1d6), Nível
+  Tecnológico (1d20), Instabilidade (1d10), Particularidade (1d10), Quem a
+  construiu (1d10), Consequência do uso (1d10)
+
+As páginas do journal **continuam iguais**: quem quer ver a tabela inteira de
+uma vez lê lá, quem quer rolar usa aqui. Os números são os mesmos.
+
+**Uma tabela por coluna, e não uma por tabela do journal.** No journal elas
+aparecem lado a lado, mas são rolagens independentes — espécie, papel e traço
+não se correlacionam —, e uma RollTable tem uma fórmula só.
+
+O `rollTableDoc` já existia em `lib.mjs` desde sempre e **nunca tinha sido
+chamado**. Estava escrito para um Foundry antigo: o texto do resultado virou
+`description` (era `text`), `type` virou a string `"text"` (era `0`) e
+`documentId` virou `documentUuid`. Conferido contra
+`olddragon2e.rollable-tables`.
+
+### Quatro monstros que não tinham como atacar
+
+O aviso `monstro-sem-ataque` da 1.4.0 apontava quatro. Os números saíram dos
+irmãos do próprio módulo, não da imaginação:
+
+| Criatura | Ataque | De onde veio |
+|---|---|---|
+| **Krayt Maior** (24 DV) | Mordida +24 (4d6) · 2× Garras +24 (2d6) · Cauda +24 (3d8 e derruba) | as mesmas armas do Dragão Krayt, de quem é a variação anciã, um passo de dado acima; BA = DV como no Exogorth |
+| **Blaster automático de teto** (1 DV) | torreta blaster +4 (1d8) | o mesmo aparelho da *Armadilha de laser de parede*, montado no teto |
+| **Técnico / engenheiro imperial** (5 DV) | Blaster | a forma do *Oficial / comandante*, o outro PNJ-com-classe de 5 DV |
+| **Tmennit En'Dey** (6 DV) | sabre de luz +7 (1d10) | a forma do aluno dela, Lorik Feryss, um DV acima |
+
+A Tmennit leva **um** ataque, não dois como os outros Jedi de 6 DV: nunca foi
+Generala, era diplomata na Orla quando a Ordem 66 chegou — e é por isso que
+sobreviveu. A ficha devia dizer isso.
+
+---
+
 ## 1.5.0 — 27/08/2026
 
 ### Pastas coloridas nos compêndios

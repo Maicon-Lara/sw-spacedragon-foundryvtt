@@ -1,0 +1,93 @@
+{
+  "folder": "xp8oWeTVWUyRGGpk",
+  "name": "Relíquia — Consequência do uso",
+  "_id": "w3sMaDIEtW1Pk3EE",
+  "img": "systems/olddragon2e/assets/icons/d6.svg",
+  "description": "<p>O preço de mexer no que não se entende.</p>",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        5
+      ],
+      "drawn": false,
+      "_id": "Ky4HOrDwwoLCxxFh",
+      "name": "",
+      "description": "Nenhuma",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!w3sMaDIEtW1Pk3EE.Ky4HOrDwwoLCxxFh"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        7
+      ],
+      "drawn": false,
+      "_id": "Tpvbq1VdHJJNQcN2",
+      "name": "",
+      "description": "<strong>A instabilidade deteriora</strong> — sobe 10% a cada uso",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!w3sMaDIEtW1Pk3EE.Tpvbq1VdHJJNQcN2"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        9
+      ],
+      "drawn": false,
+      "_id": "S6nWtdih1u0r0B9A",
+      "name": "",
+      "description": "<strong>Contaminação radioativa</strong> em quem a usa",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!w3sMaDIEtW1Pk3EE.S6nWtdih1u0r0B9A"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "_id": "J9bBQGyy9kSKOnxG",
+      "name": "",
+      "description": "<strong>A relíquia é consciente</strong>",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!w3sMaDIEtW1Pk3EE.J9bBQGyy9kSKOnxG"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "formula": "1d10",
+  "sort": 1000000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!tables!w3sMaDIEtW1Pk3EE"
+}

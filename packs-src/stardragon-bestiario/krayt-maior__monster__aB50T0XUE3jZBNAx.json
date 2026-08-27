@@ -83,7 +83,110 @@
     "flags": {},
     "randomImg": false
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "m63Kjsp2pbaI3XrF",
+      "name": "1 × Mordida +24 (4d6)",
+      "type": "monster_attack",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "times": 1,
+        "ba": 24,
+        "damage_bonus": 0,
+        "weapon": false,
+        "description": "Mordida",
+        "damage_description": "4d6",
+        "damage": "4d6"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swspacedragonbld",
+        "exportSource": null
+      },
+      "_key": "!actors.items!aB50T0XUE3jZBNAx.m63Kjsp2pbaI3XrF"
+    },
+    {
+      "_id": "IqreOJWU2YRaJkIo",
+      "name": "2 × Garras +24 (2d6)",
+      "type": "monster_attack",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "times": 2,
+        "ba": 24,
+        "damage_bonus": 0,
+        "weapon": false,
+        "description": "Garras",
+        "damage_description": "2d6",
+        "damage": "2d6"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swspacedragonbld",
+        "exportSource": null
+      },
+      "_key": "!actors.items!aB50T0XUE3jZBNAx.IqreOJWU2YRaJkIo"
+    },
+    {
+      "_id": "DAnBLteNl6LcEtKw",
+      "name": "1 × Cauda +24 (3d8 e derruba)",
+      "type": "monster_attack",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "times": 1,
+        "ba": 24,
+        "damage_bonus": 0,
+        "weapon": false,
+        "description": "Cauda",
+        "damage_description": "3d8 e derruba",
+        "damage": "3d8"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swspacedragonbld",
+        "exportSource": null
+      },
+      "_key": "!actors.items!aB50T0XUE3jZBNAx.DAnBLteNl6LcEtKw"
+    }
+  ],
   "effects": [],
   "folder": "Jw0Zn7CLO4V55mMi",
   "flags": {},

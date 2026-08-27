@@ -1,0 +1,157 @@
+{
+  "folder": "45koC7y1ccvJH05j",
+  "name": "PNJ — Papel",
+  "_id": "GqK3dp1izBZnOEJr",
+  "img": "systems/olddragon2e/assets/icons/d6.svg",
+  "description": "<p>O que ele faz da vida.</p>",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_id": "0nRNRqyNK9vxIu3h",
+      "name": "",
+      "description": "Mercenário",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!GqK3dp1izBZnOEJr.0nRNRqyNK9vxIu3h"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_id": "PT9yjAXW2NbVzbg2",
+      "name": "",
+      "description": "Informante",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!GqK3dp1izBZnOEJr.PT9yjAXW2NbVzbg2"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_id": "p2bDtZI44h2D0BIj",
+      "name": "",
+      "description": "Comerciante",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!GqK3dp1izBZnOEJr.p2bDtZI44h2D0BIj"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_id": "t1l8LIfvE5IY2C3m",
+      "name": "",
+      "description": "Oficial",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!GqK3dp1izBZnOEJr.t1l8LIfvE5IY2C3m"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_id": "sISFD5pbkdz3exWI",
+      "name": "",
+      "description": "Criminoso",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!GqK3dp1izBZnOEJr.sISFD5pbkdz3exWI"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_id": "hGfqg43i4IsHAT5H",
+      "name": "",
+      "description": "Piloto",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!GqK3dp1izBZnOEJr.hGfqg43i4IsHAT5H"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_id": "tCaIwuV9YzpRcytS",
+      "name": "",
+      "description": "Técnico",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!GqK3dp1izBZnOEJr.tCaIwuV9YzpRcytS"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_id": "AURpxV4z6FCekhzz",
+      "name": "",
+      "description": "Burocrata",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!GqK3dp1izBZnOEJr.AURpxV4z6FCekhzz"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "formula": "1d8",
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!tables!GqK3dp1izBZnOEJr"
+}

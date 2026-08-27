@@ -1,0 +1,22 @@
+{
+  "name": "Relíquia tecnológica",
+  "sorting": "m",
+  "folder": null,
+  "type": "RollTable",
+  "_id": "xp8oWeTVWUyRGGpk",
+  "description": "",
+  "sort": 0,
+  "color": "#a4894a",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld"
+  },
+  "_key": "!folders!xp8oWeTVWUyRGGpk"
+}

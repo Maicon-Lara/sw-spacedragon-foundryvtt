@@ -81,7 +81,42 @@
     "flags": {},
     "randomImg": false
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "RsCK7D5xx1vwavjm",
+      "name": "1 × Blaster",
+      "type": "monster_attack",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "times": 1,
+        "ba": 0,
+        "damage_bonus": 0,
+        "weapon": false,
+        "description": "Blaster",
+        "damage_description": "",
+        "damage": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swspacedragonbld",
+        "exportSource": null
+      },
+      "_key": "!actors.items!5IeXr84T4IRbwCbS.RsCK7D5xx1vwavjm"
+    }
+  ],
   "effects": [],
   "folder": "lhyIlk7yGkUATH7D",
   "flags": {},

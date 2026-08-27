@@ -1,0 +1,93 @@
+{
+  "folder": "xp8oWeTVWUyRGGpk",
+  "name": "Relíquia — Particularidade",
+  "_id": "OUBwOY1VemSlbJ4r",
+  "img": "systems/olddragon2e/assets/icons/d6.svg",
+  "description": "<p>O que ela tem de estranho.</p>",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        5
+      ],
+      "drawn": false,
+      "_id": "1Jab2KO8HhkNB6GR",
+      "name": "",
+      "description": "Nenhuma",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!OUBwOY1VemSlbJ4r.1Jab2KO8HhkNB6GR"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        7
+      ],
+      "drawn": false,
+      "_id": "Qev0PdYlLV8dO7c0",
+      "name": "",
+      "description": "<strong>Formato irreconhecível</strong> — não se parece com nada que se use hoje",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!OUBwOY1VemSlbJ4r.Qev0PdYlLV8dO7c0"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        9
+      ],
+      "drawn": false,
+      "_id": "QOFgxrCSyanxnIBF",
+      "name": "",
+      "description": "<strong>Duas relíquias em uma</strong> — role de novo",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!OUBwOY1VemSlbJ4r.QOFgxrCSyanxnIBF"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "_id": "jQHQ8pxComT40PL4",
+      "name": "",
+      "description": "<strong>Utilizável por qualquer classe</strong>, ignorando a restrição normal",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!OUBwOY1VemSlbJ4r.jQHQ8pxComT40PL4"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "formula": "1d10",
+  "sort": 800000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!tables!OUBwOY1VemSlbJ4r"
+}

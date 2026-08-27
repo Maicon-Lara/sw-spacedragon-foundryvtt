@@ -52,6 +52,13 @@ export const grupos = [
         ca: "18",
         jp: "17",
         xp: "~2.025",
+        // Mesmas armas do Dragão Krayt — é a variação anciã dele —, um passo de
+        // dado acima, e BA = DV, como no Exogorth (20 DV → +20).
+        ataques: [
+          { nome: "Mordida", qtd: 1, bonus: 24, dano: "4d6" },
+          { nome: "Garras", qtd: 2, bonus: 24, dano: "2d6" },
+          { nome: "Cauda", qtd: 1, bonus: 24, dano: "3d8 e derruba" },
+        ],
         descricao:
           "<p>Variação anciã do <strong>Dragão Krayt</strong>. Um no coração de uma tempestade de areia vale uma campanha inteira.</p>",
         habilidades: [
@@ -242,6 +249,9 @@ export const grupos = [
         dv: "5+5",
         ca: "14",
         xp: "~175",
+        // Mesma forma do "Oficial / comandante", o outro PNJ-com-classe de
+        // 5 DV: a arma sem número, como o resto da família.
+        ataques: [{ nome: "Blaster", qtd: 1 }],
         habilidades: [{ nome: "Aparatos e droides" }],
       },
       {

@@ -2,7 +2,7 @@
   "id": "stardragon",
   "title": "Star Dragon — Star Wars no Old Dragon 2",
   "description": "Módulo de conteúdo do Star Dragon — a adaptação de Star Wars para Old Dragon 2 sobre o suplemento sci-fi Space Dragon / Estrela Dracônica. Espécies, classes, equipamentos, poderes da Força, bestiário e material de cenário. Obra de fã, não oficial e sem fins lucrativos.",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "compatibility": {
     "minimum": "13",
     "verified": "14"
@@ -97,6 +97,17 @@
       "label": "Star Dragon: Macros",
       "path": "packs/stardragon-macros",
       "type": "Macro",
+      "system": "olddragon2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "stardragon-tabelas",
+      "label": "Star Dragon: Tabelas",
+      "path": "packs/stardragon-tabelas",
+      "type": "RollTable",
       "system": "olddragon2e",
       "ownership": {
         "PLAYER": "OBSERVER",

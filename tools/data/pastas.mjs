@@ -56,6 +56,10 @@ export const CORES_DE_PASTA = {
   "Equipamento Geral": "#8a8f98",
   "Miudezas, Energia e Sobrevivência": "#8a8f98",
 
+  // ── Tabelas roláveis ──
+  "Gerador de PNJ": "#5b8dd6",
+  "Relíquia tecnológica": "#a4894a",
+
   // ── Bestiário ──
   "Feras da Galáxia": "#6f9b6e",
   "Modelos de PNJ": "#5b8dd6",

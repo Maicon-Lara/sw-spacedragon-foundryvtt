@@ -1,0 +1,157 @@
+{
+  "folder": "45koC7y1ccvJH05j",
+  "name": "PNJ — Espécie",
+  "_id": "qYuKCCk3sME47U6l",
+  "img": "systems/olddragon2e/assets/icons/d6.svg",
+  "description": "<p>Espécie do PNJ improvisado. Role junto com <em>Papel</em> e <em>Traço marcante</em>.</p>",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_id": "5vFQl9MFnuPr9JxW",
+      "name": "",
+      "description": "Humano",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!qYuKCCk3sME47U6l.5vFQl9MFnuPr9JxW"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_id": "ID8ZU7NU9ANb7crn",
+      "name": "",
+      "description": "Twi'lek",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!qYuKCCk3sME47U6l.ID8ZU7NU9ANb7crn"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_id": "843rrwmyLsF8BZLE",
+      "name": "",
+      "description": "Rodiano",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!qYuKCCk3sME47U6l.843rrwmyLsF8BZLE"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_id": "Bc5mQHzwPphBEQ5A",
+      "name": "",
+      "description": "Wookiee",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!qYuKCCk3sME47U6l.Bc5mQHzwPphBEQ5A"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_id": "zLMbLhCvR5uWL3qP",
+      "name": "",
+      "description": "Trandoshano",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!qYuKCCk3sME47U6l.zLMbLhCvR5uWL3qP"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_id": "E4ibgOBii7Hclzp1",
+      "name": "",
+      "description": "Mon Calamari",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!qYuKCCk3sME47U6l.E4ibgOBii7Hclzp1"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_id": "PeszmY92rVfCoXAm",
+      "name": "",
+      "description": "Zabrak",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!qYuKCCk3sME47U6l.PeszmY92rVfCoXAm"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_id": "jDUmskZzOj1Htcam",
+      "name": "",
+      "description": "Droide",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!qYuKCCk3sME47U6l.jDUmskZzOj1Htcam"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "formula": "1d8",
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!tables!qYuKCCk3sME47U6l"
+}

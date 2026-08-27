@@ -1,0 +1,189 @@
+{
+  "folder": "xp8oWeTVWUyRGGpk",
+  "name": "Relíquia — Instabilidade",
+  "_id": "Ulv11ubtnF5zQHA9",
+  "img": "systems/olddragon2e/assets/icons/d6.svg",
+  "description": "<p>Chance de falhar a cada uso.</p>",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_id": "EwybNlnCMpfzFPSY",
+      "name": "",
+      "description": "10% de chance de falhar",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!Ulv11ubtnF5zQHA9.EwybNlnCMpfzFPSY"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_id": "wkPSGmBniIGrCNSc",
+      "name": "",
+      "description": "20% de chance de falhar",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!Ulv11ubtnF5zQHA9.wkPSGmBniIGrCNSc"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_id": "SjYl9BrcNeweuVms",
+      "name": "",
+      "description": "30% de chance de falhar",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!Ulv11ubtnF5zQHA9.SjYl9BrcNeweuVms"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_id": "WYe7zxWU4WDWosCh",
+      "name": "",
+      "description": "40% de chance de falhar",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!Ulv11ubtnF5zQHA9.WYe7zxWU4WDWosCh"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_id": "3vVyqRZvu9Z0SKtt",
+      "name": "",
+      "description": "50% de chance de falhar",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!Ulv11ubtnF5zQHA9.3vVyqRZvu9Z0SKtt"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_id": "E1y3K5vsqXfa7nSR",
+      "name": "",
+      "description": "60% de chance de falhar",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!Ulv11ubtnF5zQHA9.E1y3K5vsqXfa7nSR"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_id": "ChMcknNplBFbuLYT",
+      "name": "",
+      "description": "70% de chance de falhar",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!Ulv11ubtnF5zQHA9.ChMcknNplBFbuLYT"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_id": "ceGvZDtz7GOl7fsN",
+      "name": "",
+      "description": "80% de chance de falhar",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!Ulv11ubtnF5zQHA9.ceGvZDtz7GOl7fsN"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "_id": "V10m6C1X8ftS0iAK",
+      "name": "",
+      "description": "90% de chance de falhar",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!Ulv11ubtnF5zQHA9.V10m6C1X8ftS0iAK"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "_id": "BubAv0vFGFzRzE9P",
+      "name": "",
+      "description": "Falha na primeira tentativa e a relíquia se inutiliza",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!Ulv11ubtnF5zQHA9.BubAv0vFGFzRzE9P"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "formula": "1d10",
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!tables!Ulv11ubtnF5zQHA9"
+}

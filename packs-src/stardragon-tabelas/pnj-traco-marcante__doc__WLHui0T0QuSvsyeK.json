@@ -1,0 +1,189 @@
+{
+  "folder": "45koC7y1ccvJH05j",
+  "name": "PNJ — Traço marcante",
+  "_id": "WLHui0T0QuSvsyeK",
+  "img": "systems/olddragon2e/assets/icons/d6.svg",
+  "description": "<p>A única coisa que a mesa vai lembrar dele.</p>",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_id": "BSe9ALRVEATIkEef",
+      "name": "",
+      "description": "Cheio de cicatrizes",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!WLHui0T0QuSvsyeK.BSe9ALRVEATIkEef"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_id": "MqeJRFhFrEQGM4IB",
+      "name": "",
+      "description": "Ganancioso",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!WLHui0T0QuSvsyeK.MqeJRFhFrEQGM4IB"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_id": "imuMnQwIdJeX9j6v",
+      "name": "",
+      "description": "Leal até demais",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!WLHui0T0QuSvsyeK.imuMnQwIdJeX9j6v"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_id": "YHOVCU5m5rCkzZAG",
+      "name": "",
+      "description": "Covarde, mas esperto",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!WLHui0T0QuSvsyeK.YHOVCU5m5rCkzZAG"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_id": "E5XsrQ3E6bMvJ6pQ",
+      "name": "",
+      "description": "Fala pelos cotovelos",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!WLHui0T0QuSvsyeK.E5XsrQ3E6bMvJ6pQ"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "_id": "uE18oCHvAssX6EIC",
+      "name": "",
+      "description": "Devendo a alguém perigoso",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!WLHui0T0QuSvsyeK.uE18oCHvAssX6EIC"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_id": "UwRG0f85Q7TOCnqq",
+      "name": "",
+      "description": "Ex-militar amargurado",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!WLHui0T0QuSvsyeK.UwRG0f85Q7TOCnqq"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "_id": "8M1cD5JCzqyHNZNg",
+      "name": "",
+      "description": "Esconde um segredo grave",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!WLHui0T0QuSvsyeK.8M1cD5JCzqyHNZNg"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "_id": "rEHlrzqQhRgLDmoc",
+      "name": "",
+      "description": "Viciado em apostas",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!WLHui0T0QuSvsyeK.rEHlrzqQhRgLDmoc"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "_id": "Hj940h6tyKFI64QE",
+      "name": "",
+      "description": "Secretamente sensível à Força",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!WLHui0T0QuSvsyeK.Hj940h6tyKFI64QE"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "formula": "1d10",
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!tables!WLHui0T0QuSvsyeK"
+}

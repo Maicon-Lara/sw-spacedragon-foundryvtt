@@ -1,0 +1,93 @@
+{
+  "folder": "xp8oWeTVWUyRGGpk",
+  "name": "Relíquia — Quem a construiu",
+  "_id": "bkthdwGVmE2feyuC",
+  "img": "systems/olddragon2e/assets/icons/d6.svg",
+  "description": "<p>De quem era, antes.</p>",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        5
+      ],
+      "drawn": false,
+      "_id": "REifEBpfyAiuGTXw",
+      "name": "",
+      "description": "Humanos",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!bkthdwGVmE2feyuC.REifEBpfyAiuGTXw"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        6,
+        7
+      ],
+      "drawn": false,
+      "_id": "B60seq2bVKSjKAQC",
+      "name": "",
+      "description": "Espécie humanoide conhecida",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!bkthdwGVmE2feyuC.B60seq2bVKSjKAQC"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        8,
+        9
+      ],
+      "drawn": false,
+      "_id": "pyZ7E05hqCLaeXI9",
+      "name": "",
+      "description": "<strong>Os Antigos</strong> (os Rakata / Construtores do Infinito)",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!bkthdwGVmE2feyuC.pyZ7E05hqCLaeXI9"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "_id": "hxfqP5G7YMv55qQU",
+      "name": "",
+      "description": "Desconhecidos",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!bkthdwGVmE2feyuC.hxfqP5G7YMv55qQU"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "formula": "1d10",
+  "sort": 900000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!tables!bkthdwGVmE2feyuC"
+}

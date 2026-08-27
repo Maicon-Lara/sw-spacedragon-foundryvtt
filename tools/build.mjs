@@ -11,7 +11,7 @@ import { compilePack } from "@foundryvtt/foundryvtt-cli";
 
 import {
   folderDoc, aninhaPastas, classDoc, classAbilityDoc, raceDoc, raceAbilityDoc,
-  weaponDoc, armorDoc, miscDoc, nivelTecnologico, spellDoc, journalDoc, macroDoc, itemUuid, writeSource, pintaPastas,
+  weaponDoc, armorDoc, miscDoc, nivelTecnologico, spellDoc, journalDoc, macroDoc, rollTableDoc, itemUuid, writeSource, pintaPastas,
 } from "./lib.mjs";
 import { monsterDoc } from "./lib-actors.mjs";
 
@@ -32,6 +32,7 @@ import { criacaoJournal } from "./data/criacao-journal.mjs";
 import { progressao } from "./data/progressoes.mjs";
 import { macros } from "./data/macros.mjs";
 import { CORES_DE_PASTA } from "./data/pastas.mjs";
+import { tabelas } from "./data/tabelas.mjs";
 
 const ROOT = path.resolve(fileURLToPath(import.meta.url), "../..");
 const SRC = path.join(ROOT, "packs-src");
@@ -44,6 +45,7 @@ const PODERES_PACK = "stardragon-poderes";
 const BESTIARIO_PACK = "stardragon-bestiario";
 const JOURNAL_PACK = "stardragon-journal";
 const MACROS_PACK = "stardragon-macros";
+const TABELAS_PACK = "stardragon-tabelas";
 
 // Agrupa documentos avulsos em pastas nomeadas pelo campo `folder`.
 function agrupaAvulsas(docs, lista, seed, build) {
@@ -246,6 +248,25 @@ function buildJournalDocs() {
   );
 }
 
+// ── Pack de tabelas roláveis ──
+// As mesmas tabelas das páginas do Mestre, em forma clicável. O journal
+// continua lá: quem quer ler a tabela inteira lê, quem quer rolar rola.
+function buildTabelasDocs() {
+  const docs = [];
+  const pastas = new Map();
+  tabelas.forEach((t, i) => {
+    if (!pastas.has(t.pasta)) {
+      const f = folderDoc(t.pasta, "RollTable", "tabelas");
+      pastas.set(t.pasta, f);
+      docs.push(f);
+    }
+    const doc = rollTableDoc(t, (i + 1) * 100000);
+    doc.folder = pastas.get(t.pasta)._id;
+    docs.push(doc);
+  });
+  return docs;
+}
+
 // ── Pack de macros ──
 // Botões arrastáveis; a lógica mora no script do módulo (game.stardragon.*).
 function buildMacrosDocs() {
@@ -276,6 +297,7 @@ async function main() {
   await compile(BESTIARIO_PACK, buildBestiarioDocs());
   await compile(JOURNAL_PACK, buildJournalDocs());
   await compile(MACROS_PACK, buildMacrosDocs());
+  await compile(TABELAS_PACK, buildTabelasDocs());
   console.log("Concluído.");
 }
 

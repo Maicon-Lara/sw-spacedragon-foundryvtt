@@ -1,0 +1,77 @@
+{
+  "folder": "xp8oWeTVWUyRGGpk",
+  "name": "Relíquia — Função do aparato",
+  "_id": "fAqb9MdcoKsKuLFf",
+  "img": "systems/olddragon2e/assets/icons/d6.svg",
+  "description": "<p>Só quando o <em>Tipo</em> cai em Aparato tecnológico.</p>",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        2
+      ],
+      "drawn": false,
+      "_id": "BCVAtmVLEpR1kMnT",
+      "name": "",
+      "description": "Ofensivo",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!fAqb9MdcoKsKuLFf.BCVAtmVLEpR1kMnT"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        3,
+        4
+      ],
+      "drawn": false,
+      "_id": "aVA2BVHGgHtDCbIO",
+      "name": "",
+      "description": "Defensivo",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!fAqb9MdcoKsKuLFf.aVA2BVHGgHtDCbIO"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        5,
+        6
+      ],
+      "drawn": false,
+      "_id": "eJAcpZKiEJ1F3B6t",
+      "name": "",
+      "description": "Utilitário",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!fAqb9MdcoKsKuLFf.eJAcpZKiEJ1F3B6t"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "formula": "1d6",
+  "sort": 500000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!tables!fAqb9MdcoKsKuLFf"
+}

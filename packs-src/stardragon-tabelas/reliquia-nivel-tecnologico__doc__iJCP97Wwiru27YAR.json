@@ -1,0 +1,189 @@
+{
+  "folder": "xp8oWeTVWUyRGGpk",
+  "name": "Relíquia — Nível Tecnológico",
+  "_id": "iJCP97Wwiru27YAR",
+  "img": "systems/olddragon2e/assets/icons/d6.svg",
+  "description": "<p>Quão adiantada é. NT alto é relíquia de quem já não existe.</p>",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        3
+      ],
+      "drawn": false,
+      "_id": "XHcBYfOtUr8q3rm1",
+      "name": "",
+      "description": "NT 1",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!iJCP97Wwiru27YAR.XHcBYfOtUr8q3rm1"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        6
+      ],
+      "drawn": false,
+      "_id": "PrlbEPGdiF1CfujE",
+      "name": "",
+      "description": "NT 2",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!iJCP97Wwiru27YAR.PrlbEPGdiF1CfujE"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        8
+      ],
+      "drawn": false,
+      "_id": "eJPeA2hpyb7coWDB",
+      "name": "",
+      "description": "NT 3",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!iJCP97Wwiru27YAR.eJPeA2hpyb7coWDB"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        9,
+        10
+      ],
+      "drawn": false,
+      "_id": "7IZAcbiMXPGGxsYs",
+      "name": "",
+      "description": "NT 4",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!iJCP97Wwiru27YAR.7IZAcbiMXPGGxsYs"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        11,
+        12
+      ],
+      "drawn": false,
+      "_id": "z7jNbtZPrrtEq8SZ",
+      "name": "",
+      "description": "NT 5",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!iJCP97Wwiru27YAR.z7jNbtZPrrtEq8SZ"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        13,
+        14
+      ],
+      "drawn": false,
+      "_id": "8YleK0k6GlR7tn1V",
+      "name": "",
+      "description": "NT 6",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!iJCP97Wwiru27YAR.8YleK0k6GlR7tn1V"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        15,
+        16
+      ],
+      "drawn": false,
+      "_id": "Vp0wq0JKFyUhUjV8",
+      "name": "",
+      "description": "NT 7",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!iJCP97Wwiru27YAR.Vp0wq0JKFyUhUjV8"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        17,
+        18
+      ],
+      "drawn": false,
+      "_id": "lFuoJ7bksO9Aidwv",
+      "name": "",
+      "description": "NT 8",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!iJCP97Wwiru27YAR.lFuoJ7bksO9Aidwv"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "drawn": false,
+      "_id": "6Plm49CBNVngiEZj",
+      "name": "",
+      "description": "NT 9",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!iJCP97Wwiru27YAR.6Plm49CBNVngiEZj"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "drawn": false,
+      "_id": "IrnkjBx0HpbTVEd6",
+      "name": "",
+      "description": "NT 10",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!iJCP97Wwiru27YAR.IrnkjBx0HpbTVEd6"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "formula": "1d20",
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!tables!iJCP97Wwiru27YAR"
+}

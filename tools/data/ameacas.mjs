@@ -44,6 +44,9 @@ export const ameacas = [
         pv: 6,
         ca: "17",
         xp: 35,
+        // Mesmo aparelho da "Armadilha de laser de parede" (2 DV, +4, 1d8),
+        // montado no teto em vez da parede. Mesma arma, mesmo bônus.
+        ataques: [{ nome: "torreta blaster", qtd: 1, bonus: 4, dano: "1d8" }],
         descricao: "<p>Torreta automatizada montada no teto que dispara em quem for marcado como hostil pelos donos.</p>",
         habilidades: [
           { nome: "Armadura", desc: "<strong>alvo minúsculo:</strong> todo ataque contra ela sofre <strong>−2</strong> adicional" },
@@ -373,6 +376,10 @@ export const ameacas = [
         jp: "10",
         moral: 12,
         xp: 375,
+        // Um ataque só, não dois: nunca foi Generala, era diplomata na Orla
+        // quando a Ordem 66 chegou — e é por isso que sobreviveu. Segue a
+        // forma do aluno dela, Lorik Feryss (5 DV, +6, 1d10), um DV acima.
+        ataques: [{ nome: "sabre de luz", qtd: 1, bonus: 7, dano: "1d10" }],
         descricao: "<p>Caamasi idosa de pelo cinza-escuro. Foi a mestra de Lorik Feryss antes das Guerras Clônicas. Nunca foi Generala — era diplomata na Orla Exterior quando a Ordem 66 chegou, e por isso sobreviveu. Está em Mon Calamari há anos, tentando fechar a ferida entre Mon Calamari e Quarren.</p>",
         habilidades: [
           { nome: "Jogadas de Proteção", desc: "<strong>JPD</strong> 11 · <strong>JPC</strong> 10 · <strong>JPS</strong> 8. O campo JP da ficha usa a mediana." },

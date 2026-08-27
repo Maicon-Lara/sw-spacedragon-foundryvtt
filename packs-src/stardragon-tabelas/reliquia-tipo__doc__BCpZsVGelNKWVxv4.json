@@ -1,0 +1,125 @@
+{
+  "folder": "xp8oWeTVWUyRGGpk",
+  "name": "Relíquia — Tipo",
+  "_id": "BCpZsVGelNKWVxv4",
+  "img": "systems/olddragon2e/assets/icons/d6.svg",
+  "description": "<p>O que a relíquia é. Caindo em <strong>Aparato tecnológico</strong>, role também <em>Relíquia — Função do aparato</em>.</p>",
+  "results": [
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        1,
+        3
+      ],
+      "drawn": false,
+      "_id": "xJNal3EfyD9semz9",
+      "name": "",
+      "description": "Arma",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!BCpZsVGelNKWVxv4.xJNal3EfyD9semz9"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        4,
+        6
+      ],
+      "drawn": false,
+      "_id": "v4R6hdkNzBdkDDM8",
+      "name": "",
+      "description": "Armadura",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!BCpZsVGelNKWVxv4.v4R6hdkNzBdkDDM8"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        7,
+        9
+      ],
+      "drawn": false,
+      "_id": "c4Iw7QeA5jpaFEMW",
+      "name": "",
+      "description": "Item comum",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!BCpZsVGelNKWVxv4.c4Iw7QeA5jpaFEMW"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        10,
+        18
+      ],
+      "drawn": false,
+      "_id": "O7nC2mkokCyKPLYD",
+      "name": "",
+      "description": "Aparato tecnológico — role a função (1d6)",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!BCpZsVGelNKWVxv4.O7nC2mkokCyKPLYD"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "drawn": false,
+      "_id": "NhhaJn3HgYhowd0H",
+      "name": "",
+      "description": "Veículo",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!BCpZsVGelNKWVxv4.NhhaJn3HgYhowd0H"
+    },
+    {
+      "type": "text",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "drawn": false,
+      "_id": "fe8VfCeEDjK0OnOw",
+      "name": "",
+      "description": "Nave",
+      "documentUuid": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/d6.svg",
+      "_key": "!tables.results!BCpZsVGelNKWVxv4.fe8VfCeEDjK0OnOw"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "formula": "1d20",
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!tables!BCpZsVGelNKWVxv4"
+}

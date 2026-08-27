@@ -699,16 +699,20 @@ export function rollTableDoc(table, sort) {
   const id = makeId(`table:${table.nome}`);
   const results = table.resultados.map((r, i) => {
     const rid = makeId(`table-result:${table.nome}:${i}`);
+    // Schema do Foundry 13 — conferido contra olddragon2e.rollable-tables:
+    // o texto vive em `description` (não `text`), `type` é a string "text"
+    // (não o 0 antigo) e o ponteiro para documento é `documentUuid`.
     return {
-      type: 0,
+      type: "text",
       weight: 1,
       range: r.range,
       drawn: false,
       _id: rid,
-      text: r.text,
-      documentId: null,
+      name: "",
+      description: r.text,
+      documentUuid: null,
       flags: {},
-      img: r.img || "icons/svg/d20-black.svg",
+      img: r.img || `${OD2I}/d6.svg`,
       _key: `!tables.results!${id}.${rid}`,
     };
   });
