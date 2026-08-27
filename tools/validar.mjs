@@ -320,7 +320,27 @@ function armaduraNaturalComoBonus() {
   }
 }
 
-// 14. Prosa de conversão NÃO marcada. Deveria estar em <p class='nota-casa'>.
+// 14. Pasta sem cor. Não quebra nada — mas numa árvore onde todas as outras
+//     têm cor, a sem cor lê como erro. Costuma ser pasta nova sem entrada em
+//     tools/data/pastas.mjs.
+function pastaSemCor() {
+  const porPack = new Map();
+  for (const d of docs) {
+    if (!ehPasta(d)) continue;
+    if (!porPack.has(d.__pack)) porPack.set(d.__pack, []);
+    porPack.get(d.__pack).push(d);
+  }
+  for (const [pack, pastas] of porPack) {
+    const semCor = pastas.filter((p) => !p.color);
+    // Pack sem cor NENHUMA é uma escolha; pack quase todo colorido com uma
+    // sobrando é esquecimento.
+    if (semCor.length && semCor.length < pastas.length)
+      for (const p of semCor)
+        aviso("pasta-sem-cor", p, `${pack}: as outras ${pastas.length - semCor.length} têm cor`);
+  }
+}
+
+// 15. Prosa de conversão NÃO marcada. Deveria estar em <p class='nota-casa'>.
 function prosaSolta() {
   const RE = /(Corre[çc][ãa]o da casa|Convers[ãa]o da casa|Cria[çc][ãa]o da casa|Nota de convers|Nota de balan|no Space Dragon (o|a|era|tinha|dizia)|o livro (dizia|tirava|manda))/i;
   for (const d of docs) {
@@ -352,6 +372,7 @@ referenciaPendurada();
 monstroSemAtaque();
 tokenForaDeEscala();
 armaduraNaturalComoBonus();
+pastaSemCor();
 prosaSolta();
 
 // ── Relatório ───────────────────────────────────────────────────────────────

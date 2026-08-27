@@ -6,6 +6,37 @@ começou junto com o rename.
 
 ---
 
+## 1.5.0 — 27/08/2026
+
+### Pastas coloridas nos compêndios
+
+As 92 pastas dos seis compêndios ganharam cor. A regra é uma só: **a cor marca
+a família, e o filho herda a do pai** — "Guardião (Ataru)" tem a mesma cor de
+"Sensível à Força", três níveis acima, e o olho agrupa a árvore sem ler.
+
+Onde paga mais é em **Poderes da Força**: Luz em azul de sabre Jedi, Sombra em
+vermelho Sith, Universal em cinza. Saber de relance se um poder é da Sombra é a
+diferença entre marcar Corrupção e não marcar.
+
+Nas classes, um tom por chassi — Veterano em laranja queimado, Operativo em
+roxo, Técnico em âmbar, Sensível em azul, a Senda em cinza-aço do beskar. Nas
+espécies, todas as dez do **mesmo** verde de propósito: dez cores brigando não
+diriam nada, e o que precisa se distinguir é o que **não** é espécie (Origens,
+Idiomas, o Molde Mutante).
+
+O Foundry não propaga cor de pasta sozinho, então a herança é feita no build,
+depois de `aninhaPastas()` — antes disso a hierarquia ainda não existe.
+
+**Sobre os tons:** o Foundry pinta o nome da pasta, e o mundo pode estar no tema
+claro ou no escuro; todos ficam entre ~45% e ~65% de luminosidade, faixa que
+sobrevive aos dois. E nenhuma informação depende só da cor — o nome da pasta
+continua dizendo tudo, então quem não distingue as cores não perde nada.
+
+A paleta é editável em `tools/data/pastas.mjs`. Verificação nova no validador:
+**`pasta-sem-cor`** (aviso), para pasta nova que ficou de fora da paleta.
+
+---
+
 ## 1.4.1 — 27/08/2026
 
 ### O Wookiee e o Trandoshano jogavam com CA −3

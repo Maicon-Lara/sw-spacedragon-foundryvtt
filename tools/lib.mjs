@@ -804,3 +804,32 @@ export function macroDoc(macro, folderId, sort) {
     _key: `!macros!${id}`,
   };
 }
+
+// Pinta as pastas e faz o filho herdar a cor do pai.
+//
+// Roda DEPOIS de aninhaPastas(), porque só então a hierarquia existe: até ali
+// "Guardião (Ataru)" é uma pasta de raiz com nome comprido, não filha de
+// "Sensível à Força". Herdar é o que faz a cor marcar família em vez de virar
+// enfeite — o Foundry não propaga cor de pasta sozinho.
+//
+// Pasta sem cor na paleta e sem pai colorido fica `null`, que é o padrão do
+// Foundry. Nada quebra por falta de entrada.
+export function pintaPastas(docs, paleta) {
+  const pastas = docs.filter((d) => d._key?.startsWith("!folders!"));
+  const porId = new Map(pastas.map((f) => [f._id, f]));
+
+  for (const p of pastas) {
+    // Sobe até achar alguém com cor própria na paleta.
+    let atual = p;
+    let visitados = 0;
+    while (atual && visitados++ < 20) {
+      const cor = paleta[atual.name];
+      if (cor) {
+        p.color = cor;
+        break;
+      }
+      atual = atual.folder ? porId.get(atual.folder) : null;
+    }
+  }
+  return pastas.filter((p) => p.color).length;
+}

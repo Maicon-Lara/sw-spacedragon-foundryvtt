@@ -11,7 +11,7 @@ import { compilePack } from "@foundryvtt/foundryvtt-cli";
 
 import {
   folderDoc, aninhaPastas, classDoc, classAbilityDoc, raceDoc, raceAbilityDoc,
-  weaponDoc, armorDoc, miscDoc, nivelTecnologico, spellDoc, journalDoc, macroDoc, itemUuid, writeSource,
+  weaponDoc, armorDoc, miscDoc, nivelTecnologico, spellDoc, journalDoc, macroDoc, itemUuid, writeSource, pintaPastas,
 } from "./lib.mjs";
 import { monsterDoc } from "./lib-actors.mjs";
 
@@ -31,6 +31,7 @@ import { mestreJournal } from "./data/mestre-journal.mjs";
 import { criacaoJournal } from "./data/criacao-journal.mjs";
 import { progressao } from "./data/progressoes.mjs";
 import { macros } from "./data/macros.mjs";
+import { CORES_DE_PASTA } from "./data/pastas.mjs";
 
 const ROOT = path.resolve(fileURLToPath(import.meta.url), "../..");
 const SRC = path.join(ROOT, "packs-src");
@@ -256,11 +257,14 @@ async function compile(packName, docs) {
   const outDir = path.join(OUT, packName);
   // Converte a hierarquia dos NOMES ("Operativo — Assassino") em pastas
   // aninhadas de verdade. Vale para todos os packs, por isso mora aqui.
-  const n = writeSource(srcDir, aninhaPastas(docs));
+  const arvore = aninhaPastas(docs);
+  // Depois de aninhar, não antes: a herança de cor precisa da hierarquia pronta.
+  const pintadas = pintaPastas(arvore, CORES_DE_PASTA);
+  const n = writeSource(srcDir, arvore);
   fs.rmSync(outDir, { recursive: true, force: true });
   fs.mkdirSync(outDir, { recursive: true });
   await compilePack(srcDir, outDir, { log: false });
-  console.log(`  ✔ ${packName}: ${n} documentos → LevelDB`);
+  console.log(`  ✔ ${packName}: ${n} documentos → LevelDB (${pintadas} pastas coloridas)`);
 }
 
 async function main() {
