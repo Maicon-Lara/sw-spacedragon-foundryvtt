@@ -105,20 +105,25 @@ function barra(n) {
     if (i === n) return `<strong>[${i}]</strong>`;
     return i < n ? "▮" : "▯";
   }).join(" ");
-  return `<p class="result">${casas}</p>`;
+  return `<p class="result barra">${casas}</p>`;
 }
 
 function painelEstado(ator) {
   const e = leia(ator);
   const f = faixaDe(e.corrupcao);
   const caminho = { luz: "Luz", sombra: "Sombra", neutro: "sem Caminho declarado" }[e.caminho];
+  // O wrapper existe porque o sistema estiliza .title/.result só dentro de
+  // #chat: no diálogo elas saíam sem formatação. O CSS do módulo tem as
+  // regras equivalentes escopadas em .stardragon-trilha.
   return (
+    `<div class="stardragon-trilha">` +
     `<p><strong>${ator.name}</strong> — Caminho da ${caminho}</p>` +
     barra(e.corrupcao) +
-    `<p class="result"><strong>${e.corrupcao} · ${f.nome}</strong></p>` +
+    `<p class="result faixa"><strong>${e.corrupcao} · ${f.nome}</strong></p>` +
     `<p>${f.efeito}</p>` +
     `<p><em>Tentação: ${e.usouNaCena ? "já usada nesta cena" : "livre nesta cena"} · ` +
-    `${e.usosNoDia}/${MAX_DIA} no dia.</em></p>`
+    `${e.usosNoDia}/${MAX_DIA} no dia.</em></p>` +
+    `</div>`
   );
 }
 

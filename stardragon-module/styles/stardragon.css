@@ -285,3 +285,50 @@ body.stardragon-tema .olddragon2e.sheet .economy .currency .sp,
 body.stardragon-tema .olddragon2e.sheet .economy .currency .cp {
   display: none;
 }
+
+/* ── A Trilha de Corrupção ─────────────────────────────────────────────────
+ *
+ * O sistema estiliza `div.title` e `p.result` só dentro de `section #chat` e
+ * `div #chat-notifications` (ver src/styles/chat.less). Os cartões da Trilha
+ * pegam esse estilo de graça — mas o DIÁLOGO não, e lá as mesmas classes
+ * saíam sem formatação nenhuma: a barra 0–10 ficava apagada e a faixa não se
+ * destacava do resto do texto.
+ *
+ * Estas regras valem SÓ dentro do painel da Trilha, então não repintam
+ * diálogo nenhum do sistema nem de outro módulo. Também não dependem do tema
+ * do módulo estar ligado: quem desliga o tema continua precisando ler a barra.
+ */
+
+.stardragon-trilha .title {
+  text-align: center;
+  font-size: 1.35em;
+  margin-bottom: 0.4em;
+}
+
+.stardragon-trilha .result {
+  text-align: center;
+  font-size: 1.15em;
+  margin: 0.35em 0;
+}
+
+/* A barra: monoespaçada para as onze casas ficarem alinhadas em qualquer
+ * fonte, e com espaço entre elas para dar de ler de longe. */
+.stardragon-trilha .barra {
+  font-family: var(--font-monospace, monospace);
+  letter-spacing: 0.18em;
+  font-size: 1.2em;
+  text-align: center;
+  margin: 0.4em 0;
+}
+
+/* A casa atual. `currentColor` em vez de uma cor fixa: o marcador acompanha
+ * o tema do leitor, claro ou escuro. */
+.stardragon-trilha .barra strong {
+  color: currentColor;
+  font-weight: 700;
+}
+
+.stardragon-trilha .faixa {
+  text-align: center;
+  font-size: 1.1em;
+}

@@ -6,6 +6,40 @@ começou junto com o rename.
 
 ---
 
+## 1.3.1 — 27/08/2026
+
+Testado no servidor da mesa, em Foundry 13.351 com `olddragon2e` 2.6.0.
+
+### A barra da Trilha saía apagada no diálogo
+
+O sistema estiliza `div.title` e `p.result` **só dentro de `section #chat`**
+(ver `src/styles/chat.less`). Os cartões de chat pegavam esse estilo de graça —
+e por isso saíram certos, com o `+2 CORRUPÇÃO` em vermelho maiúsculo. O
+**diálogo** não pega: lá as mesmas classes vinham sem formatação nenhuma, a
+barra 0–10 ficava apagada e a faixa não se destacava do resto do texto.
+
+O painel agora tem escopo próprio (`.stardragon-trilha`) com as regras
+equivalentes no CSS do módulo, e a barra é monoespaçada para as onze casas
+alinharem em qualquer fonte. Escopado, então não repinta diálogo do sistema nem
+de outro módulo — e não depende do tema estar ligado: quem desliga o tema ainda
+precisa ler a barra.
+
+Nenhum teste fora do Foundry pegaria isto: era CSS.
+
+### `verified` do sistema: 2.4.0 → 2.6.0
+
+A mesa roda 2.6.0. Nada quebrou no que foi exercitado, e o Foundry para de
+tratar o módulo como não-verificado.
+
+### O que passou no teste ao vivo
+
+Diálogo, Tentação (*Arrancar* +2 levando 0 → 2), cartões de chat, a trava de
+uma vez por cena, *Nova cena* liberando a cena e preservando o teto do dia, a
+**Queda** (9 → 10 → volta a 7 e o Caminho vira Sombra), o **Consumido**
+(parando em 10 com a ficha intacta) e a trava embaixo de 0.
+
+---
+
 ## 1.3.0 — 27/08/2026
 
 ### A Trilha de Corrupção
