@@ -6,6 +6,34 @@ começou junto com o rename.
 
 ---
 
+## 1.6.1 — 28/08/2026
+
+### As cores das pastas estavam ilegíveis, e eu tinha errado a premissa
+
+A 1.5.0 dizia que *"o Foundry pinta o nome da pasta com esta cor"*. **Está
+errado:** o Foundry usa a cor como **fundo** da barra e escreve o nome por cima
+em creme (`rgb 239,230,216`). Toda a paleta foi escolhida para o modelo trocado.
+
+Medido na tela, com o módulo instalado, a paleta inteira ficava abaixo dos
+**4,5:1** que a WCAG pede para texto normal:
+
+| | antes | agora |
+|---|--:|--:|
+| Técnico (âmbar) | 1,82:1 | **4,64:1** |
+| Sabres de Luz | 2,08:1 | 4,67:1 |
+| Luz | 2,35:1 | 4,62:1 |
+| Sombra | 3,93:1 | 4,67:1 |
+| *…as 15* | 1,82–4,33 | **4,61–4,72** |
+
+Os matizes são os mesmos, só escurecidos até passar — azul continua azul,
+vermelho continua vermelho. É também o que os outros módulos do mundo fazem: as
+pastas do Tomo de Magia usam vinho escuro, 8,7:1.
+
+Conferido depois num mostruário lado a lado: os seis tons das classes e os
+cinco do equipamento continuam distinguíveis entre si.
+
+---
+
 ## 1.6.0 — 27/08/2026
 
 ### Compêndio novo: Star Dragon: Tabelas
