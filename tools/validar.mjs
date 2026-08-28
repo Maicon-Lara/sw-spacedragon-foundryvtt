@@ -375,6 +375,35 @@ armaduraNaturalComoBonus();
 pastaSemCor();
 prosaSolta();
 
+// ── Rótulo dos tipos de documento que o módulo declara ─────────────────────
+// Um subtipo sem entrada TYPES.* nos arquivos de idioma aparece na janela com
+// a chave crua: "TYPES.Actor.stardragon.nave: Millennium Falcon". Foi o que
+// aconteceu com a Nave na v1.8.0.
+//
+// Roda fora do laço principal porque lê module.json e lang/, não os packs.
+{
+  const mod = JSON.parse(fs.readFileSync(path.join(ROOT, "stardragon-module", "module.json"), "utf8"));
+  const langDir = path.join(ROOT, "stardragon-module", "lang");
+  const idiomas = fs.existsSync(langDir)
+    ? fs.readdirSync(langDir).filter((f) => f.endsWith(".json"))
+    : [];
+  for (const [doc, tipos] of Object.entries(mod.documentTypes ?? {}))
+    for (const tipo of Object.keys(tipos)) {
+      const chave = `TYPES.${doc}.${mod.id}.${tipo}`;
+      for (const arq of idiomas) {
+        const dic = JSON.parse(fs.readFileSync(path.join(langDir, arq), "utf8"));
+        if (!dic[chave])
+          problemas.push({
+            nivel: "erro",
+            check: "tipo-sem-rotulo",
+            doc: `${doc}.${tipo}`,
+            pack: arq,
+            msg: `falta "${chave}" em lang/${arq} — a janela mostraria a chave crua`,
+          });
+      }
+    }
+}
+
 // ── Relatório ───────────────────────────────────────────────────────────────
 const erros = problemas.filter((p) => p.nivel === "erro");
 const avisos = problemas.filter((p) => p.nivel === "aviso");

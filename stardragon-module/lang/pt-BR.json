@@ -23,5 +23,6 @@
   "olddragon2e.economy": "Créditos",
   "olddragon2e.gp": "CR",
   "olddragon2e.gp_long": "Créditos",
-  "olddragon2e.gp_short": "CR"
+  "olddragon2e.gp_short": "CR",
+  "TYPES.Actor.stardragon.nave": "Nave"
 }

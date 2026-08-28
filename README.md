@@ -86,6 +86,23 @@ O conteúdo é **transcrito do cofre Obsidian**, em
 
 ---
 
+## Atualizou e a mudança não apareceu?
+
+O Foundry serve o JavaScript dos módulos **sem versão na URL**. Ao atualizar, o
+`module.json` vem novo (e a tela de módulos mostra a versão nova) mas o
+navegador pode continuar servindo o `.js` antigo do cache — a ficha abre, e a
+parte nova simplesmente não existe.
+
+**Ctrl+F5 na aba do Foundry.** Para confirmar antes, no console:
+
+```js
+const a = await fetch("/modules/stardragon/module/nave-modelo.js").then(r=>r.text());
+const b = await fetch("/modules/stardragon/module/nave-modelo.js?x=1", {cache:"reload"}).then(r=>r.text());
+a.length === b.length ? "está atualizado" : "é cache do navegador — Ctrl+F5";
+```
+
+---
+
 ## A Trilha de Corrupção
 
 A Corrupção é a única engrenagem do cenário que o sistema não tem como saber

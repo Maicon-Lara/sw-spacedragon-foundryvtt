@@ -6,6 +6,31 @@ começou junto com o rename.
 
 ---
 
+## 1.8.1 — 28/08/2026
+
+### A janela da Nave mostrava a chave crua
+
+`TYPES.Actor.stardragon.nave: Millennium Falcon` no título, porque o tipo novo
+da 1.7.0 não ganhou rótulo nos arquivos de idioma. Agora é **Nave** / *Starship*.
+
+Verificação nova no validador: **`tipo-sem-rotulo`** (erro) — todo subtipo
+declarado em `documentTypes` precisa de `TYPES.<Doc>.<modulo>.<tipo>` em **cada**
+arquivo de `lang/`. Testado removendo o rótulo: a trava aponta o arquivo e a
+chave que falta.
+
+### E uma nota que não é bug: cache do navegador
+
+O Foundry serve o JS dos módulos sem versão na URL. Depois de atualizar, o
+`module.json` vem novo — a tela de módulos mostra a versão certa — mas o
+navegador pode continuar entregando o `.js` antigo. A ficha abre e a parte nova
+simplesmente não está lá.
+
+Aconteceu com o dial e o seletor de armas da 1.8.0: o servidor tinha o arquivo
+certo (9.755 bytes), a aba servia o de 1.7.1 (5.384). **Ctrl+F5** resolve. O
+README ganhou a checagem de uma linha para distinguir isso de bug de verdade.
+
+---
+
 ## 1.8.0 — 28/08/2026
 
 ### Seletor de armas, dial de manobras e a ação de cada posto
