@@ -332,3 +332,91 @@ body.stardragon-tema .olddragon2e.sheet .economy .currency .cp {
   text-align: center;
   font-size: 1.1em;
 }
+
+/* ── Ficha de Nave ─────────────────────────────────────────────────────────
+ *
+ * Escopada em .stardragon.nave-ficha: é ficha própria do módulo, não repinta
+ * nada do sistema. Usa as variáveis do Foundry (--color-text-*) para
+ * acompanhar o tema claro e o escuro sem duas paletas.
+ */
+
+.stardragon.nave-ficha .stardragon-nave { display: flex; flex-direction: column; gap: 10px; padding: 6px 4px; }
+.stardragon.nave-ficha h3 {
+  font-size: 12px; text-transform: uppercase; letter-spacing: .09em;
+  opacity: .65; margin: 0 0 6px; border-bottom: 1px solid var(--color-border-light-tertiary, #6663); padding-bottom: 3px;
+  display: flex; align-items: center; gap: 8px;
+}
+.stardragon.nave-ficha h3 .dica { text-transform: none; letter-spacing: 0; font-size: 11px; opacity: .7; font-weight: normal; }
+
+.stardragon.nave-ficha .cabecalho { display: flex; gap: 10px; align-items: flex-start; }
+.stardragon.nave-ficha .retrato { width: 64px; height: 64px; object-fit: cover; border-radius: 4px; flex: 0 0 auto; }
+.stardragon.nave-ficha .titulo { flex: 1; display: flex; flex-direction: column; gap: 5px; }
+.stardragon.nave-ficha .titulo input[name="name"] { font-size: 19px; font-weight: 600; }
+.stardragon.nave-ficha .linha-chassi { display: flex; gap: 5px; }
+.stardragon.nave-ficha .linha-chassi select { flex: 1; min-width: 0; }
+
+/* Perfil tático */
+.stardragon.nave-ficha .perfil { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.stardragon.nave-ficha .dado {
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+  border: 1px solid var(--color-border-light-tertiary, #6663); border-radius: 4px; padding: 5px 3px;
+}
+.stardragon.nave-ficha .dado label { font-size: 10px; text-transform: uppercase; letter-spacing: .05em; opacity: .7; text-align: center; }
+.stardragon.nave-ficha .dado .unid { text-transform: none; opacity: .6; }
+.stardragon.nave-ficha .dado input { text-align: center; font-size: 17px; font-weight: 600; border: none; background: none; width: 100%; }
+/* A CA de Casco é constante da regra, não campo: mostrada, não editável. */
+.stardragon.nave-ficha .dado.fixo { opacity: .8; }
+.stardragon.nave-ficha .valor-fixo { font-size: 17px; font-weight: 600; line-height: 1.4; }
+
+/* Barras de casco e escudo */
+.stardragon.nave-ficha .barras { display: flex; flex-direction: column; gap: 8px; }
+.stardragon.nave-ficha .barra .rotulo { display: flex; justify-content: space-between; align-items: baseline; font-size: 12px; }
+.stardragon.nave-ficha .barra .nums input { width: 3.4em; text-align: center; }
+.stardragon.nave-ficha .trilho {
+  height: 9px; border-radius: 5px; overflow: hidden; margin: 3px 0;
+  background: var(--color-border-light-tertiary, #6663);
+}
+.stardragon.nave-ficha .preenche { height: 100%; transition: width .2s; }
+.stardragon.nave-ficha .preenche.casco { background: #a14e43; }
+.stardragon.nave-ficha .preenche.escudo { background: #42679c; }
+.stardragon.nave-ficha .barra .acoes { display: flex; gap: 5px; }
+.stardragon.nave-ficha .barra .acoes input,
+.stardragon.nave-ficha .barra .acoes select { flex: 1; min-width: 0; font-size: 11px; }
+
+/* Fichas da rodada */
+.stardragon.nave-ficha .fichas { display: flex; flex-wrap: wrap; gap: 5px; }
+.stardragon.nave-ficha .ficha {
+  flex: 0 1 auto; padding: 4px 11px; border-radius: 12px; font-size: 12px; line-height: 1.5;
+  border: 1px solid var(--color-border-light-tertiary, #6668); background: transparent; opacity: .55;
+}
+.stardragon.nave-ficha .ficha.ligada { opacity: 1; background: #42679c; border-color: #42679c; color: rgb(239,230,216); font-weight: 600; }
+.stardragon.nave-ficha .ficha.ligada.estresse { background: #b43c35; border-color: #b43c35; }
+.stardragon.nave-ficha .fim { display: flex; gap: 6px; margin-top: 7px; }
+.stardragon.nave-ficha .fim button { flex: 1; }
+.stardragon.nave-ficha .fim .esquivar { background: #42679c; color: rgb(239,230,216); border-color: #42679c; }
+
+/* Armamento */
+.stardragon.nave-ficha .armas { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.stardragon.nave-ficha .armas li { display: flex; gap: 4px; align-items: center; }
+.stardragon.nave-ficha .armas .nome { flex: 1 1 auto; min-width: 0; }
+.stardragon.nave-ficha .armas .dano { width: 4.5em; text-align: center; }
+.stardragon.nave-ficha .armas .arco { width: 5.5em; }
+.stardragon.nave-ficha .armas .alc { display: flex; align-items: center; gap: 1px; font-size: 11px; opacity: .8; }
+.stardragon.nave-ficha .armas .alc input { width: 2.2em; text-align: center; }
+.stardragon.nave-ficha .armas .atacar { flex: 0 0 auto; padding: 2px 9px; font-size: 11px; }
+.stardragon.nave-ficha .mais, .stardragon.nave-ficha .menos {
+  flex: 0 0 auto; width: 22px; height: 22px; line-height: 1; padding: 0; border-radius: 3px;
+}
+.stardragon.nave-ficha .vazio { opacity: .6; font-style: italic; font-size: 12px; margin: 0; }
+
+/* Postos */
+.stardragon.nave-ficha .postos .grade { display: grid; grid-template-columns: 1fr 1fr; gap: 5px 8px; }
+.stardragon.nave-ficha .posto { display: flex; align-items: center; gap: 6px; }
+.stardragon.nave-ficha .posto label { flex: 0 0 5.4em; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; opacity: .7; }
+.stardragon.nave-ficha .posto input { flex: 1; min-width: 0; }
+
+/* Diálogos de ataque e esquiva */
+.stardragon-nave-dialogo .linha { display: flex; align-items: center; gap: 8px; margin: 5px 0; }
+.stardragon-nave-dialogo .linha label { flex: 1; }
+.stardragon-nave-dialogo .linha select,
+.stardragon-nave-dialogo .linha input[type="number"] { flex: 0 0 11em; }

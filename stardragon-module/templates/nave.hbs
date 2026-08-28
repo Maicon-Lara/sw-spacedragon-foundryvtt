@@ -1,0 +1,140 @@
+{{!-- Ficha da Nave — Star Dragon. A ordem segue a da rodada tática: perfil,
+      estado da rodada, armamento, postos. --}}
+<form class="stardragon-nave" autocomplete="off">
+
+  <header class="cabecalho">
+    <img class="retrato" src="{{ator.img}}" data-edit="img" alt="{{ator.name}}">
+    <div class="titulo">
+      <input type="text" name="name" value="{{ator.name}}" placeholder="Nome da nave">
+      <div class="linha-chassi">
+        <select name="system.chassi">
+          {{#each chassis}}<option value="{{k}}" {{#if sel}}selected{{/if}}>{{rotulo}}</option>{{/each}}
+        </select>
+        <select name="system.porte">
+          {{#each portes}}<option value="{{k}}" {{#if sel}}selected{{/if}}>{{rotulo}}</option>{{/each}}
+        </select>
+        <button type="button" data-action="aplicarChassi" title="Preenche BA, Agilidade, Velocidade e a fórmula de casco pelo chassi">
+          aplicar perfil
+        </button>
+      </div>
+    </div>
+  </header>
+
+  {{!-- Perfil tático. A CA de Casco não é campo: é 44 para todo chassi. --}}
+  <section class="perfil">
+    <div class="dado"><label>BA</label><input type="number" name="system.ba" value="{{s.ba}}"></div>
+    <div class="dado fixo" title="A agilidade saiu da CA e virou dado de Esquiva: acertar a chapa de qualquer nave é igualmente difícil.">
+      <label>CA de Casco</label><span class="valor-fixo">{{caCasco}}</span>
+    </div>
+    <div class="dado"><label>Agilidade <span class="unid">d6</span></label><input type="number" name="system.agilidade" value="{{s.agilidade}}" min="0" max="5"></div>
+    <div class="dado"><label>Velocidade</label><input type="number" name="system.velocidade" value="{{s.velocidade}}" min="0"></div>
+    <div class="dado"><label>PP <span class="unid">piloto</span></label><input type="number" name="system.pp" value="{{s.pp}}"></div>
+  </section>
+
+  {{!-- Casco e escudo --}}
+  <section class="barras">
+    <div class="barra">
+      <div class="rotulo">
+        <span>Casco</span>
+        <span class="nums">
+          <input type="number" name="system.casco.value" value="{{s.casco.value}}"> /
+          <input type="number" name="system.casco.max" value="{{s.casco.max}}">
+        </span>
+      </div>
+      <div class="trilho"><div class="preenche casco" style="width:{{pctCasco}}%"></div></div>
+      <div class="acoes">
+        <input type="text" name="system.casco.formula" value="{{s.casco.formula}}" title="Fórmula de casco do chassi">
+        <button type="button" data-action="rolarCasco">rolar</button>
+      </div>
+    </div>
+
+    <div class="barra">
+      <div class="rotulo">
+        <span>Escudo</span>
+        <span class="nums">
+          <input type="number" name="system.escudo.value" value="{{s.escudo.value}}"> /
+          <input type="number" name="system.escudo.max" value="{{s.escudo.max}}">
+        </span>
+      </div>
+      <div class="trilho"><div class="preenche escudo" style="width:{{pctEscudo}}%"></div></div>
+      <div class="acoes">
+        <select name="system.escudo.gerador">
+          {{#each geradores}}<option value="{{k}}" {{#if sel}}selected{{/if}}>{{rotulo}}</option>{{/each}}
+        </select>
+        <button type="button" data-action="aplicarEscudo" title="Aplica o máximo do gerador para este porte">aplicar</button>
+      </div>
+    </div>
+  </section>
+
+  {{!-- As fichas da rodada. No jogo de miniaturas são peças na mesa; aqui são
+        o que a mesa esquece. --}}
+  <section class="rodada">
+    <h3>Fichas da rodada</h3>
+    <div class="fichas">
+      <button type="button" class="ficha {{#if s.fichas.foco}}ligada{{/if}}" data-action="ficha" data-ficha="foco"
+              title="+2 no ataque, ou torna êxito todo 3-4 da Esquiva">Foco</button>
+      <button type="button" class="ficha {{#if s.fichas.esquiva}}ligada{{/if}}" data-action="ficha" data-ficha="esquiva"
+              title="+1 êxito automático de Esquiva">Esquiva</button>
+      <button type="button" class="ficha {{#if s.fichas.estresse}}ligada estresse{{/if}}" data-action="ficha" data-ficha="estresse"
+              title="Nave estressada não age e não pode fazer manobra vermelha">Estresse</button>
+      <button type="button" class="ficha {{#if s.fichas.avariada}}ligada estresse{{/if}}" data-action="ficha" data-ficha="avariada"
+              title="−2 no ataque">Avariada</button>
+      <button type="button" class="ficha trava {{#if s.fichas.trava}}ligada{{/if}}" data-action="ficha" data-ficha="trava"
+              title="Alcance 1-3, 360°. Gaste para rerrolar o d20 ou os dados de dano.">
+        Trava{{#if s.fichas.trava}} → {{s.fichas.trava}}{{/if}}
+      </button>
+    </div>
+    <div class="fim">
+      <button type="button" data-action="fimDaRodada" title="Remove Foco e Esquiva; Trava e Estresse permanecem. Escudo +1 se não sofreu dano.">
+        fim da rodada
+      </button>
+      <button type="button" class="esquivar" data-action="esquivar">esquivar</button>
+    </div>
+  </section>
+
+  {{!-- Armamento --}}
+  <section class="armamento">
+    <h3>Armamento <button type="button" class="mais" data-action="addArma" title="Adicionar arma">+</button></h3>
+    {{#if s.armas.length}}
+      <ul class="armas">
+        {{#each s.armas as |arma i|}}
+        <li>
+          <input type="text" class="nome" name="system.armas.{{i}}.nome" value="{{arma.nome}}">
+          <input type="text" class="dano" name="system.armas.{{i}}.dano" value="{{arma.dano}}">
+          <select class="arco" name="system.armas.{{i}}.arco">
+            <option value="frontal" {{#if (eq arma.arco "frontal")}}selected{{/if}}>frontal</option>
+            <option value="torre" {{#if (eq arma.arco "torre")}}selected{{/if}}>360°</option>
+          </select>
+          <span class="alc">
+            <input type="number" name="system.armas.{{i}}.alcanceMin" value="{{arma.alcanceMin}}" min="1" max="3">–<input
+                   type="number" name="system.armas.{{i}}.alcanceMax" value="{{arma.alcanceMax}}" min="1" max="3">
+          </span>
+          <button type="button" class="atacar" data-action="atacar" data-idx="{{i}}">atacar</button>
+          <button type="button" class="menos" data-action="delArma" data-idx="{{i}}" title="Remover">×</button>
+        </li>
+        {{/each}}
+      </ul>
+    {{else}}
+      <p class="vazio">Sem armamento. Use o <strong>+</strong> para adicionar.</p>
+    {{/if}}
+  </section>
+
+  {{!-- Postos: no Modo Tripulação, a nave age uma vez, mas com várias cabeças. --}}
+  <section class="postos">
+    <h3>Postos <span class="dica">Modo Tripulação — uma ação de posto por personagem</span></h3>
+    <div class="grade">
+      {{#each postos}}
+      <div class="posto">
+        <label>{{rotulo}}</label>
+        <input type="text" name="system.postos.{{chave}}" value="{{valor}}" placeholder="—">
+      </div>
+      {{/each}}
+    </div>
+  </section>
+
+  <section class="notas">
+    <h3>Notas</h3>
+    {{formInput (lookup s "descricao") name="system.descricao" type="editorHTML" enriched=descricao toggled=true}}
+  </section>
+
+</form>

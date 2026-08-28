@@ -6,6 +6,47 @@ começou junto com o rename.
 
 ---
 
+## 1.7.0 — 28/08/2026
+
+### Ficha de Nave
+
+Tipo de ator próprio (`stardragon.nave`), com modelo de dados e ficha do
+módulo. Implementa o **Combate Tático de Naves** do cenário — o dogfight
+posicional no espírito do *X-Wing* rodando sobre o motor do OD2.
+
+Duas coisas da regra moldaram a ficha inteira:
+
+**A CA de Casco é 44 para toda nave**, e por isso não é campo editável: é
+constante do módulo, mostrada e travada. A agilidade saiu da CA e virou dado de
+Esquiva — acertar a chapa de um caça e de um cruzador é igualmente difícil; o
+que muda é o quanto ele consegue não estar lá. Um 43 numa ficha seria bug
+silencioso, não variante.
+
+**As fichas de rodada são estado, não anotação.** Foco, Esquiva, Trava e
+Estresse ficam na ficha, e o botão *fim da rodada* limpa pela regra: saem Foco e
+Esquiva, **permanecem Trava e Estresse**. No jogo de miniaturas são peças na
+mesa; num VTT são exatamente o que se esquece.
+
+**Botão de ataque** monta `1d20 + BA` contra a CA 44 somando alcance (+2/0/−2),
+Foco (+2), porte do alvo (0/+2/+4/+6), a penalidade de G/C contra P (−4) e
+estresse/avaria (−2). Gasta as fichas que usou. Trata 20 e 1 naturais.
+
+**Botão de esquiva** rola os d6 de Agilidade contando **5-6** como êxito e
+**3-4** também se gastar Foco, com +1 dado a alcance longo e −1 pela cauda. O
+cartão diz quantos *dados de dano* foram cancelados — não pontos, que é o erro
+mais comum de fazer de cabeça. Agilidade 0 avisa em vez de rolar: o cruzador não
+se desvia, encaixa.
+
+**O escudo regenera +1 só na rodada sem dano**, e a ficha sabe disso sozinha: um
+hook em `preUpdateActor` marca quando casco ou escudo caem.
+
+Também: *aplicar perfil* preenche BA, Agilidade, Velocidade e a fórmula de casco
+a partir do chassi; *rolar* casco resolve o `1d100`/`3d100`/`1d1000` da tabela;
+o escudo puxa o máximo do gerador cruzado com o porte. Postos do Modo Tripulação
+na ficha.
+
+---
+
 ## 1.6.1 — 28/08/2026
 
 ### As cores das pastas estavam ilegíveis, e eu tinha errado a premissa

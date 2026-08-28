@@ -19,6 +19,8 @@
  */
 
 import { abrirCorrupcao, novaCena, novoDia, diagnostico } from "./corrupcao.js";
+import { NaveDataModel } from "./nave-modelo.js";
+import { NaveFicha } from "./nave-ficha.js";
 
 const ID = "stardragon";
 const CLASSE = "stardragon-tema";
@@ -28,6 +30,17 @@ function aplicarTema(ligado) {
 }
 
 Hooks.once("init", () => {
+  // ── Nave: tipo de ator próprio ──
+  // O subtipo é declarado em module.json (documentTypes). Aqui só ligamos o
+  // modelo de dados e a ficha. A chave é "stardragon.nave" — subtipo de módulo
+  // leva o id do módulo como prefixo, e sem ele nada casa.
+  Object.assign(CONFIG.Actor.dataModels, { "stardragon.nave": NaveDataModel });
+  foundry.documents.collections.Actors.registerSheet(ID, NaveFicha, {
+    types: ["stardragon.nave"],
+    label: "Nave (Star Dragon)",
+    makeDefault: true,
+  });
+
   game.settings.register(ID, "tema", {
     name: "Tema Star Wars nas fichas",
     hint:
@@ -48,6 +61,19 @@ Hooks.once("ready", () => {
   // para que atualizar o módulo atualize a regra — uma macro já arrastada para
   // a barra continua valendo, porque ela só chama isto.
   game.stardragon = { corrupcao: abrirCorrupcao, novaCena, novoDia, diagnostico };
+
+  // O escudo só regenera na rodada em que a nave NÃO sofreu dano. Marcar isso
+  // à mão é o tipo de coisa que a mesa esquece, então o próprio update marca:
+  // se casco ou escudo caem, a ficha da rodada sabe.
+  Hooks.on("preUpdateActor", (ator, mudanca) => {
+    if (ator.type !== "stardragon.nave") return;
+    const casco = foundry.utils.getProperty(mudanca, "system.casco.value");
+    const escudo = foundry.utils.getProperty(mudanca, "system.escudo.value");
+    const caiu =
+      (casco !== undefined && casco < ator.system.casco.value) ||
+      (escudo !== undefined && escudo < ator.system.escudo.value);
+    if (caiu) foundry.utils.setProperty(mudanca, "system.fichas.sofreuDano", true);
+  });
 
   // Diagnóstico de uma linha: se o tema não aparecer, é esta linha que diz
   // onde parou, sem precisar colar nada no console.

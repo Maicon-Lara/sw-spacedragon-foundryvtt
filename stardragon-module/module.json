@@ -2,7 +2,7 @@
   "id": "stardragon",
   "title": "Star Dragon — Star Wars no Old Dragon 2",
   "description": "Módulo de conteúdo do Star Dragon — a adaptação de Star Wars para Old Dragon 2 sobre o suplemento sci-fi Space Dragon / Estrela Dracônica. Espécies, classes, equipamentos, poderes da Força, bestiário e material de cenário. Obra de fã, não oficial e sem fins lucrativos.",
-  "version": "1.6.1",
+  "version": "1.7.0",
   "compatibility": {
     "minimum": "13",
     "verified": "14"
@@ -133,5 +133,14 @@
   "url": "https://github.com/Maicon-Lara/sw-spacedragon-foundryvtt",
   "manifest": "https://raw.githubusercontent.com/Maicon-Lara/sw-spacedragon-foundryvtt/main/stardragon-module/module.json",
   "download": "https://raw.githubusercontent.com/Maicon-Lara/sw-spacedragon-foundryvtt/main/stardragon.zip",
-  "changelog": "https://raw.githubusercontent.com/Maicon-Lara/sw-spacedragon-foundryvtt/main/CHANGELOG.md"
+  "changelog": "https://raw.githubusercontent.com/Maicon-Lara/sw-spacedragon-foundryvtt/main/CHANGELOG.md",
+  "documentTypes": {
+    "Actor": {
+      "nave": {
+        "htmlFields": [
+          "descricao"
+        ]
+      }
+    }
+  }
 }
