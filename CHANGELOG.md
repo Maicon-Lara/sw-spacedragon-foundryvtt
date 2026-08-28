@@ -6,6 +6,32 @@ começou junto com o rename.
 
 ---
 
+## 1.7.1 — 28/08/2026
+
+### A ficha de Nave não abria: o template não estava no zip
+
+`make-zip.py` montava o pacote a partir de uma **lista de inclusão**
+(`["module.json", "packs", "styles", "assets", "module", "lang"]`) e pulava em
+silêncio o que não existisse. A pasta `templates/`, criada na 1.7.0, não estava
+na lista — o zip subiu sem ela, e a ficha morria com
+`ENOENT: templates/nave.hbs` no cliente.
+
+O comentário do próprio arquivo já avisava do risco (*"sem isso o CSS e as capas
+existem no repositório mas nunca chegam ao servidor"*) e mesmo assim a armadilha
+funcionou: lista de inclusão esquece, e o `continue` silencioso não deixa
+ninguém notar.
+
+**Agora é lista de exclusão.** Vai tudo o que está em `stardragon-module/`,
+menos o que for explicitamente excluído. Pasta nova entra sozinha.
+
+E o empacotador passou a **conferir o que empacotou**: todo `esmodules`,
+`styles` e `packs` do manifesto, e todo caminho `modules/stardragon/…` citado
+no código, precisam existir dentro do zip. Se faltar, o build falha com o nome
+do arquivo em vez de publicar. Testado escondendo o `templates/` — a trava
+apontou `template citado em nave-ficha.js: templates/nave.hbs`.
+
+---
+
 ## 1.7.0 — 28/08/2026
 
 ### Ficha de Nave
