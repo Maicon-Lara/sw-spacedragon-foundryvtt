@@ -70,10 +70,11 @@
         sai no chat quando o botão de revelar for usado, na Ativação. --}}
   <section class="dial">
     <h3>Manobra <span class="dica">escolha em segredo · revele na Ativação</span></h3>
+    {{#unless escala.ok}}<p class="aviso-escala">{{{escala.motivo}}} O token não será movido.</p>{{/unless}}
     <div class="manobras">
       {{#each dial}}
-      <button type="button" class="mano {{cor}} {{#if (eq ../s.manobra.tipo tipo)}}{{#if (eq ../s.manobra.velocidade velocidade)}}escolhida{{/if}}{{/if}}"
-              data-action="planejar" data-tipo="{{tipo}}" data-vel="{{velocidade}}"
+      <button type="button" class="mano {{cor}} {{#if (eq ../s.manobra.tipo tipo)}}{{#if (eq ../s.manobra.velocidade velocidade)}}{{#if (eq ../s.manobra.lado lado)}}escolhida{{/if}}{{/if}}{{/if}}"
+              data-action="planejar" data-tipo="{{tipo}}" data-vel="{{velocidade}}" data-lado="{{lado}}"
               title="{{rotulo}} — giro {{giro}} · {{cor}}">{{etiqueta}}</button>
       {{/each}}
     </div>

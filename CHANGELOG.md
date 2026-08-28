@@ -6,6 +6,44 @@ começou junto com o rename.
 
 ---
 
+## 1.9.0 — 28/08/2026
+
+### O dial move o token
+
+Revelar a manobra agora **é** a Ativação: o token anda as casas e assenta o
+giro. O dial ganhou **esquerda e direita** para Inclinada e Curva — um Caça sai
+de 12 para 19 botões, e continua cabendo na ficha.
+
+**Inclinada e Curva não andam igual**, e a diferença sai do texto do capítulo: a
+inclinada *"desvia"* — anda na diagonal e só então assenta os 45° — enquanto a
+curva *"vira cedo"* — gira primeiro e anda já na direção nova, que é por isso
+que ela "perde alcance".
+
+**Colisão automática, pela regra:** se a manobra terminar sobre outra nave, o
+módulo recua **pelo caminho percorrido** até a primeira casa livre, marca a nave
+como **colada** e cancela a ação da rodada.
+
+**A cena precisa estar a 20 m por casa.** Se não estiver, a ficha avisa antes e
+o token não é movido — uma cena de aventura em terra costuma estar em 1,5 m, e
+ali a velocidade 5 jogaria a nave 66 casas adiante. O aviso diz a escala da cena
+e quantas casas daria.
+
+### Duas medidas que desmentiram o que eu supunha
+
+Medido na cena de verdade antes de escrever uma linha de movimento:
+
+| | eu supunha | é |
+|---|---|---|
+| Distância em `getTranslatedPoint` | pixels (`n × grid.size`) | **unidades de cena** (`n × grid.distance`) |
+| Ângulo 0 | norte, sentido trigonométrico | **leste**, sentido **horário** |
+
+O segundo vem de o eixo Y da tela crescer para baixo. Com a suposição errada a
+nave andaria dois terços da distância, para o lado errado — e como as duas
+compensam parcialmente, teria a cara de "o movimento está meio estranho" em vez
+de erro óbvio. Os dois achados estão no cabeçalho de `nave-movimento.js`.
+
+---
+
 ## 1.8.1 — 28/08/2026
 
 ### A janela da Nave mostrava a chave crua

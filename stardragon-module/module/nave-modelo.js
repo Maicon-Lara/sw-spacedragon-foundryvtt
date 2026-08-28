@@ -79,13 +79,23 @@ export const ARMAS = {
  * `30 Sistemas/Star Dragon/ED-12-Combate-Tatico-de-Naves.md`, §12.5.
  */
 export const MANOBRAS = {
-  reta: { rotulo: "Reta", simbolo: "↑", giro: "0°" },
-  inclinada: { rotulo: "Inclinada", simbolo: "↗↖", giro: "45°" },
-  curva: { rotulo: "Curva", simbolo: "⟳⟲", giro: "90°" },
-  koiogran: { rotulo: "Koiogran", simbolo: "↑180°", giro: "180°" },
-  parar: { rotulo: "Parar", simbolo: "⊘", giro: "0°" },
-  re: { rotulo: "Ré", simbolo: "↓", giro: "0°" },
+  // `giro` em graus. `lado` marca as manobras que existem em esquerda e
+  // direita — o dial gera um botão para cada.
+  //
+  // `viraAntes` é a diferença entre Inclinada e Curva, e sai do texto do
+  // capítulo: a inclinada "desvia" (anda na diagonal e termina 45° virada), a
+  // curva "vira cedo" (gira primeiro, depois anda) — e é justamente por virar
+  // antes que ela "perde alcance".
+  reta: { rotulo: "Reta", simbolo: "↑", giro: 0 },
+  inclinada: { rotulo: "Inclinada", simbolo: "↗", giro: 45, lado: true, viraAntes: false },
+  curva: { rotulo: "Curva", simbolo: "⟳", giro: 90, lado: true, viraAntes: true },
+  koiogran: { rotulo: "Koiogran", simbolo: "↑180°", giro: 180 },
+  parar: { rotulo: "Parar", simbolo: "⊘", giro: 0 },
+  re: { rotulo: "Ré", simbolo: "↓", giro: 0, re: true },
 };
+
+/** 1 hex = 20 m. Uma cena de combate de naves precisa estar nessa escala. */
+export const METROS_POR_HEX = 20;
 
 export const DIAL = {
   caca: { reta: { de: 1, ate: 5, verde: 2 }, inclinada: { de: 1, ate: 4, verde: 1 }, curva: { de: 1, ate: 3 },
@@ -153,6 +163,9 @@ export class NaveDataModel extends foundry.abstract.TypeDataModel {
         estresse: new fields.BooleanField({ initial: false }),
         trava: txt(""), // nome do alvo travado
         avariada: new fields.BooleanField({ initial: false }),
+        // Naves coladas (por colisão ou acoplagem) não se atacam — mas podem
+        // ser abordadas.
+        colada: new fields.BooleanField({ initial: false }),
         // Marcado sozinho quando casco ou escudo caem (ver o hook em
         // stardragon.js). O escudo só regenera na rodada em que a nave NÃO
         // sofreu dano, e é isso que a mesa esquece de conferir.
@@ -182,6 +195,7 @@ export class NaveDataModel extends foundry.abstract.TypeDataModel {
       manobra: new fields.SchemaField({
         tipo: txt(""),
         velocidade: num(0),
+        lado: txt(""), // "esq" | "dir" | "" para as que não têm lado
         revelada: new fields.BooleanField({ initial: false }),
       }),
 

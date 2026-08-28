@@ -18,6 +18,7 @@
 
 import { CA_CASCO, CHASSIS, GERADORES, PORTES, ALCANCES, POSTOS,
          ARMAS, DIAL, MANOBRAS, ACOES_DE_POSTO } from "./nave-modelo.js";
+import { moverNave, conferirEscala } from "./nave-movimento.js";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -110,9 +111,11 @@ export class NaveFicha extends HandlebarsApplicationMixin(ActorSheetV2) {
       armasCatalogo: Object.entries(ARMAS).map(([k, v]) => ({ k, ...v })),
       dial: NaveFicha.montaDial(s.chassi),
       manobraAtual: s.manobra.tipo
-        ? `${MANOBRAS[s.manobra.tipo]?.simbolo ?? ""} ${MANOBRAS[s.manobra.tipo]?.rotulo ?? s.manobra.tipo}` +
+        ? `${MANOBRAS[s.manobra.tipo]?.rotulo ?? s.manobra.tipo}` +
+          (s.manobra.lado ? (s.manobra.lado === "esq" ? " à esquerda" : " à direita") : "") +
           (s.manobra.velocidade ? ` ${s.manobra.velocidade}` : "")
         : "",
+      escala: canvas?.scene ? conferirEscala(canvas.scene) : { ok: true },
       pctCasco: s.casco.max ? Math.round((s.casco.value / s.casco.max) * 100) : 0,
       pctEscudo: s.escudo.max ? Math.round((s.escudo.value / s.escudo.max) * 100) : 0,
       descricao: await foundry.applications.ux.TextEditor.implementation.enrichHTML(s.descricao, { async: true }),
@@ -342,12 +345,19 @@ export class NaveFicha extends HandlebarsApplicationMixin(ActorSheetV2) {
     const saida = [];
     for (const [tipo, faixa] of Object.entries(d)) {
       const m = MANOBRAS[tipo];
+      // Inclinada e Curva existem em esquerda e direita; o resto, uma só.
+      const lados = m.lado ? ["esq", "dir"] : [""];
       for (let v = faixa.de; v <= faixa.ate; v++) {
-        saida.push({
-          tipo, velocidade: v, simbolo: m.simbolo, rotulo: m.rotulo, giro: m.giro,
-          cor: faixa.vermelha ? "vermelha" : (faixa.verde === v ? "verde" : "branca"),
-          etiqueta: `${m.simbolo}${v > 0 ? " " + v : ""}`,
-        });
+        for (const lado of lados) {
+          const seta = !m.lado ? m.simbolo : lado === "esq"
+            ? (tipo === "curva" ? "⟲" : "↖")
+            : (tipo === "curva" ? "⟳" : "↗");
+          saida.push({
+            tipo, velocidade: v, lado, simbolo: seta, rotulo: m.rotulo, giro: m.giro,
+            cor: faixa.vermelha ? "vermelha" : (faixa.verde === v ? "verde" : "branca"),
+            etiqueta: `${seta}${v > 0 ? " " + v : ""}`,
+          });
+        }
       }
     }
     return saida;
@@ -358,6 +368,7 @@ export class NaveFicha extends HandlebarsApplicationMixin(ActorSheetV2) {
     await this.actor.update({
       "system.manobra.tipo": alvo.dataset.tipo,
       "system.manobra.velocidade": Number(alvo.dataset.vel),
+      "system.manobra.lado": alvo.dataset.lado ?? "",
       "system.manobra.revelada": false,
     });
   }
@@ -367,10 +378,31 @@ export class NaveFicha extends HandlebarsApplicationMixin(ActorSheetV2) {
     if (!m.tipo) return ui.notifications.warn("Nenhuma manobra planejada.");
     const info = MANOBRAS[m.tipo];
     const cor = NaveFicha.montaDial(this.actor.system.chassi)
-      .find((x) => x.tipo === m.tipo && x.velocidade === m.velocidade)?.cor ?? "branca";
+      .find((x) => x.tipo === m.tipo && x.velocidade === m.velocidade && x.lado === (m.lado ?? ""))?.cor ?? "branca";
 
     const upd = { "system.manobra.revelada": true };
     let efeito = "";
+
+    // Revelar é a Ativação: move o token, se houver um na cena e a escala for
+    // a do combate de naves.
+    let mov = null;
+    const token = this.actor.getActiveTokens?.()[0]?.document;
+    if (token) {
+      mov = await moverNave(token, m);
+      if (mov?.erro) {
+        efeito += `<p class="result"><strong class="failure">Não movi o token</strong></p><p>${mov.erro}</p>`;
+      } else if (mov) {
+        efeito +=
+          `<p><em>${mov.casas} casa(s), giro ${mov.giro > 0 ? "+" : ""}${mov.giro}°.</em></p>`;
+        if (mov.colidiu) {
+          upd["system.fichas.colada"] = true;
+          efeito +=
+            `<p class="result"><strong class="failure">Colisão</strong></p>` +
+            `<p>Recuou até a primeira casa livre e ficou <strong>colada</strong>: ` +
+            `<strong>perde a ação</strong> da rodada. Naves coladas não se atacam — mas podem abordar.</p>`;
+        }
+      }
+    }
     if (cor === "verde" && this.actor.system.fichas.estresse) {
       upd["system.fichas.estresse"] = false;
       efeito = `<p class="result"><strong class="success">Manobra verde — Estresse removido</strong></p>`;
