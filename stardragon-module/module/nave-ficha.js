@@ -16,7 +16,8 @@
  *            parte que mais se erra de cabeça.
  */
 
-import { CA_CASCO, CHASSIS, GERADORES, PORTES, ALCANCES, POSTOS } from "./nave-modelo.js";
+import { CA_CASCO, CHASSIS, GERADORES, PORTES, ALCANCES, POSTOS,
+         ARMAS, DIAL, MANOBRAS, ACOES_DE_POSTO } from "./nave-modelo.js";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -84,6 +85,9 @@ export class NaveFicha extends HandlebarsApplicationMixin(ActorSheetV2) {
       rolarCasco: NaveFicha.#rolarCasco,
       aplicarEscudo: NaveFicha.#aplicarEscudo,
       addArma: NaveFicha.#addArma,
+      catalogoArma: NaveFicha.#catalogoArma,
+      planejar: NaveFicha.#planejar,
+      revelar: NaveFicha.#revelar,
       delArma: NaveFicha.#delArma,
     },
   };
@@ -100,7 +104,15 @@ export class NaveFicha extends HandlebarsApplicationMixin(ActorSheetV2) {
       chassis: Object.entries(CHASSIS).map(([k, v]) => ({ k, ...v, sel: k === s.chassi })),
       geradores: Object.entries(GERADORES).map(([k, v]) => ({ k, ...v, sel: k === s.escudo.gerador })),
       portes: Object.entries(PORTES).map(([k, v]) => ({ k, ...v, sel: k === s.porte })),
-      postos: POSTOS.map((p) => ({ chave: p, rotulo: p[0].toUpperCase() + p.slice(1), valor: s.postos[p] })),
+      postos: POSTOS.map((p) => ({
+        chave: p, rotulo: p[0].toUpperCase() + p.slice(1), valor: s.postos[p], acao: ACOES_DE_POSTO[p],
+      })),
+      armasCatalogo: Object.entries(ARMAS).map(([k, v]) => ({ k, ...v })),
+      dial: NaveFicha.montaDial(s.chassi),
+      manobraAtual: s.manobra.tipo
+        ? `${MANOBRAS[s.manobra.tipo]?.simbolo ?? ""} ${MANOBRAS[s.manobra.tipo]?.rotulo ?? s.manobra.tipo}` +
+          (s.manobra.velocidade ? ` ${s.manobra.velocidade}` : "")
+        : "",
       pctCasco: s.casco.max ? Math.round((s.casco.value / s.casco.max) * 100) : 0,
       pctEscudo: s.escudo.max ? Math.round((s.escudo.value / s.escudo.max) * 100) : 0,
       descricao: await foundry.applications.ux.TextEditor.implementation.enrichHTML(s.descricao, { async: true }),
@@ -321,6 +333,75 @@ export class NaveFicha extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   static async #addArma() {
     const armas = [...this.actor.system.armas, { nome: "Nova arma", dano: "2d10", arco: "frontal", alcanceMin: 1, alcanceMax: 3, nota: "" }];
+    await this.actor.update({ "system.armas": armas });
+  }
+
+  /** Expande a Tabela 12-2 do chassi numa lista de botões. */
+  static montaDial(chassi) {
+    const d = DIAL[chassi] ?? {};
+    const saida = [];
+    for (const [tipo, faixa] of Object.entries(d)) {
+      const m = MANOBRAS[tipo];
+      for (let v = faixa.de; v <= faixa.ate; v++) {
+        saida.push({
+          tipo, velocidade: v, simbolo: m.simbolo, rotulo: m.rotulo, giro: m.giro,
+          cor: faixa.vermelha ? "vermelha" : (faixa.verde === v ? "verde" : "branca"),
+          etiqueta: `${m.simbolo}${v > 0 ? " " + v : ""}`,
+        });
+      }
+    }
+    return saida;
+  }
+
+  /** Planejamento: escolhida em segredo, revelada na Ativação. */
+  static async #planejar(event, alvo) {
+    await this.actor.update({
+      "system.manobra.tipo": alvo.dataset.tipo,
+      "system.manobra.velocidade": Number(alvo.dataset.vel),
+      "system.manobra.revelada": false,
+    });
+  }
+
+  static async #revelar() {
+    const m = this.actor.system.manobra;
+    if (!m.tipo) return ui.notifications.warn("Nenhuma manobra planejada.");
+    const info = MANOBRAS[m.tipo];
+    const cor = NaveFicha.montaDial(this.actor.system.chassi)
+      .find((x) => x.tipo === m.tipo && x.velocidade === m.velocidade)?.cor ?? "branca";
+
+    const upd = { "system.manobra.revelada": true };
+    let efeito = "";
+    if (cor === "verde" && this.actor.system.fichas.estresse) {
+      upd["system.fichas.estresse"] = false;
+      efeito = `<p class="result"><strong class="success">Manobra verde — Estresse removido</strong></p>`;
+    } else if (cor === "verde") {
+      efeito = `<p class="result"><strong class="success">Manobra verde</strong></p><p><em>Sem Estresse para remover.</em></p>`;
+    } else if (cor === "vermelha") {
+      upd["system.fichas.estresse"] = true;
+      efeito =
+        `<p class="result"><strong class="failure">Manobra vermelha — Estresse</strong></p>` +
+        `<p>A ação desta rodada está <strong>cancelada</strong>.</p>`;
+    }
+    await this.actor.update(upd);
+
+    await card(
+      this.actor,
+      "Manobra revelada",
+      `<p class="result"><strong>${info.simbolo} ${info.rotulo}${m.velocidade ? " " + m.velocidade : ""}</strong></p>` +
+        `<p>Giro final ${info.giro}.</p>` + efeito
+    );
+  }
+
+  /** Escolher no catálogo preenche dano, arco e alcance de uma vez. */
+  static async #catalogoArma(event, alvo) {
+    const i = Number(alvo.dataset.idx);
+    const cat = ARMAS[alvo.value];
+    const armas = [...this.actor.system.armas];
+    if (!armas[i] || !cat) return;
+    armas[i] = alvo.value === "outra"
+      ? { ...armas[i], catalogo: "outra" }
+      : { catalogo: alvo.value, nome: cat.rotulo, dano: cat.dano, arco: cat.arco,
+          alcanceMin: cat.min, alcanceMax: cat.max, nota: cat.nota };
     await this.actor.update({ "system.armas": armas });
   }
 

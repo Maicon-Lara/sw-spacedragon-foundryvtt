@@ -6,6 +6,49 @@ começou junto com o rename.
 
 ---
 
+## 1.8.0 — 28/08/2026
+
+### Seletor de armas, dial de manobras e a ação de cada posto
+
+**Armamento com catálogo.** Um seletor com a Tabela 12-7 — Disparadores laser,
+Canhões de energia, Metralhadora, Mísseis teleguiados, Torre de laser, Bateria
+pesada — que preenche dano, arco e alcance de uma vez, como o seletor de chassi
+já fazia. A nota da arma aparece embaixo: a da Metralhadora avisa que ali cada
+êxito de Esquiva cancela um **ataque inteiro**, não um dado, que é a exceção
+mais fácil de esquecer. *— outra —* libera os campos para arma de casa.
+
+**Dial de manobras (Tabela 12-2).** As manobras disponíveis para o chassi, cada
+uma com a cor certa: verde remove uma ficha de Estresse ao ser executada,
+vermelha impõe uma e cancela a ação da rodada. A escolha é **secreta** — fica
+gravada e só sai no chat pelo botão *revelar*, na Ativação —, e revelar já
+aplica a cor.
+
+**Cada posto mostra a sua ação** (Tabela 12-9), abaixo do nome de quem o ocupa.
+
+### Sobre a Tabela 12-2, e por que ela não foi inventada
+
+O capítulo de Star Wars diz que o dial *"está resumido em SW-OD2-Naves pela
+coluna Mov."* — mas lá só há Mov. em metros. A tabela real estava noutro
+arquivo do cofre, `ED-12-Combate-Tatico-de-Naves.md` §12.5.
+
+Antes de achá-la eu havia rascunhado um dial a partir das duas únicas frases do
+capítulo (*"caças manobram tudo, cruzadores quase só andam para a frente"*).
+Esse rascunho errava em **oito células**: dava Ré ao Caça (que não tem), parava
+o Koiogran dele no 4 (vai a 5), tirava o Parar do Cargueiro (que tem) e pintava
+de vermelho curvas que são brancas. Nenhuma dessas seria percebida em jogo sem
+conferir a fonte.
+
+A tabela agora vem de `tools/…/nave-modelo.js` com a fonte citada no comentário,
+e com o aviso de não regenerá-la de cabeça.
+
+### E não existe kit de poderes por posto
+
+Procurado no cofre inteiro: o que há é **uma ação por posto**, a Tabela 12-9, e
+nada de kits por tripulante. É por isso que a ficha mostra a ação do posto em
+vez de uma lista de poderes.
+
+---
+
 ## 1.7.1 — 28/08/2026
 
 ### A ficha de Nave não abria: o template não estava no zip

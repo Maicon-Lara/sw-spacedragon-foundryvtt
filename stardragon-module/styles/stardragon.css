@@ -420,3 +420,24 @@ body.stardragon-tema .olddragon2e.sheet .economy .currency .cp {
 .stardragon-nave-dialogo .linha label { flex: 1; }
 .stardragon-nave-dialogo .linha select,
 .stardragon-nave-dialogo .linha input[type="number"] { flex: 0 0 11em; }
+
+/* Dial de manobras (Tabela 12-2) */
+.stardragon.nave-ficha .manobras { display: flex; flex-wrap: wrap; gap: 4px; }
+.stardragon.nave-ficha .mano {
+  flex: 0 0 auto; min-width: 44px; padding: 4px 7px; font-size: 13px; border-radius: 3px;
+  border: 1px solid var(--color-border-light-tertiary, #6668); background: transparent;
+}
+/* As cores são as do dial, não decoração: verde tira Estresse, vermelha põe. */
+.stardragon.nave-ficha .mano.verde { border-color: #4f6e4e; color: #7fae7e; }
+.stardragon.nave-ficha .mano.vermelha { border-color: #b43c35; color: #d1675f; }
+.stardragon.nave-ficha .mano.escolhida { background: #42679c; border-color: #42679c; color: rgb(239,230,216); font-weight: 700; }
+.stardragon.nave-ficha .planejada { display: flex; align-items: center; gap: 8px; margin-top: 6px; font-size: 12px; }
+.stardragon.nave-ficha .planejada > span { flex: 1; }
+.stardragon.nave-ficha .planejada .secreta { opacity: .6; font-style: italic; }
+.stardragon.nave-ficha .planejada .revelada { font-weight: 600; }
+
+.stardragon.nave-ficha .armas .cat { flex: 0 0 8.6em; font-size: 11px; }
+.stardragon.nave-ficha .armas li { flex-wrap: wrap; }
+.stardragon.nave-ficha .nota-arma { flex: 1 0 100%; margin: 1px 0 4px; font-size: 11px; opacity: .65; font-style: italic; }
+.stardragon.nave-ficha .posto { flex-wrap: wrap; }
+.stardragon.nave-ficha .acao-posto { flex: 1 0 100%; margin: 1px 0 0 0; font-size: 10.5px; opacity: .6; line-height: 1.35; }

@@ -66,6 +66,27 @@
     </div>
   </section>
 
+  {{!-- Dial de manobras (Tabela 12-2). A escolha é SECRETA: fica gravada e só
+        sai no chat quando o botão de revelar for usado, na Ativação. --}}
+  <section class="dial">
+    <h3>Manobra <span class="dica">escolha em segredo · revele na Ativação</span></h3>
+    <div class="manobras">
+      {{#each dial}}
+      <button type="button" class="mano {{cor}} {{#if (eq ../s.manobra.tipo tipo)}}{{#if (eq ../s.manobra.velocidade velocidade)}}escolhida{{/if}}{{/if}}"
+              data-action="planejar" data-tipo="{{tipo}}" data-vel="{{velocidade}}"
+              title="{{rotulo}} — giro {{giro}} · {{cor}}">{{etiqueta}}</button>
+      {{/each}}
+    </div>
+    <div class="planejada">
+      {{#if manobraAtual}}
+        <span class="{{#if s.manobra.revelada}}revelada{{else}}secreta{{/if}}">
+          {{#if s.manobra.revelada}}revelada: {{manobraAtual}}{{else}}planejada (em segredo){{/if}}
+        </span>
+      {{else}}<span class="secreta">nenhuma manobra planejada</span>{{/if}}
+      <button type="button" data-action="revelar">revelar</button>
+    </div>
+  </section>
+
   {{!-- As fichas da rodada. No jogo de miniaturas são peças na mesa; aqui são
         o que a mesa esquece. --}}
   <section class="rodada">
@@ -99,6 +120,11 @@
       <ul class="armas">
         {{#each s.armas as |arma i|}}
         <li>
+          <select class="cat" data-action="catalogoArma" data-idx="{{i}}" title="Tabela 12-7 — preenche dano, arco e alcance">
+            {{#each ../armasCatalogo}}
+            <option value="{{k}}" {{#if (eq ../arma.catalogo k)}}selected{{/if}}>{{rotulo}}</option>
+            {{/each}}
+          </select>
           <input type="text" class="nome" name="system.armas.{{i}}.nome" value="{{arma.nome}}">
           <input type="text" class="dano" name="system.armas.{{i}}.dano" value="{{arma.dano}}">
           <select class="arco" name="system.armas.{{i}}.arco">
@@ -111,6 +137,7 @@
           </span>
           <button type="button" class="atacar" data-action="atacar" data-idx="{{i}}">atacar</button>
           <button type="button" class="menos" data-action="delArma" data-idx="{{i}}" title="Remover">×</button>
+          {{#if arma.nota}}<p class="nota-arma">{{arma.nota}}</p>{{/if}}
         </li>
         {{/each}}
       </ul>
@@ -124,9 +151,10 @@
     <h3>Postos <span class="dica">Modo Tripulação — uma ação de posto por personagem</span></h3>
     <div class="grade">
       {{#each postos}}
-      <div class="posto">
+      <div class="posto" title="{{acao}}">
         <label>{{rotulo}}</label>
         <input type="text" name="system.postos.{{chave}}" value="{{valor}}" placeholder="—">
+        <p class="acao-posto">{{acao}}</p>
       </div>
       {{/each}}
     </div>

@@ -50,6 +50,68 @@ export const ALCANCES = {
   3: { rotulo: "Longo (7-9 hex)", mod: -2, dadoExtra: 1 },
 };
 
+/**
+ * Armas do módulo tático (Tabela 12-7). Escolher pela lista preenche dano,
+ * arco e alcance de uma vez — a mesma ideia do seletor de chassi.
+ */
+export const ARMAS = {
+  laser: { rotulo: "Disparadores laser", dano: "2d10", arco: "frontal", min: 1, max: 3, nota: "Arma padrão." },
+  canhao: { rotulo: "Canhões de energia", dano: "4d10", arco: "frontal", min: 1, max: 2, nota: "Não alcança longe." },
+  metralhadora: { rotulo: "Metralhadora de energia", dano: "4 × 1d6", arco: "frontal", min: 1, max: 1,
+    nota: "Cada êxito de Esquiva cancela um ATAQUE INTEIRO, não um dado." },
+  misseis: { rotulo: "Mísseis teleguiados", dano: "4d10", arco: "frontal", min: 2, max: 3,
+    nota: "Exige Travar Alvo gasta. O alvo faz JP para o míssil errar; se não errar, persegue por 1d4+1 rodadas." },
+  torre: { rotulo: "Torre de laser", dano: "2d10 −1 dado", arco: "torre", min: 1, max: 2,
+    nota: "Naves M+. Troca potência por cobertura." },
+  bateria: { rotulo: "Bateria pesada", dano: "6d10", arco: "frontal", min: 1, max: 3,
+    nota: "Só porte G/C. Sofre o −4 contra alvos P." },
+  outra: { rotulo: "— outra —", dano: "", arco: "frontal", min: 1, max: 3, nota: "" },
+};
+
+/**
+ * Dial de manobras por chassi (Tabela 12-2). `v` marca a velocidade verde,
+ * `V` marca a manobra vermelha inteira; sem marca é branca.
+ *
+ * NÃO INVENTAR ESTA TABELA. Um rascunho meu, derivado só das duas frases do
+ * capítulo de Star Wars ("caças manobram tudo, cruzadores quase só andam para
+ * a frente"), errou em oito células contra a 12-2 real — o Caça não tem Ré, o
+ * Koiogran dele vai até 5 e o Cargueiro tem Parar. A fonte é
+ * `30 Sistemas/Star Dragon/ED-12-Combate-Tatico-de-Naves.md`, §12.5.
+ */
+export const MANOBRAS = {
+  reta: { rotulo: "Reta", simbolo: "↑", giro: "0°" },
+  inclinada: { rotulo: "Inclinada", simbolo: "↗↖", giro: "45°" },
+  curva: { rotulo: "Curva", simbolo: "⟳⟲", giro: "90°" },
+  koiogran: { rotulo: "Koiogran", simbolo: "↑180°", giro: "180°" },
+  parar: { rotulo: "Parar", simbolo: "⊘", giro: "0°" },
+  re: { rotulo: "Ré", simbolo: "↓", giro: "0°" },
+};
+
+export const DIAL = {
+  caca: { reta: { de: 1, ate: 5, verde: 2 }, inclinada: { de: 1, ate: 4, verde: 1 }, curva: { de: 1, ate: 3 },
+          koiogran: { de: 3, ate: 5, vermelha: true }, parar: { de: 0, ate: 0, vermelha: true } },
+  escolta: { reta: { de: 1, ate: 4, verde: 2 }, inclinada: { de: 1, ate: 3 }, curva: { de: 1, ate: 2 },
+             koiogran: { de: 3, ate: 4, vermelha: true }, parar: { de: 0, ate: 0, vermelha: true },
+             re: { de: 1, ate: 1, vermelha: true } },
+  particular: { reta: { de: 1, ate: 3, verde: 2 }, inclinada: { de: 1, ate: 3 }, curva: { de: 1, ate: 2 },
+                koiogran: { de: 3, ate: 3, vermelha: true }, parar: { de: 0, ate: 0, vermelha: true },
+                re: { de: 1, ate: 1, vermelha: true } },
+  cargueiro: { reta: { de: 1, ate: 2 }, inclinada: { de: 1, ate: 2 }, curva: { de: 1, ate: 1, vermelha: true },
+               parar: { de: 0, ate: 0, vermelha: true } },
+  cruzador: { reta: { de: 1, ate: 1 }, inclinada: { de: 1, ate: 1, vermelha: true },
+              parar: { de: 0, ate: 0, vermelha: true } },
+};
+
+/** Ações de posto (Tabela 12-9). Uma por personagem, na Ativação. */
+export const ACOES_DE_POSTO = {
+  leme: "Escolhe a manobra da nave e executa a ação de manobra. A PP da nave é a dele.",
+  artilharia: "Um ataque com UMA bateria. Cada artilheiro opera uma — é assim que a nave dispara mais de uma vez.",
+  engenharia: "Repara 1d6 de casco, recarrega 1d4 de escudo, ou religa um sistema avariado.",
+  sensores: "Travar Alvo (a trava fica com a nave, qualquer artilheiro usa), revelar nave camuflada, ou +2 no ataque de um artilheiro.",
+  comando: "Coordenar: uma ficha de Foco a um posto ou nave aliada a Alcance 1-2. Com teste de Carisma, a dois.",
+  enfermaria: "Primeiros socorros, controle de incêndio, evacuação de setor.",
+};
+
 export const POSTOS = ["leme", "artilharia", "engenharia", "sensores", "comando", "enfermaria"];
 
 export class NaveDataModel extends foundry.abstract.TypeDataModel {
@@ -99,6 +161,7 @@ export class NaveDataModel extends foundry.abstract.TypeDataModel {
 
       armas: new fields.ArrayField(
         new fields.SchemaField({
+          catalogo: new fields.StringField({ required: true, blank: true, initial: "laser" }),
           nome: txt("Disparadores laser"),
           dano: txt("2d10"),
           arco: new fields.StringField({ required: true, initial: "frontal", choices: ["frontal", "torre"] }),
@@ -112,6 +175,15 @@ export class NaveDataModel extends foundry.abstract.TypeDataModel {
       postos: new fields.SchemaField(
         Object.fromEntries(POSTOS.map((p) => [p, txt("")]))
       ),
+
+      // Planejamento: a manobra é escolhida EM SEGREDO e só sai na Ativação.
+      // Fica no modelo (e não numa flag solta) para o botão de revelar poder
+      // aplicar a cor — verde tira Estresse, vermelha põe e cancela a ação.
+      manobra: new fields.SchemaField({
+        tipo: txt(""),
+        velocidade: num(0),
+        revelada: new fields.BooleanField({ initial: false }),
+      }),
 
       descricao: new fields.HTMLField({ initial: "" }),
     };
