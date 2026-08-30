@@ -67,3 +67,55 @@ export const GRANDEZAS = [
   [4, 3, 3, 3, 2, 2, 1, 1], [5, 4, 3, 3, 2, 2, 1, 1],
   [5, 4, 3, 3, 3, 2, 2, 1, 1], [5, 5, 4, 3, 3, 2, 2, 2, 1, 1],
 ];
+
+// ── Técnico: Nível Tecnológico e Vagas de bancada ───────────────────────────
+//
+// Regra do cofre (SW-SD-Classes.md, tabela do Técnico). Não são colunas de
+// tabela — são fórmulas, e por isso ficam aqui em vez de virarem mais duas
+// listas de quinze valores em TABELAS.
+//
+// O NT é "o círculo de magia mais alto" do Técnico: o teto do que ele CONSTRÓI.
+// Não há teto para o que ele consegue USAR.
+export const NT = (nivel) => Math.min(nivel, 10);
+
+// A bancada: o que ele já construiu e traz pronto, de graça. Três no 1º nível e
+// mais uma por nível. O Engenheiro anda uma casa atrás — começa com duas.
+export const VAGAS = (nivel, engenheiro = false) => nivel + (engenheiro ? 1 : 2);
+
+/** Tabela de NT × Vagas para a descrição da classe. */
+export function tabelaVagas(engenheiro = false) {
+  const linhas = Array.from({ length: 15 }, (_, i) => {
+    const l = i + 1;
+    return `<tr><td>${l}º</td><td>${NT(l)}</td><td>${VAGAS(l, engenheiro)}</td></tr>`;
+  }).join("");
+  return (
+    `<table><thead><tr><th>Nível</th><th>NT</th><th>Vagas</th></tr></thead>` +
+    `<tbody>${linhas}</tbody></table>`
+  );
+}
+
+// ── Sensível à Força: a tabela de Grandezas, nas duas leituras ──────────────
+//
+// GRANDEZAS estava exportada e NUNCA era consumida — código morto desde sempre.
+// Ela é justamente a tabela que devia aparecer na descrição do Sensível, e a
+// regra nova lhe dá uma segunda coluna: em cada Grandeza o personagem CONHECE
+// o número da tabela + 1.
+//
+// O `+1` não é generosidade: é o que impede a situação absurda de ter Foco de
+// 2ª Grandeza e nenhum poder de 2ª para gastar nele.
+export function tabelaGrandezas(ate = 15) {
+  const romanos = ["1ª", "2ª", "3ª", "4ª", "5ª", "6ª", "7ª", "8ª", "9ª", "10ª"];
+  const usadas = Math.max(...GRANDEZAS.slice(0, ate).map((g) => g.length));
+  const cab = romanos.slice(0, usadas);
+  const linhas = GRANDEZAS.slice(0, ate)
+    .map((g, i) => {
+      const foco = cab.map((_, j) => g[j] ?? "—").join(" / ");
+      const sabe = cab.map((_, j) => (g[j] ? g[j] + 1 : "—")).join(" / ");
+      return `<tr><td>${i + 1}º</td><td>${foco}</td><td><strong>${sabe}</strong></td></tr>`;
+    })
+    .join("");
+  return (
+    `<table><thead><tr><th>Nível</th><th>Foco Diário (${cab.join(" / ")})</th>` +
+    `<th>Poderes conhecidos</th></tr></thead><tbody>${linhas}</tbody></table>`
+  );
+}

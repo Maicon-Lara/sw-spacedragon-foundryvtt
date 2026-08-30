@@ -404,6 +404,33 @@ prosaSolta();
     }
 }
 
+// ── O README aponta para uma pasta do cofre que existe? ────────────────────
+// O caminho mudou três vezes em 2026 e o README ficou para trás duas — quem foi
+// transcrever procurou no lugar errado. Só AVISA: o cofre é da máquina do autor
+// e não existe num clone.
+{
+  const readme = fs.readFileSync(path.join(ROOT, "README.md"), "utf8");
+  const m = readme.match(/`Documents\\Ekhoria\\([^`]+)`/);
+  const casa = process.env.USERPROFILE || process.env.HOME || "";
+  if (m && casa) {
+    const partes = m[1].split("\\").filter(Boolean);
+    const raiz = path.join(casa, "Documents", "Ekhoria");
+    const alvo = path.join(raiz, ...partes);
+    // Âncora na RAIZ do cofre, não no pai do alvo: se o README apontar para
+    // "99 Inexistente/Star Dragon", o pai também não existe e a checagem
+    // passaria batido. Num clone sem o cofre, a raiz não existe e o aviso
+    // simplesmente não roda.
+    if (fs.existsSync(raiz) && !fs.existsSync(alvo))
+      problemas.push({
+        nivel: "aviso",
+        check: "cofre-nao-existe",
+        doc: "README.md",
+        pack: "",
+        msg: `aponta para Ekhoria\\${m[1]}, que não existe nesta máquina`,
+      });
+  }
+}
+
 // ── Relatório ───────────────────────────────────────────────────────────────
 const erros = problemas.filter((p) => p.nivel === "erro");
 const avisos = problemas.filter((p) => p.nivel === "aviso");

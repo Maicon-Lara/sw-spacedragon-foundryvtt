@@ -65,7 +65,7 @@ Histórico de versões em [`CHANGELOG.md`](CHANGELOG.md).
 ## Fonte de verdade
 
 O conteúdo é **transcrito do cofre Obsidian**, em
-`Documents\Ekhoria\20 Space Dragon\Star Dragon\` (`#SW-SD-Index.md` e
+`Documents\Ekhoria\20 Star Wars\Star Dragon\` (`#SW-SD-Index.md` e
 `SW-SD-*.md`).
 
 **Mudou o compêndio? Edite `tools/data/*.mjs` e rode o build.** Os packs e o
@@ -74,9 +74,12 @@ O conteúdo é **transcrito do cofre Obsidian**, em
 <details>
 <summary>Duas notas sobre o cofre</summary>
 
-- A pasta já se chamou "STAR WARS SPACE DRAGON" e depois "STAR WARS - OD2 - SD".
-  Em ago/2026 virou `20 Space Dragon/Star Dragon`, com **Space Dragon**
-  reservado para a versão nativa e **Star Dragon** para esta adaptação.
+- **O caminho já mudou três vezes em 2026** e o README ficou para trás nas duas
+  primeiras — quem foi transcrever procurou no lugar errado. Foi "STAR WARS
+  SPACE DRAGON", depois "STAR WARS - OD2 - SD", depois `20 Space Dragon/Star
+  Dragon` e hoje é `20 Star Wars/Star Dragon`: **Space Dragon** ficou reservado
+  para a versão nativa e **Star Wars** para esta adaptação. O `npm run validar`
+  avisa quando o caminho daqui não existe mais na máquina.
 - Os arquivos do cofre **não têm final de linha uniforme**: `SW-SD-Especies.md`
   é CRLF e `#SW-SD-Index.md` é LF. Script que escreva lá precisa **detectar** a
   convenção de cada arquivo, ou o backup automático registra o arquivo inteiro

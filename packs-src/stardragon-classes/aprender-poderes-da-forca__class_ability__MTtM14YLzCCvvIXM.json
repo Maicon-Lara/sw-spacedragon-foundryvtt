@@ -5,7 +5,7 @@
   "_id": "MTtM14YLzCCvvIXM",
   "img": "systems/olddragon2e/assets/icons/brain.svg",
   "system": {
-    "description": "<p>Por treino e intuição: gaste um uso do Foco da Grandeza desejada e passe num <strong>teste de Sabedoria</strong> — em sucesso o poder se manifesta, e você pode tentar <strong>memorizá-lo</strong> (novo teste) para usá-lo à vontade. Falha consome o uso e trava nova tentativa por 24 horas (falha crítica, 1d4 dias). Um mestre que o ensine torna o teste <strong>Fácil</strong>.</p>",
+    "description": "<p>O número da tabela é o <strong>piso garantido pelo nível</strong>; esta habilidade põe poderes <strong>acima</strong> dele — o holocron achado, o mestre que ensina, a técnica arrancada de um inimigo.</p><p>Por treino e intuição: gaste um uso do Foco da Grandeza desejada e passe num <strong>teste de Sabedoria</strong> — em sucesso o poder se manifesta, e você pode tentar <strong>memorizá-lo</strong> (novo teste) para usá-lo à vontade. Falha consome o uso e trava nova tentativa por 24 horas (falha crítica, 1d4 dias). Um mestre que o ensine torna o teste <strong>Fácil</strong>.</p>",
     "level": 1,
     "level3": "",
     "level6": "",

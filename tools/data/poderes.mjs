@@ -24,6 +24,8 @@ const CORRUPCAO =
 
 const g = (n) => `<p><strong>Grandeza:</strong> ${n}ª</p>`;
 
+import { FOCO_NOTA } from "./classes.mjs";
+
 export const listasDePoder = [
   {
     folder: "Universal",
@@ -616,7 +618,8 @@ export const listasDePoder = [
 const paginas = [
   {
     title: "Como funcionam os Poderes da Força",
-    content: `
+    content: `${FOCO_NOTA}
+
 <h2>Os poderes são os Poderes Mentais do Space Dragon</h2>
 <p>Os "poderes da Força" <strong>são os Poderes Mentais do Space Dragon</strong>, reskinados e reorganizados em três listas — <strong>Universal</strong>, <strong>Luz</strong> e <strong>Sombra</strong> — ao longo das dez <strong>Grandezas</strong>. Cada entrada cita o <strong>Poder Mental-base do SD</strong> (com a Grandeza), para o Mestre consultar alcance, duração e dano exatos. Onde não há um Poder Mental equivalente para um efeito clássico da Força (telecinese física, cura corporal, deflexão de sabre), a entrada vem marcada como <strong>adaptação</strong> e recebe uma Grandeza coerente.</p>
 

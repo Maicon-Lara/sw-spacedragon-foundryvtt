@@ -6,6 +6,79 @@ começou junto com o rename.
 
 ---
 
+## 1.10.0 — 30/08/2026
+
+Aplicação do `CORRECOES-PENDENTES.md`. **O documento foi escrito contra outra
+cópia do repositório** — a de `Documents\sw-foundry\`, parada no commit `9fadef1`
+(27/07), de antes do rename para `stardragon-module/`. Os números de linha dele
+não valem aqui, e **dois dos itens já estavam feitos**:
+
+| Item do documento | Estado real |
+|---|---|
+| *Armado e Perigoso* `[1]` dá ×2, nasce inerte | ✅ já é 18–20 / ×3 desde a 1.2.0 |
+| *Dano Crítico* ×2 entrega zero | ✅ já é faixa 19–20 desde a 1.2.0 |
+
+### O README apontava para uma pasta que não existe
+
+O documento dizia que apontava para `STAR WARS - OD2 - SD`. Apontava para
+`20 Space Dragon\Star Dragon` — que também não existe. **O caminho mudou três
+vezes em 2026** e o README ficou para trás nas duas primeiras. Hoje é
+`20 Star Wars\Star Dragon`.
+
+Verificação nova: **`cofre-nao-existe`** (aviso) — o `npm run validar` confere se
+o caminho citado no README existe na máquina. Ancorada na **raiz** do cofre, não
+no pai do alvo: apontando para `99 Inexistente\Star Dragon`, o pai também não
+existiria e a checagem passaria batido. Num clone sem o cofre, o aviso não roda.
+
+### NT consome vagas (Técnico)
+
+A coluna *Aparatos* virou **Vagas**, e **um aparato ocupa vagas iguais ao seu
+NT**. A regra antiga é caso particular: no 1º nível, 3 vagas × NT 1 = 3 aparatos.
+
+`NT(nível)` e `VAGAS(nível, engenheiro)` são fórmulas em `progressoes.mjs`, não
+mais duas colunas de quinze valores. A nota de bancada entra na classe-base e nas
+três trilhas, com a tabela de NT × Vagas por nível. O **Engenheiro** tem nível+1 e
+começa com **duas** — e a nota dele registra a conta que é a lição da classe: no
+3º nível ele tem NT 5 e 4 vagas, então *sabe construir* o que não consegue trazer
+pronto.
+
+Os textos antigos das trilhas diziam "3 de NT 1", que é a leitura velha (três
+aparatos, todos de NT 1). Saíram.
+
+### Poderes conhecidos = o número da tabela, + 1 (Sensível)
+
+Em cada Grandeza, o Sensível conhece o valor de Foco daquela linha **mais um**.
+Saiu do texto a frase "começa com dois poderes de 1ª Grandeza": era esta mesma
+regra lida na primeira linha, apresentada como regra própria.
+
+O `+1` não é generosidade — é o que impede ter Foco de 2ª Grandeza e nenhum poder
+de 2ª para gastar nele.
+
+**`GRANDEZAS` estava exportada e nunca era consumida** — código morto desde
+sempre. Virou `tabelaGrandezas()`, que é justamente a tabela que devia aparecer na
+descrição do Sensível, agora com as duas leituras lado a lado: Foco Diário e
+Poderes conhecidos.
+
+### As três regras de Foco, que nunca tinham sido transcritas
+
+Do guia SD-OD2 p. 27, ausentes do módulo até aqui. Entram na descrição da classe
+**e** no journal de poderes, de uma fonte só:
+
+- **Declarou, gastou** — o Foco sai ao declarar, funcionando ou não.
+- **Volta com 8 horas de descanso** — zera e reabastece, não por calendário.
+- **Cada Grandeza é uma reserva fechada** — sem conversão em nenhuma direção. É a
+  que mais pega quem vem do d20, onde slots convertem.
+
+### O que ficou de fora, de propósito
+
+A dívida restante do item 3 do documento (*Desconto Tecnológico* no `level6`,
+*Marcar Alvo* do Assassino, *Mestre da Sabotagem*, as Sendas do Sensível) é
+decisão de design do autor — o próprio documento manda não mexer sem passar por
+ele. O item 4 (limites do tipo `spell`, que só conhece círculos 1–5) é
+documentação, não conserto.
+
+---
+
 ## 1.9.0 — 28/08/2026
 
 ### O dial move o token
