@@ -6,7 +6,7 @@
 // classe-base usa a coluna de XP normal; a especialização, a coluna XP Especial.
 // Habilidades que evoluem por nível usam os campos level3/level6/level10.
 
-import { progressao, NT, tabelaNT, tabelaGrandezas } from "./progressoes.mjs";
+import { progressao, NT, tabelaNT, tabelaNTEngenheiro, tabelaGrandezas } from "./progressoes.mjs";
 
 // ── Blocos reutilizados ──────────────────────────────────────────────────────
 
@@ -545,7 +545,7 @@ export const classes = [
     equipment_restrictions: EQ_TECNICO,
     habilidades: [
       { nome: "Oficina do Inventor", level: 1, desc: "<p><em>(Aparatos e Feitos Científicos)</em> Cria máquinas e realiza experiências como um Técnico (NT = seu nível, máximo 10), mas com <strong>prejuízo tecnológico de 5%</strong> no custo de cada aparato e feito.</p><p>Começa com <strong>2 aparatos de NT 1</strong> prontos — um a menos que os outros Técnicos — e ganha <strong>+1 por nível</strong>.</p><p><em>O prejuízo vale só para a bancada: aparatos e feitos. Compra normal de equipamento sai pelo preço de tabela — ele não tem o desconto do Técnico, mas também não paga a mais.</em></p>" },
-      { nome: "Tecnologia de Ponta", level: 3, desc: "<p>Salta direto para o <strong>5º Nível Tecnológico</strong> e evolui dali em diante, a cada nível (NT máximo 10). Prejuízo: <strong>15%</strong>.</p><p><strong>Ele sai da coluna.</strong> A partir daqui o Engenheiro <strong>não lê mais a tabela de NT</strong>: ganha <strong>+1 por nível</strong>, sem as pausas. No 3º nível isso é um salto de <strong>três</strong> Níveis Tecnológicos de uma vez — a coluna daria 2 —, e ele chega ao <strong>NT 10 no 8º</strong>, sete níveis antes de qualquer outro Técnico.</p>" },
+      { nome: "Tecnologia de Ponta", level: 3, desc: "<p>Salta direto para o <strong>5º Nível Tecnológico</strong> e evolui dali em diante <strong>a cada dois níveis</strong>, até o teto de <strong>NT 10</strong>. Prejuízo: <strong>15%</strong>.</p><p><strong>Ele sai da coluna.</strong> A partir daqui o Engenheiro não lê mais a tabela de NT do Técnico:</p>" + tabelaNTEngenheiro() + "<p>&#9881; <strong>Por que dois níveis, e não um.</strong> O salto é enorme — de <strong>NT 2 para 5</strong>, três degraus de uma vez —, e é o que a trilha vende. Mas o <em>ritmo</em> depois dele é o do livro: o <strong>Inventor</strong> do Space Dragon progride a cada dois níveis subsequentes. Ele anda um degrau à frente dos outros Técnicos, não uma corrida inteira.</p>" },
       { nome: "Engenho Improvisado", level: 6, desc: "<p>Combina até <strong>3 aparatos diferentes</strong> num só engenho: <strong>1-3 em 1d6</strong> (regras de combinação de aparatos do Space Dragon). Prejuízo: <strong>30%</strong>.</p>" },
       { nome: "Gênio da Invenção", level: 10, desc: "<p>Cria qualquer máquina e realiza qualquer experiência <strong>independente das condições</strong> — sem bancada, no meio de uma tempestade de areia, dentro de uma cela. Prejuízo: <strong>50%</strong>.</p>" },
       reputacao("O nome que faz um estaleiro abrir as portas e um cartel pagar adiantado."),

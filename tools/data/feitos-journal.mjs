@@ -65,7 +65,7 @@ export const feitosJournal = {
         "<p><strong>A outra metade do que o Técnico faz.</strong> Se o <strong>aparato</strong> é uma coisa que se constrói e se carrega, o <strong>feito</strong> é um procedimento que se realiza — em geral <strong>sobre um paciente</strong>, em geral <strong>permanente</strong>, e quase sempre mais demorado que montar uma engenhoca.</p>" +
         "<p>É daqui que saem a cirurgia, o antídoto, o membro cibernético, o clone, o droide construído do zero e o <strong>congelamento em carbonita</strong>.</p>" +
         "<p><strong>Só o Técnico realiza feitos científicos</strong> — e só ele, entre todas as classes. O acesso a materiais, laboratório e instalações é o mesmo da criação de aparatos: <strong>pague os Créditos da descrição</strong> e gaste o <strong>tempo listado</strong>, descontando o seu <strong>Desconto Tecnológico</strong> (5% no 1º nível, 15% no 5º, 30% no 10º).</p>" +
-        "<p><strong>O Nível Tecnológico do feito é o mesmo eixo dos aparatos</strong>, e o seu NT é o seu nível de classe (máximo 10). Um Técnico de 4º nível realiza feitos de até NT 4.</p>" +
+        "<p><strong>O Nível Tecnológico do feito é o mesmo eixo dos aparatos</strong>, e o o seu NT sai da <strong>coluna NT</strong> da tabela do Técnico, que sobe um degrau por nível com uma pausa a cada três. Um Técnico de <strong>4º nível</strong> está em <strong>NT 3</strong> e realiza feitos de até NT 3.</p>" +
         "<h2>Duas diferenças em relação aos aparatos</h2>" +
         "<ul>" +
         "<li><strong>Muitos feitos não podem ser interrompidos.</strong> Cirurgia, transplante e reanimação exigem dedicação contínua durante todo o tempo listado. Os que levam semanas ou meses têm pausa natural e podem ser divididos entre sessões.</li>" +

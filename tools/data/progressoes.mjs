@@ -87,6 +87,28 @@ const NT_POR_NIVEL = [1, 1, 2, 3, 3, 4, 5, 5, 6, 7, 7, 8, 9, 9, 10];
 
 export const NT = (nivel) => NT_POR_NIVEL[Math.max(1, Math.min(nivel, 15)) - 1];
 
+// O Engenheiro sai da coluna a partir do 3º nível: *Tecnologia de Ponta* o
+// põe no NT 5 e ele evolui **a cada dois níveis** dali em diante, até o 10.
+// Não é +1 por nível — o ritmo depois do salto é o do livro (o Inventor da
+// T3-1 progride a cada dois níveis), e o que a trilha vende é o salto, não a
+// velocidade.
+const NT_ENGENHEIRO = { 3: 5, 4: 5, 5: 6, 6: 6, 7: 7, 8: 7, 9: 8, 10: 8, 11: 9, 12: 9, 13: 10, 14: 10, 15: 10 };
+
+/** NT do Engenheiro: curva normal até o 2º, e a dele a partir do 3º. */
+export const NT_DO_ENGENHEIRO = (nivel) => NT_ENGENHEIRO[nivel] ?? NT(nivel);
+
+/** Tabela de NT do Engenheiro, em faixas, como o capítulo a apresenta. */
+export function tabelaNTEngenheiro() {
+  const faixas = [
+    ["1º–2º", "<em>curva normal</em>"], ["3º–4º", "<strong>5</strong>"], ["5º–6º", "6"],
+    ["7º–8º", "7"], ["9º–10º", "8"], ["11º–12º", "9"], ["13º–15º", "<strong>10</strong>"],
+  ];
+  return (
+    `<table><thead><tr>${faixas.map(([f]) => `<th>${f}</th>`).join("")}</tr></thead>` +
+    `<tbody><tr>${faixas.map(([, v]) => `<td>${v}</td>`).join("")}</tr></tbody></table>`
+  );
+}
+
 /** Tabela de NT por nível para a descrição da classe. */
 export function tabelaNT() {
   const linhas = NT_POR_NIVEL.map(
