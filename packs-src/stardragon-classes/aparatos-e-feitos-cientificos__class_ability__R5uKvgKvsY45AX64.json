@@ -5,7 +5,7 @@
   "_id": "R5uKvgKvsY45AX64",
   "img": "systems/olddragon2e/assets/icons/kit.svg",
   "system": {
-    "description": "<p>Cria aparatos e realiza feitos em seus improvisos de laboratório, com <strong>Nível Tecnológico igual ao seu nível</strong> (NT máximo 10). Sem desconto nem prejuízo — o Slicer não barganha com ninguém: monta o que precisa com sucata, mercado negro e engenharia reversa, pagando o valor cheio dos componentes.</p>",
+    "description": "<p>Cria aparatos e realiza feitos em seus improvisos de laboratório, com <strong>Nível Tecnológico pela coluna NT</strong> da tabela (teto 10). Sem desconto nem prejuízo — o Slicer não barganha com ninguém: monta o que precisa com sucata, mercado negro e engenharia reversa, pagando o valor cheio dos componentes.</p>",
     "level": 1,
     "level3": "",
     "level6": "",

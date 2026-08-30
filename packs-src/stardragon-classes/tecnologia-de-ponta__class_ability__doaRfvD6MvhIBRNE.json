@@ -5,7 +5,7 @@
   "_id": "doaRfvD6MvhIBRNE",
   "img": "systems/olddragon2e/assets/icons/kit.svg",
   "system": {
-    "description": "<p>Salta direto para o <strong>5º Nível Tecnológico</strong> e evolui dali em diante, a cada nível (NT máximo 10). Prejuízo: <strong>15%</strong>.</p>",
+    "description": "<p>Salta direto para o <strong>5º Nível Tecnológico</strong> e evolui dali em diante, a cada nível (NT máximo 10). Prejuízo: <strong>15%</strong>.</p><p><strong>Ele sai da coluna.</strong> A partir daqui o Engenheiro <strong>não lê mais a tabela de NT</strong>: ganha <strong>+1 por nível</strong>, sem as pausas. No 3º nível isso é um salto de <strong>três</strong> Níveis Tecnológicos de uma vez — a coluna daria 2 —, e ele chega ao <strong>NT 10 no 8º</strong>, sete níveis antes de qualquer outro Técnico.</p>",
     "level": 3,
     "level3": "",
     "level6": "",
