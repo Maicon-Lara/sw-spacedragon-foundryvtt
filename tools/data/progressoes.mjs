@@ -68,28 +68,32 @@ export const GRANDEZAS = [
   [5, 4, 3, 3, 3, 2, 2, 1, 1], [5, 5, 4, 3, 3, 2, 2, 2, 1, 1],
 ];
 
-// ── Técnico: Nível Tecnológico e Vagas de bancada ───────────────────────────
+// ── Técnico: Nível Tecnológico ──────────────────────────────────────────────
 //
-// Regra do cofre (SW-SD-Classes.md, tabela do Técnico). Não são colunas de
-// tabela — são fórmulas, e por isso ficam aqui em vez de virarem mais duas
-// listas de quinze valores em TABELAS.
+// É uma TABELA, não uma fórmula. A curva sobe um degrau por nível com uma pausa
+// a cada três (2º, 5º, 8º, 11º e 14º) e chega ao NT 10 no 15º.
 //
-// O NT é "o círculo de magia mais alto" do Técnico: o teto do que ele CONSTRÓI.
-// Não há teto para o que ele consegue USAR.
-export const NT = (nivel) => Math.min(nivel, 10);
+// POR QUE NÃO É `nível`, QUE SERIA MAIS SIMPLES: a T3-1 do Space Dragon dá ao
+// Cientista um NT a cada DOIS níveis, chegando ao 10 no 19º de 20. "NT = nível"
+// chegava ao 10 no 10º de 15 — quase o dobro da velocidade do livro, e punha um
+// Técnico de 3º nível construindo uma Mochila de Propulsão de 2.500 CR com uma
+// renda inicial de 350. A curva abaixo é a do livro, comprimida para 1–15.
+//
+// Houve também uma regra de "Vagas de bancada" (nível + 2, cada aparato
+// ocupando vagas iguais ao NT). Saiu do cofre em 30/08: criava uma economia
+// paralela à dos Créditos. O que a classe dá de graça são três aparatos de NT 1
+// no 1º nível, uma vez — e daí em diante o nível dá NT, não inventário.
+const NT_POR_NIVEL = [1, 1, 2, 3, 3, 4, 5, 5, 6, 7, 7, 8, 9, 9, 10];
 
-// A bancada: o que ele já construiu e traz pronto, de graça. Três no 1º nível e
-// mais uma por nível. O Engenheiro anda uma casa atrás — começa com duas.
-export const VAGAS = (nivel, engenheiro = false) => nivel + (engenheiro ? 1 : 2);
+export const NT = (nivel) => NT_POR_NIVEL[Math.max(1, Math.min(nivel, 15)) - 1];
 
-/** Tabela de NT × Vagas para a descrição da classe. */
-export function tabelaVagas(engenheiro = false) {
-  const linhas = Array.from({ length: 15 }, (_, i) => {
-    const l = i + 1;
-    return `<tr><td>${l}º</td><td>${NT(l)}</td><td>${VAGAS(l, engenheiro)}</td></tr>`;
-  }).join("");
+/** Tabela de NT por nível para a descrição da classe. */
+export function tabelaNT() {
+  const linhas = NT_POR_NIVEL.map(
+    (nt, i) => `<tr><td>${i + 1}º</td><td><strong>${nt}</strong></td></tr>`
+  ).join("");
   return (
-    `<table><thead><tr><th>Nível</th><th>NT</th><th>Vagas</th></tr></thead>` +
+    `<table><thead><tr><th>Nível</th><th>NT</th></tr></thead>` +
     `<tbody>${linhas}</tbody></table>`
   );
 }

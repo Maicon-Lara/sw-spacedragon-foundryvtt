@@ -6,7 +6,7 @@
 // classe-base usa a coluna de XP normal; a especialização, a coluna XP Especial.
 // Habilidades que evoluem por nível usam os campos level3/level6/level10.
 
-import { progressao, NT, VAGAS, tabelaVagas, tabelaGrandezas } from "./progressoes.mjs";
+import { progressao, NT, tabelaNT, tabelaGrandezas } from "./progressoes.mjs";
 
 // ── Blocos reutilizados ──────────────────────────────────────────────────────
 
@@ -25,37 +25,35 @@ function reputacao(sabor) {
 const APARATOS_NOTA =
   "<p><strong>Aparatos tecnológicos</strong> são os \"itens mágicos\" desta galáxia. <em>Ofensivos</em> (armas especiais, bombas, redes de choque): só o Técnico — e, por exceção, o Caçador de Recompensas. <em>Defensivos</em> (escudos pessoais, cintos, braceletes): Técnico e Veterano. <em>Utilitários</em> (visores, medpacs, jetpacks, scanners): todos.</p>";
 
-// ── A bancada do Técnico ────────────────────────────────────────────────────
-// Regra do cofre (SW-SD-Classes.md): a coluna "Aparatos" virou "Vagas", e um
-// aparato ocupa vagas iguais ao seu NT. A regra antiga — "três aparatos de NT 1
-// no 1º nível" — é caso particular desta: 3 vagas × NT 1 = 3 aparatos.
+// ── Técnico: o NT e o kit de partida ────────────────────────────────────────
 //
-// Só o Técnico e suas trilhas usam. O Engenheiro tem uma vaga a menos.
-const bancadaNota = (engenheiro = false) =>
-  "<p><strong>A bancada.</strong> Você chega ao jogo com aparatos <strong>já construídos</strong>, " +
-  "de graça, sem gastar Créditos: são as <strong>Vagas</strong> da tabela — <strong>seu nível " +
-  `+ ${engenheiro ? 1 : 2}</strong>` +
-  (engenheiro
-    ? " (uma a menos que os outros Técnicos: o Engenheiro constrói do zero)"
-    : "") +
-  ". Um Técnico de 1º nível não é alguém que <em>poderá</em> construir coisas — é alguém que " +
-  "<strong>já construiu</strong>.</p>" +
-  "<p>&#9881; <strong>Um aparato ocupa vagas iguais ao seu NT.</strong> Um de NT 1 ocupa " +
-  "<strong>uma</strong>; um de NT 3, <strong>três</strong>. É o que faz a bancada se pagar " +
-  `sozinha: no 1º nível as ${VAGAS(1, engenheiro)} vagas dão exatamente ` +
-  `<strong>${VAGAS(1, engenheiro)} aparato(s) de NT 1</strong>.</p>` +
-  "<p><strong>Vaga não é limite de posse, é o que veio de graça.</strong> Comprar ou construir " +
-  "além disso é permitido a qualquer momento, sai pelo preço de tabela e <strong>não ocupa vaga " +
-  "nenhuma</strong>.</p>" +
-  "<p><strong>NT</strong> é o teto do que você <strong>constrói</strong> — igual ao seu nível, " +
-  "máximo 10. Não há teto para o que você consegue <strong>usar</strong>.</p>" +
-  tabelaVagas(engenheiro) +
-  (engenheiro
-    ? "<p>&#128269; <em>Repare na conta: no 3º nível você tem <strong>NT 5</strong> (por " +
-      "<em>Tecnologia de Ponta</em>) e só <strong>4 vagas</strong> — um aparato de NT 5 custaria " +
-      "cinco. Você <strong>sabe construir</strong> o que não consegue trazer pronto. É a lição da " +
-      "classe, agora com uma conta.</em></p>"
-    : "");
+// O que o nível dá ao Técnico é ALCANCE (o NT), não inventário. Os três
+// aparatos são um kit de partida, dado uma vez no 1º nível.
+//
+// Isto substituiu a regra de "Vagas de bancada" (nível + 2, aparato ocupando
+// vagas iguais ao NT), que esteve no cofre por algumas horas em 30/08 e saiu:
+// criava uma economia paralela à dos Créditos. Ver a nota em progressoes.mjs
+// sobre por que a curva de NT também deixou de ser "NT = nível".
+const NT_NOTA =
+  "<p><strong>O Nível Tecnológico</strong> é o equivalente ao <em>círculo</em> de magia mais alto " +
+  "de um conjurador: o teto do que você consegue <strong>construir</strong>. Não há teto para o " +
+  "que você consegue <strong>usar</strong> — um Técnico de 2º nível opera um Teletransportador " +
+  "achado num destroço sem problema nenhum, só não fabrica um.</p>" +
+  "<p>A curva sobe <strong>um degrau por nível, com uma pausa a cada três</strong> (2º, 5º, 8º, " +
+  "11º e 14º), e chega ao <strong>NT 10 no 15º</strong>.</p>" +
+  tabelaNT() +
+  "<p class='nota-casa'><em>É a coluna do livro, restaurada. A T3-1 do Space Dragon dá ao " +
+  "Cientista um NT a cada dois níveis, alcançando o NT 10 no 19º de 20. Uma versão anterior deste " +
+  "cenário usava &ldquo;NT = seu nível de classe&rdquo;, que chegava ao 10 no 10º de 15 — quase o " +
+  "dobro da velocidade do original, e punha um Técnico de 3º nível construindo uma Mochila de " +
+  "Propulsão de 2.500 CR com uma renda inicial de 350.</em></p>" +
+  "<p>&#11088; <strong>Você começa o jogo com três aparatos de NT 1 prontos, e eles não custam " +
+  "Créditos.</strong> Só isso, e só no 1º nível: a bancada, o tempo e as peças ficaram no passado " +
+  "do personagem. Um Técnico de 1º nível não é alguém que <em>poderá</em> construir coisas — é " +
+  "alguém que <strong>já construiu</strong>. Daí em diante ele constrói e compra como todo mundo, " +
+  "com os Créditos e o Desconto Tecnológico.</p>" +
+  "<p><em>Não há aparato de graça por nível: o que o nível dá é <strong>NT</strong>, e o resto é " +
+  "orçamento.</em></p>";
 
 // ── Sensível: quantos poderes ele conhece ───────────────────────────────────
 // Regra do cofre (SW-SD-Forca-Sensitivo.md): em cada Grandeza o personagem
@@ -396,7 +394,7 @@ export const classes = [
         rogue_talents: [T.sabotagem, T.furtividade, T.obterInfo, T.disfarce, T.vigilancia],
       },
       { nome: "Infiltração Especializada", level: 3, desc: "<p><strong>Sabotador Furtivo:</strong> sua chance de <em>Sabotagem</em> <strong>aumenta em 1 ponto</strong> quando ele obtém sucesso numa jogada de <em>Furtividade</em> (máximo 1-5 em 1d6).</p>" },
-      { nome: "Aparatos e Feitos Científicos", level: 6, desc: "<p>O Espião passa a <strong>criar máquinas e realizar experiências</strong> em seus laboratórios, com <strong>Nível Tecnológico igual ao seu nível</strong> (NT máximo 10; não há limite para os aparatos que pode <em>usar</em>). Vale para os aparatos de campo do ofício — escutas, bugs, credenciais forjadas, holoprojetores de disfarce. Seguem as regras de Criação de Aparatos do Space Dragon.</p>" },
+      { nome: "Aparatos e Feitos Científicos", level: 6, desc: "<p>O Espião passa a <strong>criar máquinas e realizar experiências</strong> em seus laboratórios, com <strong>Nível Tecnológico igual ao de um Técnico do seu nível</strong> (a coluna NT da tabela do Técnico, teto 10; não há limite para os aparatos que pode <em>usar</em>). Vale para os aparatos de campo do ofício — escutas, bugs, credenciais forjadas, holoprojetores de disfarce. Seguem as regras de Criação de Aparatos do Space Dragon.</p>" },
       { nome: "Fantasma (Mestre Espião)", level: 10, desc: "<p><strong>Todos os seus talentos passam a ter a mesma chance de sucesso do maior deles.</strong></p>" },
       reputacao("A fama de um espião é uma faca de dois gumes: quem o reconhece também sabe para quem ele trabalha."),
     ],
@@ -488,11 +486,11 @@ export const classes = [
     flavor: "<p>O gênio prático da galáxia. <em>Chassi: Cientista.</em></p>",
     descricao:
       "<p>Mecânicos de droides, médicos de campo, engenheiros e slicers que dobram a tecnologia à própria vontade. Onde o Jedi tem a Força, o Técnico tem a engenhoca: seus <strong>aparatos e feitos científicos</strong> são os \"itens mágicos\" deste universo, e ele os constrói com as próprias mãos. Numa tripulação, é quem mantém a nave voando, o droide obediente e o grupo respirando.</p>" +
-      "<p><strong>Créditos iniciais:</strong> 1d8 × 50 CR.</p>" + APARATOS_NOTA + bancadaNota() + SEGUIDORES_NOTA + ALINHAMENTO_NOTA + FORA_DA_FAIXA_NOTA,
+      "<p><strong>Créditos iniciais:</strong> 1d8 × 50 CR.</p>" + APARATOS_NOTA + NT_NOTA + SEGUIDORES_NOTA + ALINHAMENTO_NOTA + FORA_DA_FAIXA_NOTA,
     equipment_restrictions: EQ_TECNICO,
     habilidades: [
       { nome: "Operar e Consertar Máquinas", level: 1, desc: "<p>Opera e conserta máquinas — religar um gerador, forçar um sistema, remendar tecnologia quebrada. Chance de <strong>1-2 em 1d6</strong>.</p><p><strong>Quando NÃO se rola:</strong> aparelhos que ele mesmo criou dispensam o teste, e usar um aparato pronto qualquer também não pede jogada. Só se rola ao lidar com um aparato <strong>desconhecido, alheio, danificado ou acima do seu NT</strong> — e a falha traz um defeito, a critério do Mestre.</p><p><strong>Pilotar</strong> naves com esta habilidade é só <strong>1 em 1d6</strong>, e <strong>não melhora</strong> com a escada abaixo — Veteranos pilotam melhor.</p>", level3: "<p>Chance de <strong>1-3 em 1d6</strong>.</p>", level6: "<p>Chance de <strong>1-4 em 1d6</strong>.</p>", level10: "<p>Chance de <strong>1-5 em 1d6</strong>.</p>" },
-      { nome: "Aparatos e Feitos Científicos", level: 1, desc: "<p>Cria <strong>aparatos</strong> (Nível Tecnológico = seu nível de classe, <strong>NT máximo 10</strong>; não há limite para os aparatos que pode <em>usar</em>) e realiza <strong>feitos científicos</strong> — as duas famílias são a magia que a Força não absorveu:</p><ul><li><strong>Feitos médicos:</strong> diagnosticar e curar doenças, operações cirúrgicas (simples a complexa), destilar antídotos, imunizar pacientes, cirurgia e membros ou órgãos biônicos.</li><li><strong>Feitos genéticos e de laboratório:</strong> construir e consertar droides, reparos robóticos, decodificar DNA, clonagem e afins.</li></ul><p>A lista completa, com NT, custo, tempo e regra de cada feito, está no journal <strong>Feitos Científicos</strong>.</p><p><strong>Consertar, recarregar ou adaptar</strong> um aparato custa <strong>25% do valor</strong> e <strong>metade do tempo</strong> de criação; construir do zero já sai com o seu Desconto Tecnológico. Feitos costumam levar mais tempo que aparatos, e a maioria é permanente.</p><p><strong>Você começa o jogo com aparatos prontos, e ganha mais a cada nível.</strong> Eles <strong>não custam Créditos</strong>: você já os construiu, e a bancada, o tempo e as peças ficaram no passado do personagem. Um Técnico de 1º nível não é alguém que <em>poderá</em> construir coisas — é alguém que <strong>já construiu</strong>. São <strong>três de NT 1</strong> no 1º nível e <strong>mais um a cada nível</strong>, de qualquer NT que você já alcance.</p><p><strong>Nível Tecnológico e aparatos prontos, por nível.</strong> O <strong>NT</strong> é o teto do que você consegue <em>construir</em> — o equivalente ao círculo de magia mais alto de um conjurador. Não há teto para o que você consegue <em>usar</em>.</p><table><thead><tr><th>Nível</th><th>NT</th><th>Aparatos</th></tr></thead><tbody><tr><td>1º</td><td>1</td><td>3</td></tr><tr><td>2º</td><td>2</td><td>4</td></tr><tr><td>3º</td><td>3</td><td>5</td></tr><tr><td>4º</td><td>4</td><td>6</td></tr><tr><td>5º</td><td>5</td><td>7</td></tr><tr><td>6º</td><td>6</td><td>8</td></tr><tr><td>7º</td><td>7</td><td>9</td></tr><tr><td>8º</td><td>8</td><td>10</td></tr><tr><td>9º</td><td>9</td><td>11</td></tr><tr><td>10º</td><td>10</td><td>12</td></tr><tr><td>11º</td><td>10</td><td>13</td></tr><tr><td>12º</td><td>10</td><td>14</td></tr><tr><td>13º</td><td>10</td><td>15</td></tr><tr><td>14º</td><td>10</td><td>16</td></tr><tr><td>15º</td><td>10</td><td>17</td></tr></tbody></table><p><em>O <strong>Engenheiro</strong> anda uma casa atrás na coluna de aparatos (seu nível + 1): ele começa com dois.</em></p><p><em>É o que acontece com todo conjurador do sistema: o Sensível à Força começa com dois poderes de 1ª Grandeza e ganha mais a cada Grandeza que abre; o Mago de OD2 começa com o grimório escrito e acrescenta magias ao subir de nível. Ninguém entra em jogo com a lista em branco, e ninguém para de aprender.</em></p><p>Os <strong>Créditos iniciais continuam servindo para todo o resto</strong> — armas, roupa, passagem, suborno — e para comprar ou construir aparatos <em>além</em> destes, se você quiser mais.</p><p><strong>Sugestão de mesa:</strong> que um dos três primeiros seja o <strong>Disruptor Positrônico</strong> — é o aparato-assinatura da classe, é NT 1, e é o que faz <em>Desativar Droides</em> funcionar.</p><p><em>Variante para mesas mais duras: o aparato ganho ao subir de nível é de NT igual ou menor que o nível anterior — os brinquedos de ponta chegam com um nível de atraso.</em></p>" + "<p><strong>Quantos, e de que NT:</strong> a coluna <strong>Vagas</strong> da tabela — seu nível + 2 —, e cada aparato ocupa <strong>vagas iguais ao seu NT</strong>. No 1º nível isso dá três aparatos de NT 1; no 3º, cinco vagas para gastar entre NT 1, 2 e 3 como quiser.</p>" + "<p>&#128260; <strong>Aparato destruído ou perdido:</strong> o projeto continua seu — refazer custa <strong>25% do valor e metade do tempo</strong>, como conserto. Construir um <strong>novo</strong> é preço e tempo cheios.</p>" + "<p>&#8987; <strong>Construir é atividade de entremeio:</strong> os tempos vão de 1d4 horas a 1d4 meses, e a construção acontece <strong>entre aventuras</strong>. Em cena, só se o Mestre declarar tempo parado.</p>" },
+      { nome: "Aparatos e Feitos Científicos", level: 1, desc: "<p>Cria <strong>aparatos</strong> (Nível Tecnológico pela <strong>coluna NT</strong> da tabela, teto 10; não há limite para os aparatos que pode <em>usar</em>) e realiza <strong>feitos científicos</strong> — as duas famílias são a magia que a Força não absorveu:</p><ul><li><strong>Feitos médicos:</strong> diagnosticar e curar doenças, operações cirúrgicas (simples a complexa), destilar antídotos, imunizar pacientes, cirurgia e membros ou órgãos biônicos.</li><li><strong>Feitos genéticos e de laboratório:</strong> construir e consertar droides, reparos robóticos, decodificar DNA, clonagem e afins.</li></ul><p>A lista completa, com NT, custo, tempo e regra de cada feito, está no journal <strong>Feitos Científicos</strong>.</p><p><strong>Consertar, recarregar ou adaptar</strong> um aparato custa <strong>25% do valor</strong> e <strong>metade do tempo</strong> de criação; construir do zero já sai com o seu Desconto Tecnológico. Feitos costumam levar mais tempo que aparatos, e a maioria é permanente.</p><p><strong>Você começa o jogo com aparatos prontos, e ganha mais a cada nível.</strong> Eles <strong>não custam Créditos</strong>: você já os construiu, e a bancada, o tempo e as peças ficaram no passado do personagem. Um Técnico de 1º nível não é alguém que <em>poderá</em> construir coisas — é alguém que <strong>já construiu</strong>. São <strong>três de NT 1</strong> no 1º nível e <strong>mais um a cada nível</strong>, de qualquer NT que você já alcance.</p><p><strong>Nível Tecnológico e aparatos prontos, por nível.</strong> O <strong>NT</strong> é o teto do que você consegue <em>construir</em> — o equivalente ao círculo de magia mais alto de um conjurador. Não há teto para o que você consegue <em>usar</em>.</p><table><thead><tr><th>Nível</th><th>NT</th><th>Aparatos</th></tr></thead><tbody><tr><td>1º</td><td>1</td><td>3</td></tr><tr><td>2º</td><td>2</td><td>4</td></tr><tr><td>3º</td><td>3</td><td>5</td></tr><tr><td>4º</td><td>4</td><td>6</td></tr><tr><td>5º</td><td>5</td><td>7</td></tr><tr><td>6º</td><td>6</td><td>8</td></tr><tr><td>7º</td><td>7</td><td>9</td></tr><tr><td>8º</td><td>8</td><td>10</td></tr><tr><td>9º</td><td>9</td><td>11</td></tr><tr><td>10º</td><td>10</td><td>12</td></tr><tr><td>11º</td><td>10</td><td>13</td></tr><tr><td>12º</td><td>10</td><td>14</td></tr><tr><td>13º</td><td>10</td><td>15</td></tr><tr><td>14º</td><td>10</td><td>16</td></tr><tr><td>15º</td><td>10</td><td>17</td></tr></tbody></table><p><em>O <strong>Engenheiro</strong> anda uma casa atrás na coluna de aparatos (seu nível + 1): ele começa com dois.</em></p><p><em>É o que acontece com todo conjurador do sistema: o Sensível à Força começa com dois poderes de 1ª Grandeza e ganha mais a cada Grandeza que abre; o Mago de OD2 começa com o grimório escrito e acrescenta magias ao subir de nível. Ninguém entra em jogo com a lista em branco, e ninguém para de aprender.</em></p><p>Os <strong>Créditos iniciais continuam servindo para todo o resto</strong> — armas, roupa, passagem, suborno — e para comprar ou construir aparatos <em>além</em> destes, se você quiser mais.</p><p><strong>Sugestão de mesa:</strong> que um dos três primeiros seja o <strong>Disruptor Positrônico</strong> — é o aparato-assinatura da classe, é NT 1, e é o que faz <em>Desativar Droides</em> funcionar.</p><p><em>Variante para mesas mais duras: o aparato ganho ao subir de nível é de NT igual ou menor que o nível anterior — os brinquedos de ponta chegam com um nível de atraso.</em></p>" + "<p><strong>Você começa o jogo com três aparatos de NT 1 prontos.</strong> Eles não custam Créditos — você já os construiu antes de a campanha abrir. É o <strong>kit de partida</strong> da classe, dado <strong>uma vez</strong>, no 1º nível. Daí em diante, aparato se constrói ou se compra: o que o nível dá é <strong>NT</strong>, o alcance do que você consegue fabricar.</p><p><em>Sugestão de mesa: que um dos três seja o <strong>Disruptor Positrônico</strong> — é o aparato-assinatura da classe, é NT 1, e é o que faz</em> Desativar Droides <em>funcionar.</em></p>" + "<p>&#128260; <strong>Aparato destruído ou perdido:</strong> o projeto continua seu — refazer custa <strong>25% do valor e metade do tempo</strong>, como conserto. Construir um <strong>novo</strong> é preço e tempo cheios.</p>" + "<p>&#8987; <strong>Construir é atividade de entremeio:</strong> os tempos vão de 1d4 horas a 1d4 meses, e a construção acontece <strong>entre aventuras</strong>. Em cena, só se o Mestre declarar tempo parado.</p>" },
       { nome: "Desativar Droides", level: 1, desc: "<p>Com um <strong>disruptor positrônico</strong>, desativa droides a até <strong>18 metros</strong> que falhem num teste de Moral no fim da rodada.</p><p><strong>Destruição:</strong> se o droide falhar no teste <strong>e os dois dados saírem iguais</strong>, ele não é apenas desligado — é destruído.</p><p><strong>Tentativas extras:</strong> além dos usos seguros do dia dá para insistir, mas cada tentativa cumulativa torna o teste <strong>Difícil (−2)</strong> e depois <strong>Muito Difícil (−5)</strong>. Uma falha nessas condições causa um curto-circuito no disruptor, que precisa ser reparado.</p><p>No 1º nível, desativa droides sem bônus.</p>" +
         "<p><strong>Resistência por classe de droide:</strong> nem todo droide é igual diante de um disruptor. Aplique este ajuste <strong>ao Moral do alvo</strong> — quanto maior o Moral, mais difícil desligá-lo.</p>" +
         "<table><thead><tr><th>Classe do droide</th><th>Ajuste no Moral</th><th>Exemplos</th></tr></thead><tbody>" +
@@ -522,7 +520,7 @@ export const classes = [
       "<li><em>Doença e veneno:</em> Diagnosticar Doença · Curar Doença · Identificar Veneno · Destilar Antídoto · Identificar Micro-organismo · Imunizar Paciente.</li>" +
       "<li><em>Suporte e aprimoramento:</em> Pílula de Aprimoramento · Aprimoramento Permanente · Fórmula de Controle Corporal · Respirador Subaquático.</li>" +
       "<li><em>Biônica:</em> Cirurgia Biônica · Membro Biônico · Órgão Biônico.</li>" +
-      "<li><em>Preservação:</em> Hibernação Criogênica.</li></ul>" + bancadaNota() + NOTA_SPEC_MUNDANA,
+      "<li><em>Preservação:</em> Hibernação Criogênica.</li></ul>" + NT_NOTA + NOTA_SPEC_MUNDANA,
     equipment_restrictions: {
       ...EQ_TECNICO,
       weapons: "Leve de energia e Utilitária — e, por disciplina do Pesquisador, apenas as que ele mesmo construiu.",
@@ -543,7 +541,7 @@ export const classes = [
     descricao:
       "<p><em>\"Se existe, eu conserto. Se não existe, eu invento. Se quebrar, a culpa é da peça.\"</em></p>" +
       "<p>Construtores de droides (um Anakin criança), os engenheiros de estaleiro de Mon Cala, o gênio que monta uma nave com sucata.</p>" +
-      "<p><strong>Perde</strong> <em>Operar e Consertar Máquinas</em> e <em>Desativar Droides</em>, começa com <strong>um aparato a menos</strong>, e paga <strong>prejuízo</strong> na bancada onde o Técnico tem desconto. É a trilha que mais perde — e a que ganha o pacote mais forte: <em>Tecnologia de Ponta</em> sozinha salta quatro Níveis Tecnológicos de uma vez, no 3º nível.</p>" + "<p><strong>Prejuízo Tecnológico — o que ele encarece, e o que não.</strong></p><p><strong>Encarece:</strong> aparatos e feitos científicos — construir, combinar, consertar e recarregar. É a bancada dele que custa caro.</p><p><strong>Não encarece:</strong> compra normal de equipamento. Um blaster, uma armadura, uma passagem ou um suborno custam a ele exatamente o que custam a qualquer um — ele apenas <strong>não tem o desconto</strong> do Técnico. Não é um mau comprador; é um construtor caro.</p><table><thead><tr><th>Nível</th><th>O aparato de 100 CR sai por</th></tr></thead><tbody><tr><td>1º</td><td><strong>105 CR</strong> (+5%)</td></tr><tr><td>3º</td><td><strong>115 CR</strong> (+15%)</td></tr><tr><td>6º</td><td><strong>130 CR</strong> (+30%)</td></tr><tr><td>10º</td><td><strong>150 CR</strong> (+50%)</td></tr></tbody></table><p>Enquanto os outros Técnicos compram e adaptam, ele insiste em fazer do zero — e do zero demora.</p>" + bancadaNota(true) + NOTA_SPEC_MUNDANA,
+      "<p><strong>Perde</strong> <em>Operar e Consertar Máquinas</em> e <em>Desativar Droides</em>, começa com <strong>um aparato a menos</strong>, e paga <strong>prejuízo</strong> na bancada onde o Técnico tem desconto. É a trilha que mais perde — e a que ganha o pacote mais forte: <em>Tecnologia de Ponta</em> sozinha salta quatro Níveis Tecnológicos de uma vez, no 3º nível.</p>" + "<p><strong>Prejuízo Tecnológico — o que ele encarece, e o que não.</strong></p><p><strong>Encarece:</strong> aparatos e feitos científicos — construir, combinar, consertar e recarregar. É a bancada dele que custa caro.</p><p><strong>Não encarece:</strong> compra normal de equipamento. Um blaster, uma armadura, uma passagem ou um suborno custam a ele exatamente o que custam a qualquer um — ele apenas <strong>não tem o desconto</strong> do Técnico. Não é um mau comprador; é um construtor caro.</p><table><thead><tr><th>Nível</th><th>O aparato de 100 CR sai por</th></tr></thead><tbody><tr><td>1º</td><td><strong>105 CR</strong> (+5%)</td></tr><tr><td>3º</td><td><strong>115 CR</strong> (+15%)</td></tr><tr><td>6º</td><td><strong>130 CR</strong> (+30%)</td></tr><tr><td>10º</td><td><strong>150 CR</strong> (+50%)</td></tr></tbody></table><p>Enquanto os outros Técnicos compram e adaptam, ele insiste em fazer do zero — e do zero demora.</p>" + NT_NOTA + NOTA_SPEC_MUNDANA,
     equipment_restrictions: EQ_TECNICO,
     habilidades: [
       { nome: "Oficina do Inventor", level: 1, desc: "<p><em>(Aparatos e Feitos Científicos)</em> Cria máquinas e realiza experiências como um Técnico (NT = seu nível, máximo 10), mas com <strong>prejuízo tecnológico de 5%</strong> no custo de cada aparato e feito.</p><p>Começa com <strong>2 aparatos de NT 1</strong> prontos — um a menos que os outros Técnicos — e ganha <strong>+1 por nível</strong>.</p><p><em>O prejuízo vale só para a bancada: aparatos e feitos. Compra normal de equipamento sai pelo preço de tabela — ele não tem o desconto do Técnico, mas também não paga a mais.</em></p>" },
@@ -563,7 +561,7 @@ export const classes = [
     descricao:
       "<p><em>\"A máquina não tem dono. Ela só ainda não me conheceu.\"</em></p>" +
       "<p>O Slicer é o Niilógico que deixou a lógica escorrer pelas beiradas. Onde o Médico cura e o Engenheiro constrói, ele <strong>conversa com as máquinas como quem sussurra segredos</strong> — e elas obedecem. Renegou o establishment tecnológico, seus fornecedores e seus selos de garantia.</p>" +
-      "<p><strong>Perde</strong> <em>Operar e Consertar Máquinas</em> e o <em>Desconto Tecnológico</em>; <em>Desativar Droides</em> é substituída por <strong>Sequestrar Droides</strong> — no lugar de <em>desligar</em> um droide, ele aprendeu a <strong>tomá-lo para si</strong>.</p>" + bancadaNota() + NOTA_SPEC_MUNDANA,
+      "<p><strong>Perde</strong> <em>Operar e Consertar Máquinas</em> e o <em>Desconto Tecnológico</em>; <em>Desativar Droides</em> é substituída por <strong>Sequestrar Droides</strong> — no lugar de <em>desligar</em> um droide, ele aprendeu a <strong>tomá-lo para si</strong>.</p>" + NT_NOTA + NOTA_SPEC_MUNDANA,
     equipment_restrictions: EQ_TECNICO,
     habilidades: [
       { nome: "Aparatos e Feitos Científicos", level: 1, desc: "<p>Cria aparatos e realiza feitos em seus improvisos de laboratório, com <strong>Nível Tecnológico igual ao seu nível</strong> (NT máximo 10). Sem desconto nem prejuízo — o Slicer não barganha com ninguém: monta o que precisa com sucata, mercado negro e engenharia reversa, pagando o valor cheio dos componentes.</p>" },

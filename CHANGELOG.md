@@ -6,6 +6,63 @@ começou junto com o rename.
 
 ---
 
+## 1.11.0 — 30/08/2026
+
+O cofre reverteu, no mesmo dia, as duas regras do Técnico que a 1.10.0 tinha
+acabado de portar. Este release acompanha a reversão. Diffado pelo backup
+automático do cofre (commit das 17:34), não relendo os arquivos.
+
+### A curva de NT ficou mais lenta
+
+Deixou de ser `NT = nível de classe` (teto 10) e virou uma **tabela**: sobe um
+degrau por nível com uma **pausa a cada três** (2º, 5º, 8º, 11º e 14º), chegando
+ao NT 10 só no 15º.
+
+| Nível | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 |
+|---|-|-|-|-|-|-|-|-|-|--|--|--|--|--|--|
+| **NT** | 1 | 1 | 2 | 3 | 3 | 4 | 5 | 5 | 6 | 7 | 7 | 8 | 9 | 9 | 10 |
+
+O motivo está no cofre: a T3-1 do Space Dragon dá ao Cientista um NT a cada
+**dois** níveis, chegando ao 10 no 19º de 20. `NT = nível` chegava ao 10 no 10º
+de 15 — quase o dobro da velocidade do livro — e punha um Técnico de 3º nível
+construindo uma **Mochila de Propulsão de 2.500 CR** com uma renda inicial de
+350. **Na prática: no 3º nível o Técnico agora está em NT 2, e o NT 3 abre no
+4º.**
+
+### As Vagas de bancada saíram
+
+A regra de `nível + 2` vagas, com cada aparato ocupando vagas iguais ao seu NT,
+esteve no cofre por algumas horas e foi removida: criava uma economia paralela à
+dos Créditos.
+
+No lugar: **três aparatos de NT 1 prontos no 1º nível, uma vez só.** Não há
+aparato de graça por nível — o que o nível dá é **NT**, o alcance do que se
+consegue fabricar; o resto é orçamento.
+
+Some junto a nota do Engenheiro que dizia `nível + 1` vagas.
+
+### O Espião lê a tabela do Técnico
+
+Sua habilidade *Aparatos e Feitos Científicos* `[6]` dizia "NT igual ao seu
+nível". Agora é **"igual ao de um Técnico do seu nível"** — a mesma coluna, lida
+na linha dele.
+
+### Uma inconsistência que ficou no cofre
+
+Cinco arquivos ainda carregam a regra de Vagas, já removida do capítulo de
+Classes:
+
+- `SW-SD-Senda-Mandaloriana.md:123` — a habilidade do Técnico Mandaloriano
+  ganhou o NT novo mas manteve "*Tem nível + 2 vagas de bancada*" na mesma frase.
+- As fichas de exemplo do **Técnico**, **Engenheiro**, **Médico de Campo** e
+  **Slicer**, com seções inteiras de "As 5 vagas de bancada — de graça".
+
+O módulo não transcreve as fichas de exemplo, e o Armeiro (Técnico na Senda) lê
+a habilidade da classe-base, então **o compêndio saiu correto**. Mas o cofre está
+dizendo duas coisas.
+
+---
+
 ## 1.10.0 — 30/08/2026
 
 Aplicação do `CORRECOES-PENDENTES.md`. **O documento foi escrito contra outra

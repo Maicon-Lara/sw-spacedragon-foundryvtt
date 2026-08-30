@@ -5,7 +5,7 @@
   "_id": "ZfAHzyV7Xa4TNpl0",
   "img": "systems/olddragon2e/assets/icons/kit.svg",
   "system": {
-    "description": "<p>O Espião passa a <strong>criar máquinas e realizar experiências</strong> em seus laboratórios, com <strong>Nível Tecnológico igual ao seu nível</strong> (NT máximo 10; não há limite para os aparatos que pode <em>usar</em>). Vale para os aparatos de campo do ofício — escutas, bugs, credenciais forjadas, holoprojetores de disfarce. Seguem as regras de Criação de Aparatos do Space Dragon.</p>",
+    "description": "<p>O Espião passa a <strong>criar máquinas e realizar experiências</strong> em seus laboratórios, com <strong>Nível Tecnológico igual ao de um Técnico do seu nível</strong> (a coluna NT da tabela do Técnico, teto 10; não há limite para os aparatos que pode <em>usar</em>). Vale para os aparatos de campo do ofício — escutas, bugs, credenciais forjadas, holoprojetores de disfarce. Seguem as regras de Criação de Aparatos do Space Dragon.</p>",
     "level": 6,
     "level3": "",
     "level6": "",
