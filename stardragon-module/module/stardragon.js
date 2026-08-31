@@ -21,6 +21,7 @@
 import { abrirCorrupcao, novaCena, novoDia, diagnostico } from "./corrupcao.js";
 import { NaveDataModel } from "./nave-modelo.js";
 import { NaveFicha } from "./nave-ficha.js";
+import { ligarPainelDeGrandezas } from "./grandezas.js";
 
 const ID = "stardragon";
 const CLASSE = "stardragon-tema";
@@ -60,6 +61,8 @@ Hooks.once("ready", () => {
   // A API que a macro do compêndio chama. Fica aqui, e não dentro da macro,
   // para que atualizar o módulo atualize a regra — uma macro já arrastada para
   // a barra continua valendo, porque ela só chama isto.
+  ligarPainelDeGrandezas();
+
   game.stardragon = { corrupcao: abrirCorrupcao, novaCena, novoDia, diagnostico };
 
   // O escudo só regenera na rodada em que a nave NÃO sofreu dano. Marcar isso

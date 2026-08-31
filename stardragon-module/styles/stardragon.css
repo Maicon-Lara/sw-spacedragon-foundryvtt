@@ -445,3 +445,40 @@ body.stardragon-tema .olddragon2e.sheet .economy .currency .cp {
   font-size: 11px; margin: 0 0 6px; padding: 5px 8px; border-radius: 3px;
   border-left: 3px solid #b43c35; background: #b43c3522; line-height: 1.4;
 }
+
+/* ── Painel de Grandezas na aba de Poderes ─────────────────────────────────
+ *
+ * Injetado na ficha do sistema, então tudo aqui é escopado em
+ * .stardragon-grandezas — nada do OD2 é repintado. Vale com o tema do módulo
+ * ligado ou desligado.
+ */
+.stardragon-grandezas {
+  margin: 0 0 10px; padding: 8px 10px; border-radius: 4px;
+  border: 1px solid var(--color-border-light-tertiary, #6663);
+}
+.stardragon-grandezas h3 {
+  margin: 0 0 7px; font-size: 11px; text-transform: uppercase; letter-spacing: .08em;
+  opacity: .7; display: flex; gap: 8px; align-items: baseline;
+}
+.stardragon-grandezas .legenda { text-transform: none; letter-spacing: 0; font-size: 10px; opacity: .75; font-weight: normal; }
+
+.stardragon-grandezas .faixa { display: grid; grid-template-columns: repeat(10, 1fr); gap: 3px; }
+.stardragon-grandezas .g {
+  display: flex; flex-direction: column; align-items: center; gap: 1px;
+  padding: 4px 1px; border-radius: 3px; border: 1px solid transparent; line-height: 1.15;
+}
+.stardragon-grandezas .g .rot { font-size: 9.5px; opacity: .65; }
+.stardragon-grandezas .g .n { font-size: 15px; font-weight: 700; }
+.stardragon-grandezas .g .sabe { font-size: 9.5px; opacity: .8; }
+
+/* Grandeza que o personagem ainda não alcança, ou cortada pelo teto. */
+.stardragon-grandezas .g.vazia { opacity: .3; }
+/* Verde só quando a ficha bate com o devido; nunca depende só da cor —
+ * o número "tenho/devo" está escrito ao lado. */
+.stardragon-grandezas .g.ok { border-color: #4f6e4e; }
+.stardragon-grandezas .g.falta { border-color: #b43c35; background: #b43c3518; }
+.stardragon-grandezas .g.sobra { border-color: #786436; }
+
+.stardragon-grandezas .nota,
+.stardragon-grandezas .regra { margin: 6px 0 0; font-size: 10.5px; opacity: .7; line-height: 1.4; }
+.stardragon-grandezas .nota { font-style: italic; }

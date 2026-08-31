@@ -29,7 +29,7 @@ import { equipamentosJournal } from "./data/equipamentos-journal.mjs";
 import { feitosJournal } from "./data/feitos-journal.mjs";
 import { mestreJournal } from "./data/mestre-journal.mjs";
 import { criacaoJournal } from "./data/criacao-journal.mjs";
-import { progressao } from "./data/progressoes.mjs";
+import { progressao, GRANDEZAS } from "./data/progressoes.mjs";
 import { macros } from "./data/macros.mjs";
 import { CORES_DE_PASTA } from "./data/pastas.mjs";
 import { tabelas } from "./data/tabelas.mjs";
@@ -288,8 +288,26 @@ async function compile(packName, docs) {
   console.log(`  ✔ ${packName}: ${n} documentos → LevelDB (${pintadas} pastas coloridas)`);
 }
 
+// A tabela de Grandezas precisa existir DENTRO do módulo: o painel da ficha
+// roda no navegador e não alcança tools/data/. Gerar aqui, em vez de copiar à
+// mão, mantém uma fonte de verdade só — progressoes.mjs.
+function geraDadosDoRuntime() {
+  const destino = path.join(ROOT, "stardragon-module", "module", "grandezas-dados.js");
+  const conteudo = [
+    "// GERADO POR tools/build.mjs — NÃO EDITE À MÃO.",
+    "// Fonte: tools/data/progressoes.mjs (GRANDEZAS).",
+    "// Foco Diário por Grandeza, do 1º ao 15º nível. Os poderes CONHECIDOS são",
+    "// estes números + 1, em cada Grandeza.",
+    `export const GRANDEZAS = ${JSON.stringify(GRANDEZAS)};`,
+    "",
+  ].join("\n");
+  fs.writeFileSync(destino, conteudo, "utf8");
+  console.log("  ✔ module/grandezas-dados.js: tabela de Grandezas");
+}
+
 async function main() {
   console.log("Gerando compêndios de Star Dragon…");
+  geraDadosDoRuntime();
   await compile(ESPECIES_PACK, buildEspeciesDocs());
   await compile(CLASSES_PACK, buildClassesDocs());
   await compile(EQUIPAMENTOS_PACK, buildEquipamentosDocs());
