@@ -69,12 +69,12 @@ function montaPainel(ator) {
   const linhaLida = Math.max(1, Math.min(15, nivel + desloca));
   const linha = GRANDEZAS[linhaLida - 1] ?? [];
 
-  // Quantos poderes de cada Grandeza a ficha já tem, para comparar.
-  const CAMPOS = { arcane: 1, divine: 1, necromancer: 1, illusionist: 1 };
+  // Quantos poderes de cada Grandeza a ficha já tem. O círculo mora em
+  // arcane/divine/necromancer/illusionist — a escola carrega o Caminho.
   const tem = {};
   for (const it of ator.items) {
     if (it.type !== "spell") continue;
-    for (const c of Object.keys(CAMPOS)) {
+    for (const c of ["arcane", "divine", "necromancer", "illusionist"]) {
       const v = it.system?.[c];
       if (v && v !== "null") {
         tem[Number(v)] = (tem[Number(v)] ?? 0) + 1;
@@ -83,33 +83,32 @@ function montaPainel(ator) {
     }
   }
 
-  const celulas = ROMANOS.map((rot, i) => {
-    const g = i + 1;
-    const foco = g <= teto ? linha[i] : undefined;
-    if (!foco) return `<div class="g vazia"><span class="rot">${rot}</span><span class="n">—</span></div>`;
-    const sabe = foco + 1;
-    const tenho = tem[g] ?? 0;
-    const estado = tenho === sabe ? "ok" : tenho < sabe ? "falta" : "sobra";
-    return (
-      `<div class="g ${estado}" title="Foco ${foco} por dia · conhece ${sabe} poderes · na ficha: ${tenho}">` +
-      `<span class="rot">${rot}</span>` +
-      `<span class="n">${foco}</span>` +
-      `<span class="sabe">${tenho}/${sabe}</span></div>`
-    );
-  }).join("");
+  // SÓ as Grandezas que ele alcança. Mostrar as dez deixava oito traços na
+  // tela de um Guardião de 3º nível.
+  const celulas = linha
+    .map((foco, i) => {
+      const g = i + 1;
+      if (!foco || g > teto) return "";
+      const sabe = foco + 1;
+      const tenho = tem[g] ?? 0;
+      const estado = tenho === sabe ? "" : tenho < sabe ? "falta" : "sobra";
+      return (
+        `<span class="g ${estado}" title="${foco} de Foco por dia · conhece ${sabe} poderes · na ficha: ${tenho}">` +
+        `<span class="rot">${ROMANOS[i]}</span><span class="foco">${foco}</span>` +
+        `<span class="sabe">${tenho}/${sabe}</span></span>`
+      );
+    })
+    .join("");
+  if (!celulas) return null;
 
-  const nota = [];
-  if (desloca) nota.push(`lê a linha do <strong>${linhaLida}º</strong> nível`);
-  if (motivos.length) nota.push(motivos.join(" · "));
+  const nota = ["Foco/dia · tem/devia"];
+  if (desloca) nota.push(`lê a linha do ${linhaLida}º`);
+  if (teto < 10) nota.push(`teto na ${ROMANOS[teto - 1]}`);
 
   return (
-    `<section class="${MARCA}">` +
-    `<h3>Grandezas <span class="legenda">Foco por dia · conhecidos na ficha / devidos</span></h3>` +
-    `<div class="faixa">${celulas}</div>` +
-    (nota.length ? `<p class="nota">${nota.join(" — ")}</p>` : "") +
-    `<p class="regra">Conhece <strong>o número da tabela, + 1</strong> em cada Grandeza. ` +
-    `Cada Grandeza é uma <strong>reserva fechada</strong>: Foco de uma não paga poder de outra.</p>` +
-    `</section>`
+    `<section class="${MARCA}" title="Conhece o número da tabela + 1 em cada Grandeza. Cada Grandeza é uma reserva fechada: o Foco de uma não paga poder de outra.">` +
+    `<div class="linha"><span class="titulo">Grandezas</span>${celulas}` +
+    `<span class="nota">${nota.join(" · ")}</span></div></section>`
   );
 }
 
