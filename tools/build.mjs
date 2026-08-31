@@ -29,7 +29,7 @@ import { equipamentosJournal } from "./data/equipamentos-journal.mjs";
 import { feitosJournal } from "./data/feitos-journal.mjs";
 import { mestreJournal } from "./data/mestre-journal.mjs";
 import { criacaoJournal } from "./data/criacao-journal.mjs";
-import { progressao, GRANDEZAS } from "./data/progressoes.mjs";
+import { progressao, GRANDEZAS, focoExtra } from "./data/progressoes.mjs";
 import { macros } from "./data/macros.mjs";
 import { CORES_DE_PASTA } from "./data/pastas.mjs";
 import { tabelas } from "./data/tabelas.mjs";
@@ -299,6 +299,11 @@ function geraDadosDoRuntime() {
     "// Foco Diário por Grandeza, do 1º ao 15º nível. Os poderes CONHECIDOS são",
     "// estes números + 1, em cada Grandeza.",
     `export const GRANDEZAS = ${JSON.stringify(GRANDEZAS)};`,
+    "",
+    "// Foco Extra por Sabedoria (Tabela 1-2 do ED-01), da 1a a 3a Grandeza.",
+    "// Indice = valor de Sabedoria, 0 a 20. Soma ao Foco Diario; NAO muda os",
+    "// poderes conhecidos.",
+    `export const FOCO_EXTRA = ${JSON.stringify(Array.from({ length: 21 }, (_, i) => focoExtra(i)))};`,
     "",
   ].join("\n");
   fs.writeFileSync(destino, conteudo, "utf8");

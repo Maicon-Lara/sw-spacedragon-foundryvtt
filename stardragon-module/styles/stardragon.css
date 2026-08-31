@@ -486,3 +486,5 @@ body.stardragon-tema .olddragon2e.sheet .economy .currency .cp {
 .stardragon-grandezas .g.falta { border-color: #b43c35; background: rgba(180, 60, 53, .12); }
 .stardragon-grandezas .g.sobra { border-color: #786436; }
 .stardragon-grandezas .nota { font-size: 11px; font-style: italic; opacity: .8; }
+/* O ganho de Sabedoria fica visível no número, não só no tooltip. */
+.stardragon-grandezas .g .bonus { font-size: 9px; opacity: .8; margin-left: 1px; }

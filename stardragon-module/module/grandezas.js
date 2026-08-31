@@ -16,7 +16,7 @@
  * junto se o módulo for desligado.
  */
 
-import { GRANDEZAS } from "./grandezas-dados.js";
+import { GRANDEZAS, FOCO_EXTRA } from "./grandezas-dados.js";
 
 const ID = "stardragon";
 const MARCA = "stardragon-grandezas";
@@ -83,18 +83,32 @@ function montaPainel(ator) {
     }
   }
 
+  // O Foco Extra da SABEDORIA soma aos usos por dia, da 1ª à 3ª Grandeza
+  // (Tabela 1-2 do ED-01). Ele NÃO muda os poderes conhecidos: estes continuam
+  // sendo o número da tabela de Grandezas + 1. Um Sensível de Sabedoria alta
+  // conjura mais vezes, não sabe mais coisas.
+  const sab = Number(ator.system?.sabedoria ?? 0);
+  const extra = FOCO_EXTRA[Math.max(0, Math.min(sab, FOCO_EXTRA.length - 1))] ?? [0, 0, 0];
+
   // SÓ as Grandezas que ele alcança. Mostrar as dez deixava oito traços na
   // tela de um Guardião de 3º nível.
   const celulas = linha
-    .map((foco, i) => {
+    .map((base, i) => {
       const g = i + 1;
-      if (!foco || g > teto) return "";
-      const sabe = foco + 1;
+      if (!base || g > teto) return "";
+      const bonus = extra[i] ?? 0;
+      const foco = base + bonus;
+      const sabe = base + 1; // conhecidos saem da TABELA, sem o Foco Extra
       const tenho = tem[g] ?? 0;
       const estado = tenho === sabe ? "" : tenho < sabe ? "falta" : "sobra";
+      const dica =
+        `${foco} de Foco por dia` +
+        (bonus ? ` (${base} da tabela + ${bonus} de Sabedoria ${sab})` : "") +
+        ` · conhece ${sabe} poderes · na ficha: ${tenho}`;
       return (
-        `<span class="g ${estado}" title="${foco} de Foco por dia · conhece ${sabe} poderes · na ficha: ${tenho}">` +
-        `<span class="rot">${ROMANOS[i]}</span><span class="foco">${foco}</span>` +
+        `<span class="g ${estado}" title="${dica}">` +
+        `<span class="rot">${ROMANOS[i]}</span>` +
+        `<span class="foco">${foco}${bonus ? `<sup class="bonus">+${bonus}</sup>` : ""}</span>` +
         `<span class="sabe">${tenho}/${sabe}</span></span>`
       );
     })
@@ -102,6 +116,7 @@ function montaPainel(ator) {
   if (!celulas) return null;
 
   const nota = ["Foco/dia · tem/devia"];
+  if (extra.some((n) => n)) nota.push(`Sabedoria ${sab}`);
   if (desloca) nota.push(`lê a linha do ${linhaLida}º`);
   if (teto < 10) nota.push(`teto na ${ROMANOS[teto - 1]}`);
 

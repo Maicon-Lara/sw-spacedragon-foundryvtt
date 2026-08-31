@@ -145,3 +145,30 @@ export function tabelaGrandezas(ate = 15) {
     `<th>Poderes conhecidos</th></tr></thead><tbody>${linhas}</tbody></table>`
   );
 }
+
+// ── Foco Extra pela Sabedoria (Tabela 1-2 do ED-01) ─────────────────────────
+//
+// Some ao Foco Diário, e SÓ da 1ª à 3ª Grandeza. No Star Dragon a tabela é
+// indexada pela Inteligência (o Mentálico é regido por ela); aqui é pela
+// SABEDORIA, porque é ela que rege o Sensível à Força.
+//
+// ATENÇÃO À GRANULARIDADE. O capítulo de criação resume isto como "Sabedoria
+// 13-16 dá +1, 17-20 dá +2", o que perde a coluna por Grandeza: em 15-16 já há
+// +1 na 2ª, e em 19-20 há +2 na 2ª. A tabela abaixo é a do ED-01, que é a
+// fonte; o resumo do capítulo de criação está simplificado demais.
+//
+// Ele muda os USOS por dia, não os poderes conhecidos — estes continuam sendo
+// "o número da tabela de Grandezas, + 1".
+const FOCO_EXTRA = [
+  { ate: 12, extra: [0, 0, 0] },
+  { ate: 14, extra: [1, 0, 0] },
+  { ate: 16, extra: [1, 1, 0] },
+  { ate: 18, extra: [2, 1, 1] },
+  { ate: 20, extra: [2, 2, 1] },
+];
+
+/** Foco Extra por Grandeza (1ª, 2ª, 3ª) para um valor de Sabedoria. */
+export function focoExtra(sabedoria) {
+  const n = Number(sabedoria) || 0;
+  return (FOCO_EXTRA.find((f) => n <= f.ate) ?? FOCO_EXTRA.at(-1)).extra;
+}
