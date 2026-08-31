@@ -7,9 +7,9 @@
   "system": {
     "description": "<p>Opera aparatos ofensivos (redes, detonadores, grilhões), <strong>pilota naves</strong> e conserta máquinas: <strong>1-2 em 1d6</strong>.</p>",
     "level": 1,
-    "level3": "<p>A chance sobe para <strong>1-3 em 1d6</strong>.</p>",
-    "level6": "<p>A chance sobe para <strong>1-4 em 1d6</strong>.</p>",
-    "level10": "<p>A chance sobe para <strong>1-5 em 1d6</strong>.</p>",
+    "level3": "",
+    "level6": "",
+    "level10": "<p>A chance sobe para <strong>1-3 em 1d6</strong> — o único degrau, e só aqui: o Caçador opera aparatos, não é técnico deles.</p>",
     "rogue_talents": [],
     "daily_uses": {
       "1": 0,
