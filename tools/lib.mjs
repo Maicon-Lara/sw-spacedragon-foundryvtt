@@ -618,7 +618,19 @@ export function weaponDoc(it, folderId, seedPrefix, sort) {
     img: it.img || weaponIcon(it),
     system: {
       ...equipmentBase(it),
-      type: it.melee === false || it.ranged ? "ranged" : "melee",
+      // O sistema tem quatro tipos: melee, ranged, throwing e ammunition.
+      // Uma arma sem alcance de tiro e COM alcance de arremesso é `throwing`,
+      // não `ranged` — é o caso das granadas e do Detonador Térmico.
+      //
+      // Isso não é cosmético. A automação de combate do módulo Qualidade de
+      // Vida ABORTA o ataque de qualquer arma `ranged` sem munição equipada
+      // (`if (ammunition.required && !ammunition.item) return;`), e dispensa
+      // munição para `throwing`. Tipadas como `ranged`, as granadas nem
+      // rolavam.
+      type:
+        it.melee === false || it.ranged
+          ? (it.throw_range && !it.shoot_range ? "throwing" : "ranged")
+          : "melee",
       damage_type: damageType(it.damage_type),
       damage: it.damage || "",
       bonus_damage: it.bonus_damage ?? 0,

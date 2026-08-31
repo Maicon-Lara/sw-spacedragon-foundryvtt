@@ -1,6 +1,6 @@
 {
   "name": "sw-spacedragon-foundryvtt",
-  "version": "1.14.0",
+  "version": "1.14.1",
   "description": "Módulo de conteúdo \"Star Dragon\" para o sistema Old Dragon 2e (Foundry VTT). Espécies, classes e material de cenário.",
   "private": true,
   "type": "module",
