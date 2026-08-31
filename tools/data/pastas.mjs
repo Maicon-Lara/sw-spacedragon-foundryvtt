@@ -59,6 +59,7 @@ export const CORES_DE_PASTA = {
   "Armaduras e Escudos": "#51687f",
   "Vestes sob Encomenda": "#51687f",
   "Aparatos Tecnológicos": "#806126",
+  "Carregadores": "#a14e43", // mesma família das armas: é o dano delas que ele carrega
   "Kits e Estojos": "#806126",
   "Equipamento Geral": "#62666c",
   "Miudezas, Energia e Sobrevivência": "#62666c",

@@ -1,0 +1,49 @@
+{
+  "folder": "Y6UY1QpEHlmzDpp1",
+  "name": "Carregador — Carabina Blaster",
+  "type": "weapon",
+  "_id": "q6ZW54tib7rSxFdN",
+  "img": "systems/olddragon2e/assets/icons/melee.svg",
+  "system": {
+    "odo_id": "carregador-carabina-blaster",
+    "description": "Célula de energia do Carabina Blaster — dano 1d6, o mesmo da arma.\nEquipe o carregador junto com a arma. A automação de combate tira o dano dele, como o Old Dragon faz com a flecha: no SRD o Arco Longo não tem dano nenhum, quem tem é a Flecha de Guerra. Sem o carregador equipado, o ataque não chega a rolar.\nO cenário não conta tiros de blaster. As 100 cargas existem para a automação ter o que descontar — não são uma regra nova de munição.",
+    "quantity": 100,
+    "cost": "25 CR",
+    "weight_in_load": 0,
+    "weight_in_grams": 0,
+    "magic_item": false,
+    "is_equipped": false,
+    "type": "ammunition",
+    "damage_type": "none",
+    "damage": "1d6",
+    "bonus_damage": 0,
+    "bonus_ba": 0,
+    "bonus_ca": 0,
+    "shoot_range": 0,
+    "throw_range": 0,
+    "arrow": false,
+    "bolt": false,
+    "bolt_small": false,
+    "polearm": false,
+    "two_handed": false,
+    "versatile": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!q6ZW54tib7rSxFdN"
+}

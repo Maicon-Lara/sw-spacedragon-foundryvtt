@@ -1,0 +1,22 @@
+{
+  "name": "Carregadores",
+  "sorting": "m",
+  "folder": null,
+  "type": "Item",
+  "_id": "Y6UY1QpEHlmzDpp1",
+  "description": "",
+  "sort": 0,
+  "color": "#a14e43",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld"
+  },
+  "_key": "!folders!Y6UY1QpEHlmzDpp1"
+}

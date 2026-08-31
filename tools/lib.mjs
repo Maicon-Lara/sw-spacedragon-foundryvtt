@@ -598,7 +598,8 @@ function equipmentBase(it) {
     odo_id: slug(it.nome),
     // weapon/armor/misc: a ficha exibe num <textarea>. Ver htmlParaTexto().
     description: htmlParaTexto(it.desc),
-    quantity: 1,
+    // Munição vem em conjunto (o Virote do SRD traz 20); o resto é unitário.
+    quantity: it.quantity ?? 1,
     cost: it.cost || "",
     weight_in_load: it.weight_in_load ?? 0,
     weight_in_grams: it.weight_in_grams ?? 0,
@@ -627,8 +628,9 @@ export function weaponDoc(it, folderId, seedPrefix, sort) {
       // (`if (ammunition.required && !ammunition.item) return;`), e dispensa
       // munição para `throwing`. Tipadas como `ranged`, as granadas nem
       // rolavam.
-      type:
-        it.melee === false || it.ranged
+      type: it.ammunition
+        ? "ammunition"
+        : it.melee === false || it.ranged
           ? (it.throw_range && !it.shoot_range ? "throwing" : "ranged")
           : "melee",
       damage_type: damageType(it.damage_type),

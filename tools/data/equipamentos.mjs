@@ -314,4 +314,69 @@ const CATEGORIAS = [
   },
 ];
 
+
+
+// ── Carregadores ────────────────────────────────────────────────────────────
+//
+// No Old Dragon o dano de uma arma de disparo mora na MUNIÇÃO, não na arma: o
+// Arco Longo do SRD tem `damage` vazio e é a Flecha de Guerra que traz o 1d8.
+// A automação de combate segue essa regra (`damageItem = ammunition ?? item`) e
+// ABORTA o ataque de arma `ranged` sem munição equipada.
+//
+// Um blaster tem dano próprio, então nada de munição existia e nenhum tiro
+// rolava. A saída é seguir o modelo do sistema: um carregador por arma,
+// carregando o dano dela.
+//
+// O DANO CONTINUA TAMBÉM NA ARMA, de propósito. A automação usa o do
+// carregador (ela ignora o da arma quando há munição), mas quem lê o compêndio
+// ou a ficha precisa ver "Blaster Leve 1d6" — e o cofre diz que o dano é da
+// arma. Gerar os carregadores A PARTIR das armas mantém um valor só: mudou na
+// arma, muda no carregador, sem ninguém sincronizar à mão.
+const ARMAS_DE_ENERGIA = "Blasters e Armas de Energia";
+
+function carregadores(categorias) {
+  const armas = categorias
+    .find((c) => c.folder === ARMAS_DE_ENERGIA)
+    .itens.filter((it) => it.damage && it.shoot_range);
+
+  return {
+    folder: "Carregadores",
+    tipo: "weapon",
+    itens: armas.map((arma) => ({
+      // A automação casa munição por NOME antes de olhar o tipo: arma com
+      // "besta" no nome exige munição com "virote", e "arco" exige "flecha".
+      // A Besta Wookiee cai nessa regra, então o carregador dela precisa
+      // trazer "Virote" no nome ou o ataque continua bloqueado.
+      //
+      // Felizmente é o nome certo por acaso: um bowcaster dispara quarrels —
+      // virotes — de energia, e não uma célula como os blasters.
+      nome: /besta|arco/i.test(arma.nome)
+        ? `Virote Energético — ${arma.nome}`
+        : `Carregador — ${arma.nome}`,
+      ammunition: true,
+      damage: arma.damage, // gerado da arma: uma fonte só
+      damage_type: arma.damage_type,
+      // 100 tiros porque o CENÁRIO NÃO CONTA TIROS: não há regra de munição
+      // para arma de energia no capítulo de Equipamentos. O número existe só
+      // para a automação ter o que decrementar (ela faz `quantity - 1` por
+      // disparo) e é alto o bastante para nunca virar assunto na mesa. Não é
+      // uma economia nova — se acabar, o Mestre repõe sem rolar nada.
+      quantity: 100,
+      cost: "25 CR",
+      weight_in_load: 0,
+      desc:
+        `<p>Célula de energia do <strong>${arma.nome}</strong> — dano ` +
+        `<strong>${arma.damage}</strong>, o mesmo da arma.</p>` +
+        `<p><strong>Equipe o carregador junto com a arma.</strong> A automação de ` +
+        `combate tira o dano dele, como o Old Dragon faz com a flecha: no SRD o ` +
+        `Arco Longo não tem dano nenhum, quem tem é a Flecha de Guerra. Sem o ` +
+        `carregador equipado, o ataque não chega a rolar.</p>` +
+        `<p><em>O cenário não conta tiros de blaster. As 100 cargas existem para a ` +
+        `automação ter o que descontar — não são uma regra nova de munição.</em></p>`,
+    })),
+  };
+}
+
+CATEGORIAS.push(carregadores(CATEGORIAS));
+
 export const categorias = anotaCategorias(CATEGORIAS);
