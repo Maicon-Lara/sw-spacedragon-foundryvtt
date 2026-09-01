@@ -720,6 +720,7 @@ const paginas = [
 <h3>2ª Grandeza</h3>
 <ul>
 <li><strong>Percepção Ampliada</strong> <em>(adaptação — 2ª; ver Detectar Invisibilidade/Mentiras, 2ª)</em> — lê as superfícies de pensamento em até <strong>18 metros</strong>.</li>
+<li><strong>Véu da Força</strong> <em>(adaptação do cenário — 2ª; ver Apagar Rastros Mentais, 6ª)</em> — recolhe a própria assinatura na Força: enquanto dura, adivinhação e rastreio não o encontram. É como um Sensível se esconde do Império — e o preço é não poder usar a Força para resolver nada.</li>
 <li><strong>Localizar pela Força</strong> <em>(adaptação — 2ª)</em> — aponta a <strong>direção</strong> de um objeto, nave ou pessoa que você já conheceu. Sem distância exata nem mapa.</li>
 </ul>
 
@@ -746,6 +747,27 @@ const paginas = [
 <ul>
 <li><strong>Fortaleza Mental</strong> <em>(Fortaleza Mental, 6ª)</em> — <strong>Alcance:</strong> 2 m²/nível · <strong>Duração:</strong> 1 minuto/nível · <strong>JP:</strong> nenhuma · <strong>Efeito:</strong> você e os aliados ao alcance passam a ter <strong>todos os testes de resistência mental considerados Fáceis</strong>; quem já estiver sob <em>Bloqueio Mental</em> mantém o efeito original e não acumula bônus — você ergue uma muralha ao redor da própria mente (e das de aliados próximos), <strong>blindando-a contra intrusão, leitura e domínio</strong>. Enquanto dura, truques mentais, sussurros e controles escorregam sem pegar. O escudo do mestre que entra na sala do tirano e não teme ter os pensamentos lidos.</li>
 </ul>
+
+<h3>7ª Grandeza</h3>
+<p><em>Não existe como item de ficha — use o texto abaixo.</em></p>
+<ul>
+<li><strong>Barreira da Força</strong> <em>(adaptação — 7ª)</em> — <strong>Alcance:</strong> pessoal, esfera de 3 metros · <strong>Duração:</strong> 1 minuto por nível · <strong>JP:</strong> nenhuma · <strong>Efeito:</strong> você ergue uma casca de pura vontade ao seu redor. <strong>Nenhum poder da Força atravessa</strong> — nem de fora para dentro, nem de dentro para fora: enquanto a Barreira dura, você também não conjura. Ela <strong>não detém matéria</strong>: tiro de blaster, lâmina, granada e aparato passam normalmente. É o abrigo de quem está perdendo um Duelo, e é a jaula de quem esqueceu que precisava revidar.</li>
+<li><strong>Mão do Titã</strong> <em>(adaptação — 7ª)</em> — <strong>Alcance:</strong> 30 metros · <strong>Duração:</strong> concentração, até 1 minuto · <strong>JP:</strong> JPD <em>(se usada contra uma criatura)</em> · <strong>Efeito:</strong> a telecinésia deixa de ser precisão e vira <strong>guindaste</strong>. Você ergue e desloca um objeto de até o porte de uma <strong>nave Pequena</strong> — um caça, um bloco de alvenaria, um contêiner de carga —, movendo-o <strong>3 metros por rodada</strong>. Enquanto concentra, você <strong>não faz mais nada</strong> e qualquer dano exige um teste de Sabedoria para não perder o controle. Largar a carga sobre alguém causa <strong>4d6</strong>, com JPD para metade. <em><strong>O Guardião nunca alcança este poder</strong> — o teto dele é a 6ª Grandeza. Quem ergue o caça é o Consular, o Vidente ou o Sensível puro, e isso é fiel ao cânone: foi o mestre sentado que tirou a nave do pântano, não o duelista.</em></li>
+<li><strong>Repulsão da Força</strong> <em>(adaptação — 7ª)</em> — <strong>Alcance:</strong> 6 metros de raio, a partir de você · <strong>Duração:</strong> instantâneo · <strong>JP:</strong> JPD · <strong>Efeito:</strong> em vez de empurrar <strong>alguém</strong>, você empurra <strong>tudo</strong>. Uma onda sai de você em todas as direções: cada criatura na área sofre <strong>2d6</strong>, é arremessada <strong>6 metros</strong> e cai no chão. Uma JPD bem-sucedida reduz o dano à metade e evita a queda. <strong>Não escolhe alvos</strong> — aliados no raio são atingidos como qualquer um, e é por isso que o poder pede que você olhe ao redor antes.</li>
+</ul>
+
+<h3>8ª Grandeza</h3>
+<p><em>Não existe como item de ficha — use o texto abaixo.</em></p>
+<ul>
+<li><strong>Deter o Instante</strong> <em>(adaptação — 8ª)</em> — <strong>Alcance:</strong> Visual · <strong>Duração:</strong> 1 rodada · <strong>JP:</strong> JPD · <strong>Efeito:</strong> você fecha a mão e <strong>o movimento para</strong>. Numa área de 10 metros, todo projétil em voo fica <strong>suspenso no ar</strong> e cada criatura faz uma JPD: falhando, perde a ação da rodada, presa no próprio gesto. Ao fim da rodada os projéteis simplesmente <strong>caem no chão</strong>, inertes. É a imagem de abertura do cenário: o tiro que ficou parado no corredor enquanto o atirador entendia o que tinha acabado de acontecer.</li>
+<li><strong>Peso do Mundo</strong> <em>(adaptação — 8ª)</em> — <strong>Alcance:</strong> 30 metros · <strong>Duração:</strong> 1 minuto · <strong>JP:</strong> JPD · <strong>Efeito:</strong> numa área de <strong>10 metros de raio</strong>, você reescreve a gravidade: escolha ao conjurar entre <strong>dobrá-la</strong> (movimento pela metade, testes físicos Difíceis), <strong>anulá-la</strong> (todos flutuam, sem apoio para golpe corpo a corpo) ou <strong>invertê-la</strong> (tudo cai para cima, sofrendo <strong>2d6</strong> ao bater no teto — e outros 2d6 quando o poder acaba, se ainda estiver lá em cima). As regras de Gravidade do Space Dragon valem normalmente dentro da área.</li>
+</ul>
+
+<h3>9ª Grandeza</h3>
+<p><em>Não existe como item de ficha — use o texto abaixo.</em></p>
+<ul>
+<li><strong>Projeção da Força</strong> <em>(adaptação — 9ª)</em> — <strong>Alcance:</strong> ilimitado, dentro da mesma galáxia · <strong>Duração:</strong> 1 minuto por nível · <strong>JP:</strong> nenhuma · <strong>Efeito:</strong> você aparece <strong>em outro lugar</strong>. A projeção fala, anda, tem sua voz e seu rosto, e é <strong>indistinguível de você</strong> para quem olha — ela não pode tocar em nada nem ser tocada, e ataques a atravessam sem efeito. Você, enquanto isso, permanece onde está, imóvel e cego para o que houver à sua volta.</li>
+</ul>
 `,
   },
   {
@@ -765,6 +787,7 @@ const paginas = [
 <ul>
 <li><strong>Serenidade</strong> <em>(adaptação — 2ª)</em> — enquanto <strong>você não atacar</strong>, quem quiser te golpear precisa antes passar numa <strong>JPS</strong>.</li>
 <li><strong>Discernir a Verdade</strong> <em>(Detectar Mentiras, 2ª)</em> — você <strong>sabe quando lhe mentem</strong>, mas não descobre a verdade escondida.</li>
+<li><strong>Repelir a Sombra</strong> <em>(adaptação — 2ª)</em> — marca um alvo com uma quietude que a Sombra não toca: JPS <strong>Fáceis</strong> contra poderes da Sombra, e corrompidos não conseguem encostar nele. Cai se o próprio alvo atacar corpo a corpo.</li>
 </ul>
 
 <h3>3ª Grandeza</h3>
@@ -786,6 +809,7 @@ const paginas = [
 <ul>
 <li><strong>Visão da Verdade</strong> <em>(adaptação — 5ª)</em> — enxerga através de <strong>ilusões, disfarces, invisibilidade e mentiras da percepção</strong>.</li>
 <li><strong>Cura Maior</strong> <em>(adaptação — 5ª)</em> — <strong>restaura grande soma de pontos de vida</strong> ou traz um aliado da beira da morte de volta à luta em uma ação.</li>
+<li><strong>Vínculo da Díade</strong> <em>(adaptação — 5ª)</em> — duas pessoas viram uma só coisa na Força, a qualquer distância: veem, ouvem e sentem uma pela outra, e uma vez por dia passam um objeto de mão em mão. Um Vínculo por vez.</li>
 </ul>
 
 <h3>6ª Grandeza</h3>
@@ -799,6 +823,28 @@ const paginas = [
 <p><em>Não existe como item de ficha — use o texto abaixo.</em></p>
 <ul>
 <li><strong>Presença Serena</strong> <em>(adaptação — <strong>Alcance:</strong> 30 metros · <strong>Duração:</strong> 10 rodadas · <strong>JP:</strong> JPS — 7ª)</em> — a serenidade individual vira força de área: você <strong>projeta calma sobrenatural sobre uma multidão inteira</strong>, apaziguando pânico, fúria e violência iminente por toda a cena. O gesto que faz um motim baixar as armas, uma turba se dispersar, um salão à beira do massacre respirar de novo.</li>
+<li><strong>Convergência</strong> <em>(adaptação — 7ª)</em> — <strong>Alcance:</strong> pessoal · <strong>Duração:</strong> 1 hora de meditação ininterrupta · <strong>JP:</strong> nenhuma · <strong>Efeito:</strong> você para de agir e <strong>pergunta</strong>. A Força responde a até <strong>três perguntas</strong> com <strong>sim</strong>, <strong>não</strong> ou <strong>talvez</strong> — nunca com explicação, nunca com detalhe, e nunca duas vezes sobre a mesma coisa no mesmo dia. <em>Talvez</em> é resposta legítima e costuma significar que a pergunta foi mal feita, ou que aquilo ainda não foi decidido por ninguém.</li>
+</ul>
+
+<h3>8ª Grandeza</h3>
+<p><em>Não existe como item de ficha — use o texto abaixo.</em></p>
+<ul>
+<li><strong>Meditação de Batalha</strong> <em>(adaptação — 8ª)</em> — <strong>Alcance:</strong> 100 metros · <strong>Duração:</strong> 10 rodadas · <strong>JP:</strong> JPS <em>(inimigos)</em> · <strong>Efeito:</strong> você se senta, fecha os olhos <strong>no meio da batalha</strong> e a batalha muda de forma. Todos os seus aliados ao alcance ganham <strong>+2 em rolagens de ataque e Jogadas de Proteção</strong>; cada inimigo que falhe numa JPS sofre <strong>−2 nas mesmas coisas</strong>, e os de Moral mais baixo começam a recuar sem saber por quê. Você fica <strong>imóvel e indefeso</strong> enquanto medita, e <strong>qualquer dano sofrido encerra o poder</strong>.</li>
+<li><strong>Purificar o Nexo</strong> <em>(adaptação — 8ª)</em> — <strong>Alcance:</strong> 30 metros de raio · <strong>Duração:</strong> <strong>permanente</strong> · <strong>JP:</strong> nenhuma · <strong>Efeito:</strong> um dia inteiro de ritual devolve à Luz um lugar que a Sombra tomou. Dentro da área purificada, <strong>poderes da lista Sombra custam o dobro do Foco</strong> e <strong>nenhum uso da Força marca Corrupção</strong>. O efeito não se desfaz sozinho — mas pode ser <strong>desfeito por <em>Corromper o Nexo</strong></em>, e essa disputa por um mesmo lugar é boa premissa de aventura.</li>
+</ul>
+
+<h3>9ª Grandeza</h3>
+<p><em>Não existe como item de ficha — use o texto abaixo.</em></p>
+<ul>
+<li><strong>Restaurar a Carne</strong> <em>(adaptação — 9ª)</em> — <strong>Alcance:</strong> toque · <strong>Duração:</strong> instantâneo · <strong>JP:</strong> nenhuma · <strong>Efeito:</strong> você desfaz o que a medicina não alcança. Devolve <strong>pontos de atributo e níveis drenados</strong> por qualquer efeito, encerra paralisias e cegueiras de origem mental ou mística, e fecha um ferimento que se recusava a fechar. <strong>Não regenera membro perdido</strong> — isso é bancada de Técnico, não Força — e <strong>não ressuscita</strong>.</li>
+<li><strong>Palavra da Luz</strong> <em>(adaptação — 9ª)</em> — <strong>Alcance:</strong> 20 metros · <strong>Duração:</strong> instantâneo · <strong>JP:</strong> JPC · <strong>Efeito:</strong> você diz <strong>uma palavra</strong> e a hostilidade ao alcance simplesmente cessa. Criaturas hostis com <strong>até 4 DV</strong> que falhem na JPC caem <strong>inconscientes</strong> por 1d6 minutos; as de <strong>5 a 12 DV</strong> ficam <strong>atordoadas</strong> por 1d4 rodadas; acima de 12 DV, nada acontece. <strong>A Palavra não mata</strong> — nem quando seria mais fácil, nem quando o alvo merece.</li>
+</ul>
+
+<h3>10ª Grandeza</h3>
+<p><em>Não existe como item de ficha — use o texto abaixo.</em></p>
+<ul>
+<li><strong>Transferir a Vida</strong> <em>(adaptação — 10ª)</em> — <strong>Alcance:</strong> toque · <strong>Duração:</strong> instantâneo · <strong>JP:</strong> nenhuma · <strong>Efeito:</strong> alguém morreu há menos de um minuto, e você decide que não. O alvo volta <strong>com 1 PV</strong>, consciente e inteiro, sem perder memória nem personalidade — o oposto exato do que a <strong>clonagem</strong> e a <strong>reanimação</strong> do Técnico devolvem. Você, em troca, cai <strong>imediatamente a 0 PV</strong> e perde <strong>1d4 pontos de Constituição, permanentemente</strong>. Se isso levar sua Constituição a <strong>0, você morre</strong> — e é assim que costuma terminar.</li>
+<li><strong>Redenção</strong> <em>(adaptação — 10ª)</em> — <strong>Alcance:</strong> toque · <strong>Duração:</strong> instantâneo · <strong>JP:</strong> nenhuma <em>(o alvo escolhe)</em> · <strong>Efeito:</strong> você alcança alguém que <strong>já caiu</strong> — Corrupção <strong>9 ou 10</strong>, inclusive um <strong>Consumido</strong> — e lhe oferece o caminho de volta. Não é ataque, não vence resistência e <strong>não há Jogada de Proteção</strong>: o alvo <strong>decide</strong>, e a decisão pertence a quem o interpreta. Aceitando, ele <strong>retorna ao Caminho da Luz</strong> com a Corrupção reduzida a <strong>3</strong>, recuperando a si mesmo — memória, vontade e nome.</li>
 </ul>
 `,
   },
@@ -841,12 +887,15 @@ const paginas = [
 <ul>
 <li><strong>Dominação Absoluta</strong> <em>(Imobilizar Criatura, 5ª)</em> — subjuga <strong>corpo e vontade até de criaturas poderosas</strong>.</li>
 <li><strong>Repelir a Fera</strong> <em>(Afastar Criatura, 5ª)</em> — <strong>força criaturas não-humanas a recuar ou fugir</strong> — até <strong>8 DV</strong> afetados (uma <strong>JPS</strong> nega).</li>
+<li><strong>Rasgar a Mente</strong> <em>(adaptação — 5ª)</em> — não pergunta: entra e arranca. Falhando a JPS, o alvo entrega a informação buscada e sofre <strong>2d6</strong> com −2 em tudo por 1d6 horas; passando, ainda leva metade.</li>
 </ul>
 
 <h3>6ª Grandeza</h3>
 <p><em>Não existe como item de ficha — use o texto abaixo.</em></p>
 <ul>
 <li><strong>Drenar Vida ★</strong> <em>(adaptação do cenário — não use o poder-base do v1.0)</em> — <strong>Alcance:</strong> Visual · <strong>Duração:</strong> instantâneo · <strong>JP:</strong> JPS — você suga a energia vital do alvo e a verte em si. <strong>Alcance Visual · instantâneo.</strong> O alvo faz uma <strong>JPS</strong>: falhando, sofre <strong>1d6 de dano</strong> e você <strong>recupera exatamente esse número em PV</strong> (nunca acima do seu máximo; o excedente vira <strong>PV temporários</strong> que duram até o próximo descanso longo). Cura à custa da vida alheia — a marca vampírica dos Sith mais antigos, e a corda de salvação de Palpatine. <strong>Marca +1 de Corrupção sempre.</strong></li>
+<li><strong>Tempestade da Força ★</strong> <em>(adaptação — 6ª)</em> — <strong>Alcance:</strong> 20 metros · <strong>Duração:</strong> instantâneo · <strong>JP:</strong> JPD · <strong>Efeito:</strong> os relâmpagos deixam de sair de uma mão e passam a <strong>cair de todo lado</strong>. Numa área de <strong>10 metros de raio</strong>, tudo sofre <strong>4d6 de dano elétrico</strong>, com JPD para metade. Máquinas e droides na área sofrem o dano <strong>dobrado</strong> e ficam em curto-circuito, e aparatos tecnológicos carregados por quem estiver dentro precisam de reparo. <strong>Marca +1 de Corrupção sempre.</strong></li>
+<li><strong>Corromper o Nexo ★</strong> <em>(adaptação — 6ª)</em> — <strong>Alcance:</strong> 30 metros de raio · <strong>Duração:</strong> <strong>permanente</strong> · <strong>JP:</strong> nenhuma · <strong>Efeito:</strong> um dia de ritual, e o lugar <strong>apodrece na Força</strong>. Dentro da área, <strong>poderes da lista Sombra custam metade do Foco</strong> (arredondando para baixo, mínimo 1) e <strong>todo uso da Força — de qualquer lista — marca +1 de Corrupção</strong>. Plantas murcham, animais evitam o lugar e quem dorme ali tem pesadelos. Só é desfeito por <strong><em>Purificar o Nexo</strong></em>. <strong>Marca +1 de Corrupção sempre</strong>, e mais 1 a cada mês em que o conjurador permanecer no lugar que criou.</li>
 </ul>
 
 <h3>7ª Grandeza</h3>

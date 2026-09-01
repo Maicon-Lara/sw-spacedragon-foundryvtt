@@ -6,6 +6,45 @@ começou junto com o rename.
 
 ---
 
+## 1.17.0 — 01/09/2026
+
+O diário *Poderes da Força* dizia listar os poderes de **1ª a 10ª Grandeza** e
+listava 54 dos 73. Agora lista os 73 — conferido nome a nome contra
+`SW-SD-Poderes-da-Forca.md`, nos dois sentidos.
+
+### Os 15 de Grandeza alta que faltavam
+
+Poderes de **6ª a 10ª Grandeza** não viram item `spell` — o tipo *Magia* do OD2
+só conhece círculos de 1 a 5 —, então o diário é o único lugar onde eles
+existem. Faltavam três listas inteiras e alguns avulsos:
+
+| Lista | Entrou |
+|---|---|
+| **Universal** | 7ª *Barreira da Força* · *Mão do Titã* · *Repulsão da Força* — 8ª *Deter o Instante* · *Peso do Mundo* — 9ª *Projeção da Força* |
+| **Luz** | 7ª *Convergência* — 8ª *Meditação de Batalha* · *Purificar o Nexo* — 9ª *Restaurar a Carne* · *Palavra da Luz* — 10ª *Transferir a Vida* · *Redenção* |
+| **Sombra** | 6ª *Tempestade da Força* ★ · *Corromper o Nexo* ★ |
+
+A Universal para na **9ª**, e isso é do cenário: ela não tem 10ª.
+
+### Quatro que existiam como item e sumiram da referência
+
+*Véu da Força* (Universal 2ª), *Repelir a Sombra* (Luz 2ª), *Vínculo da Díade*
+(Luz 5ª) e *Rasgar a Mente* (Sombra 5ª) estavam na ficha como magia utilizável,
+mas fora da lista que se anuncia completa. Entraram no formato curto das
+Grandezas 1ª–5ª, porque o texto inteiro delas já mora no item.
+
+### O que ficou de fora, de propósito
+
+Os treze blocos *"Por que adaptação"* do cofre são comentário de projeto —
+explicam de qual círculo arcano o poder foi derivado. É leitura de autor, não
+regra de mesa, e foi o tipo de coisa cortada na 1.3.0.
+
+O único bloco em citação que **entrou** é o ⚠️ da *Mão do Titã*: **o Guardião
+nunca alcança este poder**, porque o teto dele é a 6ª Grandeza. Isso muda o que
+um personagem pode fazer, então é regra.
+
+---
+
 ## 1.16.1 — 01/09/2026
 
 Passada nos blocos **⚖️ Restrições** do cofre — as dez trilhas e as onze
