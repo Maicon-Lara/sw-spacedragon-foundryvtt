@@ -86,6 +86,303 @@ Fatal*. O módulo mantém a versão mais completa.
 
 ---
 
+## 1.16.0 — 01/09/2026
+
+Diff do cofre desde `e875dfc`: 488 inserções em seis arquivos.
+
+### Espécie nova: Mandaloriano
+
+Cultura, não linhagem — a única entrada do capítulo que não é uma espécie. Três
+habilidades: *Criado na Armadura*, *Sangue de Clã*, *Mando'a Nativo*. Ocupa a
+vaga de espécie, e essa é a restrição.
+
+**Não confundir com a Origem *Filho de Mandalore***, que continua existindo e é
+outra coisa: o *foundling* mantém a espécie de origem e paga abrindo mão de uma
+habilidade dela. O Mando'ad não tem outro povo; o Foundling tem dois.
+
+### Dois degraus novos no Sensível base
+
+*Intuição Bruta* `[3]` e *Improviso* `[6]`, só para quem **não** escolhe Senda.
+O motivo é estrutural, e o cofre o diz: até esta revisão o Sensível base era a
+única classe do cenário que ia do 1º ao 10º nível sem nada novo na ficha.
+
+### E a regra de poderes conhecidos mudou
+
+Sem Senda é a tabela **+ 2**; com Senda, **+ 1** (era +1 para todos). Amplitude
+no lugar de profundidade — ele conhece mais e conjura o mesmo, porque o Foco
+Diário não muda. Mais um teto novo: não se pode conhecer mais poderes do que
+existem na lista.
+
+Isso alcançou o painel de Grandezas da ficha, que mostrava +1 para todos. Ele
+agora detecta pela presença de *Intuição Bruta*/*Improviso* e mostra a soma
+certa, com o motivo no tooltip. A tabela da descrição da classe ganhou as duas
+colunas, lado a lado.
+
+Três poderes novos viraram item: *Repelir a Sombra* (2ª, Luz), *Vínculo da
+Díade* (5ª, Luz) e *Rasgar a Mente* (5ª, Sombra).
+
+---
+
+## 1.15.0 — 31/08/2026
+
+Sete carregadores novos, um por arma de energia, do tipo `ammunition` e
+carregando o dano da arma. É a decisão do autor, e é a certa: em vez de pedir
+mudança no módulo *Qualidade de Vida*, o módulo passa a seguir a convenção do
+próprio sistema.
+
+No SRD o **Arco Longo tem `damage` vazio** e quem traz o `1d8` é a *Flecha de
+Guerra*. A automação segue isso (`damageItem = ammunition ?? item`) e aborta o
+ataque de arma `ranged` sem munição equipada — por isso nenhum blaster rolava.
+
+### O dano continua também na arma, de propósito
+
+A automação ignora o da arma quando há munição, mas quem lê o compêndio precisa
+ver "Blaster Leve `1d6`", e o cofre diz que o dano é da arma. Os carregadores
+são **gerados** a partir das armas, então há um valor só: mudou na arma, muda no
+carregador.
+
+São **100 cargas** porque o cenário não conta tiros de blaster — não há regra de
+munição no capítulo de Equipamentos. O número existe só para a automação ter o
+que decrementar (ela faz `quantity - 1` por disparo) e não é uma economia nova.
+
+### Achado da simulação
+
+"Besta Wookiee (Bowcaster)" contém *besta*, e a regra de **nome** do QdV exige
+munição com *virote* — antes de olhar o tipo. Um carregador genérico não casaria
+e a arma seguiria bloqueada. O dela virou **Virote Energético**, que é o nome
+certo por acaso: bowcaster dispara *quarrels*, não célula.
+
+Simulado contra a lógica do QdV: **12 de 12 armas disparam, zero bloqueadas.**
+
+O validador pegou a pasta nova sem cor — foi para isso que a verificação existe.
+
+---
+
+## 1.14.1 — 31/08/2026
+
+Toda arma sem alcance de tiro e **com** alcance de arremesso agora sai como
+`throwing`, não `ranged`: as quatro granadas e o Detonador Térmico. Estava
+errado pelo próprio sistema, que tem os quatro tipos (`melee`, `ranged`,
+`throwing`, `ammunition`) e usa `throw_range` só no terceiro.
+
+Não era cosmético. A automação de combate do QdV exige munição equipada de toda
+arma `ranged` e **aborta o ataque sem ela**
+(`if (ammunition.required && !ammunition.item) return;`), enquanto dispensa
+munição de `throwing`. Tipadas como `ranged` e sem munição no cenário, as
+granadas simplesmente não rolavam.
+
+Restavam sete armas de energia com o mesmo problema — blasters, rifles e o
+Bowcaster —, sem conserto do lado do módulo: `game.od2Qdv` não expõe o combate,
+não há opção de configuração para munição, e os quatro tipos de arma do sistema
+não dão um quinto lugar onde pôr uma arma de energia. **Resolvido na 1.15.0**,
+por outro caminho.
+
+### A causa é boa de entender
+
+No SRD do OD2 **o arco não tem dano** — quem tem é a flecha (Arco Longo `damage`
+vazio, Flecha de Guerra `1d8`). Por isso o QdV tira o dano da munição; a regra
+dele é a do sistema. Blaster tem dano próprio, e o modelo quebra.
+
+---
+
+## 1.14.0 — 31/08/2026
+
+Macro **Efeitos (QdV)** que escreve os efeitos direto na flag do ator
+(`flags.old-dragon-2-qualidade-de-vida.effects`). Não dá para publicar um
+compêndio: o `EFFECTS_PACK` do QdV é fixo no id dele e ele não lê pack de
+terceiro. A flag, sim.
+
+### A lista é curta de propósito
+
+Uma varredura ingênua acha 45 "modificadores numéricos" nas habilidades. Quase
+nenhum deve virar efeito, e um seria bug:
+
+- **Casca Peluda** e **Garras e Escamas** (+1 de CA natural) ficam de fora: o
+  sistema já aplica pelo campo `natural_armor`, e um efeito daria +1 duas vezes.
+- **As Formas de Sabre** e **Mudar de Guarda** (−2 na CA) são o preço de trocar
+  de Forma por uma rodada, não passivos.
+- **Dois Corações**, **Inabalável**, **Sangue-frio** e **Vontade Férrea** são
+  condicionais ("contra medo", "contra veneno") que o vocabulário do QdV não
+  expressa — sem a condição, o bônus valeria contra tudo.
+- **Marcar a Presa** depende de um alvo declarado.
+
+Sobraram cinco. A que mais vale é a **Fúria Selvagem** do Wookiee: +2 no dano
+com os PV abaixo da metade. O *sistema* não consegue expressar isso — as
+condições de `bonus_damage` dele são por tipo de arma —, e o QdV consegue, com
+`hp.isHalf`. Esse é o caso que justifica o conjunto existir.
+
+A macro também **avisa no chat** sobre as que ficaram de fora, com o motivo de
+cada uma: melhor dizer por que não automatizou do que silenciar.
+
+### Achado do teste ao vivo
+
+As mutações do Mutante **não são itens** na ficha: são escolhas em
+`system.variable_construction_selections`. A primeira versão só olhava nomes de
+item e passava direto pela Mesla, que tem `03-mente-avancada` escolhida. A macro
+agora lê os dois.
+
+---
+
+## 1.13.2 — 31/08/2026
+
+O painel de Grandezas mostrava só o número da tabela. O capítulo diz que o Foco
+Diário "vem da Tabela, somado ao **Foco Extra da Sabedoria**" (Tabela 1-2 do
+ED-01), e eu tinha lido essa frase ao portar a regra sem levar o somatório para
+a ficha. No Darian, Sabedoria 16, o painel dizia Foco 2 e 1 quando são **3 e 2**.
+
+A tabela real é mais fina que o resumo do capítulo de criação, que diz "13-16 dá
++1, 17-20 dá +2". Isso perde a coluna por Grandeza: em 15-16 já há +1 na 2ª, e
+em 19-20 há +2 na 2ª. Transcrita do ED-01, que é a fonte.
+
+### O bônus muda os usos, não o repertório
+
+Os poderes conhecidos continuam sendo o número da tabela + 1. O capítulo de
+criação é explícito — no 1º nível, "a linha do 1º nível dá Foco 1 na 1ª
+Grandeza, logo você conhece 2 poderes dela" — e só depois manda somar o Foco
+Extra. Um Sensível de Sabedoria alta **conjura mais vezes, não sabe mais
+coisas**.
+
+Na ficha o ganho aparece no número (3 com um `+1` sobrescrito) e o tooltip abre
+a conta: *"3 de Foco por dia (2 da tabela + 1 de Sabedoria 16)"*.
+
+> **Fica para o autor decidir:** o resumo do capítulo de criação ("13-16 dá +1,
+> 17-20 dá +2") contradiz a Tabela 1-2 e vale corrigir no cofre.
+
+---
+
+## 1.13.1 — 31/08/2026
+
+414 px de caixa para 95 px de conteúdo, e o texto quase invisível. Duas causas,
+as duas **medidas na ficha de verdade** em vez de deduzidas.
+
+### Tamanho
+
+A grade de dez colunas deixava **oito traços** na tela de um Guardião de 3º
+nível, que só alcança 1ª e 2ª. Agora o painel mostra só as Grandezas que o
+personagem alcança, numa linha única: 414 px passaram a **36 px**.
+
+Alguma regra do sistema fazia a `<section>` virar container flex esticado — não
+achei qual, então `display:block` e `height:auto` com `!important`, que é o
+conserto honesto: não repinta nada do OD2, só impede que o painel seja esticado.
+
+### Contraste
+
+Eu usava `var(--color-border-light-tertiary, #6663)` e opacidades de .3 a .7.
+Medido: **as variáveis `--color-*` do Foundry vêm todas vazias neste tema**,
+então tudo caía no fallback de 20% de alfa — essa era a causa do apagado. As
+bordas passaram a sair de `currentColor` via `color-mix`, que acompanha o tema
+claro e o escuro, e as opacidades mínimas subiram para .8.
+
+O que falta continua marcado em vermelho **e** escrito ao lado (`1/2`), nunca só
+pela cor.
+
+---
+
+## 1.13.0 — 31/08/2026
+
+Painel na aba de Poderes mostrando, na própria ficha, quantos poderes o
+personagem tem por Grandeza: o **Foco Diário** (usos por dia) e os conhecidos,
+no formato "tem / devia ter". A regra é a da 1.10.0 — conhece o número da tabela
++ 1 em cada Grandeza —, agora visível onde se joga em vez de só na descrição da
+classe.
+
+Lê a linha certa sozinho: *Mente Superior* do Consular soma +2 níveis, o
+Sensível na Senda Mandaloriana subtrai 1, e os tetos de Grandeza (Guardião 6ª,
+Vidente 8ª) apagam as colunas acima. A detecção sai das **habilidades que estão
+na ficha**, não de uma lista de nomes de classe, que quebraria a cada trilha
+nova.
+
+### O gancho de render dispara
+
+O comentário de `stardragon.js` dizia desde a 1.0 que `renderActorSheet` "nunca
+dispara neste sistema". Medido na mesa em 31/08: **dispara**, e
+`renderOD2CharacterSheet` também — o Foundry emite o gancho do nome concreto e o
+da base.
+
+A crença antiga levou o tema a marcar o `<body>` e a Trilha de Corrupção a virar
+diálogo; as duas decisões seguem boas por outros motivos, mas o motivo
+registrado estava errado. Comentário corrigido.
+
+### A tabela de Grandezas passou a ser gerada
+
+Em `module/grandezas-dados.js`, pelo build: o painel roda no navegador e não
+alcança `tools/data/`, e copiar à mão criaria duas fontes de verdade. Conferida
+célula a célula contra a tabela que o autor passou.
+
+O painel só entra em ficha que tem poder ou habilidade de Foco, e falha em
+silêncio se algo mudar no sistema — nunca quebra a ficha por causa dele.
+
+---
+
+## 1.12.1 — 31/08/2026
+
+Diff do cofre desde `d34e778`. Uma mudança de regra chegou ao módulo.
+
+*Operar Aparatos Ofensivos e Consertar Máquinas* ia de 1-2 a 1-5 pela escada
+`[1]`/`[3]`/`[6]`/`[10]`, como uma habilidade-assinatura. O cofre comprimiu:
+fica em **1-2** e sobe a **1-3** uma única vez, no `[10]`. Os degraus de `[3]` e
+`[6]` saíram — o Caçador *opera* aparatos ofensivos, que é o que o distingue,
+mas não progride neles como um Técnico.
+
+Conferido que *Desarmar e Subjugar*, *Ataques Múltiplos* e *Combate Rápido* não
+citam mais aparato nenhum: as cláusulas estavam penduradas nessas três.
+
+Duas outras coisas do diff não pediram mudança. A escada de tempo da *Sabotagem*
+por pontos de talento (2 pts a 1d6 turnos … 5 pts a 1 turno) já estava no
+módulo. E o marcador `[1]` que o *Desarmar e Subjugar* do Veterano-base ganhou
+era correção de marcação no Markdown; o módulo já tinha o nível certo.
+
+---
+
+## 1.12.0 — 30/08/2026
+
+Diffado do cofre desde o ponto anterior (`d23e57a`), incluindo o que ainda não
+estava commitado lá.
+
+### Corrige o que eu escrevi na 1.11.1
+
+Eu tinha lido *"evolui dali em diante, a cada nível"* e escrito que o Engenheiro
+ganha +1 de NT por nível e chega ao NT 10 no 8º. O cofre fechou a regra
+diferente: após o salto para NT 5 no 3º, ele evolui **a cada dois níveis** —
+3º-4º: 5, 5º-6º: 6, …, 13º-15º: 10.
+
+O motivo está no cofre e é melhor que o meu palpite: o salto do `[3]` é o que a
+trilha vende (NT 2 para 5, três degraus de uma vez), mas o **ritmo depois dele é
+o do livro** — o Inventor da T3-1 progride a cada dois níveis. Ele anda um
+degrau à frente dos outros Técnicos, não uma corrida inteira.
+
+`NT_DO_ENGENHEIRO()` e `tabelaNTEngenheiro()` em `progressoes.mjs`, com a curva
+conferida célula a célula contra a tabela do capítulo.
+
+### O "NT = nível de classe" sobrevivia em mais dois lugares
+
+O diff do cofre apontou: o diário de *Feitos Científicos* (o exemplo dizia "um
+Técnico de 4º nível realiza feitos de até NT 4"; são **NT 3**) e o de *Criando
+um Personagem*. Varredura final nos packs: zero ocorrências restantes.
+
+---
+
+## 1.11.1 — 30/08/2026
+
+Auditando as fichas da mesa contra a 1.11.0, apareceram três lugares que ainda
+liam "NT = seu nível":
+
+- **Médico de Campo** `[1]`: agora lê a coluna NT, como o cofre passou a dizer.
+- **Médico de Campo** `[6]` (*Aparatos Avançados*): era "seu nível + 2", virou
+  "a coluna + 2" — o bônus continua, a base mudou.
+- **Slicer** `[1]`: idem, coluna NT.
+
+E o Engenheiro precisou de mais que uma troca de palavra. *Tecnologia de Ponta*
+o tira da coluna. O texto dizia que ele "salta quatro Níveis Tecnológicos de uma
+vez" — conta da curva antiga; com a coluna nova o salto é de **três** (a coluna
+daria 2 no 3º nível). Corrigido, e a divergência dele em relação à tabela ficou
+escrita, que antes era só implícita.
+
+> A regra de progressão que escrevi aqui — *+1 de NT por nível a partir do 3º,
+> NT 10 no 8º* — **estava errada**, e o cofre a fechou de outro jeito na 1.12.0.
+
+---
+
 ## 1.11.0 — 30/08/2026
 
 O cofre reverteu, no mesmo dia, as duas regras do Técnico que a 1.10.0 tinha
