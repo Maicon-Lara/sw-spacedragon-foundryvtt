@@ -40,6 +40,7 @@ export const CORES_DE_PASTA = {
   "Chiss": "#4f6e4e",
   "Droide": "#4f6e4e",
   "Humano": "#4f6e4e",
+  "Mandaloriano": "#4f6e4e",
   "Mon Calamari": "#4f6e4e",
   "Mutante": "#4f6e4e",
   "Rodiano": "#4f6e4e",

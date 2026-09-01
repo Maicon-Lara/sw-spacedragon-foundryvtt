@@ -226,6 +226,39 @@ export const listasDePoder = [
     school: "divine",
     poderes: [
       {
+        nome: "Repelir a Sombra",
+        circle: 2,
+        range: "toque",
+        duration: "10 minutos",
+        jp: "nenhuma",
+        reverse: false,
+        desc:
+          "<p>Você marca alguém — a si mesmo, se quiser — com uma quietude que a Sombra não " +
+          "gosta de tocar.</p>" +
+          "<p>Enquanto dura, as <strong>JPS do alvo contra qualquer poder da lista Sombra são " +
+          "Fáceis (+2)</strong>, e criaturas visivelmente corrompidas <strong>não conseguem " +
+          "encostar nele</strong>: podem atirar, podem usar poderes, mas a mão não fecha a " +
+          "distância.</p>" +
+          "<p>Se o próprio alvo <strong>atacar corpo a corpo</strong>, o afastamento cai — a " +
+          "proteção não cobre quem avança.</p>",
+      },
+      {
+        nome: "Vínculo da Díade",
+        circle: 5,
+        range: "ilimitado",
+        duration: "até ser desfeito por um dos dois",
+        jp: "nenhuma (exige consentimento)",
+        reverse: false,
+        desc:
+          "<p>Duas pessoas passam a ser <strong>uma só coisa na Força</strong>. A qualquer " +
+          "distância, cada uma <strong>vê e ouve o lugar onde a outra está</strong> por alguns " +
+          "instantes, sente o que ela sente e sabe quando ela está em perigo.</p>" +
+          "<p>Uma vez por dia, um objeto <strong>pequeno o bastante para caber na mão</strong> " +
+          "pode passar de uma para a outra — e é assim que uma lâmina chega a quem precisa " +
+          "dela.</p>" +
+          "<p>Só é possível manter <strong>um Vínculo por vez</strong>.</p>",
+      },
+      {
         nome: "Cura pela Força",
         circle: 1,
         range: "toque",
@@ -421,6 +454,24 @@ export const listasDePoder = [
     folder: "Sombra",
     school: "necromancer",
     poderes: [
+      {
+        nome: "Rasgar a Mente",
+        circle: 5,
+        range: "toque, ou 10 metros com esforço",
+        duration: "instantâneo",
+        jp: "JPS",
+        reverse: false,
+        desc:
+          "<p>Você não pergunta: <strong>entra e arranca</strong>.</p>" +
+          "<p>Falhando na JPS, o alvo entrega <strong>uma informação específica</strong> que " +
+          "você tenha declarado buscar — um nome, um lugar, um rosto, uma senha — e sofre " +
+          "<strong>2d6 de dano</strong>, ficando com <strong>−2 em todas as rolagens por 1d6 " +
+          "horas</strong>.</p>" +
+          "<p>Um <strong>sucesso</strong> na JPS ainda causa <strong>metade do dano</strong>: a " +
+          "tentativa machuca mesmo quando falha.</p>" +
+          "<p>Alvos que já sofreram este poder <strong>reconhecem a sensação</strong> e passam a " +
+          "temer quem o usou.</p>",
+      },
       {
         nome: "Choque da Força",
         circle: 1,

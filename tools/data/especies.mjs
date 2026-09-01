@@ -376,6 +376,45 @@ export const especies = [
     ],
   },
   {
+    // ── Mandaloriano — cultura, não linhagem ──────────────────────────────
+    // A única entrada do capítulo que não é uma espécie. Ocupa a vaga de
+    // espécie, e essa é a restrição: o Mando'ad abre mão do que Wookiee,
+    // Twi'lek ou Chiss dariam, porque Mandalore é o povo dele.
+    //
+    // NÃO CONFUNDIR COM A ORIGEM "Filho de Mandalore" (avulsas.mjs): aquela é
+    // o FOUNDLING, o de fora que o clã acolheu, que mantém a espécie de origem
+    // e paga abrindo mão de uma habilidade dela. A diferença não é de valor, é
+    // de bagagem — o Mando'ad não tem outro povo, o Foundling tem dois.
+    nome: "Mandaloriano",
+    flavor: "<p>O povo que se define pelo credo — nascido dentro da armadura e do clã.</p>",
+    descricao:
+      "<p>Mandalore não é um planeta de uma raça só, e Mandaloriano não é um tipo de corpo: é " +
+      "<strong>um código, uma armadura e um clã</strong>. Humanos, twi'leks e zabraks vestem o " +
+      "mesmo beskar e recitam o mesmo Resol'nare.</p>" +
+      "<p><strong>Escolha a aparência livremente.</strong> O corpo sob o capacete pode ser " +
+      "humano, twi'lek, zabrak ou o que a mesa quiser — os modificadores e as habilidades são " +
+      "os desta entrada, e não os da espécie que a aparência sugere.</p>" +
+      "<p><strong>Perguntas ao criar um Mando'ad:</strong> Qual é o seu clã, e ele ainda existe? " +
+      "Você já tirou o capacete diante de alguém? O que o seu Resol'nare proíbe que todo mundo " +
+      "ao redor acha normal?</p>" +
+      "<p>&#9878; <strong>Restrições.</strong> <strong>Esta entrada ocupa a vaga de " +
+      "espécie</strong> — e essa é a restrição.</p>" +
+      "<p>&#9888; <strong>Quem foi acolhido NÃO usa esta entrada.</strong> O <strong>Foundling" +
+      "</strong> mantém a espécie de origem, com os atributos e as habilidades dela, e paga o " +
+      "treinamento de clã abrindo mão de <strong>uma</strong> delas — é a Origem <em>Filho de " +
+      "Mandalore</em>, no fim deste compêndio.</p>" +
+      "<p><strong>Idioma próprio: Mando'a.</strong></p>" + IDIOMAS_REGRA,
+    movement: 9,
+    infravision: 0,
+    alignment_tendency: "none",
+    alignment_notes: "Qualquer.",
+    habilidades: [
+      { nome: "Criado na Armadura", desc: "<p>Usa a <strong>Lança-Vibro Mandaloriana</strong>, a <strong>Mochila de Propulsão</strong> (jetpack) e a <strong>armadura de clã</strong> sem penalidade, mesmo que a classe normalmente não permitisse.</p>" },
+      { nome: "Sangue de Clã", desc: "<p><strong>+1</strong> em testes de reação com Mandalorianos e com caçadores que reconheçam a herança.</p>" },
+      { nome: "Mando'a Nativo", desc: "<p>O idioma do clã é a <strong>língua materna</strong>, e não um adicional — os idiomas por Inteligência continuam valendo por cima.</p>" },
+    ],
+  },
+  {
     nome: "Zabrak",
     flavor: "<p>Guerreiros de vontade férrea, marcados pelos chifres e pelas tatuagens de clã.</p>",
     descricao:

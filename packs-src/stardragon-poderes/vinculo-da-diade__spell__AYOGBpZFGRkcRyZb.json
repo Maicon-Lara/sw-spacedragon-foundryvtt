@@ -1,0 +1,39 @@
+{
+  "folder": "HuZrufH0bKcKDNuz",
+  "name": "Vínculo da Díade",
+  "type": "spell",
+  "_id": "AYOGBpZFGRkcRyZb",
+  "img": "systems/olddragon2e/assets/icons/divine.svg",
+  "system": {
+    "odo_id": "vinculo-da-diade",
+    "school": "divine",
+    "circle": "5",
+    "arcane": "null",
+    "divine": "5",
+    "necromancer": "null",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "ilimitado",
+    "duration": "até ser desfeito por um dos dois",
+    "jp": "nenhuma (exige consentimento)",
+    "description": "<p>Duas pessoas passam a ser <strong>uma só coisa na Força</strong>. A qualquer distância, cada uma <strong>vê e ouve o lugar onde a outra está</strong> por alguns instantes, sente o que ela sente e sabe quando ela está em perigo.</p><p>Uma vez por dia, um objeto <strong>pequeno o bastante para caber na mão</strong> pode passar de uma para a outra — e é assim que uma lâmina chega a quem precisa dela.</p><p>Só é possível manter <strong>um Vínculo por vez</strong>.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!AYOGBpZFGRkcRyZb"
+}

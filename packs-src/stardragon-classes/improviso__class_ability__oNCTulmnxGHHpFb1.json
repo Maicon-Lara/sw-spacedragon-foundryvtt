@@ -1,0 +1,50 @@
+{
+  "folder": "knlgzJBXuoA1ma6r",
+  "name": "Improviso",
+  "type": "class_ability",
+  "_id": "oNCTulmnxGHHpFb1",
+  "img": "systems/olddragon2e/assets/icons/kit.svg",
+  "system": {
+    "description": "<p><em>Só para quem <strong>não</strong> escolheu Senda.</em></p><p>Uma vez por descanso longo, <strong>dez minutos de meditação</strong> bastam para <strong>trocar um poder conhecido por outro da mesma Grandeza</strong>, entre as listas a que você tem acesso.</p><p>O que você é hoje não precisa ser o que você era ontem — é o privilégio de quem nunca teve disciplina para desaprender. <em>(O poder trocado sai da sua lista; você não fica com os dois.)</em></p>",
+    "level": 6,
+    "level3": "",
+    "level6": "",
+    "level10": "",
+    "rogue_talents": [],
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 800000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!oNCTulmnxGHHpFb1"
+}

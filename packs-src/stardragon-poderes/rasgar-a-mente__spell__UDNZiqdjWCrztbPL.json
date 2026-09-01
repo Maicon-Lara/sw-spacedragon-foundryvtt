@@ -1,0 +1,39 @@
+{
+  "folder": "xMLTCLYjxbngUyMP",
+  "name": "Rasgar a Mente",
+  "type": "spell",
+  "_id": "UDNZiqdjWCrztbPL",
+  "img": "systems/olddragon2e/assets/icons/necromancer.svg",
+  "system": {
+    "odo_id": "rasgar-a-mente",
+    "school": "necromancer",
+    "circle": "5",
+    "arcane": "null",
+    "divine": "null",
+    "necromancer": "5",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "toque, ou 10 metros com esforço",
+    "duration": "instantâneo",
+    "jp": "JPS",
+    "description": "<p>Você não pergunta: <strong>entra e arranca</strong>.</p><p>Falhando na JPS, o alvo entrega <strong>uma informação específica</strong> que você tenha declarado buscar — um nome, um lugar, um rosto, uma senha — e sofre <strong>2d6 de dano</strong>, ficando com <strong>−2 em todas as rolagens por 1d6 horas</strong>.</p><p>Um <strong>sucesso</strong> na JPS ainda causa <strong>metade do dano</strong>: a tentativa machuca mesmo quando falha.</p><p>Alvos que já sofreram este poder <strong>reconhecem a sensação</strong> e passam a temer quem o usou.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!UDNZiqdjWCrztbPL"
+}

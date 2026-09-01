@@ -136,13 +136,18 @@ export function tabelaGrandezas(ate = 15) {
   const linhas = GRANDEZAS.slice(0, ate)
     .map((g, i) => {
       const foco = cab.map((_, j) => g[j] ?? "—").join(" / ");
-      const sabe = cab.map((_, j) => (g[j] ? g[j] + 1 : "—")).join(" / ");
-      return `<tr><td>${i + 1}º</td><td>${foco}</td><td><strong>${sabe}</strong></td></tr>`;
+      const puro = cab.map((_, j) => (g[j] ? g[j] + 2 : "—")).join(" / ");
+      const senda = cab.map((_, j) => (g[j] ? g[j] + 1 : "—")).join(" / ");
+      return (
+        `<tr><td>${i + 1}º</td><td>${foco}</td>` +
+        `<td><strong>${puro}</strong></td><td>${senda}</td></tr>`
+      );
     })
     .join("");
   return (
     `<table><thead><tr><th>Nível</th><th>Foco Diário (${cab.join(" / ")})</th>` +
-    `<th>Poderes conhecidos</th></tr></thead><tbody>${linhas}</tbody></table>`
+    `<th>Conhece — sem Senda</th><th>Conhece — com Senda</th></tr></thead>` +
+    `<tbody>${linhas}</tbody></table>`
   );
 }
 

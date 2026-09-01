@@ -61,13 +61,22 @@ const NT_NOTA =
 // de 1ª" — é esta mesma regra lida na primeira linha, e por isso saiu do texto:
 // era um caso particular apresentado como regra própria.
 const PODERES_CONHECIDOS_NOTA =
-  "<p>&#128214; <strong>Quantos poderes você conhece: o número da tabela, + 1 — em cada " +
-  "Grandeza.</strong> Olhe a linha do seu nível: em cada Grandeza que tiver um número, você " +
-  "conhece <strong>aquele número de poderes, mais um</strong>. Não há nada para anotar entre um " +
-  "nível e outro — a mesma tabela que dá o Foco dá a lista.</p>" +
+  "<p>&#128214; <strong>Quantos poderes você conhece: o número da tabela, mais um ou dois.</strong> " +
+  "Olhe a linha do seu nível: em cada Grandeza que tiver um número, você conhece aquele número " +
+  "<strong>+ 2 se não escolheu Senda</strong>, ou <strong>+ 1 se escolheu</strong>. Não há nada " +
+  "para anotar entre um nível e outro — a mesma tabela que dá o Foco dá a lista.</p>" +
+  "<p>&#127807; <strong>Sem Senda, some 2.</strong> O Sensível que não se especializou não teve " +
+  "escola, e é justamente por isso que sabe mais coisas: aprendeu de tudo um pouco, sem ninguém " +
+  "lhe dizer o que não servia. No 1º nível são <strong>três</strong> poderes de 1ª Grandeza, e " +
+  "não dois. É amplitude no lugar de profundidade — ele conhece mais e <strong>conjura o " +
+  "mesmo</strong>, porque o Foco Diário não muda.</p>" +
+  "<p>&#9888; <strong>Você não pode conhecer mais poderes do que existem.</strong> Se a conta " +
+  "pedir mais entradas do que a sua lista tem naquela Grandeza, você <strong>conhece a lista " +
+  "inteira</strong> e para por aí — o excedente não vira crédito nem desce para a Grandeza de " +
+  "baixo. Começa a acontecer por volta do <strong>11º nível</strong> para quem tem Caminho, e " +
+  "mais cedo para o <strong>neutro</strong>, que só acessa a lista Universal.</p>" +
   tabelaGrandezas() +
-  "<p>É por isso que você começa com <strong>dois poderes de 1ª Grandeza</strong>: a regra de " +
-  "criação sempre foi esta regra, lida na primeira linha. E <strong>ao abrir uma Grandeza " +
+  "<p><strong>Ao abrir uma Grandeza " +
   "nova</strong> você já entra nela sabendo <strong>dois</strong> — é o <code>+1</code> fazendo o " +
   "serviço, e é o que impede a situação absurda de ter Foco de 2ª Grandeza e nenhum poder de 2ª " +
   "para gastar nele.</p>" +
@@ -188,6 +197,38 @@ const HAB_TENTACAO = {
     CAIXA_CASA(
       "de lá veio a ideia do Sith de 15º nível que podia \"gastar 1 ponto da força <strong>ou receber 1 ponto do lado negro</strong> e refazer qualquer teste de poder\", ou seja, <strong>pagar em Corrupção por um resultado</strong>."
     ),
+};
+
+// ── Os três degraus do Sensível puro ────────────────────────────────────────
+//
+// Pertencem SÓ a quem não escolheu Senda. Existem por um motivo estrutural que
+// o cofre registra: até esta revisão o Sensível base era a única classe do
+// cenário que ia do 1º ao 10º nível sem nada novo na ficha — toda a progressão
+// dele estava na tabela.
+//
+// A identidade que dão é amplitude: ele não bate mais forte, se reconfigura.
+const HAB_INTUICAO_BRUTA = {
+  nome: "Intuição Bruta",
+  level: 3,
+  desc:
+    "<p><em>Só para quem <strong>não</strong> escolheu Senda.</em></p>" +
+    "<p>Você aprendeu sozinho, e por isso aprende melhor. Seus testes de <em>Aprender Poderes " +
+    "da Força</em> são sempre <strong>Fáceis</strong>, como se houvesse um mestre ensinando — e " +
+    "a falha <strong>não trava mais 24 horas</strong>: pode tentar de novo depois do próximo " +
+    "descanso longo. A falha crítica ainda cobra os 1d4 dias.</p>",
+};
+
+const HAB_IMPROVISO = {
+  nome: "Improviso",
+  level: 6,
+  desc:
+    "<p><em>Só para quem <strong>não</strong> escolheu Senda.</em></p>" +
+    "<p>Uma vez por descanso longo, <strong>dez minutos de meditação</strong> bastam para " +
+    "<strong>trocar um poder conhecido por outro da mesma Grandeza</strong>, entre as listas a " +
+    "que você tem acesso.</p>" +
+    "<p>O que você é hoje não precisa ser o que você era ontem — é o privilégio de quem nunca " +
+    "teve disciplina para desaprender. <em>(O poder trocado sai da sua lista; você não fica com " +
+    "os dois.)</em></p>",
 };
 
 const HAB_ECO_SENDA = {
@@ -600,6 +641,8 @@ export const classes = [
       { nome: "O Caminho: Luz e Sombra", level: 1, desc: "<p>No 1º nível o Sensível escolhe um <strong>Caminho</strong>, que fica <em>por cima</em> da especialização e decide quais listas de poderes ele acessa.</p><ul><li><strong>Caminho da Luz</strong> — serenidade, defesa, cura, previdência. Acessa Universal + Luz.</li><li><strong>Caminho da Sombra</strong> — paixão, domínio, medo, destruição. Acessa Universal + Sombra.</li><li><strong>Neutralidade</strong> — pode começar sem Caminho declarado (só a lista Universal) e escolher mais tarde.</li></ul><p><strong>Cruzar de lista (a Queda):</strong> um personagem da Luz pode usar um poder da Sombra em desespero, mas cada uso marca <strong>+1 de Corrupção</strong>. Alguns poderes marcam Corrupção mesmo para a Sombra (vêm com ★ na lista).</p>" },
       { nome: "Corrupção — Queda e Redenção", level: 1, desc: "<p>A Corrupção é uma trilha de 0 a 10 que mede o quanto a Sombra já enraizou.</p><p><strong>Ganhar (+1):</strong> usar um poder da lista Sombra, usar qualquer poder para crueldade deliberada, ou ceder ao ódio numa cena-chave. <strong>Perder (−1):</strong> atos definidores de compaixão e sacrifício, meditação prolongada sob orientação, recusar o caminho fácil quando ele custa caro.</p><ul><li><strong>0–2 Sereno:</strong> sem penalidade.</li><li><strong>3–5 Marcado:</strong> olhos começam a amarelar sob esforço; testes sociais com não-corrompidos ficam Difíceis quando a Força é usada à vista.</li><li><strong>6–8 Tomado:</strong> surtos de fúria; o Mestre pode assumir uma ação em cena de estresse extremo.</li><li><strong>9 À beira:</strong> todas as penalidades de <em>Tomado</em> — e a Sombra passa a <strong>oferecer</strong> (ver <em>A Tentação</em>). Um passo do fim.</li><li><strong>10 Queda</strong> (Luz e neutro) ou <strong>Consumido</strong> (Sombra).</li></ul><p><strong>A Queda:</strong> ao chegar a Corrupção 10, um Sensível da Luz (ou neutro) cai — surto sombrio, troca definitiva para o Caminho da Sombra e uma marca física. Ao cair, sua Corrupção <strong>volta para 7</strong>: a Sombra deixou de ser um estranho dentro dele e virou casa.</p><p><strong>Consumido:</strong> ao chegar a Corrupção 10 já sendo do Caminho da Sombra, não sobra pessoa, só apetite. O personagem <strong>sai das mãos do jogador e vira NPC do Mestre</strong> — um Lorde Sith puro, um monstro que os antigos companheiros um dia terão de enfrentar. A Luz perde a alma; a Sombra perde a pessoa.</p><p class='nota-casa'><em>Criação da casa: a trilha de Corrupção nunca teve fim marcado para quem já era da Sombra, e passa a ter.</em></p><p><strong>A Redenção:</strong> exige reduzir a Corrupção a menos de 3 <em>e</em> um sacrifício definidor.</p>" },
       HAB_TENTACAO,
+      HAB_INTUICAO_BRUTA,
+      HAB_IMPROVISO,
       HAB_ECO_SENDA,
       reputacao("O nome de um Mestre Jedi abre portas; o de um Lorde Sith \"funciona\" fechando as mesmas portas. Sob o Império, uma Reputação Jedi alta é tão útil quanto perigosa — o Mestre pode exigir que o teste seja rolado <em>contra</em> você."),
     ],

@@ -36,6 +36,12 @@ function deslocamento(ator) {
   let teto = 10;
   const motivos = [];
 
+  // Quem escolheu Senda conhece a tabela + 1; quem não escolheu, + 2. A marca
+  // de "escolheu" são os degraus exclusivos do puro: se Intuição Bruta e
+  // Improviso NÃO estão na ficha, ele trilhou uma Senda.
+  const puro = /Intuição Bruta|Improviso/i.test(habs);
+  const somaConhecidos = puro ? 2 : 1;
+
   // Consular: Mente Superior lê a tabela dois níveis acima.
   if (/Mente Superior/i.test(habs)) {
     desloca += 2;
@@ -56,7 +62,7 @@ function deslocamento(ator) {
     teto = Math.min(teto, 8);
     motivos.push("Vidente: teto na 8ª");
   }
-  return { desloca, teto, motivos };
+  return { desloca, teto, motivos, puro, somaConhecidos };
 }
 
 const ROMANOS = ["1ª", "2ª", "3ª", "4ª", "5ª", "6ª", "7ª", "8ª", "9ª", "10ª"];
@@ -65,7 +71,7 @@ function montaPainel(ator) {
   const nivel = Number(ator.system?.level ?? 0);
   if (!nivel) return null;
 
-  const { desloca, teto, motivos } = deslocamento(ator);
+  const { desloca, teto, puro, somaConhecidos } = deslocamento(ator);
   const linhaLida = Math.max(1, Math.min(15, nivel + desloca));
   const linha = GRANDEZAS[linhaLida - 1] ?? [];
 
@@ -98,13 +104,14 @@ function montaPainel(ator) {
       if (!base || g > teto) return "";
       const bonus = extra[i] ?? 0;
       const foco = base + bonus;
-      const sabe = base + 1; // conhecidos saem da TABELA, sem o Foco Extra
+      // Conhecidos saem da TABELA, sem o Foco Extra: +2 sem Senda, +1 com.
+      const sabe = base + somaConhecidos;
       const tenho = tem[g] ?? 0;
       const estado = tenho === sabe ? "" : tenho < sabe ? "falta" : "sobra";
       const dica =
         `${foco} de Foco por dia` +
         (bonus ? ` (${base} da tabela + ${bonus} de Sabedoria ${sab})` : "") +
-        ` · conhece ${sabe} poderes · na ficha: ${tenho}`;
+        ` · conhece ${sabe} poderes (tabela ${base} + ${somaConhecidos}${puro ? ", sem Senda" : ""}) · na ficha: ${tenho}`;
       return (
         `<span class="g ${estado}" title="${dica}">` +
         `<span class="rot">${ROMANOS[i]}</span>` +
@@ -117,6 +124,7 @@ function montaPainel(ator) {
 
   const nota = ["Foco/dia · tem/devia"];
   if (extra.some((n) => n)) nota.push(`Sabedoria ${sab}`);
+  nota.push(puro ? "sem Senda (+2)" : "com Senda (+1)");
   if (desloca) nota.push(`lê a linha do ${linhaLida}º`);
   if (teto < 10) nota.push(`teto na ${ROMANOS[teto - 1]}`);
 

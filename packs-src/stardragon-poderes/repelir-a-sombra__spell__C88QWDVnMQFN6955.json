@@ -1,0 +1,39 @@
+{
+  "folder": "RzTLRADXDwGycMvo",
+  "name": "Repelir a Sombra",
+  "type": "spell",
+  "_id": "C88QWDVnMQFN6955",
+  "img": "systems/olddragon2e/assets/icons/divine.svg",
+  "system": {
+    "odo_id": "repelir-a-sombra",
+    "school": "divine",
+    "circle": "2",
+    "arcane": "null",
+    "divine": "2",
+    "necromancer": "null",
+    "illusionist": "null",
+    "reverse": false,
+    "range": "toque",
+    "duration": "10 minutos",
+    "jp": "nenhuma",
+    "description": "<p>Você marca alguém — a si mesmo, se quiser — com uma quietude que a Sombra não gosta de tocar.</p><p>Enquanto dura, as <strong>JPS do alvo contra qualquer poder da lista Sombra são Fáceis (+2)</strong>, e criaturas visivelmente corrompidas <strong>não conseguem encostar nele</strong>: podem atirar, podem usar poderes, mas a mão não fecha a distância.</p><p>Se o próprio alvo <strong>atacar corpo a corpo</strong>, o afastamento cai — a proteção não cobre quem avança.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!C88QWDVnMQFN6955"
+}

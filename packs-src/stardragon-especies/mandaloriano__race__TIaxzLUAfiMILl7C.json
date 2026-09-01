@@ -1,0 +1,41 @@
+{
+  "folder": "XETsgq5hkietkq4M",
+  "name": "Mandaloriano",
+  "type": "race",
+  "_id": "TIaxzLUAfiMILl7C",
+  "img": "systems/olddragon2e/assets/icons/alignment.svg",
+  "system": {
+    "flavor": "<p>O povo que se define pelo credo — nascido dentro da armadura e do clã.</p>",
+    "description": "<p>Mandalore não é um planeta de uma raça só, e Mandaloriano não é um tipo de corpo: é <strong>um código, uma armadura e um clã</strong>. Humanos, twi'leks e zabraks vestem o mesmo beskar e recitam o mesmo Resol'nare.</p><p><strong>Escolha a aparência livremente.</strong> O corpo sob o capacete pode ser humano, twi'lek, zabrak ou o que a mesa quiser — os modificadores e as habilidades são os desta entrada, e não os da espécie que a aparência sugere.</p><p><strong>Perguntas ao criar um Mando'ad:</strong> Qual é o seu clã, e ele ainda existe? Você já tirou o capacete diante de alguém? O que o seu Resol'nare proíbe que todo mundo ao redor acha normal?</p><p>&#9878; <strong>Restrições.</strong> <strong>Esta entrada ocupa a vaga de espécie</strong> — e essa é a restrição.</p><p>&#9888; <strong>Quem foi acolhido NÃO usa esta entrada.</strong> O <strong>Foundling</strong> mantém a espécie de origem, com os atributos e as habilidades dela, e paga o treinamento de clã abrindo mão de <strong>uma</strong> delas — é a Origem <em>Filho de Mandalore</em>, no fim deste compêndio.</p><p><strong>Idioma próprio: Mando'a.</strong></p><p><strong>Idiomas.</strong> Todo personagem começa falando o <strong>idioma do seu povo</strong> e o <strong>Básico Galáctico</strong> — o idioma comum das rotas comerciais. Idiomas <strong>adicionais</strong> vêm do <strong>modificador de Inteligência</strong>. <strong>Ler e escrever</strong> é outra coisa: divida a <strong>Inteligência por 6</strong>, arredondando para baixo — o resultado é em quantos idiomas o personagem é alfabetizado (escolha quais). <strong>Inteligência 6 ou menos = analfabeto</strong>, nem no idioma natal. Quem fala mas não escreve tem um <strong>sotaque</strong> que o denuncia como forasteiro.</p>",
+    "movement": 9,
+    "movement_fly": 0,
+    "movement_notes": "",
+    "infravision": 0,
+    "infravision_notes": "",
+    "alignment_tendency": "none",
+    "alignment_notes": "Qualquer.",
+    "race_abilities": [
+      "Compendium.stardragon.stardragon-especies.Item.LzTWrEu0dFLupwIB",
+      "Compendium.stardragon.stardragon-especies.Item.quOFy84KsmOji7hC",
+      "Compendium.stardragon.stardragon-especies.Item.57S4letVQjkf1SbQ"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "swspacedragonbld",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!TIaxzLUAfiMILl7C"
+}
