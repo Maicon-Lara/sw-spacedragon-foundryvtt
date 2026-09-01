@@ -6,6 +6,47 @@ começou junto com o rename.
 
 ---
 
+## 1.16.1 — 01/09/2026
+
+Passada nos blocos **⚖️ Restrições** do cofre — as dez trilhas e as onze
+espécies — conferindo um a um contra o que o módulo já dizia, para não repetir
+prosa que a estrutura já expressa. Quase tudo já estava lá. Sobraram três.
+
+### O Sabotador contradizia os próprios dados
+
+Dizia *"para de progredir em Furtar e em Ataque Furtivo"* — mas não tem nem um
+nem outro: *Ataque Furtivo* não está entre as habilidades dele, e *Furtar* não
+está na lista de talentos (Sabotagem · Furtividade · Demolições · Eletrônica ·
+Sabotagem de Naves). "Parar de progredir" supõe ter; o cofre diz **não usa**.
+Agora a prosa acompanha os dados, e registra que ele **mantém a Percepção** —
+que é o que o separa do Contrabandista e do Assassino.
+
+### O Wookiee ganhou a restrição que faltava
+
+*Restrição — Fora de Escala*: não passa despercebido, e **não usa a maioria das
+armaduras produzidas em série**. Entrou como habilidade de raça porque `race`
+não tem campo `equipment_restrictions` — esse existe só em `class` — e porque é
+a convenção que o módulo já usa em *Mãos Grandes Demais* e *Sangue-frio*.
+
+### O Mando'ad agora diz que ocupa a vaga
+
+Ele já fechava a porta certa (*"os modificadores e as habilidades são os desta
+entrada"*), mas quem lê *"escolha a aparência livremente"* pode achar que soma.
+Agora diz, com todas as letras, que a entrada **ocupa a vaga de espécie**.
+
+### O que foi conferido e não mudou
+
+O **Emissário** já tinha o Dano Crítico parando no 3º nível — era a dúvida
+deixada em aberto na 1.16.0, e estava certo. Rodiano (Visão Térmica só vê calor),
+Droide (as três restrições), Trandoshano (frio) e Mutante (sem *Onipresente* nem
+*Versátil*) já estavam completos.
+
+No **Assassino** o cofre é que diz menos: as *Restrições* dele citam só
+*Percepção*, enquanto a lista de habilidades troca o *Ataque Furtivo* pelo *Golpe
+Fatal*. O módulo mantém a versão mais completa.
+
+---
+
 ## 1.11.0 — 30/08/2026
 
 O cofre reverteu, no mesmo dia, as duas regras do Técnico que a 1.10.0 tinha

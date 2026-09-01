@@ -308,6 +308,7 @@ export const especies = [
        desc: "<p>O pelo denso e a pele grossa concedem <strong>+1 natural na Classe de Armadura</strong>.</p>" },
       { nome: "Inabalável", desc: "<p><strong>+2 em Jogadas de Proteção</strong> contra medo e intimidação.</p>" },
       { nome: "Restrição — Mãos Grandes Demais", desc: "<p>Armas pequenas causam <strong>−1 no dano</strong> nas suas mãos.</p>" },
+      { nome: "Restrição — Fora de Escala", desc: "<p>O corpo denuncia. Um Wookiee <strong>não passa despercebido</strong> em lugar nenhum e <strong>não usa a maioria das armaduras produzidas em série</strong> — só as feitas sob medida para o porte dele. Em território Imperial, é escravizado à vista.</p>" },
     ],
   },
   {
@@ -393,7 +394,9 @@ export const especies = [
       "mesmo beskar e recitam o mesmo Resol'nare.</p>" +
       "<p><strong>Escolha a aparência livremente.</strong> O corpo sob o capacete pode ser " +
       "humano, twi'lek, zabrak ou o que a mesa quiser — os modificadores e as habilidades são " +
-      "os desta entrada, e não os da espécie que a aparência sugere.</p>" +
+      "os desta entrada, e não os da espécie que a aparência sugere. <strong>Esta entrada ocupa a " +
+      "vaga de espécie</strong>, e essa é a restrição: o Mando'ad abre mão do que Wookiee, Twi'lek " +
+      "ou Chiss dariam, porque Mandalore é o povo dele e não uma camada por cima de outro.</p>" +
       "<p><strong>Perguntas ao criar um Mando'ad:</strong> Qual é o seu clã, e ele ainda existe? " +
       "Você já tirou o capacete diante de alguém? O que o seu Resol'nare proíbe que todo mundo " +
       "ao redor acha normal?</p>" +

@@ -498,7 +498,7 @@ export const classes = [
     flavor: "<p>Demolições e armadilhas. <em>Especialização de Operativo.</em></p>",
     descricao:
       "<p>Demolicionistas rebeldes, saboteurs de bases imperiais.</p>" +
-      "<p><strong>Para de progredir</strong> em <em>Furtar</em> e em <em>Ataque Furtivo</em>.</p>" + NOTA_SPEC_MUNDANA,
+      "<p><strong>Perde</strong> o <em>Ataque Furtivo</em> e abre mão do talento <em>Furtar</em> — mantém a <em>Percepção</em> do Operativo.</p>" + NOTA_SPEC_MUNDANA,
     equipment_restrictions: EQ_OPERATIVO,
     habilidades: [
       { nome: "Percepção", level: 1, desc: "<p>Como a do Operativo: <strong>1-2 em 1d6</strong>.</p>", level3: "<p>Chance de <strong>1-3 em 1d6</strong>.</p>", level6: "<p>Chance de <strong>1-4 em 1d6</strong>.</p>", level10: "<p>Chance de <strong>1-5 em 1d6</strong>.</p>" },
