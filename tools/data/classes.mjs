@@ -567,7 +567,7 @@ export const classes = [
       weapons: "Leve de energia e Utilitária — e, por disciplina do Pesquisador, apenas as que ele mesmo construiu.",
     },
     habilidades: [
-      { nome: "Perito em Medicina", level: 1, desc: "<p>Cria aparatos e realiza feitos com <strong>Nível Tecnológico pela coluna NT</strong> da tabela (teto 10). Mas sobre os <strong>feitos e aparatos de cura e suporte</strong> da sua caixa de ferramentas, é um perito: realiza-os <strong>em metade do tempo</strong> e <strong>sem precisar de um laboratório completo</strong> — um kit de campo, uma maca improvisada e as próprias mãos bastam.</p><p>Ganha <strong>+1</strong> em todos os testes de Inteligência de diagnóstico, tratamento e cirurgia, e cada lote de consumíveis médicos que fabrica (injeções, pílulas, doses de antídoto) rende <strong>uma dose a mais</strong>. Quando é ele quem aplica uma <strong>Soro Reanimador</strong>, o paciente <strong>dispensa a JPC</strong> que o soro exige de quem tem ferimentos graves.</p>", level6: "<p><strong>Aparatos e Feitos Científicos Avançados:</strong> passa a criar aparatos e realizar feitos com <strong>Nível Tecnológico igual ao da coluna + 2</strong> (teto 10) — medpacs de bacta, próteses cibernéticas, estimulantes e câmaras de recuperação anos além do que um técnico comum de seu nível alcançaria.</p>" },
+      { nome: "Perito em Medicina", level: 1, desc: "<p><em>(Aparatos e Feitos Científicos)</em> Cria aparatos e realiza feitos com <strong>Nível Tecnológico pela coluna NT</strong> da tabela (teto 10). Mas sobre os <strong>feitos e aparatos de cura e suporte</strong> da sua caixa de ferramentas, é um perito: realiza-os <strong>em metade do tempo</strong> e <strong>sem precisar de um laboratório completo</strong> — um kit de campo, uma maca improvisada e as próprias mãos bastam.</p><p>Ganha <strong>+1</strong> em todos os testes de Inteligência de diagnóstico, tratamento e cirurgia, e cada lote de consumíveis médicos que fabrica (injeções, pílulas, doses de antídoto) rende <strong>uma dose a mais</strong>. Quando é ele quem aplica uma <strong>Soro Reanimador</strong>, o paciente <strong>dispensa a JPC</strong> que o soro exige de quem tem ferimentos graves.</p>", level6: "<p><strong>Aparatos e Feitos Científicos Avançados:</strong> passa a criar aparatos e realizar feitos com <strong>Nível Tecnológico igual ao da coluna + 2</strong> (teto 10) — medpacs de bacta, próteses cibernéticas, estimulantes e câmaras de recuperação anos além do que um técnico comum de seu nível alcançaria.</p>" },
       { nome: "Desconto Tecnológico Aprimorado", level: 3, desc: "<p>O desconto em qualquer gasto com equipamentos sobe para <strong>20%</strong>. Suprimentos de bacta, insumos cirúrgicos, componentes de prótese — tudo sai mais barato para quem compra em nome da cura.</p>", level6: "<p>O desconto sobe para <strong>35%</strong>.</p>", level10: "<p><strong>Autoridade Científica:</strong> os descontos chegam a <strong>50%</strong>. Em troca, submete-se a um <strong>rígido código de ética</strong>: está proibido de causar qualquer dano a seres vivos em combate, e prega que ninguém o faça. Se quebrar esse juramento, <strong>perde o acesso a todas as habilidades da especialização</strong> até realizar uma reparação adequada, a critério do Mestre.</p>" },
       reputacao("A fama do cirurgião que não perde paciente — abre hospitais, comitês, laboratórios e a confiança de quem está sangrando."),
     ],
@@ -816,4 +816,26 @@ for (const senda of classes) {
     ...senda.habilidades,
     ...HERDA_DO_SENSIVEL.filter((h) => !jaTem.has(h.nome)),
   ].sort((a, b) => (a.level ?? 1) - (b.level ?? 1));
+}
+
+// O PEDÁGIO COMUM ÀS QUATRO SENDAS.
+//
+// As Restrições das quatro dizem a mesma coisa, palavra por palavra: a Senda
+// abre mão dos três degraus do Sensível puro e conhece um poder a menos por
+// Grandeza. Cada Senda declara depois o seu preço próprio (o teto da 6ª do
+// Guardião, o corpo do Consular, o não-treino do Vidente) na descrição dela.
+//
+// Fica aqui, e não repetido em quatro lugares, porque é literalmente o mesmo
+// texto — e porque é o complemento da herança acima: uma diz o que a Senda
+// ganha da base, a outra diz o que ela deixa lá.
+const PEDAGIO_SENDA =
+  "<p><strong>O pedágio de ter Senda.</strong> Toda Senda abre mão dos três degraus do " +
+  "<em>Sensível puro</em> — <em>Intuição Bruta</em> <code>[3]</code>, <em>Improviso</em> " +
+  "<code>[6]</code> e a escolha livre de Domínio no <code>[10]</code>, que aqui já vem " +
+  "fixada — e conhece <strong>um poder a menos por Grandeza</strong>: a tabela <strong>+1</strong>, " +
+  "e não +2. Em troca, ganha o que a trilha dela oferece.</p>";
+
+for (const senda of classes) {
+  if (!senda.nome.startsWith("Sensível à Força — ")) continue;
+  senda.descricao = (senda.descricao ?? "") + PEDAGIO_SENDA;
 }

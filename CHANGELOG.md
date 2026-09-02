@@ -6,6 +6,67 @@ começou junto com o rename.
 
 ---
 
+## 1.18.1 — 02/09/2026
+
+Conferência das **classes mundanas** depois da 1.18.0, para saber se elas
+sofriam do mesmo mal das Sendas. **Não sofriam** — mas o teste que provou isso
+achou outra coisa, e virou guarda permanente.
+
+### O teste certo não era comparar listas
+
+Comparar a lista da trilha com a do cofre só acha divergência de nome. A
+pergunta útil é de **cobertura**: cada habilidade da classe-base está, na ficha
+da trilha, num destes três estados — presente na lista, declarada removida, ou
+substituída por outra que a nomeie? O que não estiver em nenhum é buraco
+silencioso.
+
+Rodado nas dez trilhas mundanas: **zero buracos**. As seis que o teste apontou
+eram renomeação com o conteúdo preservado.
+
+| Da classe-base | Some em | Vira |
+|---|---|---|
+| Talentos de Operativo | Espião, Contrabandista, Assassino, Sabotador | *Talentos de \<trilha\>*, com a própria lista |
+| Aparatos e Feitos Científicos | Médico de Campo | *Perito em Medicina* |
+| Aparatos e Feitos Científicos | Engenheiro | *Oficina do Inventor* |
+| Dano Crítico | Mercenário | *Armado e Perigoso* |
+| Ataque Furtivo | Assassino | *Golpe Fatal* |
+| Desativar Droides | Slicer | *Sequestrar Droides* |
+
+*Armado e Perigoso* merece nota: ele **escreve o fallback** — "com qualquer
+outra arma vale o Dano Crítico do Veterano: crítico em 19–20, dano dobrado". É o
+oposto do que as Sendas faziam, onde o *Domínio* apontava para uma habilidade
+ausente sem dizer o que ela fazia.
+
+### O que a guarda achou nas Sendas
+
+Nenhuma das quatro declarava o **pedágio comum**: abre mão de *Intuição Bruta*
+`[3]`, *Improviso* `[6]` e da escolha livre de Domínio no `[10]`, e conhece um
+poder a menos por Grandeza (a tabela **+1**, e não +2).
+
+Os números já estavam certos — o painel de Grandezas e as colunas da tabela
+sempre souberam disso —, mas a ficha nunca **dizia**. Agora diz, num parágrafo
+só, escrito uma vez e aplicado às quatro, porque as Restrições delas são
+idênticas palavra por palavra.
+
+E o *Perito em Medicina* passou a nomear a habilidade que substitui, como o
+*Oficina do Inventor* do Engenheiro já fazia.
+
+### A guarda quase nasceu cega
+
+O primeiro rascunho não pegava o próprio bug que a motivou. Testado removendo
+*Poderes da Força* da herança de propósito: **ficou verde**.
+
+A causa é boa de guardar: a checagem varria os **nomes** das habilidades junto
+com os textos, e *Aprender Poderes da Força* contém *Poderes da Força* como
+substring — uma habilidade absolvia sozinha a ausência da outra, que ela apenas
+menciona. Passou a varrer só as descrições. Refeito o mesmo teste, acusa as
+quatro Sendas.
+
+`heranca-nao-coberta` é **aviso**, não erro: cobertura por citação é heurística
+de texto, e uma reescrita legítima pode deixar de nomear a habilidade antiga.
+
+---
+
 ## 1.18.0 — 02/09/2026
 
 A ficha de um Guardião não mostrava **Poderes da Força**. Nem *Duelo da Força*,

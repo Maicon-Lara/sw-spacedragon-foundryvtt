@@ -431,6 +431,68 @@ prosaSolta();
   }
 }
 
+// ── heranca-nao-coberta ─────────────────────────────────────────────────────
+//
+// Toda habilidade da classe-base tem de estar, na ficha da especializacao, num
+// destes tres estados: presente na lista, declarada removida, ou substituida
+// por outra que a nomeie. O que nao estiver em nenhum e um buraco silencioso —
+// e foi exatamente esse buraco que deixou o Guardiao sem "Poderes da Forca"
+// ate a 1.18.0, porque o cofre declara a heranca das Sendas por atalho
+// ("mantem todas as de 1o nivel") em vez de repetir a lista.
+//
+// O parentesco sai da PASTA, nao do nome: as classes foram renomeadas para o
+// rotulo curto ("Mercenario", nao "Veterano — Mercenario"), e a pasta e quem
+// guarda "Veterano > Mercenario".
+//
+// Carve-out dos Talentos: cada trilha de Operativo troca "Talentos de
+// Operativo" pelo seu proprio pacote ("Talentos de Espiao"), com outra lista.
+// A substituicao e estrutural e nao nomeia a original, entao qualquer
+// "Talentos de …" na trilha cobre o "Talentos de …" da base.
+//
+// Aviso, e nao erro: cobertura por citacao e heuristica de texto, e uma
+// reescrita legitima pode deixar de nomear a habilidade antiga.
+{
+  const pastas = new Map(docs.filter(ehPasta).map((d) => [d._id, d]));
+  const classes = docs.filter((d) => d.type === "class");
+  const porNome = new Map(classes.map((c) => [c.name, c]));
+  const abilPorUuid = new Map(
+    docs
+      .filter((d) => d.type === "class_ability" && d._id)
+      .map((d) => [`Compendium.stardragon.${d.__pack}.Item.${d._id}`, d])
+  );
+  const habsDe = (c) =>
+    (c.system?.class_abilities ?? []).map((u) => abilPorUuid.get(u)).filter(Boolean);
+
+  for (const spec of classes) {
+    const pai = pastas.get(pastas.get(spec.folder)?.folder)?.name;
+    const base = pai && porNome.get(pai);
+    if (!base || base.name === spec.name) continue;
+
+    const proprias = habsDe(spec);
+    const nomes = new Set(proprias.map((h) => h.name));
+    const temTalentos = [...nomes].some((n) => /^Talentos de /.test(n));
+    const texto = semTags(
+      (spec.system?.description ?? "") +
+        (spec.system?.restrictions ?? "") +
+        // Só as DESCRIÇÕES, nunca os NOMES: "Aprender Poderes da Força" contém
+        // "Poderes da Força" como substring e absolvia, sozinha, a ausência da
+        // habilidade que ela apenas menciona. Nome que engloba não é citação.
+        proprias.map((h) => h.system?.description ?? "").join(" ")
+    );
+
+    for (const hb of habsDe(base)) {
+      if (nomes.has(hb.name)) continue;
+      if (/^Talentos de /.test(hb.name) && temTalentos) continue;
+      if (texto.includes(hb.name)) continue;
+      aviso(
+        "heranca-nao-coberta",
+        spec,
+        `"${hb.name}", de ${base.name}, não está na lista, não é citada e não consta como removida`
+      );
+    }
+  }
+}
+
 // ── Relatório ───────────────────────────────────────────────────────────────
 const erros = problemas.filter((p) => p.nivel === "erro");
 const avisos = problemas.filter((p) => p.nivel === "aviso");
