@@ -6,6 +6,63 @@ começou junto com o rename.
 
 ---
 
+## 1.18.0 — 02/09/2026
+
+A ficha de um Guardião não mostrava **Poderes da Força**. Nem *Duelo da Força*,
+nem *O Caminho*, nem *Corrupção*, nem *A Tentação*, nem o *Eco da Senda* — as
+seis habilidades que fazem um Sensível ser um Sensível. Valia para as quatro
+Sendas.
+
+### Por que só as Sendas quebraram
+
+O cofre diz que **especializações são classes irmãs**, e que cada trilha "traz a
+lista inteira de habilidades; você não precisa ler a classe-base e subtrair".
+
+Nas classes mundanas isso se cumpre sozinho, porque o cofre **repete** as
+herdadas dentro de cada lista: o Emissário traz *Dano Crítico* e *Pilotar* do
+Veterano, o Sabotador traz *Percepção* do Operativo. O módulo copiava a lista e
+ficava certo.
+
+O arquivo do Sensível é a exceção. Em vez de repetir, ele usa um atalho no bloco
+de Restrições de cada Senda: *"Mantém do Sensível todas as habilidades de 1º
+nível, além do Eco da Senda"*. Esse atalho nunca foi lido — e o sintoma ficava
+absurdo no `[10]`, onde o *Domínio da Senda* dizia **"é este o conjunto que
+dispara o Eco da Senda da classe-base"**, apontando para uma habilidade que não
+estava na ficha.
+
+Agora as seis são injetadas **por referência** à classe-base, não copiadas: há
+uma fonte de verdade só, e mexer no Sensível move as quatro Sendas junto. Não
+entram *Intuição Bruta* `[3]` nem *Improviso* `[6]` — as Restrições das quatro
+dizem que a Senda abre mão dos três degraus do Sensível puro.
+
+As sete variantes de Forma do Guardião herdaram junto, que é o certo: um
+Guardião de Soresu também conjura. **A Senda Mandaloriana passou intocada** —
+ela só recolhe habilidades que a Senda modifica, e nenhuma das quatro é do
+Sensível. A despoluição da 1.3.0 continua de pé.
+
+### O `[10]` morto do Sentinela
+
+*Progressão de Força* dizia "mantém a coluna normal da tabela, sem o teto do
+Guardião nem o salto do Consular" — descrevia a **ausência de uma troca**, não
+uma habilidade. O cofre trocou por **O Véu que Não Cai**: o *Véu da Força* deixa
+de cair quando o Sentinela usa poderes do próprio Domínio, e ele passa a
+conhecer o *Véu* de graça, sem gastar vaga.
+
+O motivo está no cofre e é bom: o Véu cai no instante em que se usa qualquer
+poder, o que significava que o caçador **nunca podia caçar escondido**.
+
+### O que eu achei que faltava e não faltava
+
+Um primeiro diff acusou seis habilidades ausentes — *Ataque Mortal*, *Preço da
+Profundidade*, *Comunhão Profunda*, *Mente Coletiva* e as duas do Médico de
+Campo. Nenhuma faltava: **todas já existem como degrau de progressão** de uma
+habilidade-mãe (`level6`/`level10`), e não como entrada de topo. *Ataque Mortal*
+é o `[10]` do *Golpe Fatal*; *Preço da Profundidade* é o `[6]` da *Mente
+Superior*. O diff só comparava nomes de topo. Adicioná-las teria criado seis
+duplicatas.
+
+---
+
 ## 1.17.0 — 01/09/2026
 
 O diário *Poderes da Força* dizia listar os poderes de **1ª a 10ª Grandeza** e

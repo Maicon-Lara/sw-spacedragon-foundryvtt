@@ -745,7 +745,7 @@ export const classes = [
       },
       { nome: "Vontade Inquebrável", level: 3, desc: "<p>Suas Jogadas de Proteção contra poderes da Força e efeitos mentais são <strong>Fáceis</strong> — resiste ao Duelo e ao terror da Sombra melhor que qualquer um.</p>" },
       { nome: "Caçador da Força", level: 6, desc: "<p>Sente a presença de outros Sensíveis por perto e ganha <strong>vantagem no primeiro Duelo da Força</strong> de cada confronto.</p>" },
-      { nome: "Progressão de Força", level: 10, desc: "<p>Mantém a coluna normal da tabela do Sensível — sem o teto do Guardião nem o salto do Consular. É o mais versátil dos três.</p>" },
+      { nome: "O Véu que Não Cai", level: 10, desc: "<p>O seu <em>Véu da Força</em> <strong>deixa de cair</strong> quando você usa poderes do seu próprio Domínio, <em>O Rastro e o Véu</em>. Procurar, revelar e esconder param de denunciá-lo: você rastreia, lê um lugar e se oculta <strong>sem nunca acender no mapa</strong>. Qualquer poder de <strong>fora</strong> do Domínio ainda quebra o Véu na hora, como sempre.</p><p><strong>Você conhece o <em>Véu da Força</em> automaticamente</strong>, se ainda não o conhecia — ele não ocupa uma das suas vagas de poderes conhecidos.</p><p class='nota-casa'><em>Correção da casa: este degrau era ocupado por <strong>Progressão de Força</strong>, que dizia \"mantém a coluna normal da Tabela, sem o teto do Guardião nem o salto do Consular\" — ou seja, descrevia a <strong>ausência</strong> de uma troca, não uma habilidade. Um <code>[10]</code> que entrega o que a classe-base já dá de graça é um degrau morto. A ausência de teto continua valendo: está declarada no cabeçalho da Senda.</em></p>" },
       dominioDaSenda("Sentinela", "O Rastro e o Véu", "a Força que <strong>procura, revela e esconde</strong> — detectar, localizar, ler a verdade, apagar-se dos sentidos alheios e enfraquecer quem o caça."),
       reputacao(),
     ],
@@ -778,3 +778,42 @@ export const classes = [
     ],
   },
 ];
+
+// ---------------------------------------------------------------------------
+// HERANÇA DAS SENDAS DO SENSÍVEL
+//
+// Nas classes mundanas o cofre REPETE, dentro da lista de cada trilha, as
+// habilidades que ela mantém da classe-base: o Emissário traz "Dano Crítico" e
+// "Pilotar" do Veterano, o Sabotador traz "Percepção" do Operativo. Por isso a
+// lista da trilha já basta sozinha, e a regra do cofre — "cada especialização
+// traz a lista inteira de habilidades; você não precisa ler a classe-base e
+// subtrair" — se cumpre sem ajuda.
+//
+// O arquivo do Sensível é a exceção: em vez de repetir, ele usa um atalho no
+// bloco de Restrições de cada Senda — "Mantém do Sensível todas as habilidades
+// de 1º nível, além do Eco da Senda". Sem ler esse atalho, a ficha de um
+// Guardião saía SEM "Poderes da Força", que é a classe inteira; e o "Domínio da
+// Senda" dele dizia "é este o conjunto que dispara o Eco da Senda da
+// classe-base", apontando para uma habilidade que não estava na ficha.
+//
+// Injetado POR REFERÊNCIA à classe-base em vez de copiado: há uma fonte de
+// verdade só, e mexer no Sensível move as quatro Sendas junto.
+//
+// NÃO entram "Intuição Bruta" [3] nem "Improviso" [6]: as Restrições das quatro
+// dizem que a Senda abre mão dos três degraus do Sensível puro.
+// ---------------------------------------------------------------------------
+
+const SENSIVEL_BASE = classes.find((c) => c.nome === "Sensível à Força");
+const HERDA_DO_SENSIVEL = [
+  ...SENSIVEL_BASE.habilidades.filter((h) => (h.level ?? 1) === 1),
+  SENSIVEL_BASE.habilidades.find((h) => h.nome === "Eco da Senda"),
+];
+
+for (const senda of classes) {
+  if (!senda.nome.startsWith("Sensível à Força — ")) continue;
+  const jaTem = new Set(senda.habilidades.map((h) => h.nome));
+  senda.habilidades = [
+    ...senda.habilidades,
+    ...HERDA_DO_SENSIVEL.filter((h) => !jaTem.has(h.nome)),
+  ].sort((a, b) => (a.level ?? 1) - (b.level ?? 1));
+}
