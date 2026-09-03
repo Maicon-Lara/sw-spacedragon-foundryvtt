@@ -184,39 +184,7 @@ const HAB_TENTACAO = {
   nome: "A Tentação — a Corrupção como moeda",
   level: 1,
   desc:
-    "<p>A Sombra não multa: ela <strong>oferece</strong>. Quando você <strong>falha numa " +
-    "rolagem decisiva</strong> — ou quando um golpe seu acerta e você quer que ele termine a " +
-    "questão —, escolha uma das três formas:</p><ul>" +
-    "<li><strong>Insistir — +1 de Corrupção:</strong> rerrola a jogada falha e fica com o " +
-    "<strong>segundo resultado</strong>, seja ele qual for.</li>" +
-    "<li><strong>Arrancar — +2 de Corrupção:</strong> rerrola e fica com o <strong>melhor dos " +
-    "dois</strong>.</li>" +
-    "<li><strong>Sentenciar — +1 de Corrupção:</strong> um ataque que já acertou vira " +
-    "<strong>crítico</strong>, ou um poder que já passou tem dano, duração ou número de alvos " +
-    "<strong>dobrado</strong>.</li></ul>" +
-    "<p><strong>Rolagem decisiva</strong> é aquela cuja falha <strong>fecha um caminho</strong>: " +
-    "o Duelo que decide a sala, o teste que impede a nave de cair, o ataque que separa o aliado " +
-    "da morte. Não vale para rotina, iniciativa, dano avulso ou testes repetíveis. Quem decide é " +
-    "o Mestre, e decide <strong>antes</strong> da rolagem.</p>" +
-    "<p><strong>Trava:</strong> uma vez por cena, no máximo <strong>três vezes por dia de " +
-    "jogo</strong>.</p>" +
-    "<p><strong>Os custos somam.</strong> A Tentação nunca substitui a Corrupção que a ação já " +
-    "cobrava: quem é da Luz, lança um poder da Sombra (+1), erra e <em>Arranca</em> a rerrolagem " +
-    "(+2) sobe <strong>3 pontos numa única ação</strong>.</p>" +
-    "<p><strong>Em Corrupção 9</strong> a Sombra oferece sozinha: o Mestre descreve a oferta e " +
-    "<strong>avisa o preço</strong>. Aceitar leva a 10 — a <strong>Queda</strong> (Luz/neutro) ou " +
-    "o <strong>Consumido</strong> (Sombra). Você recebe o que pediu na hora; a Queda se resolve " +
-    "<strong>ao fim da cena</strong>.</p>" +
-    "<p><strong>Recusar</strong> nunca exige rolagem e nunca tem penalidade. A Corrupção ganha " +
-    "aqui é <strong>comum</strong>: conta na trilha e sai pelos mesmos caminhos.</p>" +
-    "<p>Vale igual para a Luz e para a Sombra — mesmo preço, mesma trilha. O que muda é a cara " +
-    "da cena, não a matemática.</p>" +
-    "<p class='nota-casa'><em>A trava existe porque sem ela a regra se autodestrói: um Padawan " +
-    "sereno viraria Lorde Sith na segunda sessão e a Queda deixaria de ser tragédia para virar " +
-    "contabilidade. Com ela, ir de 0 a 10 só pela Tentação leva no mínimo quatro dias de jogo. " +
-    "E uma Corrupção que se pega sem escolher não é tentação, é imposto — por isso recusar não " +
-    "custa nada. Na cena, para o Jedi a voz sussurra \"só desta vez\"; para quem já é da Sombra " +
-    "ela diz \"você já pagou por isso, use\".</em></p>" +
+    "<p>Numa <strong>rolagem decisiva</strong>, a Sombra oferece. Escolha:</p><ul><li><strong>Insistir +1:</strong> rerrola e fica com o <strong>segundo</strong> resultado.</li><li><strong>Arrancar +2:</strong> rerrola e fica com o <strong>melhor dos dois</strong>.</li><li><strong>Sentenciar +1:</strong> um acerto vira <strong>crítico</strong>, ou dobra dano, duração ou alvos de um poder que já passou.</li></ul><p><strong>Trava:</strong> 1 por cena, 3 por dia de jogo. <strong>Os custos somam</strong> com a Corrupção que a ação já cobrava. <strong>Recusar</strong> é livre, sem rolagem e sem penalidade.</p><p><em>O que conta como decisiva, a oferta em Corrupção 9 e os exemplos: diário <strong>Poderes da Força</strong> → <strong>A Corrupção e a Tentação</strong>.</em></p>" +
     CAIXA_CASA(
       "de lá veio a ideia do Sith de 15º nível que podia \"gastar 1 ponto da força <strong>ou receber 1 ponto do lado negro</strong> e refazer qualquer teste de poder\", ou seja, <strong>pagar em Corrupção por um resultado</strong>."
     ),
@@ -258,31 +226,7 @@ const HAB_ECO_SENDA = {
   nome: "Eco da Senda",
   level: 10,
   desc:
-    "<p><strong>Eco (10º):</strong> sempre que gastar Foco num <strong>poder da sua " +
-    "Senda</strong>, role <strong>1d10</strong> depois de resolver o poder — num <strong>1</strong>, " +
-    "o ponto volta para a Grandeza de onde saiu. Vale <strong>por ponto gasto</strong> (um poder " +
-    "de 2 pontos rola dois d10).</p>" +
-    "<p><strong>Eco Maior (15º):</strong> a rolagem passa a <strong>1d4</strong>. Além disso, os " +
-    "poderes de <strong>1ª Grandeza</strong> da sua Senda não custam Foco algum — no máximo " +
-    "<strong>um por rodada</strong>.</p>" +
-    "<p><strong>Poder da sua Senda</strong> é o que pertence ao <strong>Domínio</strong> dela. " +
-    "Vale para qualquer lista (Universal, Luz ou Sombra): conta o que o poder <em>faz</em>, não " +
-    "de que lado ele vem.</p><ul>" +
-    "<li><strong>Guardião — O Corpo e a Lâmina:</strong> Empurrão da Força · Correr com a Força · Salto da Força · Telecinésia · Prisão Telecinética · Lâmina Guiada · Deflexão da Força · Choque da Força · Estrangular · Relâmpagos da Força ★</li>" +
-    "<li><strong>Consular — A Mente e o Domínio:</strong> Truque Mental · Vínculo Telepático · Percepção Ampliada · Calma · Coragem · Aterrorizar · Sussurro Sombrio · Hipnose · Perturbar Mente · Reescrever Memória · Dominação Absoluta</li>" +
-    "<li><strong>Sentinela — O Rastro e o Véu:</strong> Detectar a Força · Sentir o Perigo · Localizar pela Força · Véu da Força · Olho da Força · Discernir a Verdade · Manto de Escuridão · Enfraquecimento</li>" +
-    "<li><strong>Vidente — A Vida e a Presciência:</strong> Cura pela Força · Cura de Aflições · Cura Maior · Serenidade · Estase da Força · Premonição · Visão da Verdade · Dissipar a Sombra · Libertar da Corrupção · Toque Sombrio · Repelir a Fera</li>" +
-    "</ul>" +
-    "<p>As listas são <strong>exemplos</strong>. Um poder pode caber em dois Domínios — conta a " +
-    "maneira como foi usado na cena. Na dúvida o Mestre decide, e decide antes da rolagem. " +
-    "Ninguém acumula dois Domínios.</p>" +
-    "<p><strong>Quem trilhou a Senda Mandaloriana não tem Eco da Senda</strong> — abriu mão da " +
-    "especialização e, com ela, do Domínio.</p>" +
-    "<p class='nota-casa'><em>Por que a 1ª Grandeza e não a 2ª: aqui as Grandezas vão até a 10ª " +
-    "e a 1ª já carrega os cavalos de batalha do Sensível (Empurrão da Força, Truque Mental, " +
-    "Detectar a Força, Cura pela Força). Libertar a 2ª junto, num teto de 15º nível, faria o " +
-    "Consular abrir portas de aço o dia inteiro de graça. A trava de um por rodada existe pelo " +
-    "mesmo motivo: gratuito não pode significar infinito dentro de um combate.</em></p>" +
+    "<p><strong>Eco (10º):</strong> ao gastar Foco num poder do <strong>Domínio da sua Senda</strong>, role <strong>1d10</strong> por ponto gasto — num <strong>1</strong>, o ponto volta para a Grandeza de onde saiu.</p><p><strong>Eco Maior (15º):</strong> a rolagem passa a <strong>1d4</strong>, e os poderes de <strong>1ª Grandeza</strong> do seu Domínio saem de graça — no máximo <strong>um por rodada</strong>.</p><p>Quem trilhou a <strong>Senda Mandaloriana</strong> não tem Eco: abriu mão da especialização e, com ela, do Domínio.</p><p><em>As listas dos quatro Domínios e como decidir o que pertence a cada um: diário <strong>Poderes da Força</strong> → <strong>O Eco da Senda e os Domínios</strong>.</em></p>" +
     CAIXA_CASA(
       "de lá veio a ideia do Jedi que escolhe um \"atributo da força favorito\" e passa a ter <strong>10% de chance no 10º nível</strong> e <strong>25% no 15º</strong> de recuperar o ponto gasto, além de não gastar mais nada com os poderes baixos daquele atributo."
     ),
@@ -671,11 +615,11 @@ export const classes = [
       + NOTA_SENDA_SEM_ALINHAMENTO + FORA_DA_FAIXA_NOTA,
     equipment_restrictions: EQ_SENSIVEL,
     habilidades: [
-      { nome: "Poderes da Força", level: 1, desc: "<p><em>(= Poderes Mentais)</em> Você canaliza a Força para mover, proteger, enganar ou destruir. Cada poder tem uma <strong>Grandeza</strong> (1ª a 10ª); o <strong>Foco Diário</strong> de cada uma vem da tabela da classe, somado ao <strong>Foco Extra</strong> da Sabedoria. Escolha livre entre a lista <strong>Universal</strong> e a do seu <strong>Caminho</strong>.</p>" + PODERES_CONHECIDOS_NOTA + "" },
+      { nome: "Poderes da Força", level: 1, desc: "<p><em>(= Poderes Mentais)</em> Você canaliza a Força para mover, proteger, enganar ou destruir. Cada poder tem uma <strong>Grandeza</strong> (1ª a 10ª). Escolha livre entre a lista <strong>Universal</strong> e a do seu <strong>Caminho</strong>.</p><p><strong>Foco Diário:</strong> o número da sua Grandeza na tabela da classe <strong>+ o Foco Extra da Sabedoria</strong>. <strong>Poderes conhecidos:</strong> o mesmo número <strong>+2</strong> sem Senda, ou <strong>+1</strong> com Senda — nunca mais do que a lista tem naquela Grandeza.</p><p><em>A aba <strong>Poderes</strong> mostra a sua linha já calculada. A tabela dos quinze níveis e as regras de nível deslocado: diário <strong>Poderes da Força</strong>.</em></p>" },
       { nome: "Duelo da Força", level: 1, desc: "<p><em>(= Anulação e Contra-Ataque Mental)</em> Ao ser alvo de um poder da Força, você pode tentar <strong>anulá-lo</strong>: gaste Foco igual à Grandeza do poder e faça um <strong>teste resistido de Sabedoria</strong> contra quem o lançou. Antes de rolar, pode gastar Foco extra para <strong>+1 por ponto</strong> (o total gasto assim não pode exceder a Grandeza do poder resistido).</p><p>Num crítico (falha ou sucesso) há um <strong>choque da Força</strong>: um dos dois sofre <strong>1d4</strong> e faz <strong>JPS</strong> ou fica atordoado por 1d6 rodadas. Vencendo, você <strong>revida na hora</strong> com um poder seu (o agressor pode tentar anular).</p><p><em>Ataque de Sabedoria, defesa de JPS — não há duplicação: um alvo comum de um poder da Força rola JPS; só um Sensível pode gastar Foco para transformar aquilo num Duelo.</em></p>" },
       { nome: "Aprender Poderes da Força", level: 1, desc: "<p>O número da tabela é o <strong>piso garantido pelo nível</strong>; esta habilidade põe poderes <strong>acima</strong> dele — o holocron achado, o mestre que ensina, a técnica arrancada de um inimigo.</p><p>Por treino e intuição: gaste um uso do Foco da Grandeza desejada e passe num <strong>teste de Sabedoria</strong> — em sucesso o poder se manifesta, e você pode tentar <strong>memorizá-lo</strong> (novo teste) para usá-lo à vontade. Falha consome o uso e trava nova tentativa por 24 horas (falha crítica, 1d4 dias). Um mestre que o ensine torna o teste <strong>Fácil</strong>.</p>" },
-      { nome: "O Caminho: Luz e Sombra", level: 1, desc: "<p>No 1º nível o Sensível escolhe um <strong>Caminho</strong>, que fica <em>por cima</em> da especialização e decide quais listas de poderes ele acessa.</p><ul><li><strong>Caminho da Luz</strong> — serenidade, defesa, cura, previdência. Acessa Universal + Luz.</li><li><strong>Caminho da Sombra</strong> — paixão, domínio, medo, destruição. Acessa Universal + Sombra.</li><li><strong>Neutralidade</strong> — pode começar sem Caminho declarado (só a lista Universal) e escolher mais tarde.</li></ul><p><strong>Cruzar de lista (a Queda):</strong> um personagem da Luz pode usar um poder da Sombra em desespero, mas cada uso marca <strong>+1 de Corrupção</strong>. Alguns poderes marcam Corrupção mesmo para a Sombra (vêm com ★ na lista).</p>" },
-      { nome: "Corrupção — Queda e Redenção", level: 1, desc: "<p>A Corrupção é uma trilha de 0 a 10 que mede o quanto a Sombra já enraizou.</p><p><strong>Ganhar (+1):</strong> usar um poder da lista Sombra, usar qualquer poder para crueldade deliberada, ou ceder ao ódio numa cena-chave. <strong>Perder (−1):</strong> atos definidores de compaixão e sacrifício, meditação prolongada sob orientação, recusar o caminho fácil quando ele custa caro.</p><ul><li><strong>0–2 Sereno:</strong> sem penalidade.</li><li><strong>3–5 Marcado:</strong> olhos começam a amarelar sob esforço; testes sociais com não-corrompidos ficam Difíceis quando a Força é usada à vista.</li><li><strong>6–8 Tomado:</strong> surtos de fúria; o Mestre pode assumir uma ação em cena de estresse extremo.</li><li><strong>9 À beira:</strong> todas as penalidades de <em>Tomado</em> — e a Sombra passa a <strong>oferecer</strong> (ver <em>A Tentação</em>). Um passo do fim.</li><li><strong>10 Queda</strong> (Luz e neutro) ou <strong>Consumido</strong> (Sombra).</li></ul><p><strong>A Queda:</strong> ao chegar a Corrupção 10, um Sensível da Luz (ou neutro) cai — surto sombrio, troca definitiva para o Caminho da Sombra e uma marca física. Ao cair, sua Corrupção <strong>volta para 7</strong>: a Sombra deixou de ser um estranho dentro dele e virou casa.</p><p><strong>Consumido:</strong> ao chegar a Corrupção 10 já sendo do Caminho da Sombra, não sobra pessoa, só apetite. O personagem <strong>sai das mãos do jogador e vira NPC do Mestre</strong> — um Lorde Sith puro, um monstro que os antigos companheiros um dia terão de enfrentar. A Luz perde a alma; a Sombra perde a pessoa.</p><p class='nota-casa'><em>Criação da casa: a trilha de Corrupção nunca teve fim marcado para quem já era da Sombra, e passa a ter.</em></p><p><strong>A Redenção:</strong> exige reduzir a Corrupção a menos de 3 <em>e</em> um sacrifício definidor.</p>" },
+      { nome: "O Caminho: Luz e Sombra", level: 1, desc: "<p>No 1º nível você escolhe um <strong>Caminho</strong>, que decide quais listas acessa:</p><ul><li><strong>Luz:</strong> Universal + Luz.</li><li><strong>Sombra:</strong> Universal + Sombra.</li><li><strong>Neutro:</strong> só a Universal, e pode escolher um Caminho mais tarde.</li></ul><p><strong>Cruzar de lista</strong> custa <strong>+1 de Corrupção</strong> por uso. Poderes marcados <strong>★</strong> cobram mesmo de quem já é da Sombra.</p>" },
+      { nome: "Corrupção — Queda e Redenção", level: 1, desc: "<p>Trilha de <strong>0 a 10</strong>. <strong>+1</strong> por usar poder da Sombra, crueldade deliberada ou ceder ao ódio em cena-chave. <strong>−1</strong> por compaixão, sacrifício, meditação orientada ou recusar o caminho fácil quando ele custa caro.</p><ul><li><strong>0–2 Sereno:</strong> sem penalidade.</li><li><strong>3–5 Marcado:</strong> testes sociais com não-corrompidos ficam <strong>Difíceis</strong> quando a Força é usada à vista.</li><li><strong>6–8 Tomado:</strong> surtos de fúria; o Mestre pode assumir uma ação em estresse extremo.</li><li><strong>9 À beira:</strong> penalidades de <em>Tomado</em>, e a Sombra passa a oferecer sozinha.</li><li><strong>10:</strong> <strong>Queda</strong> (Luz/neutro, e a Corrupção volta a <strong>7</strong>) ou <strong>Consumido</strong> (Sombra, vira PNJ do Mestre).</li></ul><p><strong>Redenção:</strong> reduzir a menos de <strong>3</strong> e um sacrifício definidor.</p><p><em>A trilha inteira, com a Queda e o Consumido: diário <strong>Poderes da Força</strong> → <strong>A Corrupção e a Tentação</strong>.</em></p>" },
       HAB_TENTACAO,
       HAB_INTUICAO_BRUTA,
       HAB_IMPROVISO,

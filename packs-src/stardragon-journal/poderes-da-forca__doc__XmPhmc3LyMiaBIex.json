@@ -42,9 +42,83 @@
     },
     {
       "sort": 200000,
+      "name": "A Corrupção e a Tentação",
+      "type": "text",
+      "_id": "i1pgaxVyTOIu7P6B",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<div class=\"odo-markdown stardragon-doc\">\n<h2>A trilha de Corrupção</h2>\n<p>A Corrupção é uma trilha de <strong>0 a 10</strong> que mede o quanto a Sombra já enraizou. Ela sobe e desce, e o estado atual vale para qualquer Sensível — da Luz, da Sombra ou neutro.</p>\n<ul>\n<li><strong>Ganhar (+1):</strong> usar um poder da lista Sombra, usar qualquer poder para crueldade deliberada, ou ceder ao ódio numa cena-chave.</li>\n<li><strong>Perder (−1):</strong> atos definidores de compaixão e sacrifício, meditação prolongada sob orientação, recusar o caminho fácil quando ele custa caro.</li>\n</ul>\n\n<h3>Os cinco estados</h3>\n<table><thead><tr><th>Corrupção</th><th>Estado</th><th>O que acontece</th></tr></thead><tbody>\n<tr><td><strong>0–2</strong></td><td><strong>Sereno</strong></td><td>Sem penalidade.</td></tr>\n<tr><td><strong>3–5</strong></td><td><strong>Marcado</strong></td><td>Os olhos começam a amarelar sob esforço; testes sociais com não-corrompidos ficam <strong>Difíceis</strong> quando a Força é usada à vista.</td></tr>\n<tr><td><strong>6–8</strong></td><td><strong>Tomado</strong></td><td>Surtos de fúria; o Mestre pode assumir uma ação em cena de estresse extremo.</td></tr>\n<tr><td><strong>9</strong></td><td><strong>À beira</strong></td><td>Todas as penalidades de <em>Tomado</em> — e a Sombra passa a <strong>oferecer</strong> sozinha (veja abaixo).</td></tr>\n<tr><td><strong>10</strong></td><td><strong>Queda</strong> ou <strong>Consumido</strong></td><td>O fim da trilha, e ele é diferente para cada Caminho.</td></tr>\n</tbody></table>\n\n<h3>O fim da trilha</h3>\n<p><strong>A Queda</strong> (Luz e neutro): ao chegar a 10, o personagem cai — surto sombrio, troca definitiva para o <strong>Caminho da Sombra</strong> e uma marca física. Ao cair, sua Corrupção <strong>volta para 7</strong>: a Sombra deixou de ser um estranho dentro dele e virou casa.</p>\n<p><strong>Consumido</strong> (quem já era da Sombra): ao chegar a 10, não sobra pessoa, só apetite. O personagem <strong>sai das mãos do jogador e vira PNJ do Mestre</strong> — um Lorde Sith puro, um monstro que os antigos companheiros um dia terão de enfrentar. A Luz perde a alma; a Sombra perde a pessoa.</p>\n<p><strong>A Redenção</strong> exige reduzir a Corrupção a <strong>menos de 3</strong> e um sacrifício definidor.</p>\n\n<h2>A Tentação — a Corrupção como moeda</h2>\n<p>A Sombra não multa: ela <strong>oferece</strong>. Quando você <strong>falha numa rolagem decisiva</strong> — ou quando um golpe seu acerta e você quer que ele termine a questão —, a Força propõe um negócio. Escolha uma das três formas:</p>\n<ul>\n<li><strong>Insistir — +1 de Corrupção:</strong> rerrola a jogada falha e fica com o <strong>segundo resultado</strong>, seja ele qual for. A Força atende ao chamado, mas não obedece a você.</li>\n<li><strong>Arrancar — +2 de Corrupção:</strong> rerrola e fica com o <strong>melhor dos dois</strong>. Não é mais pedir: é tomar. Custa o dobro porque a certeza é o que a Sombra vende mais caro.</li>\n<li><strong>Sentenciar — +1 de Corrupção:</strong> um ataque que <strong>já acertou</strong> vira crítico, ou um poder que <strong>já passou</strong> tem dano, duração ou número de alvos <strong>dobrado</strong>.</li>\n</ul>\n\n<h3>O que conta como rolagem decisiva</h3>\n<p>É aquela cuja falha <strong>fecha um caminho</strong>: o Duelo da Força que decide a sala, o teste que impede a nave de cair, o ataque que separa o aliado da morte. <strong>Não</strong> vale para rotina, iniciativa, dano avulso ou testes repetíveis. Quem decide é o Mestre, e decide <strong>antes</strong> da rolagem.</p>\n\n<h3>A trava, e por que ela existe</h3>\n<p><strong>Uma vez por cena, no máximo três vezes por dia de jogo.</strong> Sem ela a regra se autodestrói: um Padawan sereno viraria Lorde Sith na segunda sessão, e a Queda deixaria de ser tragédia para virar contabilidade. Com a trava, ir de 0 a 10 só pela Tentação leva no mínimo <strong>quatro dias de jogo</strong>.</p>\n\n<h3>Os custos somam</h3>\n<p>A Tentação <strong>nunca substitui</strong> a Corrupção que a ação já cobrava. Um personagem da Luz que lança um poder da Sombra (+1), erra, e <em>Arranca</em> a rerrolagem (+2) sobe <strong>3 pontos numa única ação</strong>. Com os poderes marcados <strong>★</strong>, que cobram mesmo de quem já é da Sombra, a conta é a mesma.</p>\n\n<h3>Em Corrupção 9 — a última oferta</h3>\n<p>Nada impede o negócio. A Sombra oferece <strong>sozinha</strong>: o Mestre descreve a oferta em voz alta e <strong>avisa o preço</strong> — aceitar leva a 10, e 10 é a Queda (Luz/neutro) ou o Consumido (Sombra). Você <strong>recebe o que pediu na hora</strong>; a Queda se resolve <strong>ao fim da cena</strong>. O herói ganha a luta e perde a si mesmo no mesmo plano.</p>\n\n<h3>Recusar</h3>\n<p><strong>Nunca exige rolagem e nunca tem penalidade mecânica.</strong> Uma Corrupção que se pega sem escolher não é tentação, é imposto.</p>\n<p>A Corrupção ganha pela Tentação é <strong>Corrupção comum</strong>: conta na tabela de estados e sai pelos mesmos caminhos — os atos de compaixão e sacrifício que dão −1.</p>\n\n<h3>Vale igual para os dois lados</h3>\n<p>Mesmo preço, mesma trilha, sem desconto para ninguém. O que muda é a cara da cena, não a matemática: para o Jedi a voz sussurra <em>\"só desta vez\"</em> e o empurra para a <strong>Queda</strong>; para quem já é da Sombra ela diz <em>\"você já pagou por isso, use\"</em> e o empurra para ser <strong>Consumido</strong>.</p>\n</div>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swspacedragonbld",
+        "exportSource": null
+      },
+      "_key": "!journal.pages!XmPhmc3LyMiaBIex.i1pgaxVyTOIu7P6B"
+    },
+    {
+      "sort": 300000,
+      "name": "O Eco da Senda e os Domínios",
+      "type": "text",
+      "_id": "UKsG0nG7iy5K0NnF",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<div class=\"odo-markdown stardragon-doc\">\n<h2>Quando a Força para de ser esforço</h2>\n<p>Chega um ponto em que o gesto que lhe custava concentração vira respiração — e a corrente que você empurrou volta sozinha para a mão. Não em tudo: só naquilo que é o <strong>seu ofício</strong>.</p>\n<ul>\n<li><strong>Eco (10º):</strong> sempre que gastar Foco num <strong>poder da sua Senda</strong>, role <strong>1d10</strong> depois de resolver o poder — num <strong>1</strong>, o ponto de Foco volta para a Grandeza de onde saiu. Vale <strong>por ponto gasto</strong>: um poder de 2 pontos rola dois d10.</li>\n<li><strong>Eco Maior (15º):</strong> a rolagem passa a <strong>1d4</strong> (25%). Além disso, os poderes de <strong>1ª Grandeza</strong> da sua Senda não custam mais Foco algum — no máximo <strong>um por rodada</strong>.</li>\n</ul>\n<p><em>Por que a 1ª Grandeza e não a 2ª:</em> aqui as Grandezas vão até a 10ª, e a 1ª já carrega os cavalos de batalha do Sensível (<em>Empurrão da Força</em>, <em>Truque Mental</em>, <em>Detectar a Força</em>, <em>Cura pela Força</em>). Libertar a 2ª junto, num teto de 15º nível, faria o Consular abrir portas de aço o dia inteiro de graça. A trava de um por rodada existe pelo mesmo motivo: gratuito não pode significar infinito dentro de um combate.</p>\n\n<h2>O que é \"poder da sua Senda\"</h2>\n<p>Cada Senda tem um <strong>Domínio</strong> — a família de efeitos que ela pratica até virar hábito. Vale para poderes de <strong>qualquer lista</strong> (Universal, Luz ou Sombra): conta o que o poder <em>faz</em>, não de que lado ele vem.</p>\n<ul>\n<li><strong>Guardião — O Corpo e a Lâmina:</strong> Empurrão da Força · Correr com a Força · Salto da Força · Telecinésia · Prisão Telecinética · Lâmina Guiada · Deflexão da Força · Choque da Força · Estrangular · Relâmpagos da Força ★</li>\n<li><strong>Consular — A Mente e o Domínio:</strong> Truque Mental · Vínculo Telepático · Percepção Ampliada · Calma · Coragem · Aterrorizar · Sussurro Sombrio · Hipnose · Perturbar Mente · Reescrever Memória · Dominação Absoluta</li>\n<li><strong>Sentinela — O Rastro e o Véu:</strong> Detectar a Força · Sentir o Perigo · Localizar pela Força · Véu da Força · Olho da Força · Discernir a Verdade · Manto de Escuridão · Enfraquecimento</li>\n<li><strong>Vidente — A Vida e a Presciência:</strong> Cura pela Força · Cura de Aflições · Cura Maior · Serenidade · Estase da Força · Premonição · Visão da Verdade · Dissipar a Sombra · Libertar da Corrupção · Toque Sombrio · Repelir a Fera</li>\n</ul>\n<p>As listas são <strong>exemplos, não um cadastro</strong>. Um poder pode caber em dois Domínios — nesse caso conta se a <strong>maneira como foi usado na cena</strong> pertence ao Domínio do personagem. Na dúvida o Mestre decide, e decide <strong>antes</strong> da rolagem. Ninguém acumula dois Domínios.</p>\n<p>O <strong>Sensível sem Senda</strong> escolhe o Domínio livremente no 10º nível. Quem trilhou a <strong>Senda Mandaloriana não tem Eco da Senda</strong>: abriu mão da especialização e, com ela, do Domínio. O clã lhe ensinou uma lâmina, não um atalho da Força.</p>\n</div>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.342",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "swspacedragonbld",
+        "exportSource": null
+      },
+      "_key": "!journal.pages!XmPhmc3LyMiaBIex.UKsG0nG7iy5K0NnF"
+    },
+    {
+      "sort": 400000,
       "name": "Lista Universal",
       "type": "text",
-      "_id": "7IJxRXpVR9XmertQ",
+      "_id": "INWf2kHRjVLJIRQQ",
       "title": {
         "show": true,
         "level": 1
@@ -75,13 +149,13 @@
         "lastModifiedBy": "swspacedragonbld",
         "exportSource": null
       },
-      "_key": "!journal.pages!XmPhmc3LyMiaBIex.7IJxRXpVR9XmertQ"
+      "_key": "!journal.pages!XmPhmc3LyMiaBIex.INWf2kHRjVLJIRQQ"
     },
     {
-      "sort": 300000,
+      "sort": 500000,
       "name": "Lista do Caminho da Luz",
       "type": "text",
-      "_id": "cqSl1HE1nr9wUuQu",
+      "_id": "meV5eh6tKBCCAqot",
       "title": {
         "show": true,
         "level": 1
@@ -112,13 +186,13 @@
         "lastModifiedBy": "swspacedragonbld",
         "exportSource": null
       },
-      "_key": "!journal.pages!XmPhmc3LyMiaBIex.cqSl1HE1nr9wUuQu"
+      "_key": "!journal.pages!XmPhmc3LyMiaBIex.meV5eh6tKBCCAqot"
     },
     {
-      "sort": 400000,
+      "sort": 600000,
       "name": "Lista do Caminho da Sombra",
       "type": "text",
-      "_id": "XlAuMn5CY68d4Ow4",
+      "_id": "DfgUnoZwjaZezdLL",
       "title": {
         "show": true,
         "level": 1
@@ -149,7 +223,7 @@
         "lastModifiedBy": "swspacedragonbld",
         "exportSource": null
       },
-      "_key": "!journal.pages!XmPhmc3LyMiaBIex.XlAuMn5CY68d4Ow4"
+      "_key": "!journal.pages!XmPhmc3LyMiaBIex.DfgUnoZwjaZezdLL"
     }
   ],
   "flags": {},

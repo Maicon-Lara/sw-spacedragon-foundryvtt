@@ -6,6 +6,69 @@ começou junto com o rename.
 
 ---
 
+## 1.20.0 — 03/09/2026
+
+A 1.19.0 encurtou o texto. Esta muda a **divisão de trabalho**: a ficha guarda o
+que se rola, o diário guarda a regra.
+
+**Ficha do Guardião: 15.267 → 6.703 caracteres**, contando desde antes da
+1.19.0. Nenhuma regra foi perdida — duas páginas novas de diário foram escritas
+*antes* de qualquer corte, para nada ficar sem casa.
+
+### O diário ganhou as páginas que faltavam
+
+O diário *Poderes da Força* tinha quatro páginas e nenhuma cobria a Corrupção
+nem o Eco em profundidade — as faixas `0–2`/`3–5`/`6–8`, o −1, a oferta do 9 e
+as listas dos Domínios só existiam dentro das habilidades. Agora são seis:
+
+- **A Corrupção e a Tentação** — a trilha inteira, a tabela dos cinco estados, a
+  Queda e o Consumido, a Redenção, o que conta como *rolagem decisiva*, a trava
+  e por que ela existe, os custos que somam, a última oferta em Corrupção 9.
+- **O Eco da Senda e os Domínios** — o Eco e o Eco Maior, por que a 1ª Grandeza
+  e não a 2ª, as listas dos quatro Domínios e como decidir o que pertence a cada
+  um.
+
+### A ficha ficou com os números
+
+| Habilidade | Antes | Agora |
+|---|--:|--:|
+| Poderes da Força | 3.805 | **518** |
+| A Tentação | 2.481 | **513** |
+| Eco da Senda | 2.050 | **494** |
+| Corrupção | 1.359 | **724** |
+| Mudar de Guarda | 1.967 | **1.148** |
+| O Caminho | 584 | **285** |
+
+O critério foi um só: **fica na ficha o que você precisa no meio de um turno.**
+Os custos `+1`/`+2` da Tentação, as faixas da Corrupção, o `1d10` do Eco, o `−2`
+na CA da troca de Forma. Sai da ficha o que se consulta entre sessões — quando
+um teste conta como decisivo, o que acontece na Queda, quais poderes pertencem a
+qual Domínio.
+
+Cada habilidade encurtada termina apontando a página exata: *"…: diário
+**Poderes da Força** → **A Corrupção e a Tentação**."*
+
+### Por que o ponteiro é texto, e não link
+
+Foundry tem `@UUID[…]`, que renderiza um link clicável — mas só onde o sistema
+**enriquece** o HTML antes de mostrar. Não deu para confirmar se a ficha do
+Old Dragon 2 enriquece a descrição de `class_ability`, e um `@UUID` não
+enriquecido aparece como código cru na ficha. O ponteiro por nome funciona nos
+dois casos.
+
+*Se você confirmar na mesa que outros links de diário funcionam dentro de uma
+habilidade, trocar o texto por `@UUID` é uma linha por ponteiro.*
+
+### O que continua grande, e por quê
+
+**Mudar de Guarda** (1.148) é o maior que sobrou, e é quase todo número: os três
+degraus de Forma, o turno gasto, o −2 na CA, a trava de uma troca por rodada, a
+Forma inicial de graça, a *Guarda Fluida*. Cortar ali seria tirar da mesa o que
+se consulta no meio do duelo. As sete Formas em si já vivem no próprio compêndio
+*Formas de Sabre (Guardião)*.
+
+---
+
 ## 1.19.0 — 03/09/2026
 
 A ficha do Guardião tinha **dez telas** de "Habilidades de Classe". Medida contra

@@ -5,7 +5,7 @@
   "_id": "GaqpylCqOasTMODq",
   "img": "systems/olddragon2e/assets/icons/brain.svg",
   "system": {
-    "description": "<p>No 1º nível o Sensível escolhe um <strong>Caminho</strong>, que fica <em>por cima</em> da especialização e decide quais listas de poderes ele acessa.</p><ul><li><strong>Caminho da Luz</strong> — serenidade, defesa, cura, previdência. Acessa Universal + Luz.</li><li><strong>Caminho da Sombra</strong> — paixão, domínio, medo, destruição. Acessa Universal + Sombra.</li><li><strong>Neutralidade</strong> — pode começar sem Caminho declarado (só a lista Universal) e escolher mais tarde.</li></ul><p><strong>Cruzar de lista (a Queda):</strong> um personagem da Luz pode usar um poder da Sombra em desespero, mas cada uso marca <strong>+1 de Corrupção</strong>. Alguns poderes marcam Corrupção mesmo para a Sombra (vêm com ★ na lista).</p>",
+    "description": "<p>No 1º nível você escolhe um <strong>Caminho</strong>, que decide quais listas acessa:</p><ul><li><strong>Luz:</strong> Universal + Luz.</li><li><strong>Sombra:</strong> Universal + Sombra.</li><li><strong>Neutro:</strong> só a Universal, e pode escolher um Caminho mais tarde.</li></ul><p><strong>Cruzar de lista</strong> custa <strong>+1 de Corrupção</strong> por uso. Poderes marcados <strong>★</strong> cobram mesmo de quem já é da Sombra.</p>",
     "level": 1,
     "level3": "",
     "level6": "",
