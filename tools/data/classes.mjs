@@ -61,32 +61,35 @@ const NT_NOTA =
 // de 1ª" — é esta mesma regra lida na primeira linha, e por isso saiu do texto:
 // era um caso particular apresentado como regra própria.
 const PODERES_CONHECIDOS_NOTA =
-  "<p>&#128214; <strong>Quantos poderes você conhece: o número da tabela, mais um ou dois.</strong> " +
-  "Olhe a linha do seu nível: em cada Grandeza que tiver um número, você conhece aquele número " +
-  "<strong>+ 2 se não escolheu Senda</strong>, ou <strong>+ 1 se escolheu</strong>. Não há nada " +
-  "para anotar entre um nível e outro — a mesma tabela que dá o Foco dá a lista.</p>" +
-  "<p>&#127807; <strong>Sem Senda, some 2.</strong> O Sensível que não se especializou não teve " +
-  "escola, e é justamente por isso que sabe mais coisas: aprendeu de tudo um pouco, sem ninguém " +
-  "lhe dizer o que não servia. No 1º nível são <strong>três</strong> poderes de 1ª Grandeza, e " +
-  "não dois. É amplitude no lugar de profundidade — ele conhece mais e <strong>conjura o " +
-  "mesmo</strong>, porque o Foco Diário não muda.</p>" +
-  "<p>&#9888; <strong>Você não pode conhecer mais poderes do que existem.</strong> Se a conta " +
-  "pedir mais entradas do que a sua lista tem naquela Grandeza, você <strong>conhece a lista " +
-  "inteira</strong> e para por aí — o excedente não vira crédito nem desce para a Grandeza de " +
-  "baixo. Começa a acontecer por volta do <strong>11º nível</strong> para quem tem Caminho, e " +
-  "mais cedo para o <strong>neutro</strong>, que só acessa a lista Universal.</p>" +
-  tabelaGrandezas() +
-  "<p><strong>Ao abrir uma Grandeza " +
-  "nova</strong> você já entra nela sabendo <strong>dois</strong> — é o <code>+1</code> fazendo o " +
-  "serviço, e é o que impede a situação absurda de ter Foco de 2ª Grandeza e nenhum poder de 2ª " +
-  "para gastar nele.</p>" +
-  "<p>&#9881; <strong>Quem lê a tabela em outra linha lê a linha inteira.</strong> As Sendas que " +
-  "deslocam o seu nível para efeito de Foco deslocam junto os <strong>poderes conhecidos</strong>. " +
-  "O <strong>Consular</strong> (<em>Mente Superior</em>, +2 níveis) não ganha só mais Foco: ganha " +
-  "<strong>mais lista</strong>. O <strong>Mandaloriano</strong> Sensível (−1 nível) conhece " +
-  "<strong>menos</strong> poderes, e não só conjura menos vezes. Um <strong>teto de Grandeza</strong> " +
-  "(Guardião 6ª, Vidente 8ª) corta as Grandezas acima dele <strong>nas duas colunas</strong>: sem " +
-  "Foco e sem lista.</p>";
+  "<p><strong>Poderes conhecidos:</strong> em cada Grandeza que tiver um número na sua linha, " +
+  "você conhece aquele número <strong>+2</strong> sem Senda, ou <strong>+1</strong> com Senda. " +
+  "Ao abrir uma Grandeza nova você já entra nela sabendo <strong>dois</strong>.</p>" +
+  "<p><strong>Teto da lista:</strong> não se conhece mais poderes do que existem. Se a conta " +
+  "pedir mais do que a sua lista tem naquela Grandeza, você conhece a lista inteira — o " +
+  "excedente não vira crédito nem desce de Grandeza.</p>" +
+  "<p><strong>Nível deslocado:</strong> quem lê a tabela em outra linha lê a linha inteira. " +
+  "<em>Mente Superior</em> (+2 níveis) e o Sensível mandaloriano (−1) mudam o Foco <strong>e</strong> " +
+  "a lista. Um teto de Grandeza (Guardião 6ª, Vidente 8ª) corta as Grandezas acima dele nas " +
+  "duas colunas.</p>" +
+  "<p><em>A aba <strong>Poderes</strong> mostra a sua linha já calculada, com o Foco Extra " +
+  "somado. A tabela completa dos quinze níveis está no diário <strong>Poderes da Força</strong>.</em></p>" +
+  "<p class='nota-casa'><em>Sem Senda, some 2: o Sensível que não se especializou não teve " +
+  "escola, e é por isso que sabe mais coisas — aprendeu de tudo um pouco, sem ninguém lhe dizer " +
+  "o que não servia. É amplitude no lugar de profundidade: conhece mais e conjura o mesmo, " +
+  "porque o Foco Diário não muda. E o +1 ao abrir Grandeza nova existe para impedir a situação " +
+  "absurda de ter Foco de 2ª Grandeza e nenhum poder de 2ª para gastar nele.</em></p>";
+
+// A tabela dos quinze níveis saiu da ficha e foi para o diário: ela é
+// REFERÊNCIA, e a ficha do Old Dragon não põe tabela dentro de habilidade —
+// a do Necromante não tem nenhuma. Quem joga precisa da PRÓPRIA linha, e essa
+// o painel da aba Poderes calcula desde a 1.13.0, já com o Foco Extra somado.
+// Aqui ficam as quinze, para consulta.
+export const GRANDEZAS_REFERENCIA =
+  "<h2>Foco Diário e poderes conhecidos, nível a nível</h2>" +
+  "<p>O <strong>Foco Diário</strong> de cada Grandeza sai desta tabela, somado ao <strong>Foco " +
+  "Extra da Sabedoria</strong>. Os <strong>poderes conhecidos</strong> são o mesmo número " +
+  "<strong>+2</strong> sem Senda ou <strong>+1</strong> com Senda.</p>" +
+  tabelaGrandezas();
 
 // ── As três regras de Foco que a tabela não diz ─────────────────────────────
 // Vêm do guia SD-OD2 p. 27 e nunca tinham sido transcritas para o módulo.
@@ -181,19 +184,39 @@ const HAB_TENTACAO = {
   nome: "A Tentação — a Corrupção como moeda",
   level: 1,
   desc:
-    "<p>Até agora a Corrupção só sabia <strong>punir</strong>. Mas na galáxia a Sombra não multa ninguém — ela <strong>oferece</strong>. É mais rápida, é mais fácil, e funciona.</p>" +
-    "<p>Quando você <strong>falha numa rolagem decisiva</strong> — ou quando um golpe seu acerta e você quer que ele <em>termine</em> a questão —, a Força propõe um negócio. Escolha uma das três formas:</p><ul>" +
-    "<li><strong>Insistir — +1 de Corrupção:</strong> <strong>rerrola</strong> a jogada falha e fica com o <strong>segundo resultado, seja ele qual for</strong>. A Força atende ao chamado, mas não obedece a você.</li>" +
-    "<li><strong>Arrancar — +2 de Corrupção:</strong> <strong>rerrola</strong> e fica com o <strong>melhor dos dois</strong>. Não é mais pedir: é tomar. Custa o dobro porque a certeza é o que a Sombra vende mais caro.</li>" +
-    "<li><strong>Sentenciar — +1 de Corrupção:</strong> um ataque que <strong>já acertou</strong> vira <strong>crítico</strong>, ou um poder que <strong>já passou</strong> tem dano, duração ou número de alvos <strong>dobrado</strong>.</li>" +
-    "</ul>" +
-    "<p><strong>Rolagem decisiva</strong> é aquela cuja falha <strong>fecha um caminho</strong>: o Duelo da Força que decide a sala, o teste que impede a nave de cair, o ataque que separa o aliado da morte. <strong>Não</strong> vale para rotina, iniciativa, dano avulso ou testes repetíveis. Quem decide é o Mestre, e decide <strong>antes</strong> da rolagem.</p>" +
-    "<p><strong>Trava: uma vez por cena, no máximo três vezes por dia de jogo.</strong> Sem ela a regra se autodestrói — um Padawan sereno viraria Lorde Sith na segunda sessão e a Queda deixaria de ser tragédia para virar contabilidade. Com a trava, ir de 0 a 10 só pela Tentação leva no mínimo <strong>quatro dias de jogo</strong>.</p>" +
-    "<p><strong>Vale igualmente para a Luz e para a Sombra</strong> — mesmo preço, mesma trilha, sem desconto para ninguém. O que muda é a cara da cena, não a matemática: para o Jedi a voz sussurra <em>\"só desta vez\"</em> e o empurra para a <strong>Queda</strong>; para quem já é da Sombra ela diz <em>\"você já pagou por isso, use\"</em> e o empurra para ser <strong>Consumido</strong>.</p>" +
-    "<p><strong>Com os poderes ★, os custos somam.</strong> A Tentação <strong>nunca substitui</strong> a Corrupção que a ação já cobrava. Um personagem da Luz que lança um poder da Sombra (+1), erra e <em>Arranca</em> a rerrolagem (+2) sobe <strong>3 pontos numa única ação</strong>.</p>" +
-    "<p><strong>Em Corrupção 9 — a última oferta.</strong> Nada impede o negócio. A Sombra oferece <strong>sozinha</strong>: o Mestre descreve a oferta em voz alta e <strong>avisa o preço</strong> — aceitar leva a <strong>10</strong>, e 10 é a <strong>Queda</strong> (Luz/neutro) ou o <strong>Consumido</strong> (Sombra). Você <strong>recebe o que pediu</strong> na hora; a Queda se resolve <strong>ao fim da cena</strong>. O herói ganha a luta e perde a si mesmo no mesmo plano.</p>" +
-    "<p><strong>Recusar nunca exige rolagem</strong> e nunca tem penalidade mecânica. Uma Corrupção que se pega sem escolher não é tentação, é imposto.</p>" +
-    "<p>A Corrupção ganha assim é <strong>Corrupção comum</strong>: conta na tabela de estados e <strong>sai pelos mesmos caminhos</strong> (os atos de compaixão e sacrifício que dão −1).</p>" +
+    "<p>A Sombra não multa: ela <strong>oferece</strong>. Quando você <strong>falha numa " +
+    "rolagem decisiva</strong> — ou quando um golpe seu acerta e você quer que ele termine a " +
+    "questão —, escolha uma das três formas:</p><ul>" +
+    "<li><strong>Insistir — +1 de Corrupção:</strong> rerrola a jogada falha e fica com o " +
+    "<strong>segundo resultado</strong>, seja ele qual for.</li>" +
+    "<li><strong>Arrancar — +2 de Corrupção:</strong> rerrola e fica com o <strong>melhor dos " +
+    "dois</strong>.</li>" +
+    "<li><strong>Sentenciar — +1 de Corrupção:</strong> um ataque que já acertou vira " +
+    "<strong>crítico</strong>, ou um poder que já passou tem dano, duração ou número de alvos " +
+    "<strong>dobrado</strong>.</li></ul>" +
+    "<p><strong>Rolagem decisiva</strong> é aquela cuja falha <strong>fecha um caminho</strong>: " +
+    "o Duelo que decide a sala, o teste que impede a nave de cair, o ataque que separa o aliado " +
+    "da morte. Não vale para rotina, iniciativa, dano avulso ou testes repetíveis. Quem decide é " +
+    "o Mestre, e decide <strong>antes</strong> da rolagem.</p>" +
+    "<p><strong>Trava:</strong> uma vez por cena, no máximo <strong>três vezes por dia de " +
+    "jogo</strong>.</p>" +
+    "<p><strong>Os custos somam.</strong> A Tentação nunca substitui a Corrupção que a ação já " +
+    "cobrava: quem é da Luz, lança um poder da Sombra (+1), erra e <em>Arranca</em> a rerrolagem " +
+    "(+2) sobe <strong>3 pontos numa única ação</strong>.</p>" +
+    "<p><strong>Em Corrupção 9</strong> a Sombra oferece sozinha: o Mestre descreve a oferta e " +
+    "<strong>avisa o preço</strong>. Aceitar leva a 10 — a <strong>Queda</strong> (Luz/neutro) ou " +
+    "o <strong>Consumido</strong> (Sombra). Você recebe o que pediu na hora; a Queda se resolve " +
+    "<strong>ao fim da cena</strong>.</p>" +
+    "<p><strong>Recusar</strong> nunca exige rolagem e nunca tem penalidade. A Corrupção ganha " +
+    "aqui é <strong>comum</strong>: conta na trilha e sai pelos mesmos caminhos.</p>" +
+    "<p>Vale igual para a Luz e para a Sombra — mesmo preço, mesma trilha. O que muda é a cara " +
+    "da cena, não a matemática.</p>" +
+    "<p class='nota-casa'><em>A trava existe porque sem ela a regra se autodestrói: um Padawan " +
+    "sereno viraria Lorde Sith na segunda sessão e a Queda deixaria de ser tragédia para virar " +
+    "contabilidade. Com ela, ir de 0 a 10 só pela Tentação leva no mínimo quatro dias de jogo. " +
+    "E uma Corrupção que se pega sem escolher não é tentação, é imposto — por isso recusar não " +
+    "custa nada. Na cena, para o Jedi a voz sussurra \"só desta vez\"; para quem já é da Sombra " +
+    "ela diz \"você já pagou por isso, use\".</em></p>" +
     CAIXA_CASA(
       "de lá veio a ideia do Sith de 15º nível que podia \"gastar 1 ponto da força <strong>ou receber 1 ponto do lado negro</strong> e refazer qualquer teste de poder\", ou seja, <strong>pagar em Corrupção por um resultado</strong>."
     ),
@@ -235,18 +258,31 @@ const HAB_ECO_SENDA = {
   nome: "Eco da Senda",
   level: 10,
   desc:
-    "<p>Chega um ponto em que a Força para de ser esforço. O gesto que lhe custava concentração vira respiração — e a corrente que você empurrou volta sozinha para a mão. Não em tudo: <strong>só naquilo que é o seu ofício</strong>.</p>" +
-    "<p><strong>Eco (10º):</strong> sempre que gastar Foco num <strong>poder da sua Senda</strong>, role <strong>1d10</strong> depois de resolver o poder — num <strong>1</strong>, o ponto de Foco <strong>volta</strong> para a Grandeza de onde saiu. Vale <strong>por ponto gasto</strong> (um poder de 2 pontos rola dois d10).</p>" +
-    "<p><strong>Eco Maior (15º):</strong> a rolagem passa a ser <strong>1d4</strong> (25%). Além disso, os <strong>poderes de 1ª Grandeza da sua Senda não custam mais Foco algum</strong> — <strong>no máximo um por rodada</strong>.</p>" +
-    "<p class='nota-casa'><em>Por que 1ª Grandeza e não 2ª: aqui as Grandezas vão até a 10ª e a 1ª já carrega os cavalos de batalha do Sensível (Empurrão da Força, Truque Mental, Detectar a Força, Cura pela Força). Libertar a 2ª junto, num teto de 15º nível, faria o Consular abrir portas de aço o dia inteiro de graça. A trava de um por rodada existe pelo mesmo motivo: gratuito não pode significar infinito dentro de um combate.</em></p>" +
-    "<p><strong>O que é \"poder da sua Senda\":</strong> cada Senda tem um <strong>Domínio</strong> — a família de efeitos que ela pratica até virar hábito. Vale para poderes de <strong>qualquer lista</strong> (Universal, Luz ou Sombra): conta <em>o que o poder faz</em>, não de que lado ele vem.</p><ul>" +
+    "<p><strong>Eco (10º):</strong> sempre que gastar Foco num <strong>poder da sua " +
+    "Senda</strong>, role <strong>1d10</strong> depois de resolver o poder — num <strong>1</strong>, " +
+    "o ponto volta para a Grandeza de onde saiu. Vale <strong>por ponto gasto</strong> (um poder " +
+    "de 2 pontos rola dois d10).</p>" +
+    "<p><strong>Eco Maior (15º):</strong> a rolagem passa a <strong>1d4</strong>. Além disso, os " +
+    "poderes de <strong>1ª Grandeza</strong> da sua Senda não custam Foco algum — no máximo " +
+    "<strong>um por rodada</strong>.</p>" +
+    "<p><strong>Poder da sua Senda</strong> é o que pertence ao <strong>Domínio</strong> dela. " +
+    "Vale para qualquer lista (Universal, Luz ou Sombra): conta o que o poder <em>faz</em>, não " +
+    "de que lado ele vem.</p><ul>" +
     "<li><strong>Guardião — O Corpo e a Lâmina:</strong> Empurrão da Força · Correr com a Força · Salto da Força · Telecinésia · Prisão Telecinética · Lâmina Guiada · Deflexão da Força · Choque da Força · Estrangular · Relâmpagos da Força ★</li>" +
     "<li><strong>Consular — A Mente e o Domínio:</strong> Truque Mental · Vínculo Telepático · Percepção Ampliada · Calma · Coragem · Aterrorizar · Sussurro Sombrio · Hipnose · Perturbar Mente · Reescrever Memória · Dominação Absoluta</li>" +
     "<li><strong>Sentinela — O Rastro e o Véu:</strong> Detectar a Força · Sentir o Perigo · Localizar pela Força · Véu da Força · Olho da Força · Discernir a Verdade · Manto de Escuridão · Enfraquecimento</li>" +
     "<li><strong>Vidente — A Vida e a Presciência:</strong> Cura pela Força · Cura de Aflições · Cura Maior · Serenidade · Estase da Força · Premonição · Visão da Verdade · Dissipar a Sombra · Libertar da Corrupção · Toque Sombrio · Repelir a Fera</li>" +
     "</ul>" +
-    "<p><em>As listas são exemplos, não um cadastro. Um poder pode caber em dois Domínios — nesse caso conta se a <strong>maneira como foi usado na cena</strong> pertence ao Domínio do personagem. Na dúvida o Mestre decide, e decide antes da rolagem. Ninguém acumula dois Domínios.</em></p>" +
-    "<p><strong>Quem trilhou a Senda Mandaloriana não tem Eco da Senda</strong> — abriu mão da especialização e, com ela, do Domínio. O clã lhe ensinou uma lâmina, não um atalho da Força.</p>" +
+    "<p>As listas são <strong>exemplos</strong>. Um poder pode caber em dois Domínios — conta a " +
+    "maneira como foi usado na cena. Na dúvida o Mestre decide, e decide antes da rolagem. " +
+    "Ninguém acumula dois Domínios.</p>" +
+    "<p><strong>Quem trilhou a Senda Mandaloriana não tem Eco da Senda</strong> — abriu mão da " +
+    "especialização e, com ela, do Domínio.</p>" +
+    "<p class='nota-casa'><em>Por que a 1ª Grandeza e não a 2ª: aqui as Grandezas vão até a 10ª " +
+    "e a 1ª já carrega os cavalos de batalha do Sensível (Empurrão da Força, Truque Mental, " +
+    "Detectar a Força, Cura pela Força). Libertar a 2ª junto, num teto de 15º nível, faria o " +
+    "Consular abrir portas de aço o dia inteiro de graça. A trava de um por rodada existe pelo " +
+    "mesmo motivo: gratuito não pode significar infinito dentro de um combate.</em></p>" +
     CAIXA_CASA(
       "de lá veio a ideia do Jedi que escolhe um \"atributo da força favorito\" e passa a ter <strong>10% de chance no 10º nível</strong> e <strong>25% no 15º</strong> de recuperar o ponto gasto, além de não gastar mais nada com os poderes baixos daquele atributo."
     ),
@@ -677,23 +713,39 @@ export const classes = [
         nome: "Mudar de Guarda",
         level: 10,
         desc:
-          "<p>Uma Forma não é um bônus: é <strong>como você fica de pé</strong>. Trocar de Forma no meio de um combate é abrir a guarda de propósito e recomeçar a leitura do inimigo — e o outro lado <strong>vê</strong> você fazendo isso. Custa caro, e ganha duelos: Obi-Wan não venceu Grievous com a Forma dos primeiros três minutos.</p>" +
-          "<p><strong>Quantas Formas você conhece:</strong></p><ul>" +
-          "<li><strong>3º nível — Forma Mestra:</strong> a primeira, a sua. Progride inteira: <strong>[3] → [6] → [10]</strong>.</li>" +
-          "<li><strong>10º nível — segunda Forma</strong> à sua escolha, <strong>só até o degrau [6]</strong>.</li>" +
-          "<li><strong>15º nível — terceira Forma</strong> à sua escolha, <strong>só até o degrau [3]</strong>.</li>" +
-          "</ul><p><strong>Só a Forma Mestra chega ao [10].</strong> Esse é o eixo da regra e o motivo de ela não quebrar nada: você continua sendo <em>um</em> duelista com <em>um</em> estilo, e as outras Formas são respostas guardadas na manga. O Mestre Ataru que aprendeu Soresu não vira uma parede — ele consegue <strong>aguentar</strong> um tiroteio até voltar a dançar.</p>" +
-          "<p><em>A segunda e a terceira Forma são aprendidas em jogo: exigem um mestre que as domine, um holocron de duelo, ou um adversário que as tenha usado contra você e sobrevivido para você estudar.</em></p>" +
-          "<p><strong>A troca:</strong></p><ul>" +
-          "<li><strong>Gasta 1 turno</strong> — toda a sua ação da rodada (sem ataque, sem poder, sem Duelo da Força). Você ainda pode <strong>se mover</strong>.</li>" +
-          "<li><strong>É declarada em voz alta</strong> — inimigos com treino de sabre reconhecem a guarda nova e podem reagir a ela.</li>" +
-          "<li><strong>Você fica aberto: −2 na CA</strong> até o seu próximo turno. Quem troca de Forma no meio do duelo aposta que a rodada perdida vale menos que as próximas cinco.</li>" +
-          "<li><strong>Uma troca por rodada.</strong> Não existe alternar guarda a cada golpe.</li>" +
-          "<li><strong>A Forma inicial é de graça:</strong> no começo de cada combate você declara em qual Forma entra, sem custo.</li>" +
-          "</ul>" +
-          "<p><strong>Guarda Fluida (15º):</strong> a troca passa a custar <strong>1 de Foco</strong> em vez do turno inteiro — <strong>uma vez por rodada</strong> e <strong>sem</strong> o −2 na CA.</p>" +
-          "<p><em>Juyo/Vaapad:</em> trocar <strong>para</strong> a Forma feroz movido pela raiva é exatamente o gesto que a Sombra espera — o risco de +1 de Corrupção da <em>Fúria Canalizada</em> vale já naquele combate. Trocar <strong>para fora</strong> dela enquanto você ainda está ganhando é o tipo de recusa que rende <strong>−1 de Corrupção</strong>, a critério do Mestre.</p>" +
-          "<p class='nota-casa'><em>Esta regra substitui a antiga nota opcional de \"aprender a técnica [6] de uma segunda Forma no 10º nível\", que era vaga e não dizia o que fazer com ela na mesa.</em></p>" +
+          "<p><strong>Quantas Formas você conhece</strong></p><ul>" +
+          "<li><strong>3º — Forma Mestra:</strong> a primeira, a sua. Progride inteira: " +
+          "<code>[3]</code> → <code>[6]</code> → <code>[10]</code>.</li>" +
+          "<li><strong>10º — segunda Forma</strong> à sua escolha, só até o degrau " +
+          "<code>[6]</code>.</li>" +
+          "<li><strong>15º — terceira Forma</strong> à sua escolha, só até o degrau " +
+          "<code>[3]</code>.</li></ul>" +
+          "<p>Só a Forma Mestra chega ao <code>[10]</code>. A segunda e a terceira são " +
+          "<strong>aprendidas em jogo</strong>: exigem um mestre que as domine, um holocron de " +
+          "duelo, ou um adversário que as tenha usado contra você.</p>" +
+          "<p><strong>A troca</strong></p><ul>" +
+          "<li>Gasta <strong>1 turno</strong> — toda a sua ação da rodada (sem ataque, sem poder, " +
+          "sem Duelo da Força). Você ainda pode se <strong>mover</strong>.</li>" +
+          "<li>É <strong>declarada em voz alta</strong>: inimigos com treino de sabre reconhecem " +
+          "a guarda nova e podem reagir a ela.</li>" +
+          "<li>Você fica aberto: <strong>−2 na CA</strong> até o seu próximo turno.</li>" +
+          "<li><strong>Uma troca por rodada.</strong></li>" +
+          "<li>A <strong>Forma inicial é de graça</strong>: no começo de cada combate você " +
+          "declara em qual Forma entra, sem custo.</li></ul>" +
+          "<p><strong>Guarda Fluida (15º):</strong> a troca passa a custar <strong>1 de " +
+          "Foco</strong> em vez do turno inteiro — uma vez por rodada e sem o −2 na CA.</p>" +
+          "<p><strong>Juyo/Vaapad:</strong> trocar para a Forma feroz movido pela raiva vale o " +
+          "risco de <strong>+1 de Corrupção</strong> da <em>Fúria Canalizada</em> já naquele " +
+          "combate. Trocar para fora dela enquanto você ainda está ganhando rende <strong>−1 de " +
+          "Corrupção</strong>, a critério do Mestre.</p>" +
+          "<p class='nota-casa'><em>Uma Forma não é um bônus: é como você fica de pé. Trocar no " +
+          "meio do combate é abrir a guarda de propósito e recomeçar a leitura do inimigo — e o " +
+          "outro lado vê você fazendo isso. Só a Mestra chegar ao [10] é o eixo da regra e o " +
+          "motivo de ela não quebrar nada: você continua sendo um duelista com um estilo, e as " +
+          "outras Formas são respostas guardadas na manga. O Mestre Ataru que aprendeu Soresu " +
+          "não vira uma parede — ele aguenta um tiroteio até voltar a dançar. Esta regra " +
+          "substitui a antiga nota opcional de \"aprender a técnica [6] de uma segunda Forma no " +
+          "10º nível\", que era vaga e não dizia o que fazer com ela na mesa.</em></p>" +
           CAIXA_CASA(
             "de lá veio a ideia do Cavaleiro Jedi de 10º nível que ganha um segundo estilo de luta \"podendo alternar durante um duelo (…) <strong>essa ação leva 1 turno</strong>\", e um terceiro estilo mais tarde."
           ),

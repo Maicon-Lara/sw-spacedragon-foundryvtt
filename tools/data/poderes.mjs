@@ -24,7 +24,7 @@ const CORRUPCAO =
 
 const g = (n) => `<p><strong>Grandeza:</strong> ${n}ª</p>`;
 
-import { FOCO_NOTA } from "./classes.mjs";
+import { FOCO_NOTA, GRANDEZAS_REFERENCIA } from "./classes.mjs";
 
 export const listasDePoder = [
   {
@@ -697,6 +697,7 @@ const paginas = [
 
 <h2>Grandeza 1ª–5ª viram itens; 6ª–10ª ficam aqui</h2>
 <p>O tipo <em>Magia</em> do sistema Old Dragon 2 só reconhece círculos de 1 a 5. Por isso, os poderes de <strong>1ª a 5ª Grandeza</strong> existem como itens utilizáveis na ficha (círculo = Grandeza), enquanto os de <strong>6ª a 10ª Grandeza</strong> vivem apenas neste diário, com texto completo. Nas páginas seguintes, cada lista aparece inteira, agrupada por Grandeza.</p>
+${GRANDEZAS_REFERENCIA}
 
 <h2>Nota de reaproveitamento</h2>
 <p>A lista de <strong>Poderes Mentais do Space Dragon</strong> é vasta (memória, sonho, telepatia, insanidade, domínio, contato com mortos). <strong>Qualquer Poder Mental do SD pode entrar na mesa</strong> com reskin direto — basta manter a Grandeza e distribuí-lo entre <strong>Universal</strong>, <strong>Luz</strong> ou <strong>Sombra</strong> pelo tema. Exemplos naturais ainda não usados: <em>Compartilhar Sonho</em> e <em>Conexão Psíquica</em> para vínculos de mestre-e-aprendiz; <em>Contatar Mente Desencarnada</em> para falar com um Jedi que virou Fantasma da Força; <em>Energizar Objeto</em> para carregar tecnologia com a Força. Esta lista é um núcleo fechado e pronto para jogar, não um teto.</p>

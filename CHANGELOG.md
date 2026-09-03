@@ -6,6 +6,70 @@ começou junto com o rename.
 
 ---
 
+## 1.19.0 — 03/09/2026
+
+A ficha do Guardião tinha **dez telas** de "Habilidades de Classe". Medida contra
+a do **Necromante** do próprio Old Dragon 2, que cabe em duas, ficou claro o que
+o sistema espera de uma habilidade na ficha — e o que a nossa fazia de errado.
+
+O padrão do Necromante: rótulos em negrito inline para estruturar, bullets `◆`
+só para enumeração real, **nenhuma tabela**, e **zero comentário de projeto**.
+Regra seca.
+
+### A tabela saiu da ficha e foi para o diário
+
+*Poderes da Força* carregava uma tabela de **15 linhas × 3 colunas** — Foco
+Diário e poderes conhecidos, nível a nível. É referência, e referência não mora
+na ficha: a do Necromante não tem tabela nenhuma.
+
+Quem joga precisa da **própria linha**, e essa o painel da aba Poderes calcula
+desde a 1.13.0, já com o Foco Extra da Sabedoria somado. As quinze linhas foram
+para o diário *Poderes da Força*, ao lado das três regras de Foco que já viviam
+lá. A habilidade passou de **3.805 para 1.051** caracteres.
+
+### O comentário virou nota de casa, não lixo
+
+O resto do excesso era prosa que explica o **desenho**: por que o Sensível sem
+Senda soma 2, por que o Eco libera a 1ª Grandeza e não a 2ª, por que a Tentação
+tem trava, por que só a Forma Mestra chega ao `[10]`.
+
+Nada disso foi apagado. Foi envolvido em `<p class='nota-casa'>`, que o build já
+remove da ficha e preserva no fonte — a mesma máquina que guarda as atribuições
+🜂 desde a 1.3.0. Quem quiser ler continua tendo, com `NOTAS_CASA=1`.
+
+| Habilidade | Antes | Agora |
+|---|--:|--:|
+| Poderes da Força | 3.805 | **1.051** |
+| A Tentação | 2.481 | **1.483** |
+| Mudar de Guarda | 1.967 | **1.148** |
+| Eco da Senda | 2.050 | **1.631** |
+| **Ficha do Guardião** | **15.267** | **10.277** |
+
+### O que eu não cortei
+
+A **Corrupção** ficou nos 1.359 de sempre. Olhei para cortar e não havia o que:
+é trilha de 0 a 10, as cinco faixas, a Queda, o Consumido e a Redenção — regra
+inteira, sem uma linha de comentário (o dela já era nota de casa). Cortar ali
+seria tirar regra, não gordura.
+
+E as **listas dos quatro Domínios** continuam no *Eco da Senda*, que é o maior
+bloco restante. O *Domínio da Senda* de cada trilha aponta explicitamente para
+lá — "a lista completa de exemplos está na habilidade Eco da Senda".
+
+### Por que ainda são 13 habilidades, e não 4
+
+A comparação com o Necromante tem um limite honesto: **ele tem quatro
+habilidades porque é simples**. Um Sensível tem Foco, Grandezas, Caminho,
+Corrupção, Tentação, Eco e Formas — sete subsistemas, mais as seis herdadas da
+classe-base que a 1.18.0 trouxe (corretamente: um Guardião *tem* Poderes da
+Força).
+
+O que dava para consertar era o **tamanho de cada uma**, e essa parte agora está
+no padrão: a maioria abaixo de 700 caracteres, e as densas entre 1.000 e 1.600.
+O que não dá é reduzir a classe a quatro entradas sem tirar regra da mesa.
+
+---
+
 ## 1.18.1 — 02/09/2026
 
 Conferência das **classes mundanas** depois da 1.18.0, para saber se elas
