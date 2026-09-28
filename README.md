@@ -9,6 +9,20 @@ mesa do Mestre, tudo em compêndio.
 Obra de fã, não oficial e sem fins lucrativos. Texto de Maicon Lara.
 Star Wars © Lucasfilm Ltd. · *Space Dragon* © Old Dragon Editora.
 
+> **Há duas adaptações de Star Wars, e esta é uma delas.** Elas não são versões
+> uma da outra — são sistemas diferentes, e os nomes se parecem:
+>
+> | | **Star Dragon** (este) | **[Space Dragon nativo](https://github.com/Maicon-Lara/starwars-spacedragon-foundryvtt)** |
+> |---|---|---|
+> | Defesa | CA | CP |
+> | Salvaguardas | três JPs | uma JP, descendente |
+> | Atributos | os seis do OD2, com Carisma | Intelecto, Ciência e Comunicação no lugar de Sabedoria, Inteligência e Carisma |
+> | Níveis | 1 a 15 | 1 a 20 |
+> | Força | Foco Diário | Alcance da Força em porcentagem |
+>
+> Os dois podem ficar ligados no mesmo mundo: os ids dos compêndios e dos tipos
+> de ator não colidem.
+
 ---
 
 ## Instalação
