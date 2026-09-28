@@ -1,5 +1,24 @@
 # Changelog — Star Dragon
 
+## 1.20.2 — a ficha de nave rola, tem modo escuro e voltou a ser legível
+
+A ficha de Nave daqui é gêmea da do módulo *Star Wars para Space Dragon* —
+nasceram do mesmo esqueleto — e tinha os mesmos defeitos. Foram corrigidos os
+três de uma vez:
+
+- **Não rolava.** O template abria um `<form>`, e em ApplicationV2 a raiz da
+  ficha já é um `<form>`; o parser HTML descarta o aninhado, e com ele sumia a
+  classe `.stardragon-nave`, que carrega o layout. Agora é um `<div>`, e a
+  rolagem vem de um `overflow-y` no container — que não existia em regra
+  nenhuma.
+- **Texto apagado.** Os títulos de seção e os rótulos usavam `opacity` sobre uma
+  cor herdada do sistema. Agora têm cor explícita, da paleta do módulo, e os
+  títulos vão em negrito.
+- **Modo escuro.** Opção *Ficha de nave: claro ou escuro*, com automático,
+  sempre claro e sempre escuro. No automático segue a classe `theme-dark` da
+  página e a preferência do sistema operacional. Os campos de digitação passam a
+  declarar as próprias cores, em vez de herdar as de um módulo de modo escuro.
+
 ## 1.20.1 — a licença e a OGL vão dentro do zip
 
 Conformidade de licença. Nenhuma mudança de regra, conteúdo ou ficha.

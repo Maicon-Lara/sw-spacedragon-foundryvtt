@@ -53,6 +53,38 @@ Hooks.once("init", () => {
     default: true,
     onChange: aplicarTema, // sem recarregar: a classe sai e o sistema volta
   });
+
+  // ── Claro ou escuro na ficha de nave ──
+  //
+  // Diferente do "tema" acima, que repinta as fichas do SISTEMA: esta é a ficha
+  // de Nave, que tem paleta própria e por isso não acompanha sozinha um módulo
+  // de modo escuro — cada um marca a página de um jeito. No automático ela segue
+  // os dois sinais que existem na prática: a classe `theme-dark` no corpo da
+  // página e a preferência do sistema operacional.
+  //
+  // É opção de CLIENTE: tema é preferência de quem olha, não da mesa.
+  game.settings.register(ID, "temaDaNave", {
+    name: "Ficha de nave: claro ou escuro",
+    hint:
+      "A ficha de nave tem paleta própria e não acompanha sozinha um módulo de " +
+      "modo escuro. No automático ela segue a página (a classe theme-dark, que o " +
+      "Foundry e a maioria desses módulos usam) e, na falta dela, a preferência " +
+      "do sistema operacional. Vale só para você.",
+    scope: "client",
+    config: true,
+    type: String,
+    choices: {
+      auto: "Automático (segue o Foundry)",
+      claro: "Sempre claro",
+      escuro: "Sempre escuro",
+    },
+    default: "auto",
+    onChange: () => {
+      for (const app of foundry.applications?.instances?.values?.() ?? []) {
+        if (app instanceof NaveFicha) app.render();
+      }
+    },
+  });
 });
 
 Hooks.once("ready", () => {

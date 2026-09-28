@@ -340,13 +340,123 @@ body.stardragon-tema .olddragon2e.sheet .economy .currency .cp {
  * acompanhar o tema claro e o escuro sem duas paletas.
  */
 
-.stardragon.nave-ficha .stardragon-nave { display: flex; flex-direction: column; gap: 10px; padding: 6px 4px; }
+
+/* ── A PALETA DA FICHA, E O MODO ESCURO ───────────────────────────────────
+ *
+ * As cores da ficha saem de seis variáveis. No escuro elas se invertem — o que
+ * era fundo vira tinta —, e como todas as regras abaixo usam só essas seis,
+ * trocar os valores repinta a ficha inteira.
+ *
+ * QUANDO O ESCURO LIGA. A opção do módulo (claro / escuro / automático) põe a
+ * classe na ficha. No automático valem os dois sinais que existem na prática: a
+ * classe `theme-dark` no corpo da página, que o Foundry v13 e a maioria dos
+ * módulos de modo escuro usam, e a preferência do sistema operacional.
+ */
+.stardragon.nave-ficha {
+  --nave-fundo: var(--stardragon-fundo, #f4f7fa);
+  --nave-caixa: var(--stardragon-painel-fundo, #dfe6ef);
+  --nave-titulo: var(--stardragon-azul-noite, #1b3a5c);
+  --nave-tinta: var(--stardragon-texto-evolucao, #2b3d4f);
+  --nave-brilho: #2f7d53;
+  --nave-perigo: #9e1510;
+  --nave-campo: #fff;
+  --nave-campo-esquema: light;
+  --nave-linha: color-mix(in srgb, var(--nave-titulo) 28%, transparent);
+  --nave-secundario: color-mix(in srgb, var(--nave-tinta) 68%, var(--nave-fundo));
+}
+
+.stardragon.nave-ficha.tema-escuro,
+body.theme-dark .stardragon.nave-ficha.tema-auto,
+.theme-dark .stardragon.nave-ficha.tema-auto {
+  --nave-fundo: #0f1e2e;
+  --nave-caixa: #1b3a5c;
+  --nave-titulo: #a8c6e0;
+  --nave-tinta: #e6eef6;
+  --nave-brilho: #5fc48d;
+  --nave-perigo: #ff8a84;
+  --nave-campo: #16293c;
+  --nave-campo-esquema: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  .stardragon.nave-ficha.tema-auto {
+    --nave-fundo: #0f1e2e;
+    --nave-caixa: #1b3a5c;
+    --nave-titulo: #a8c6e0;
+    --nave-tinta: #e6eef6;
+    --nave-brilho: #5fc48d;
+    --nave-perigo: #ff8a84;
+    --nave-campo: #16293c;
+    --nave-campo-esquema: dark;
+  }
+}
+/* O claro explícito vence os dois sinais acima. */
+.stardragon.nave-ficha.tema-claro {
+  --nave-fundo: #f4f7fa;
+  --nave-caixa: #dfe6ef;
+  --nave-titulo: #1b3a5c;
+  --nave-tinta: #2b3d4f;
+  --nave-brilho: #2f7d53;
+  --nave-perigo: #9e1510;
+  --nave-campo: #fff;
+  --nave-campo-esquema: light;
+}
+
+/* A ROLAGEM. O overflow fica no container interno, que é o que o PARTS marca
+   como scrollable; o .window-content fica com hidden para não haver duas
+   barras. Antes não existia regra nenhuma, e a ficha vazava por baixo. */
+.stardragon.nave-ficha .window-content {
+  overflow: hidden;
+  background: var(--nave-fundo);
+  color: var(--nave-tinta);
+}
+
+/* OS CAMPOS DE DIGITAÇÃO. Um módulo de modo escuro repinta input e select do
+   mundo inteiro; como a ficha tem paleta própria, ela declara os seus. */
+.stardragon.nave-ficha input[type="text"],
+.stardragon.nave-ficha input[type="number"],
+.stardragon.nave-ficha select,
+.stardragon.nave-ficha textarea {
+  color-scheme: var(--nave-campo-esquema, light);
+  background: var(--nave-campo, #fff);
+  color: var(--nave-tinta);
+  border: 1px solid var(--nave-linha);
+  border-radius: 3px;
+}
+.stardragon.nave-ficha input:focus,
+.stardragon.nave-ficha select:focus,
+.stardragon.nave-ficha textarea:focus {
+  border-color: var(--nave-titulo);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--nave-titulo) 18%, transparent);
+  outline: none;
+}
+.stardragon.nave-ficha .titulo input[name="name"],
+.stardragon.nave-ficha .dado input { background: transparent; border-color: transparent; }
+.stardragon.nave-ficha .titulo input[name="name"]:hover,
+.stardragon.nave-ficha .dado input:hover { border-color: var(--nave-linha); }
+
+.stardragon.nave-ficha button:not(.ficha):not(.mano) {
+  color: var(--nave-tinta);
+  border: 1px solid var(--nave-linha);
+  background: color-mix(in srgb, var(--nave-caixa) 45%, transparent);
+}
+.stardragon.nave-ficha button:not(.ficha):not(.mano):hover {
+  background: var(--nave-caixa);
+  border-color: var(--nave-titulo);
+}
+
+.stardragon.nave-ficha .stardragon-nave {
+  display: flex; flex-direction: column; gap: 10px; padding: 6px 4px 12px;
+  overflow-y: auto; min-height: 0; max-height: 100%;
+}
 .stardragon.nave-ficha h3 {
   font-size: 12px; text-transform: uppercase; letter-spacing: .09em;
-  opacity: .65; margin: 0 0 6px; border-bottom: 1px solid var(--color-border-light-tertiary, #6663); padding-bottom: 3px;
+  /* cor explícita: sem isto herda a do sistema e some no fundo da ficha */
+  color: var(--nave-titulo); font-weight: 700;
+  margin: 0 0 6px; border-bottom: 1px solid var(--nave-linha); padding-bottom: 3px;
   display: flex; align-items: center; gap: 8px;
 }
-.stardragon.nave-ficha h3 .dica { text-transform: none; letter-spacing: 0; font-size: 11px; opacity: .7; font-weight: normal; }
+.stardragon.nave-ficha h3 .dica { text-transform: none; letter-spacing: 0; font-size: 11px; color: var(--nave-secundario); font-weight: normal; }
 
 .stardragon.nave-ficha .cabecalho { display: flex; gap: 10px; align-items: flex-start; }
 .stardragon.nave-ficha .retrato { width: 64px; height: 64px; object-fit: cover; border-radius: 4px; flex: 0 0 auto; }
@@ -359,7 +469,7 @@ body.stardragon-tema .olddragon2e.sheet .economy .currency .cp {
 .stardragon.nave-ficha .perfil { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
 .stardragon.nave-ficha .dado {
   display: flex; flex-direction: column; align-items: center; gap: 2px;
-  border: 1px solid var(--color-border-light-tertiary, #6663); border-radius: 4px; padding: 5px 3px;
+  border: 1px solid var(--nave-linha); border-radius: 4px; padding: 5px 3px;
 }
 .stardragon.nave-ficha .dado label { font-size: 10px; text-transform: uppercase; letter-spacing: .05em; opacity: .7; text-align: center; }
 .stardragon.nave-ficha .dado .unid { text-transform: none; opacity: .6; }
@@ -374,11 +484,11 @@ body.stardragon-tema .olddragon2e.sheet .economy .currency .cp {
 .stardragon.nave-ficha .barra .nums input { width: 3.4em; text-align: center; }
 .stardragon.nave-ficha .trilho {
   height: 9px; border-radius: 5px; overflow: hidden; margin: 3px 0;
-  background: var(--color-border-light-tertiary, #6663);
+  background: var(--nave-linha);
 }
 .stardragon.nave-ficha .preenche { height: 100%; transition: width .2s; }
-.stardragon.nave-ficha .preenche.casco { background: #a14e43; }
-.stardragon.nave-ficha .preenche.escudo { background: #42679c; }
+.stardragon.nave-ficha .preenche.casco { background: var(--nave-perigo); }
+.stardragon.nave-ficha .preenche.escudo { background: var(--nave-titulo); }
 .stardragon.nave-ficha .barra .acoes { display: flex; gap: 5px; }
 .stardragon.nave-ficha .barra .acoes input,
 .stardragon.nave-ficha .barra .acoes select { flex: 1; min-width: 0; font-size: 11px; }
@@ -387,13 +497,13 @@ body.stardragon-tema .olddragon2e.sheet .economy .currency .cp {
 .stardragon.nave-ficha .fichas { display: flex; flex-wrap: wrap; gap: 5px; }
 .stardragon.nave-ficha .ficha {
   flex: 0 1 auto; padding: 4px 11px; border-radius: 12px; font-size: 12px; line-height: 1.5;
-  border: 1px solid var(--color-border-light-tertiary, #6668); background: transparent; opacity: .55;
+  border: 1px solid var(--nave-linha); background: transparent; color: var(--nave-secundario);
 }
-.stardragon.nave-ficha .ficha.ligada { opacity: 1; background: #42679c; border-color: #42679c; color: rgb(239,230,216); font-weight: 600; }
-.stardragon.nave-ficha .ficha.ligada.estresse { background: #b43c35; border-color: #b43c35; }
+.stardragon.nave-ficha .ficha.ligada { opacity: 1; background: var(--nave-titulo); border-color: var(--nave-titulo); color: var(--nave-fundo); font-weight: 600; }
+.stardragon.nave-ficha .ficha.ligada.estresse { background: var(--nave-perigo); border-color: var(--nave-perigo); }
 .stardragon.nave-ficha .fim { display: flex; gap: 6px; margin-top: 7px; }
 .stardragon.nave-ficha .fim button { flex: 1; }
-.stardragon.nave-ficha .fim .esquivar { background: #42679c; color: rgb(239,230,216); border-color: #42679c; }
+.stardragon.nave-ficha .fim .esquivar { background: var(--nave-titulo); color: var(--nave-fundo); border-color: var(--nave-titulo); }
 
 /* Armamento */
 .stardragon.nave-ficha .armas { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
@@ -425,12 +535,12 @@ body.stardragon-tema .olddragon2e.sheet .economy .currency .cp {
 .stardragon.nave-ficha .manobras { display: flex; flex-wrap: wrap; gap: 4px; }
 .stardragon.nave-ficha .mano {
   flex: 0 0 auto; min-width: 44px; padding: 4px 7px; font-size: 13px; border-radius: 3px;
-  border: 1px solid var(--color-border-light-tertiary, #6668); background: transparent;
+  border: 1px solid var(--nave-linha); background: transparent;
 }
 /* As cores são as do dial, não decoração: verde tira Estresse, vermelha põe. */
-.stardragon.nave-ficha .mano.verde { border-color: #4f6e4e; color: #7fae7e; }
-.stardragon.nave-ficha .mano.vermelha { border-color: #b43c35; color: #d1675f; }
-.stardragon.nave-ficha .mano.escolhida { background: #42679c; border-color: #42679c; color: rgb(239,230,216); font-weight: 700; }
+.stardragon.nave-ficha .mano.verde { border-color: var(--nave-brilho); color: var(--nave-brilho); }
+.stardragon.nave-ficha .mano.vermelha { border-color: var(--nave-perigo); color: var(--nave-perigo); }
+.stardragon.nave-ficha .mano.escolhida { background: var(--nave-titulo); border-color: var(--nave-titulo); color: var(--nave-fundo); font-weight: 700; }
 .stardragon.nave-ficha .planejada { display: flex; align-items: center; gap: 8px; margin-top: 6px; font-size: 12px; }
 .stardragon.nave-ficha .planejada > span { flex: 1; }
 .stardragon.nave-ficha .planejada .secreta { opacity: .6; font-style: italic; }
@@ -443,7 +553,7 @@ body.stardragon-tema .olddragon2e.sheet .economy .currency .cp {
 .stardragon.nave-ficha .acao-posto { flex: 1 0 100%; margin: 1px 0 0 0; font-size: 10.5px; opacity: .6; line-height: 1.35; }
 .stardragon.nave-ficha .aviso-escala {
   font-size: 11px; margin: 0 0 6px; padding: 5px 8px; border-radius: 3px;
-  border-left: 3px solid #b43c35; background: #b43c3522; line-height: 1.4;
+  border-left: 3px solid var(--nave-perigo); background: color-mix(in srgb, var(--nave-perigo) 13%, transparent); line-height: 1.4;
 }
 
 /* ── Painel de Grandezas na aba de Poderes ─────────────────────────────────
@@ -483,7 +593,7 @@ body.stardragon-tema .olddragon2e.sheet .economy .currency .cp {
 .stardragon-grandezas .g .foco { font-size: 13px; font-weight: 700; }
 .stardragon-grandezas .g .sabe { font-size: 11px; opacity: .85; }
 /* Falta poder: borda vermelha E o número escrito ao lado — nunca só a cor. */
-.stardragon-grandezas .g.falta { border-color: #b43c35; background: rgba(180, 60, 53, .12); }
+.stardragon-grandezas .g.falta { border-color: var(--nave-perigo); background: rgba(180, 60, 53, .12); }
 .stardragon-grandezas .g.sobra { border-color: #786436; }
 .stardragon-grandezas .nota { font-size: 11px; font-style: italic; opacity: .8; }
 /* O ganho de Sabedoria fica visível no número, não só no tooltip. */

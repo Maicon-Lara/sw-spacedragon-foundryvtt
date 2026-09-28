@@ -71,6 +71,21 @@ async function pergunta({ titulo, conteudo, botoes }) {
   });
 }
 
+/**
+ * A classe de tema da ficha: "tema-auto", "tema-claro" ou "tema-escuro".
+ *
+ * A ficha tem paleta própria e não acompanha sozinha um módulo de modo escuro.
+ * No automático quem decide é o CSS, pela classe `theme-dark` da página ou pela
+ * preferência do sistema.
+ */
+function classeDeTema() {
+  try {
+    return `tema-${globalThis.game?.settings?.get?.("stardragon", "temaDaNave") ?? "auto"}`;
+  } catch {
+    return "tema-auto";
+  }
+}
+
 export class NaveFicha extends HandlebarsApplicationMixin(ActorSheetV2) {
   static DEFAULT_OPTIONS = {
     classes: ["stardragon", "nave-ficha"],
@@ -94,6 +109,19 @@ export class NaveFicha extends HandlebarsApplicationMixin(ActorSheetV2) {
   };
 
   static PARTS = { corpo: { template: "modules/stardragon/templates/nave.hbs", scrollable: [""] } };
+
+  /**
+   * A classe de tema no elemento da ficha.
+   *
+   * Vai aqui, e não em DEFAULT_OPTIONS, porque a opção muda em tempo de
+   * execução: fixá-la na definição da classe congelaria a escolha do primeiro
+   * render. As três são mutuamente exclusivas.
+   */
+  _onRender(contexto, opcoes) {
+    super._onRender?.(contexto, opcoes);
+    this.element?.classList.remove("tema-auto", "tema-claro", "tema-escuro");
+    this.element?.classList.add(classeDeTema());
+  }
 
   async _prepareContext() {
     const s = this.actor.system;

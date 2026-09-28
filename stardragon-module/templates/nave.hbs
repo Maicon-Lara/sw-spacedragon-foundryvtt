@@ -1,6 +1,9 @@
 {{!-- Ficha da Nave — Star Dragon. A ordem segue a da rodada tática: perfil,
       estado da rodada, armamento, postos. --}}
-<form class="stardragon-nave" autocomplete="off">
+{{!-- Um <div>, e NÃO um <form>: em ApplicationV2 a raiz da ficha já é um
+      <form>, e o parser HTML descarta um <form> aninhado — a tag some, e com
+      ela a classe .stardragon-nave, que carrega o layout e a rolagem. --}}
+<div class="stardragon-nave">
 
   <header class="cabecalho">
     <img class="retrato" src="{{ator.img}}" data-edit="img" alt="{{ator.name}}">
@@ -166,4 +169,4 @@
     {{formInput (lookup s "descricao") name="system.descricao" type="editorHTML" enriched=descricao toggled=true}}
   </section>
 
-</form>
+</div>
