@@ -47,6 +47,17 @@ def main():
                 z.write(full, arc)
                 entradas.append(arc)
 
+        # As licencas ficam na RAIZ do repositorio, e o zip e montado de dentro
+        # do modulo — sem isto elas nao seriam distribuidas. A clausula 10 da OGL
+        # e explicita: "You MUST include a copy of this License with every copy of
+        # the Open Game Content You Distribute". O zip E a distribuicao.
+        for nome in ("LICENSE.md", "OGL.txt"):
+            origem = os.path.join(ROOT, nome)
+            if not os.path.exists(origem):
+                raise SystemExit("%s nao existe na raiz: a OGL exige que ele va no zip" % nome)
+            z.write(origem, nome)
+            entradas.append(nome)
+
     dentro = set(entradas)
 
     # ── Sanidade do zip ──
