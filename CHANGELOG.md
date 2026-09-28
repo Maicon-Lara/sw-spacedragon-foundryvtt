@@ -1,5 +1,19 @@
 # Changelog — Star Dragon
 
+## 1.20.1 — a licença e a OGL vão dentro do zip
+
+Conformidade de licença. Nenhuma mudança de regra, conteúdo ou ficha.
+
+- O módulo **não declarava licença nenhuma** — nem arquivo, nem campo no
+  manifesto. Derivando do *Space Dragon*, que é CC BY-SA 3.0, ele é obrigado ao
+  *share-alike*.
+- `OGL.txt` com a Open Game License 1.0a e a seção 15 atualizada, e `LICENSE.md`
+  com o que é Open Game Content e o que fica fora.
+- Os dois **entram no `stardragon.zip`**, que é o que o Foundry baixa: a cláusula
+  10 da OGL fala de cada cópia distribuída.
+- **Star Wars é da Lucasfilm**, não está licenciado e não poderia estar por OGL
+  ou CC. O que a CC BY-SA cobre é a camada de regras.
+
 O módulo se chamava **Star Wars — Space Dragon** e tinha o `id` `sw-spacedragon`
 até a 0.9.1. As versões anteriores a 1.0.0 não têm entrada aqui: o changelog
 começou junto com o rename.
