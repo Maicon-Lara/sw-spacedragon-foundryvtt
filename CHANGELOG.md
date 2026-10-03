@@ -1,5 +1,35 @@
 # Changelog — Star Dragon
 
+## 1.21.0 — a Ordem de Ação e os Pontos de Força entram na aba Ataques
+
+Dois cartões novos no **topo da aba Ataques** da ficha de personagem, no mesmo
+molde do painel de Grandezas: injetados, sem reescrever nada do Old Dragon 2 e
+saindo junto se o módulo for desligado.
+
+- **Ordem de Ação.** A declaração da **T7-2** feita na ficha do personagem, não
+  numa janela que o Mestre preenche por todo mundo. O seletor já vem com **uma
+  linha por arma da ficha**, com o dado de dano preenchido (a equipada primeiro),
+  mais as outras duas formas da tabela: **NT ou Grandeza** para aparato e poder,
+  e **10 − Destreza** para quem só se move. *Declarar* rola o que precisa ser
+  rolado e publica o número no chat, lembrando que **age primeiro o menor**.
+- **Pontos de Força.** Regra da casa: a reserva aparece como bolinhas, *gastar*
+  tira um ponto e rola **1d6** no chat, *+1* devolve e *⟳* recarrega. O máximo é
+  por personagem — clique no número — e o padrão da mesa é uma opção do módulo
+  (*Pontos de Força: máximo padrão*, 5 de fábrica).
+
+**Onde o painel entra, e por que isso importa.** O alvo é
+`div.tab[data-tab="attacks"]`, filtrando quem está dentro de `<nav>`. O
+`<a data-tab="attacks">` da barra de abas casa com o mesmo seletor, e injetar
+nele é o que faz os cartões aparecerem colados na navegação, fora do conteúdo
+da ficha — foi assim que a primeira tentativa saiu errada.
+
+**O que os cartões não fazem.** Não mexem no rastreador de combate do Foundry:
+reescrever a iniciativa de um sistema alheio quebraria todo módulo de combate
+instalado, e o número da T7-2 muda a cada rodada conforme a ação declarada — não
+é valor que se guarde no combatente. E os Pontos de Força moram numa **flag do
+módulo**, não em `system`: não inventam campo na ficha do OD2 e não disputam
+nada com o **Foco Diário**, que continua sendo o recurso da Força no cenário.
+
 ## 1.20.2 — a ficha de nave rola, tem modo escuro e voltou a ser legível
 
 A ficha de Nave daqui é gêmea da do módulo *Star Wars para Space Dragon* —

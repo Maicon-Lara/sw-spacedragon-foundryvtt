@@ -22,6 +22,7 @@ import { abrirCorrupcao, novaCena, novoDia, diagnostico } from "./corrupcao.js";
 import { NaveDataModel } from "./nave-modelo.js";
 import { NaveFicha } from "./nave-ficha.js";
 import { ligarPainelDeGrandezas } from "./grandezas.js";
+import { ligarPainelDeAtaques } from "./ataques.js";
 
 const ID = "stardragon";
 const CLASSE = "stardragon-tema";
@@ -52,6 +53,36 @@ Hooks.once("init", () => {
     type: Boolean,
     default: true,
     onChange: aplicarTema, // sem recarregar: a classe sai e o sistema volta
+  });
+
+  // ── Pontos de Força: o tamanho padrão da reserva ──
+  //
+  // Regra da casa, e por isso configurável: o livro não tem Pontos de Força —
+  // a Força dele corre por Foco Diário e Grandezas. Este número é só o ponto
+  // de partida de uma ficha que nunca mexeu na reserva; cada personagem muda o
+  // próprio máximo clicando nele, no cartão da aba Ataques.
+  game.settings.register(ID, "forcaMax", {
+    name: "Pontos de Força: máximo padrão",
+    hint:
+      "Quantos Pontos de Força um personagem tem com a reserva cheia, antes de " +
+      "a ficha definir o seu. Gastar um ponto rola 1d6. Vale para a mesa toda.",
+    scope: "world",
+    config: true,
+    type: Number,
+    range: { min: 0, max: 20, step: 1 },
+    default: 5,
+    onChange: () => {
+      // A ficha do OD2 é ApplicationV1 e vive em `ui.windows`; a de Nave, deste
+      // módulo, é V2 e vive em `foundry.applications.instances`. Varrer só uma
+      // das duas listas deixaria metade das janelas abertas com o número velho.
+      const abertas = [
+        ...Object.values(ui.windows ?? {}),
+        ...(foundry.applications?.instances?.values?.() ?? []),
+      ];
+      for (const app of abertas) {
+        if (app?.actor?.type === "character") app.render(false);
+      }
+    },
   });
 
   // ── Claro ou escuro na ficha de nave ──
@@ -94,6 +125,7 @@ Hooks.once("ready", () => {
   // para que atualizar o módulo atualize a regra — uma macro já arrastada para
   // a barra continua valendo, porque ela só chama isto.
   ligarPainelDeGrandezas();
+  ligarPainelDeAtaques();
 
   game.stardragon = { corrupcao: abrirCorrupcao, novaCena, novoDia, diagnostico };
 
